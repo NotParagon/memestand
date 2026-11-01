@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the whole static site from data/memes.json (Drudge-style).   Usage: python3 build.py
+"""Render the whole static site from data/memes.json (plain, headline-style news page).   Usage: python3 build.py
 
 Writes (all generated, don't hand-edit):
   index.html                          homepage: #1 story + three top-10 columns
@@ -8,16 +8,22 @@ Writes (all generated, don't hand-edit):
   best-memes-this-month/index.html
   archive/YYYY-MM-DD.html             one "Daily Meme Report" per day (rendered from data/archive/*.json)
   archive/index.html                  archive index
-  about.html                          what MemeStand is + ranking method
+  about.html                          what MemeStand is + ranking method + content/editorial policy
+  terms.html, privacy.html, dmca.html legal pages (text lives in this file; settings in LEGAL below)
   feed.xml                            Atom feed, one entry per daily report
   sitemap.xml, robots.txt, llms.txt   crawler / AI-assistant discovery
 
 Each run snapshots data/memes.json to data/archive/<PT date>.json (overwriting only today's
 snapshot), and never deletes older snapshots or archive pages, so past days survive rebuilds.
 The build is deterministic: re-running with the same data produces identical files.
+
+Takedowns: items matching data/blocklist.json are replaced by a removal notice on every page (archives
+included), scrubbed from data/archive/*.json, and their local thumbnails deleted (see tools/legal.py).
 """
-import json, html, datetime, pathlib, re, shutil
+import json, html, datetime, pathlib, re, shutil, sys
 from zoneinfo import ZoneInfo
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent / "tools"))
+from legal import load_blocklist, blocked_by
 
 SITE = "https://memestand.com"
 NAME = "MemeStand"
@@ -26,6 +32,43 @@ ROOT = pathlib.Path(__file__).resolve().parent
 ARCH_DATA, ARCH = ROOT / "data" / "archive", ROOT / "archive"
 data = json.loads((ROOT / "data" / "memes.json").read_text())
 e = lambda s: html.escape(str(s or ""), quote=True)
+
+# ---------------------------------------------------------------- legal settings (Roger: fill these in)
+LEGAL = {
+    "effective": "November 1, 2026",
+    "contact_email": None,          # e.g. "legal@memestand.com" once that mailbox exists; None -> GitHub issues
+    "dmca_email": None,             # e.g. "dmca@memestand.com"; must match the Copyright Office registration
+    "dmca_agent_registered": False, # True once the designated agent is registered at dmca.copyright.gov
+    "dmca_agent_name": "MemeStand DMCA Agent",   # a title/role is allowed; the registration holds the full details
+    "governing_law": "California",  # placeholder: Roger to confirm state/venue
+    "issues_url": "https://github.com/NotParagon/memestand/issues/new",
+}
+OG_USE_MEME_THUMB = False   # False: social cards use our own og-default.png, never someone else's meme
+COPY_START = 2026
+
+BLOCKS = load_blocklist()
+REMOVED = "[REMOVED IN RESPONSE TO A TAKEDOWN REQUEST]"
+def scrub(d):
+    """Replace blocklisted rows with a removal placeholder (keeps rank numbers stable)."""
+    if not BLOCKS: return d
+    for p in ("daily", "weekly", "monthly"):
+        rows = []
+        for m in d.get(p, []):
+            if not m.get("removed") and blocked_by(m, BLOCKS):
+                if m.get("image") and m["image"].startswith("images/"):
+                    (ROOT / m["image"]).unlink(missing_ok=True)
+                m = {"rank": m["rank"], "removed": True, "title": REMOVED}
+            rows.append(m)
+        d[p] = rows
+    return d
+data = scrub(data)
+
+def contact_html(kind="legal"):
+    em = LEGAL["dmca_email"] if kind == "dmca" and LEGAL["dmca_email"] else LEGAL["contact_email"]
+    if em: return f'email <a href="mailto:{e(em)}">{e(em)}</a>'
+    return (f'open an issue at <a href="{LEGAL["issues_url"]}" rel="noopener">github.com/NotParagon/memestand/issues</a> '
+            '(issues are public: include the page and item, but leave out your home address, phone and other private details; '
+            'we will ask for anything else privately)')
 
 def parse_dt(d):
     try: return datetime.datetime.fromisoformat(d["updated"]).astimezone(PT)
@@ -90,12 +133,15 @@ CSS = """
  .one .thumb{max-height:420px}
  .card{display:flex;align-items:center;justify-content:center;text-align:center;min-height:120px;padding:14px;border:2px solid #000;font-weight:bold;font-size:17px;background:#fff;box-sizing:border-box}
  .hl{font-size:16px;font-weight:bold;line-height:1.25;text-transform:uppercase} .rk{color:#c00}
- .meta{font-size:11px;margin-top:4px;color:#444} .src{color:#00c;margin-right:8px} .fs{color:#777}
+ .meta{font-size:11px;margin-top:4px;color:#444} .src{color:#00c;margin-right:8px} .fs{color:#595959}
+ .credit{font-size:11px;margin-top:3px;color:#444} .credit a{color:#00c;text-decoration:underline}
+ .skip{position:absolute;left:-9999px;top:0} .skip:focus{left:8px;top:8px;background:#fff;color:#00c;padding:6px;border:2px solid #00c;z-index:9}
+ a:focus-visible{outline:2px solid #00c;outline-offset:2px}
  .why{font-size:12px;margin-top:4px;color:#222}
  .more{text-align:center;font-size:12px;margin:4px 0 0} .more a{color:#00c}
  .pager{text-align:center;font-size:13px;margin:14px 0} .pager a{color:#00c;margin:0 10px}
- .prose{max-width:760px;margin:16px auto;font-size:14px;line-height:1.5} .prose a{color:#00c} .prose td,.prose th{border:1px solid #999;padding:3px 6px;font-size:12px} .prose table{border-collapse:collapse}
- nav.foot{margin-bottom:6px;font-size:12px} nav.foot a{color:#00c;margin:0 6px}
+ .prose{max-width:760px;margin:16px auto;font-size:14px;line-height:1.5} .prose a{color:#00c;text-decoration:underline} .prose h2{text-align:left;text-decoration:none;margin-top:22px} .prose li{border:0;margin:0 0 6px;padding:0;list-style:disc} .prose ul,.prose ol{padding-left:22px} .prose td,.prose th{border:1px solid #999;padding:3px 6px;font-size:12px} .prose table{border-collapse:collapse}
+ nav.foot{margin-bottom:6px;font-size:12px} nav.foot a{color:#00c;margin:0 6px;text-decoration:underline} footer p{margin:6px auto;max-width:860px}
  footer{border-top:3px double #000;margin-top:20px;padding-top:10px;font-size:11px;text-align:center;color:#444}
 """
 
@@ -130,23 +176,34 @@ def head(*, title, desc, path, base, og_img=None, og_alt=None, og_type="website"
 <meta name="twitter:image" content="{e(og_img)}">
 <meta name="twitter:image:alt" content="{e(og_alt)}">
 {lds}
-<style>{CSS}</style></head><body>'''
+<style>{CSS}</style></head><body><a class="skip" href="#content">Skip to content</a>'''
 
 def mast(base, tag, h1=True):
     inner = f'<span class="logo"><a href="{base}index.html">MEMESTAND</a></span><span class="tag">{tag}</span>'
-    return f'<header class="mast">{"<h1>" + inner + "</h1>" if h1 else "<div>" + inner + "</div>"}</header>'
+    return f'<header class="mast">{"<h1>" + inner + "</h1>" if h1 else "<div>" + inner + "</div>"}</header><div id="content"></div>'
 
 INTRO = ("MemeStand is a daily meme report: the internet's top 10 memes today, this week and this month, "
          "ranked by cross-platform virality on X, Reddit and Know Your Meme. Updated every morning.")
 
+def copyright_years():
+    return f"{COPY_START}" if NOW.year <= COPY_START else f"{COPY_START}&ndash;{NOW.year}"
+
 def footer(base):
     links = [("index.html", "Home"), ("top-memes-today/", "Top Memes Today"), ("trending-memes-this-week/", "Trending This Week"),
              ("best-memes-this-month/", "Best of the Month"), ("archive/", "Daily Meme Report Archive"),
-             ("feed.xml", "RSS/Atom Feed"), ("about.html", "About &amp; Method"), ("llms.txt", "llms.txt")]
+             ("feed.xml", "RSS/Atom Feed"), ("llms.txt", "llms.txt")]
+    legal = [("about.html", "About &amp; Content Policy"), ("terms.html", "Terms of Use"), ("privacy.html", "Privacy"),
+             ("dmca.html", "DMCA / Takedowns")]
     nav = " | ".join(f'<a href="{base}{u}">{t}</a>' for u, t in links)
-    return f'''<footer><nav class="foot">{nav}</nav>
-RANKED BY CROSS-PLATFORM VIRALITY: X ENGAGEMENT, KNOW YOUR MEME, REDDIT TOP FEEDS, X TRENDING STORIES.<br>
-ALL MEMES BELONG TO THEIR CREATORS; THUMBNAILS LINK TO THE ORIGINAL SOURCE. TAKEDOWN REQUESTS HONORED. &copy; MEMESTAND.COM</footer>
+    nav2 = " | ".join(f'<a href="{base}{u}">{t}</a>' for u, t in legal)
+    return f'''<footer><nav class="foot" aria-label="Site">{nav}</nav>
+<nav class="foot" aria-label="Legal">{nav2}</nav>
+<p>Ranked by cross-platform virality: X engagement, Know Your Meme, Reddit top feeds and X trending stories.
+Headlines describe memes and online reactions, not verified facts about the people in them.</p>
+<p>All memes and images are &copy; their respective owners and are shown as small, credited thumbnails that link to the original source,
+for ranking and commentary. MemeStand is independent and is not affiliated with, endorsed by or sponsored by X, Reddit or Know Your Meme;
+their names are used only to identify sources. Rights holders: see <a href="{base}dmca.html">DMCA / Takedowns</a>.</p>
+<p>&copy; {copyright_years()} MemeStand. Site design, rankings and compilation only; memes &copy; their respective owners.</p></footer>
 </body></html>
 '''
 
@@ -156,23 +213,34 @@ def alt(m, label):
     return f"{a} - #{m['rank']} {label} on MemeStand" if label else a
 
 def thumb(m, base, label, cls="thumb", eager=False):
+    if m.get("removed"): return ""
     src = img_src(m)
     if src:
-        src = src if src.startswith("http") else base + src
+        ext = src.startswith("http")
+        src = src if ext else base + src
         load = 'fetchpriority="high"' if eager else 'loading="lazy"'
-        return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener"><img class="{cls}" src="{e(src)}" alt="{e(alt(m, label))}" {load}></a>'
+        ref = ' referrerpolicy="no-referrer"' if ext else ""
+        return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener"><img class="{cls}" src="{e(src)}" alt="{e(alt(m, label))}" {load}{ref}></a>'
     return f'<a class="card {cls}" href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m.get("card_text") or m["title"])}</a>'
+
+def credit(m):
+    c = m.get("credit") or f'via {m.get("source_name", "the original source")}'
+    return (f'<div class="credit">Credit: {e(c)}. &copy; its owner; shown in small form for ranking and commentary. '
+            f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener">View original</a></div>')
 
 def sources(m, lead=" "):
     also = " ".join(f'<a class="src" href="{e(a["url"])}" target="_blank" rel="noopener">{e(a["name"])}</a>' for a in m.get("also", []))
     return f'<a class="src" href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m["source_name"])}</a>{lead}{also}'
 
 def item(m, base, label, notes=False):
+    if m.get("removed"):
+        return f'<li><h3 class="hl"><span class="rk">{m["rank"]}.</span> {e(REMOVED)}</h3><div class="meta"><a class="src" href="{base}dmca.html">Takedown policy</a></div></li>'
     why = f'\n  <div class="why">Why it ranks: {e(m["notes"])}</div>' if notes and m.get("notes") else ""
     return f'''<li>
   {thumb(m, base, label)}
   <h3 class="hl"><span class="rk">{m["rank"]}.</span> <a href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m["title"])}</a></h3>
-  <div class="meta">{sources(m)}<span class="fs">since {e(m["first_seen"])}</span></div>{why}
+  <div class="meta">{sources(m)}<span class="fs">since {e(m["first_seen"])}</span></div>
+  {credit(m)}{why}
 </li>'''
 
 def column(d, p, base, link=True, notes=False):
@@ -182,20 +250,23 @@ def column(d, p, base, link=True, notes=False):
 
 def top_story(d, base, kicker="TODAY'S #1 MEME"):
     t = d["daily"][0]
+    if t.get("removed"): return ""
     return f'''<div class="top">
   {thumb(t, base, "today", "topimg", eager=True)}
   <h2 class="hl"><span class="rk" style="font-size:13px;display:block;letter-spacing:2px">{kicker}</span><a href="{e(t["source_url"])}" target="_blank" rel="noopener">{e(t["title"])}</a></h2>
   <div class="meta">{sources(t, "")}</div>
+  {credit(t)}
 </div>'''
 
 def og_for(d):
     t = d["daily"][0]
-    img = abs_img(t) if t.get("image") else None    # only our own local thumbnail; else the default card
+    img = abs_img(t) if (OG_USE_MEME_THUMB and t.get("image") and not t.get("removed")) else None   # default: our own card
     return img, (alt(t, "today") if img else None)
 
 # ---------------------------------------------------------------- structured data
 ORG = {"@type": "Organization", "@id": f"{SITE}/#org", "name": NAME, "url": f"{SITE}/",
-       "logo": {"@type": "ImageObject", "url": f"{SITE}/apple-touch-icon.png", "width": 180, "height": 180}}
+       "logo": {"@type": "ImageObject", "url": f"{SITE}/apple-touch-icon.png", "width": 180, "height": 180},
+       "publishingPrinciples": f"{SITE}/about.html#policy"}
 WEBSITE = {"@type": "WebSite", "@id": f"{SITE}/#website", "name": NAME, "alternateName": "MemeStand.com", "url": f"{SITE}/",
            "description": INTRO, "inLanguage": "en", "publisher": {"@id": f"{SITE}/#org"}}
 
@@ -203,6 +274,7 @@ def itemlist(d, p, page_url, date_label):
     info = PERIODS[p]
     els = []
     for m in d[p]:
+        if m.get("removed"): continue
         li = {"@type": "ListItem", "position": m["rank"], "name": tc(m["title"]), "url": m["source_url"]}
         img = abs_img(m)
         if img: li["image"] = img
@@ -272,7 +344,7 @@ def build_period(p):
     lst = itemlist(d, p, url, fmt_short(NOW))
     crumbs = [("MemeStand", f"{SITE}/"), (info["h2"].title(), url)]
     m1 = d[p][0]
-    og = abs_img(m1) if m1.get("image") else None
+    og = abs_img(m1) if (OG_USE_MEME_THUMB and m1.get("image") and not m1.get("removed")) else None
     ld = graph(ORG, WEBSITE, webpage(url, title, desc, ISO, crumbs=crumbs, about_lists=[lst["@id"]]), lst)
     others = " | ".join(f'<a href="../{v["slug"]}/">{v["h2"].title()}</a>' for k, v in PERIODS.items() if k != p)
     page = head(title=title, desc=desc, path=f"{info['slug']}/", base=base, og_img=og, og_alt=alt(m1, info["word"]) if og else None, ld=[ld]) + f'''
@@ -291,7 +363,11 @@ def snapshots():
     if not snap.exists() or snap.read_text() != txt: snap.write_text(txt)
     out = []
     for f in sorted(ARCH_DATA.glob("????-??-??.json")):
-        try: out.append((f.stem, json.loads(f.read_text())))
+        try:
+            d = scrub(json.loads(f.read_text()))
+            t = json.dumps(d, indent=2, ensure_ascii=False) + "\n"
+            if t != f.read_text(): f.write_text(t)          # takedowns are scrubbed from the public JSON too
+            out.append((f.stem, d))
         except Exception as ex: print("  ! skipping bad snapshot", f, ex)
     return out   # oldest -> newest
 
@@ -345,15 +421,22 @@ def build_archive_index(snaps):
 ''' + footer(base)
     write("archive/index.html", page)
 
+def prose_page(path, title, desc, tag, body, kind="WebPage"):
+    url = f"{SITE}/{path}"
+    ld = graph(ORG, WEBSITE, webpage(url, title, desc, ISO, kind=kind))
+    page = head(title=title, desc=desc, path=path, base="", ld=[ld]) + f"""
+{mast("", tag)}
+<main class="prose">
+{body}
+</main>
+""" + footer("")
+    write(path, page)
+
 def build_about():
-    url = f"{SITE}/about.html"
     title = "About MemeStand — How We Rank the Internet's Top Memes"
     desc = "MemeStand ranks the top 10 memes today, this week and this month using a virality evidence score built from X, Reddit and Know Your Meme data."
-    page = head(title=title, desc=desc, path="about.html", base="", ld=[graph(ORG, WEBSITE, webpage(url, title, desc, ISO, kind="AboutPage"))]) + f'''
-{mast("", "ABOUT MEMESTAND -- HOW THE RANKINGS WORK")}
-<main class="prose">
-<h2>What is MemeStand?</h2>
-<p>MemeStand (memestand.com) is a Drudge-style daily meme report. Every morning it publishes three ranked lists:
+    body = f"""<h2>What is MemeStand?</h2>
+<p>MemeStand (memestand.com) is an independent, headline-style daily meme report. Every morning it publishes three ranked lists:
 the <a href="top-memes-today/">top 10 memes today</a>, the <a href="trending-memes-this-week/">top 10 trending memes this week</a>
 and the <a href="best-memes-this-month/">best memes of the month</a> (last 30 days). Each day's rankings are saved in the
 <a href="archive/">daily meme report archive</a> and published in an <a href="feed.xml">Atom feed</a>.</p>
@@ -368,12 +451,167 @@ and the <a href="best-memes-this-month/">best memes of the month</a> (last 30 da
 <tr><td>Picked in a KYM Weekly Roundup or Meme of the Month poll</td><td>+3</td></tr>
 <tr><td>X trending news story about it</td><td>+5</td></tr>
 <tr><td>Know Your Meme page views &ge; 50,000</td><td>+5</td></tr></table>
-<p>Windows: <b>today</b> = took off in the last ~36 hours; <b>this week</b> = active in the last 7 days; <b>this month</b> = active in the last 30 days.</p>
+<p>Windows: <b>today</b> = took off in the last ~36 hours; <b>this week</b> = active in the last 7 days; <b>this month</b> = active in the last 30 days.
+Engagement numbers come from the platforms and from Know Your Meme as they stood when we checked them; they can change or be wrong.</p>
+
+<h2 id="policy">Content and editorial policy</h2>
+<ul>
+<li><b>What we pick:</b> memes with public, checkable evidence of spread on more than one platform. We never invent memes, numbers or links, and every item links to the original post or the Know Your Meme entry that documents it.</li>
+<li><b>Credit:</b> every item names where it came from and who posted it (when known), and links to the original. Thumbnails are small (400&nbsp;px max, metadata stripped) and are shown to identify and comment on the meme, not to replace the original.</li>
+<li><b>Headlines:</b> headlines describe the meme and how people are reacting to it. They are not MemeStand's statements of fact about anyone. When a meme is about an allegation or controversy involving a real person, the headline says so and names the source (for example, &ldquo;per KYM&rdquo;); we don't repeat unverified claims as fact. Jokes and parody are labeled as jokes.</li>
+<li><b>What we leave out:</b> sexually explicit or nude content; hate speech and memes that demean people for race, ethnicity, national origin, religion, sex, sexual orientation, gender identity or disability; content that sexualizes, targets or identifies minors; graphic violence or gore; self-harm; harassment or doxxing of private individuals; and anything a rights holder asks us to remove. When in doubt, we leave it out.</li>
+<li><b>Corrections and removals:</b> if a headline is wrong or unfair, or you want your content removed, {contact_html()}. Copyright notices follow our <a href="dmca.html">DMCA policy</a>.</li>
+<li><b>Independence:</b> MemeStand is not affiliated with, endorsed by or sponsored by X, Reddit, Know Your Meme or anyone featured. Names of platforms and people are used only to identify sources and subjects. Nobody pays to be ranked.</li>
+</ul>
 <h2>Credits and takedowns</h2>
-<p>All memes belong to their creators. MemeStand shows small thumbnails that link to the original source. Takedown requests are honored.</p>
-</main>
-''' + footer("")
-    write("about.html", page)
+<p>All memes belong to their creators and owners. See our <a href="dmca.html">DMCA / takedown policy</a>, <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a>.</p>"""
+    prose_page("about.html", title, desc, "ABOUT MEMESTAND -- HOW THE RANKINGS WORK", body, kind="AboutPage")
+
+def build_dmca():
+    title = "DMCA and Takedown Policy | MemeStand"
+    desc = "How to ask MemeStand to remove a meme or image: DMCA notice requirements, counter-notices and our repeat-infringer policy."
+    agent = (f"<p>Our designated agent is registered with the U.S. Copyright Office and is listed in its "
+             f"<a href=\"https://dmca.copyright.gov/osp/\" rel=\"noopener\">DMCA Designated Agent Directory</a>.</p>"
+             if LEGAL["dmca_agent_registered"] else "")
+    body = f"""<p><i>Effective {LEGAL["effective"]}.</i></p>
+<p>MemeStand respects the rights of creators. The memes and images on this site belong to their owners. We show small, credited
+thumbnails that link to the original source so readers can see what is trending and go to the original. If you own something on
+MemeStand and want it removed, tell us and we will take it down. You don't need a formal notice for that; a simple request is
+enough. For a formal notice under the Digital Millennium Copyright Act (DMCA), follow the steps below.</p>
+
+<h2>Where to send a notice</h2>
+<p>{e(LEGAL["dmca_agent_name"])}: {contact_html("dmca")}.</p>
+{agent}
+
+<h2>What a DMCA notice must include</h2>
+<p>Under 17 U.S.C. &sect;&nbsp;512(c)(3), a notice must be in writing and include:</p>
+<ol>
+<li>A physical or electronic signature of the copyright owner or a person authorized to act for them.</li>
+<li>Identification of the copyrighted work claimed to be infringed (or a representative list, if several works are covered).</li>
+<li>Identification of the material on MemeStand that you say infringes, with enough detail for us to find it: the page URL and the item's headline or rank.</li>
+<li>Your contact information: name, mailing address, telephone number and, if available, email address.</li>
+<li>A statement that you have a good-faith belief that the use is not authorized by the copyright owner, its agent or the law.</li>
+<li>A statement that the information in the notice is accurate and, under penalty of perjury, that you are the owner or authorized to act for the owner.</li>
+</ol>
+<p>Please consider whether the use may be a fair use (for example, a small thumbnail used for ranking and commentary) before sending a notice.
+Under 17 U.S.C. &sect;&nbsp;512(f), anyone who knowingly makes a material misrepresentation in a notice or counter-notice may be liable for damages.</p>
+
+<h2>What we do</h2>
+<p>When we receive a valid notice (or a reasonable removal request from a creator), we remove or disable access to the item promptly, usually
+within a few days. Removal applies everywhere on the site, including past daily reports in the archive, the feed and our data files, and
+the item is added to a blocklist so it is not ranked again. Where we can, we tell the person who posted it.</p>
+
+<h2>Counter-notices</h2>
+<p>If material you posted or own was removed and you believe that was a mistake or misidentification, you may send a counter-notice under
+17 U.S.C. &sect;&nbsp;512(g)(3) to the same contact. It must include:</p>
+<ol>
+<li>Your physical or electronic signature.</li>
+<li>Identification of the material that was removed and where it appeared before removal.</li>
+<li>A statement under penalty of perjury that you have a good-faith belief the material was removed or disabled as a result of mistake or misidentification.</li>
+<li>Your name, address and telephone number, and a statement that you consent to the jurisdiction of the federal district court for the judicial district where your address is (or, if outside the United States, any judicial district in which MemeStand may be found), and that you will accept service of process from the person who sent the original notice or their agent.</li>
+</ol>
+<p>We will forward a valid counter-notice to the original complainant. If they do not tell us within 10 business days that they have filed a court
+action to stop the activity, we may restore the material within 10 to 14 business days after receiving the counter-notice. As a small aggregator,
+we may also choose not to restore it.</p>
+
+<h2>Repeat infringers</h2>
+<p>MemeStand does not accept user uploads; we choose and link memes ourselves. If a source account or website is the subject of repeated valid
+notices, we stop featuring its content. We will also end access for anyone who repeatedly infringes through any feature we may add later.</p>
+
+<h2>Other requests</h2>
+<p>For trademark, privacy, likeness or defamation concerns, or to correct a headline, {contact_html()}. We review every request.</p>"""
+    prose_page("dmca.html", title, desc, "DMCA AND TAKEDOWN POLICY", body)
+
+def build_terms():
+    title = "Terms of Use | MemeStand"
+    desc = "MemeStand's terms of use: what the site is, who owns the memes, disclaimers and limits of liability."
+    body = f"""<p><i>Effective {LEGAL["effective"]}.</i></p>
+<p>These terms apply to your use of memestand.com (&ldquo;MemeStand&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;). By using the site you agree to them.
+If you don't agree, please don't use the site.</p>
+
+<h2>1. What MemeStand is</h2>
+<p>MemeStand is a free, static website that ranks popular internet memes and links to them on their original platforms. Rankings, scores, headlines
+and notes are our editorial judgment and commentary. Headlines describe memes and online reactions; they are not statements of fact about the
+people in them. Engagement numbers come from third parties as they stood when checked and may be incomplete, out of date or wrong.</p>
+
+<h2>2. Who owns what</h2>
+<ul>
+<li><b>Memes and images</b> belong to their creators and owners. We show small, credited thumbnails and short quotes that link to the
+original, for identification, ranking and commentary. Using MemeStand gives you no rights in any third-party content. If you want to reuse a
+meme, get permission from its owner.</li>
+<li><b>Our material.</b> The site design, the selection and arrangement of the rankings, our headlines, notes and code are &copy; {copyright_years()} MemeStand.
+You may link to any page and quote short excerpts with credit and a link.</li>
+<li><b>Trademarks.</b> X, Reddit, Know Your Meme and other names belong to their owners and are used only to identify sources. MemeStand is not
+affiliated with, endorsed by or sponsored by any of them or by anyone featured on the site, and a meme's appearance here is not an
+endorsement by us or by them.</li>
+</ul>
+
+<h2>3. Takedowns</h2>
+<p>If you own something on MemeStand and want it removed, see our <a href="dmca.html">DMCA and takedown policy</a>.</p>
+
+<h2>4. Third-party sites and content</h2>
+<p>MemeStand links to, and may display images from, sites we don't control, such as X, Reddit and Know Your Meme. Their content, terms and
+privacy practices are their own, and some memes contain language or themes that some readers find offensive. Follow outbound links at your own discretion.</p>
+
+<h2>5. Acceptable use</h2>
+<p>Please don't attack, overload or try to break the site, or use it to break the law. Automated access is fine within <a href="robots.txt">robots.txt</a>.</p>
+
+<h2>6. Disclaimer</h2>
+<p>THE SITE AND EVERYTHING ON IT ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo;, WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING WARRANTIES OF ACCURACY, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. We don't promise the site will be
+available, accurate, complete or error-free.</p>
+
+<h2>7. Limitation of liability</h2>
+<p>TO THE FULLEST EXTENT PERMITTED BY LAW, MEMESTAND AND ITS OPERATOR WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR
+PUNITIVE DAMAGES, OR ANY LOSS OF DATA, PROFITS OR GOODWILL, ARISING FROM YOUR USE OF THE SITE OR THIRD-PARTY CONTENT OR SITES. OUR TOTAL LIABILITY FOR
+ANY CLAIM RELATING TO THE SITE IS LIMITED TO US$100. Some jurisdictions don't allow some of these limits, so they may not apply to you.</p>
+
+<h2>8. Governing law</h2>
+<p>These terms are governed by the laws of the State of {e(LEGAL["governing_law"])} and applicable U.S. federal law, without regard to conflict-of-law rules.</p>
+
+<h2>9. Changes</h2>
+<p>We may update these terms. The effective date above shows the latest version; continuing to use the site means you accept the update.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about these terms: {contact_html()}.</p>"""
+    prose_page("terms.html", title, desc, "TERMS OF USE", body)
+
+def build_privacy():
+    title = "Privacy Policy | MemeStand"
+    desc = "MemeStand's privacy policy: no cookies, no analytics, no accounts. What our host GitHub Pages logs, and third-party links."
+    body = f"""<p><i>Effective {LEGAL["effective"]}.</i></p>
+<p>Short version: MemeStand has no accounts, no sign-up forms, no comments, no ads, no cookies, no analytics and no tracking scripts.
+We don't collect, sell or share personal information.</p>
+
+<h2>What our host collects</h2>
+<p>MemeStand is a static site hosted on <a href="https://pages.github.com/" rel="noopener">GitHub Pages</a>. Like any web server, GitHub may log technical
+information about each visit, such as your IP address, browser user agent and the page requested, for security and to run the service. GitHub handles
+that data under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.
+We don't receive or use visitor logs.</p>
+
+<h2>Cookies and scripts</h2>
+<p>We don't set cookies or use analytics, advertising or social-media tracking. Our pages run no JavaScript. The only script tags are
+structured data (JSON-LD) that search engines read and browsers don't execute.</p>
+
+<h2>Third-party content and links</h2>
+<p>Thumbnails are served from memestand.com. If an item shows an image directly from its source platform (for example X, Reddit or
+Know Your Meme), your browser fetches it from that platform, which may then see your IP address and browser details; we tell browsers
+not to send the page address with those requests. When you click a link to another site, that site's own privacy policy applies.</p>
+
+<h2>Contacting us</h2>
+<p>If you contact us, for example through GitHub Issues or by email, we use what you send only to answer and act on your request (for
+example, a takedown). GitHub Issues are public and covered by GitHub's privacy statement, so don't put private information in an issue.</p>
+
+<h2>Children</h2>
+<p>MemeStand is a general-audience site and is not directed to children under 13. We don't knowingly collect information from anyone.</p>
+
+<h2>Your rights</h2>
+<p>Because we don't collect or keep personal information about visitors, there is normally nothing for us to access, correct or delete.
+California and other residents can still contact us with privacy questions, and we will respond. We do not sell or share personal information.</p>
+
+<h2>Changes and contact</h2>
+<p>If our practices change (for example, if we add analytics), we will update this page and its effective date first. Questions: {contact_html()}.</p>"""
+    prose_page("privacy.html", title, desc, "PRIVACY POLICY", body)
 
 def build_feed(snaps):
     entries = []
@@ -381,10 +619,13 @@ def build_feed(snaps):
         dd, dt = datetime.date.fromisoformat(day), parse_dt(d)
         t = d["daily"][0]
         u = f"{SITE}/archive/{day}.html"
-        lis = "".join(f"<li>{e(m['title'])} (<a href=\"{e(m['source_url'])}\">{e(m['source_name'])}</a>)</li>" for m in d["daily"])
-        img = abs_img(t)
+        lis = "".join(f"<li>{e(m['title'])}</li>" if m.get("removed") else
+                      f"<li>{e(m['title'])} (<a href=\"{e(m['source_url'])}\">{e(m['source_name'])}</a>; credit: {e(m.get('credit') or m['source_name'])})</li>" for m in d["daily"])
+        img = None if t.get("removed") else abs_img(t)
         imgh = f'<p><img src="{e(img)}" alt="{e(alt(t, "today"))}"></p>' if img else ""
-        content = f"{imgh}<p>#1 meme of {fmt_long(dd)}: <a href=\"{e(t['source_url'])}\">{e(t['title'])}</a></p><p>Top 10 memes today:</p><ol>{lis}</ol>"
+        first = e(t['title']) if t.get("removed") else f"<a href=\"{e(t['source_url'])}\">{e(t['title'])}</a>"
+        content = (f"{imgh}<p>#1 meme of {fmt_long(dd)}: {first}</p><p>Top 10 memes today:</p><ol>{lis}</ol>"
+                   f"<p>Memes &copy; their respective owners; MemeStand is not affiliated with X, Reddit or Know Your Meme.</p>")
         entries.append(f'''<entry>
 <title>{e(f"Top meme of {fmt_long(dd)}: {tc(t['title'])}")}</title>
 <link href="{u}"/>
@@ -411,7 +652,8 @@ def build_feed(snaps):
 
 def build_sitemap(snaps):
     urls = [("", ISO, "daily", "1.0")] + [(f"{v['slug']}/", ISO, "daily", "0.9") for v in PERIODS.values()] + \
-           [("archive/", ISO, "daily", "0.6"), ("about.html", None, "monthly", "0.3")]
+           [("archive/", ISO, "daily", "0.6"), ("about.html", None, "monthly", "0.3")] + \
+           [(f, None, "yearly", "0.1") for f in ("terms.html", "privacy.html", "dmca.html")]
     urls += [(f"archive/{day}.html", parse_dt(d).isoformat(timespec="seconds"), "never", "0.5") for day, d in reversed(snaps)]
     body = "".join(f"<url><loc>{SITE}/{u}</loc>{f'<lastmod>{lm}</lastmod>' if lm else ''}<changefreq>{cf}</changefreq><priority>{pr}</priority></url>\n"
                    for u, lm, cf, pr in urls)
@@ -434,11 +676,13 @@ Sitemap: {SITE}/sitemap.xml
 
 def build_llms():
     def lst(p):
-        return "\n".join(f"{m['rank']}. {tc(m['title'])} — source: {m['source_url']}" + (f" — evidence: {m['notes']}" if m.get("notes") else "")
+        return "\n".join(f"{m['rank']}. {REMOVED}" if m.get("removed") else
+                         f"{m['rank']}. {tc(m['title'])} — source: {m['source_url']} — credit: {m.get('credit') or m['source_name']}"
+                         + (f" — evidence: {m['notes']}" if m.get("notes") else "")
                          for m in data[p])
     write("llms.txt", f"""# MemeStand
 
-> MemeStand (https://memestand.com) is a Drudge-style daily meme report: the internet's top 10 memes today, the top 10 trending memes this week, and the best memes of the month (last 30 days), ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, Reddit top feeds (r/memes, r/dankmemes) and Know Your Meme. Updated every morning (Pacific Time). Every listed meme links to its original source.
+> MemeStand (https://memestand.com) is an independent, headline-style daily meme report: the internet's top 10 memes today, the top 10 trending memes this week, and the best memes of the month (last 30 days), ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, Reddit top feeds (r/memes, r/dankmemes) and Know Your Meme. Updated every morning (Pacific Time). Every listed meme links to its original source.
 
 Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 
@@ -450,7 +694,8 @@ Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 - [Best memes of the month]({SITE}/best-memes-this-month/): top 10 memes of the last 30 days
 - [Daily meme report archive]({SITE}/archive/): one dated page per day, e.g. {SITE}/archive/{TODAY}.html
 - [Atom feed]({SITE}/feed.xml): the #1 meme of each day
-- [About and ranking method]({SITE}/about.html)
+- [About, ranking method and content policy]({SITE}/about.html)
+- [Terms of Use]({SITE}/terms.html), [Privacy Policy]({SITE}/privacy.html), [DMCA / takedowns]({SITE}/dmca.html)
 
 ## Top 10 memes today ({fmt_long(NOW)})
 
@@ -467,7 +712,9 @@ Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 ## Notes for AI assistants
 
 - Cite MemeStand as "MemeStand (memestand.com) daily meme report" and link the dated archive page for a specific day.
-- Rankings change daily; the archive pages are permanent snapshots.
+- Rankings change daily; the archive pages are permanent snapshots (items removed after a takedown request are marked as removed).
+- Headlines describe memes and online reactions; they are not MemeStand's statements of fact about the people involved. Where a headline mentions a claim about a person, it is attributed to its source.
+- The memes themselves belong to their creators and owners. MemeStand is independent and not affiliated with, endorsed by or sponsored by X, Reddit, Know Your Meme or any person or brand mentioned.
 """)
 
 # ---------------------------------------------------------------- main
@@ -478,6 +725,9 @@ for i, (day, d) in enumerate(snaps):
     build_archive_day(day, d, snaps[i - 1][0] if i else None, snaps[i + 1][0] if i + 1 < len(snaps) else None)
 build_archive_index(snaps)
 build_about()
+build_dmca()
+build_terms()
+build_privacy()
 build_feed(snaps)
 build_sitemap(snaps)
 build_robots()

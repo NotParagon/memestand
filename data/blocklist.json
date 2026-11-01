@@ -1,0 +1,4 @@
+{
+  "_doc": "Takedown / DMCA blocklist. Honored by tools/rank.py (never ranked, dropped from candidates.json, thumbnail deleted) and build.py (replaced by a removal notice on every page incl. archives; scrubbed from data/archive/*.json). Match on any of: id, url / urls (source, image or also-link URL; scheme, www and query ignored), title_contains (case-insensitive). Never remove an entry unless a valid counter-notice restored the item (see /dmca.html).",
+  "entries": []
+}

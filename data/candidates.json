@@ -37,7 +37,7 @@
         "daily",
         "weekly"
       ],
-      "title": "ALTMAN SAYS YOUR PC'S RAM IS WASTED... INTERNET HIDES ITS DIMMS",
+      "title": "ALTMAN: DRAM IN HOME PCS IS 'QUITE TERRIBLE' ALLOCATION... INTERNET HIDES ITS DIMMS",
       "source_url": "https://www.reddit.com/r/memes/comments/1xky93a/kiss_your_ram/",
       "source_name": "Reddit r/memes",
       "image_url": "https://i.redd.it/ccsip41btyyh1.png",
@@ -64,7 +64,7 @@
         ],
         "x_news": true
       },
-      "notes": "#1 on r/memes top-today; RAM memes hold 7 of r/memes' top 10 today and #1 on r/dankmemes. X News trending story; @dengeplus clip 755K views. Sparked by Sam Altman on the Cheeky Pint podcast (Oct 29)."
+      "notes": "#1 on r/memes top-today; RAM memes hold 7 of r/memes' top 10 today and #1 on r/dankmemes. X News trending story; @dengeplus clip 755K views. Sparked by Sam Altman's remark on the Cheeky Pint podcast (Oct 29, per the episode transcript) that DRAM sitting in personal computers is a 'quite terrible' use of limited supply."
     },
     {
       "id": "regretamine",
@@ -73,7 +73,7 @@
         "weekly",
         "monthly"
       ],
-      "title": "ELON PITCHES MIRACLE DRUG 'REGRETAMINE'... REPLIES RUN WILD",
+      "title": "ELON MUSK JOKES ABOUT A DRUG CALLED 'REGRETAMINE'... REPLIES RUN WILD",
       "source_url": "https://x.com/elonmusk/status/2116875604889112772",
       "source_name": "X / @elonmusk",
       "image_url": null,
@@ -113,7 +113,7 @@
       "periods": [
         "daily"
       ],
-      "title": "'THE MYTH OF CONSENSUAL PC BUILDING': NOBODY ASKED ALTMAN",
+      "title": "'THE MYTH OF CONSENSUAL PC BUILDING': REDDIT ANSWERS ALTMAN'S RAM REMARK",
       "source_url": "https://www.reddit.com/r/memes/comments/1xl1nyn/yall_forgot_to_ask_him/",
       "source_name": "Reddit r/memes",
       "image_url": "https://i.redd.it/nkz6vlhytzyh1.png",
@@ -176,7 +176,7 @@
       "periods": [
         "daily"
       ],
-      "title": "TEXANS ROAST KEN PAXTON: 'HE EATS SALSA MADE IN NEW YORK CITY'",
+      "title": "X USERS JOKE THAT KEN PAXTON 'EATS SALSA MADE IN NEW YORK CITY'",
       "source_url": "https://x.com/leftcoastbabe/status/2116590353973395609",
       "source_name": "X / @leftcoastbabe",
       "image_url": null,
@@ -189,7 +189,7 @@
         ],
         "x_news": true
       },
-      "notes": "Top post 2,750 likes / 62.6K views (X API), copied verbatim by many accounts; X News story; Adam Kinzinger joined in."
+      "notes": "Joke post riffing on the old 'salsa made in New York City' ad line; not a factual claim. Top post 2,750 likes / 62.6K views (X API), copied verbatim by many accounts; X News story."
     },
     {
       "id": "halloween-still-dressed",
@@ -210,7 +210,11 @@
           "Reddit"
         ]
       },
-      "notes": "#5 on r/dankmemes top-today."
+      "notes": "#5 on r/dankmemes top-today.",
+      "flags": [
+        "demeaning"
+      ],
+      "flag_note": "Punchline is gender-identity 'panic' humor; excluded under the content policy (demeaning protected characteristics). Remove the flag only if Roger decides otherwise."
     },
     {
       "id": "bunker-bulking",
@@ -270,7 +274,7 @@
         "weekly",
         "monthly"
       ],
-      "title": "H3'S ETHAN KLEIN AFFAIR SCANDAL BECOMES A MEME FACTORY",
+      "title": "H3'S ETHAN KLEIN CHEATING ALLEGATIONS SPAWN A MEME FACTORY, PER KYM",
       "source_url": "https://knowyourmeme.com/memes/events/ethan-klein-cheating-controversy-h3-affair-scandal",
       "source_name": "Know Your Meme",
       "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/665/Ethan_Klein_Cheating_Controversy_banner.jpg",
@@ -295,8 +299,9 @@
         "kym": true,
         "kym_editorial": true
       },
-      "notes": "KYM cites up to 181K likes / 6.4M views; @PopBase 43,180 likes / 2.2M views (X API); spun off 'Kleinification' AI edits. KYM Meme of the Month nominee.",
-      "first_seen_basis": "KYM entry published date"
+      "notes": "Per KYM, the memes followed Hila Klein's Instagram statements accusing Ethan Klein of an affair (Oct 22-23). KYM cites up to 181K likes / 6.4M views; @PopBase 43,180 likes / 2.2M views (X API); spun off 'Kleinification' AI edits. KYM Meme of the Month nominee.",
+      "first_seen_basis": "KYM entry published date",
+      "headline_reviewed": true
     },
     {
       "id": "skull-cap",
@@ -340,7 +345,9 @@
         "kym_editorial": true
       },
       "notes": "KYM cites 7M views; KYM Weekly Meme Roundup (Oct 30).",
-      "first_seen_basis": "KYM entry published date"
+      "first_seen_basis": "KYM entry published date",
+      "flag_note": "Subject is an adult (b. 1995, per KYM) with a disability; some memes use AI edits of his likeness. Kept with a neutral headline; drop it if the trend turns to mockery.",
+      "headline_reviewed": true
     },
     {
       "id": "jiren-dancing",

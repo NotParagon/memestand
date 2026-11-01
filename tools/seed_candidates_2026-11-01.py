@@ -2,7 +2,10 @@
 Every number below was read on 2026-11-01 from the X API (public_metrics),
 Know Your Meme entry pages (page views + view/like counts KYM cites), or
 Reddit top-of-period RSS feeds (feed position; Reddit hides vote counts
-from anonymous RSS). Future refreshes edit candidates.json directly."""
+from anonymous RSS). Future refreshes edit candidates.json directly.
+
+HISTORICAL ONLY, DO NOT RERUN: it would overwrite candidates.json and bring back pre-legal-review headlines
+(the Ethan Klein, Altman, Paxton and Regretamine titles were rewritten on 2026-11-01; see UPDATE.md "Legal rules")."""
 import json, pathlib
 R = "https://www.reddit.com"
 KYM = "https://knowyourmeme.com"
