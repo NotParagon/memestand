@@ -1,0 +1,460 @@
+{
+  "updated": "2026-11-01T14:50-08:00",
+  "daily": [
+    {
+      "rank": 1,
+      "title": "MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
+      "image": "images/culkin-thousand-yard.jpg",
+      "image_url": "https://pbs.twimg.com/media/HWBNbcaWUAA6ucs.jpg",
+      "card_text": null,
+      "source_url": "https://x.com/DiscussingFilm/status/2116776966141415441",
+      "source_name": "X / @DiscussingFilm",
+      "also": [
+        {
+          "name": "Know Your Meme",
+          "url": "https://knowyourmeme.com/memes/thousand-yard-stare"
+        }
+      ],
+      "first_seen": "2026-11-01",
+      "score": 80.8,
+      "notes": "316,029 likes / 11,447 reposts / 12.1M views on the DiscussingFilm post (X API). Reposted widely (@PicturesFoIder, @BuzzingPop)."
+    },
+    {
+      "rank": 2,
+      "title": "ALTMAN SAYS YOUR PC'S RAM IS WASTED... INTERNET HIDES ITS DIMMS",
+      "image": "images/altman-ram.jpg",
+      "image_url": "https://i.redd.it/ccsip41btyyh1.png",
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/memes/comments/1xky93a/kiss_your_ram/",
+      "source_name": "Reddit r/memes",
+      "also": [
+        {
+          "name": "X trending story",
+          "url": "https://x.com/i/trending/2116915793342398671"
+        },
+        {
+          "name": "r/dankmemes #1",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xl1v6m/point_out_to_me_the_dimm_sockets_where_they_are/"
+        }
+      ],
+      "first_seen": "2026-10-30",
+      "score": 72,
+      "notes": "#1 on r/memes top-today; RAM memes hold 7 of r/memes' top 10 today and #1 on r/dankmemes. X News trending story; @dengeplus clip 755K views. Sparked by Sam Altman on the Cheeky Pint podcast (Oct 29)."
+    },
+    {
+      "rank": 3,
+      "title": "ELON PITCHES MIRACLE DRUG 'REGRETAMINE'... REPLIES RUN WILD",
+      "image": null,
+      "image_url": null,
+      "card_text": "“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”",
+      "source_url": "https://x.com/elonmusk/status/2116875604889112772",
+      "source_name": "X / @elonmusk",
+      "also": [],
+      "first_seen": "2026-11-01",
+      "score": 71.8,
+      "notes": "63,844 likes / 9,005 replies / 4.76M views (X API). X News story on the spin-off memes."
+    },
+    {
+      "rank": 4,
+      "title": "'SHE ONLY WANTS ME FOR MY PAKISTANI CITIZENSHIP' -- COPYCATS FLOOD TIMELINE",
+      "image": null,
+      "image_url": null,
+      "card_text": "“she only wants me for my pakistani citizenship”",
+      "source_url": "https://x.com/vibeistani/status/2116644824703279122",
+      "source_name": "X / @vibeistani",
+      "also": [],
+      "first_seen": "2026-10-31",
+      "score": 64.8,
+      "notes": "19,740 likes / 3.0M views (X API); copied with Syrian, Indian, Iranian variants."
+    },
+    {
+      "rank": 5,
+      "title": "'THE MYTH OF CONSENSUAL PC BUILDING': NOBODY ASKED ALTMAN",
+      "image": "images/consensual-pc-building.jpg",
+      "image_url": "https://i.redd.it/nkz6vlhytzyh1.png",
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/memes/comments/1xl1nyn/yall_forgot_to_ask_him/",
+      "source_name": "Reddit r/memes",
+      "also": [],
+      "first_seen": "2026-11-01",
+      "score": 60,
+      "notes": "#2 on r/memes top-today."
+    },
+    {
+      "rank": 6,
+      "title": "'DO YOU HAVE A PC AT HOME?' 'YES, WITH 32GB' -- OVER THE CLIFF SHE GOES",
+      "image": "images/heidi-32gb.jpg",
+      "image_url": "https://i.redd.it/ia2ewdo4vzyh1.jpeg",
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/memes/comments/1xl1sdj/dont_be_selfish/",
+      "source_name": "Reddit r/memes",
+      "also": [],
+      "first_seen": "2026-11-01",
+      "score": 58,
+      "notes": "#3 on r/memes top-today."
+    },
+    {
+      "rank": 7,
+      "title": "NO NUT NOVEMBER, DAY ONE: 'I CAN'T DO IT, GENTS'",
+      "image": "images/nnn-day-one.jpg",
+      "image_url": "https://preview.redd.it/s4m092tkqwyh1.gif?width=320&crop=smart&s=ca60153d4db7898651ef91e5c6ca187e61e54992",
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xkrbio/i_cant_do_it_gents_have_fun_getting_superpowers/",
+      "source_name": "Reddit r/dankmemes",
+      "also": [],
+      "first_seen": "2026-11-01",
+      "score": 56,
+      "notes": "#3 on r/dankmemes top-today; NNN memes flooding Nov 1."
+    },
+    {
+      "rank": 8,
+      "title": "TEXANS ROAST KEN PAXTON: 'HE EATS SALSA MADE IN NEW YORK CITY'",
+      "image": null,
+      "image_url": null,
+      "card_text": "“Ken Paxton eats salsa made in New York City.”",
+      "source_url": "https://x.com/leftcoastbabe/status/2116590353973395609",
+      "source_name": "X / @leftcoastbabe",
+      "also": [],
+      "first_seen": "2026-10-30",
+      "score": 53.0,
+      "notes": "Top post 2,750 likes / 62.6K views (X API), copied verbatim by many accounts; X News story; Adam Kinzinger joined in."
+    },
+    {
+      "rank": 9,
+      "title": "THE ULTIMATE TRICK OR TREAT: SHE'S STILL IN COSTUME",
+      "image": "images/halloween-still-dressed.jpg",
+      "image_url": "https://i.redd.it/iba6y3xlizyh1.jpeg",
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xl0j1p/the_ultimate_trick_or_treat/",
+      "source_name": "Reddit r/dankmemes",
+      "also": [],
+      "first_seen": "2026-11-01",
+      "score": 52,
+      "notes": "#5 on r/dankmemes top-today."
+    },
+    {
+      "rank": 10,
+      "title": "BUNKER SURVIVOR ATE ALL THE FOOD: 'I'M CURRENTLY BULKING'",
+      "image": "images/bunker-bulking.jpg",
+      "image_url": "https://i.redd.it/0gbiamkc21zh1.jpeg",
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/memes/comments/1xl7eex/its_already_true/",
+      "source_name": "Reddit r/memes",
+      "also": [],
+      "first_seen": "2026-11-01",
+      "score": 46,
+      "notes": "#9 on r/memes top-today."
+    }
+  ],
+  "weekly": [
+    {
+      "rank": 1,
+      "title": "H3'S ETHAN KLEIN AFFAIR SCANDAL BECOMES A MEME FACTORY",
+      "image": "images/ethan-klein.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/665/Ethan_Klein_Cheating_Controversy_banner.jpg",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/events/ethan-klein-cheating-controversy-h3-affair-scandal",
+      "source_name": "Know Your Meme",
+      "also": [
+        {
+          "name": "X / @PopBase",
+          "url": "https://x.com/PopBase/status/2114415796890038370"
+        },
+        {
+          "name": "KYM: Kleinification",
+          "url": "https://knowyourmeme.com/memes/ethan-klein-ai-edits-kleinification"
+        }
+      ],
+      "first_seen": "2026-10-23",
+      "score": 86.1,
+      "notes": "KYM cites up to 181K likes / 6.4M views; @PopBase 43,180 likes / 2.2M views (X API); spun off 'Kleinification' AI edits. KYM Meme of the Month nominee."
+    },
+    {
+      "rank": 2,
+      "title": "'*PAWS AT YOU*': AI SNOW LEOPARD 'SNOWMEI' BEGS ITS WAY ACROSS THE INTERNET",
+      "image": "images/snow-leopard.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/688/Screenshot_2026-10-29_132139.png",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/snow-leopard-paws-at-you",
+      "source_name": "Know Your Meme",
+      "also": [
+        {
+          "name": "X / @dogwife333",
+          "url": "https://x.com/dogwife333/status/2114198070132961395"
+        }
+      ],
+      "first_seen": "2026-10-24",
+      "score": 84.5,
+      "notes": "KYM cites posts with 1.4M views and 151K likes; Epic Games Store joined (950K views). @dogwife333 23,665 likes / 323K views (X API). Two X News stories, KYM editorial, KYM 'Top Entries This Month'."
+    },
+    {
+      "rank": 3,
+      "title": "MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
+      "image": "images/culkin-thousand-yard.jpg",
+      "image_url": "https://pbs.twimg.com/media/HWBNbcaWUAA6ucs.jpg",
+      "card_text": null,
+      "source_url": "https://x.com/DiscussingFilm/status/2116776966141415441",
+      "source_name": "X / @DiscussingFilm",
+      "also": [
+        {
+          "name": "Know Your Meme",
+          "url": "https://knowyourmeme.com/memes/thousand-yard-stare"
+        }
+      ],
+      "first_seen": "2026-11-01",
+      "score": 80.8,
+      "notes": "316,029 likes / 11,447 reposts / 12.1M views on the DiscussingFilm post (X API). Reposted widely (@PicturesFoIder, @BuzzingPop)."
+    },
+    {
+      "rank": 4,
+      "title": "TIKTOK'S SKULL CAP GLOW-UP TREND HITS 12.8M VIEWS",
+      "image": "images/skull-cap.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/678/Screenshot_2026-10-27_123503.png",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/skull-cap-trend",
+      "source_name": "Know Your Meme",
+      "also": [],
+      "first_seen": "2026-10-27",
+      "score": 79.1,
+      "notes": "KYM cites 286K likes / 12.8M views; KYM Weekly Meme Roundup (Oct 30)."
+    },
+    {
+      "rank": 5,
+      "title": "'MINI PRODUCER' JAY THOMAS MANUEL TAKES OVER FEEDS",
+      "image": "images/mini-producer.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/686/miniprodcover.jpg",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel",
+      "source_name": "Know Your Meme",
+      "also": [],
+      "first_seen": "2026-10-28",
+      "score": 76.5,
+      "notes": "KYM cites 7M views; KYM Weekly Meme Roundup (Oct 30)."
+    },
+    {
+      "rank": 6,
+      "title": "ALTMAN SAYS YOUR PC'S RAM IS WASTED... INTERNET HIDES ITS DIMMS",
+      "image": "images/altman-ram.jpg",
+      "image_url": "https://i.redd.it/ccsip41btyyh1.png",
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/memes/comments/1xky93a/kiss_your_ram/",
+      "source_name": "Reddit r/memes",
+      "also": [
+        {
+          "name": "X trending story",
+          "url": "https://x.com/i/trending/2116915793342398671"
+        },
+        {
+          "name": "r/dankmemes #1",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xl1v6m/point_out_to_me_the_dimm_sockets_where_they_are/"
+        }
+      ],
+      "first_seen": "2026-10-30",
+      "score": 72,
+      "notes": "#1 on r/memes top-today; RAM memes hold 7 of r/memes' top 10 today and #1 on r/dankmemes. X News trending story; @dengeplus clip 755K views. Sparked by Sam Altman on the Cheeky Pint podcast (Oct 29)."
+    },
+    {
+      "rank": 7,
+      "title": "ELON PITCHES MIRACLE DRUG 'REGRETAMINE'... REPLIES RUN WILD",
+      "image": null,
+      "image_url": null,
+      "card_text": "“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”",
+      "source_url": "https://x.com/elonmusk/status/2116875604889112772",
+      "source_name": "X / @elonmusk",
+      "also": [],
+      "first_seen": "2026-11-01",
+      "score": 71.8,
+      "notes": "63,844 likes / 9,005 replies / 4.76M views (X API). X News story on the spin-off memes."
+    },
+    {
+      "rank": 8,
+      "title": "JIREN DANCES TO 'I'M SO IN LOVE WITH YOU'",
+      "image": "images/jiren-dancing.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/670/coverjiren.jpg",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/im-so-in-love-with-you-dragon-ball-dance-jiren-dancing",
+      "source_name": "Know Your Meme",
+      "also": [],
+      "first_seen": "2026-10-26",
+      "score": 71.2,
+      "notes": "KYM cites 2.1M views; KYM Weekly Meme Roundup (Oct 30)."
+    },
+    {
+      "rank": 9,
+      "title": "'SHE ONLY WANTS ME FOR MY PAKISTANI CITIZENSHIP' -- COPYCATS FLOOD TIMELINE",
+      "image": null,
+      "image_url": null,
+      "card_text": "“she only wants me for my pakistani citizenship”",
+      "source_url": "https://x.com/vibeistani/status/2116644824703279122",
+      "source_name": "X / @vibeistani",
+      "also": [],
+      "first_seen": "2026-10-31",
+      "score": 64.8,
+      "notes": "19,740 likes / 3.0M views (X API); copied with Syrian, Indian, Iranian variants."
+    },
+    {
+      "rank": 10,
+      "title": "ANAKIN SKYWALKER BECOMES THE FACE OF GEN Z MALE RAGE",
+      "image": "images/anakin-genz.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/695/Political_Prequel_Memes_banner.jpg",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/anakin-skywalker-gen-z-male-rage-memes",
+      "source_name": "Know Your Meme",
+      "also": [],
+      "first_seen": "2026-10-30",
+      "score": 64.7,
+      "notes": "KYM cites 937K views / 24K likes."
+    }
+  ],
+  "monthly": [
+    {
+      "rank": 1,
+      "title": "AI RUMPELSTILTSKIN 'TIP TOEIN' IN MY JORDANS'",
+      "image": "images/tip-toein.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/575/tiptoeing.jpg",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans",
+      "source_name": "Know Your Meme",
+      "also": [],
+      "first_seen": "2026-10-06",
+      "score": 87.9,
+      "notes": "KYM cites 9.8M views / 32K likes; 64.8K KYM page views; October Meme of the Month nominee."
+    },
+    {
+      "rank": 2,
+      "title": "H3'S ETHAN KLEIN AFFAIR SCANDAL BECOMES A MEME FACTORY",
+      "image": "images/ethan-klein.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/665/Ethan_Klein_Cheating_Controversy_banner.jpg",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/events/ethan-klein-cheating-controversy-h3-affair-scandal",
+      "source_name": "Know Your Meme",
+      "also": [
+        {
+          "name": "X / @PopBase",
+          "url": "https://x.com/PopBase/status/2114415796890038370"
+        },
+        {
+          "name": "KYM: Kleinification",
+          "url": "https://knowyourmeme.com/memes/ethan-klein-ai-edits-kleinification"
+        }
+      ],
+      "first_seen": "2026-10-23",
+      "score": 86.1,
+      "notes": "KYM cites up to 181K likes / 6.4M views; @PopBase 43,180 likes / 2.2M views (X API); spun off 'Kleinification' AI edits. KYM Meme of the Month nominee."
+    },
+    {
+      "rank": 3,
+      "title": "'*PAWS AT YOU*': AI SNOW LEOPARD 'SNOWMEI' BEGS ITS WAY ACROSS THE INTERNET",
+      "image": "images/snow-leopard.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/688/Screenshot_2026-10-29_132139.png",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/snow-leopard-paws-at-you",
+      "source_name": "Know Your Meme",
+      "also": [
+        {
+          "name": "X / @dogwife333",
+          "url": "https://x.com/dogwife333/status/2114198070132961395"
+        }
+      ],
+      "first_seen": "2026-10-24",
+      "score": 84.5,
+      "notes": "KYM cites posts with 1.4M views and 151K likes; Epic Games Store joined (950K views). @dogwife333 23,665 likes / 323K views (X API). Two X News stories, KYM editorial, KYM 'Top Entries This Month'."
+    },
+    {
+      "rank": 4,
+      "title": "'MALFOID': FEMALE DRACO MALFOY ART TAKES OVER",
+      "image": "images/malfoid.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/554/malfoidcover.jpg",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/malfoid-female-draco-malfoy",
+      "source_name": "Know Your Meme",
+      "also": [],
+      "first_seen": "2026-09-30",
+      "score": 82.5,
+      "notes": "Most-viewed new KYM entry of October (169K page views); KYM cites 89K likes; Meme of the Month nominee; X News story."
+    },
+    {
+      "rank": 5,
+      "title": "MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
+      "image": "images/culkin-thousand-yard.jpg",
+      "image_url": "https://pbs.twimg.com/media/HWBNbcaWUAA6ucs.jpg",
+      "card_text": null,
+      "source_url": "https://x.com/DiscussingFilm/status/2116776966141415441",
+      "source_name": "X / @DiscussingFilm",
+      "also": [
+        {
+          "name": "Know Your Meme",
+          "url": "https://knowyourmeme.com/memes/thousand-yard-stare"
+        }
+      ],
+      "first_seen": "2026-11-01",
+      "score": 80.8,
+      "notes": "316,029 likes / 11,447 reposts / 12.1M views on the DiscussingFilm post (X API). Reposted widely (@PicturesFoIder, @BuzzingPop)."
+    },
+    {
+      "rank": 6,
+      "title": "'WHILE THEY ARE OUT PARTYING...' -- 35M VIEWS",
+      "image": "images/out-partying.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/655/wtopcover.jpg",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/while-they-are-out-partying",
+      "source_name": "Know Your Meme",
+      "also": [],
+      "first_seen": "2026-10-21",
+      "score": 80.4,
+      "notes": "KYM cites 35M views / 160K likes."
+    },
+    {
+      "rank": 7,
+      "title": "TIKTOK'S SKULL CAP GLOW-UP TREND HITS 12.8M VIEWS",
+      "image": "images/skull-cap.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/678/Screenshot_2026-10-27_123503.png",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/skull-cap-trend",
+      "source_name": "Know Your Meme",
+      "also": [],
+      "first_seen": "2026-10-27",
+      "score": 79.1,
+      "notes": "KYM cites 286K likes / 12.8M views; KYM Weekly Meme Roundup (Oct 30)."
+    },
+    {
+      "rank": 8,
+      "title": "'I'M SO SORRY' TIKTOK SLIDESHOW TREND -- 25.6M VIEWS",
+      "image": "images/im-so-sorry.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/663/sosorrycover.jpg",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/im-so-sorry-tiktok-trend",
+      "source_name": "Know Your Meme",
+      "also": [],
+      "first_seen": "2026-10-22",
+      "score": 79.1,
+      "notes": "KYM cites 25.6M views."
+    },
+    {
+      "rank": 9,
+      "title": "'MINI PRODUCER' JAY THOMAS MANUEL TAKES OVER FEEDS",
+      "image": "images/mini-producer.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/686/miniprodcover.jpg",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel",
+      "source_name": "Know Your Meme",
+      "also": [],
+      "first_seen": "2026-10-28",
+      "score": 76.5,
+      "notes": "KYM cites 7M views; KYM Weekly Meme Roundup (Oct 30)."
+    },
+    {
+      "rank": 10,
+      "title": "'YOU'RE BLATANTLY JUST NOT ME NAN' -- 12M VIEWS",
+      "image": "images/not-me-nan.jpg",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/563/bjnmn.jpg",
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/youre-blatantly-just-not-me-nan",
+      "source_name": "Know Your Meme",
+      "also": [],
+      "first_seen": "2026-10-02",
+      "score": 75.8,
+      "notes": "KYM cites 12M views; 26K KYM page views."
+    }
+  ]
+}
