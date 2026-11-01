@@ -1,0 +1,165 @@
+"""One-off seed of data/candidates.json for the Nov 1, 2026 v1 launch.
+Every number below was read on 2026-11-01 from the X API (public_metrics),
+Know Your Meme entry pages (page views + view/like counts KYM cites), or
+Reddit top-of-period RSS feeds (feed position; Reddit hides vote counts
+from anonymous RSS). Future refreshes edit candidates.json directly."""
+import json, pathlib
+R = "https://www.reddit.com"
+KYM = "https://knowyourmeme.com"
+KI = "https://i.kym-cdn.com/entries/icons/original/000"
+C = []
+def add(**kw): C.append(kw)
+
+# ---------------- DAILY (last 24-36h) ----------------
+add(id="culkin-thousand-yard", periods=["daily","weekly","monthly"],
+    title="MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
+    source_url="https://x.com/DiscussingFilm/status/2116776966141415441", source_name="X / @DiscussingFilm",
+    image_url="https://pbs.twimg.com/media/HWBNbcaWUAA6ucs.jpg", first_seen="2026-11-01",
+    also=[{"name":"Know Your Meme","url":f"{KYM}/memes/thousand-yard-stare"}],
+    ev={"peak_views":12_100_000,"platforms":["X","KYM"],"kym":True,"x_news":False,"kym_editorial":False},
+    notes="316,029 likes / 11,447 reposts / 12.1M views on the DiscussingFilm post (X API). Reposted widely (@PicturesFoIder, @BuzzingPop).")
+add(id="altman-ram", periods=["daily","weekly"],
+    title="ALTMAN SAYS YOUR PC'S RAM IS WASTED... INTERNET HIDES ITS DIMMS",
+    source_url=f"{R}/r/memes/comments/1xky93a/kiss_your_ram/", source_name="Reddit r/memes",
+    image_url="https://i.redd.it/ccsip41btyyh1.png", first_seen="2026-10-30",
+    also=[{"name":"X trending story","url":"https://x.com/i/trending/2116915793342398671"},
+          {"name":"r/dankmemes #1","url":f"{R}/r/dankmemes/comments/1xl1v6m/point_out_to_me_the_dimm_sockets_where_they_are/"}],
+    ev={"reddit":{"sub":"memes","rank":1},"peak_views":755_000,"platforms":["Reddit","X"],"x_news":True},
+    notes="#1 on r/memes top-today; RAM memes hold 7 of r/memes' top 10 today and #1 on r/dankmemes. X News trending story; @dengeplus clip 755K views. Sparked by Sam Altman on the Cheeky Pint podcast (Oct 29).")
+add(id="regretamine", periods=["daily","weekly","monthly"],
+    title="ELON PITCHES MIRACLE DRUG 'REGRETAMINE'... REPLIES RUN WILD",
+    source_url="https://x.com/elonmusk/status/2116875604889112772", source_name="X / @elonmusk",
+    image_url=None, card_text="\u201cI have this great idea for a drug called Regretamine. One dose and all your regrets are gone!\u201d",
+    first_seen="2026-11-01",
+    ev={"peak_views":4_760_322,"platforms":["X"],"x_news":True},
+    notes="63,844 likes / 9,005 replies / 4.76M views (X API). X News story on the spin-off memes.")
+add(id="pakistani-citizenship", periods=["daily","weekly"],
+    title="'SHE ONLY WANTS ME FOR MY PAKISTANI CITIZENSHIP' -- COPYCATS FLOOD TIMELINE",
+    source_url="https://x.com/vibeistani/status/2116644824703279122", source_name="X / @vibeistani",
+    image_url=None, card_text="\u201cshe only wants me for my pakistani citizenship\u201d", first_seen="2026-10-31",
+    ev={"peak_views":3_000_000,"platforms":["X"]},
+    notes="19,740 likes / 3.0M views (X API); copied with Syrian, Indian, Iranian variants.")
+add(id="consensual-pc-building", periods=["daily"],
+    title="'THE MYTH OF CONSENSUAL PC BUILDING': NOBODY ASKED ALTMAN",
+    source_url=f"{R}/r/memes/comments/1xl1nyn/yall_forgot_to_ask_him/", source_name="Reddit r/memes",
+    image_url="https://i.redd.it/nkz6vlhytzyh1.png", first_seen="2026-11-01",
+    ev={"reddit":{"sub":"memes","rank":2},"platforms":["Reddit"]}, notes="#2 on r/memes top-today.")
+add(id="heidi-32gb", periods=["daily"],
+    title="'DO YOU HAVE A PC AT HOME?' 'YES, WITH 32GB' -- OVER THE CLIFF SHE GOES",
+    source_url=f"{R}/r/memes/comments/1xl1sdj/dont_be_selfish/", source_name="Reddit r/memes",
+    image_url="https://i.redd.it/ia2ewdo4vzyh1.jpeg", first_seen="2026-11-01",
+    ev={"reddit":{"sub":"memes","rank":3},"platforms":["Reddit"]}, notes="#3 on r/memes top-today.")
+add(id="nnn-day-one", periods=["daily"],
+    title="NO NUT NOVEMBER, DAY ONE: 'I CAN'T DO IT, GENTS'",
+    source_url=f"{R}/r/dankmemes/comments/1xkrbio/i_cant_do_it_gents_have_fun_getting_superpowers/", source_name="Reddit r/dankmemes",
+    image_url="https://preview.redd.it/s4m092tkqwyh1.gif?width=320&crop=smart&s=ca60153d4db7898651ef91e5c6ca187e61e54992", first_seen="2026-11-01",
+    ev={"reddit":{"sub":"dankmemes","rank":3},"platforms":["Reddit"]}, notes="#3 on r/dankmemes top-today; NNN memes flooding Nov 1.")
+add(id="paxton-salsa", periods=["daily"],
+    title="TEXANS ROAST KEN PAXTON: 'HE EATS SALSA WITH A SPOON'",
+    source_url="https://x.com/leftcoastbabe/status/2116590353973395609", source_name="X / @leftcoastbabe",
+    image_url=None, card_text="\u201cKen Paxton eats ...\u201d -- the roast format sweeping Texas X", first_seen="2026-10-31",
+    ev={"peak_views":62_600,"platforms":["X"],"x_news":True},
+    notes="2,750 likes / 62.6K views on the top post (X API); X News story; Adam Kinzinger joined in.")
+add(id="halloween-still-dressed", periods=["daily"],
+    title="THE ULTIMATE TRICK OR TREAT: SHE'S STILL IN COSTUME",
+    source_url=f"{R}/r/dankmemes/comments/1xl0j1p/the_ultimate_trick_or_treat/", source_name="Reddit r/dankmemes",
+    image_url="https://i.redd.it/iba6y3xlizyh1.jpeg", first_seen="2026-11-01",
+    ev={"reddit":{"sub":"dankmemes","rank":5},"platforms":["Reddit"]}, notes="#5 on r/dankmemes top-today.")
+add(id="bunker-bulking", periods=["daily"],
+    title="BUNKER SURVIVOR ATE ALL THE FOOD: 'I'M CURRENTLY BULKING'",
+    source_url=f"{R}/r/memes/comments/1xl7eex/its_already_true/", source_name="Reddit r/memes",
+    image_url="https://i.redd.it/0gbiamkc21zh1.jpeg", first_seen="2026-11-01",
+    ev={"reddit":{"sub":"memes","rank":9},"platforms":["Reddit"]}, notes="#9 on r/memes top-today.")
+
+# ---------------- WEEKLY (Oct 25 - Nov 1) ----------------
+add(id="snow-leopard", periods=["weekly","monthly"],
+    title="'*PAWS AT YOU*': AI SNOW LEOPARD 'SNOWMEI' BEGS ITS WAY ACROSS THE INTERNET",
+    source_url=f"{KYM}/memes/snow-leopard-paws-at-you", source_name="Know Your Meme",
+    image_url=f"{KI}/057/688/Screenshot_2026-10-29_132139.png", first_seen="2026-10-24",
+    also=[{"name":"X / @dogwife333","url":"https://x.com/dogwife333/status/2114198070132961395"}],
+    ev={"peak_views":1_400_000,"platforms":["X","KYM","brands"],"kym":True,"x_news":True,"kym_editorial":True},
+    notes="KYM cites posts with 1.4M views and 151K likes; Epic Games Store joined (950K views). @dogwife333 23,665 likes / 323K views (X API). Two X News stories, KYM editorial, KYM 'Top Entries This Month'.")
+add(id="ethan-klein", periods=["weekly","monthly"],
+    title="H3'S ETHAN KLEIN AFFAIR SCANDAL BECOMES A MEME FACTORY",
+    source_url=f"{KYM}/memes/events/ethan-klein-cheating-controversy-h3-affair-scandal", source_name="Know Your Meme",
+    image_url=f"{KI}/057/665/Ethan_Klein_Cheating_Controversy_banner.jpg", first_seen="2026-10-24",
+    also=[{"name":"X / @PopBase","url":"https://x.com/PopBase/status/2114415796890038370"},
+          {"name":"KYM: Kleinification","url":f"{KYM}/memes/ethan-klein-ai-edits-kleinification"}],
+    ev={"peak_views":6_400_000,"platforms":["X","YouTube","TikTok"],"kym":True,"kym_editorial":True},
+    notes="KYM cites up to 181K likes / 6.4M views; @PopBase 43,180 likes / 2.2M views (X API); spun off 'Kleinification' AI edits. KYM Meme of the Month nominee.")
+add(id="skull-cap", periods=["weekly","monthly"],
+    title="TIKTOK'S SKULL CAP GLOW-UP TREND HITS 12.8M VIEWS",
+    source_url=f"{KYM}/memes/skull-cap-trend", source_name="Know Your Meme",
+    image_url=f"{KI}/057/678/Screenshot_2026-10-27_123503.png", first_seen="2026-10-27",
+    ev={"peak_views":12_800_000,"platforms":["TikTok"],"kym":True,"kym_editorial":True},
+    notes="KYM cites 286K likes / 12.8M views; KYM Weekly Meme Roundup (Oct 30).")
+add(id="mini-producer", periods=["weekly","monthly"],
+    title="'MINI PRODUCER' JAY THOMAS MANUEL TAKES OVER FEEDS",
+    source_url=f"{KYM}/memes/people/mini-producer-jay-thomas-manuel", source_name="Know Your Meme",
+    image_url=f"{KI}/057/686/miniprodcover.jpg", first_seen="2026-10-28",
+    ev={"peak_views":7_000_000,"platforms":["TikTok"],"kym":True,"kym_editorial":True},
+    notes="KYM cites 7M views; KYM Weekly Meme Roundup (Oct 30).")
+add(id="jiren-dancing", periods=["weekly"],
+    title="JIREN DANCES TO 'I'M SO IN LOVE WITH YOU'",
+    source_url=f"{KYM}/memes/im-so-in-love-with-you-dragon-ball-dance-jiren-dancing", source_name="Know Your Meme",
+    image_url=f"{KI}/057/670/coverjiren.jpg", first_seen="2026-10-27",
+    ev={"peak_views":2_100_000,"platforms":["TikTok"],"kym":True,"kym_editorial":True},
+    notes="KYM cites 2.1M views; KYM Weekly Meme Roundup (Oct 30).")
+add(id="anakin-genz", periods=["weekly"],
+    title="ANAKIN SKYWALKER BECOMES THE FACE OF GEN Z MALE RAGE",
+    source_url=f"{KYM}/memes/anakin-skywalker-gen-z-male-rage-memes", source_name="Know Your Meme",
+    image_url=f"{KI}/057/695/Political_Prequel_Memes_banner.jpg", first_seen="2026-10-30",
+    ev={"peak_views":937_000,"platforms":["X"],"kym":True},
+    notes="KYM cites 937K views / 24K likes.")
+add(id="lightning-cable", periods=[],
+    title="LIGHTNING CABLE AFTER 2 MONTHS vs. USB-C SINCE 2017",
+    source_url=f"{R}/r/memes/comments/1xfqtfz/thank_god_they_changed_it/", source_name="Reddit r/memes",
+    image_url="https://preview.redd.it/uk41q99yrrxh1.gif?width=640&crop=smart&s=4af36a0272af882b9ce41bc93c81fd5430ded623", first_seen="2026-10-26",
+    ev={"reddit":{"sub":"memes","rank":1},"platforms":["Reddit"]}, notes="#1 on r/memes top-this-week (candidate; scored below cut).")
+
+# ---------------- MONTHLY (rolling 30 days) ----------------
+add(id="tip-toein", periods=["monthly"],
+    title="AI RUMPELSTILTSKIN 'TIP TOEIN' IN MY JORDANS'",
+    source_url=f"{KYM}/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans", source_name="Know Your Meme",
+    image_url=f"{KI}/057/575/tiptoeing.jpg", first_seen="2026-10-08",
+    ev={"peak_views":9_800_000,"platforms":["TikTok","X"],"kym":True,"kym_editorial":True,"kym_views":64858},
+    notes="KYM cites 9.8M views / 32K likes; 64.8K KYM page views; October Meme of the Month nominee.")
+add(id="out-partying", periods=["monthly"],
+    title="'WHILE THEY ARE OUT PARTYING...' -- 35M VIEWS",
+    source_url=f"{KYM}/memes/while-they-are-out-partying", source_name="Know Your Meme",
+    image_url=f"{KI}/057/655/wtopcover.jpg", first_seen="2026-10-20",
+    ev={"peak_views":35_000_000,"platforms":["TikTok"],"kym":True},
+    notes="KYM cites 35M views / 160K likes.")
+add(id="im-so-sorry", periods=["monthly"],
+    title="'I'M SO SORRY' TIKTOK SLIDESHOW TREND -- 25.6M VIEWS",
+    source_url=f"{KYM}/memes/im-so-sorry-tiktok-trend", source_name="Know Your Meme",
+    image_url=f"{KI}/057/663/sosorrycover.jpg", first_seen="2026-10-21",
+    ev={"peak_views":25_600_000,"platforms":["TikTok"],"kym":True},
+    notes="KYM cites 25.6M views.")
+add(id="malfoid", periods=["monthly"],
+    title="'MALFOID': FEMALE DRACO MALFOY ART TAKES OVER",
+    source_url=f"{KYM}/memes/malfoid-female-draco-malfoy", source_name="Know Your Meme",
+    image_url=f"{KI}/057/554/malfoidcover.jpg", first_seen="2026-10-05",
+    ev={"peak_likes":89_000,"platforms":["X","TikTok"],"kym":True,"kym_editorial":True,"x_news":True,"kym_views":169489},
+    notes="Most-viewed new KYM entry of October (169K page views); KYM cites 89K likes; Meme of the Month nominee; X News story.")
+add(id="not-me-nan", periods=["monthly"],
+    title="'YOU'RE BLATANTLY JUST NOT ME NAN' -- 12M VIEWS",
+    source_url=f"{KYM}/memes/youre-blatantly-just-not-me-nan", source_name="Know Your Meme",
+    image_url=f"{KI}/057/563/bjnmn.jpg", first_seen="2026-10-06",
+    ev={"peak_views":12_000_000,"platforms":["TikTok"],"kym":True},
+    notes="KYM cites 12M views; 26K KYM page views.")
+add(id="black-cat-clapping", periods=["monthly"],
+    title="AI BLACK CAT SLOWLY CLAPS WITH HUMAN HANDS",
+    source_url=f"{KYM}/memes/black-cat-clapping", source_name="Know Your Meme",
+    image_url=f"{KI}/057/571/catclapcover.jpg", first_seen="2026-10-07",
+    ev={"peak_views":3_800_000,"platforms":["TikTok"],"kym":True,"kym_editorial":True},
+    notes="KYM cites 3.8M views; Meme of the Month nominee.")
+add(id="ask-for-more-money", periods=["monthly"],
+    title="'JUST... ASK FOR MORE MONEY?' TATTOO ARTIST GLARE",
+    source_url=f"{R}/r/memes/comments/1xbq3m7/just_ask_for_more_money/", source_name="Reddit r/memes",
+    image_url="https://i.redd.it/317sdlmo8uwh1.jpeg", first_seen="2026-10-21",
+    ev={"reddit":{"sub":"memes","rank":1},"platforms":["Reddit"]}, notes="#1 on r/memes top-this-month.")
+
+out = pathlib.Path(__file__).resolve().parent.parent / "data" / "candidates.json"
+out.write_text(json.dumps({"as_of":"2026-11-01","candidates":C}, indent=2, ensure_ascii=False))
+print("wrote", out, len(C))
