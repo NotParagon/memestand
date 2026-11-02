@@ -1,6 +1,13 @@
 # MemeStand.com: refresh and deploy runbook
 
-Static site. Plain HTML/CSS with no JavaScript. Everything is generated from JSON.
+Static site. Plain HTML/CSS; the only JavaScript is the Cloudflare Web Analytics beacon (see below). Everything is generated from JSON.
+
+> **Keep the analytics snippet.** Every HTML page carries the Cloudflare Web Analytics beacon just before `</body>`
+> (`CF_ANALYTICS` in build.py, added by `footer()`). It is cookieless, aggregate-only, and disclosed on /privacy.html.
+> Don't remove it, don't duplicate it, and any new page template must end with `footer()` so it gets the snippet.
+> Check after each build: every `*.html` must contain it exactly once
+> (`rg -c 'static.cloudflareinsights.com/beacon.min.js' --glob '*.html' --glob '!raw/**'`). The token is a public beacon token.
+> If you change what analytics or scripts the site uses, update the privacy text in `build_privacy()` and `PRIVACY_UPDATED` first.
 
 ```
 memestand/
@@ -204,7 +211,8 @@ Not legal advice. These rules keep the site's copyright, defamation and content 
   for professional or agency photos), `none` (text card only; use it for paparazzi or stock photos, screenshots of private messages,
   or anything a rights holder is sensitive about).
 - Social preview cards (og:image) use our own `og-default.png`, not someone else's meme (`OG_USE_MEME_THUMB = False` in build.py).
-- Don't add JavaScript embeds (X widgets.js etc.) without first updating /privacy.html: they set third-party cookies.
+- Don't add other JavaScript embeds (X widgets.js etc.) without first updating /privacy.html: they set third-party cookies.
+  The Cloudflare Web Analytics beacon is the only allowed script (cookieless, disclosed on /privacy.html).
 
 **5. Names and trademarks**
 - Use X, Reddit, Know Your Meme only to name sources. Never imply partnership, and never use their logos.

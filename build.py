@@ -45,6 +45,9 @@ LEGAL = {
 }
 OG_USE_MEME_THUMB = False   # False: social cards use our own og-default.png, never someone else's meme
 COPY_START = 2026
+# Cloudflare Web Analytics beacon (cookieless; public site token). Goes just before </body> on EVERY page via footer(). Keep it.
+CF_ANALYTICS = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7fe3f90e5dc444b9a67ecfce9aed6c1e"}'></script><!-- End Cloudflare Web Analytics -->'''
+PRIVACY_UPDATED = "November 1, 2026"   # bump when the privacy policy text changes
 
 BLOCKS = load_blocklist()
 REMOVED = "[REMOVED IN RESPONSE TO A TAKEDOWN REQUEST]"
@@ -204,6 +207,7 @@ Headlines describe memes and online reactions, not verified facts about the peop
 for ranking and commentary. MemeStand is independent and is not affiliated with, endorsed by or sponsored by X, Reddit or Know Your Meme;
 their names are used only to identify sources. Rights holders: see <a href="{base}dmca.html">DMCA / Takedowns</a>.</p>
 <p>&copy; {copyright_years()} MemeStand. Site design, rankings and compilation only; memes &copy; their respective owners.</p></footer>
+{CF_ANALYTICS}
 </body></html>
 '''
 
@@ -578,10 +582,11 @@ ANY CLAIM RELATING TO THE SITE IS LIMITED TO US$100. Some jurisdictions don't al
 
 def build_privacy():
     title = "Privacy Policy | MemeStand"
-    desc = "MemeStand's privacy policy: no cookies, no analytics, no accounts. What our host GitHub Pages logs, and third-party links."
-    body = f"""<p><i>Effective {LEGAL["effective"]}.</i></p>
-<p>Short version: MemeStand has no accounts, no sign-up forms, no comments, no ads, no cookies, no analytics and no tracking scripts.
-We don't collect, sell or share personal information.</p>
+    desc = "MemeStand's privacy policy: no cookies, no accounts, cookieless Cloudflare Web Analytics only. What our host GitHub Pages logs, and third-party links."
+    body = f"""<p><i>Effective {LEGAL["effective"]}. Last updated {PRIVACY_UPDATED}.</i></p>
+<p>Short version: MemeStand has no accounts, no sign-up forms, no comments, no ads and no cookies. We use Cloudflare Web Analytics, a
+privacy-focused, cookieless analytics service, to count page views in aggregate. We don't track individual visitors, and we don't
+collect, sell or share personal information.</p>
 
 <h2>What our host collects</h2>
 <p>MemeStand is a static site hosted on <a href="https://pages.github.com/" rel="noopener">GitHub Pages</a>. Like any web server, GitHub may log technical
@@ -589,9 +594,18 @@ information about each visit, such as your IP address, browser user agent and th
 that data under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.
 We don't receive or use visitor logs.</p>
 
+<h2>Analytics</h2>
+<p>We use <a href="https://www.cloudflare.com/web-analytics/" rel="noopener">Cloudflare Web Analytics</a> to understand how many people
+visit and which pages they read. It is privacy-focused and cookieless: it doesn't set or read cookies or local storage, doesn't
+fingerprint your browser or device, and doesn't track individual visitors across pages or sites. We see only aggregate page-view
+data (for example, page views per page, referring sites, and country and browser totals). Each page loads a small script from
+static.cloudflareinsights.com, and the measurement is processed by Cloudflare, Inc. under the
+<a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare Privacy Policy</a>. You can block it with any
+content blocker without affecting the site.</p>
+
 <h2>Cookies and scripts</h2>
-<p>We don't set cookies or use analytics, advertising or social-media tracking. Our pages run no JavaScript. The only script tags are
-structured data (JSON-LD) that search engines read and browsers don't execute.</p>
+<p>We don't set cookies or use advertising or social-media tracking. The only JavaScript on our pages is the Cloudflare Web Analytics
+beacon described above. The other script tags are structured data (JSON-LD) that search engines read and browsers don't execute.</p>
 
 <h2>Third-party content and links</h2>
 <p>Thumbnails are served from memestand.com. If an item shows an image directly from its source platform (for example X, Reddit or
@@ -610,7 +624,7 @@ example, a takedown). GitHub Issues are public and covered by GitHub's privacy s
 California and other residents can still contact us with privacy questions, and we will respond. We do not sell or share personal information.</p>
 
 <h2>Changes and contact</h2>
-<p>If our practices change (for example, if we add analytics), we will update this page and its effective date first. Questions: {contact_html()}.</p>"""
+<p>If our practices change (for example, if we add another analytics or third-party service), we will update this page and its effective date first. Questions: {contact_html()}.</p>"""
     prose_page("privacy.html", title, desc, "PRIVACY POLICY", body)
 
 def build_feed(snaps):
