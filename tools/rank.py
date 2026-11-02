@@ -127,6 +127,8 @@ def main():
                          "card_text": c.get("card_text"), "source_url": c["source_url"], "source_name": c["source_name"],
                          "credit": default_credit(c, authors),
                          "also": c.get("also") or [], "first_seen": c["first_seen"], "score": c["score"], "notes": c.get("notes", "")})
+            for k in ("name", "explainer", "origin", "kym_url"):   # optional meme-page fields (see UPDATE.md "Meme pages")
+                if c.get(k): rows[-1][k] = c[k]
         out[p] = rows
         print(p); [print(f"  {r['rank']:>2}. {r['score']:5.1f}  {r['title'][:70]}  [{r['source_name']}]") for r in rows]
     (DATA / "memes.json").write_text(json.dumps(out, indent=2, ensure_ascii=False))

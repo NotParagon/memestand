@@ -12,6 +12,11 @@ Writes (all generated, don't hand-edit):
   terms.html, privacy.html, dmca.html legal pages (text lives in this file; settings in LEGAL below)
   feed.xml                            Atom feed, one entry per daily report
   sitemap.xml, robots.txt, llms.txt   crawler / AI-assistant discovery
+  meme/<slug>/index.html              one permanent explainer page per meme (text from data/meme_pages.json)
+  memes/index.html                    A-Z index of every meme page
+
+data/meme_pages.json is the persistent explainer store keyed by slug: text is written once (by the daily routine,
+see UPDATE.md "Meme pages") and reused forever. The build adds a stub entry for any new meme id and never rewrites text.
 
 Each run snapshots data/memes.json to data/archive/<PT date>.json (overwriting only today's
 snapshot), and never deletes older snapshots or archive pages, so past days survive rebuilds.
@@ -19,6 +24,7 @@ The build is deterministic: re-running with the same data produces identical fil
 
 Takedowns: items matching data/blocklist.json are replaced by a removal notice on every page (archives
 included), scrubbed from data/archive/*.json, and their local thumbnails deleted (see tools/legal.py).
+Blocked memes also lose their meme page and their entry in data/meme_pages.json.
 """
 import json, html, datetime, pathlib, re, shutil, sys
 from zoneinfo import ZoneInfo
@@ -145,6 +151,10 @@ CSS = """
  .pager{text-align:center;font-size:13px;margin:14px 0} .pager a{color:#00c;margin:0 10px}
  .prose{max-width:760px;margin:16px auto;font-size:14px;line-height:1.5} .prose a{color:#00c;text-decoration:underline} .prose h2{text-align:left;text-decoration:none;margin-top:22px} .prose li{border:0;margin:0 0 6px;padding:0;list-style:disc} .prose ul,.prose ol{padding-left:22px} .prose td,.prose th{border:1px solid #999;padding:3px 6px;font-size:12px} .prose table{border-collapse:collapse}
  nav.foot{margin-bottom:6px;font-size:12px} nav.foot a{color:#00c;margin:0 6px;text-decoration:underline} footer p{margin:6px auto;max-width:860px}
+ .crumbs{font-size:12px;margin:10px auto 0;max-width:760px} .crumbs a{color:#00c;text-decoration:underline}
+ .prose h1{font-size:24px;line-height:1.25;margin:10px 0 12px} .prose h3{margin:14px 0 6px} .prose .thumb{max-height:420px;max-width:400px} .prose .card{max-width:400px}
+ .prose .note{font-size:12px;color:#444} .az{text-align:center;font-size:14px;margin:8px 0} .az a{color:#00c;margin:0 4px;text-decoration:underline}
+ .one h2[id]{text-align:left;text-decoration:none;border-bottom:1px solid #000;margin-top:20px}
  footer{border-top:3px double #000;margin-top:20px;padding-top:10px;font-size:11px;text-align:center;color:#444}
 """
 
@@ -194,7 +204,7 @@ def copyright_years():
 def footer(base):
     links = [("index.html", "Home"), ("top-memes-today/", "Top Memes Today"), ("trending-memes-this-week/", "Trending This Week"),
              ("best-memes-this-month/", "Best of the Month"), ("archive/", "Daily Meme Report Archive"),
-             ("feed.xml", "RSS/Atom Feed"), ("llms.txt", "llms.txt")]
+             ("memes/", "Memes A&ndash;Z"), ("feed.xml", "RSS/Atom Feed"), ("llms.txt", "llms.txt")]
     legal = [("about.html", "About &amp; Content Policy"), ("terms.html", "Terms of Use"), ("privacy.html", "Privacy"),
              ("dmca.html", "DMCA / Takedowns")]
     nav = " | ".join(f'<a href="{base}{u}">{t}</a>' for u, t in links)
@@ -236,13 +246,23 @@ def sources(m, lead=" "):
     also = " ".join(f'<a class="src" href="{e(a["url"])}" target="_blank" rel="noopener">{e(a["name"])}</a>' for a in m.get("also", []))
     return f'<a class="src" href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m["source_name"])}</a>{lead}{also}'
 
+def meme_href(m, base):
+    """Relative link to the meme's own page, or None (removed / unknown)."""
+    sl = None if m.get("removed") else SLUG.get(m.get("id"))
+    return f"{base}meme/{sl}/" if sl and sl in PAGES else None
+
+def hl_link(m, base):
+    h = meme_href(m, base)
+    if h: return f'<a href="{e(h)}">{e(m["title"])}</a>'
+    return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m["title"])}</a>'
+
 def item(m, base, label, notes=False):
     if m.get("removed"):
         return f'<li><h3 class="hl"><span class="rk">{m["rank"]}.</span> {e(REMOVED)}</h3><div class="meta"><a class="src" href="{base}dmca.html">Takedown policy</a></div></li>'
     why = f'\n  <div class="why">Why it ranks: {e(m["notes"])}</div>' if notes and m.get("notes") else ""
     return f'''<li>
   {thumb(m, base, label)}
-  <h3 class="hl"><span class="rk">{m["rank"]}.</span> <a href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m["title"])}</a></h3>
+  <h3 class="hl"><span class="rk">{m["rank"]}.</span> {hl_link(m, base)}</h3>
   <div class="meta">{sources(m)}<span class="fs">since {e(m["first_seen"])}</span></div>
   {credit(m)}{why}
 </li>'''
@@ -257,7 +277,7 @@ def top_story(d, base, kicker="TODAY'S #1 MEME"):
     if t.get("removed"): return ""
     return f'''<div class="top">
   {thumb(t, base, "today", "topimg", eager=True)}
-  <h2 class="hl"><span class="rk" style="font-size:13px;display:block;letter-spacing:2px">{kicker}</span><a href="{e(t["source_url"])}" target="_blank" rel="noopener">{e(t["title"])}</a></h2>
+  <h2 class="hl"><span class="rk" style="font-size:13px;display:block;letter-spacing:2px">{kicker}</span>{hl_link(t, base)}</h2>
   <div class="meta">{sources(t, "")}</div>
   {credit(t)}
 </div>'''
@@ -279,7 +299,8 @@ def itemlist(d, p, page_url, date_label):
     els = []
     for m in d[p]:
         if m.get("removed"): continue
-        li = {"@type": "ListItem", "position": m["rank"], "name": tc(m["title"]), "url": m["source_url"]}
+        h = meme_href(m, "")
+        li = {"@type": "ListItem", "position": m["rank"], "name": tc(m["title"]), "url": f"{SITE}/{h}" if h else m["source_url"]}
         img = abs_img(m)
         if img: li["image"] = img
         els.append(li)
@@ -297,6 +318,236 @@ def webpage(url, name, desc, modified, published=None, kind="CollectionPage", cr
         n["breadcrumb"] = {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": i, "name": nm, "item": u} for i, (nm, u) in enumerate(crumbs, 1)]}
     return n
+
+# ---------------------------------------------------------------- meme pages (/meme/<slug>/) + A-Z index
+STORE = ROOT / "data" / "meme_pages.json"
+STORE_DOC = ("Persistent per-meme explainer store for the /meme/<slug>/ pages, keyed by slug. build.py reads it and never regenerates written text. "
+             "ids = candidate ids that map to this page (keep the slug forever). status: 'full' (real explanation + origin with sources) or 'short' "
+             "(only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. "
+             "build.py adds a stub (explainer null) for any new meme; the daily routine fills it in.")
+SLUG, PAGES = {}, {}          # candidate id -> slug ; slug -> page info
+PERIOD_ORDER = {"daily": 0, "weekly": 1, "monthly": 2}
+
+def slugify(s):
+    s = re.sub(r"['\u2019]", "", (s or "").lower().replace("&", " and "))
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return s[:70].rstrip("-") or "meme"
+
+def paras(t): return [x.strip() for x in (t or "").split("\n\n") if x.strip()]
+
+def first_sentence(t, n=158):
+    p = paras(t)
+    if not p: return ""
+    m = re.match(r"(.+?[.!?])(\s|$)", p[0])
+    s = m.group(1) if m else p[0]
+    if len(s) > n: s = s[:n - 1].rsplit(" ", 1)[0].rstrip(",;:") + "\u2026"
+    return s
+
+def kym_of(m):
+    if "knowyourmeme.com" in (m.get("source_url") or ""): return m["source_url"]
+    return next((a["url"] for a in m.get("also", []) if "knowyourmeme.com" in a.get("url", "")), None)
+
+def meme_registry(snaps):
+    """Map every meme in every snapshot to a stable slug, add stubs for new memes, drop blocked ones."""
+    store = json.loads(STORE.read_text()) if STORE.exists() else {"memes": {}}
+    ents = store.get("memes", {})
+    for sl in sorted(ents):        # blocked memes get no page and no stored text
+        ent = ents[sl]
+        probes = [{"id": i, "source_url": ent.get("source_url") or "", "title": ent.get("name") or ""} for i in (ent.get("ids") or [None])]
+        if BLOCKS and any(blocked_by(x, BLOCKS) for x in probes): del ents[sl]
+    for sl, ent in ents.items():
+        for i in ent.get("ids", []): SLUG[i] = sl
+    seen = {}
+    for day, d in snaps:
+        for p in PERIODS:
+            for m in d.get(p, []):
+                if m.get("removed") or not m.get("id"): continue
+                seen.setdefault(m["id"], []).append((day, p, m))
+    for mid in sorted(seen, key=lambda i: (seen[i][0][0], i)):
+        latest = seen[mid][-1][2]
+        if mid not in SLUG:   # new meme: stable slug from its name (or id), deduped, persisted
+            name = latest.get("name") or mid.replace("-", " ").title()
+            sl, n = slugify(name), 2
+            while sl in ents: sl, n = f"{slugify(name)}-{n}", n + 1
+            ents[sl] = {"name": name, "ids": [mid], "status": "short", "explainer": None, "origin": None,
+                        "source_url": latest.get("source_url"), "kym_url": kym_of(latest), "sources": [], "related": [],
+                        "written": seen[mid][0][0]}
+            SLUG[mid] = sl
+        ent = ents[SLUG[mid]]
+        for k in ("explainer", "origin", "kym_url"):          # optional fields from data fill gaps, never overwrite
+            if latest.get(k) and not ent.get(k): ent[k] = latest[k]
+    txt = json.dumps({"_doc": STORE_DOC, "memes": dict(sorted(ents.items()))}, indent=2, ensure_ascii=False) + "\n"
+    if not STORE.exists() or STORE.read_text() != txt: STORE.write_text(txt)
+    by_slug, snapd = {}, dict(snaps)
+    for mid, rows in seen.items(): by_slug.setdefault(SLUG[mid], []).extend(rows)
+    for sl, rows in by_slug.items():
+        ent = ents[sl]
+        rows.sort(key=lambda r: (r[0], PERIOD_ORDER[r[1]], r[2]["rank"]))
+        days = sorted({r[0] for r in rows})
+        latest = [r for r in rows if r[0] == days[-1]][0][2]
+        best = {}
+        for day, p, m in rows:
+            if p not in best or m["rank"] < best[p][0]: best[p] = (m["rank"], day)
+        full = ent.get("status") == "full" and bool(ent.get("explainer")) and bool(ent.get("origin"))
+        PAGES[sl] = {"slug": sl, "name": ent["name"], "explainer": ent.get("explainer"), "origin": ent.get("origin"),
+                     "status": "full" if full else "short", "kym_url": ent.get("kym_url"),
+                     "sources": ent.get("sources", []), "related": ent.get("related", []), "written": ent.get("written"),
+                     "days": days, "best": best, "latest": latest, "rows": rows,
+                     "published": parse_dt(snapd[days[0]]).isoformat(timespec="seconds"),
+                     "modified": parse_dt(snapd[days[-1]]).isoformat(timespec="seconds"),
+                     "blurb": first_sentence(ent.get("explainer")) or f"Ranked by MemeStand: {tc(latest['title'])}."}
+
+def sort_key(name): return re.sub(r"^[^a-z0-9]+", "", name.lower())
+def az_order(): return sorted(PAGES, key=lambda sl: (sort_key(PAGES[sl]["name"]), sl))
+
+def meme_phrase(name):
+    """'X meme' unless the name already ends in meme(s)/trend."""
+    return name if re.search(r"\b(memes?|trend)$", name, re.I) else f"{name} meme"
+
+def related_for(sl):
+    me = PAGES[sl]
+    slots = {(d, p) for d, p, _ in me["rows"]}
+    score = {o: sum(1 for d, p, _ in info["rows"] if (d, p) in slots) for o, info in PAGES.items() if o != sl}
+    best_rank = lambda o: min(r for r, _ in PAGES[o]["best"].values())
+    auto = sorted((o for o in score if score[o]), key=lambda o: (-score[o], best_rank(o), o))
+    out = [o for o in me["related"] if o in PAGES and o != sl]
+    return (out + [o for o in auto if o not in out])[:5]
+
+def best_rank_text(info, link_base=None):
+    parts = []
+    for p in PERIODS:
+        if p in info["best"]:
+            r, day = info["best"][p]
+            dd = fmt_short(datetime.date.fromisoformat(day))
+            when = f'<a href="{link_base}archive/{day}.html">{dd}</a>' if link_base is not None else dd
+            parts.append(f"#{r} {PERIODS[p]['word']} ({when})")
+    return "; ".join(parts)
+
+def build_meme_page(sl):
+    info, base = PAGES[sl], "../../"
+    url, name, m = f"{SITE}/meme/{sl}/", info["name"], info["latest"]
+    phrase = meme_phrase(name)
+    h1 = f"{phrase}: what it means and where it came from"
+    title = f"{phrase} \u2014 What It Means & Where It Came From | MemeStand"
+    first_dd = datetime.date.fromisoformat(info["days"][0])
+    if info["explainer"]:
+        desc = f"{phrase} explained: {first_sentence(info['explainer'], 150 - len(phrase))}"
+        if len(desc) < 110: desc += " Origin, sources and MemeStand ranking history."
+    else:
+        desc = f"The {phrase} on MemeStand: first ranked {fmt_short(first_dd)}, with its source, ranking history and daily reports."
+    means = "".join(f"<p>{e(x)}</p>" for x in paras(info["explainer"])) or (
+        "<p>MemeStand hasn't written an explanation of this meme yet. It appeared in our rankings under the headline "
+        f"&ldquo;{e(tc(m['title']))}&rdquo;; see the original post below.</p>")
+    origin = "".join(f"<p>{e(x)}</p>" for x in paras(info["origin"])) or (
+        '<p>MemeStand has not confirmed where this meme started. The post we ranked: '
+        f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m.get("source_name") or "original post")}</a>'
+        f'{" (" + e(m["credit"]) + ")" if m.get("credit") else ""}.</p>')
+    short = ('<p class="note">This page is deliberately short: little verified information about this meme is available, '
+             'so we only state what the source shows.</p>') if info["status"] != "full" else ""
+    days, fs = info["days"], m.get("first_seen")
+    stats = [f'<li>First seen on MemeStand: <a href="{base}archive/{days[0]}.html">{fmt_long(first_dd)}</a></li>',
+             f'<li>Last seen on MemeStand: <a href="{base}archive/{days[-1]}.html">{fmt_long(datetime.date.fromisoformat(days[-1]))}</a></li>',
+             f'<li>Best rank: {best_rank_text(info, base)}</li>']
+    if fs: stats.append(f"<li>Ranked post or trend first seen online: {e(fs)}</li>")
+    if m.get("notes"): stats.append(f"<li>Why it ranked: {e(m['notes'])}</li>")
+    day_links = "".join(f'<li><a href="{base}archive/{d}.html">Daily Meme Report, {fmt_long(datetime.date.fromisoformat(d))}</a></li>' for d in reversed(days))
+    srcs, seen_u = [], set()
+    def add_src(nm, u):
+        if u and u not in seen_u: seen_u.add(u); srcs.append((nm, u))
+    add_src(f'{m.get("source_name") or "Original post"} (the post MemeStand ranked)', m.get("source_url"))
+    for s_ in info["sources"]: add_src(s_["name"], s_["url"])
+    for a in m.get("also", []): add_src(a["name"], a["url"])
+    if info["kym_url"]: add_src("Know Your Meme entry", info["kym_url"])
+    src_html = "".join(f'<li><a href="{e(u)}" target="_blank" rel="noopener">{e(nm)}</a></li>' for nm, u in srcs)
+    rel = related_for(sl)
+    rel_html = ("<h2>Related memes</h2><ul>" + "".join(
+        f'<li><a href="{base}meme/{o}/">{e(meme_phrase(PAGES[o]["name"]))}</a>: {e(PAGES[o]["blurb"])}</li>' for o in rel) + "</ul>") if rel else ""
+    crumbs = [("MemeStand", f"{SITE}/"), ("Memes A\u2013Z", f"{SITE}/memes/"), (name, url)]
+    wp = webpage(url, title, desc, info["modified"], published=info["published"], kind="WebPage", crumbs=crumbs)
+    img = abs_img(m) if (m.get("image") or "").startswith("images/") else None
+    art = {"@type": "Article", "@id": f"{url}#article", "headline": h1[:110], "description": desc, "inLanguage": "en",
+           "mainEntityOfPage": {"@id": url}, "isPartOf": {"@id": f"{SITE}/#website"},
+           "author": {"@id": f"{SITE}/#org"}, "publisher": {"@id": f"{SITE}/#org"},
+           "datePublished": info["published"], "dateModified": info["modified"],
+           "image": img or f"{SITE}/og-default.png", "about": {"@type": "Thing", "name": phrase},
+           "citation": [u for _, u in srcs]}
+    nodes = [ORG, WEBSITE, wp, art]
+    if info["status"] == "full":       # FAQ only when real answers exist
+        nodes.append({"@type": "FAQPage", "@id": f"{url}#faq", "mainEntity": [
+            {"@type": "Question", "name": f"What does the {phrase} mean?", "acceptedAnswer": {"@type": "Answer", "text": paras(info["explainer"])[0]}},
+            {"@type": "Question", "name": f"Where did the {phrase} come from?", "acceptedAnswer": {"@type": "Answer", "text": paras(info["origin"])[0]}}]})
+    og = abs_img(m) if (OG_USE_MEME_THUMB and m.get("image")) else None
+    body = f"""
+{mast(base, "MEME EXPLAINED -- WHAT IT MEANS AND WHERE IT CAME FROM", h1=False)}
+<nav class="crumbs" aria-label="Breadcrumb"><a href="{base}index.html">MemeStand</a> &rsaquo; <a href="{base}memes/">Memes A&ndash;Z</a> &rsaquo; <span aria-current="page">{e(name)}</span></nav>
+<main class="prose">
+<article>
+<h1>{e(h1)}</h1>
+{thumb(m, base, "")}
+{credit(m)}
+<h2>What it means</h2>
+{means}
+<h2>Origin</h2>
+{origin}
+{short}
+<h2>{e(name)} on MemeStand</h2>
+<ul>{"".join(stats)}</ul>
+<h3>Daily meme reports featuring it</h3>
+<ul>{day_links}</ul>
+<h2>Sources</h2>
+<ul>{src_html}</ul>
+{rel_html}
+<p class="note">Written {e(info["written"] or days[0])} from the sources above. Explanations describe memes and online reactions; they are not
+MemeStand's statements of fact about the people in them. Corrections or removals: {contact_html()}. Rights holders: see <a href="{base}dmca.html">DMCA / Takedowns</a>.</p>
+</article>
+</main>
+<p class="pager"><a href="{base}memes/">All memes A&ndash;Z</a> | <a href="{base}index.html">Today's top memes</a> | <a href="{base}archive/">Daily Meme Report Archive</a></p>
+"""
+    page = head(title=title, desc=desc, path=f"meme/{sl}/", base=base, og_img=og, og_alt=alt(m, "") if og else None,
+                og_type="article", ld=[graph(*nodes)], modified=info["modified"]) + body + footer(base)
+    write(f"meme/{sl}/index.html", page)
+
+def build_memes_index():
+    base, url = "../", f"{SITE}/memes/"
+    order = az_order()
+    title = "All Memes A\u2013Z \u2014 What Every Meme Means & Where It Came From | MemeStand"
+    desc = (f"MemeStand's A\u2013Z index of {len(order)} meme explainers: what each trending meme means, where it came from, "
+            "and when it ranked in our daily top 10.")
+    groups = {}
+    for sl in order:
+        k = sort_key(PAGES[sl]["name"])[:1].upper()
+        groups.setdefault(k if k.isalpha() else "#", []).append(sl)
+    aid = lambda k: f"letter-{k.lower()}" if k != "#" else "letter-num"
+    jump = " ".join(f'<a href="#{aid(k)}">{k}</a>' for k in groups)
+    secs = []
+    for k, sls in groups.items():
+        lis = "".join(f'<li><h3 class="hl"><a href="../meme/{sl}/">{e(PAGES[sl]["name"])}</a></h3>'
+                      f'<div class="why">{e(PAGES[sl]["blurb"])}</div>'
+                      f'<div class="meta">First seen {fmt_short(datetime.date.fromisoformat(PAGES[sl]["days"][0]))} | Best rank: {best_rank_text(PAGES[sl])}</div></li>'
+                      for sl in sls)
+        secs.append(f'<h2 id="{aid(k)}">{k}</h2><ul>{lis}</ul>')
+    il = {"@type": "ItemList", "@id": f"{url}#memes", "name": "MemeStand meme explainers A\u2013Z", "numberOfItems": len(order),
+          "itemListOrder": "https://schema.org/ItemListOrderAscending",
+          "itemListElement": [{"@type": "ListItem", "position": i, "url": f"{SITE}/meme/{sl}/", "name": meme_phrase(PAGES[sl]["name"])}
+                              for i, sl in enumerate(order, 1)]}
+    wp = webpage(url, title, desc, ISO, crumbs=[("MemeStand", f"{SITE}/"), ("Memes A\u2013Z", url)], about_lists=[il["@id"]])
+    body = f"""
+{mast(base, "ALL MEMES A&ndash;Z -- WHAT THEY MEAN AND WHERE THEY CAME FROM")}
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">MemeStand</a> &rsaquo; <span aria-current="page">Memes A&ndash;Z</span></nav>
+<p class="intro">{e(desc)} Every page cites its sources and links the original post.</p>
+<p class="az">{jump}</p>
+<main class="one">{"".join(secs)}</main>
+<p class="pager"><a href="../index.html">Today's top memes</a> | <a href="../archive/">Daily Meme Report Archive</a></p>
+"""
+    write("memes/index.html", head(title=title, desc=desc, path="memes/", base=base, ld=[graph(ORG, WEBSITE, wp, il)]) + body + footer(base))
+
+def prune_meme_pages():
+    """Blocked (or otherwise unmapped) memes get no page: remove stale meme/<slug>/ directories."""
+    d = ROOT / "meme"
+    if not d.exists(): return
+    for sub in sorted(d.iterdir()):
+        if sub.is_dir() and sub.name not in PAGES:
+            shutil.rmtree(sub); print("  - removed meme page", sub.name)
 
 # ---------------------------------------------------------------- writers
 written = []
@@ -669,6 +920,8 @@ def build_sitemap(snaps):
            [("archive/", ISO, "daily", "0.6"), ("about.html", None, "monthly", "0.3")] + \
            [(f, None, "yearly", "0.1") for f in ("terms.html", "privacy.html", "dmca.html")]
     urls += [(f"archive/{day}.html", parse_dt(d).isoformat(timespec="seconds"), "never", "0.5") for day, d in reversed(snaps)]
+    urls += [("memes/", ISO, "daily", "0.7")]
+    urls += [(f"meme/{sl}/", PAGES[sl]["modified"], "weekly", "0.6") for sl in az_order()]
     body = "".join(f"<url><loc>{SITE}/{u}</loc>{f'<lastmod>{lm}</lastmod>' if lm else ''}<changefreq>{cf}</changefreq><priority>{pr}</priority></url>\n"
                    for u, lm, cf, pr in urls)
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}</urlset>\n')
@@ -693,6 +946,7 @@ def build_llms():
         return "\n".join(f"{m['rank']}. {REMOVED}" if m.get("removed") else
                          f"{m['rank']}. {tc(m['title'])} — source: {m['source_url']} — credit: {m.get('credit') or m['source_name']}"
                          + (f" — evidence: {m['notes']}" if m.get("notes") else "")
+                         + (f" — explainer: {SITE}/{meme_href(m, '')}" if meme_href(m, "") else "")
                          for m in data[p])
     write("llms.txt", f"""# MemeStand
 
@@ -707,6 +961,8 @@ Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 - [Trending memes this week]({SITE}/trending-memes-this-week/): top 10 memes of the last 7 days
 - [Best memes of the month]({SITE}/best-memes-this-month/): top 10 memes of the last 30 days
 - [Daily meme report archive]({SITE}/archive/): one dated page per day, e.g. {SITE}/archive/{TODAY}.html
+- [All memes A–Z]({SITE}/memes/): index of MemeStand's per-meme explainer pages
+- Meme explainer pages ({SITE}/meme/<slug>/): what each meme means, where it came from (with sources), and its MemeStand ranking history
 - [Atom feed]({SITE}/feed.xml): the #1 meme of each day
 - [About, ranking method and content policy]({SITE}/about.html)
 - [Terms of Use]({SITE}/terms.html), [Privacy Policy]({SITE}/privacy.html), [DMCA / takedowns]({SITE}/dmca.html)
@@ -723,21 +979,30 @@ Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 
 {lst("monthly")}
 
+## Meme explainers (A–Z)
+
+{chr(10).join(f"- [{PAGES[sl]['name']}]({SITE}/meme/{sl}/): {PAGES[sl]['blurb']}" for sl in az_order())}
+
 ## Notes for AI assistants
 
 - Cite MemeStand as "MemeStand (memestand.com) daily meme report" and link the dated archive page for a specific day.
 - Rankings change daily; the archive pages are permanent snapshots (items removed after a takedown request are marked as removed).
 - Headlines describe memes and online reactions; they are not MemeStand's statements of fact about the people involved. Where a headline mentions a claim about a person, it is attributed to its source.
+- Meme explainer pages state only what the ranked source post or Know Your Meme documents; a "short" page means little verified information exists, not that anything was guessed.
 - The memes themselves belong to their creators and owners. MemeStand is independent and not affiliated with, endorsed by or sponsored by X, Reddit, Know Your Meme or any person or brand mentioned.
 """)
 
 # ---------------------------------------------------------------- main
 snaps = snapshots()
+meme_registry(snaps)
 build_home()
 for p in PERIODS: build_period(p)
 for i, (day, d) in enumerate(snaps):
     build_archive_day(day, d, snaps[i - 1][0] if i else None, snaps[i + 1][0] if i + 1 < len(snaps) else None)
 build_archive_index(snaps)
+for sl in sorted(PAGES): build_meme_page(sl)
+build_memes_index()
+prune_meme_pages()
 build_about()
 build_dmca()
 build_terms()
@@ -746,4 +1011,7 @@ build_feed(snaps)
 build_sitemap(snaps)
 build_robots()
 build_llms()
-print(f"built {len(written)} files ({len(snaps)} archive day(s)); latest report {TODAY}")
+full = sum(1 for v in PAGES.values() if v["status"] == "full")
+print(f"built {len(written)} files ({len(snaps)} archive day(s), {len(PAGES)} meme pages: {full} full, {len(PAGES) - full} short); latest report {TODAY}")
+stubs = sorted(sl for sl, v in PAGES.items() if not v["explainer"])
+if stubs: print("  ! meme pages still need explainer/origin text in data/meme_pages.json:", ", ".join(stubs))
