@@ -283,7 +283,7 @@ Not legal advice. These rules keep the site's copyright, defamation and content 
 - The footer non-affiliation line and the "memes (c) their respective owners" notice are generated. Keep them.
 
 **6. Legal page settings** (`LEGAL` dict at the top of build.py)
-- `contact_email` / `dmca_email`: None, so pages point to GitHub issues. Once Roger creates legal@ / dmca@memestand.com, set them and rebuild.
+- `contact_email` / `dmca_email`: both `hello@memestand.com`. Contact email everywhere is hello@memestand.com. Don't change it or add other addresses unless Roger asks.
 - `dmca_agent_registered`: set True after Roger registers the DMCA designated agent at https://dmca.copyright.gov (renew every 3 years).
 - `governing_law`: "California" is a placeholder until Roger confirms it.
 - Never publish Roger's full name, home address or phone on the site.

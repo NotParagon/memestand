@@ -42,8 +42,8 @@ e = lambda s: html.escape(str(s or ""), quote=True)
 # ---------------------------------------------------------------- legal settings (Roger: fill these in)
 LEGAL = {
     "effective": "November 1, 2026",
-    "contact_email": None,          # e.g. "legal@memestand.com" once that mailbox exists; None -> GitHub issues
-    "dmca_email": None,             # e.g. "dmca@memestand.com"; must match the Copyright Office registration
+    "contact_email": "hello@memestand.com",   # site contact email everywhere (footer, about, privacy, terms, DMCA); None -> GitHub issues
+    "dmca_email": "hello@memestand.com",      # DMCA/takedown contact; must match the Copyright Office registration
     "dmca_agent_registered": False, # True once the designated agent is registered at dmca.copyright.gov
     "dmca_agent_name": "MemeStand DMCA Agent",   # a title/role is allowed; the registration holds the full details
     "governing_law": "California",  # placeholder: Roger to confirm state/venue
