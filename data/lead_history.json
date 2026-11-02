@@ -1,0 +1,8 @@
+{
+  "_doc": "Lead headline (big top story) per day, date -> meme slug (data/meme_pages.json). Written by build.py; past days are never changed. Used to keep the lead from repeating within 7 days. See UPDATE.md 'Lead headline'.",
+  "window_days": 7,
+  "leads": {
+    "2026-11-01": "macaulay-culkin-thousand-yard-stare",
+    "2026-11-02": "regretamine"
+  }
+}

@@ -2,7 +2,7 @@
 """Render the whole static site from data/memes.json (plain, headline-style news page).   Usage: python3 build.py
 
 Writes (all generated, don't hand-edit):
-  index.html                          homepage: #1 story + three top-10 columns
+  index.html                          homepage: lead story (rotates daily, see UPDATE.md "Lead headline") + three top-10 columns
   top-memes-today/index.html          single-list pages with evidence notes
   trending-memes-this-week/index.html
   best-memes-this-month/index.html
@@ -29,7 +29,7 @@ Blocked memes also lose their meme page and their entry in data/meme_pages.json.
 import json, html, datetime, pathlib, re, shutil, sys
 from zoneinfo import ZoneInfo
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent / "tools"))
-from legal import load_blocklist, blocked_by
+from legal import load_blocklist, blocked_by, exclusion_reason
 
 SITE = "https://memestand.com"
 NAME = "MemeStand"
@@ -272,8 +272,8 @@ def column(d, p, base, link=True, notes=False):
     h = f'<a href="{base}{info["slug"]}/">{info["h2"]}</a>' if link else info["h2"]
     return f'<section class="col" id="{p}"><h2>{h}</h2><ul>{"".join(item(m, base, info["word"], notes) for m in d[p])}</ul></section>'
 
-def top_story(d, base, kicker="TODAY'S #1 MEME"):
-    t = d["daily"][0]
+def top_story(d, base, kicker="TODAY'S LEAD MEME", day=None):
+    t = lead_of(d, day or TODAY)
     if t.get("removed"): return ""
     return f'''<div class="top">
   {thumb(t, base, "today", "topimg", eager=True)}
@@ -282,8 +282,8 @@ def top_story(d, base, kicker="TODAY'S #1 MEME"):
   {credit(t)}
 </div>'''
 
-def og_for(d):
-    t = d["daily"][0]
+def og_for(d, day=None):
+    t = lead_of(d, day or TODAY)
     img = abs_img(t) if (OG_USE_MEME_THUMB and t.get("image") and not t.get("removed")) else None   # default: our own card
     return img, (alt(t, "today") if img else None)
 
@@ -327,6 +327,59 @@ STORE_DOC = ("Persistent per-meme explainer store for the /meme/<slug>/ pages, k
              "build.py adds a stub (explainer null) for any new meme; the daily routine fills it in.")
 SLUG, PAGES = {}, {}          # candidate id -> slug ; slug -> page info
 PERIOD_ORDER = {"daily": 0, "weekly": 1, "monthly": 2}
+
+# ---------------------------------------------------------------- lead headline (the big top story)
+# Rule (UPDATE.md "Lead headline"): the lead is today's highest-ranked daily meme that has NOT been the lead on any of the
+# previous LEAD_WINDOW days; a meme that is new on MemeStand today (in no earlier snapshot) is preferred if it is in the
+# daily top 3; if every candidate was a recent lead, fall back to the daily #1. Candidates must pass the blocklist and
+# legal rules. The ranked top-10 lists are untouched. Past leads persist in data/lead_history.json (date -> meme slug);
+# days missing from it are seeded from their archive snapshot's daily #1 (the old rule). Today's entry is recomputed
+# from the previous days only, so rebuilding on the same day is idempotent.
+LEAD_HISTORY = ROOT / "data" / "lead_history.json"
+LEAD_WINDOW = 7
+LEAD_DOC = ("Lead headline (big top story) per day, date -> meme slug (data/meme_pages.json). Written by build.py; past days are "
+            "never changed. Used to keep the lead from repeating within 7 days. See UPDATE.md 'Lead headline'.")
+LEADS = {}                    # day -> meme slug of that day's lead
+
+def lead_key(m): return SLUG.get(m.get("id")) or m.get("id")
+
+def lead_ok(m):
+    return bool(m) and not m.get("removed") and not (BLOCKS and blocked_by(m, BLOCKS)) and exclusion_reason(m) is None
+
+def pick_lead(day, d, recent, earlier_ids):
+    rows = [m for m in d.get("daily", []) if lead_ok(m)]
+    fresh = [m for m in rows if lead_key(m) not in recent]
+    new_top3 = [m for m in fresh if m.get("rank", 99) <= 3 and m.get("id") not in earlier_ids]
+    if new_top3: return new_top3[0], "new today, in the daily top 3"
+    if fresh: return fresh[0], f"highest-ranked daily meme not led in the previous {LEAD_WINDOW} days"
+    if rows: return rows[0], f"fallback: every candidate led in the previous {LEAD_WINDOW} days"
+    return None, "no eligible daily meme"
+
+def choose_leads(snaps):
+    store = json.loads(LEAD_HISTORY.read_text()) if LEAD_HISTORY.exists() else {}
+    hist = dict(store.get("leads", {}))
+    seen_ids, why = set(), None
+    for day, d in snaps:                      # oldest -> newest
+        if day == TODAY:
+            cut = (datetime.date.fromisoformat(day) - datetime.timedelta(days=LEAD_WINDOW)).isoformat()
+            recent = {v for k, v in hist.items() if cut <= k < day}
+            m, why = pick_lead(day, d, recent, seen_ids)
+            if m: hist[day] = lead_key(m)
+            else: hist.pop(day, None)
+        elif day not in hist and d.get("daily") and not d["daily"][0].get("removed"):
+            hist[day] = lead_key(d["daily"][0])   # seed: before this rule the lead was always the daily #1
+        seen_ids |= {m.get("id") for p in PERIODS for m in d.get(p, []) if m.get("id")}
+    LEADS.update(hist)
+    txt = json.dumps({"_doc": LEAD_DOC, "window_days": LEAD_WINDOW, "leads": dict(sorted(hist.items()))}, indent=2, ensure_ascii=False) + "\n"
+    if not LEAD_HISTORY.exists() or LEAD_HISTORY.read_text() != txt: LEAD_HISTORY.write_text(txt)
+    return why
+
+def lead_of(d, day):
+    """The lead item for a snapshot: the history's meme if it is in that day's daily list, else the daily #1."""
+    want = LEADS.get(day)
+    for m in d.get("daily", []):
+        if want and not m.get("removed") and lead_key(m) == want: return m
+    return d["daily"][0]
 
 def slugify(s):
     s = re.sub(r"['\u2019]", "", (s or "").lower().replace("&", " and "))
@@ -637,7 +690,7 @@ def build_archive_day(day, d, prev, nxt):
     iso = dt.isoformat(timespec="seconds")
     crumbs = [("MemeStand", f"{SITE}/"), ("Archive", f"{SITE}/archive/"), (fmt_long(dd), url)]
     wp = webpage(url, title, desc, iso, published=iso, crumbs=crumbs, about_lists=[x["@id"] for x in lists])
-    og, og_alt = og_for(d)
+    og, og_alt = og_for(d, day)
     pager = []
     if prev: pager.append(f'<a href="{prev}.html">&larr; {fmt_short(datetime.date.fromisoformat(prev))}</a>')
     pager.append('<a href="index.html">All reports</a>')
@@ -648,7 +701,7 @@ def build_archive_day(day, d, prev, nxt):
 {mast(base, f"DAILY MEME REPORT -- {fmt_long(dd).upper()}")}
 <p class="intro">The internet's top memes as ranked by MemeStand on {fmt_long(dd)}. Rankings below are frozen as of <time datetime="{iso}">{dt.strftime("%-I:%M %p PT")}</time> that day; see the homepage for live rankings.</p>
 <p class="pager">{" ".join(pager)}</p>
-{top_story(d, base, kicker=f"#1 MEME OF {fmt_short(dd).upper()}")}
+{top_story(d, base, kicker=f"LEAD MEME OF {fmt_short(dd).upper()}", day=day)}
 <main class="grid">
   {column(d, "daily", base, link=False)}
   {column(d, "weekly", base, link=False)}
@@ -995,6 +1048,7 @@ Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 # ---------------------------------------------------------------- main
 snaps = snapshots()
 meme_registry(snaps)
+lead_why = choose_leads(snaps)
 build_home()
 for p in PERIODS: build_period(p)
 for i, (day, d) in enumerate(snaps):
@@ -1014,4 +1068,5 @@ build_llms()
 full = sum(1 for v in PAGES.values() if v["status"] == "full")
 print(f"built {len(written)} files ({len(snaps)} archive day(s), {len(PAGES)} meme pages: {full} full, {len(PAGES) - full} short); latest report {TODAY}")
 stubs = sorted(sl for sl, v in PAGES.items() if not v["explainer"])
+print(f"  lead {TODAY}: {LEADS.get(TODAY)} ({lead_why})")
 if stubs: print("  ! meme pages still need explainer/origin text in data/meme_pages.json:", ", ".join(stubs))
