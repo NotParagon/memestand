@@ -39,6 +39,29 @@
       "written": "2026-11-01",
       "related": []
     },
+    "bear-landmine": {
+      "name": "Bear Landmine (Never Zero)",
+      "ids": [
+        "bear-landmine"
+      ],
+      "status": "full",
+      "explainer": "A trail-camera photo of a brown bear carrying a round object in its mouth, shared with captions about bears joining explosive-ordnance disposal. The core joke is the deadpan safety line: the odds of being killed by a landmine delivered by a bear are low, \"but they are never zero.\"\n\nPeople reuse it as a format for absurdly unlikely risks, and military and EOD accounts ran with the idea of bears doing mine clearance.",
+      "origin": "The photo spread on X on October 29, 2026. @EODCSM posted it (\"When the bears start doing UXO clearance...\"), and @EODHappyCaptain's quote-post with the \"never zero\" line passed 3.4 million views and 118,000 likes, per X's public counts. X's trending story on the meme says the object is likely a discarded item that resembles a TM-62 anti-tank mine.",
+      "source_url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@EODCSM on X (photo post)",
+          "url": "https://x.com/EODCSM/status/2115886753592795549"
+        },
+        {
+          "name": "X trending story",
+          "url": "https://x.com/i/trending/2116300713361834385"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-02"
+    },
     "bunker-bulking": {
       "name": "Bunker Bulking",
       "ids": [
@@ -107,6 +130,25 @@
       ],
       "written": "2026-11-01"
     },
+    "hold-the-ram": {
+      "name": "Hold the RAM",
+      "ids": [
+        "hold-the-ram"
+      ],
+      "status": "short",
+      "explainer": "A Braveheart battle-speech image relabeled \"The whole internet since Sam Altman's statement about RAM: Hold the RAM!\" It is part of the wave of jokes about PC owners clinging to their memory after Altman's comment about DRAM in personal computers.",
+      "origin": "Posted to r/memes (and cross-posted to r/dankmemes) by u/SirDoritos1 on November 1, 2026 under the title \"It's all for RAM and RAM's for all!\"; it reached #1 on r/memes' top posts of the day. MemeStand has no further origin information for this image.",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xla9os/its_all_for_ram_and_rams_for_all/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "Reddit r/memes: \"It's all for RAM and RAM's for all!\" (original post)",
+          "url": "https://www.reddit.com/r/memes/comments/1xla9os/its_all_for_ram_and_rams_for_all/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-02"
+    },
     "im-so-sorry-trend": {
       "name": "I'm So Sorry Trend",
       "ids": [
@@ -125,6 +167,25 @@
       ],
       "written": "2026-11-01",
       "related": []
+    },
+    "jacket-still-works": {
+      "name": "The Jacket Still Works",
+      "ids": [
+        "jacket-still-works"
+      ],
+      "status": "short",
+      "explainer": "Two photos of YouTuber Angry Joe wearing the same jacket years apart, captioned \"Every man needs a jacket they devote the rest of their life to.\" It is a nod to people who find one piece of clothing and never replace it.",
+      "origin": "Posted to r/dankmemes by u/Round-Good1179 on November 2, 2026 under the title \"The jacket still works\"; it reached #3 on the subreddit's top posts of the day. MemeStand has no further origin information for this image.",
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xlvthd/the_jacket_still_works/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "Reddit r/dankmemes: \"The jacket still works\" (original post)",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xlvthd/the_jacket_still_works/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-02"
     },
     "jiren-dancing": {
       "name": "Jiren Dancing (I'm So in Love With You)",
@@ -225,6 +286,44 @@
       "written": "2026-11-01",
       "related": []
     },
+    "monkey-doomscrolling": {
+      "name": "Monkey Doomscrolling",
+      "ids": [
+        "monkey-doomscrolling"
+      ],
+      "status": "full",
+      "explainer": "A short clip of a tiny monkey lying on a white bed holding a phone, staring at the screen. It is used as a reaction for late-night phone habits, usually captioned along the lines of \"me doomscrolling at 2am.\"",
+      "origin": "The 10-second video was posted on X by @vwxyz_4 on October 27, 2026 and passed 6.4 million views and 82,000 likes, per X's public counts. X featured it in a trending story noting it hit a million views in its first 14 hours. MemeStand has no information on where the footage was originally filmed.",
+      "source_url": "https://x.com/vwxyz_4/status/2115203529795326309",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "X trending story",
+          "url": "https://x.com/i/trending/2115430446075121982"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-02"
+    },
+    "nintendo-sue-github": {
+      "name": "Nintendo Sue GitHub (Gru's Plan)",
+      "ids": [
+        "nintendo-sue-github"
+      ],
+      "status": "short",
+      "explainer": "A Gru's Plan template: Nintendo finds emulator forks and jailbreak repositories on GitHub, decides to protect its intellectual property, and settles on \"let's sue GitHub,\" which Gru rereads with a worried look. It is a joke about Nintendo's reputation for legal action, not a report of an actual lawsuit.",
+      "origin": "Posted to r/memes by u/RecreatorofPES on November 1, 2026 (Pacific time) under the title \"Nintendo's Legal Department\"; it reached #7 on the subreddit's top posts of the day. MemeStand has no further origin information for this image.",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xlorsv/nintendos_legal_department/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "Reddit r/memes: \"Nintendo's Legal Department\" (original post)",
+          "url": "https://www.reddit.com/r/memes/comments/1xlorsv/nintendos_legal_department/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-02"
+    },
     "no-nut-november": {
       "name": "No Nut November",
       "ids": [
@@ -247,6 +346,44 @@
       ],
       "written": "2026-11-01",
       "related": []
+    },
+    "polymarket-good-ending": {
+      "name": "Good Ending (Polymarket Bet)",
+      "ids": [
+        "polymarket-good-ending"
+      ],
+      "status": "short",
+      "explainer": "A short comic in which a man bets on a prediction market that a down-on-his-luck stranger will never turn his life around. The stranger recovers and gets married, and the bettor loses. The \"good ending\" joke turns betting markets into a wholesome twist.",
+      "origin": "Posted to r/memes by u/Such_Pickle_2337 on November 1, 2026 (Pacific time) under the title \"Good Ending\"; it reached #3 on the subreddit's top posts of the day. MemeStand has no further origin information for this comic.",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xlnh1a/good_ending/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "Reddit r/memes: \"Good Ending\" (original post)",
+          "url": "https://www.reddit.com/r/memes/comments/1xlnh1a/good_ending/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-02"
+    },
+    "potatoes-walrus": {
+      "name": "Potatoes After a Few Days in the Bag",
+      "ids": [
+        "potatoes-walrus"
+      ],
+      "status": "short",
+      "explainer": "A photo of a crowded walrus colony, their tusks poking out in every direction, captioned as what potatoes look like after a few days in the bag. The joke is the resemblance between the tusks and the sprouts on forgotten potatoes.",
+      "origin": "Posted to r/memes by u/Awkward-Comedian-506 on November 1, 2026 (Pacific time) under the title \"Potatoes after a few days in bag\"; it reached #2 on the subreddit's top posts of the day. MemeStand has no further origin information for this image.",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xlpirx/potatoes_after_a_few_days_in_bag/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "Reddit r/memes: \"Potatoes after a few days in bag\" (original post)",
+          "url": "https://www.reddit.com/r/memes/comments/1xlpirx/potatoes_after_a_few_days_in_bag/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-02"
     },
     "regretamine": {
       "name": "Regretamine",

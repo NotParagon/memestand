@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-01",
+  "as_of": "2026-11-02",
   "candidates": [
     {
       "id": "culkin-thousand-yard",
@@ -20,7 +20,7 @@
         }
       ],
       "ev": {
-        "peak_views": 12100000,
+        "peak_views": 16272004,
         "platforms": [
           "X",
           "KYM"
@@ -29,7 +29,7 @@
         "x_news": false,
         "kym_editorial": false
       },
-      "notes": "316,029 likes / 11,447 reposts / 12.1M views on the DiscussingFilm post (X API). Reposted widely (@PicturesFoIder, @BuzzingPop)."
+      "notes": "352,569 likes / 16.27M views on the DiscussingFilm post (X API, Nov 2). Reposted widely (@PicturesFoIder, @BuzzingPop). KYM Thousand-Yard Stare entry 120,627 views."
     },
     {
       "id": "altman-ram",
@@ -64,7 +64,7 @@
         ],
         "x_news": true
       },
-      "notes": "#1 on r/memes top-today; RAM memes hold 7 of r/memes' top 10 today and #1 on r/dankmemes. X News trending story; @dengeplus clip 755K views. Sparked by Sam Altman's remark on the Cheeky Pint podcast (Oct 29, per the episode transcript) that DRAM sitting in personal computers is a 'quite terrible' use of limited supply."
+      "notes": "#1 on r/memes top-this-week. X News trending story; @dengeplus clip 755K views. Sparked by Sam Altman's remark on the Cheeky Pint podcast (Oct 29, per the episode transcript) that DRAM sitting in personal computers is a 'quite terrible' use of limited supply."
     },
     {
       "id": "regretamine",
@@ -80,18 +80,17 @@
       "card_text": "“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”",
       "first_seen": "2026-11-01",
       "ev": {
-        "peak_views": 4760322,
+        "peak_views": 7397398,
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "63,844 likes / 9,005 replies / 4.76M views (X API). X News story on the spin-off memes."
+      "notes": "82,622 likes / 7.40M views (X API, Nov 2). X News story on the spin-off memes."
     },
     {
       "id": "pakistani-citizenship",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "'SHE ONLY WANTS ME FOR MY PAKISTANI CITIZENSHIP' -- COPYCATS FLOOD TIMELINE",
@@ -101,38 +100,17 @@
       "card_text": "“she only wants me for my pakistani citizenship”",
       "first_seen": "2026-10-31",
       "ev": {
-        "peak_views": 3000000,
+        "peak_views": 4935366,
         "platforms": [
           "X"
         ]
       },
-      "notes": "19,740 likes / 3.0M views (X API); copied with Syrian, Indian, Iranian variants."
-    },
-    {
-      "id": "consensual-pc-building",
-      "periods": [
-        "daily"
-      ],
-      "title": "'THE MYTH OF CONSENSUAL PC BUILDING': REDDIT ANSWERS ALTMAN'S RAM REMARK",
-      "source_url": "https://www.reddit.com/r/memes/comments/1xl1nyn/yall_forgot_to_ask_him/",
-      "source_name": "Reddit r/memes",
-      "image_url": "https://i.redd.it/nkz6vlhytzyh1.png",
-      "first_seen": "2026-11-01",
-      "ev": {
-        "reddit": {
-          "sub": "memes",
-          "rank": 2
-        },
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#2 on r/memes top-today."
+      "notes": "25,481 likes / 4.94M views (X API, Nov 2); copied with Syrian, Indian, Iranian variants."
     },
     {
       "id": "heidi-32gb",
       "periods": [
-        "daily"
+        "weekly"
       ],
       "title": "'DO YOU HAVE A PC AT HOME?' 'YES, WITH 32GB' -- OVER THE CLIFF SHE GOES",
       "source_url": "https://www.reddit.com/r/memes/comments/1xl1sdj/dont_be_selfish/",
@@ -142,39 +120,18 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 3
+          "rank": 9
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#3 on r/memes top-today."
-    },
-    {
-      "id": "nnn-day-one",
-      "periods": [
-        "daily"
-      ],
-      "title": "NO NUT NOVEMBER, DAY ONE: 'I CAN'T DO IT, GENTS'",
-      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xkrbio/i_cant_do_it_gents_have_fun_getting_superpowers/",
-      "source_name": "Reddit r/dankmemes",
-      "image_url": "https://preview.redd.it/s4m092tkqwyh1.gif?width=320&crop=smart&s=ca60153d4db7898651ef91e5c6ca187e61e54992",
-      "first_seen": "2026-11-01",
-      "ev": {
-        "reddit": {
-          "sub": "dankmemes",
-          "rank": 3
-        },
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#3 on r/dankmemes top-today; NNN memes flooding Nov 1."
+      "notes": "#9 on r/memes top-this-week (Nov 2)."
     },
     {
       "id": "paxton-salsa",
       "periods": [
-        "daily"
+        "weekly"
       ],
       "title": "X USERS JOKE THAT KEN PAXTON 'EATS SALSA MADE IN NEW YORK CITY'",
       "source_url": "https://x.com/leftcoastbabe/status/2116590353973395609",
@@ -183,19 +140,17 @@
       "card_text": "“Ken Paxton eats salsa made in New York City.”",
       "first_seen": "2026-10-30",
       "ev": {
-        "peak_views": 62600,
+        "peak_views": 66080,
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "Joke post riffing on the old 'salsa made in New York City' ad line; not a factual claim. Top post 2,750 likes / 62.6K views (X API), copied verbatim by many accounts; X News story."
+      "notes": "Joke post riffing on the old 'salsa made in New York City' ad line; not a factual claim. Top post 2,750 likes / 62.6K views (X API), copied verbatim by many accounts; X News story. Refreshed Nov 2: 2,792 likes / 66,080 views (X API)."
     },
     {
       "id": "halloween-still-dressed",
-      "periods": [
-        "daily"
-      ],
+      "periods": [],
       "title": "THE ULTIMATE TRICK OR TREAT: SHE'S STILL IN COSTUME",
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xl0j1p/the_ultimate_trick_or_treat/",
       "source_name": "Reddit r/dankmemes",
@@ -229,13 +184,13 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 9
+          "rank": 4
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#9 on r/memes top-today."
+      "notes": "#4 on r/memes top-today (Nov 2)."
     },
     {
       "id": "snow-leopard",
@@ -265,7 +220,7 @@
         "x_news": true,
         "kym_editorial": true
       },
-      "notes": "KYM cites posts with 1.4M views and 151K likes; Epic Games Store joined (950K views). @dogwife333 23,665 likes / 323K views (X API). Two X News stories, KYM editorial, KYM 'Top Entries This Month'.",
+      "notes": "KYM cites posts with 1.4M views and 151K likes; Epic Games Store joined (950K views). @dogwife333 23,684 likes / 325K views (X API). Two X News stories, KYM editorial, KYM 'Top Entries This Month'.",
       "first_seen_basis": "earliest viral X post found (@dogwife333, Oct 24 PT); KYM entry Oct 29"
     },
     {
@@ -392,22 +347,24 @@
     },
     {
       "id": "lightning-cable",
-      "periods": [],
+      "periods": [
+        "monthly"
+      ],
       "title": "LIGHTNING CABLE AFTER 2 MONTHS vs. USB-C SINCE 2017",
       "source_url": "https://www.reddit.com/r/memes/comments/1xfqtfz/thank_god_they_changed_it/",
       "source_name": "Reddit r/memes",
-      "image_url": "https://preview.redd.it/uk41q99yrrxh1.gif?width=640&crop=smart&s=4af36a0272af882b9ce41bc93c81fd5430ded623",
+      "image_url": "https://i.redd.it/uk41q99yrrxh1.gif",
       "first_seen": "2026-10-26",
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 1
+          "rank": 10
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#1 on r/memes top-this-week (candidate; scored below cut)."
+      "notes": "#10 on r/memes top-this-month (Nov 2)."
     },
     {
       "id": "tip-toein",
@@ -427,7 +384,7 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 64858
+        "kym_views": 65317
       },
       "notes": "KYM cites 9.8M views / 32K likes; 64.8K KYM page views; October Meme of the Month nominee.",
       "first_seen_basis": "KYM entry published date"
@@ -491,7 +448,7 @@
         "kym": true,
         "kym_editorial": true,
         "x_news": true,
-        "kym_views": 169489
+        "kym_views": 170632
       },
       "notes": "Most-viewed new KYM entry of October (169K page views); KYM cites 89K likes; Meme of the Month nominee; X News story.",
       "first_seen_basis": "KYM entry published date"
@@ -556,7 +513,181 @@
           "Reddit"
         ]
       },
-      "notes": "#1 on r/memes top-this-month."
+      "notes": "#1 on r/memes top-this-month. Still #1 on r/memes top-this-month (Nov 2)."
+    },
+    {
+      "id": "bear-landmine",
+      "periods": [
+        "weekly",
+        "monthly"
+      ],
+      "title": "'NEVER ZERO': TRAIL-CAM BEAR CARRYING A MINE-LIKE OBJECT BECOMES AN EOD MEME",
+      "source_url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
+      "source_name": "X / @EODHappyCaptain",
+      "image_url": "https://pbs.twimg.com/media/HV0jyMjWMAAmN2o.jpg",
+      "first_seen": "2026-10-29",
+      "also": [
+        {
+          "name": "X trending story",
+          "url": "https://x.com/i/trending/2116300713361834385"
+        },
+        {
+          "name": "X / @EODCSM",
+          "url": "https://x.com/EODCSM/status/2115886753592795549"
+        }
+      ],
+      "ev": {
+        "peak_views": 3474085,
+        "platforms": [
+          "X"
+        ],
+        "x_news": true
+      },
+      "notes": "118,756 likes / 12,172 reposts / 3.47M views (X API, Nov 2): 'The chances of being killed by a landmine delivered by a bear are low, but they are never zero.' Photo via @EODCSM (2.57M views). X News: trail cam caught a bear carrying a round object, likely a discarded item resembling a TM-62 mine.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "monkey-doomscrolling",
+      "periods": [
+        "weekly",
+        "monthly"
+      ],
+      "title": "TINY MONKEY 'DOOMSCROLLING' IN BED HITS 6.4M VIEWS",
+      "source_url": "https://x.com/vwxyz_4/status/2115203529795326309",
+      "source_name": "X / @vwxyz_4",
+      "image_url": "https://pbs.twimg.com/amplify_video_thumb/2115203514674630657/img/4KlSR_QVBtXCukE6.jpg",
+      "first_seen": "2026-10-27",
+      "also": [
+        {
+          "name": "X trending story",
+          "url": "https://x.com/i/trending/2115430446075121982"
+        }
+      ],
+      "ev": {
+        "peak_views": 6458759,
+        "platforms": [
+          "X"
+        ],
+        "x_news": true
+      },
+      "notes": "82,912 likes / 20,348 reposts / 6.46M views (X API, Nov 2). 10-second clip of a small monkey on a bed holding a phone; reused with 'me doomscrolling at 2am' captions. X News story (1M views in 14 hours).",
+      "headline_reviewed": true
+    },
+    {
+      "id": "hold-the-ram",
+      "periods": [
+        "daily"
+      ],
+      "title": "'HOLD THE RAM!': REDDIT GOES FULL BRAVEHEART OVER ALTMAN'S RAM REMARK",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xla9os/its_all_for_ram_and_rams_for_all/",
+      "source_name": "Reddit r/memes",
+      "image_url": "https://i.redd.it/eqi5kendm1zh1.jpeg",
+      "first_seen": "2026-11-01",
+      "also": [
+        {
+          "name": "r/dankmemes #1: 'Leave my Ram alone'",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xln3iv/leave_my_ram_alone/"
+        }
+      ],
+      "ev": {
+        "reddit": {
+          "sub": "memes",
+          "rank": 1
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#1 on r/memes top-today (Nov 2), also #2 on r/dankmemes; #8 on r/memes top-this-week. RAM memes also hold #1 on r/dankmemes today.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "potatoes-walrus",
+      "periods": [
+        "daily"
+      ],
+      "title": "'POTATOES AFTER A FEW DAYS IN THE BAG': A WALRUS COLONY STANDS IN FOR SPROUTING SPUDS",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xlpirx/potatoes_after_a_few_days_in_bag/",
+      "source_name": "Reddit r/memes",
+      "image_url": "https://i.redd.it/m027avs345zh1.jpeg",
+      "first_seen": "2026-11-01",
+      "ev": {
+        "reddit": {
+          "sub": "memes",
+          "rank": 2
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#2 on r/memes top-today (Nov 2).",
+      "headline_reviewed": true
+    },
+    {
+      "id": "polymarket-good-ending",
+      "periods": [
+        "daily"
+      ],
+      "title": "'GOOD ENDING': REDDIT COMIC'S BET AGAINST A STRANGER'S COMEBACK GOES BUST",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xlnh1a/good_ending/",
+      "source_name": "Reddit r/memes",
+      "image_url": "https://i.redd.it/xxrdeylrj4zh1.jpeg",
+      "first_seen": "2026-11-01",
+      "ev": {
+        "reddit": {
+          "sub": "memes",
+          "rank": 3
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#3 on r/memes top-today (Nov 2). Comic: a prediction-market bettor wagers a down-and-out man won't turn his life around, and loses.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "nintendo-sue-github",
+      "periods": [
+        "daily"
+      ],
+      "title": "GRU'S PLAN, NINTENDO LEGAL EDITION: REDDIT JOKES 'LET'S SUE GITHUB'",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xlorsv/nintendos_legal_department/",
+      "source_name": "Reddit r/memes",
+      "image_url": "https://i.redd.it/dsul79qew4zh1.png",
+      "first_seen": "2026-11-01",
+      "ev": {
+        "reddit": {
+          "sub": "memes",
+          "rank": 7
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#7 on r/memes top-today (Nov 2). Satirical Gru's Plan template about emulator forks on GitHub; a joke, not a report of any lawsuit.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "jacket-still-works",
+      "periods": [
+        "daily"
+      ],
+      "title": "'THE JACKET STILL WORKS': ANGRY JOE'S SAME JACKET, YEARS APART",
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xlvthd/the_jacket_still_works/",
+      "source_name": "Reddit r/dankmemes",
+      "image_url": "https://i.redd.it/58jkzpu807zh1.jpeg",
+      "first_seen": "2026-11-02",
+      "ev": {
+        "reddit": {
+          "sub": "dankmemes",
+          "rank": 3
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#3 on r/dankmemes top-today (Nov 2): 'Every man needs a jacket they devote the rest of their life to', with two photos of YouTuber Angry Joe in the same jacket.",
+      "headline_reviewed": true
     }
   ]
 }
