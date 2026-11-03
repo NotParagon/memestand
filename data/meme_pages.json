@@ -1,6 +1,46 @@
 {
   "_doc": "Persistent per-meme explainer store for the /meme/<slug>/ pages, keyed by slug. build.py reads it and never regenerates written text. ids = candidate ids that map to this page (keep the slug forever). status: 'full' (real explanation + origin with sources) or 'short' (only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. build.py adds a stub (explainer null) for any new meme; the daily routine fills it in.",
   "memes": {
+    "ai-artists-hoverboard": {
+      "name": "AI Artists Hoverboard",
+      "ids": [
+        "ai-artists-hoverboard"
+      ],
+      "status": "short",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xm1ln7/yeah_thats_absolutely_very_sane_everything_is_fine/",
+      "kym_url": null,
+      "explainer": "A Family Guy frame of hipster Peter Griffin on a hoverboard is captioned as AI \"artists\" after generating hundreds of books and movies in a day. The joke targets mass generative output and the idea that something is clearly off.",
+      "origin": "Posted to r/memes on November 2, 2026 and ranked high on the subreddit's day listing on November 3. The Family Guy still is a long-running reaction image; this specific AI-artists caption's first use is not confirmed beyond that post.",
+      "sources": [
+        {
+          "name": "Reddit r/memes",
+          "url": "https://www.reddit.com/r/memes/comments/1xm1ln7/yeah_thats_absolutely_very_sane_everything_is_fine/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-03"
+    },
+    "ai-bros-process": {
+      "name": "AI Bros Process Reaction",
+      "ids": [
+        "ai-bros-process"
+      ],
+      "status": "short",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xm6rl8/process_is_that_like_a_ram_thing/",
+      "kym_url": null,
+      "explainer": "A grimace/reaction image (Sabrina Carpenter) captioned as AI enthusiasts reacting when someone says the creative process is part of the fun. It sits in the wider wave of Reddit memes mocking generative-AI shortcuts after Sam Altman's DRAM comments.",
+      "origin": "Posted to r/memes on November 2, 2026 (\"Process? Is that like a RAM thing.\") and ranked near the top of the subreddit's day listing on November 3. Earlier uses of the same reaction image for other punchlines exist; this caption's first appearance is not confirmed beyond that post.",
+      "sources": [
+        {
+          "name": "Reddit r/memes",
+          "url": "https://www.reddit.com/r/memes/comments/1xm6rl8/process_is_that_like_a_ram_thing/"
+        }
+      ],
+      "related": [
+        "altman-ram"
+      ],
+      "written": "2026-11-03"
+    },
     "ai-rumpelstiltskin-tip-toein-in-my-jordans": {
       "name": "AI Rumpelstiltskin Tip Toein' in My Jordans",
       "ids": [
@@ -19,6 +59,27 @@
       ],
       "written": "2026-11-01",
       "related": []
+    },
+    "altman-ram-chart": {
+      "name": "Altman RAM Chart",
+      "ids": [
+        "altman-ram-chart"
+      ],
+      "status": "short",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xlybm3/sam_altman_stuff/",
+      "kym_url": null,
+      "explainer": "A chart meme where every RAM icon arrows exclusively to Sam Altman, skipping gamers and everyday PC users. It riffs on Altman's late-October remark that DRAM in personal computers is a \"quite terrible\" allocation of limited supply.",
+      "origin": "Posted to r/memes on November 2, 2026 (\"Sam Altman stuff\") amid a broader Reddit/X wave of Altman RAM memes that began after his Cheeky Pint comments around October 29, 2026.",
+      "sources": [
+        {
+          "name": "Reddit r/memes",
+          "url": "https://www.reddit.com/r/memes/comments/1xlybm3/sam_altman_stuff/"
+        }
+      ],
+      "related": [
+        "altman-ram"
+      ],
+      "written": "2026-11-03"
     },
     "anakin-skywalker-gen-z-male-rage": {
       "name": "Anakin Skywalker Gen Z Male Rage",
@@ -62,6 +123,29 @@
       "related": [],
       "written": "2026-11-02"
     },
+    "billionaires-blaming": {
+      "name": "Billionaires Blaming Collage",
+      "ids": [
+        "billionaires-blaming"
+      ],
+      "status": "short",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xmsh4e/billionaire_things/",
+      "kym_url": null,
+      "explainer": "A collage of laughing billionaires captioned as them enjoying it when public blame lands on immigrants, the poor, or transgender people instead of on wealth inequality. Cross-posted variants use titles like \"a tale as old as time.\"",
+      "origin": "Topped r/dankmemes and ranked high on r/memes on November 3, 2026. The collage format has circulated with similar political captions before; this day's widely ranked posts are the evidence used here.",
+      "sources": [
+        {
+          "name": "Reddit r/memes",
+          "url": "https://www.reddit.com/r/memes/comments/1xmsh4e/billionaire_things/"
+        },
+        {
+          "name": "Reddit r/dankmemes",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xm6s64/a_tale_as_old_as_time/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-03"
+    },
     "bunker-bulking": {
       "name": "Bunker Bulking",
       "ids": [
@@ -80,6 +164,25 @@
       ],
       "written": "2026-11-01",
       "related": []
+    },
+    "election-text-spam": {
+      "name": "Election Text Spam Badge",
+      "ids": [
+        "election-text-spam"
+      ],
+      "status": "short",
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xmkl5v/i_guess_i_should_vote_for_whoever_spammed_my/",
+      "kym_url": null,
+      "explainer": "An iOS Messages icon with a huge unread badge (often 100+) captioned as having no friends but a flood of political campaign texts on Election Day. Timed to U.S. voting days when SMS spam spikes.",
+      "origin": "Posted to r/dankmemes on November 3, 2026 and ranked on the day's top list. Similar \"unread political texts\" jokes appear around each U.S. election; this post is the evidence used for today's ranking.",
+      "sources": [
+        {
+          "name": "Reddit r/dankmemes",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xmkl5v/i_guess_i_should_vote_for_whoever_spammed_my/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-03"
     },
     "ethan-klein-h3-memes": {
       "name": "Ethan Klein H3 Memes",
@@ -103,6 +206,29 @@
       ],
       "written": "2026-11-01",
       "related": []
+    },
+    "hate-seals-fandom": {
+      "name": "Hate Seals Fandom Dealbreaker Format",
+      "ids": [
+        "hate-seals-fandom"
+      ],
+      "status": "short",
+      "source_url": "https://x.com/grindgod26/status/2117272503500550159",
+      "kym_url": null,
+      "explainer": "A video/text format where parents calmly accept a long list of identities or life choices, then lose it when the kid says they hate a specific fandom, show, or animal (\"Dad, I hate seals\" is one viral punchline). Swaps replace the final taboo with anime, K-pop, sports teams, and other fan communities. X News covered the format as a fandom-dealbreaker joke.",
+      "origin": "Multiple X variants circulated in early November 2026. One widely shared post by @grindgod26 (about 15.4K likes / 124K views per the X API on Nov 3) used the seals punchline. A single definitive first post is not confirmed here.",
+      "sources": [
+        {
+          "name": "X / @grindgod26",
+          "url": "https://x.com/grindgod26/status/2117272503500550159"
+        },
+        {
+          "name": "X News story",
+          "url": "https://x.com/i/trending/2117361073187967418"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-03"
     },
     "heidi-32gb-ram": {
       "name": "Heidi 32GB RAM",
@@ -324,6 +450,29 @@
       "related": [],
       "written": "2026-11-02"
     },
+    "no-money-bald": {
+      "name": "No Money Bald Distress Clip",
+      "ids": [
+        "no-money-bald"
+      ],
+      "status": "short",
+      "source_url": "https://x.com/abdykeen/status/2117175866232868947",
+      "kym_url": null,
+      "explainer": "A short clip of a bald man looking distressed is captioned as the feeling after spending money trying to make money and ending up with none. Copycats swap in gambling, crypto, and shopping punchlines. An X News story framed the format around money-loss and gambling humor.",
+      "origin": "A widely shared early English caption came from X user @abdykeen on November 2, 2026 (about 26.5K likes / 1.32M views per the X API on Nov 3). The underlying clip predates that post and has been reused with many money-loss captions; a fuller first-post origin is not confirmed here.",
+      "sources": [
+        {
+          "name": "X / @abdykeen",
+          "url": "https://x.com/abdykeen/status/2117175866232868947"
+        },
+        {
+          "name": "X News story",
+          "url": "https://x.com/i/trending/2116908077110919169"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-03"
+    },
     "no-nut-november": {
       "name": "No Nut November",
       "ids": [
@@ -457,6 +606,27 @@
       "written": "2026-11-01",
       "related": []
     },
+    "sips-ram": {
+      "name": "Boston RAM Party",
+      "ids": [
+        "sips-ram"
+      ],
+      "status": "short",
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xm20x8/sips_ram/",
+      "kym_url": null,
+      "explainer": "A Boston Tea Party painting edit where the dumped crates spill RAM sticks instead of tea. Another entry in the Reddit wave responding to Sam Altman's DRAM-shortage comments.",
+      "origin": "Posted to r/dankmemes on November 2, 2026 (\"Sips RAM\") and ranked on the day's top list on November 3, alongside many other Altman/RAM edits.",
+      "sources": [
+        {
+          "name": "Reddit r/dankmemes",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xm20x8/sips_ram/"
+        }
+      ],
+      "related": [
+        "altman-ram"
+      ],
+      "written": "2026-11-03"
+    },
     "skull-cap-trend": {
       "name": "Skull Cap Trend",
       "ids": [
@@ -520,6 +690,44 @@
         }
       ],
       "written": "2026-11-01"
+    },
+    "twitch-vs-chatgpt": {
+      "name": "Twitch Chat vs ChatGPT Two Paths",
+      "ids": [
+        "twitch-vs-chatgpt"
+      ],
+      "status": "short",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xmmffa/every_time_i_hear_those_words/",
+      "kym_url": null,
+      "explainer": "A Yu-Gi-Oh! \"two paths\" panel labels the bright castle as Twitch Chat and the dark castle as ChatGPT, poking at streamers who say \"I'm gonna ask chat\" versus asking an AI. The base template is a long-running anime meme format.",
+      "origin": "Posted to r/memes on November 3, 2026 (\"Every time I hear those words...\") and ranked on the day's top list. The Yu-Gi-Oh paths template itself is older; this Twitch/ChatGPT labeling's first appearance is not confirmed beyond that post.",
+      "sources": [
+        {
+          "name": "Reddit r/memes",
+          "url": "https://www.reddit.com/r/memes/comments/1xmmffa/every_time_i_hear_those_words/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-03"
+    },
+    "wassup-in-a-minute": {
+      "name": "Wassup In a Minute Wassup",
+      "ids": [
+        "wassup-in-a-minute"
+      ],
+      "status": "full",
+      "source_url": "https://knowyourmeme.com/memes/wassup-in-a-minute-wassup",
+      "kym_url": "https://knowyourmeme.com/memes/wassup-in-a-minute-wassup",
+      "explainer": "An animation meme trend in which anime characters — often from Blue Lock — wear expensive streetwear and dance to a Jersey club remix of Drake and Jhené Aiko's \"From Time\" that loops the line \"What's up, in a minute, what's up.\" Clips are shared heavily on TikTok and remixed with CapCut templates, Roblox recreations, and other series swaps.",
+      "origin": "Per Know Your Meme, TikToker @ristyisvalid posted a Blue Lock drip-dance version on October 23, 2026 that passed 2.6 million views within about a week, crediting @aka_zayy for the character art and a Jersey club remix by Zbee. CapCut how-tos (including one by @neilpotts8 with 1.8 million views) and further variants spread through late October and early November 2026. The KYM entry was published November 2, 2026.",
+      "sources": [
+        {
+          "name": "Know Your Meme: Wassup In a Minute Wassup",
+          "url": "https://knowyourmeme.com/memes/wassup-in-a-minute-wassup"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-03"
     },
     "while-theyre-out-partying": {
       "name": "While They're Out Partying",
