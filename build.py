@@ -298,8 +298,7 @@ def mast(base, tag, h1=True):
     inner = f'<span class="logo"><a href="{base}index.html">MEMESTAND</a></span><span class="tag">{tag}</span>'
     return f'<header class="mast">{"<h1>" + inner + "</h1>" if h1 else "<div>" + inner + "</div>"}{THEME_TOGGLE}</header><div id="content"></div>'
 
-INTRO = ("MemeStand is a daily meme report: the internet's top 10 memes today, this week and this month, "
-         "ranked by cross-platform virality on X, Reddit and Know Your Meme. Updated every morning.")
+INTRO = "Ranked by cross-platform virality on X, Reddit and Know Your Meme."
 
 def copyright_years():
     return f"{COPY_START}" if NOW.year <= COPY_START else f"{COPY_START}&ndash;{NOW.year}"
