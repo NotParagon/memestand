@@ -874,7 +874,7 @@ def build_about():
     title = "About MemeStand — How We Rank the Internet's Top Memes"
     desc = "MemeStand ranks the top 10 memes today, this week and this month using a virality evidence score built from X, TikTok, Instagram, Reddit, YouTube and Know Your Meme data."
     body = f"""<h2>What is MemeStand?</h2>
-<p>MemeStand (memestand.com) is an independent, headline-style daily meme report. Every morning it publishes three ranked lists:
+<p>MemeStand (memestand.com) is an independent, headline-style daily meme report. It publishes three ranked lists, refreshed every few hours through the day:
 the <a href="top-memes-today/">top 10 memes today</a>, the <a href="trending-memes-this-week/">top 10 trending memes this week</a>
 and the <a href="best-memes-this-month/">best memes of the month</a> (last 30 days). Each day's rankings are saved in the
 <a href="archive/">daily meme report archive</a> and published in an <a href="feed.xml">Atom feed</a>.</p>
