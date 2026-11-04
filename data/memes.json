@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T12:05-08:00",
+  "updated": "2026-11-04T14:10-08:00",
   "daily": [
     {
       "rank": 1,
@@ -13,7 +13,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @Flovaai (285K views)",
+          "name": "X / @Flovaai (298K views)",
           "url": "https://x.com/Flovaai/status/2117466712597839938"
         },
         {
@@ -34,7 +34,7 @@
         }
       ],
       "first_seen": "2026-11-01",
-      "score": 98.2,
+      "score": 98.3,
       "sources": [
         "X",
         "TikTok",
@@ -84,6 +84,43 @@
     },
     {
       "rank": 3,
+      "id": "woke-3",
+      "title": "'WOKE 3': MIDTERM 'BLUE SWEEP' SPAWNS SATIRICAL SEQUEL-SLANG MEMES",
+      "image": "images/woke-3.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/woke-3",
+      "source_name": "Know Your Meme",
+      "credit": "image via Know Your Meme; original creators as documented there",
+      "also": [
+        {
+          "name": "X / @MeganBitchell (2.34M views)",
+          "url": "https://x.com/MeganBitchell/status/2117877144999154049"
+        },
+        {
+          "name": "X / @FabTheWoker (116K views)",
+          "url": "https://x.com/FabTheWoker/status/2117764756274860278"
+        },
+        {
+          "name": "TikTok / @elionwillpower (633K views)",
+          "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
+        },
+        {
+          "name": "TikTok / @travelingnurse (238K views)",
+          "url": "https://www.tiktok.com/@travelingnurse/video/7704183300255927583"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "score": 75.0,
+      "sources": [
+        "X",
+        "TikTok",
+        "Know Your Meme"
+      ],
+      "notes": "KYM entry added Nov 4, 2026 (838 page views; page marked safe-for-work on KYM): satirical \"Woke 3 / Woke 3.0\" slang around the 2026 U.S. midterm Democratic \"blue sweep.\" Early X posts Nov 3–4 by @MeganBitchell (peak checked: 2.34M views / 125K likes on \"WOKE 3\"). TikTok same-day clips include @elionwillpower 633K views and @travelingnurse 238K views (fetch_social Nov 4 ~2PM PT)."
+    },
+    {
+      "rank": 4,
       "id": "thesis-monkey",
       "title": "'THESIS MONKEY': HEADPHONES PRIMATE GIF BECOMES THE STUDY-SESSION MEME",
       "image": "images/thesis-monkey.jpg",
@@ -103,14 +140,14 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "score": 72.5,
+      "score": 72.6,
       "sources": [
         "X"
       ],
       "notes": "164,225 likes / 5.23M views on @studsyun's Nov 3 share of the headphones-monkey GIF (X API, Nov 4 9am). Captioned as frantic studying / 'Thesis Monkey'; X News story still active."
     },
     {
-      "rank": 4,
+      "rank": 5,
       "id": "britannica-mitochondria",
       "title": "BRITANNICA'S ELECTION-NIGHT JOKE: 'CNN PROJECTS MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL'",
       "image": null,
@@ -126,14 +163,14 @@
         }
       ],
       "first_seen": "2026-11-04",
-      "score": 65.2,
+      "score": 65.3,
       "sources": [
         "X"
       ],
       "notes": "50,477 likes / 1.01M views on @Britannica's Nov 4 election-night parody (X API, Nov 4 9am). Copycats flooded replies; X News story on the biology-joke wave."
     },
     {
-      "rank": 5,
+      "rank": 6,
       "id": "altman-houses-vs-datacenters",
       "title": "ALTMAN-STYLE RANT MEME: HOUSES ARE A 'TERRIBLE USE OF SPACE' vs. AI DATA CENTERS",
       "image": "images/altman-houses-vs-datacenters.jpg",
@@ -151,7 +188,7 @@
       "notes": "#2 on r/memes top-today and #11 on top-this-week (Nov 4 9am). Sam Altman-at-the-window macro arguing houses waste space that data centers could use — satire of DRAM/AI-infra logic."
     },
     {
-      "rank": 6,
+      "rank": 7,
       "id": "ram-adan",
       "title": "'RAM ADAN': SAM ALTMAN PHOTO JOKES HE'S INTERESTED AFTER HEARING ABOUT RAM",
       "image": "images/ram-adan.jpg",
@@ -174,7 +211,7 @@
       "notes": "#1 on r/memes top-today and #8 on top-this-week (Nov 4 9am). Photo of Sam Altman with Gulf hosts captioned as his reaction after hearing about RAM — Ramadan pun on the ongoing AI DRAM joke wave."
     },
     {
-      "rank": 7,
+      "rank": 8,
       "id": "election-squid-hope",
       "title": "AMERICANS EVERY ELECTION, CONVINCED THE COUNTRY IS ABOUT TO CHANGE (IT WON'T) -- SQUID GAME CHEER",
       "image": "images/election-squid-hope.jpg",
@@ -192,7 +229,7 @@
       "notes": "#1 on r/dankmemes top-today (Nov 4 noon). Squid Game Gi-hun cheer still captioned as Americans every election convinced the country is about to change (it won't)."
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": "gym-cancel-holmes",
       "title": "GYM STAFF ON CANCELING YOUR MEMBERSHIP: ELIZABETH HOLMES 'WHY WOULD I DECEIVE YOU?'",
       "image": "images/gym-cancel-holmes.jpg",
@@ -208,24 +245,6 @@
         "Reddit"
       ],
       "notes": "#2 on r/dankmemes top-today (Nov 4 9am). Elizabeth Holmes interview still captioned about how 'easy' gym cancellations are."
-    },
-    {
-      "rank": 9,
-      "id": "meme-same-room-marge",
-      "title": "SENDING A MEME TO SOMEONE IN THE SAME ROOM: MARGE'S SIDE-EYE WAIT",
-      "image": "images/meme-same-room-marge.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://www.reddit.com/r/memes/comments/1xn5m8f/based_on_real_events/",
-      "source_name": "Reddit r/memes",
-      "credit": "posted by u/I_killed_the_kraken on r/memes",
-      "also": [],
-      "first_seen": "2026-11-03",
-      "score": 58.0,
-      "sources": [
-        "Reddit"
-      ],
-      "notes": "#3 on r/memes top-today (Nov 4 9am). Marge Simpson side-eye reaction for waiting while someone next to you reads the meme you just sent."
     },
     {
       "rank": 10,
@@ -259,7 +278,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @Flovaai (285K views)",
+          "name": "X / @Flovaai (298K views)",
           "url": "https://x.com/Flovaai/status/2117466712597839938"
         },
         {
@@ -280,7 +299,7 @@
         }
       ],
       "first_seen": "2026-11-01",
-      "score": 98.2,
+      "score": 98.3,
       "sources": [
         "X",
         "TikTok",
@@ -301,7 +320,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @PopBase",
+          "name": "X / @PopBase (2.2M views)",
           "url": "https://x.com/PopBase/status/2114415796890038370"
         },
         {
@@ -455,6 +474,43 @@
     },
     {
       "rank": 7,
+      "id": "woke-3",
+      "title": "'WOKE 3': MIDTERM 'BLUE SWEEP' SPAWNS SATIRICAL SEQUEL-SLANG MEMES",
+      "image": "images/woke-3.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/woke-3",
+      "source_name": "Know Your Meme",
+      "credit": "image via Know Your Meme; original creators as documented there",
+      "also": [
+        {
+          "name": "X / @MeganBitchell (2.34M views)",
+          "url": "https://x.com/MeganBitchell/status/2117877144999154049"
+        },
+        {
+          "name": "X / @FabTheWoker (116K views)",
+          "url": "https://x.com/FabTheWoker/status/2117764756274860278"
+        },
+        {
+          "name": "TikTok / @elionwillpower (633K views)",
+          "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
+        },
+        {
+          "name": "TikTok / @travelingnurse (238K views)",
+          "url": "https://www.tiktok.com/@travelingnurse/video/7704183300255927583"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "score": 75.0,
+      "sources": [
+        "X",
+        "TikTok",
+        "Know Your Meme"
+      ],
+      "notes": "KYM entry added Nov 4, 2026 (838 page views; page marked safe-for-work on KYM): satirical \"Woke 3 / Woke 3.0\" slang around the 2026 U.S. midterm Democratic \"blue sweep.\" Early X posts Nov 3–4 by @MeganBitchell (peak checked: 2.34M views / 125K likes on \"WOKE 3\"). TikTok same-day clips include @elionwillpower 633K views and @travelingnurse 238K views (fetch_social Nov 4 ~2PM PT)."
+    },
+    {
+      "rank": 8,
       "id": "jiren-dancing",
       "title": "JIREN DANCES TO 'I'M SO IN LOVE WITH YOU'",
       "image": "images/jiren-dancing.jpg",
@@ -483,7 +539,7 @@
       "notes": "KYM cites 2.1M views; KYM Weekly Meme Roundup (Oct 30). Nov 4 reads (10am PT): TikTok @notmemetime 3.6M views; YouTube 'I'm so in love with you' 95K views."
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": "regretamine",
       "title": "ELON MUSK JOKES ABOUT A DRUG CALLED 'REGRETAMINE'... REPLIES RUN WILD",
       "image": null,
@@ -501,7 +557,7 @@
       "notes": "92,501 likes / 8.21M views (X API, Nov 4 9am). Spin-off reply memes still circulating."
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "monkey-doomscrolling",
       "title": "TINY MONKEY 'DOOMSCROLLING' IN BED HITS 6.9M VIEWS",
       "image": "images/monkey-doomscrolling.jpg",
@@ -522,30 +578,6 @@
         "X"
       ],
       "notes": "82,865 likes / 7.01M views on @vwxyz_4 (X API, Nov 4). Still a weekly/monthly fixture."
-    },
-    {
-      "rank": 10,
-      "id": "skull-cap",
-      "title": "TIKTOK'S SKULL CAP GLOW-UP TREND HITS 12.8M VIEWS",
-      "image": "images/skull-cap.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/skull-cap-trend",
-      "source_name": "Know Your Meme",
-      "credit": "image via Know Your Meme; original creators as documented there",
-      "also": [
-        {
-          "name": "TikTok / @_mc_chicken_lover (16M views)",
-          "url": "https://www.tiktok.com/@_mc_chicken_lover/video/7699223914823617823"
-        }
-      ],
-      "first_seen": "2026-10-27",
-      "score": 73.0,
-      "sources": [
-        "TikTok",
-        "Know Your Meme"
-      ],
-      "notes": "KYM cites 286K likes / 12.8M views; KYM Weekly Meme Roundup (Oct 30). Nov 4 reads (10am PT): TikTok @_mc_chicken_lover 16M views."
     }
   ],
   "monthly": [
@@ -662,7 +694,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @PopBase",
+          "name": "X / @PopBase (2.2M views)",
           "url": "https://x.com/PopBase/status/2114415796890038370"
         },
         {

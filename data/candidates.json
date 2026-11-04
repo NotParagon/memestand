@@ -2,6 +2,65 @@
   "as_of": "2026-11-04",
   "candidates": [
     {
+      "id": "woke-3",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'WOKE 3': MIDTERM 'BLUE SWEEP' SPAWNS SATIRICAL SEQUEL-SLANG MEMES",
+      "source_url": "https://knowyourmeme.com/memes/woke-3",
+      "source_name": "Know Your Meme",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/709/woke3cover.jpg",
+      "first_seen": "2026-11-03",
+      "also": [
+        {
+          "name": "X / @MeganBitchell (2.34M views)",
+          "url": "https://x.com/MeganBitchell/status/2117877144999154049"
+        },
+        {
+          "name": "X / @FabTheWoker (116K views)",
+          "url": "https://x.com/FabTheWoker/status/2117764756274860278"
+        },
+        {
+          "name": "TikTok / @elionwillpower (633K views)",
+          "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
+        },
+        {
+          "name": "TikTok / @travelingnurse (238K views)",
+          "url": "https://www.tiktok.com/@travelingnurse/video/7704183300255927583"
+        }
+      ],
+      "ev": {
+        "platforms": [
+          "X",
+          "TikTok",
+          "Know Your Meme"
+        ],
+        "kym": true,
+        "kym_views": 838,
+        "x": {
+          "url": "https://x.com/MeganBitchell/status/2117877144999154049",
+          "views": 2339840,
+          "likes": 125346,
+          "checked": "2026-11-04",
+          "via": "X API"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
+          "views": 632500,
+          "likes": 113500,
+          "author": "@elionwillpower",
+          "posted": "2026-11-04",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 3
+        }
+      },
+      "notes": "KYM entry added Nov 4, 2026 (838 page views; page marked safe-for-work on KYM): satirical \"Woke 3 / Woke 3.0\" slang around the 2026 U.S. midterm Democratic \"blue sweep.\" Early X posts Nov 3–4 by @MeganBitchell (peak checked: 2.34M views / 125K likes on \"WOKE 3\"). TikTok same-day clips include @elionwillpower 633K views and @travelingnurse 238K views (fetch_social Nov 4 ~2PM PT).",
+      "first_seen_basis": "KYM cites pre-election buildup; @MeganBitchell \"Woke 3 starts tonight\" Nov 3, 2026",
+      "headline_reviewed": true
+    },
+    {
       "id": "culkin-thousand-yard",
       "periods": [
         "weekly",
@@ -29,8 +88,8 @@
         "kym_views": 120954,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 16983036,
-          "likes": 351506,
+          "views": 16984375,
+          "likes": 351491,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -94,8 +153,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8223349,
-          "likes": 92508,
+          "views": 8228635,
+          "likes": 92495,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -120,8 +179,8 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6491965,
-          "likes": 30829,
+          "views": 6498241,
+          "likes": 30841,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -169,7 +228,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 67824,
+          "views": 67872,
           "likes": 2789,
           "checked": "2026-11-04",
           "via": "X API"
@@ -192,7 +251,7 @@
       "first_seen": "2026-10-24",
       "also": [
         {
-          "name": "X / @dogwife333",
+          "name": "X / @dogwife333 (328K views)",
           "url": "https://x.com/dogwife333/status/2114198070132961395"
         },
         {
@@ -216,8 +275,8 @@
         "kym_views": 7227,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 328241,
-          "likes": 23700,
+          "views": 328321,
+          "likes": 23702,
           "checked": "2026-11-04",
           "via": "X API"
         },
@@ -248,7 +307,7 @@
       "first_seen": "2026-10-23",
       "also": [
         {
-          "name": "X / @PopBase",
+          "name": "X / @PopBase (2.2M views)",
           "url": "https://x.com/PopBase/status/2114415796890038370"
         },
         {
@@ -281,8 +340,8 @@
         "kym_views": 17341,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2199551,
-          "likes": 43171,
+          "views": 2199637,
+          "likes": 43172,
           "checked": "2026-11-04",
           "via": "X API"
         },
@@ -877,7 +936,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3494130,
+          "views": 3494638,
           "likes": 118677,
           "checked": "2026-11-04",
           "via": "X API"
@@ -910,8 +969,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/vwxyz_4/status/2115203529795326309",
-          "views": 7063801,
-          "likes": 82867,
+          "views": 7091365,
+          "likes": 82868,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1089,8 +1148,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1450848,
-          "likes": 26804,
+          "views": 1452871,
+          "likes": 26803,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1125,8 +1184,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 135104,
-          "likes": 16069,
+          "views": 135309,
+          "likes": 16074,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1279,8 +1338,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 5594860,
-          "likes": 173393,
+          "views": 5767937,
+          "likes": 177555,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1314,8 +1373,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1050663,
-          "likes": 52507,
+          "views": 1064959,
+          "likes": 53266,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1336,7 +1395,7 @@
       "first_seen": "2026-11-01",
       "also": [
         {
-          "name": "X / @Flovaai (285K views)",
+          "name": "X / @Flovaai (298K views)",
           "url": "https://x.com/Flovaai/status/2117466712597839938"
         },
         {
@@ -1368,8 +1427,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 285086,
-          "likes": 2558,
+          "views": 297516,
+          "likes": 2682,
           "checked": "2026-11-04",
           "via": "X API"
         },
@@ -1519,30 +1578,6 @@
       "also": []
     },
     {
-      "id": "meme-same-room-marge",
-      "periods": [
-        "daily",
-        "weekly"
-      ],
-      "title": "SENDING A MEME TO SOMEONE IN THE SAME ROOM: MARGE'S SIDE-EYE WAIT",
-      "source_url": "https://www.reddit.com/r/memes/comments/1xn5m8f/based_on_real_events/",
-      "source_name": "Reddit r/memes",
-      "image_url": "https://i.redd.it/q8eg00ztsgzh1.jpeg",
-      "first_seen": "2026-11-03",
-      "ev": {
-        "reddit": {
-          "sub": "memes",
-          "rank": 3
-        },
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#3 on r/memes top-today (Nov 4 9am). Marge Simpson side-eye reaction for waiting while someone next to you reads the meme you just sent.",
-      "headline_reviewed": true,
-      "also": []
-    },
-    {
       "id": "last-dance-trend",
       "periods": [
         "weekly"
@@ -1658,8 +1693,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 147568,
-          "likes": 6750,
+          "views": 154003,
+          "likes": 7064,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1733,12 +1768,12 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 240529,
-          "likes": 27000,
+          "views": 241374,
+          "likes": 27006,
           "checked": "2026-11-04",
           "via": "X API"
         },
-        "kym_views": 2342
+        "kym_views": 2562
       },
       "notes": "KYM entry added Nov 3, 2026, plus a KYM explainer the same day; earliest known use is an Oct 19 Instagram post. Reads on Nov 4 (10am PT): YouTube 'Frutiger Aero Yams To Your Right' 416K views in about a day; @LashSleeper yam image 240K views / 27K likes on X; @watosis slang-overload TikTok 299K views; @thebigsolomando Instagram post 70K likes.",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026"
@@ -1830,7 +1865,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 6
+          "rank": 5
         },
         "platforms": [
           "Reddit"
