@@ -39,7 +39,9 @@ memestand/
   preview.png                screenshot of the current build
 ```
 
-## Daily refresh (every ~3 hours, about 20 minutes for an agent)
+## Daily refresh (HOURLY 6 AM-9 PM PT since Nov 4, 2026; keep each run well under an hour)
+
+> Cadence change (Nov 4, 2026): the routine now runs every hour on the hour from 6 AM to 9 PM PT. The table below still describes the key anchor runs (6 AM main refresh, noon/6 PM social picks, 9 PM lock); every other hour is a light intraday re-rank under the same intraday rules. Hourly runs always rebuild and push so the 'Updated' stamp stays fresh (the site says 'Updated hourly'). Mind the X read budget: light re-checks hourly, deep discovery at 6 AM.
 
 Site content refreshes on a fixed Pacific-time cadence so the home page and rankings stay current
 through the day. Agents (or a human) should run this checklist at about:

@@ -109,7 +109,7 @@ def upd_html():
         "tick();setInterval(tick,30000);})();</script>"
     )
     return (
-        (f'<div class="upd">UPDATED <time id="upd-time" datetime="{ISO}">{absolute}</time></div>' + chr(10))
+        (f'<div class="upd">UPDATED <time id="upd-time" datetime="{ISO}">{absolute}</time> &middot; UPDATED HOURLY</div>' + chr(10))
         + script
     )
 
@@ -298,7 +298,7 @@ def mast(base, tag, h1=True):
     inner = f'<span class="logo"><a href="{base}index.html">MEMESTAND</a></span><span class="tag">{tag}</span>'
     return f'<header class="mast">{"<h1>" + inner + "</h1>" if h1 else "<div>" + inner + "</div>"}{THEME_TOGGLE}</header><div id="content"></div>'
 
-INTRO = "Ranked by cross-platform virality on X, TikTok, Instagram, Reddit, YouTube and Know Your Meme."
+INTRO = "Ranked by cross-platform virality on X, TikTok, Instagram, Reddit, YouTube and Know Your Meme. Updated hourly."
 
 def copyright_years():
     return f"{COPY_START}" if NOW.year <= COPY_START else f"{COPY_START}&ndash;{NOW.year}"
@@ -774,7 +774,7 @@ def build_period(p):
         start = NOW.date() - datetime.timedelta(days=6)
         title = f"Trending Memes This Week — Top 10 ({start.strftime('%b %-d')}–{fmt_short(NOW)}) | MemeStand"
         h1 = f"TRENDING MEMES THIS WEEK -- TOP 10 ({start.strftime('%b %-d').upper()} - {fmt_short(NOW).upper()})"
-        desc = f"The top 10 trending memes this week ({start.strftime('%b %-d')}–{fmt_short(NOW)}): #1 is \"{t}\". Ranked by cross-platform virality, updated daily."
+        desc = f"The top 10 trending memes this week ({start.strftime('%b %-d')}–{fmt_short(NOW)}): #1 is \"{t}\". Ranked by cross-platform virality, updated hourly."
     else:
         title = f"Best Memes of the Month — Top 10, Last 30 Days ({NOW.strftime('%B %Y')}) | MemeStand"
         h1 = f"BEST MEMES OF THE MONTH -- TOP 10, LAST 30 DAYS"
@@ -874,7 +874,7 @@ def build_about():
     title = "About MemeStand — How We Rank the Internet's Top Memes"
     desc = "MemeStand ranks the top 10 memes today, this week and this month using a virality evidence score built from X, TikTok, Instagram, Reddit, YouTube and Know Your Meme data."
     body = f"""<h2>What is MemeStand?</h2>
-<p>MemeStand (memestand.com) is an independent, headline-style daily meme report. It publishes three ranked lists, refreshed every few hours through the day:
+<p>MemeStand (memestand.com) is an independent, headline-style daily meme report. It publishes three ranked lists, updated hourly from 6 AM to 9 PM Pacific:
 the <a href="top-memes-today/">top 10 memes today</a>, the <a href="trending-memes-this-week/">top 10 trending memes this week</a>
 and the <a href="best-memes-this-month/">best memes of the month</a> (last 30 days). Each day's rankings are saved in the
 <a href="archive/">daily meme report archive</a> and published in an <a href="feed.xml">Atom feed</a>.</p>
@@ -1143,7 +1143,7 @@ def build_llms():
                          for m in data[p])
     write("llms.txt", f"""# MemeStand
 
-> MemeStand (https://memestand.com) is an independent, headline-style daily meme report: the internet's top 10 memes today, the top 10 trending memes this week, and the best memes of the month (last 30 days), ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated several times a day (Pacific Time). Every listed meme links to its original source.
+> MemeStand (https://memestand.com) is an independent, headline-style daily meme report: the internet's top 10 memes today, the top 10 trending memes this week, and the best memes of the month (last 30 days), ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated hourly, 6 AM to 9 PM Pacific Time. Every listed meme links to its original source.
 
 Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 
