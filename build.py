@@ -106,6 +106,23 @@ def tc(s):
     return " ".join(out)
 
 def img_src(m):  return m.get("image") or m.get("image_url")
+
+_DIMS = {}
+def img_dims(src):
+    """(width, height) of a local image file, read with PIL at build time; None for hotlinks / missing files.
+    Every <img> gets these as width/height attributes so the browser reserves its space before it loads (no layout shift)."""
+    if not src or src.startswith("http"): return None
+    if src not in _DIMS:
+        try:
+            from PIL import Image
+            with Image.open(ROOT / src) as im: _DIMS[src] = im.size
+        except Exception:
+            _DIMS[src] = None
+    return _DIMS[src]
+
+def wh_attrs(src):
+    d = img_dims(src)
+    return f' width="{d[0]}" height="{d[1]}"' if d else ' width="400" height="300" style="aspect-ratio:4/3;object-fit:contain"'
 def abs_img(m):
     s = img_src(m)
     if not s: return None
@@ -130,7 +147,7 @@ CSS = """
  .intro{text-align:center;font-size:12px;margin:6px auto 0;max-width:820px;color:#333}
  .upd{text-align:center;font-size:12px;margin:6px 0 2px}
  .top{text-align:center;margin:18px auto 30px;max-width:900px;padding-bottom:22px;border-bottom:3px double #000}
- .top img{max-width:100%;max-height:520px;border:1px solid #000}
+ .top img{box-sizing:content-box;max-width:calc(100% - 2px);max-height:520px;border:1px solid #000;object-fit:contain}
  .top .card{min-height:240px;font-size:28px}
  .top h2{margin:10px 0 0;text-decoration:none}
  .top .hl a{color:#c00;font-size:40px;font-weight:bold;line-height:1.12;text-transform:uppercase}
@@ -174,7 +191,7 @@ CSS = """
   .mast .logo{font-size:40px;letter-spacing:3px} .mast .tag{font-size:12px;letter-spacing:1px}
   .intro{font-size:13px;line-height:1.4}
   .top{margin:14px auto 26px;padding-bottom:20px}
-  .top img{max-height:60vh;width:auto}
+  .top img{max-height:60vh}
   .top .card{min-height:0;font-size:20px;padding:18px 14px}
   .top .hl a{font-size:27px;line-height:1.15}
   .grid{display:block;margin-top:0}
@@ -278,7 +295,8 @@ def thumb(m, base, label, cls="thumb", eager=False):
         src = src if ext else base + src
         load = 'fetchpriority="high"' if eager else 'loading="lazy"'
         ref = ' referrerpolicy="no-referrer"' if ext else ""
-        return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener"><img class="{cls}" src="{e(src)}" alt="{e(alt(m, label))}" {load}{ref}></a>'
+        wh = wh_attrs(img_src(m))   # explicit size (or a fixed 4:3 box for hotlinks) reserves space: no layout shift
+        return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener"><img class="{cls}" src="{e(src)}" alt="{e(alt(m, label))}"{wh} {load}{ref}></a>'
     return f'<a class="card {cls}" href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m.get("card_text") or m["title"])}</a>'
 
 def credit(m):
@@ -984,7 +1002,7 @@ def build_feed(snaps):
         lis = "".join(f"<li>{e(m['title'])}</li>" if m.get("removed") else
                       f"<li>{e(m['title'])} (<a href=\"{e(m['source_url'])}\">{e(m['source_name'])}</a>; credit: {e(m.get('credit') or m['source_name'])})</li>" for m in d["daily"])
         img = None if t.get("removed") else abs_img(t)
-        imgh = f'<p><img src="{e(img)}" alt="{e(alt(t, "today"))}"></p>' if img else ""
+        imgh = f'<p><img src="{e(img)}" alt="{e(alt(t, "today"))}"{wh_attrs(img_src(t)) if img_dims(img_src(t)) else ""}></p>' if img else ""
         first = e(t['title']) if t.get("removed") else f"<a href=\"{e(t['source_url'])}\">{e(t['title'])}</a>"
         content = (f"{imgh}<p>#1 meme of {fmt_long(dd)}: {first}</p><p>Top 10 memes today:</p><ol>{lis}</ol>"
                    f"<p>Memes &copy; their respective owners; MemeStand is not affiliated with X, Reddit or Know Your Meme.</p>")

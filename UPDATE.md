@@ -2,6 +2,8 @@
 
 Static site. Plain HTML/CSS; the only JavaScript is the Cloudflare Web Analytics beacon (see below). Everything is generated from JSON.
 
+> **No layout shift:** every `<img>` must always have explicit `width`/`height` (build.py's `wh_attrs()` reads them from the file with PIL) or a CSS `aspect-ratio` box, so space is reserved before it loads (CLS).
+
 > **Keep the analytics snippet.** Every HTML page carries the Cloudflare Web Analytics beacon just before `</body>`
 > (`CF_ANALYTICS` in build.py, added by `footer()`). It is cookieless, aggregate-only, and disclosed on /privacy.html.
 > Don't remove it, don't duplicate it, and any new page template must end with `footer()` so it gets the snippet.
