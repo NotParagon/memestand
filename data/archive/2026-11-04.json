@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T09:02-08:00",
+  "updated": "2026-11-04T10:14-08:00",
   "daily": [
     {
       "rank": 1,
@@ -19,14 +19,67 @@
         {
           "name": "X News (cafe mix-up)",
           "url": "https://x.com/i/trending/2117626647205875908"
+        },
+        {
+          "name": "TikTok / @leehoustonx (10.4M views)",
+          "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
+        },
+        {
+          "name": "Instagram / @kevinwinnik (11M likes)",
+          "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         }
       ],
       "first_seen": "2026-11-01",
-      "score": 74.2,
-      "notes": "KYM entry published Nov 3, 2026 (~954 page views): original TikTok by @leehoustonx on Nov 1; wave of AI remakes on TikTok/Reels/X. @Flovaai remix 2,343 likes / 260K views (X API, Nov 4 9am). X News story on the cafe seating mix-up."
+      "score": 98.2,
+      "sources": [
+        "X",
+        "TikTok",
+        "Instagram",
+        "Know Your Meme"
+      ],
+      "notes": "KYM entry published Nov 3, 2026 (~954 page views): original TikTok by @leehoustonx on Nov 1; wave of AI remakes on TikTok/Reels/X. @Flovaai remix 2,343 likes / 260K views (X API, Nov 4 9am). X News story on the cafe seating mix-up. Nov 4 reads (10am PT): TikTok @leehoustonx 10.4M views; Instagram @kevinwinnik 11M likes."
     },
     {
       "rank": 2,
+      "id": "frutiger-aero-yams",
+      "title": "'FRUTIGER AERO YAMS': BRAINROT CATCHPHRASE TEASING FANS OF THE GLOSSY 2000s AESTHETIC GETS A KYM ENTRY",
+      "image": "images/frutiger-aero-yams.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/frutiger-aero-yams",
+      "source_name": "Know Your Meme",
+      "credit": "image via Know Your Meme; original creators as documented there",
+      "also": [
+        {
+          "name": "X / @LashSleeper (240K views)",
+          "url": "https://x.com/LashSleeper/status/2115636173221896615"
+        },
+        {
+          "name": "TikTok / @watosis (299K views)",
+          "url": "https://www.tiktok.com/@watosis/video/7703458958266092831"
+        },
+        {
+          "name": "Instagram / @thebigsolomando (70K likes)",
+          "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
+        },
+        {
+          "name": "YouTube / Lessons in Meme Culture (416K views)",
+          "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
+        }
+      ],
+      "first_seen": "2026-10-19",
+      "score": 84.3,
+      "sources": [
+        "X",
+        "TikTok",
+        "Instagram",
+        "YouTube",
+        "Know Your Meme"
+      ],
+      "notes": "KYM entry added Nov 3, 2026, plus a KYM explainer the same day; earliest known use is an Oct 19 Instagram post. Reads on Nov 4 (10am PT): YouTube 'Frutiger Aero Yams To Your Right' 416K views in about a day; @LashSleeper yam image 240K views / 27K likes on X; @watosis slang-overload TikTok 299K views; @thebigsolomando Instagram post 70K likes."
+    },
+    {
+      "rank": 3,
       "id": "thesis-monkey",
       "title": "'THESIS MONKEY': HEADPHONES PRIMATE GIF BECOMES THE STUDY-SESSION MEME",
       "image": "images/thesis-monkey.jpg",
@@ -46,11 +99,14 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "score": 72.2,
+      "score": 72.3,
+      "sources": [
+        "X"
+      ],
       "notes": "164,225 likes / 5.23M views on @studsyun's Nov 3 share of the headphones-monkey GIF (X API, Nov 4 9am). Captioned as frantic studying / 'Thesis Monkey'; X News story still active."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "id": "britannica-mitochondria",
       "title": "BRITANNICA'S ELECTION-NIGHT JOKE: 'CNN PROJECTS MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL'",
       "image": null,
@@ -66,11 +122,50 @@
         }
       ],
       "first_seen": "2026-11-04",
-      "score": 65.0,
+      "score": 65.1,
+      "sources": [
+        "X"
+      ],
       "notes": "50,477 likes / 1.01M views on @Britannica's Nov 4 election-night parody (X API, Nov 4 9am). Copycats flooded replies; X News story on the biology-joke wave."
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "id": "altman-houses-vs-datacenters",
+      "title": "ALTMAN-STYLE RANT MEME: HOUSES ARE A 'TERRIBLE USE OF SPACE' vs. AI DATA CENTERS",
+      "image": "images/altman-houses-vs-datacenters.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/memes/comments/1xnkv3y/a_coffin_is_more_space_efficient/",
+      "source_name": "Reddit r/memes",
+      "credit": "posted by u/ManagerOfLove on r/memes",
+      "also": [],
+      "first_seen": "2026-11-04",
+      "score": 62.0,
+      "sources": [
+        "Reddit"
+      ],
+      "notes": "#2 on r/memes top-today and #11 on top-this-week (Nov 4 9am). Sam Altman-at-the-window macro arguing houses waste space that data centers could use — satire of DRAM/AI-infra logic."
+    },
+    {
+      "rank": 6,
+      "id": "gym-cancel-holmes",
+      "title": "GYM STAFF ON CANCELING YOUR MEMBERSHIP: ELIZABETH HOLMES 'WHY WOULD I DECEIVE YOU?'",
+      "image": "images/gym-cancel-holmes.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnmfpo/hotel_california_rules/",
+      "source_name": "Reddit r/dankmemes",
+      "credit": "posted by u/Renatop569 on r/dankmemes",
+      "also": [],
+      "first_seen": "2026-11-04",
+      "score": 60.0,
+      "sources": [
+        "Reddit"
+      ],
+      "notes": "#2 on r/dankmemes top-today (Nov 4 9am). Elizabeth Holmes interview still captioned about how 'easy' gym cancellations are."
+    },
+    {
+      "rank": 7,
       "id": "ram-adan",
       "title": "'RAM ADAN': SAM ALTMAN PHOTO JOKES HE'S INTERESTED AFTER HEARING ABOUT RAM",
       "image": "images/ram-adan.jpg",
@@ -86,11 +181,14 @@
         }
       ],
       "first_seen": "2026-11-04",
-      "score": 62,
+      "score": 60.0,
+      "sources": [
+        "Reddit"
+      ],
       "notes": "#1 on r/memes top-today and #8 on top-this-week (Nov 4 9am). Photo of Sam Altman with Gulf hosts captioned as his reaction after hearing about RAM — Ramadan pun on the ongoing AI DRAM joke wave."
     },
     {
-      "rank": 5,
+      "rank": 8,
       "id": "now-kith-economy",
       "title": "RICH PEOPLE 'NOW KITH' RISING PRICES AND LAYOFFS -- MIKE TYSON PIGEON TEMPLATE",
       "image": "images/now-kith-economy.jpg",
@@ -101,41 +199,14 @@
       "credit": "posted by u/MahmoudAO on r/dankmemes",
       "also": [],
       "first_seen": "2026-11-03",
-      "score": 60,
+      "score": 58.0,
+      "sources": [
+        "Reddit"
+      ],
       "notes": "#1 on r/dankmemes top-today and still on top-this-week (Nov 4 9am). Mike Tyson 'Now Kith' pigeon template labeled Raising prices / Layoffs."
     },
     {
-      "rank": 6,
-      "id": "altman-houses-vs-datacenters",
-      "title": "ALTMAN-STYLE RANT MEME: HOUSES ARE A 'TERRIBLE USE OF SPACE' vs. AI DATA CENTERS",
-      "image": "images/altman-houses-vs-datacenters.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://www.reddit.com/r/memes/comments/1xnkv3y/a_coffin_is_more_space_efficient/",
-      "source_name": "Reddit r/memes",
-      "credit": "posted by u/ManagerOfLove on r/memes",
-      "also": [],
-      "first_seen": "2026-11-04",
-      "score": 60,
-      "notes": "#2 on r/memes top-today and #11 on top-this-week (Nov 4 9am). Sam Altman-at-the-window macro arguing houses waste space that data centers could use — satire of DRAM/AI-infra logic."
-    },
-    {
-      "rank": 7,
-      "id": "gym-cancel-holmes",
-      "title": "GYM STAFF ON CANCELING YOUR MEMBERSHIP: ELIZABETH HOLMES 'WHY WOULD I DECEIVE YOU?'",
-      "image": "images/gym-cancel-holmes.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnmfpo/hotel_california_rules/",
-      "source_name": "Reddit r/dankmemes",
-      "credit": "posted by u/Renatop569 on r/dankmemes",
-      "also": [],
-      "first_seen": "2026-11-04",
-      "score": 58,
-      "notes": "#2 on r/dankmemes top-today (Nov 4 9am). Elizabeth Holmes interview still captioned about how 'easy' gym cancellations are."
-    },
-    {
-      "rank": 8,
+      "rank": 9,
       "id": "meme-same-room-marge",
       "title": "SENDING A MEME TO SOMEONE IN THE SAME ROOM: MARGE'S SIDE-EYE WAIT",
       "image": "images/meme-same-room-marge.jpg",
@@ -146,11 +217,14 @@
       "credit": "posted by u/I_killed_the_kraken on r/memes",
       "also": [],
       "first_seen": "2026-11-03",
-      "score": 58,
+      "score": 58.0,
+      "sources": [
+        "Reddit"
+      ],
       "notes": "#3 on r/memes top-today (Nov 4 9am). Marge Simpson side-eye reaction for waiting while someone next to you reads the meme you just sent."
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "ai-slop-vs-nk",
       "title": "'AI SLOP QUANTS' vs. A ONE-PDF PHISH: $0.17 vs. BILLIONS JOKE",
       "image": "images/ai-slop-vs-nk.jpg",
@@ -161,50 +235,51 @@
       "credit": "posted by u/Round-Good1179 on r/dankmemes",
       "also": [],
       "first_seen": "2026-11-04",
-      "score": 56,
-      "notes": "#3 on r/dankmemes top-today (Nov 4 9am). Split meme: complex AI-trading dashboards make $0.17; a simple phishing PDF joke is labeled with a massive profit figure."
-    },
-    {
-      "rank": 10,
-      "id": "billionaires-blaming",
-      "title": "BILLIONAIRES LAUGHING WHEN BLAME LANDS ON IMMIGRANTS, THE POOR, OR TRANS PEOPLE",
-      "image": "images/billionaires-blaming.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xm6s64/a_tale_as_old_as_time/",
-      "source_name": "Reddit r/dankmemes",
-      "credit": "posted by u/donkeyheaded on r/dankmemes",
-      "also": [
-        {
-          "name": "r/dankmemes #1",
-          "url": "https://www.reddit.com/r/dankmemes/comments/1xm6s64/a_tale_as_old_as_time/"
-        }
+      "score": 54.0,
+      "sources": [
+        "Reddit"
       ],
-      "first_seen": "2026-11-03",
-      "score": 52,
-      "notes": "#5 on r/dankmemes top-this-week (Nov 4 9am). Collage of laughing billionaires with the caption about redirected blame."
+      "notes": "#3 on r/dankmemes top-today (Nov 4 9am). Split meme: complex AI-trading dashboards make $0.17; a simple phishing PDF joke is labeled with a massive profit figure."
     }
   ],
   "weekly": [
     {
       "rank": 1,
-      "id": "culkin-thousand-yard",
-      "title": "MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
-      "image": "images/culkin-thousand-yard.jpg",
+      "id": "fancy-cafe",
+      "title": "'POV: YOUR FIRST TIME IN A FANCY CAFE': SITTING-ON-THE-TABLE SKIT SPAWNS AI REMIXES",
+      "image": "images/fancy-cafe.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-      "source_name": "X / @DiscussingFilm",
-      "credit": "posted by @DiscussingFilm on X",
+      "source_url": "https://knowyourmeme.com/memes/your-first-time-in-a-fancy-cafe",
+      "source_name": "Know Your Meme",
+      "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "Know Your Meme",
-          "url": "https://knowyourmeme.com/memes/thousand-yard-stare"
+          "name": "X / @Flovaai (260K views)",
+          "url": "https://x.com/Flovaai/status/2117466712597839938"
+        },
+        {
+          "name": "X News (cafe mix-up)",
+          "url": "https://x.com/i/trending/2117626647205875908"
+        },
+        {
+          "name": "TikTok / @leehoustonx (10.4M views)",
+          "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
+        },
+        {
+          "name": "Instagram / @kevinwinnik (11M likes)",
+          "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         }
       ],
       "first_seen": "2026-11-01",
-      "score": 87.3,
-      "notes": "351,509 likes / 16.98M views on the DiscussingFilm post (X API, Nov 4 9am). Still circulating in Halloween roundups. KYM Thousand-Yard Stare entry ~120,954 views."
+      "score": 98.2,
+      "sources": [
+        "X",
+        "TikTok",
+        "Instagram",
+        "Know Your Meme"
+      ],
+      "notes": "KYM entry published Nov 3, 2026 (~954 page views): original TikTok by @leehoustonx on Nov 1; wave of AI remakes on TikTok/Reels/X. @Flovaai remix 2,343 likes / 260K views (X API, Nov 4 9am). X News story on the cafe seating mix-up. Nov 4 reads (10am PT): TikTok @leehoustonx 10.4M views; Instagram @kevinwinnik 11M likes."
     },
     {
       "rank": 2,
@@ -224,53 +299,72 @@
         {
           "name": "KYM: Kleinification",
           "url": "https://knowyourmeme.com/memes/ethan-klein-ai-edits-kleinification"
+        },
+        {
+          "name": "TikTok / @gmcnews (592K views)",
+          "url": "https://www.tiktok.com/@gmcnews/video/7701593523144936718"
+        },
+        {
+          "name": "Instagram / @kleinhila (319K likes)",
+          "url": "https://www.instagram.com/p/De00ijxjhPR/"
+        },
+        {
+          "name": "YouTube / Scroll Deep (359K views)",
+          "url": "https://www.youtube.com/watch?v=YhHhcVsWg0g"
         }
       ],
       "first_seen": "2026-10-23",
-      "score": 81.1,
-      "notes": "H3 cheating-allegation meme factory still on KYM Top Entries This Month (Nov 4); event page ~17,341 views. Keep attribution framing."
+      "score": 87.5,
+      "sources": [
+        "X",
+        "TikTok",
+        "Instagram",
+        "YouTube",
+        "Know Your Meme"
+      ],
+      "notes": "H3 cheating-allegation meme factory still on KYM Top Entries This Month (Nov 4); event page ~17,341 views. Keep attribution framing. Nov 4 reads (10am PT): TikTok @gmcnews 592K views; Instagram @kleinhila 319K likes; YouTube 'Victim card De-Klein'd' 359K views."
     },
     {
       "rank": 3,
-      "id": "skull-cap",
-      "title": "TIKTOK'S SKULL CAP GLOW-UP TREND HITS 12.8M VIEWS",
-      "image": "images/skull-cap.jpg",
+      "id": "frutiger-aero-yams",
+      "title": "'FRUTIGER AERO YAMS': BRAINROT CATCHPHRASE TEASING FANS OF THE GLOSSY 2000s AESTHETIC GETS A KYM ENTRY",
+      "image": "images/frutiger-aero-yams.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/skull-cap-trend",
-      "source_name": "Know Your Meme",
-      "credit": "image via Know Your Meme; original creators as documented there",
-      "also": [],
-      "first_seen": "2026-10-27",
-      "score": 79.1,
-      "notes": "KYM cites 286K likes / 12.8M views; KYM Weekly Meme Roundup (Oct 30)."
-    },
-    {
-      "rank": 4,
-      "id": "snow-leopard",
-      "title": "'*PAWS AT YOU*': AI SNOW LEOPARD 'SNOWMEI' BEGS ITS WAY ACROSS THE INTERNET",
-      "image": "images/snow-leopard.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/snow-leopard-paws-at-you",
+      "source_url": "https://knowyourmeme.com/memes/frutiger-aero-yams",
       "source_name": "Know Your Meme",
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @dogwife333",
-          "url": "https://x.com/dogwife333/status/2114198070132961395"
+          "name": "X / @LashSleeper (240K views)",
+          "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
-          "name": "X News",
-          "url": "https://x.com/i/trending/2117374174196830291"
+          "name": "TikTok / @watosis (299K views)",
+          "url": "https://www.tiktok.com/@watosis/video/7703458958266092831"
+        },
+        {
+          "name": "Instagram / @thebigsolomando (70K likes)",
+          "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
+        },
+        {
+          "name": "YouTube / Lessons in Meme Culture (416K views)",
+          "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
         }
       ],
-      "first_seen": "2026-10-24",
-      "score": 78.2,
-      "notes": "23,698 likes / 328K views on an early *paws at you* post (X API, Nov 4). KYM entry ~7,227 views; still in weekly X News."
+      "first_seen": "2026-10-19",
+      "score": 84.3,
+      "sources": [
+        "X",
+        "TikTok",
+        "Instagram",
+        "YouTube",
+        "Know Your Meme"
+      ],
+      "notes": "KYM entry added Nov 3, 2026, plus a KYM explainer the same day; earliest known use is an Oct 19 Instagram post. Reads on Nov 4 (10am PT): YouTube 'Frutiger Aero Yams To Your Right' 416K views in about a day; @LashSleeper yam image 240K views / 27K likes on X; @watosis slang-overload TikTok 299K views; @thebigsolomando Instagram post 70K likes."
     },
     {
-      "rank": 5,
+      "rank": 4,
       "id": "anakin-genz",
       "title": "ANAKIN SKYWALKER BECOMES THE FACE OF GEN Z MALE RAGE",
       "image": "images/anakin-genz.jpg",
@@ -283,50 +377,102 @@
         {
           "name": "X News (election Anakin)",
           "url": "https://x.com/i/trending/2117748883115962624"
+        },
+        {
+          "name": "YouTube / Akkad Daily (543K views)",
+          "url": "https://www.youtube.com/watch?v=xJb6VuMWbRE"
         }
       ],
       "first_seen": "2026-10-30",
-      "score": 76.8,
-      "notes": "KYM Anakin Skywalker Gen Z Male Rage Memes still Popular Right Now / Top Entry This Month (Nov 4 9am); ~14,844 KYM page views. Election-night Anakin edits also hit X News."
+      "score": 82.0,
+      "sources": [
+        "X",
+        "TikTok",
+        "YouTube",
+        "Know Your Meme"
+      ],
+      "notes": "KYM Anakin Skywalker Gen Z Male Rage Memes still Popular Right Now / Top Entry This Month (Nov 4 9am); ~14,844 KYM page views. Election-night Anakin edits also hit X News. Nov 4 reads (10am PT): YouTube 'They're Not Happy About Zoomer Anakin' 543K views."
+    },
+    {
+      "rank": 5,
+      "id": "culkin-thousand-yard",
+      "title": "MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
+      "image": "images/culkin-thousand-yard.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/DiscussingFilm/status/2116776966141415441",
+      "source_name": "X / @DiscussingFilm",
+      "credit": "posted by @DiscussingFilm on X",
+      "also": [
+        {
+          "name": "Know Your Meme",
+          "url": "https://knowyourmeme.com/memes/thousand-yard-stare"
+        }
+      ],
+      "first_seen": "2026-11-01",
+      "score": 80.3,
+      "sources": [
+        "X",
+        "Know Your Meme"
+      ],
+      "notes": "351,509 likes / 16.98M views on the DiscussingFilm post (X API, Nov 4 9am). Still circulating in Halloween roundups. KYM Thousand-Yard Stare entry ~120,954 views."
     },
     {
       "rank": 6,
-      "id": "mini-producer",
-      "title": "'MINI PRODUCER' JAY THOMAS MANUEL TAKES OVER FEEDS",
-      "image": "images/mini-producer.jpg",
+      "id": "altman-ram",
+      "title": "ALTMAN: DRAM IN HOME PCS IS 'QUITE TERRIBLE' ALLOCATION... INTERNET HIDES ITS DIMMS",
+      "image": "images/altman-ram.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel",
-      "source_name": "Know Your Meme",
-      "credit": "image via Know Your Meme; original creators as documented there",
-      "also": [],
-      "first_seen": "2026-10-28",
-      "score": 76.5,
-      "notes": "KYM cites 7M views; KYM Weekly Meme Roundup (Oct 30)."
+      "source_url": "https://www.reddit.com/r/memes/comments/1xky93a/kiss_your_ram/",
+      "source_name": "Reddit r/memes",
+      "credit": "posted by u/famsteve20015 on r/memes",
+      "also": [
+        {
+          "name": "X trending story",
+          "url": "https://x.com/i/trending/2116915793342398671"
+        },
+        {
+          "name": "r/dankmemes: DIMM sockets",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xl1v6m/point_out_to_me_the_dimm_sockets_where_they_are/"
+        }
+      ],
+      "first_seen": "2026-10-30",
+      "score": 75.9,
+      "sources": [
+        "X",
+        "Reddit"
+      ],
+      "notes": "#1 on r/memes top-this-week and still high on top-this-month (Nov 4 9am). Sparked by Sam Altman's Cheeky Pint remark (Oct 29) that DRAM in personal computers is a 'quite terrible' use of limited supply. Fresh RAM variants keep topping Reddit."
     },
     {
       "rank": 7,
-      "id": "fancy-cafe",
-      "title": "'POV: YOUR FIRST TIME IN A FANCY CAFE': SITTING-ON-THE-TABLE SKIT SPAWNS AI REMIXES",
-      "image": "images/fancy-cafe.jpg",
+      "id": "jiren-dancing",
+      "title": "JIREN DANCES TO 'I'M SO IN LOVE WITH YOU'",
+      "image": "images/jiren-dancing.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/your-first-time-in-a-fancy-cafe",
+      "source_url": "https://knowyourmeme.com/memes/im-so-in-love-with-you-dragon-ball-dance-jiren-dancing",
       "source_name": "Know Your Meme",
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @Flovaai (260K views)",
-          "url": "https://x.com/Flovaai/status/2117466712597839938"
+          "name": "TikTok / @notmemetime (3.6M views)",
+          "url": "https://www.tiktok.com/@notmemetime/video/7700255100073217301"
         },
         {
-          "name": "X News (cafe mix-up)",
-          "url": "https://x.com/i/trending/2117626647205875908"
+          "name": "YouTube / Akenww (95K views)",
+          "url": "https://www.youtube.com/watch?v=SSj7jVyH5V8"
         }
       ],
-      "first_seen": "2026-11-01",
-      "score": 74.2,
-      "notes": "KYM entry published Nov 3, 2026 (~954 page views): original TikTok by @leehoustonx on Nov 1; wave of AI remakes on TikTok/Reels/X. @Flovaai remix 2,343 likes / 260K views (X API, Nov 4 9am). X News story on the cafe seating mix-up."
+      "first_seen": "2026-10-26",
+      "score": 75.0,
+      "sources": [
+        "TikTok",
+        "YouTube",
+        "Know Your Meme"
+      ],
+      "notes": "KYM cites 2.1M views; KYM Weekly Meme Roundup (Oct 30). Nov 4 reads (10am PT): TikTok @notmemetime 3.6M views; YouTube 'I'm so in love with you' 95K views."
     },
     {
       "rank": 8,
@@ -341,6 +487,9 @@
       "also": [],
       "first_seen": "2026-11-01",
       "score": 74.1,
+      "sources": [
+        "X"
+      ],
       "notes": "92,501 likes / 8.21M views (X API, Nov 4 9am). Spin-off reply memes still circulating."
     },
     {
@@ -361,68 +510,104 @@
       ],
       "first_seen": "2026-10-27",
       "score": 73.5,
+      "sources": [
+        "X"
+      ],
       "notes": "82,865 likes / 7.01M views on @vwxyz_4 (X API, Nov 4). Still a weekly/monthly fixture."
     },
     {
       "rank": 10,
-      "id": "thesis-monkey",
-      "title": "'THESIS MONKEY': HEADPHONES PRIMATE GIF BECOMES THE STUDY-SESSION MEME",
-      "image": "images/thesis-monkey.jpg",
+      "id": "skull-cap",
+      "title": "TIKTOK'S SKULL CAP GLOW-UP TREND HITS 12.8M VIEWS",
+      "image": "images/skull-cap.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://x.com/studsyun/status/2117440926024884418",
-      "source_name": "X / @studsyun",
-      "credit": "posted by @studsyun on X",
+      "source_url": "https://knowyourmeme.com/memes/skull-cap-trend",
+      "source_name": "Know Your Meme",
+      "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X News",
-          "url": "https://x.com/i/trending/2117696464759718217"
-        },
-        {
-          "name": "Earlier GIF post @wellsuchup",
-          "url": "https://x.com/wellsuchup/status/2116556868600664480"
+          "name": "TikTok / @_mc_chicken_lover (16M views)",
+          "url": "https://www.tiktok.com/@_mc_chicken_lover/video/7699223914823617823"
         }
       ],
-      "first_seen": "2026-11-03",
-      "score": 72.2,
-      "notes": "164,225 likes / 5.23M views on @studsyun's Nov 3 share of the headphones-monkey GIF (X API, Nov 4 9am). Captioned as frantic studying / 'Thesis Monkey'; X News story still active."
+      "first_seen": "2026-10-27",
+      "score": 73.0,
+      "sources": [
+        "TikTok",
+        "Know Your Meme"
+      ],
+      "notes": "KYM cites 286K likes / 12.8M views; KYM Weekly Meme Roundup (Oct 30). Nov 4 reads (10am PT): TikTok @_mc_chicken_lover 16M views."
     }
   ],
   "monthly": [
     {
       "rank": 1,
-      "id": "tip-toein",
-      "title": "AI RUMPELSTILTSKIN 'TIP TOEIN' IN MY JORDANS'",
-      "image": "images/tip-toein.jpg",
+      "id": "black-cat-clapping",
+      "title": "AI BLACK CAT SLOWLY CLAPS WITH HUMAN HANDS",
+      "image": "images/black-cat-clapping.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans",
+      "source_url": "https://knowyourmeme.com/memes/black-cat-clapping",
       "source_name": "Know Your Meme",
       "credit": "image via Know Your Meme; original creators as documented there",
-      "also": [],
-      "first_seen": "2026-10-06",
-      "score": 87.9,
-      "notes": "KYM cites 9.8M views; 65,864 KYM page views; October Meme of the Month nominee (mentioned in results editorial)."
+      "also": [
+        {
+          "name": "TikTok / @asian5767 (6.5M views)",
+          "url": "https://www.tiktok.com/@asian5767/video/7690722850595982606"
+        },
+        {
+          "name": "Instagram / @merkurianin (3M likes)",
+          "url": "https://www.instagram.com/p/DdtWc0qIbdH/"
+        },
+        {
+          "name": "YouTube (30K views)",
+          "url": "https://www.youtube.com/watch?v=nyNM4pGOjtc"
+        }
+      ],
+      "first_seen": "2026-10-05",
+      "score": 90.6,
+      "sources": [
+        "TikTok",
+        "Instagram",
+        "YouTube",
+        "Know Your Meme"
+      ],
+      "notes": "KYM cites 3.8M views; finished 4th in October 2026 Meme of the Month (7% of votes). Nov 4 reads (10am PT): TikTok @asian5767 6.5M views; Instagram @merkurianin 3M likes; YouTube 'Black cat clapping (VR)' 30K views."
     },
     {
       "rank": 2,
-      "id": "culkin-thousand-yard",
-      "title": "MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
-      "image": "images/culkin-thousand-yard.jpg",
+      "id": "out-partying",
+      "title": "'WHILE THEY ARE OUT PARTYING...' -- 35M VIEWS",
+      "image": "images/out-partying.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-      "source_name": "X / @DiscussingFilm",
-      "credit": "posted by @DiscussingFilm on X",
+      "source_url": "https://knowyourmeme.com/memes/while-they-are-out-partying",
+      "source_name": "Know Your Meme",
+      "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "Know Your Meme",
-          "url": "https://knowyourmeme.com/memes/thousand-yard-stare"
+          "name": "TikTok / @ryu_da_sigma (51.3M views)",
+          "url": "https://www.tiktok.com/@ryu_da_sigma/video/7698167502018333965"
+        },
+        {
+          "name": "Instagram / @wallys_smash_burgers (203K likes)",
+          "url": "https://www.instagram.com/reel/DesmfACJdA4/"
+        },
+        {
+          "name": "YouTube / Lessons in Meme Culture (477K views)",
+          "url": "https://www.youtube.com/watch?v=vR172MLtnnE"
         }
       ],
-      "first_seen": "2026-11-01",
-      "score": 87.3,
-      "notes": "351,509 likes / 16.98M views on the DiscussingFilm post (X API, Nov 4 9am). Still circulating in Halloween roundups. KYM Thousand-Yard Stare entry ~120,954 views."
+      "first_seen": "2026-10-21",
+      "score": 90.2,
+      "sources": [
+        "TikTok",
+        "Instagram",
+        "YouTube",
+        "Know Your Meme"
+      ],
+      "notes": "KYM cites 35M views / 160K likes. Nov 4 reads (10am PT): TikTok @ryu_da_sigma 51.3M views; Instagram @wallys_smash_burgers 203K likes; YouTube 'Watch This While They Are Out Partying BTW' 477K views."
     },
     {
       "rank": 3,
@@ -438,11 +623,24 @@
         {
           "name": "KYM: October 2026 Meme of the Month winner",
           "url": "https://knowyourmeme.com/editorials/see-the-winner-of-october-2026s-meme-of-the-month"
+        },
+        {
+          "name": "TikTok / @80saerobicz (2K views)",
+          "url": "https://www.tiktok.com/@80saerobicz/video/7683317731755609357"
+        },
+        {
+          "name": "YouTube / Papallax (887K views)",
+          "url": "https://www.youtube.com/watch?v=QmC21Kd5ktg"
         }
       ],
       "first_seen": "2026-09-30",
-      "score": 82.5,
-      "notes": "KYM Malfoid still Popular Right Now / Top Entry This Month (Nov 4); ~173,326 KYM page views. October Meme of the Month winner context."
+      "score": 88.9,
+      "sources": [
+        "TikTok",
+        "YouTube",
+        "Know Your Meme"
+      ],
+      "notes": "KYM Malfoid still Popular Right Now / Top Entry This Month (Nov 4); ~173,326 KYM page views. October Meme of the Month winner context. Nov 4 reads (10am PT): largest TikTok read directly @80saerobicz 2K views; YouTube 'Winter with Her | Draconia Malfoy' 887K views."
     },
     {
       "rank": 4,
@@ -462,83 +660,33 @@
         {
           "name": "KYM: Kleinification",
           "url": "https://knowyourmeme.com/memes/ethan-klein-ai-edits-kleinification"
+        },
+        {
+          "name": "TikTok / @gmcnews (592K views)",
+          "url": "https://www.tiktok.com/@gmcnews/video/7701593523144936718"
+        },
+        {
+          "name": "Instagram / @kleinhila (319K likes)",
+          "url": "https://www.instagram.com/p/De00ijxjhPR/"
+        },
+        {
+          "name": "YouTube / Scroll Deep (359K views)",
+          "url": "https://www.youtube.com/watch?v=YhHhcVsWg0g"
         }
       ],
       "first_seen": "2026-10-23",
-      "score": 81.1,
-      "notes": "H3 cheating-allegation meme factory still on KYM Top Entries This Month (Nov 4); event page ~17,341 views. Keep attribution framing."
+      "score": 87.5,
+      "sources": [
+        "X",
+        "TikTok",
+        "Instagram",
+        "YouTube",
+        "Know Your Meme"
+      ],
+      "notes": "H3 cheating-allegation meme factory still on KYM Top Entries This Month (Nov 4); event page ~17,341 views. Keep attribution framing. Nov 4 reads (10am PT): TikTok @gmcnews 592K views; Instagram @kleinhila 319K likes; YouTube 'Victim card De-Klein'd' 359K views."
     },
     {
       "rank": 5,
-      "id": "out-partying",
-      "title": "'WHILE THEY ARE OUT PARTYING...' -- 35M VIEWS",
-      "image": "images/out-partying.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/while-they-are-out-partying",
-      "source_name": "Know Your Meme",
-      "credit": "image via Know Your Meme; original creators as documented there",
-      "also": [],
-      "first_seen": "2026-10-21",
-      "score": 80.4,
-      "notes": "KYM cites 35M views / 160K likes."
-    },
-    {
-      "rank": 6,
-      "id": "skull-cap",
-      "title": "TIKTOK'S SKULL CAP GLOW-UP TREND HITS 12.8M VIEWS",
-      "image": "images/skull-cap.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/skull-cap-trend",
-      "source_name": "Know Your Meme",
-      "credit": "image via Know Your Meme; original creators as documented there",
-      "also": [],
-      "first_seen": "2026-10-27",
-      "score": 79.1,
-      "notes": "KYM cites 286K likes / 12.8M views; KYM Weekly Meme Roundup (Oct 30)."
-    },
-    {
-      "rank": 7,
-      "id": "im-so-sorry",
-      "title": "'I'M SO SORRY' TIKTOK SLIDESHOW TREND -- 25.6M VIEWS",
-      "image": "images/im-so-sorry.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/im-so-sorry-tiktok-trend",
-      "source_name": "Know Your Meme",
-      "credit": "image via Know Your Meme; original creators as documented there",
-      "also": [],
-      "first_seen": "2026-10-22",
-      "score": 79.1,
-      "notes": "KYM cites 25.6M views."
-    },
-    {
-      "rank": 8,
-      "id": "snow-leopard",
-      "title": "'*PAWS AT YOU*': AI SNOW LEOPARD 'SNOWMEI' BEGS ITS WAY ACROSS THE INTERNET",
-      "image": "images/snow-leopard.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/snow-leopard-paws-at-you",
-      "source_name": "Know Your Meme",
-      "credit": "image via Know Your Meme; original creators as documented there",
-      "also": [
-        {
-          "name": "X / @dogwife333",
-          "url": "https://x.com/dogwife333/status/2114198070132961395"
-        },
-        {
-          "name": "X News",
-          "url": "https://x.com/i/trending/2117374174196830291"
-        }
-      ],
-      "first_seen": "2026-10-24",
-      "score": 78.2,
-      "notes": "23,698 likes / 328K views on an early *paws at you* post (X API, Nov 4). KYM entry ~7,227 views; still in weekly X News."
-    },
-    {
-      "rank": 9,
       "id": "anakin-genz",
       "title": "ANAKIN SKYWALKER BECOMES THE FACE OF GEN Z MALE RAGE",
       "image": "images/anakin-genz.jpg",
@@ -551,26 +699,156 @@
         {
           "name": "X News (election Anakin)",
           "url": "https://x.com/i/trending/2117748883115962624"
+        },
+        {
+          "name": "YouTube / Akkad Daily (543K views)",
+          "url": "https://www.youtube.com/watch?v=xJb6VuMWbRE"
         }
       ],
       "first_seen": "2026-10-30",
-      "score": 76.8,
-      "notes": "KYM Anakin Skywalker Gen Z Male Rage Memes still Popular Right Now / Top Entry This Month (Nov 4 9am); ~14,844 KYM page views. Election-night Anakin edits also hit X News."
+      "score": 82.0,
+      "sources": [
+        "X",
+        "TikTok",
+        "YouTube",
+        "Know Your Meme"
+      ],
+      "notes": "KYM Anakin Skywalker Gen Z Male Rage Memes still Popular Right Now / Top Entry This Month (Nov 4 9am); ~14,844 KYM page views. Election-night Anakin edits also hit X News. Nov 4 reads (10am PT): YouTube 'They're Not Happy About Zoomer Anakin' 543K views."
+    },
+    {
+      "rank": 6,
+      "id": "im-so-sorry",
+      "title": "'I'M SO SORRY' TIKTOK SLIDESHOW TREND -- 25.6M VIEWS",
+      "image": "images/im-so-sorry.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/im-so-sorry-tiktok-trend",
+      "source_name": "Know Your Meme",
+      "credit": "image via Know Your Meme; original creators as documented there",
+      "also": [
+        {
+          "name": "TikTok / @kamdan.13 (604K views)",
+          "url": "https://www.tiktok.com/@kamdan.13/video/7699171246923173151"
+        },
+        {
+          "name": "YouTube / RICHLEV (489K views)",
+          "url": "https://www.youtube.com/watch?v=Y2nO505167Y"
+        }
+      ],
+      "first_seen": "2026-10-22",
+      "score": 81.3,
+      "sources": [
+        "TikTok",
+        "YouTube",
+        "Know Your Meme"
+      ],
+      "notes": "KYM cites 25.6M views. Nov 4 reads (10am PT): largest TikTok read directly @kamdan.13 604K views; YouTube 'Im So Sorry Trend Is STUPID' 489K views."
+    },
+    {
+      "rank": 7,
+      "id": "culkin-thousand-yard",
+      "title": "MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
+      "image": "images/culkin-thousand-yard.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/DiscussingFilm/status/2116776966141415441",
+      "source_name": "X / @DiscussingFilm",
+      "credit": "posted by @DiscussingFilm on X",
+      "also": [
+        {
+          "name": "Know Your Meme",
+          "url": "https://knowyourmeme.com/memes/thousand-yard-stare"
+        }
+      ],
+      "first_seen": "2026-11-01",
+      "score": 80.3,
+      "sources": [
+        "X",
+        "Know Your Meme"
+      ],
+      "notes": "351,509 likes / 16.98M views on the DiscussingFilm post (X API, Nov 4 9am). Still circulating in Halloween roundups. KYM Thousand-Yard Stare entry ~120,954 views."
+    },
+    {
+      "rank": 8,
+      "id": "tip-toein",
+      "title": "AI RUMPELSTILTSKIN 'TIP TOEIN' IN MY JORDANS'",
+      "image": "images/tip-toein.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans",
+      "source_name": "Know Your Meme",
+      "credit": "image via Know Your Meme; original creators as documented there",
+      "also": [
+        {
+          "name": "TikTok / @pfuzzypiffdoozy (6.1M views)",
+          "url": "https://www.tiktok.com/@pfuzzypiffdoozy/video/7692746647612312862"
+        }
+      ],
+      "first_seen": "2026-10-06",
+      "score": 78.9,
+      "sources": [
+        "X",
+        "TikTok",
+        "Know Your Meme"
+      ],
+      "notes": "KYM cites 9.8M views; 65,864 KYM page views; October Meme of the Month nominee (mentioned in results editorial). Nov 4 reads (10am PT): largest TikTok read directly @pfuzzypiffdoozy 6.1M views."
+    },
+    {
+      "rank": 9,
+      "id": "altman-ram",
+      "title": "ALTMAN: DRAM IN HOME PCS IS 'QUITE TERRIBLE' ALLOCATION... INTERNET HIDES ITS DIMMS",
+      "image": "images/altman-ram.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/memes/comments/1xky93a/kiss_your_ram/",
+      "source_name": "Reddit r/memes",
+      "credit": "posted by u/famsteve20015 on r/memes",
+      "also": [
+        {
+          "name": "X trending story",
+          "url": "https://x.com/i/trending/2116915793342398671"
+        },
+        {
+          "name": "r/dankmemes: DIMM sockets",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xl1v6m/point_out_to_me_the_dimm_sockets_where_they_are/"
+        }
+      ],
+      "first_seen": "2026-10-30",
+      "score": 75.9,
+      "sources": [
+        "X",
+        "Reddit"
+      ],
+      "notes": "#1 on r/memes top-this-week and still high on top-this-month (Nov 4 9am). Sparked by Sam Altman's Cheeky Pint remark (Oct 29) that DRAM in personal computers is a 'quite terrible' use of limited supply. Fresh RAM variants keep topping Reddit."
     },
     {
       "rank": 10,
-      "id": "mini-producer",
-      "title": "'MINI PRODUCER' JAY THOMAS MANUEL TAKES OVER FEEDS",
-      "image": "images/mini-producer.jpg",
+      "id": "jiren-dancing",
+      "title": "JIREN DANCES TO 'I'M SO IN LOVE WITH YOU'",
+      "image": "images/jiren-dancing.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel",
+      "source_url": "https://knowyourmeme.com/memes/im-so-in-love-with-you-dragon-ball-dance-jiren-dancing",
       "source_name": "Know Your Meme",
       "credit": "image via Know Your Meme; original creators as documented there",
-      "also": [],
-      "first_seen": "2026-10-28",
-      "score": 76.5,
-      "notes": "KYM cites 7M views; KYM Weekly Meme Roundup (Oct 30)."
+      "also": [
+        {
+          "name": "TikTok / @notmemetime (3.6M views)",
+          "url": "https://www.tiktok.com/@notmemetime/video/7700255100073217301"
+        },
+        {
+          "name": "YouTube / Akenww (95K views)",
+          "url": "https://www.youtube.com/watch?v=SSj7jVyH5V8"
+        }
+      ],
+      "first_seen": "2026-10-26",
+      "score": 75.0,
+      "sources": [
+        "TikTok",
+        "YouTube",
+        "Know Your Meme"
+      ],
+      "notes": "KYM cites 2.1M views; KYM Weekly Meme Roundup (Oct 30). Nov 4 reads (10am PT): TikTok @notmemetime 3.6M views; YouTube 'I'm so in love with you' 95K views."
     }
   ]
 }

@@ -288,6 +288,39 @@
       "how_to_use": [],
       "checked": "2026-11-03T23:51:43-08:00"
     },
+    "black-cat-clapping": {
+      "name": "Black Cat Clapping",
+      "ids": [
+        "black-cat-clapping"
+      ],
+      "status": "full",
+      "explainer": "A green-screen meme built on an AI-generated video of a black cat with human hands and a human smile, slowly clapping. People drop the clapping cat into their own clips and captions to sarcastically \"applaud\" someone, usually for doing something bad or embarrassing.",
+      "origin": "Know Your Meme traces it to a September 25, 2026 Instagram comedy video by merkurianin in which he feeds his cat and the AI-generated cat smiles and claps at him. On September 28, TikToker @asian5767 posted a green-screen version captioned about a teacher taking their phone, and the clip spread as a reaction meme through October 2026; it finished fourth in KYM's October 2026 Meme of the Month poll.",
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Slow-clapping cat as a reaction to someone's questionable decision",
+        "\"I answered correctly and bro started clapping\""
+      ],
+      "source_url": "https://knowyourmeme.com/memes/black-cat-clapping",
+      "kym_url": "https://knowyourmeme.com/memes/black-cat-clapping",
+      "sources": [
+        {
+          "name": "Know Your Meme: Black Cat Clapping",
+          "url": "https://knowyourmeme.com/memes/black-cat-clapping"
+        },
+        {
+          "name": "Original video by merkurianin on Instagram",
+          "url": "https://www.instagram.com/p/DdtWc0qIbdH/"
+        },
+        {
+          "name": "@asian5767 green-screen meme on TikTok",
+          "url": "https://www.tiktok.com/@asian5767/video/7690722850595982606"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T18:15:15+00:00"
+    },
     "britannica-mitochondria": {
       "name": "Britannica's Mitochondria Election Joke",
       "ids": [
@@ -454,6 +487,47 @@
       "related": [],
       "written": "2026-11-04",
       "checked": "2026-11-04T06:05:50-08:00"
+    },
+    "frutiger-aero-yams": {
+      "name": "Frutiger Aero Yams",
+      "ids": [
+        "frutiger-aero-yams"
+      ],
+      "status": "full",
+      "explainer": "A nonsense brainrot catchphrase that teases fans of Frutiger Aero, the glossy, bubbly, water-and-clouds design look of the late 2000s. \"Yams\" is slang for someone's backside, so \"Frutiger Aero yams to your right\" jokingly treats the aesthetic as so irresistible that even that gets the glossy treatment. People also apply it literally, with shiny Frutiger Aero-style yams, and pile it into slang-overload videos next to spin-offs like \"code rot yams.\"",
+      "origin": "Know Your Meme's earliest known example is an October 19, 2026 Instagram post by seiyaposting: an edited image of streamer CallMeCarson looking to the right, captioned \"Frutiger Aero yams to your right\" (KYM says it's unconfirmed whether this is the true origin). The phrase spread in late October on X, including an image of a glossy Frutiger Aero yam by @LashSleeper, and on November 2 TikToker @watosis used it in a slang-overload video. KYM published its entry on November 3, 2026.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Frutiger Aero yams to your right",
+        "Captioning any glossy, bubbly, early-2000s-looking image as \"Frutiger Aero yams\""
+      ],
+      "source_url": "https://knowyourmeme.com/memes/frutiger-aero-yams",
+      "kym_url": "https://knowyourmeme.com/memes/frutiger-aero-yams",
+      "sources": [
+        {
+          "name": "Know Your Meme: Frutiger Aero Yams",
+          "url": "https://knowyourmeme.com/memes/frutiger-aero-yams"
+        },
+        {
+          "name": "Earliest known example: seiyaposting on Instagram",
+          "url": "https://www.instagram.com/p/DesIK5_S-7A/"
+        },
+        {
+          "name": "@LashSleeper's Frutiger Aero yam on X",
+          "url": "https://x.com/LashSleeper/status/2115636173221896615"
+        },
+        {
+          "name": "@watosis slang-overload video on TikTok",
+          "url": "https://www.tiktok.com/@watosis/video/7703458958266092831"
+        },
+        {
+          "name": "YouTube: Frutiger Aero Yams To Your Right (Lessons in Meme Culture)",
+          "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T18:15:15+00:00"
     },
     "gym-cancel-holmes": {
       "name": "Gym Cancel / Elizabeth Holmes",

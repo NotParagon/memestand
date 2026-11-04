@@ -298,7 +298,7 @@ def mast(base, tag, h1=True):
     inner = f'<span class="logo"><a href="{base}index.html">MEMESTAND</a></span><span class="tag">{tag}</span>'
     return f'<header class="mast">{"<h1>" + inner + "</h1>" if h1 else "<div>" + inner + "</div>"}{THEME_TOGGLE}</header><div id="content"></div>'
 
-INTRO = "Ranked by cross-platform virality on X, Reddit and Know Your Meme."
+INTRO = "Ranked by cross-platform virality on X, TikTok, Instagram, Reddit, YouTube and Know Your Meme."
 
 def copyright_years():
     return f"{COPY_START}" if NOW.year <= COPY_START else f"{COPY_START}&ndash;{NOW.year}"
@@ -313,10 +313,10 @@ def footer(base):
     nav2 = " | ".join(f'<a href="{base}{u}">{t}</a>' for u, t in legal)
     return f'''<footer><nav class="foot" aria-label="Site">{nav}</nav>
 <nav class="foot" aria-label="Legal">{nav2}</nav>
-<p>Ranked by cross-platform virality: X engagement, Know Your Meme, Reddit top feeds and X trending stories.
+<p>Ranked by cross-platform virality: X engagement and trending stories, TikTok and Instagram post counts, Reddit top feeds, YouTube views and Know Your Meme.
 Headlines describe memes and online reactions, not verified facts about the people in them.</p>
 <p>All memes and images are &copy; their respective owners and are shown as small, credited thumbnails that link to the original source,
-for ranking and commentary. MemeStand is independent and is not affiliated with, endorsed by or sponsored by X, Reddit or Know Your Meme;
+for ranking and commentary. MemeStand is independent and is not affiliated with, endorsed by or sponsored by X, TikTok, Instagram, Reddit, YouTube or Know Your Meme;
 their names are used only to identify sources. Rights holders: see <a href="{base}dmca.html">DMCA / Takedowns</a>.</p>
 <p>&copy; {copyright_years()} MemeStand. Site design, rankings and compilation only; memes &copy; their respective owners.</p></footer>
 {CF_ANALYTICS}
@@ -347,7 +347,9 @@ def credit(m):
 
 def sources(m, lead=" "):
     also = " ".join(f'<a class="src" href="{e(a["url"])}" target="_blank" rel="noopener">{e(a["name"])}</a>' for a in m.get("also", []))
-    return f'<a class="src" href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m["source_name"])}</a>{lead}{also}'
+    seen = m.get("sources") or []           # platforms with confirmed evidence (tools/rank.py sources())
+    seen_html = f'<span class="fs">Seen on {e(", ".join(seen))}:</span> ' if len(seen) > 1 else ""
+    return f'{seen_html}<a class="src" href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m["source_name"])}</a>{lead}{also}'
 
 def meme_href(m, base):
     """Relative link to the meme's own page, or None (removed / unknown)."""
@@ -767,7 +769,7 @@ def build_period(p):
     if p == "daily":
         title = f"Top 10 Memes Today ({fmt_short(NOW)}) — Trending Memes Right Now | MemeStand"
         h1 = f"TOP 10 MEMES TODAY -- {fmt_long(NOW).upper()}"
-        desc = f"Today's top memes, {fmt_long(NOW)}: #1 is \"{t}\". The 10 most viral memes of the last 24-36 hours, ranked with the evidence from X, Reddit and Know Your Meme."
+        desc = f"Today's top memes, {fmt_long(NOW)}: #1 is \"{t}\". The 10 most viral memes of the last 24-36 hours, ranked with the evidence from X, TikTok, Instagram, Reddit, YouTube and Know Your Meme."
     elif p == "weekly":
         start = NOW.date() - datetime.timedelta(days=6)
         title = f"Trending Memes This Week — Top 10 ({start.strftime('%b %-d')}–{fmt_short(NOW)}) | MemeStand"
@@ -870,7 +872,7 @@ def prose_page(path, title, desc, tag, body, kind="WebPage"):
 
 def build_about():
     title = "About MemeStand — How We Rank the Internet's Top Memes"
-    desc = "MemeStand ranks the top 10 memes today, this week and this month using a virality evidence score built from X, Reddit and Know Your Meme data."
+    desc = "MemeStand ranks the top 10 memes today, this week and this month using a virality evidence score built from X, TikTok, Instagram, Reddit, YouTube and Know Your Meme data."
     body = f"""<h2>What is MemeStand?</h2>
 <p>MemeStand (memestand.com) is an independent, headline-style daily meme report. Every morning it publishes three ranked lists:
 the <a href="top-memes-today/">top 10 memes today</a>, the <a href="trending-memes-this-week/">top 10 trending memes this week</a>
@@ -879,16 +881,22 @@ and the <a href="best-memes-this-month/">best memes of the month</a> (last 30 da
 <h2>How are memes ranked?</h2>
 <p>Each candidate meme gets a <b>virality evidence score</b>. Every meme listed links to a real, checked source post or entry.</p>
 <table><tr><th>Signal</th><th>Points</th></tr>
-<tr><td>Reach of the best post or compilation (X impressions, or views cited by Know Your Meme)</td><td>10 &times; log10(views); 1M = 60, 10M = 70</td></tr>
-<tr><td>Only likes known</td><td>10 &times; log10(likes &times; 10)</td></tr>
+<tr><td>X: views of the best post (or 10 &times; likes when only likes are known)</td><td>10 &times; log10(views); 1M = 60, 10M = 70</td></tr>
+<tr><td>TikTok: views of the best public post we could read (or a count cited by Know Your Meme)</td><td>10 &times; log10(views) &minus; 5; 10M = 65, 30M = 70</td></tr>
+<tr><td>Instagram: likes on the best public post (logged-out pages show likes, not plays)</td><td>10 &times; log10(likes &times; 10) &minus; 5; 1M likes = 65</td></tr>
+<tr><td>YouTube: views of the best video about the meme (10,000+ views)</td><td>10 &times; log10(views) + 5; 100K = 55, 1M = 65</td></tr>
 <tr><td>Reddit top-feed position (r/memes, r/dankmemes)</td><td>#1 = 60-62, &minus;2 per rank</td></tr>
-<tr><td>Each additional platform with confirmed spread</td><td>+5 (max +10)</td></tr>
-<tr><td>Documented on Know Your Meme</td><td>+5</td></tr>
-<tr><td>Picked in a KYM Weekly Roundup or Meme of the Month poll</td><td>+3</td></tr>
+<tr><td>Combined reach: the best platform score, plus a share of the next two</td><td>best + 10% of 2nd + 5% of 3rd (each platform capped at 75)</td></tr>
+<tr><td>Each additional source with confirmed evidence (of X, TikTok, Instagram, Reddit, YouTube, Know Your Meme)</td><td>+3 (max +12)</td></tr>
+<tr><td>Picked in a Know Your Meme editorial, Weekly Roundup or Meme of the Month poll</td><td>+3</td></tr>
 <tr><td>X trending news story about it</td><td>+5</td></tr>
 <tr><td>Know Your Meme page views &ge; 50,000</td><td>+5</td></tr></table>
+<p>Each platform is scored on its own scale, so a platform where views come cheaply (TikTok) can't drown out the others, and a meme
+that shows up on several platforms beats one that is big in a single place. TikTok and Instagram have no open trending lists, so
+their numbers come from public post pages we open (usually posts that Know Your Meme cites for the meme) or from counts Know Your
+Meme reports; we don't see the whole platform, so their coverage is partial.</p>
 <p>Windows: <b>today</b> = took off in the last ~36 hours; <b>this week</b> = active in the last 7 days; <b>this month</b> = active in the last 30 days.
-Engagement numbers come from the platforms and from Know Your Meme as they stood when we checked them; they can change or be wrong.</p>
+Engagement numbers come from the platforms' public pages and APIs and from Know Your Meme as they stood when we checked them; they can change or be wrong.</p>
 
 <h2 id="policy">Content and editorial policy</h2>
 <ul>
@@ -897,7 +905,7 @@ Engagement numbers come from the platforms and from Know Your Meme as they stood
 <li><b>Headlines:</b> headlines describe the meme and how people are reacting to it. They are not MemeStand's statements of fact about anyone. When a meme is about an allegation or controversy involving a real person, the headline says so and names the source (for example, &ldquo;per KYM&rdquo;); we don't repeat unverified claims as fact. Jokes and parody are labeled as jokes.</li>
 <li><b>What we leave out:</b> sexually explicit or nude content; hate speech and memes that demean people for race, ethnicity, national origin, religion, sex, sexual orientation, gender identity or disability; content that sexualizes, targets or identifies minors; graphic violence or gore; self-harm; harassment or doxxing of private individuals; and anything a rights holder asks us to remove. When in doubt, we leave it out.</li>
 <li><b>Corrections and removals:</b> if a headline is wrong or unfair, or you want your content removed, {contact_html()}. Copyright notices follow our <a href="dmca.html">DMCA policy</a>.</li>
-<li><b>Independence:</b> MemeStand is not affiliated with, endorsed by or sponsored by X, Reddit, Know Your Meme or anyone featured. Names of platforms and people are used only to identify sources and subjects. Nobody pays to be ranked.</li>
+<li><b>Independence:</b> MemeStand is not affiliated with, endorsed by or sponsored by X, TikTok, Instagram, Reddit, YouTube, Know Your Meme or anyone featured. Names of platforms and people are used only to identify sources and subjects. Nobody pays to be ranked.</li>
 </ul>
 <h2>Credits and takedowns</h2>
 <p>All memes belong to their creators and owners. See our <a href="dmca.html">DMCA / takedown policy</a>, <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a>.</p>"""
@@ -977,7 +985,7 @@ original, for identification, ranking and commentary. Using MemeStand gives you 
 meme, get permission from its owner.</li>
 <li><b>Our material.</b> The site design, the selection and arrangement of the rankings, our headlines, notes and code are &copy; {copyright_years()} MemeStand.
 You may link to any page and quote short excerpts with credit and a link.</li>
-<li><b>Trademarks.</b> X, Reddit, Know Your Meme and other names belong to their owners and are used only to identify sources. MemeStand is not
+<li><b>Trademarks.</b> X, TikTok, Instagram, Reddit, YouTube, Know Your Meme and other names belong to their owners and are used only to identify sources. MemeStand is not
 affiliated with, endorsed by or sponsored by any of them or by anyone featured on the site, and a meme's appearance here is not an
 endorsement by us or by them.</li>
 </ul>
@@ -986,7 +994,7 @@ endorsement by us or by them.</li>
 <p>If you own something on MemeStand and want it removed, see our <a href="dmca.html">DMCA and takedown policy</a>.</p>
 
 <h2>4. Third-party sites and content</h2>
-<p>MemeStand links to, and may display images from, sites we don't control, such as X, Reddit and Know Your Meme. Their content, terms and
+<p>MemeStand links to, and may display images from, sites we don't control, such as X, TikTok, Instagram, Reddit, YouTube and Know Your Meme. Their content, terms and
 privacy practices are their own, and some memes contain language or themes that some readers find offensive. Follow outbound links at your own discretion.</p>
 
 <h2>5. Acceptable use</h2>
@@ -1044,8 +1052,8 @@ browser's localStorage; it is never sent to us.
 The other script tags are structured data (JSON-LD) that search engines read and browsers don't execute.</p>
 
 <h2>Third-party content and links</h2>
-<p>Thumbnails are served from memestand.com. If an item shows an image directly from its source platform (for example X, Reddit or
-Know Your Meme), your browser fetches it from that platform, which may then see your IP address and browser details; we tell browsers
+<p>Thumbnails are served from memestand.com. If an item shows an image directly from its source platform (for example X, Reddit,
+Know Your Meme, TikTok, Instagram or YouTube), your browser fetches it from that platform, which may then see your IP address and browser details; we tell browsers
 not to send the page address with those requests. When you click a link to another site, that site's own privacy policy applies.</p>
 
 <h2>Contacting us</h2>
@@ -1075,7 +1083,7 @@ def build_feed(snaps):
         imgh = f'<p><img src="{e(img)}" alt="{e(alt(t, "today"))}"{wh_attrs(img_src(t)) if img_dims(img_src(t)) else ""}></p>' if img else ""
         first = e(t['title']) if t.get("removed") else f"<a href=\"{e(t['source_url'])}\">{e(t['title'])}</a>"
         content = (f"{imgh}<p>#1 meme of {fmt_long(dd)}: {first}</p><p>Top 10 memes today:</p><ol>{lis}</ol>"
-                   f"<p>Memes &copy; their respective owners; MemeStand is not affiliated with X, Reddit or Know Your Meme.</p>")
+                   f"<p>Memes &copy; their respective owners; MemeStand is not affiliated with X, TikTok, Instagram, Reddit, YouTube or Know Your Meme.</p>")
         entries.append(f'''<entry>
 <title>{e(f"Top meme of {fmt_long(dd)}: {tc(t['title'])}")}</title>
 <link href="{u}"/>
@@ -1135,7 +1143,7 @@ def build_llms():
                          for m in data[p])
     write("llms.txt", f"""# MemeStand
 
-> MemeStand (https://memestand.com) is an independent, headline-style daily meme report: the internet's top 10 memes today, the top 10 trending memes this week, and the best memes of the month (last 30 days), ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, Reddit top feeds (r/memes, r/dankmemes) and Know Your Meme. Updated every morning (Pacific Time). Every listed meme links to its original source.
+> MemeStand (https://memestand.com) is an independent, headline-style daily meme report: the internet's top 10 memes today, the top 10 trending memes this week, and the best memes of the month (last 30 days), ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated several times a day (Pacific Time). Every listed meme links to its original source.
 
 Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 
@@ -1174,7 +1182,7 @@ Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 - Rankings change daily; the archive pages are permanent snapshots (items removed after a takedown request are marked as removed).
 - Headlines describe memes and online reactions; they are not MemeStand's statements of fact about the people involved. Where a headline mentions a claim about a person, it is attributed to its source.
 - Meme explainer pages state only what the ranked source post, the linked original posts or Know Your Meme document; a "short" page means little verified information exists, not that anything was guessed.
-- The memes themselves belong to their creators and owners. MemeStand is independent and not affiliated with, endorsed by or sponsored by X, Reddit, Know Your Meme or any person or brand mentioned.
+- The memes themselves belong to their creators and owners. MemeStand is independent and not affiliated with, endorsed by or sponsored by X, TikTok, Instagram, Reddit, YouTube, Know Your Meme or any person or brand mentioned.
 """)
 
 # ---------------------------------------------------------------- main

@@ -19,15 +19,21 @@
         }
       ],
       "ev": {
-        "peak_views": 16980931,
         "platforms": [
           "X",
-          "KYM"
+          "Know Your Meme"
         ],
         "kym": true,
         "x_news": false,
         "kym_editorial": false,
-        "kym_views": 120954
+        "kym_views": 120954,
+        "x": {
+          "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
+          "views": 16981747,
+          "likes": 351505,
+          "checked": "2026-11-04",
+          "via": "X API"
+        }
       },
       "notes": "351,509 likes / 16.98M views on the DiscussingFilm post (X API, Nov 4 9am). Still circulating in Halloween roundups. KYM Thousand-Yard Stare entry ~120,954 views."
     },
@@ -57,12 +63,15 @@
           "sub": "memes",
           "rank": 1
         },
-        "peak_views": 755000,
         "platforms": [
           "Reddit",
           "X"
         ],
-        "x_news": true
+        "x_news": true,
+        "x": {
+          "views": 755000,
+          "via": "earlier X API read"
+        }
       },
       "notes": "#1 on r/memes top-this-week and still high on top-this-month (Nov 4 9am). Sparked by Sam Altman's Cheeky Pint remark (Oct 29) that DRAM in personal computers is a 'quite terrible' use of limited supply. Fresh RAM variants keep topping Reddit."
     },
@@ -79,13 +88,20 @@
       "card_text": "“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”",
       "first_seen": "2026-11-01",
       "ev": {
-        "peak_views": 8213197,
         "platforms": [
           "X"
         ],
-        "x_news": true
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/elonmusk/status/2116875604889112772",
+          "views": 8217599,
+          "likes": 92512,
+          "checked": "2026-11-04",
+          "via": "X API"
+        }
       },
-      "notes": "92,501 likes / 8.21M views (X API, Nov 4 9am). Spin-off reply memes still circulating."
+      "notes": "92,501 likes / 8.21M views (X API, Nov 4 9am). Spin-off reply memes still circulating.",
+      "also": []
     },
     {
       "id": "pakistani-citizenship",
@@ -99,12 +115,19 @@
       "card_text": "“she only wants me for my pakistani citizenship”",
       "first_seen": "2026-10-31",
       "ev": {
-        "peak_views": 6481786,
         "platforms": [
           "X"
-        ]
+        ],
+        "x": {
+          "url": "https://x.com/vibeistani/status/2116644824703279122",
+          "views": 6485303,
+          "likes": 30807,
+          "checked": "2026-11-04",
+          "via": "X API"
+        }
       },
-      "notes": "30,791 likes / 6.48M views (X API, Nov 4 9am). Copycat citizenship-joke posts still circulating."
+      "notes": "30,791 likes / 6.48M views (X API, Nov 4 9am). Copycat citizenship-joke posts still circulating.",
+      "also": []
     },
     {
       "id": "heidi-32gb",
@@ -125,7 +148,8 @@
           "Reddit"
         ]
       },
-      "notes": "#8 on r/memes top-this-week (Nov 3)."
+      "notes": "#8 on r/memes top-this-week (Nov 3).",
+      "also": []
     },
     {
       "id": "paxton-salsa",
@@ -139,14 +163,21 @@
       "card_text": "“Ken Paxton eats salsa made in New York City.”",
       "first_seen": "2026-10-30",
       "ev": {
-        "peak_views": 66884,
         "platforms": [
           "X"
         ],
-        "x_news": true
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
+          "views": 67784,
+          "likes": 2789,
+          "checked": "2026-11-04",
+          "via": "X API"
+        }
       },
       "notes": "Joke post riffing on the old 'salsa made in New York City' ad line; not a factual claim. 2,791 likes / 66,884 views (X API, Nov 3); X News story.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": []
     },
     {
       "id": "snow-leopard",
@@ -167,21 +198,41 @@
         {
           "name": "X News",
           "url": "https://x.com/i/trending/2117374174196830291"
+        },
+        {
+          "name": "TikTok / @angelickk4 (13K views)",
+          "url": "https://www.tiktok.com/@angelickk4/video/7700321423641808146"
         }
       ],
       "ev": {
-        "peak_views": 328126,
         "platforms": [
           "X",
-          "KYM",
+          "Know Your Meme",
           "TikTok"
         ],
         "kym": true,
         "x_news": true,
         "kym_editorial": true,
-        "kym_views": 7227
+        "kym_views": 7227,
+        "x": {
+          "url": "https://x.com/dogwife333/status/2114198070132961395",
+          "views": 328161,
+          "likes": 23700,
+          "checked": "2026-11-04",
+          "via": "X API"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@angelickk4/video/7700321423641808146",
+          "views": 12800,
+          "likes": 1158,
+          "author": "@angelickk4",
+          "posted": "2026-10-24",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 1
+        }
       },
-      "notes": "23,698 likes / 328K views on an early *paws at you* post (X API, Nov 4). KYM entry ~7,227 views; still in weekly X News.",
+      "notes": "23,698 likes / 328K views on an early *paws at you* post (X API, Nov 4). KYM entry ~7,227 views; still in weekly X News. Nov 4 reads (10am PT): TikTok @angelickk4 13K views.",
       "first_seen_basis": "earliest viral X post found (@dogwife333, Oct 24 PT); KYM entry Oct 29"
     },
     {
@@ -203,19 +254,66 @@
         {
           "name": "KYM: Kleinification",
           "url": "https://knowyourmeme.com/memes/ethan-klein-ai-edits-kleinification"
+        },
+        {
+          "name": "TikTok / @gmcnews (592K views)",
+          "url": "https://www.tiktok.com/@gmcnews/video/7701593523144936718"
+        },
+        {
+          "name": "Instagram / @kleinhila (319K likes)",
+          "url": "https://www.instagram.com/p/De00ijxjhPR/"
+        },
+        {
+          "name": "YouTube / Scroll Deep (359K views)",
+          "url": "https://www.youtube.com/watch?v=YhHhcVsWg0g"
         }
       ],
       "ev": {
-        "peak_views": 6400000,
         "platforms": [
-          "KYM",
-          "X"
+          "Know Your Meme",
+          "X",
+          "TikTok",
+          "Instagram",
+          "YouTube"
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 17341
+        "kym_views": 17341,
+        "x": {
+          "url": "https://x.com/PopBase/status/2114415796890038370",
+          "views": 2199444,
+          "likes": 43165,
+          "checked": "2026-11-04",
+          "via": "X API"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@gmcnews/video/7701593523144936718",
+          "views": 591800,
+          "likes": 46600,
+          "author": "@gmcnews",
+          "posted": "2026-10-28",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 6
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/p/De00ijxjhPR/",
+          "likes": 319000,
+          "author": "@kleinhila",
+          "posted": "October 22, 2026",
+          "checked": "2026-11-04",
+          "via": "Instagram post page (embedded in the KYM entry)"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/watch?v=YhHhcVsWg0g",
+          "views": 358842,
+          "title": "Victim card De-Klein'd",
+          "channel": "Scroll Deep",
+          "checked": "2026-11-04",
+          "via": "YouTube video page"
+        }
       },
-      "notes": "H3 cheating-allegation meme factory still on KYM Top Entries This Month (Nov 4); event page ~17,341 views. Keep attribution framing.",
+      "notes": "H3 cheating-allegation meme factory still on KYM Top Entries This Month (Nov 4); event page ~17,341 views. Keep attribution framing. Nov 4 reads (10am PT): TikTok @gmcnews 592K views; Instagram @kleinhila 319K likes; YouTube 'Victim card De-Klein'd' 359K views.",
       "first_seen_basis": "KYM entry published date",
       "headline_reviewed": true
     },
@@ -231,16 +329,32 @@
       "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/678/Screenshot_2026-10-27_123503.png",
       "first_seen": "2026-10-27",
       "ev": {
-        "peak_views": 12800000,
         "platforms": [
-          "TikTok"
+          "TikTok",
+          "Know Your Meme"
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 1895
+        "kym_views": 1895,
+        "tiktok": {
+          "url": "https://www.tiktok.com/@_mc_chicken_lover/video/7699223914823617823",
+          "views": 16000000,
+          "likes": 3200000,
+          "author": "@_mc_chicken_lover",
+          "posted": "2026-10-21",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 9
+        }
       },
-      "notes": "KYM cites 286K likes / 12.8M views; KYM Weekly Meme Roundup (Oct 30).",
-      "first_seen_basis": "KYM entry published date"
+      "notes": "KYM cites 286K likes / 12.8M views; KYM Weekly Meme Roundup (Oct 30). Nov 4 reads (10am PT): TikTok @_mc_chicken_lover 16M views.",
+      "first_seen_basis": "KYM entry published date",
+      "also": [
+        {
+          "name": "TikTok / @_mc_chicken_lover (16M views)",
+          "url": "https://www.tiktok.com/@_mc_chicken_lover/video/7699223914823617823"
+        }
+      ]
     },
     {
       "id": "mini-producer",
@@ -254,18 +368,34 @@
       "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/686/miniprodcover.jpg",
       "first_seen": "2026-10-28",
       "ev": {
-        "peak_views": 7000000,
         "platforms": [
-          "TikTok"
+          "TikTok",
+          "Know Your Meme"
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 1455
+        "kym_views": 1455,
+        "tiktok": {
+          "url": "https://www.tiktok.com/@durk.clips/video/7700402916250651934",
+          "views": 13200000,
+          "likes": 2700000,
+          "author": "@durk.clips",
+          "posted": "2026-10-25",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 4
+        }
       },
-      "notes": "KYM cites 7M views; KYM Weekly Meme Roundup (Oct 30).",
+      "notes": "KYM cites 7M views; KYM Weekly Meme Roundup (Oct 30). Nov 4 reads (10am PT): TikTok @durk.clips 13.2M views.",
       "first_seen_basis": "KYM entry published date",
       "flag_note": "Subject is an adult (b. 1995, per KYM) with a disability; some memes use AI edits of his likeness. Kept with a neutral headline; drop it if the trend turns to mockery.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": [
+        {
+          "name": "TikTok / @durk.clips (13.2M views)",
+          "url": "https://www.tiktok.com/@durk.clips/video/7700402916250651934"
+        }
+      ]
     },
     {
       "id": "jiren-dancing",
@@ -279,16 +409,45 @@
       "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/670/coverjiren.jpg",
       "first_seen": "2026-10-26",
       "ev": {
-        "peak_views": 2100000,
         "platforms": [
-          "TikTok"
+          "TikTok",
+          "YouTube",
+          "Know Your Meme"
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 4159
+        "kym_views": 4159,
+        "tiktok": {
+          "url": "https://www.tiktok.com/@notmemetime/video/7700255100073217301",
+          "views": 3600000,
+          "likes": 665000,
+          "author": "@notmemetime",
+          "posted": "2026-10-24",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 7
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/watch?v=SSj7jVyH5V8",
+          "views": 95373,
+          "title": "I'm so in love with you",
+          "channel": "Akenww",
+          "checked": "2026-11-04",
+          "via": "YouTube video page"
+        }
       },
-      "notes": "KYM cites 2.1M views; KYM Weekly Meme Roundup (Oct 30).",
-      "first_seen_basis": "KYM entry published date"
+      "notes": "KYM cites 2.1M views; KYM Weekly Meme Roundup (Oct 30). Nov 4 reads (10am PT): TikTok @notmemetime 3.6M views; YouTube 'I'm so in love with you' 95K views.",
+      "first_seen_basis": "KYM entry published date",
+      "also": [
+        {
+          "name": "TikTok / @notmemetime (3.6M views)",
+          "url": "https://www.tiktok.com/@notmemetime/video/7700255100073217301"
+        },
+        {
+          "name": "YouTube / Akenww (95K views)",
+          "url": "https://www.youtube.com/watch?v=SSj7jVyH5V8"
+        }
+      ]
     },
     {
       "id": "anakin-genz",
@@ -302,22 +461,38 @@
       "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/695/Political_Prequel_Memes_banner.jpg",
       "first_seen": "2026-10-30",
       "ev": {
-        "peak_views": 475000,
         "platforms": [
-          "KYM",
+          "Know Your Meme",
           "X",
-          "TikTok"
+          "TikTok",
+          "YouTube"
         ],
         "kym": true,
         "kym_views": 14844,
-        "x_news": true
+        "x_news": true,
+        "x": {
+          "views": 475000,
+          "via": "earlier X API read"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/watch?v=xJb6VuMWbRE",
+          "views": 543395,
+          "title": "They're Not Happy About Zoomer Anakin",
+          "channel": "Akkad Daily",
+          "checked": "2026-11-04",
+          "via": "YouTube video page"
+        }
       },
-      "notes": "KYM Anakin Skywalker Gen Z Male Rage Memes still Popular Right Now / Top Entry This Month (Nov 4 9am); ~14,844 KYM page views. Election-night Anakin edits also hit X News.",
+      "notes": "KYM Anakin Skywalker Gen Z Male Rage Memes still Popular Right Now / Top Entry This Month (Nov 4 9am); ~14,844 KYM page views. Election-night Anakin edits also hit X News. Nov 4 reads (10am PT): YouTube 'They're Not Happy About Zoomer Anakin' 543K views.",
       "first_seen_basis": "KYM entry published date",
       "also": [
         {
           "name": "X News (election Anakin)",
           "url": "https://x.com/i/trending/2117748883115962624"
+        },
+        {
+          "name": "YouTube / Akkad Daily (543K views)",
+          "url": "https://www.youtube.com/watch?v=xJb6VuMWbRE"
         }
       ]
     },
@@ -340,7 +515,8 @@
           "Reddit"
         ]
       },
-      "notes": "#10 on r/memes top-this-month (Nov 3)."
+      "notes": "#10 on r/memes top-this-month (Nov 3).",
+      "also": []
     },
     {
       "id": "tip-toein",
@@ -353,17 +529,33 @@
       "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/575/tiptoeing.jpg",
       "first_seen": "2026-10-06",
       "ev": {
-        "peak_views": 9800000,
         "platforms": [
           "TikTok",
-          "X"
+          "X",
+          "Know Your Meme"
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 65864
+        "kym_views": 65864,
+        "tiktok": {
+          "views": 9800000,
+          "via": "KYM-cited count",
+          "largest_post_read": {
+            "url": "https://www.tiktok.com/@pfuzzypiffdoozy/video/7692746647612312862",
+            "views": 6100000,
+            "likes": 351400,
+            "author": "@pfuzzypiffdoozy"
+          }
+        }
       },
-      "notes": "KYM cites 9.8M views; 65,864 KYM page views; October Meme of the Month nominee (mentioned in results editorial).",
-      "first_seen_basis": "KYM entry published date"
+      "notes": "KYM cites 9.8M views; 65,864 KYM page views; October Meme of the Month nominee (mentioned in results editorial). Nov 4 reads (10am PT): largest TikTok read directly @pfuzzypiffdoozy 6.1M views.",
+      "first_seen_basis": "KYM entry published date",
+      "also": [
+        {
+          "name": "TikTok / @pfuzzypiffdoozy (6.1M views)",
+          "url": "https://www.tiktok.com/@pfuzzypiffdoozy/video/7692746647612312862"
+        }
+      ]
     },
     {
       "id": "out-partying",
@@ -376,15 +568,57 @@
       "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/655/wtopcover.jpg",
       "first_seen": "2026-10-21",
       "ev": {
-        "peak_views": 35000000,
         "platforms": [
-          "TikTok"
+          "TikTok",
+          "Instagram",
+          "YouTube",
+          "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 5196
+        "kym_views": 5196,
+        "tiktok": {
+          "url": "https://www.tiktok.com/@ryu_da_sigma/video/7698167502018333965",
+          "views": 51300000,
+          "likes": 6400000,
+          "author": "@ryu_da_sigma",
+          "posted": "2026-10-19",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 9
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/reel/DesmfACJdA4/",
+          "likes": 203000,
+          "author": "@wallys_smash_burgers",
+          "posted": "October 19, 2026",
+          "checked": "2026-11-04",
+          "via": "Instagram post page (embedded in the KYM entry)"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/watch?v=vR172MLtnnE",
+          "views": 477006,
+          "title": "Watch This While They Are Out Partying BTW",
+          "channel": "Lessons in Meme Culture",
+          "checked": "2026-11-04",
+          "via": "YouTube video page"
+        }
       },
-      "notes": "KYM cites 35M views / 160K likes.",
-      "first_seen_basis": "KYM entry published date"
+      "notes": "KYM cites 35M views / 160K likes. Nov 4 reads (10am PT): TikTok @ryu_da_sigma 51.3M views; Instagram @wallys_smash_burgers 203K likes; YouTube 'Watch This While They Are Out Partying BTW' 477K views.",
+      "first_seen_basis": "KYM entry published date",
+      "also": [
+        {
+          "name": "TikTok / @ryu_da_sigma (51.3M views)",
+          "url": "https://www.tiktok.com/@ryu_da_sigma/video/7698167502018333965"
+        },
+        {
+          "name": "Instagram / @wallys_smash_burgers (203K likes)",
+          "url": "https://www.instagram.com/reel/DesmfACJdA4/"
+        },
+        {
+          "name": "YouTube / Lessons in Meme Culture (477K views)",
+          "url": "https://www.youtube.com/watch?v=vR172MLtnnE"
+        }
+      ]
     },
     {
       "id": "im-so-sorry",
@@ -397,15 +631,44 @@
       "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/663/sosorrycover.jpg",
       "first_seen": "2026-10-22",
       "ev": {
-        "peak_views": 25600000,
         "platforms": [
-          "TikTok"
+          "TikTok",
+          "YouTube",
+          "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 6643
+        "kym_views": 6643,
+        "tiktok": {
+          "views": 25600000,
+          "via": "KYM-cited count",
+          "largest_post_read": {
+            "url": "https://www.tiktok.com/@kamdan.13/video/7699171246923173151",
+            "views": 604400,
+            "likes": 10000,
+            "author": "@kamdan.13"
+          }
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/watch?v=Y2nO505167Y",
+          "views": 489210,
+          "title": "Im So Sorry Trend Is STUPID",
+          "channel": "RICHLEV",
+          "checked": "2026-11-04",
+          "via": "YouTube video page"
+        }
       },
-      "notes": "KYM cites 25.6M views.",
-      "first_seen_basis": "KYM entry published date"
+      "notes": "KYM cites 25.6M views. Nov 4 reads (10am PT): largest TikTok read directly @kamdan.13 604K views; YouTube 'Im So Sorry Trend Is STUPID' 489K views.",
+      "first_seen_basis": "KYM entry published date",
+      "also": [
+        {
+          "name": "TikTok / @kamdan.13 (604K views)",
+          "url": "https://www.tiktok.com/@kamdan.13/video/7699171246923173151"
+        },
+        {
+          "name": "YouTube / RICHLEV (489K views)",
+          "url": "https://www.youtube.com/watch?v=Y2nO505167Y"
+        }
+      ]
     },
     {
       "id": "malfoid",
@@ -421,20 +684,46 @@
         {
           "name": "KYM: October 2026 Meme of the Month winner",
           "url": "https://knowyourmeme.com/editorials/see-the-winner-of-october-2026s-meme-of-the-month"
+        },
+        {
+          "name": "TikTok / @80saerobicz (2K views)",
+          "url": "https://www.tiktok.com/@80saerobicz/video/7683317731755609357"
+        },
+        {
+          "name": "YouTube / Papallax (887K views)",
+          "url": "https://www.youtube.com/watch?v=QmC21Kd5ktg"
         }
       ],
       "ev": {
-        "peak_likes": 89000,
         "platforms": [
-          "KYM",
-          "TikTok"
+          "Know Your Meme",
+          "TikTok",
+          "YouTube"
         ],
         "kym": true,
         "kym_editorial": true,
         "x_news": true,
-        "kym_views": 173326
+        "kym_views": 173326,
+        "tiktok": {
+          "likes": 89000,
+          "via": "KYM-cited count",
+          "largest_post_read": {
+            "url": "https://www.tiktok.com/@80saerobicz/video/7683317731755609357",
+            "views": 1950,
+            "likes": 393,
+            "author": "@80saerobicz"
+          }
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/watch?v=QmC21Kd5ktg",
+          "views": 887100,
+          "title": "Winter with Her | Draconia Malfoy",
+          "channel": "Papallax",
+          "checked": "2026-11-04",
+          "via": "YouTube video page"
+        }
       },
-      "notes": "KYM Malfoid still Popular Right Now / Top Entry This Month (Nov 4); ~173,326 KYM page views. October Meme of the Month winner context.",
+      "notes": "KYM Malfoid still Popular Right Now / Top Entry This Month (Nov 4); ~173,326 KYM page views. October Meme of the Month winner context. Nov 4 reads (10am PT): largest TikTok read directly @80saerobicz 2K views; YouTube 'Winter with Her | Draconia Malfoy' 887K views.",
       "first_seen_basis": "KYM entry published date"
     },
     {
@@ -448,15 +737,31 @@
       "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/563/bjnmn.jpg",
       "first_seen": "2026-10-02",
       "ev": {
-        "peak_views": 12000000,
         "platforms": [
-          "TikTok"
+          "TikTok",
+          "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 26769
+        "kym_views": 26769,
+        "tiktok": {
+          "url": "https://www.tiktok.com/@ems2001xx/video/7675017791757487382",
+          "views": 13400000,
+          "likes": 2200000,
+          "author": "@ems2001xx",
+          "posted": "2026-08-17",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 7
+        }
       },
-      "notes": "KYM cites 12M views; 26,769 KYM page views.",
-      "first_seen_basis": "KYM entry published date"
+      "notes": "KYM cites 12M views; 26,769 KYM page views. Nov 4 reads (10am PT): TikTok @ems2001xx 13.4M views.",
+      "first_seen_basis": "KYM entry published date",
+      "also": [
+        {
+          "name": "TikTok / @ems2001xx (13.4M views)",
+          "url": "https://www.tiktok.com/@ems2001xx/video/7675017791757487382"
+        }
+      ]
     },
     {
       "id": "black-cat-clapping",
@@ -469,16 +774,58 @@
       "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/571/catclapcover.jpg",
       "first_seen": "2026-10-05",
       "ev": {
-        "peak_views": 3800000,
         "platforms": [
-          "TikTok"
+          "TikTok",
+          "Instagram",
+          "YouTube",
+          "Know Your Meme"
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 25472
+        "kym_views": 25472,
+        "tiktok": {
+          "url": "https://www.tiktok.com/@asian5767/video/7690722850595982606",
+          "views": 6500000,
+          "likes": 651500,
+          "author": "@asian5767",
+          "posted": "2026-09-28",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 7
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/p/DdtWc0qIbdH/",
+          "likes": 3000000,
+          "author": "@merkurianin",
+          "posted": "September 25, 2026",
+          "checked": "2026-11-04",
+          "via": "Instagram post page (embedded in the KYM entry)"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/watch?v=nyNM4pGOjtc",
+          "views": 30246,
+          "title": "Black cat clapping (VR)",
+          "channel": null,
+          "checked": "2026-11-04",
+          "via": "YouTube video page"
+        }
       },
-      "notes": "KYM cites 3.8M views; finished 4th in October 2026 Meme of the Month (7% of votes).",
-      "first_seen_basis": "KYM entry published date"
+      "notes": "KYM cites 3.8M views; finished 4th in October 2026 Meme of the Month (7% of votes). Nov 4 reads (10am PT): TikTok @asian5767 6.5M views; Instagram @merkurianin 3M likes; YouTube 'Black cat clapping (VR)' 30K views.",
+      "first_seen_basis": "KYM entry published date",
+      "also": [
+        {
+          "name": "TikTok / @asian5767 (6.5M views)",
+          "url": "https://www.tiktok.com/@asian5767/video/7690722850595982606"
+        },
+        {
+          "name": "Instagram / @merkurianin (3M likes)",
+          "url": "https://www.instagram.com/p/DdtWc0qIbdH/"
+        },
+        {
+          "name": "YouTube (30K views)",
+          "url": "https://www.youtube.com/watch?v=nyNM4pGOjtc"
+        }
+      ]
     },
     {
       "id": "ask-for-more-money",
@@ -499,7 +846,8 @@
           "Reddit"
         ]
       },
-      "notes": "#1 on r/memes top-this-month (Nov 3)."
+      "notes": "#1 on r/memes top-this-month (Nov 3).",
+      "also": []
     },
     {
       "id": "bear-landmine",
@@ -523,11 +871,17 @@
         }
       ],
       "ev": {
-        "peak_views": 3493277,
         "platforms": [
           "X"
         ],
-        "x_news": true
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
+          "views": 3493594,
+          "likes": 118690,
+          "checked": "2026-11-04",
+          "via": "X API"
+        }
       },
       "notes": "118,696 likes / 3.49M views on @EODHappyCaptain (X API, Nov 4). Trail-cam bear + UXO joke still circulating.",
       "headline_reviewed": true
@@ -550,11 +904,17 @@
         }
       ],
       "ev": {
-        "peak_views": 7021454,
         "platforms": [
           "X"
         ],
-        "x_news": true
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/vwxyz_4/status/2115203529795326309",
+          "views": 7035362,
+          "likes": 82871,
+          "checked": "2026-11-04",
+          "via": "X API"
+        }
       },
       "notes": "82,865 likes / 7.01M views on @vwxyz_4 (X API, Nov 4). Still a weekly/monthly fixture.",
       "headline_reviewed": true
@@ -607,7 +967,8 @@
         ]
       },
       "notes": "#3 on r/memes top-this-week (Nov 4). Walrus colony standing in for sprouting potatoes.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": []
     },
     {
       "id": "polymarket-good-ending",
@@ -629,7 +990,8 @@
         ]
       },
       "notes": "#10 on r/memes top-this-week (Nov 4).",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": []
     },
     {
       "id": "jacket-still-works",
@@ -651,7 +1013,8 @@
         ]
       },
       "notes": "#2 on r/dankmemes top-this-week (Nov 4). Angry Joe same-jacket gag.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": []
     },
     {
       "id": "genie-ai-jailbreak",
@@ -673,7 +1036,8 @@
         ]
       },
       "notes": "#2 on r/memes top-this-week and #14 on top-this-month (Nov 3). Drake-style panel contrasting Big Tech AI messaging with people using AI to jailbreak consoles and decompile games.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": []
     },
     {
       "id": "handbook-train-employee",
@@ -695,7 +1059,8 @@
         ]
       },
       "notes": "#2 on r/memes top-this-week (Nov 4 9am). Manager vs handbook training joke.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": []
     },
     {
       "id": "no-money-bald",
@@ -718,11 +1083,17 @@
         }
       ],
       "ev": {
-        "peak_views": 1443405,
         "platforms": [
           "X"
         ],
-        "x_news": true
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/abdykeen/status/2117175866232868947",
+          "views": 1448132,
+          "likes": 26803,
+          "checked": "2026-11-04",
+          "via": "X API"
+        }
       },
       "notes": "26,795 likes / 1.44M views on @abdykeen (X API, Nov 4 9am). Still quoted as a loss/gambling reaction clip.",
       "headline_reviewed": true
@@ -748,12 +1119,17 @@
         }
       ],
       "ev": {
-        "peak_views": 134644,
-        "peak_likes": 16051,
         "platforms": [
           "X"
         ],
-        "x_news": true
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/grindgod26/status/2117272503500550159",
+          "views": 134856,
+          "likes": 16059,
+          "checked": "2026-11-04",
+          "via": "X API"
+        }
       },
       "notes": "16,051 likes / 135K views on @grindgod26 'dad, I hate seals' variant (X API, Nov 4 9am). Format still in X News today (identities OK, fandom deal-breaker).",
       "headline_reviewed": true
@@ -761,7 +1137,6 @@
     {
       "id": "billionaires-blaming",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "BILLIONAIRES LAUGHING WHEN BLAME LANDS ON IMMIGRANTS, THE POOR, OR TRANS PEOPLE",
@@ -798,15 +1173,31 @@
       "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/701/wspcover.jpg",
       "first_seen": "2026-11-02",
       "ev": {
-        "peak_views": 2600000,
         "platforms": [
-          "TikTok"
+          "TikTok",
+          "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 634
+        "kym_views": 634,
+        "tiktok": {
+          "url": "https://www.tiktok.com/@ristyisvalid/video/7699927769479810335",
+          "views": 2700000,
+          "likes": 520700,
+          "author": "@ristyisvalid",
+          "posted": "2026-10-23",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 4
+        }
       },
-      "notes": "KYM entry published Nov 2, 2026 (~634 page views). KYM cites clips over 2.6M / 1.8M views; anime drip animations still circulating.",
-      "first_seen_basis": "KYM entry published date"
+      "notes": "KYM entry published Nov 2, 2026 (~634 page views). KYM cites clips over 2.6M / 1.8M views; anime drip animations still circulating. Nov 4 reads (10am PT): TikTok @ristyisvalid 2.7M views.",
+      "first_seen_basis": "KYM entry published date",
+      "also": [
+        {
+          "name": "TikTok / @ristyisvalid (2.7M views)",
+          "url": "https://www.tiktok.com/@ristyisvalid/video/7699927769479810335"
+        }
+      ]
     },
     {
       "id": "scientists-reveal-hi",
@@ -819,17 +1210,46 @@
       "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/623/srth.jpg",
       "first_seen": "2026-10-15",
       "ev": {
-        "peak_likes": 100000,
         "platforms": [
           "X",
-          "TikTok"
+          "TikTok",
+          "Instagram",
+          "Know Your Meme"
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 45850
+        "kym_views": 45850,
+        "tiktok": {
+          "url": "https://www.tiktok.com/@._bella_141/video/7672239822450265374",
+          "views": 216200,
+          "likes": 48300,
+          "author": "@._bella_141",
+          "posted": "2026-08-10",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 3
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/p/DMLiHlNPudv/",
+          "likes": 103000,
+          "author": "@cheemsitz",
+          "posted": "July 16, 2025",
+          "checked": "2026-11-04",
+          "via": "Instagram post page (embedded in the KYM entry)"
+        }
       },
-      "notes": "KYM cites posts over 100K likes; finished among October 2026 Meme of the Month related entries; 45,850 KYM page views.",
-      "first_seen_basis": "KYM entry published date"
+      "notes": "KYM cites posts over 100K likes; finished among October 2026 Meme of the Month related entries; 45,850 KYM page views. Nov 4 reads (10am PT): TikTok @._bella_141 216K views; Instagram @cheemsitz 103K likes.",
+      "first_seen_basis": "KYM entry published date",
+      "also": [
+        {
+          "name": "TikTok / @._bella_141 (216K views)",
+          "url": "https://www.tiktok.com/@._bella_141/video/7672239822450265374"
+        },
+        {
+          "name": "Instagram / @cheemsitz (103K likes)",
+          "url": "https://www.instagram.com/p/DMLiHlNPudv/"
+        }
+      ]
     },
     {
       "id": "thesis-monkey",
@@ -853,12 +1273,17 @@
         }
       ],
       "ev": {
-        "peak_views": 5229640,
-        "peak_likes": 164225,
         "platforms": [
           "X"
         ],
-        "x_news": true
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/studsyun/status/2117440926024884418",
+          "views": 5381117,
+          "likes": 168431,
+          "checked": "2026-11-04",
+          "via": "X API"
+        }
       },
       "notes": "164,225 likes / 5.23M views on @studsyun's Nov 3 share of the headphones-monkey GIF (X API, Nov 4 9am). Captioned as frantic studying / 'Thesis Monkey'; X News story still active.",
       "headline_reviewed": true
@@ -883,12 +1308,17 @@
         }
       ],
       "ev": {
-        "peak_views": 1011548,
-        "peak_likes": 50477,
         "platforms": [
           "X"
         ],
-        "x_news": true
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/Britannica/status/2117805815050727630",
+          "views": 1029010,
+          "likes": 51335,
+          "checked": "2026-11-04",
+          "via": "X API"
+        }
       },
       "notes": "50,477 likes / 1.01M views on @Britannica's Nov 4 election-night parody (X API, Nov 4 9am). Copycats flooded replies; X News story on the biology-joke wave.",
       "headline_reviewed": true
@@ -912,27 +1342,59 @@
         {
           "name": "X News (cafe mix-up)",
           "url": "https://x.com/i/trending/2117626647205875908"
+        },
+        {
+          "name": "TikTok / @leehoustonx (10.4M views)",
+          "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
+        },
+        {
+          "name": "Instagram / @kevinwinnik (11M likes)",
+          "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         }
       ],
       "ev": {
-        "peak_views": 260318,
         "platforms": [
           "TikTok",
           "X",
-          "KYM"
+          "Know Your Meme",
+          "Instagram"
         ],
         "kym": true,
         "kym_views": 954,
-        "x_news": true
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/Flovaai/status/2117466712597839938",
+          "views": 269898,
+          "likes": 2417,
+          "checked": "2026-11-04",
+          "via": "X API"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
+          "views": 10400000,
+          "likes": 1400000,
+          "author": "@leehoustonx",
+          "posted": "2026-11-01",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 2
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/reel/DfMHsr-hYPF/",
+          "likes": 11000000,
+          "author": "@kevinwinnik",
+          "posted": "October 31, 2026",
+          "checked": "2026-11-04",
+          "via": "Instagram post page (embedded in the KYM entry)"
+        }
       },
-      "notes": "KYM entry published Nov 3, 2026 (~954 page views): original TikTok by @leehoustonx on Nov 1; wave of AI remakes on TikTok/Reels/X. @Flovaai remix 2,343 likes / 260K views (X API, Nov 4 9am). X News story on the cafe seating mix-up.",
+      "notes": "KYM entry published Nov 3, 2026 (~954 page views): original TikTok by @leehoustonx on Nov 1; wave of AI remakes on TikTok/Reels/X. @Flovaai remix 2,343 likes / 260K views (X API, Nov 4 9am). X News story on the cafe seating mix-up. Nov 4 reads (10am PT): TikTok @leehoustonx 10.4M views; Instagram @kevinwinnik 11M likes.",
       "first_seen_basis": "KYM cites TikTok original Nov 1, 2026",
       "headline_reviewed": true
     },
     {
       "id": "auto-1080p",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "'AUTO 1080P' vs. MANUAL 1080P: PIXELATED TROJAN WAR SIDE-BY-SIDE",
@@ -943,7 +1405,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 9
+          "rank": 10
         },
         "platforms": [
           "Reddit"
@@ -978,7 +1440,8 @@
         ]
       },
       "notes": "#22 on r/dankmemes top-this-week (Nov 4 9am); aged off top-today. List joke: doctors/dentists help; chiropractors get a frantic slam-down clip punchline.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": []
     },
     {
       "id": "now-kith-economy",
@@ -994,14 +1457,15 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 1
+          "rank": 2
         },
         "platforms": [
           "Reddit"
         ]
       },
       "notes": "#1 on r/dankmemes top-today and still on top-this-week (Nov 4 9am). Mike Tyson 'Now Kith' pigeon template labeled Raising prices / Layoffs.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": []
     },
     {
       "id": "gym-cancel-holmes",
@@ -1017,14 +1481,15 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 2
+          "rank": 1
         },
         "platforms": [
           "Reddit"
         ]
       },
       "notes": "#2 on r/dankmemes top-today (Nov 4 9am). Elizabeth Holmes interview still captioned about how 'easy' gym cancellations are.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": []
     },
     {
       "id": "altman-houses-vs-datacenters",
@@ -1040,14 +1505,15 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 2
+          "rank": 1
         },
         "platforms": [
           "Reddit"
         ]
       },
       "notes": "#2 on r/memes top-today and #11 on top-this-week (Nov 4 9am). Sam Altman-at-the-window macro arguing houses waste space that data centers could use — satire of DRAM/AI-infra logic.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": []
     },
     {
       "id": "meme-same-room-marge",
@@ -1070,7 +1536,8 @@
         ]
       },
       "notes": "#3 on r/memes top-today (Nov 4 9am). Marge Simpson side-eye reaction for waiting while someone next to you reads the meme you just sent.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": []
     },
     {
       "id": "last-dance-trend",
@@ -1085,14 +1552,30 @@
       "ev": {
         "platforms": [
           "TikTok",
-          "KYM"
+          "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 863
+        "kym_views": 863,
+        "tiktok": {
+          "url": "https://www.tiktok.com/@yotwintsaccountistuff/video/7690778682075516174",
+          "views": 8600000,
+          "likes": 1400000,
+          "author": "@yotwintsaccountistuff",
+          "posted": "2026-09-29",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (embedded in the KYM entry)",
+          "posts_read": 12
+        }
       },
-      "notes": "Fresh KYM entry published Nov 2, 2026 (~863 page views). TikTok dance/animation trend of two characters sharing a farewell dance; KYM home editorial called out the trend.",
+      "notes": "Fresh KYM entry published Nov 2, 2026 (~863 page views). TikTok dance/animation trend of two characters sharing a farewell dance; KYM home editorial called out the trend. Nov 4 reads (10am PT): TikTok @yotwintsaccountistuff 8.6M views.",
       "first_seen_basis": "KYM entry published date",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": [
+        {
+          "name": "TikTok / @yotwintsaccountistuff (8.6M views)",
+          "url": "https://www.tiktok.com/@yotwintsaccountistuff/video/7690778682075516174"
+        }
+      ]
     },
     {
       "id": "ram-adan",
@@ -1114,7 +1597,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 1
+          "rank": 2
         },
         "platforms": [
           "Reddit"
@@ -1137,14 +1620,15 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 3
+          "rank": 4
         },
         "platforms": [
           "Reddit"
         ]
       },
       "notes": "#3 on r/dankmemes top-today (Nov 4 9am). Split meme: complex AI-trading dashboards make $0.17; a simple phishing PDF joke is labeled with a massive profit figure.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "also": []
     },
     {
       "id": "hair-date",
@@ -1165,15 +1649,95 @@
         }
       ],
       "ev": {
-        "peak_views": 131991,
-        "peak_likes": 6062,
         "platforms": [
           "X"
         ],
-        "x_news": true
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
+          "views": 137590,
+          "likes": 6293,
+          "checked": "2026-11-04",
+          "via": "X API"
+        }
       },
       "notes": "6,062 likes / 132K views on @marvo_sneh_ Nov 3 post (X API, Nov 4 9am). Quote-replies joke about 'girl maths' / wig vs haircut costs; X News story active.",
       "headline_reviewed": true
+    },
+    {
+      "id": "frutiger-aero-yams",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'FRUTIGER AERO YAMS': BRAINROT CATCHPHRASE TEASING FANS OF THE GLOSSY 2000s AESTHETIC GETS A KYM ENTRY",
+      "source_url": "https://knowyourmeme.com/memes/frutiger-aero-yams",
+      "source_name": "Know Your Meme",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/706/faytyrcover.jpg",
+      "first_seen": "2026-10-19",
+      "also": [
+        {
+          "name": "X / @LashSleeper (240K views)",
+          "url": "https://x.com/LashSleeper/status/2115636173221896615"
+        },
+        {
+          "name": "TikTok / @watosis (299K views)",
+          "url": "https://www.tiktok.com/@watosis/video/7703458958266092831"
+        },
+        {
+          "name": "Instagram / @thebigsolomando (70K likes)",
+          "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
+        },
+        {
+          "name": "YouTube / Lessons in Meme Culture (416K views)",
+          "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
+        }
+      ],
+      "ev": {
+        "platforms": [
+          "X",
+          "TikTok",
+          "Instagram",
+          "YouTube",
+          "Know Your Meme"
+        ],
+        "kym": true,
+        "kym_editorial": true,
+        "tiktok": {
+          "url": "https://www.tiktok.com/@watosis/video/7703458958266092831",
+          "views": 299200,
+          "likes": 58700,
+          "author": "@watosis",
+          "posted": "2026-11-02",
+          "checked": "2026-11-04",
+          "via": "TikTok post page (cited in the KYM entry)"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/p/DfPoDOpyeO2/",
+          "likes": 70000,
+          "author": "@thebigsolomando",
+          "posted": "November 2, 2026",
+          "checked": "2026-11-04",
+          "via": "Instagram post page (embedded in the KYM entry)"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI",
+          "views": 415764,
+          "title": "Frutiger Aero Yams To Your Right",
+          "channel": "Lessons in Meme Culture",
+          "checked": "2026-11-04",
+          "via": "YouTube search (this week, by views)"
+        },
+        "x": {
+          "url": "https://x.com/LashSleeper/status/2115636173221896615",
+          "views": 240105,
+          "likes": 26994,
+          "checked": "2026-11-04",
+          "via": "X API"
+        }
+      },
+      "notes": "KYM entry added Nov 3, 2026, plus a KYM explainer the same day; earliest known use is an Oct 19 Instagram post. Reads on Nov 4 (10am PT): YouTube 'Frutiger Aero Yams To Your Right' 416K views in about a day; @LashSleeper yam image 240K views / 27K likes on X; @watosis slang-overload TikTok 299K views; @thebigsolomando Instagram post 70K likes.",
+      "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026"
     }
   ]
 }

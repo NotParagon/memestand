@@ -32,6 +32,8 @@ memestand/
   tools/legal.py             blocklist matching, content exclusions, headline-neutrality check, credit lines
   terms.html privacy.html dmca.html   generated legal pages (text + LEGAL settings live in build.py)
   tools/fetch_reddit.py      pulls Reddit top-of-period RSS feeds into raw/
+  tools/fetch_youtube.py     YouTube search (sorted by views) + watch-page view counts into raw/youtube*.json
+  tools/fetch_social.py      public TikTok / Instagram (/ YouTube) post counts into raw/social.json; --kym SLUG reads every post a KYM entry embeds
   tools/rank.py              scores candidates, picks the top 10 per period, downloads thumbnails
   raw/                       scratch research data (Reddit RSS, KYM metadata); not deployed
   preview.png                screenshot of the current build
@@ -55,7 +57,7 @@ Each run should finish within ~15 minutes of the hour above when practical. The 
 comes from the build timestamp in the visitor's browser (see build.py).
 
 **Intraday rules (9 AM / noon / 3 PM / 6 PM / 9 PM):**
-- Re-check X / Reddit / KYM; refresh `ev` numbers; add only memes with **new verified evidence**.
+- Re-check all six sources (X, TikTok, Instagram, Reddit, YouTube, KYM); refresh `ev` numbers; add only memes with **new verified evidence**.
 - Keep `as_of` as today's date. Lead rotation still applies (`data/lead_history.json`); prefer not to churn the lead mid-day unless a clearly bigger new meme takes the daily #1 and passes the 7-day lead rule.
 - Skip the git commit if nothing meaningful changed vs the currently published site.
 - Never invent memes, numbers, or URLs. NSFW / legal rules still apply.
@@ -79,6 +81,27 @@ comes from the build timestamp in the visitor's browser (see build.py).
        - `article:published_time` (first_seen)
        - page views: `<dd class='views' title='N Views'>`
        - the view and like counts the entry cites
+   - **YouTube** (works directly; anonymous; verified on this box Nov 4, 2026):
+     - `python3 tools/fetch_youtube.py` searches "meme", "memes", "meme trend", "viral meme", "#shorts meme" for uploads from
+       today and this week, sorted by views, into `raw/youtube.json`. Look for a phrase that also shows up on KYM / X / Reddit.
+     - `python3 tools/fetch_youtube.py --query "frutiger aero yams"` checks one candidate's phrase (this-week filter, by views).
+     - `python3 tools/fetch_youtube.py --video VIDEO_ID` re-reads one video's exact views, title, channel and upload date
+       (into `raw/youtube_lookup.json`). Only use a video that is clearly *about this meme* (title/description match), never a
+       generic compilation. Under 10,000 views it doesn't score.
+   - **TikTok** (individual posts only):
+     - TikTok has no open trending list. The Creative Center (`ads.tiktok.com/business/creativecenter/...`) is a JS shell and its
+       API answers `40101` (login required) from this box; don't spend time on it.
+     - What works: `python3 tools/fetch_social.py --kym SLUG` reads every TikTok/Instagram/YouTube post a KYM entry embeds
+       (views, likes, author, date from the page's `__UNIVERSAL_DATA_FOR_REHYDRATION__` JSON), or pass post URLs directly:
+       `python3 tools/fetch_social.py https://www.tiktok.com/@user/video/ID`. "no itemStruct" = removed/private; skip it.
+     - Check the KYM context of each embed: some are background (e.g. the aesthetic a meme riffs on), not the meme itself.
+       Record the largest post that *is* the meme. If KYM cites a bigger count for a post we can't read, use it with
+       `"via": "KYM-cited count"` and keep the biggest directly-read post as `largest_post_read`.
+   - **Instagram** (indirect; likes only):
+     - Logged-out Instagram pages hide plays. `fetch_social.py` fetches reels/posts with the `facebookexternalhit/1.1` User-Agent and
+       parses `og:description` ("70K likes, 164 comments - user on November 2, 2026"). Likes are the signal (no plays).
+     - Find posts the same way as TikTok: the KYM embeds (`--kym SLUG`), or a post URL cited on X/Reddit.
+   - All three write raw files only; copy the numbers you use into `candidates.json` (see the `ev` schema below) with `checked` = today.
 2. **Edit `data/candidates.json`**:
    - Add new memes and update the numbers on existing ones.
    - Set `periods` to the lists each meme qualifies for:
@@ -87,6 +110,14 @@ comes from the build timestamp in the visitor's browser (see build.py).
      - `monthly`: active in the last 30 days
    - Remove memes that have aged out of every window.
    - Every candidate must have a real, opened source URL. Never invent memes, numbers, or links.
+   - Per-source evidence lives in `ev` (all optional; only what you actually read):
+     - `ev.x`: `{url, views, likes, checked, via}` (legacy `peak_views` / `peak_likes` are still read as X)
+     - `ev.tiktok`: `{url, views, likes, author, posted, checked, via}` (+ `largest_post_read` when `via` is a KYM-cited count)
+     - `ev.instagram`: `{url, likes, author, posted, checked, via}`
+     - `ev.youtube`: `{url, views, title, channel, checked, via}`
+     - `ev.reddit`: `{sub: "memes"|"dankmemes", rank}`; `ev.kym`, `ev.kym_views`, `ev.kym_editorial`, `ev.x_news` as before;
+       `ev.platforms` lists the sources with confirmed spread by full name ("X", "TikTok", "Instagram", "Reddit", "YouTube", "Know Your Meme").
+     - Add the best TikTok/Instagram/YouTube post to `also` as e.g. `{"name": "TikTok / @user (10.4M views)", "url": ...}`.
    - Follow "Legal rules" below for every headline, image, and flag. Read rank.py's `EXCLUDED` / `BLOCKED` lines and fix or accept them.
 3. **Rank, fetch thumbnails, build:**
    ```bash
@@ -126,16 +157,20 @@ comes from the build timestamp in the visitor's browser (see build.py).
 
 | Signal | Points |
 |---|---|
-| Reach of the best post or compilation (X API impressions, or views cited by KYM) | 10 × log10(views); e.g. 1M = 60, 10M = 70 |
-| Only likes known | 10 × log10(likes × 10) |
+| X: best post's views (API impressions); if only likes are known, 10 × likes | 10 × log10(views); 1M = 60, 10M = 70 |
+| TikTok: best post's views (read directly, or KYM-cited) | 10 × log10(views) − 5; 10M = 65 |
+| Instagram: best post's likes (logged-out pages show no plays) | 10 × log10(likes × 10) − 5; 1M likes = 65 |
+| YouTube: best video about the meme, only if ≥ 10,000 views | 10 × log10(views) + 5; 100K = 55, 1M = 65 |
 | Reddit top-feed position (Reddit hides vote counts from anonymous feeds) | r/memes #1 = 62, r/dankmemes #1 = 60, −2 per rank |
-| Each additional platform with confirmed spread | +5 (max +10) |
-| Documented on Know Your Meme | +5 |
-| Picked in a KYM Weekly Roundup or Meme-of-the-Month poll | +3 |
+| Combined reach (each platform capped at 75) | best + 0.10 × 2nd + 0.05 × 3rd |
+| Each additional source with confirmed evidence (of the six, KYM included) | +3 (max +12) |
+| Picked in a KYM editorial / Weekly Roundup / Meme-of-the-Month poll | +3 |
 | X News trending story about it | +5 |
 | KYM page views ≥ 50,000 | +5 |
 
-- The base is the max of the reach signals that apply. The bonuses reward cross-platform spread, which is the best sign that a meme is a real meme and not one viral post.
+- Each platform is normalized on its own scale (TikTok views are cheap, Instagram only shows likes, YouTube views are scarce),
+  so one platform's raw counts can't dominate; the 75 cap stops a single giant post from swamping everything.
+- Cross-platform presence is rewarded twice: a share of the 2nd/3rd platform's reach, and +3 per extra source.
 - Ties keep candidate order.
 - A meme may appear in more than one list. Big ones usually do.
 - The red top story (lead headline) is chosen by the "Lead headline" rule below, not always the daily #1.

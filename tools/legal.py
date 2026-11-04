@@ -75,5 +75,14 @@ def default_credit(c, reddit_authors=None):
         return f"posted by {who}" + (f" on r/{sub.group(1)}" if sub else " on Reddit")
     m = re.match(r"X / (@\w+)", name)
     if m: return f"posted by {m.group(1)} on X"
+    if "tiktok.com" in src:
+        m = re.search(r"tiktok\.com/(@[\w.]+)", src)
+        return f"posted by {m.group(1)} on TikTok" if m else "via TikTok"
+    if "instagram.com" in src:
+        m = re.search(r"instagram\.com/([\w.]+)/(?:reel|p)/", src) or re.match(r"Instagram / (@?[\w.]+)", name)
+        return f"posted by @{m.group(1).lstrip('@')} on Instagram" if m else "via Instagram"
+    if "youtube.com" in src or "youtu.be" in src:
+        m = re.match(r"YouTube / (.+)", name)
+        return f"uploaded by {m.group(1)} on YouTube" if m else "via YouTube"
     if "knowyourmeme.com" in src: return "image via Know Your Meme; original creators as documented there"
     return f"via {name}"
