@@ -77,12 +77,20 @@ memestand/
      The one exception is a takedown, and the blocklist handles that automatically.
    - Validate before pushing (see "SEO checks" below).
 4. **Verify links**:
-   - curl every KYM and Reddit URL in `data/memes.json` and expect a 200.
+   - curl every KYM and Reddit URL in `data/memes.json` and expect a 200 (use a browser User-Agent; KYM and Reddit block bare curl).
+   - Also curl every `sources[].url` you add to `data/meme_pages.json`. Anything that isn't a 200 gets replaced or dropped.
+     x.com returns 200 even for deleted posts, so check X sources with `get_posts_by_ids` as well.
    - Check X posts with `get_posts_by_ids`. A missing post means it was deleted, so drop it.
-5. **Write meme pages for new memes** (see "Meme pages" below):
-   - `build.py` prints `! meme pages still need explainer/origin text ...` for every new meme. For each listed slug, fill in
-     `explainer`, `origin`, `sources`, `status` (and `kym_url` when one exists) in `data/meme_pages.json`, then run `python3 build.py` again.
-   - Don't rewrite entries that already have text unless a fact was wrong. Text is written once and reused.
+5. **Write the meaning & origin explainer for every new meme** (see "Meme pages" below; this is required, not optional):
+   - `build.py` prints `! WARNING: meme pages still need explainer/origin text ...` for every new meme, and
+     `! WARNING: meme page <slug> is missing <fields>` for any page with a gap. For each listed slug, fill in `explainer`, `origin`,
+     `origin_confirmed`, `how_to_use`, `sources`, `status`, `checked` (and `kym_url` when one exists) in `data/meme_pages.json`,
+     then run `python3 build.py` again. The run is done only when no `! WARNING` lines about meme pages are left.
+   - Research the origin before writing: search KYM (`https://knowyourmeme.com/search?q=...`, curl with a browser User-Agent), then
+     X (`search_posts_all` for the earliest post with the caption, `get_posts_by_ids` to follow `referenced_tweets` back to the root of
+     a quote chain), then the Reddit post. If none of that documents a first post or creator, set `origin_confirmed: false` and say so.
+   - Don't rewrite entries that already have text unless a fact was wrong. Text is written once and reused. If you correct one,
+     update `checked` (this bumps the page's dateModified and sitemap lastmod).
 6. **Deploy**:
    ```bash
    git add -A && git commit -m "Daily update $(TZ=America/Los_Angeles date +%F)" && git push origin main
@@ -187,6 +195,11 @@ for p in pathlib.Path('.').rglob('*.html'):
     d = html.fromstring(p.read_text())
     [json.loads(s.text) for s in d.xpath('//script[@type="application/ld+json"]')]   # raises if JSON-LD is broken
     assert len(d.xpath('//h1')) == 1 and all(i.get('alt') for i in d.xpath('//img')), p
+    if p.parts[0] == 'meme':   # every meme page: FAQPage whose questions are the first two H2s
+        g = json.loads(d.xpath('//script[@type="application/ld+json"]')[0].text)['@graph']
+        faq = [n for n in g if n.get('@type') == 'FAQPage']
+        assert faq and all(q['@type'] == 'Question' and q['acceptedAnswer']['text'] for q in faq[0]['mainEntity']), p
+        assert [h.text_content() for h in d.xpath('//h2')][:2] == [q['name'] for q in faq[0]['mainEntity']][:2], p
 etree.parse('sitemap.xml'); etree.parse('feed.xml')
 print('ok')
 PY
@@ -196,8 +209,11 @@ After pushing: `curl -s https://memestand.com/ | grep -c 'application/ld+json'` 
 ## Meme pages (`/meme/<slug>/`, `/memes/`, store: `data/meme_pages.json`)
 
 Every meme that has ever ranked gets a permanent page at `https://memestand.com/meme/<slug>/`. The H1 is
-"<Meme name> meme: what it means and where it came from". The page shows the thumbnail, "What it means", "Origin",
-first- and last-seen dates on MemeStand, the best rank per list, links to every archive day it appeared on, sources and related memes.
+"<Meme name> meme: what it means and where it came from"; the `<title>` is "<Meme name> Meme: Meaning & Origin | MemeStand"
+(names ending in "memes"/"trend" are used as-is) and the meta description starts "<Meme name> meme meaning: <first sentence>".
+The page shows the thumbnail, then H2 "What does the <name> meme mean?" (explainer), H2 "Where did the <name> meme come from?"
+(origin, plus the note "The original creator of this meme hasn't been confirmed." when `origin_confirmed` is false), an optional
+H2 "How to use it" (the `how_to_use` captions), first- and last-seen dates on MemeStand, the best rank per list, links to every archive day it appeared on, sources and related memes.
 `/memes/` is the A–Z index. Every headline on the home, period and archive pages links to the meme page; the thumbnail
 and "View original" still link to the source. The pages are also listed in `sitemap.xml` and `llms.txt` automatically.
 
@@ -208,11 +224,14 @@ and "View original" still link to the source. The pages are also listed in `site
   "ids": ["altman-ram"],                // candidate ids that map to this page
   "status": "full",                     // "full" = explanation + origin backed by sources; "short" = only what the source shows
   "source_url": "...", "kym_url": "..." or null,
-  "explainer": "1-2 short paragraphs (blank line between paragraphs)",
-  "origin": "1-2 short paragraphs",
+  "explainer": "2-4 sentences, plain English: what the meme shows, what the joke means, how people use it",
+  "origin": "1-2 short paragraphs: who posted it, where, when (only if verified) and how it spread",
+  "origin_confirmed": true,             // true only if a source documents the first post/creator; false = unknown (page says so); null = not researched yet
+  "how_to_use": ["example caption", "another"],  // 0-2 short example captions in our own words; [] to skip the section
   "sources": [{"name": "The Verge: ...", "url": "..."}],   // every source the text relies on (the ranked post is added automatically)
   "related": ["other-slug"],            // optional; build.py adds memes that shared the same lists
-  "written": "YYYY-MM-DD"
+  "written": "YYYY-MM-DD",
+  "checked": "2026-11-03T23:50:00-08:00"  // when the text was written or last reviewed (PT, real time); feeds dateModified + sitemap lastmod
 }
 ```
 - **Slugs are permanent.** build.py makes a slug from the meme's name (or id), dedupes it (`-2`, `-3`) and stores it. Never rename a slug or
@@ -221,14 +240,21 @@ and "View original" still link to the source. The pages are also listed in `site
   and build.py copies them into an empty store entry. They never overwrite text already in the store.
 - **How to write them** (same rules as "Legal rules" below):
   - Use only facts in the data or in a source you actually opened: the ranked post, the KYM entry, or a primary source (transcript, the post itself).
-    List each one in `sources`. Link the original post or KYM.
+    List each one in `sources` (KYM entry, the original post, the Reddit/X post). Link the original post or KYM. Never invent a fact, number,
+    date or URL; view counts come from the X API or the cited source and are phrased "per X's public counts" / "per KYM".
+  - Write everything in your own words. Never copy KYM (or any source) sentences. Concise, factual, friendly, no fluff.
   - "What it means" is your own short, original explanation (don't copy KYM text). Explain the joke format and how people use it.
   - "Origin" is neutral and factual: who posted what, where, and when, per the source. **Never invent an origin.** If it isn't documented,
-    say what the ranked post shows and that MemeStand has no further origin information, and set `"status": "short"`.
+    say what the ranked post shows, say plainly that the original creator hasn't been confirmed, and set `"origin_confirmed": false`
+    and `"status": "short"`. For a remix of an old template (Gru's Plan, Two Paths...), give the template's documented origin with its
+    KYM link, and mark the specific caption unconfirmed unless its first post is documented.
+  - `"status": "full"` only when `origin_confirmed` is true.
   - No unverified claims about real people. Frame allegations as allegations attributed to their source ("per KYM"). Don't name private
     people or people only connected to an allegation. Quote real people only from the primary source.
   - Don't publish Roger's full name or address, and don't use the Drudge name.
-- `FAQPage` JSON-LD is added only for `"status": "full"` pages. Short pages say they are deliberately short.
+- `FAQPage` JSON-LD (inside the page's single `@graph`) is added to every page that has both `explainer` and `origin`. Its questions are
+  the visible H2s word for word and its answers are the visible text (plus "How do you use the <name> meme?" when `how_to_use` is set),
+  so it always matches what readers see. Pages without text get no FAQ and say they are deliberately short.
 - Blocked memes (`data/blocklist.json`) get no page: build.py drops their store entry and deletes `meme/<slug>/`. Archive pages are never deleted.
 - og:image on meme pages follows `OG_USE_MEME_THUMB` (currently off, so `og-default.png`).
 

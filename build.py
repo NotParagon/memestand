@@ -386,7 +386,11 @@ STORE = ROOT / "data" / "meme_pages.json"
 STORE_DOC = ("Persistent per-meme explainer store for the /meme/<slug>/ pages, keyed by slug. build.py reads it and never regenerates written text. "
              "ids = candidate ids that map to this page (keep the slug forever). status: 'full' (real explanation + origin with sources) or 'short' "
              "(only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. "
-             "build.py adds a stub (explainer null) for any new meme; the daily routine fills it in.")
+             "Fields: explainer = 2-4 sentence plain-English meaning; origin = who/where/when if verified and how it spread, in our own words "
+             "('\\n\\n' between paragraphs); origin_confirmed = true only if the first post/creator is documented, false if unknown (the page then "
+             "says so), null = not yet researched; how_to_use = 0-2 example captions; sources = [{name,url}] links that back the text (must return "
+             "200); checked = ISO datetime (PT) the text was last written or reviewed (feeds dateModified + sitemap lastmod). "
+             "build.py adds a stub (explainer null) for any new meme; the daily routine fills it in (UPDATE.md step 5).")
 SLUG, PAGES = {}, {}          # candidate id -> slug ; slug -> page info
 PERIOD_ORDER = {"daily": 0, "weekly": 1, "monthly": 2}
 
@@ -485,8 +489,9 @@ def meme_registry(snaps):
             sl, n = slugify(name), 2
             while sl in ents: sl, n = f"{slugify(name)}-{n}", n + 1
             ents[sl] = {"name": name, "ids": [mid], "status": "short", "explainer": None, "origin": None,
+                        "origin_confirmed": None, "how_to_use": [],
                         "source_url": latest.get("source_url"), "kym_url": kym_of(latest), "sources": [], "related": [],
-                        "written": seen[mid][0][0]}
+                        "written": seen[mid][0][0], "checked": None}
             SLUG[mid] = sl
         ent = ents[SLUG[mid]]
         for k in ("explainer", "origin", "kym_url"):          # optional fields from data fill gaps, never overwrite
@@ -504,12 +509,18 @@ def meme_registry(snaps):
         for day, p, m in rows:
             if p not in best or m["rank"] < best[p][0]: best[p] = (m["rank"], day)
         full = ent.get("status") == "full" and bool(ent.get("explainer")) and bool(ent.get("origin"))
+        modified = parse_dt(snapd[days[-1]])
+        try:                       # text review time also counts as a modification (sitemap lastmod, dateModified)
+            ck = datetime.datetime.fromisoformat(ent["checked"]).astimezone(PT) if ent.get("checked") else None
+        except ValueError: ck = None
+        if ck and ck > modified: modified = ck
         PAGES[sl] = {"slug": sl, "name": ent["name"], "explainer": ent.get("explainer"), "origin": ent.get("origin"),
                      "status": "full" if full else "short", "kym_url": ent.get("kym_url"),
+                     "origin_confirmed": ent.get("origin_confirmed"), "how_to_use": ent.get("how_to_use") or [],
                      "sources": ent.get("sources", []), "related": ent.get("related", []), "written": ent.get("written"),
                      "days": days, "best": best, "latest": latest, "rows": rows,
                      "published": parse_dt(snapd[days[0]]).isoformat(timespec="seconds"),
-                     "modified": parse_dt(snapd[days[-1]]).isoformat(timespec="seconds"),
+                     "modified": modified.isoformat(timespec="seconds"),
                      "blurb": first_sentence(ent.get("explainer")) or f"Ranked by MemeStand: {tc(latest['title'])}."}
 
 def sort_key(name): return re.sub(r"^[^a-z0-9]+", "", name.lower())
@@ -518,6 +529,12 @@ def az_order(): return sorted(PAGES, key=lambda sl: (sort_key(PAGES[sl]["name"])
 def meme_phrase(name):
     """'X meme' unless the name already ends in meme(s)/trend."""
     return name if re.search(r"\b(memes?|trend)$", name, re.I) else f"{name} meme"
+
+def meme_q(name):
+    """FAQ / H2 questions: 'What does the X meme mean?' / 'What do the X memes mean?'."""
+    phrase = meme_phrase(name)
+    do = "do" if re.search(r"memes$", phrase, re.I) else "does"
+    return f"What {do} the {phrase} mean?", f"Where did the {phrase} come from?"
 
 def related_for(sl):
     me = PAGES[sl]
@@ -543,11 +560,12 @@ def build_meme_page(sl):
     url, name, m = f"{SITE}/meme/{sl}/", info["name"], info["latest"]
     phrase = meme_phrase(name)
     h1 = f"{phrase}: what it means and where it came from"
-    title = f"{phrase} \u2014 What It Means & Where It Came From | MemeStand"
+    title = f"{phrase.replace(' meme', ' Meme') if phrase.endswith(' meme') else phrase}: Meaning & Origin | MemeStand"
+    q_mean, q_orig = meme_q(name)
     first_dd = datetime.date.fromisoformat(info["days"][0])
     if info["explainer"]:
-        desc = f"{phrase} explained: {first_sentence(info['explainer'], 150 - len(phrase))}"
-        if len(desc) < 110: desc += " Origin, sources and MemeStand ranking history."
+        desc = f"{phrase} meaning: {first_sentence(info['explainer'], 146 - len(phrase))}"
+        if len(desc) < 135: desc += " Origin and sources."
     else:
         desc = f"The {phrase} on MemeStand: first ranked {fmt_short(first_dd)}, with its source, ranking history and daily reports."
     means = "".join(f"<p>{e(x)}</p>" for x in paras(info["explainer"])) or (
@@ -557,8 +575,12 @@ def build_meme_page(sl):
         '<p>MemeStand has not confirmed where this meme started. The post we ranked: '
         f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m.get("source_name") or "original post")}</a>'
         f'{" (" + e(m["credit"]) + ")" if m.get("credit") else ""}.</p>')
+    unconf = ('<p class="note">The original creator of this meme hasn\u2019t been confirmed. This section states only what the '
+              'linked sources show.</p>') if info["origin"] and info["origin_confirmed"] is False else ""
     short = ('<p class="note">This page is deliberately short: little verified information about this meme is available, '
-             'so we only state what the source shows.</p>') if info["status"] != "full" else ""
+             'so we only state what the source shows.</p>') if info["status"] != "full" and not unconf else ""
+    uses = [x for x in info["how_to_use"] if x][:2]
+    use_html = ("<h2>How to use it</h2><p>Example captions:</p><ul>" + "".join(f"<li>&ldquo;{e(x)}&rdquo;</li>" for x in uses) + "</ul>") if uses else ""
     days, fs = info["days"], m.get("first_seen")
     stats = [f'<li>First seen on MemeStand: <a href="{base}archive/{days[0]}.html">{fmt_long(first_dd)}</a></li>',
              f'<li>Last seen on MemeStand: <a href="{base}archive/{days[-1]}.html">{fmt_long(datetime.date.fromisoformat(days[-1]))}</a></li>',
@@ -587,10 +609,12 @@ def build_meme_page(sl):
            "image": img or f"{SITE}/og-default.png", "about": {"@type": "Thing", "name": phrase},
            "citation": [u for _, u in srcs]}
     nodes = [ORG, WEBSITE, wp, art]
-    if info["status"] == "full":       # FAQ only when real answers exist
+    if info["explainer"] and info["origin"]:      # FAQ = the visible Q&As, word for word
+        faq = [(q_mean, " ".join(paras(info["explainer"]))),
+               (q_orig, " ".join(paras(info["origin"])) + (" The original creator hasn't been confirmed." if unconf else ""))]
+        if uses: faq.append((f"How do you use the {phrase}?", "Example captions: " + " / ".join(f"\u201c{x}\u201d" for x in uses)))
         nodes.append({"@type": "FAQPage", "@id": f"{url}#faq", "mainEntity": [
-            {"@type": "Question", "name": f"What does the {phrase} mean?", "acceptedAnswer": {"@type": "Answer", "text": paras(info["explainer"])[0]}},
-            {"@type": "Question", "name": f"Where did the {phrase} come from?", "acceptedAnswer": {"@type": "Answer", "text": paras(info["origin"])[0]}}]})
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]})
     og = abs_img(m) if (OG_USE_MEME_THUMB and m.get("image")) else None
     body = f"""
 {mast(base, "MEME EXPLAINED -- WHAT IT MEANS AND WHERE IT CAME FROM", h1=False)}
@@ -600,11 +624,12 @@ def build_meme_page(sl):
 <h1>{e(h1)}</h1>
 {thumb(m, base, "")}
 {credit(m)}
-<h2>What it means</h2>
+<h2>{e(q_mean)}</h2>
 {means}
-<h2>Origin</h2>
+<h2>{e(q_orig)}</h2>
 {origin}
-{short}
+{unconf}{short}
+{use_html}
 <h2>{e(name)} on MemeStand</h2>
 <ul>{"".join(stats)}</ul>
 <h3>Daily meme reports featuring it</h3>
@@ -612,7 +637,7 @@ def build_meme_page(sl):
 <h2>Sources</h2>
 <ul>{src_html}</ul>
 {rel_html}
-<p class="note">Written {e(info["written"] or days[0])} from the sources above. Explanations describe memes and online reactions; they are not
+<p class="note">Written {e(info["written"] or days[0])}{"; last reviewed " + e(info["modified"][:10]) if info["modified"][:10] != (info["written"] or days[0]) and info["explainer"] else ""} from the sources above. Explanations describe memes and online reactions; they are not
 MemeStand's statements of fact about the people in them. Corrections or removals: {contact_html()}. Rights holders: see <a href="{base}dmca.html">DMCA / Takedowns</a>.</p>
 </article>
 </main>
@@ -1103,7 +1128,7 @@ Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 - Cite MemeStand as "MemeStand (memestand.com) daily meme report" and link the dated archive page for a specific day.
 - Rankings change daily; the archive pages are permanent snapshots (items removed after a takedown request are marked as removed).
 - Headlines describe memes and online reactions; they are not MemeStand's statements of fact about the people involved. Where a headline mentions a claim about a person, it is attributed to its source.
-- Meme explainer pages state only what the ranked source post or Know Your Meme documents; a "short" page means little verified information exists, not that anything was guessed.
+- Meme explainer pages state only what the ranked source post, the linked original posts or Know Your Meme document; a "short" page means little verified information exists, not that anything was guessed.
 - The memes themselves belong to their creators and owners. MemeStand is independent and not affiliated with, endorsed by or sponsored by X, Reddit, Know Your Meme or any person or brand mentioned.
 """)
 
@@ -1130,5 +1155,13 @@ build_llms()
 full = sum(1 for v in PAGES.values() if v["status"] == "full")
 print(f"built {len(written)} files ({len(snaps)} archive day(s), {len(PAGES)} meme pages: {full} full, {len(PAGES) - full} short); latest report {TODAY}")
 stubs = sorted(sl for sl, v in PAGES.items() if not v["explainer"])
+_st = json.loads(STORE.read_text())["memes"]
+gaps = {sl: [k for k, bad in (("explainer", not v["explainer"]), ("origin", not v["origin"]),
+                              ("origin_confirmed", _st.get(sl, {}).get("origin_confirmed") is None),
+                              ("sources", not (v["sources"] or v["kym_url"])), ("checked", not _st.get(sl, {}).get("checked"))) if bad]
+        for sl, v in PAGES.items()}
+gaps = {sl: g for sl, g in sorted(gaps.items()) if g}
 print(f"  lead {TODAY}: {LEADS.get(TODAY)} ({lead_why})")
-if stubs: print("  ! meme pages still need explainer/origin text in data/meme_pages.json:", ", ".join(stubs))
+if stubs: print("  ! WARNING: meme pages still need explainer/origin text in data/meme_pages.json:", ", ".join(stubs))
+for sl, g in gaps.items():
+    if sl not in stubs: print(f"  ! WARNING: meme page {sl} is missing {', '.join(g)} in data/meme_pages.json")

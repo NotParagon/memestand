@@ -1,5 +1,5 @@
 {
-  "_doc": "Persistent per-meme explainer store for the /meme/<slug>/ pages, keyed by slug. build.py reads it and never regenerates written text. ids = candidate ids that map to this page (keep the slug forever). status: 'full' (real explanation + origin with sources) or 'short' (only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. build.py adds a stub (explainer null) for any new meme; the daily routine fills it in.",
+  "_doc": "Persistent per-meme explainer store for the /meme/<slug>/ pages, keyed by slug. build.py reads it and never regenerates written text. ids = candidate ids that map to this page (keep the slug forever). status: 'full' (real explanation + origin with sources) or 'short' (only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. Fields: explainer = 2-4 sentence plain-English meaning; origin = who/where/when if verified and how it spread, in our own words ('\\n\\n' between paragraphs); origin_confirmed = true only if the first post/creator is documented, false if unknown (the page then says so), null = not yet researched; how_to_use = 0-2 example captions; sources = [{name,url}] links that back the text (must return 200); checked = ISO datetime (PT) the text was last written or reviewed (feeds dateModified + sitemap lastmod). build.py adds a stub (explainer null) for any new meme; the daily routine fills it in (UPDATE.md step 5).",
   "memes": {
     "ai-artists-hoverboard": {
       "name": "AI Artists Hoverboard",
@@ -9,16 +9,26 @@
       "status": "short",
       "source_url": "https://www.reddit.com/r/memes/comments/1xm1ln7/yeah_thats_absolutely_very_sane_everything_is_fine/",
       "kym_url": null,
-      "explainer": "A Family Guy frame of hipster Peter Griffin on a hoverboard is captioned as AI \"artists\" after generating hundreds of books and movies in a day. The joke targets mass generative output and the idea that something is clearly off.",
-      "origin": "Posted to r/memes on November 2, 2026 and ranked high on the subreddit's day listing on November 3. The Family Guy still is a long-running reaction image; this specific AI-artists caption's first use is not confirmed beyond that post.",
+      "explainer": "The Family Guy image of \"hipster\" Peter Griffin gliding along on a hoverboard while staring at his phone, captioned as an AI \"artist\" who has just generated hundreds of books and movies in a day. The joke is the smug, relaxed pose next to an absurd amount of machine-made output, a dig at people who call prompting an AI \"making art.\"",
+      "origin": "The image comes from the Family Guy episode \"HTTPete,\" which aired on May 6, 2018. Know Your Meme dates the earliest known meme using it to a November 2023 post on X, and it has been a reaction image for chronically online behavior since.\n\nThis AI-artists caption was posted to r/memes by u/MahmoudAO on November 2, 2026. MemeStand hasn't confirmed whether anyone used the caption before that post.",
       "sources": [
         {
           "name": "Reddit r/memes",
           "url": "https://www.reddit.com/r/memes/comments/1xm1ln7/yeah_thats_absolutely_very_sane_everything_is_fine/"
+        },
+        {
+          "name": "Know Your Meme: Hipster Peter Griffin",
+          "url": "https://knowyourmeme.com/memes/hipster-peter-griffin"
         }
       ],
       "related": [],
-      "written": "2026-11-03"
+      "written": "2026-11-03",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Me after \"writing\" 400 novels with one prompt",
+        "AI artists heading to the gallery opening of their 9,000th painting this week"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "ai-bros-process": {
       "name": "AI Bros Process Reaction",
@@ -28,8 +38,8 @@
       "status": "short",
       "source_url": "https://www.reddit.com/r/memes/comments/1xm6rl8/process_is_that_like_a_ram_thing/",
       "kym_url": null,
-      "explainer": "A grimace/reaction image (Sabrina Carpenter) captioned as AI enthusiasts reacting when someone says the creative process is part of the fun. It sits in the wider wave of Reddit memes mocking generative-AI shortcuts after Sam Altman's DRAM comments.",
-      "origin": "Posted to r/memes on November 2, 2026 (\"Process? Is that like a RAM thing.\") and ranked near the top of the subreddit's day listing on November 3. Earlier uses of the same reaction image for other punchlines exist; this caption's first appearance is not confirmed beyond that post.",
+      "explainer": "A grimacing reaction image captioned as an AI enthusiast hearing someone say they enjoy the creative process. The title, \"Process? Is that like a RAM thing,\" doubles as a computer pun, since a process is also a running program. It's one of many early-November 2026 memes poking fun at generative-AI shortcuts.",
+      "origin": "Posted to r/memes by u/MahmoudAO on November 2, 2026 under the title \"Process? Is that like a RAM thing.\" The same reaction image has been used for other punchlines before; MemeStand hasn't confirmed who first paired it with this caption.",
       "sources": [
         {
           "name": "Reddit r/memes",
@@ -37,9 +47,15 @@
         }
       ],
       "related": [
-        "altman-ram"
+        "sam-altman-ram"
       ],
-      "written": "2026-11-03"
+      "written": "2026-11-03",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Artists: the process is the fun part. AI bros:",
+        "When someone says they spent six months learning to draw hands"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "ai-rumpelstiltskin-tip-toein-in-my-jordans": {
       "name": "AI Rumpelstiltskin Tip Toein' in My Jordans",
@@ -49,16 +65,30 @@
       "status": "full",
       "source_url": "https://knowyourmeme.com/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans",
       "kym_url": "https://knowyourmeme.com/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans",
-      "explainer": "An AI-generated clip, styled like a 1980s fantasy film, of Rumpelstiltskin dancing in a barn, set to Riff Raff's song \"TIP TOE WING IN MY JAWWDINZ.\" People caption it with surreal situations (dreams after cheap melatonin, being asked how many beers you've had) or use AI tools to swap in other characters.\n\nMany viewers assumed it came from a real old movie. Know Your Meme confirms the clip is AI-generated.",
-      "origin": "Per Know Your Meme, the original video was posted on Instagram on August 27, 2026 by the pages Stroinaya, Neuroferma and Anna Glinskaya. On September 29, TikToker @6aimbot9 turned it into a meme, and on October 1 X user @itsjusttimbro paired it with the Riff Raff song, a post Know Your Meme says reached 9.8 million views in five days. NBC News covered the meme on October 7, 2026.",
+      "explainer": "An AI-generated clip, made to look like a 1980s fantasy film, of Rumpelstiltskin dancing in a barn, set to Riff Raff's song \"TIP TOE WING IN MY JAWWDINZ.\" People caption it with surreal situations, like your dreams after cheap melatonin, or swap other characters into the dance with AI tools. Many viewers first assumed it was a real old movie; it isn't.",
+      "origin": "According to Know Your Meme, the original video was posted on Instagram on August 27, 2026. TikToker @6aimbot9 turned it into a meme on September 29, and on October 1 X user @itsjusttimbro paired it with the Riff Raff song; that post has passed 19 million views, per X's public counts. NBC News covered the trend on October 7, 2026.",
       "sources": [
         {
           "name": "Know Your Meme: AI Rumpelstiltskin \"Tip Toein' In My Jordans\"",
           "url": "https://knowyourmeme.com/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans"
+        },
+        {
+          "name": "@itsjusttimbro on X (the Riff Raff version)",
+          "url": "https://x.com/itsjusttimbro/status/2105601473878859850"
+        },
+        {
+          "name": "Original Instagram video",
+          "url": "https://www.instagram.com/p/DcjC4hHCb0C/"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [
+        "My brain at 3am replaying something I said in 2014",
+        "Me walking into work after one (1) good night of sleep"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "altman-ram-chart": {
       "name": "Altman RAM Chart",
@@ -68,18 +98,28 @@
       "status": "short",
       "source_url": "https://www.reddit.com/r/memes/comments/1xlybm3/sam_altman_stuff/",
       "kym_url": null,
-      "explainer": "A chart meme where every RAM icon arrows exclusively to Sam Altman, skipping gamers and everyday PC users. It riffs on Altman's late-October remark that DRAM in personal computers is a \"quite terrible\" allocation of limited supply.",
-      "origin": "Posted to r/memes on November 2, 2026 (\"Sam Altman stuff\") amid a broader Reddit/X wave of Altman RAM memes that began after his Cheeky Pint comments around October 29, 2026.",
+      "explainer": "A flowchart where every stick of RAM gets routed to Sam Altman, skipping gamers and ordinary PC owners. It mocks the idea that memory is better off in AI data centers than in home computers, after Sam Altman's October 29, 2026 podcast remark that DRAM sitting in personal computers is a \"quite terrible\" use of the world's limited supply.",
+      "origin": "Posted to r/memes by u/real_dusky on November 2, 2026 under the title \"Sam Altman stuff,\" during the wave of Altman RAM memes that followed his October 29 remark. MemeStand hasn't confirmed who made the chart.",
       "sources": [
         {
           "name": "Reddit r/memes",
           "url": "https://www.reddit.com/r/memes/comments/1xlybm3/sam_altman_stuff/"
+        },
+        {
+          "name": "The Verge: Sam Altman says it's better for RAM to be in a data center than on your desk",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
         }
       ],
       "related": [
-        "altman-ram"
+        "sam-altman-ram"
       ],
-      "written": "2026-11-03"
+      "written": "2026-11-03",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Where my RAM is going in 2027",
+        "Supply chain explained"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "anakin-skywalker-gen-z-male-rage": {
       "name": "Anakin Skywalker Gen Z Male Rage",
@@ -89,25 +129,39 @@
       "status": "full",
       "source_url": "https://knowyourmeme.com/memes/anakin-skywalker-gen-z-male-rage-memes",
       "kym_url": "https://knowyourmeme.com/memes/anakin-skywalker-gen-z-male-rage-memes",
-      "explainer": "Star Wars prequel memes that cast Anakin Skywalker as a stand-in for frustrated young men. Scenes of Anakin clashing with the Jedi Council or Obi-Wan Kenobi (often captioned as older generations or institutions) are paired with captions about debt, dating, jobs, politics and AI, framing his turn to the Dark Side as generational disillusionment.\n\nSome posts are earnest commentary and others are ironic; the format is used from many political angles.",
-      "origin": "Per Know Your Meme, the trend grew on X in early-to-mid October 2026. One of the earliest known examples, posted by @ArchitectOracle on October 11, 2026, used the scene of Anakin after his duel with Obi-Wan to list the struggles of Gen Z. Late in the month, discussion about the prequels' quality, including a viral post by commentator Matt Walsh calling them worse than the original trilogy, pushed the memes further, per Know Your Meme.",
+      "explainer": "Star Wars prequel memes that cast Anakin Skywalker as a stand-in for frustrated young men. Scenes of Anakin arguing with the Jedi Council or Obi-Wan are captioned with complaints about debt, dating, jobs and AI, framing his fall to the Dark Side as generational burnout. Some posts are sincere and some are ironic, and people use it from every political angle.",
+      "origin": "Know Your Meme says the trend grew on X in early-to-mid October 2026. One of the earliest known examples, posted by @ArchitectOracle on October 11, 2026, used Anakin after his duel with Obi-Wan to list Gen Z's struggles. Arguments about whether the prequels are good, including an October 27 post by commentator Matt Walsh calling them worse than the original trilogy, pushed the memes further.",
       "sources": [
         {
           "name": "Know Your Meme: Anakin Skywalker Gen Z Male Rage Memes",
           "url": "https://knowyourmeme.com/memes/anakin-skywalker-gen-z-male-rage-memes"
+        },
+        {
+          "name": "@ArchitectOracle on X (early example)",
+          "url": "https://x.com/ArchitectOracle/status/2109402025821622660"
+        },
+        {
+          "name": "@MattWalshBlog on X",
+          "url": "https://x.com/MattWalshBlog/status/2115242503972819013"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Gen Z men when the landlord raises rent again",
+        "Me after the fourth rejection email this week"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "bear-landmine": {
       "name": "Bear Landmine (Never Zero)",
       "ids": [
         "bear-landmine"
       ],
-      "status": "full",
-      "explainer": "A trail-camera photo of a brown bear carrying a round object in its mouth, shared with captions about bears joining explosive-ordnance disposal. The core joke is the deadpan safety line: the odds of being killed by a landmine delivered by a bear are low, \"but they are never zero.\"\n\nPeople reuse it as a format for absurdly unlikely risks, and military and EOD accounts ran with the idea of bears doing mine clearance.",
-      "origin": "The photo spread on X on October 29, 2026. @EODCSM posted it (\"When the bears start doing UXO clearance...\"), and @EODHappyCaptain's quote-post with the \"never zero\" line passed 3.4 million views and 118,000 likes, per X's public counts. X's trending story on the meme says the object is likely a discarded item that resembles a TM-62 anti-tank mine.",
+      "status": "short",
+      "explainer": "A trail-camera photo of a brown bear carrying a round object that looks like an anti-tank mine in its mouth. The punchline is a deadpan safety line: the odds of being killed by a landmine delivered by a bear are low, \"but they are never zero.\" People reuse the line for any absurdly unlikely risk.",
+      "origin": "The photo spread on X on October 29, 2026. @EODCSM posted it joking that bears had started doing UXO (unexploded ordnance) clearance, and a few minutes later @EODHappyCaptain added the \"never zero\" line; that post passed 3.4 million views, per X's public counts. X's trending summary says the object is likely a discarded item resembling a TM-62 mine. Who took the photo, and where, hasn't been confirmed.",
       "source_url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
       "kym_url": null,
       "sources": [
@@ -118,10 +172,20 @@
         {
           "name": "X trending story",
           "url": "https://x.com/i/trending/2116300713361834385"
+        },
+        {
+          "name": "@EODHappyCaptain on X (\"never zero\")",
+          "url": "https://x.com/EODHappyCaptain/status/2115887607238328723"
         }
       ],
       "related": [],
-      "written": "2026-11-02"
+      "written": "2026-11-02",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "The chances of my code working on the first try are low, but they are never zero",
+        "Odds of my ex texting me tonight: low, but never zero"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "billionaires-blaming": {
       "name": "Billionaires Blaming Collage",
@@ -131,8 +195,8 @@
       "status": "short",
       "source_url": "https://www.reddit.com/r/memes/comments/1xmsh4e/billionaire_things/",
       "kym_url": null,
-      "explainer": "A collage of laughing billionaires captioned as them enjoying it when public blame lands on immigrants, the poor, or transgender people instead of on wealth inequality. Cross-posted variants use titles like \"a tale as old as time.\"",
-      "origin": "Topped r/dankmemes and ranked high on r/memes on November 3, 2026. The collage format has circulated with similar political captions before; this day's widely ranked posts are the evidence used here.",
+      "explainer": "A collage of billionaires laughing, captioned as their reaction when people blame immigrants, poor people or trans people for society's problems instead of wealth inequality. It's a political meme about misdirected anger, and reposts use titles like \"a tale as old as time.\"",
+      "origin": "Posted to r/memes by u/Rich_Amount1565 on November 3, 2026 as \"billionaire things,\" with a version on r/dankmemes the same day. Similar collages with this message have circulated before; MemeStand hasn't confirmed who made the image.",
       "sources": [
         {
           "name": "Reddit r/memes",
@@ -144,7 +208,10 @@
         }
       ],
       "related": [],
-      "written": "2026-11-03"
+      "written": "2026-11-03",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "bunker-bulking": {
       "name": "Bunker Bulking",
@@ -154,8 +221,8 @@
       "status": "short",
       "source_url": "https://www.reddit.com/r/memes/comments/1xl7eex/its_already_true/",
       "kym_url": null,
-      "explainer": "An image macro captioned \"Me explaining to other people in an apocalyptic bunker that I had to eat all the food because I'm currently bulking,\" over a photo of a muscular man calmly explaining himself. The joke is gym culture's \"bulking\" (eating a lot to build muscle) used as an excuse for eating a shared survival stockpile.",
-      "origin": "Posted to r/memes by u/Primary-Cancel-6706 on November 1, 2026 under the title \"Its already true\"; it reached #9 on the subreddit's top posts of the day. MemeStand has no further origin information for this image.",
+      "explainer": "A muscular man calmly explaining himself, captioned as someone telling the other survivors in an apocalypse bunker that he had to eat all the food because he's bulking. The joke is gym culture's \"bulking\" (eating a lot to build muscle) used as an excuse for wiping out a shared stockpile.",
+      "origin": "Posted to r/memes by u/Primary-Cancel-6706 on November 1, 2026 under the title \"Its already true,\" and it reached #9 on the subreddit's top posts that day. The original creator hasn't been confirmed.",
       "sources": [
         {
           "name": "Reddit r/memes: \"Its already true\" (original post)",
@@ -163,7 +230,13 @@
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Me explaining why the whole pizza is gone: I'm bulking",
+        "Roommates when the groceries disappear on day two"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "election-text-spam": {
       "name": "Election Text Spam Badge",
@@ -173,8 +246,8 @@
       "status": "short",
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xmkl5v/i_guess_i_should_vote_for_whoever_spammed_my/",
       "kym_url": null,
-      "explainer": "An iOS Messages icon with a huge unread badge (often 100+) captioned as having no friends but a flood of political campaign texts on Election Day. Timed to U.S. voting days when SMS spam spikes.",
-      "origin": "Posted to r/dankmemes on November 3, 2026 and ranked on the day's top list. Similar \"unread political texts\" jokes appear around each U.S. election; this post is the evidence used for today's ranking.",
+      "explainer": "A phone's Messages icon with a huge unread count, captioned as having no friends but plenty of texts from political campaigns. It pops up around U.S. election days, when campaign text messages spike, and the post title jokes about voting for whoever spammed the most.",
+      "origin": "Posted to r/dankmemes by u/TGVMinecraftMap on November 3, 2026, Election Day in the U.S. midterms. Jokes about piles of campaign texts come back every election; MemeStand hasn't confirmed who made this image.",
       "sources": [
         {
           "name": "Reddit r/dankmemes",
@@ -182,7 +255,13 @@
         }
       ],
       "related": [],
-      "written": "2026-11-03"
+      "written": "2026-11-03",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "My phone the week before the election",
+        "Only people who text me: my mom and three Senate campaigns"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "ethan-klein-h3-memes": {
       "name": "Ethan Klein H3 Memes",
@@ -192,8 +271,8 @@
       "status": "full",
       "source_url": "https://knowyourmeme.com/memes/events/ethan-klein-cheating-controversy-h3-affair-scandal",
       "kym_url": "https://knowyourmeme.com/memes/events/ethan-klein-cheating-controversy-h3-affair-scandal",
-      "explainer": "A wave of reaction memes about H3 Podcast co-host Ethan Klein that followed his wife Hila Klein's public statements accusing him of an affair, as documented by Know Your Meme. Much of the humor plays on Klein's long-standing image as a devoted \"wife guy.\"\n\nA spin-off trend, which Know Your Meme calls \"Kleinification,\" uses AI tools to place Klein into unrelated video clips and images. These memes are online reactions; they are not MemeStand's statements of fact about anyone involved.",
-      "origin": "According to Know Your Meme, Ethan Klein announced on October 22, 2026 that the H3 Podcast would go on an indefinite hiatus. Late that evening and into October 23, Hila Klein published a multi-slide Instagram statement accusing him of an affair and describing their separation; the H3 crew then posted a statement of support for her. Outlets including Variety, People and Entertainment Weekly covered the fallout.\n\nMemes and reaction posts spread across X, TikTok and YouTube in the following days, and AI edits of Klein followed from about October 25, per Know Your Meme.",
+      "explainer": "A wave of reaction memes about H3 Podcast co-host Ethan Klein after his wife, Hila Klein, publicly accused him of having an affair. Much of the humor plays on his long-running image as a devoted \"wife guy,\" and a spin-off called \"Kleinification\" uses AI to paste him into unrelated clips. These are online reactions to allegations, not statements of fact about anyone involved.",
+      "origin": "According to Know Your Meme, Ethan Klein announced on October 22, 2026 that the H3 Podcast would go on an indefinite hiatus. Late that night and into October 23, Hila Klein posted an Instagram statement accusing him of an affair and describing their separation. Variety, People and Entertainment Weekly covered it, and reaction memes spread across X, TikTok and YouTube over the next days.\n\nThe AI edits followed from about October 25; Know Your Meme credits an early one to X account @CalloutsX.",
       "sources": [
         {
           "name": "Know Your Meme: Ethan Klein Cheating Controversy / H3 Affair Scandal",
@@ -202,10 +281,21 @@
         {
           "name": "Know Your Meme: Ethan Klein AI Edits / Kleinification",
           "url": "https://knowyourmeme.com/memes/ethan-klein-ai-edits-kleinification"
+        },
+        {
+          "name": "Variety: Hila Klein accuses Ethan Klein of affair, H3 Podcast cuts ties",
+          "url": "https://variety.com/2026/digital/news/hila-ethan-klein-affair-h3-podcast-cuts-ties-1236925732/"
+        },
+        {
+          "name": "People: Ethan Klein accused of having an affair by wife Hila",
+          "url": "https://people.com/ethan-klein-accused-of-having-an-affair-by-wife-hila-podcast-goes-on-indefinite-hiatus-12189660"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "hate-seals-fandom": {
       "name": "Hate Seals Fandom Dealbreaker Format",
@@ -215,8 +305,8 @@
       "status": "short",
       "source_url": "https://x.com/grindgod26/status/2117272503500550159",
       "kym_url": null,
-      "explainer": "A video/text format where parents calmly accept a long list of identities or life choices, then lose it when the kid says they hate a specific fandom, show, or animal (\"Dad, I hate seals\" is one viral punchline). Swaps replace the final taboo with anime, K-pop, sports teams, and other fan communities. X News covered the format as a fandom-dealbreaker joke.",
-      "origin": "Multiple X variants circulated in early November 2026. One widely shared post by @grindgod26 (about 15.4K likes / 124K views per the X API on Nov 3) used the seals punchline. A single definitive first post is not confirmed here.",
+      "explainer": "A text format where a dad calmly says \"ok\" to a list of identities (gay, lesbian, trans, furry, therian, non-binary), then the last line is the real dealbreaker, like \"dad, I hate seals.\" The joke is that hating someone's favorite animal, band or fandom gets treated as worse than any of it. Fans swap in K-pop groups, anime, bands and characters as the final line.",
+      "origin": "The format was already all over X by November 1, 2026, with dozens of versions using different final lines. The seals version MemeStand ranked was posted by @grindgod26 on November 2, 2026. The first post of the format hasn't been confirmed.",
       "sources": [
         {
           "name": "X / @grindgod26",
@@ -225,10 +315,20 @@
         {
           "name": "X News story",
           "url": "https://x.com/i/trending/2117361073187967418"
+        },
+        {
+          "name": "@Sirpuffion on X (an earlier example of the format, November 1, 2026)",
+          "url": "https://x.com/Sirpuffion/status/2116915982988140751"
         }
       ],
       "related": [],
-      "written": "2026-11-03"
+      "written": "2026-11-03",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "\"Dad, I'm a therian\" ok. \"Dad, I skip the intro songs\"",
+        "\"Dad, I'm trans\" ok. \"Dad, I think the sequel was better\""
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "heidi-32gb-ram": {
       "name": "Heidi 32GB RAM",
@@ -242,8 +342,8 @@
         "sam-altman-ram",
         "the-myth-of-consensual-pc-building"
       ],
-      "explainer": "This is the long-running \"Heidi pushes Clara over a cliff\" comic format applied to the 2026 RAM shortage. In the first panel one character asks \"Do you have a PC at home?\" and the other answers \"Yes, with 32 GB RAM.\" In the second panel the RAM owner goes over the cliff.\n\nThe joke is that owning a well-equipped home PC has become selfish (the post is titled \"Don't be selfish\"), riffing on Sam Altman's remark about DRAM in personal computers.",
-      "origin": "According to Know Your Meme, the template comes from the 1974 anime series Heidi, Girl of the Alps. The cliff scene never happens in the show: it is a photoshop that appeared online as early as 2009, and two-panel comic versions with speech bubbles spread from Spanish-language meme pages around 2015.\n\nThis RAM version was posted to r/memes by u/Odysseus1710 on November 1, 2026 and reached #3 on the subreddit's top posts of the day.",
+      "explainer": "The old \"Heidi pushes Clara off a cliff\" comic, updated for the 2026 RAM shortage. One girl asks \"Do you have a PC at home?\", the other proudly says \"Yes, with 32 GB RAM,\" and in the next panel she goes over the cliff. The post title, \"Don't be selfish,\" jokes that owning a well-equipped PC is now antisocial, after Sam Altman's October 29, 2026 podcast remark that DRAM sitting in personal computers is a \"quite terrible\" use of the world's limited supply.",
+      "origin": "Per Know Your Meme, the characters come from the 1974 anime Heidi, Girl of the Alps, but the cliff scene never happens in the show. It's an edit that was online by October 2009, and two-panel comic versions spread from Spanish-language meme pages around 2015.\n\nThis RAM version was posted to r/memes by u/Odysseus1710 on November 1, 2026 and reached #3 on the subreddit's top posts that day.",
       "sources": [
         {
           "name": "Know Your Meme: Heidi Pushes Clara Over Cliff",
@@ -252,9 +352,19 @@
         {
           "name": "Reddit r/memes: \"Don't be selfish\" (original post)",
           "url": "https://www.reddit.com/r/memes/comments/1xl1sdj/dont_be_selfish/"
+        },
+        {
+          "name": "The Verge: Sam Altman says it's better for RAM to be in a data center than on your desk",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
         }
       ],
-      "written": "2026-11-01"
+      "written": "2026-11-01",
+      "origin_confirmed": true,
+      "how_to_use": [
+        "\"Do you have a PC at home?\" \"Yes, with 64 GB\" *push*",
+        "\"Do you still use your 2019 laptop?\" \"Yes\" *push*"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "hold-the-ram": {
       "name": "Hold the RAM",
@@ -262,18 +372,28 @@
         "hold-the-ram"
       ],
       "status": "short",
-      "explainer": "A Braveheart battle-speech image relabeled \"The whole internet since Sam Altman's statement about RAM: Hold the RAM!\" It is part of the wave of jokes about PC owners clinging to their memory after Altman's comment about DRAM in personal computers.",
-      "origin": "Posted to r/memes (and cross-posted to r/dankmemes) by u/SirDoritos1 on November 1, 2026 under the title \"It's all for RAM and RAM's for all!\"; it reached #1 on r/memes' top posts of the day. MemeStand has no further origin information for this image.",
+      "explainer": "A Braveheart battle-speech still relabeled \"The whole internet since Sam Altman's statement about RAM: Hold the RAM!\" It pictures PC owners as an army refusing to give up their memory sticks, one of many jokes after Sam Altman's October 29, 2026 podcast remark that DRAM sitting in personal computers is a \"quite terrible\" use of the world's limited supply.",
+      "origin": "Posted to r/memes by u/SirDoritos1 on November 1, 2026 under the title \"It's all for RAM and RAM's for all!\" It reached #1 on the subreddit's top posts that day. The original creator hasn't been confirmed.",
       "source_url": "https://www.reddit.com/r/memes/comments/1xla9os/its_all_for_ram_and_rams_for_all/",
       "kym_url": null,
       "sources": [
         {
           "name": "Reddit r/memes: \"It's all for RAM and RAM's for all!\" (original post)",
           "url": "https://www.reddit.com/r/memes/comments/1xla9os/its_all_for_ram_and_rams_for_all/"
+        },
+        {
+          "name": "The Verge: Sam Altman says it's better for RAM to be in a data center than on your desk",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
         }
       ],
       "related": [],
-      "written": "2026-11-02"
+      "written": "2026-11-02",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "PC gamers when OpenAI says it needs their RAM",
+        "Me guarding my last two DIMM slots"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "im-so-sorry-trend": {
       "name": "I'm So Sorry Trend",
@@ -283,16 +403,26 @@
       "status": "full",
       "source_url": "https://knowyourmeme.com/memes/im-so-sorry-tiktok-trend",
       "kym_url": "https://knowyourmeme.com/memes/im-so-sorry-tiktok-trend",
-      "explainer": "A TikTok slideshow format. The first slide shows a flattering photo the poster claims is them; each following slide undoes an edit to reveal more of the real, less impressive picture, and the last slide simply says \"I'm so sorry\" for lying. Popular versions use embarrassing childhood Halloween costume photos.",
-      "origin": "Per Know Your Meme, one of the earliest known versions was posted by TikToker @theywanthunter on August 22, 2026 and passed 25.6 million views in two months. The trend was further popularized in October 2026, when many versions used childhood Halloween costume photos.",
+      "explainer": "A TikTok slideshow format: the first slide shows a flattering photo the poster says is them, each next slide peels back an edit to reveal the less glamorous real picture, and the last slide just says \"I'm so sorry.\" Popular versions use embarrassing childhood Halloween costume photos.",
+      "origin": "Per Know Your Meme, one of the earliest known versions was posted by TikToker @theywanthunter on August 22, 2026 and passed 25.6 million views in two months. The trend picked up again in October 2026, when many people used childhood Halloween photos.",
       "sources": [
         {
           "name": "Know Your Meme: \"I'm So Sorry\" TikTok Trend",
           "url": "https://knowyourmeme.com/memes/im-so-sorry-tiktok-trend"
+        },
+        {
+          "name": "@theywanthunter on TikTok (early example)",
+          "url": "https://www.tiktok.com/@theywanthunter/photo/7677005467830275358"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Slide 1: my glow-up. Slide 5: I'm so sorry",
+        "My \"Halloween costume\" vs. what I actually wore in 2009"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "jacket-still-works": {
       "name": "The Jacket Still Works",
@@ -300,8 +430,8 @@
         "jacket-still-works"
       ],
       "status": "short",
-      "explainer": "Two photos of YouTuber Angry Joe wearing the same jacket years apart, captioned \"Every man needs a jacket they devote the rest of their life to.\" It is a nod to people who find one piece of clothing and never replace it.",
-      "origin": "Posted to r/dankmemes by u/Round-Good1179 on November 2, 2026 under the title \"The jacket still works\"; it reached #3 on the subreddit's top posts of the day. MemeStand has no further origin information for this image.",
+      "explainer": "Two photos of YouTuber Angry Joe wearing what looks like the same jacket years apart, captioned \"Every man needs a jacket they devote the rest of their life to.\" It celebrates people who find one piece of clothing they like and never replace it.",
+      "origin": "Posted to r/dankmemes by u/Round-Good1179 on November 2, 2026 under the title \"The jacket still works,\" and it reached #3 on the subreddit's top posts that day. MemeStand hasn't confirmed who made the image.",
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xlvthd/the_jacket_still_works/",
       "kym_url": null,
       "sources": [
@@ -311,7 +441,13 @@
         }
       ],
       "related": [],
-      "written": "2026-11-02"
+      "written": "2026-11-02",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Me in my 2012 hoodie at every family photo since",
+        "Dad's one winter coat, 1998 to present"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "jiren-dancing": {
       "name": "Jiren Dancing (I'm So in Love With You)",
@@ -321,35 +457,63 @@
       "status": "full",
       "source_url": "https://knowyourmeme.com/memes/im-so-in-love-with-you-dragon-ball-dance-jiren-dancing",
       "kym_url": "https://knowyourmeme.com/memes/im-so-in-love-with-you-dragon-ball-dance-jiren-dancing",
-      "explainer": "Animations of Dragon Ball characters, especially the stoic fighter Jiren, doing a smooth little dance to the song \"it's like i'm not even here\" by Mthu, with the lyric \"I'm so in love with you, you're so in love with him, I don't know what to do.\" The contrast between an intimidating character and a goofy, lovesick dance is the joke.\n\nPeople also recreate the dance themselves, in public or on unusual screens.",
-      "origin": "Per Know Your Meme, the dancing animations are largely made by TikToker @dblgiuzman, who posted Jiren dance clips in early September 2026. Later that month users began pairing them with the Mthu song; one of the earliest known edits was posted by @skobodo_tolot on September 17, 2026. The format spread through October, with some versions passing 2 million views.",
+      "explainer": "Animations of Dragon Ball characters, especially the stone-faced fighter Jiren, doing a smooth little dance to Mthu's song \"it's like i'm not even here\" (\"I'm so in love with you, you're so in love with him, I don't know what to do\"). The joke is an intimidating character dancing like a lovesick teenager, and people recreate the dance themselves too.",
+      "origin": "Per Know Your Meme, most of the dance animations were made by TikToker @dblgiuzman, who posted Jiren dance clips in early September 2026. Users started pairing them with the Mthu song later that month; one of the earliest known edits was posted by @skobodo_tolot on September 17, 2026. The format spread through October.",
       "sources": [
         {
           "name": "Know Your Meme: \"I'm So In Love With You\" Dragon Ball Dance / Jiren Dancing",
           "url": "https://knowyourmeme.com/memes/im-so-in-love-with-you-dragon-ball-dance-jiren-dancing"
+        },
+        {
+          "name": "@skobodo_tolot on TikTok (early edit with the song)",
+          "url": "https://www.tiktok.com/@skobodo_tolot/video/7686648470693760286"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Me when my crush texts back \"lol\"",
+        "The strongest man in the universe after hearing she has a boyfriend"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "ken-paxton-salsa-made-in-new-york-city": {
       "name": "Ken Paxton Eats Salsa Made in New York City",
       "ids": [
         "paxton-salsa"
       ],
-      "status": "short",
+      "status": "full",
       "source_url": "https://x.com/leftcoastbabe/status/2116590353973395609",
       "kym_url": null,
-      "explainer": "A joke line, not a factual claim. X users posted \"Ken Paxton eats salsa made in New York City,\" part of a chain of posts pinning absurd, mundane \"offenses\" on the Texas attorney general (the post it quotes says he \"leaves his shopping carts in the parking spots\"). The salsa line riffs on an old TV ad in which cowboys are horrified that a salsa was \"made in New York City.\" Many accounts copied the line word for word.",
-      "origin": "The most-viewed version MemeStand found was posted on X by @leftcoastbabe on October 31, 2026, quoting the shopping-cart post from the day before. X listed the trend as a news story. MemeStand has not verified what started the chain.",
+      "explainer": "A joke, not a factual claim. Posters on X took turns pinning petty, made-up \"offenses\" on Texas Attorney General Ken Paxton, each quote-post topping the last: he leaves shopping carts in parking spots, puts raisins in the Halloween candy bowl, and \"eats salsa made in New York City.\" That last line borrows from Pace Picante's 1990s TV ads, in which cowboys are outraged to learn a salsa was made in \"New York City?!\"",
+      "origin": "MemeStand traced the quote chain behind the salsa post back to an October 29, 2026 post by @AustinConserve praising Paxton (\"Ken Paxton is the guy who shows up with his lawnmower when you break your leg\") and contrasting him with James Talarico. Critics quote-posted it with their own \"Ken Paxton is the guy who...\" lines on October 30, and @leftcoastbabe's salsa line came on October 31. Other branches of the chain may exist.",
       "sources": [
         {
           "name": "@leftcoastbabe on X (original post)",
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609"
+        },
+        {
+          "name": "@AustinConserve on X (start of the quote chain)",
+          "url": "https://x.com/AustinConserve/status/2115826956067553505"
+        },
+        {
+          "name": "@chelleyourself on X (\"leaves his shopping carts...\")",
+          "url": "https://x.com/chelleyourself/status/2116399456992346251"
+        },
+        {
+          "name": "Bring Back Dial-Up: the Pace Picante \"New York City?!\" ads",
+          "url": "https://bringbackdialup.com/commercials/pace-picante-new-york-city-commercials/505/"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Ken Paxton microwaves fish in the office break room",
+        "Ken Paxton puts the empty milk carton back in the fridge"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "macaulay-culkin-thousand-yard-stare": {
       "name": "Macaulay Culkin Thousand-Yard Stare",
@@ -359,8 +523,8 @@
       "status": "full",
       "source_url": "https://x.com/DiscussingFilm/status/2116776966141415441",
       "kym_url": "https://knowyourmeme.com/memes/thousand-yard-stare",
-      "explainer": "The Thousand-Yard Stare meme uses a blank, shell-shocked gaze to say \"I have seen too much.\" People post it as a reaction image after something exhausting, overwhelming or mildly traumatic, from a hard exam to a chaotic group chat.\n\nIn this version, actor Macaulay Culkin recreated the stare as a Halloween costume, with the helmet and grimy face of the soldier in the original artwork. Fans shared side-by-side comparisons with the painting the meme comes from.",
-      "origin": "According to Know Your Meme, the stare comes from The 2,000 Yard Stare, a 1944 painting by American war artist Thomas Lea of a U.S. Marine at the Battle of Peleliu in World War II. Know Your Meme traces the first memetic edits to Reddit in 2014; the painting became a widespread reaction meme in late 2022 and early 2023.\n\nThe Culkin costume spread from a post by @DiscussingFilm on X on the night of October 31, 2026 (Pacific Time), captioned \"Macaulay Culkin recreating the thousand-yard stare soldier meme for Halloween.\" The post passed 12 million views within a day, per X's public counts.",
+      "explainer": "The Thousand-Yard Stare is a blank, shell-shocked gaze that says \"I have seen too much,\" used after anything exhausting, from finals week to a chaotic group chat. In this version, Macaulay Culkin dressed up as the soldier from the original painting for Halloween 2026, helmet and grimy face included.",
+      "origin": "According to Know Your Meme, the stare comes from The 2,000 Yard Stare, a 1944 painting by war artist Thomas Lea of a U.S. Marine at the Battle of Peleliu. The first memetic edits appeared on Reddit in 2014, and it became a widespread reaction image in late 2022 and early 2023.\n\nThe Culkin costume spread from a @DiscussingFilm post on X on the night of October 31, 2026 (PT); it has passed 16 million views, per X's public counts.",
       "sources": [
         {
           "name": "Know Your Meme: Thousand Yard Stare",
@@ -372,7 +536,13 @@
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Me after one shift in retail on Black Friday",
+        "Parents after the kids' Halloween sugar crash"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "malfoid": {
       "name": "Malfoid",
@@ -382,16 +552,23 @@
       "status": "full",
       "source_url": "https://knowyourmeme.com/memes/malfoid-female-draco-malfoy",
       "kym_url": "https://knowyourmeme.com/memes/malfoid-female-draco-malfoy",
-      "explainer": "\"Malfoid\" is a fan-art trend that draws Harry Potter's Draco Malfoy as a woman, usually as a smug rival teasing Harry. The nickname blends \"Malfoy\" with \"foid,\" a derogatory slang term for women; Know Your Meme notes the term's origin, though most of the trend is lighthearted fan art.",
-      "origin": "According to Know Your Meme, gender-swapped Draco art has circulated since at least 2011, and the name \"Malfoid\" first appeared in a January 2026 post on X. The trend took off after X user @redteneri posted Malfoid art on September 22, 2026 (over 89,000 likes in a week), and many artists followed in late September and October.",
+      "explainer": "\"Malfoid\" is a fan-art trend that draws Harry Potter's Draco Malfoy as a woman, usually a smug rival teasing Harry. The name blends \"Malfoy\" with \"foid,\" a derogatory slang term for women, though most of the trend is lighthearted fan art.",
+      "origin": "Know Your Meme says gender-swapped Draco art has existed since at least 2011, and the name \"Malfoid\" first appeared in a January 2026 post on X. The trend took off after X user @redteneri posted Malfoid art on September 22, 2026; that post has passed 23 million views, per X's public counts. Many artists followed in late September and October.",
       "sources": [
         {
           "name": "Know Your Meme: Malfoid / Female Draco Malfoy",
           "url": "https://knowyourmeme.com/memes/malfoid-female-draco-malfoy"
+        },
+        {
+          "name": "@redteneri on X (the post that kicked off the trend)",
+          "url": "https://x.com/redteneri/status/2102398387194626330"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "mini-producer": {
       "name": "Mini Producer",
@@ -401,35 +578,55 @@
       "status": "full",
       "source_url": "https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel",
       "kym_url": "https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel",
-      "explainer": "\"Mini Producer\" is the online name of Jay Thomas Manuel, a music producer, voice actor and disability advocate who stars in the reality series Jay & Pamela. In October 2026, clips of him laughing and reacting became popular reaction memes, usually paired with relatable captions (for example, how people react when they hear the mac and cheese is ready at Thanksgiving).\n\nSome posts use AI-generated videos of his likeness; those are edits made by other users, not real footage.",
-      "origin": "According to Know Your Meme, Manuel has been the subject of the TLC series Jay & Pamela, alongside Pamela Chavez, since 2025. He posts as @miniproducer on TikTok, X and Instagram. One early meme, posted by TikToker @durk.clips on October 21, 2026, passed 6 million views in a week, and a follow-up on October 23 passed 7 million.",
+      "explainer": "\"Mini Producer\" is the online name of Jay Thomas Manuel, a music producer, voice actor and disability advocate who stars in the reality series Jay & Pamela. Clips of him laughing and reacting became popular reaction memes in October 2026, paired with relatable captions like hearing the mac and cheese is ready at Thanksgiving. Some posts use AI-generated videos of his likeness; those are edits by other users, not real footage.",
+      "origin": "According to Know Your Meme, Manuel has starred in Jay & Pamela, alongside Pamela Chavez, since 2025, and posts as @miniproducer on TikTok, X and Instagram. One early meme, posted by TikToker @durk.clips on October 21, 2026, passed 6 million views in a week, and a follow-up on October 23 passed 7 million.",
       "sources": [
         {
           "name": "Know Your Meme: Mini Producer / Jay Thomas Manuel",
           "url": "https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel"
+        },
+        {
+          "name": "Mini Producer's official site",
+          "url": "https://www.miniproducer.com/about"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Me when the group chat finally picks a restaurant",
+        "When the mac and cheese hits the Thanksgiving table"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "monkey-doomscrolling": {
       "name": "Monkey Doomscrolling",
       "ids": [
         "monkey-doomscrolling"
       ],
-      "status": "full",
-      "explainer": "A short clip of a tiny monkey lying on a white bed holding a phone, staring at the screen. It is used as a reaction for late-night phone habits, usually captioned along the lines of \"me doomscrolling at 2am.\"",
-      "origin": "The 10-second video was posted on X by @vwxyz_4 on October 27, 2026 and passed 6.4 million views and 82,000 likes, per X's public counts. X featured it in a trending story noting it hit a million views in its first 14 hours. MemeStand has no information on where the footage was originally filmed.",
+      "status": "short",
+      "explainer": "A short clip of a tiny monkey lying on a white bed, holding a phone and staring at the screen. It's a reaction for late-night phone habits, usually captioned along the lines of \"me doomscrolling at 2am.\"",
+      "origin": "The 10-second clip MemeStand ranked was posted on X by @vwxyz_4 on October 27, 2026 and passed 6.9 million views, per X's public counts; X's trending summary noted it hit a million views in its first 14 hours. Where the footage was originally filmed, and by whom, hasn't been confirmed.",
       "source_url": "https://x.com/vwxyz_4/status/2115203529795326309",
       "kym_url": null,
       "sources": [
         {
           "name": "X trending story",
           "url": "https://x.com/i/trending/2115430446075121982"
+        },
+        {
+          "name": "@vwxyz_4 on X",
+          "url": "https://x.com/vwxyz_4/status/2115203529795326309"
         }
       ],
       "related": [],
-      "written": "2026-11-02"
+      "written": "2026-11-02",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Me at 3am: one more video",
+        "Me telling myself I'll sleep after this reel"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "nintendo-sue-github": {
       "name": "Nintendo Sue GitHub (Gru's Plan)",
@@ -437,18 +634,25 @@
         "nintendo-sue-github"
       ],
       "status": "short",
-      "explainer": "A Gru's Plan template: Nintendo finds emulator forks and jailbreak repositories on GitHub, decides to protect its intellectual property, and settles on \"let's sue GitHub,\" which Gru rereads with a worried look. It is a joke about Nintendo's reputation for legal action, not a report of an actual lawsuit.",
-      "origin": "Posted to r/memes by u/RecreatorofPES on November 1, 2026 (Pacific time) under the title \"Nintendo's Legal Department\"; it reached #7 on the subreddit's top posts of the day. MemeStand has no further origin information for this image.",
+      "explainer": "A Gru's Plan comic: Nintendo finds emulator and jailbreak repositories on GitHub, decides to protect its intellectual property, and lands on \"let's sue GitHub,\" which Gru rereads with a worried look. It's a joke about Nintendo's reputation for aggressive legal action, not a report of a real lawsuit.",
+      "origin": "Gru's Plan comes from Despicable Me (2010); Know Your Meme traces the four-panel format to a March 9, 2018 post on r/DeepFriedMemes. This Nintendo version was posted to r/memes by u/RecreatorofPES on November 1, 2026 (PT) as \"Nintendo's Legal Department\" and reached #7 that day. Who made this specific edit hasn't been confirmed.",
       "source_url": "https://www.reddit.com/r/memes/comments/1xlorsv/nintendos_legal_department/",
       "kym_url": null,
       "sources": [
         {
           "name": "Reddit r/memes: \"Nintendo's Legal Department\" (original post)",
           "url": "https://www.reddit.com/r/memes/comments/1xlorsv/nintendos_legal_department/"
+        },
+        {
+          "name": "Know Your Meme: Gru's Plan",
+          "url": "https://knowyourmeme.com/memes/grus-plan"
         }
       ],
       "related": [],
-      "written": "2026-11-02"
+      "written": "2026-11-02",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "no-money-bald": {
       "name": "No Money Bald Distress Clip",
@@ -458,8 +662,8 @@
       "status": "short",
       "source_url": "https://x.com/abdykeen/status/2117175866232868947",
       "kym_url": null,
-      "explainer": "A short clip of a bald man looking distressed is captioned as the feeling after spending money trying to make money and ending up with none. Copycats swap in gambling, crypto, and shopping punchlines. An X News story framed the format around money-loss and gambling humor.",
-      "origin": "A widely shared early English caption came from X user @abdykeen on November 2, 2026 (about 26.5K likes / 1.32M views per the X API on Nov 3). The underlying clip predates that post and has been reused with many money-loss captions; a fuller first-post origin is not confirmed here.",
+      "explainer": "A short clip of a bald man slumped back looking drained, captioned \"Me after using my money to look for money and I end up with no money.\" It's about losing what you spent trying to get rich quick, and copycats aim it at gambling, betting slips, crypto and side hustles.",
+      "origin": "The same caption was already circulating on X by October 4, 2026, and many accounts reposted it in early November. The version MemeStand ranked was posted by @abdykeen on November 2, 2026 and passed 1.4 million views, per X's public counts. The clip's original source and the caption's first author haven't been confirmed.",
       "sources": [
         {
           "name": "X / @abdykeen",
@@ -468,10 +672,20 @@
         {
           "name": "X News story",
           "url": "https://x.com/i/trending/2116908077110919169"
+        },
+        {
+          "name": "@lennoxAkin on X (same caption, October 4, 2026)",
+          "url": "https://x.com/lennoxAkin/status/2106854616055099861"
         }
       ],
       "related": [],
-      "written": "2026-11-03"
+      "written": "2026-11-03",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Me after the parlay missed by one leg",
+        "Me after buying a course on how to make money"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "no-nut-november": {
       "name": "No Nut November",
@@ -481,8 +695,8 @@
       "status": "full",
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xkrbio/i_cant_do_it_gents_have_fun_getting_superpowers/",
       "kym_url": "https://knowyourmeme.com/memes/no-nut-november",
-      "explainer": "No Nut November (NNN) is a tongue-in-cheek internet challenge in which participants pledge to abstain from masturbation for the whole of November. Every year on November 1 the memes start, mostly jokes about giving up almost immediately.\n\nThe 2026 day-one example on MemeStand shows a hand reaching out of the dark, captioned \"me during NNN (I'm married to an amazing and beautiful woman),\" a joke that the rules don't fit someone who is married.",
-      "origin": "According to Know Your Meme, an Urban Dictionary entry defined \"No Nut November\" on November 3, 2011, and the challenge spread widely on Twitter, Reddit and 4chan from November 2017, after which it became a yearly meme.\n\nThe 2026 post MemeStand ranked, \"I can't do it, gents. Have fun getting superpowers.\", was posted to r/dankmemes by u/SpectrumSense on October 31, 2026 (Pacific Time) and reached #3 on the subreddit's top posts of the day.",
+      "explainer": "No Nut November (NNN) is a tongue-in-cheek internet challenge to abstain from masturbation for all of November. Every November 1 the memes start, mostly jokes about failing almost immediately.",
+      "origin": "According to Know Your Meme, an Urban Dictionary entry defined \"No Nut November\" on November 3, 2011, and the challenge spread widely on Twitter, Reddit and 4chan in November 2017, after which it became a yearly ritual.\n\nThe 2026 post MemeStand ranked, \"I can't do it, gents. Have fun getting superpowers.\", was posted to r/dankmemes by u/SpectrumSense on October 31, 2026 (PT).",
       "sources": [
         {
           "name": "Know Your Meme: No Nut November",
@@ -491,10 +705,24 @@
         {
           "name": "Reddit r/dankmemes: \"I can't do it, gents...\" (original post)",
           "url": "https://www.reddit.com/r/dankmemes/comments/1xkrbio/i_cant_do_it_gents_have_fun_getting_superpowers/"
+        },
+        {
+          "name": "Urban Dictionary: No Nut November (2011 entry)",
+          "url": "https://www.urbandictionary.com/define.php?term=No%20Nut%20November"
+        },
+        {
+          "name": "r/OutOfTheLoop: What is with No Nut November? (2017)",
+          "url": "https://www.reddit.com/r/OutOfTheLoop/comments/7au6n2/what_is_with_no_nut_november/"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [
+        "November 2nd and already out of the running",
+        "NNN day 1: confident. Day 1, 11pm:"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "polymarket-good-ending": {
       "name": "Good Ending (Polymarket Bet)",
@@ -502,8 +730,8 @@
         "polymarket-good-ending"
       ],
       "status": "short",
-      "explainer": "A short comic in which a man bets on a prediction market that a down-on-his-luck stranger will never turn his life around. The stranger recovers and gets married, and the bettor loses. The \"good ending\" joke turns betting markets into a wholesome twist.",
-      "origin": "Posted to r/memes by u/Such_Pickle_2337 on November 1, 2026 (Pacific time) under the title \"Good Ending\"; it reached #3 on the subreddit's top posts of the day. MemeStand has no further origin information for this comic.",
+      "explainer": "A short comic where a man bets on a prediction market that a down-on-his-luck stranger will never turn his life around. The stranger gets back on his feet and gets married, so the bettor loses, and that's the \"good ending.\" It pokes fun at people betting on everything, with a wholesome twist.",
+      "origin": "Posted to r/memes by u/Such_Pickle_2337 on November 1, 2026 (PT) under the title \"Good Ending,\" and it reached #3 on the subreddit's top posts that day. The comic's original artist hasn't been confirmed.",
       "source_url": "https://www.reddit.com/r/memes/comments/1xlnh1a/good_ending/",
       "kym_url": null,
       "sources": [
@@ -513,7 +741,10 @@
         }
       ],
       "related": [],
-      "written": "2026-11-02"
+      "written": "2026-11-02",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "potatoes-walrus": {
       "name": "Potatoes After a Few Days in the Bag",
@@ -521,8 +752,8 @@
         "potatoes-walrus"
       ],
       "status": "short",
-      "explainer": "A photo of a crowded walrus colony, their tusks poking out in every direction, captioned as what potatoes look like after a few days in the bag. The joke is the resemblance between the tusks and the sprouts on forgotten potatoes.",
-      "origin": "Posted to r/memes by u/Awkward-Comedian-506 on November 1, 2026 (Pacific time) under the title \"Potatoes after a few days in bag\"; it reached #2 on the subreddit's top posts of the day. MemeStand has no further origin information for this image.",
+      "explainer": "A photo of a crowded walrus colony with tusks poking out in every direction, captioned as what potatoes look like after a few days in the bag. The joke is that the tusks look like the sprouts on forgotten potatoes.",
+      "origin": "Posted to r/memes by u/Awkward-Comedian-506 on November 1, 2026 (PT) under the title \"Potatoes after a few days in bag,\" and it reached #2 on the subreddit's top posts that day. Who took the photo and who first wrote the caption haven't been confirmed.",
       "source_url": "https://www.reddit.com/r/memes/comments/1xlpirx/potatoes_after_a_few_days_in_bag/",
       "kym_url": null,
       "sources": [
@@ -532,7 +763,13 @@
         }
       ],
       "related": [],
-      "written": "2026-11-02"
+      "written": "2026-11-02",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "The onions I forgot under the sink",
+        "My fridge after a two-week vacation"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "regretamine": {
       "name": "Regretamine",
@@ -542,8 +779,8 @@
       "status": "full",
       "source_url": "https://x.com/elonmusk/status/2116875604889112772",
       "kym_url": null,
-      "explainer": "\"Regretamine\" is a made-up drug from a joke post: one dose erases all your regrets, including the regret of having taken it. The punchline is the paradox, since the pill would wipe out the memory of the decision it exists to fix.\n\nReplies ran with it, inventing side effects, product labels and other pun-named drugs. It is a joke, not a real medication.",
-      "origin": "Elon Musk posted the joke on X on November 1, 2026: \"I have this great idea for a drug called Regretamine. One dose and all your regrets are gone! Including, obviously, having taken Regretamine in the first place.\" The post drew over 9,000 replies and millions of views within hours, per X's public counts, and X featured the spin-off posts as a trending story.",
+      "explainer": "\"Regretamine\" is a made-up drug from a joke post: one dose erases all your regrets, including the regret of taking it. The punchline is the paradox, and replies ran with fake side effects, labels and other pun-named drugs. It's a joke, not a real medication.",
+      "origin": "Elon Musk posted the joke on X on November 1, 2026: \"I have this great idea for a drug called Regretamine. One dose and all your regrets are gone! Including, obviously, having taken Regretamine in the first place.\" The post passed 8 million views, per X's public counts, and spin-off posts followed the same day.",
       "sources": [
         {
           "name": "@elonmusk on X (original post)",
@@ -551,7 +788,13 @@
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Side effects of Regretamine may include texting your ex again",
+        "Me reaching for the Regretamine after checking my bank app"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "sam-altman-ram": {
       "name": "Sam Altman RAM",
@@ -565,8 +808,8 @@
         "the-myth-of-consensual-pc-building",
         "heidi-32gb-ram"
       ],
-      "explainer": "The Sam Altman RAM memes joke that PC owners now have to hide their memory sticks (RAM, or DIMMs) from OpenAI. They play on a real shortage of computer memory and on a remark by OpenAI CEO Sam Altman that DRAM sitting in personal computers is a poor use of limited supply.\n\nTypical examples recast Altman as a film interrogator or villain searching homes for RAM, or show users guarding the memory slots in their PCs. The joke is about the remark and the shortage, not a claim that anyone is literally taking people's hardware.",
-      "origin": "On the Cheeky Pint podcast episode released October 29, 2026, Altman said: \"from a global allocation perspective, actually, it's quite terrible to have everybody have a bunch of the world's limited supply of DRAM sitting in their own computer and being used 5% of the time.\" He was talking about running AI models locally versus in data centers. Tech outlets including The Verge and Tom's Hardware reported the quote on October 30.\n\nMemes followed within days. On November 1, 2026, u/famsteve20015 posted \"Kiss your ram\" to r/memes, an image macro captioned \"You're hiding a 16gb ram in your PC, are you not?\", which reached #1 on the subreddit's top posts of the day. A post on r/dankmemes, \"Point out to me the DIMM sockets where they are hiding,\" reached #1 there, and X listed the reaction as a trending story.",
+      "explainer": "The Sam Altman RAM memes joke that PC owners now have to hide their memory sticks (RAM, or DIMMs) from OpenAI. They play on a real computer-memory shortage and on Altman's remark that DRAM sitting in personal computers is a poor use of limited supply. Typical examples recast Altman as a film interrogator searching homes for RAM.",
+      "origin": "On the Cheeky Pint podcast episode released October 29, 2026, Altman said it's \"quite terrible to have everybody have a bunch of the world's limited supply of DRAM sitting in their own computer and being used 5% of the time,\" while talking about running AI in data centers versus locally. The Verge and Tom's Hardware reported the quote on October 30.\n\nThe memes followed within days. On November 1, 2026, u/famsteve20015's \"Kiss your ram\" (\"You're hiding a 16gb ram in your PC, are you not?\") reached #1 on r/memes, and a DIMM-socket version reached #1 on r/dankmemes.",
       "sources": [
         {
           "name": "Reddit r/memes: \"Kiss your ram\" (original post)",
@@ -585,7 +828,13 @@
           "url": "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization"
         }
       ],
-      "written": "2026-11-01"
+      "written": "2026-11-01",
+      "origin_confirmed": true,
+      "how_to_use": [
+        "You're hiding a 32GB kit in that tower, are you not?",
+        "Me hiding my RAM in the cereal box"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "she-only-wants-me-for-my-pakistani-citizenship": {
       "name": "She Only Wants Me for My Pakistani Citizenship",
@@ -595,8 +844,8 @@
       "status": "short",
       "source_url": "https://x.com/vibeistani/status/2116644824703279122",
       "kym_url": null,
-      "explainer": "A one-line joke format: \"She only wants me for my Pakistani citizenship.\" It flips the familiar complaint that someone is only after a partner's passport, a line usually aimed at citizenships seen as highly desirable, by applying it to the poster's own. Other users copied the line with other nationalities, including Syrian, Indian and Iranian versions.",
-      "origin": "The version MemeStand tracked was posted on X by @vibeistani on October 31, 2026 and passed 3 million views, per X's public counts. MemeStand has not confirmed whether earlier posts used the same line.",
+      "explainer": "A one-line joke: \"She only wants me for my Pakistani citizenship.\" It flips the usual complaint that someone is only after a partner's passport, which is normally about citizenships seen as highly desirable, by applying it to the poster's own. Others copied the line with their own nationalities.",
+      "origin": "The version MemeStand ranked was posted on X by @vibeistani on October 31, 2026 and passed 6.4 million views, per X's public counts. An X search found no earlier post with the exact line, but MemeStand hasn't confirmed that this was the first.",
       "sources": [
         {
           "name": "@vibeistani on X (original post)",
@@ -604,7 +853,12 @@
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": false,
+      "how_to_use": [
+        "She only wants me for my [your country] passport"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "sips-ram": {
       "name": "Boston RAM Party",
@@ -614,37 +868,54 @@
       "status": "short",
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xm20x8/sips_ram/",
       "kym_url": null,
-      "explainer": "A Boston Tea Party painting edit where the dumped crates spill RAM sticks instead of tea. Another entry in the Reddit wave responding to Sam Altman's DRAM-shortage comments.",
-      "origin": "Posted to r/dankmemes on November 2, 2026 (\"Sips RAM\") and ranked on the day's top list on November 3, alongside many other Altman/RAM edits.",
+      "explainer": "A Boston Tea Party painting edited so the colonists dump crates of RAM sticks into the harbor instead of tea. It's another entry in the wave of jokes about PC memory after Sam Altman's October 29, 2026 podcast remark that DRAM sitting in personal computers is a \"quite terrible\" use of the world's limited supply.",
+      "origin": "Posted to r/dankmemes by u/C-3POsMidriff on November 2, 2026 under the title \"Sips RAM.\" MemeStand hasn't confirmed who made the edit.",
       "sources": [
         {
           "name": "Reddit r/dankmemes",
           "url": "https://www.reddit.com/r/dankmemes/comments/1xm20x8/sips_ram/"
+        },
+        {
+          "name": "The Verge: Sam Altman says it's better for RAM to be in a data center than on your desk",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
         }
       ],
       "related": [
-        "altman-ram"
+        "sam-altman-ram"
       ],
-      "written": "2026-11-03"
+      "written": "2026-11-03",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "skull-cap-trend": {
       "name": "Skull Cap Trend",
       "ids": [
         "skull-cap"
       ],
-      "status": "full",
+      "status": "short",
       "source_url": "https://knowyourmeme.com/memes/skull-cap-trend",
       "kym_url": "https://knowyourmeme.com/memes/skull-cap-trend",
-      "explainer": "A TikTok before-and-after skit: the creator starts out looking deliberately awkward or nerdy, pulls on a tight skull cap (usually black), and instantly switches to a confident, intense \"glow-up\" look on the beat drop. The joke is the exaggerated idea that one cheap hat transforms your whole persona.\n\nThe videos are usually set to Bryson Tiller's verse from DJ Khaled's \"Wild Thoughts\" featuring Rihanna.",
-      "origin": "Know Your Meme says the trend spread on TikTok around October 2026, with no single confirmed originator. An early example from October 16, 2026 by @big_bobby6929 passed 7.4 million views, and an October 18 version by @antoniopieterss passed 12.8 million, per Know Your Meme.",
+      "explainer": "A TikTok before-and-after skit: the creator starts out looking deliberately awkward, pulls on a tight skull cap (usually black), and instantly switches to an intense, confident look on the beat drop. The joke is the idea that one cheap hat transforms your whole personality. Most versions use Bryson Tiller's verse from DJ Khaled's \"Wild Thoughts.\"",
+      "origin": "Know Your Meme says the trend spread on TikTok in October 2026 with no single confirmed originator. An early example from October 16, 2026 by @big_bobby6929 passed 7.4 million views, and an October 18 version by @antoniopieterss passed 12.8 million.",
       "sources": [
         {
           "name": "Know Your Meme: Skull Cap Trend",
           "url": "https://knowyourmeme.com/memes/skull-cap-trend"
+        },
+        {
+          "name": "@big_bobby6929 on TikTok (early example)",
+          "url": "https://www.tiktok.com/@big_bobby6929/video/7697381314193935646"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Me before vs. after the beanie goes on",
+        "Nobody: the skull cap at 7:59am on picture day:"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "snow-leopard-paws-at-you": {
       "name": "Snow Leopard Paws at You",
@@ -654,8 +925,8 @@
       "status": "full",
       "source_url": "https://knowyourmeme.com/memes/snow-leopard-paws-at-you",
       "kym_url": "https://knowyourmeme.com/memes/snow-leopard-paws-at-you",
-      "explainer": "A reaction image of a snow leopard, edited with AI to have the wide eyes and face of a famous cat, captioned \"*paws at you*\" followed by a request or punchline. It reads as a cute, needy nudge, often an invitation to hop online and play a game, and is nicknamed \"Snowmei.\"\n\nPeople also repeat the line many times, redraw the leopard as other characters, and brands such as the Epic Games Store have posted their own versions.",
-      "origin": "According to Know Your Meme, the base photo shows a snow leopard named Himmel at the Ishikawa Zoo in Nomi, Japan, shared on X by @black03_white03 in May 2024. In October 2026 it was edited with AI to give the leopard the face of Tole Tole Cat (Mei Mei), a cat that went viral in 2023. The caption borrows the older roleplay-style action \"*paws at you*.\"\n\nKnow Your Meme dates the earliest known post of the edited image to October 23, 2026 (@harvest_skies on X). It spread over the next week on X, Instagram, TikTok and Reddit; one October 24 post by @dogwife333 simply repeats \"*paws at you* hi.\"",
+      "explainer": "A snow leopard photo, edited with AI to have the wide eyes and face of a famous cat, captioned \"*paws at you*\" plus a request. It reads as a cute, needy nudge, often an invite to hop online and play, and fans call the leopard \"Snowmei.\" People also repeat the line over and over or redraw the leopard as other characters.",
+      "origin": "According to Know Your Meme, the base photo shows Himmel, a snow leopard at the Ishikawa Zoo in Japan, posted on X by @black03_white03 on May 25, 2024. In October 2026 someone used AI to give it the face of Tole Tole Cat (Mei Mei), a cat that went viral in 2023. Know Your Meme dates the earliest known edited post to October 23, 2026 (@harvest_skies on X), and it spread across X, TikTok, Instagram and Reddit the following week.",
       "sources": [
         {
           "name": "Know Your Meme: Snow Leopard Paws at You",
@@ -664,10 +935,24 @@
         {
           "name": "@dogwife333 on X",
           "url": "https://x.com/dogwife333/status/2114198070132961395"
+        },
+        {
+          "name": "@black03_white03 on X (original Himmel photo)",
+          "url": "https://x.com/black03_white03/status/1794348347609989236"
+        },
+        {
+          "name": "@harvest_skies on X (earliest known edit)",
+          "url": "https://x.com/harvest_skies/status/2113677447132533196"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [
+        "*paws at you* minecraft?",
+        "*paws at you* are you awake"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "the-myth-of-consensual-pc-building": {
       "name": "The Myth of Consensual PC Building",
@@ -681,15 +966,22 @@
         "sam-altman-ram",
         "heidi-32gb-ram"
       ],
-      "explainer": "A spin-off of the Sam Altman RAM memes. The image labels a PC builder and a PC as both saying \"I consent,\" then adds Sam Altman saying \"I don't,\" under the caption \"Isn't there somebody you forgot to ask?\" The joke is that, after Altman's remark about DRAM in home computers, building your own PC now seems to need his approval.",
-      "origin": "Posted to r/memes by u/ExpiredNegation on November 1, 2026 under the title \"Y'all forgot to ask him!\"; it reached #2 on the subreddit's top posts of the day. It responds to Altman's October 29, 2026 podcast remark (see the Sam Altman RAM meme page).",
+      "explainer": "A spin-off of the Sam Altman RAM memes. A PC builder and a PC both say \"I consent,\" then Sam Altman appears saying \"I don't,\" under the caption \"Isn't there somebody you forgot to ask?\" The joke is that building your own PC now seems to need his sign-off, after Sam Altman's October 29, 2026 podcast remark that DRAM sitting in personal computers is a \"quite terrible\" use of the world's limited supply.",
+      "origin": "Posted to r/memes by u/ExpiredNegation on November 1, 2026 under the title \"Y'all forgot to ask him!\" It reached #2 on the subreddit's top posts that day. The original creator hasn't been confirmed.",
       "sources": [
         {
           "name": "Reddit r/memes: \"Y'all forgot to ask him!\" (original post)",
           "url": "https://www.reddit.com/r/memes/comments/1xl1nyn/yall_forgot_to_ask_him/"
+        },
+        {
+          "name": "The Verge: Sam Altman says it's better for RAM to be in a data center than on your desk",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
         }
       ],
-      "written": "2026-11-01"
+      "written": "2026-11-01",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "twitch-vs-chatgpt": {
       "name": "Twitch Chat vs ChatGPT Two Paths",
@@ -699,16 +991,23 @@
       "status": "short",
       "source_url": "https://www.reddit.com/r/memes/comments/1xmmffa/every_time_i_hear_those_words/",
       "kym_url": null,
-      "explainer": "A Yu-Gi-Oh! \"two paths\" panel labels the bright castle as Twitch Chat and the dark castle as ChatGPT, poking at streamers who say \"I'm gonna ask chat\" versus asking an AI. The base template is a long-running anime meme format.",
-      "origin": "Posted to r/memes on November 3, 2026 (\"Every time I hear those words...\") and ranked on the day's top list. The Yu-Gi-Oh paths template itself is older; this Twitch/ChatGPT labeling's first appearance is not confirmed beyond that post.",
+      "explainer": "The Yu-Gi-Oh! \"two paths\" card art, with the bright castle labeled Twitch Chat and the dark castle labeled ChatGPT. It jokes about the moment a streamer says \"let me ask chat\" and you're not sure which chat they mean.",
+      "origin": "The template is the art of the \"Dramatic Crossroads\" card from a 2005 episode of Yu-Gi-Oh! GX; Know Your Meme traces its use as a labeling meme to February 2020. This Twitch/ChatGPT version was posted to r/memes by u/comedy_haha on November 3, 2026. Who first made it hasn't been confirmed.",
       "sources": [
         {
           "name": "Reddit r/memes",
           "url": "https://www.reddit.com/r/memes/comments/1xmmffa/every_time_i_hear_those_words/"
+        },
+        {
+          "name": "Know Your Meme: Dramatic Crossroads (Two Paths)",
+          "url": "https://knowyourmeme.com/memes/dramatic-crossroads"
         }
       ],
       "related": [],
-      "written": "2026-11-03"
+      "written": "2026-11-03",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "wassup-in-a-minute": {
       "name": "Wassup In a Minute Wassup",
@@ -718,35 +1017,59 @@
       "status": "full",
       "source_url": "https://knowyourmeme.com/memes/wassup-in-a-minute-wassup",
       "kym_url": "https://knowyourmeme.com/memes/wassup-in-a-minute-wassup",
-      "explainer": "An animation meme trend in which anime characters — often from Blue Lock — wear expensive streetwear and dance to a Jersey club remix of Drake and Jhené Aiko's \"From Time\" that loops the line \"What's up, in a minute, what's up.\" Clips are shared heavily on TikTok and remixed with CapCut templates, Roblox recreations, and other series swaps.",
-      "origin": "Per Know Your Meme, TikToker @ristyisvalid posted a Blue Lock drip-dance version on October 23, 2026 that passed 2.6 million views within about a week, crediting @aka_zayy for the character art and a Jersey club remix by Zbee. CapCut how-tos (including one by @neilpotts8 with 1.8 million views) and further variants spread through late October and early November 2026. The KYM entry was published November 2, 2026.",
+      "explainer": "An animation trend where anime characters, often from Blue Lock, wear expensive streetwear and dance to a Jersey club remix of Drake and Jhené Aiko's \"From Time\" that loops \"What's up, in a minute, what's up.\" Fans remake it with CapCut templates, Roblox and other series.",
+      "origin": "Per Know Your Meme, TikToker @ristyisvalid posted a Blue Lock version on October 23, 2026 that passed 2.6 million views in about a week, crediting @aka_zayy for the character art and Zbee for the remix. CapCut tutorials and new versions spread through late October and early November 2026.",
       "sources": [
         {
           "name": "Know Your Meme: Wassup In a Minute Wassup",
           "url": "https://knowyourmeme.com/memes/wassup-in-a-minute-wassup"
+        },
+        {
+          "name": "@ristyisvalid on TikTok",
+          "url": "https://www.tiktok.com/@ristyisvalid/video/7699927769479810335"
+        },
+        {
+          "name": "Zbee's remix on YouTube",
+          "url": "https://www.youtube.com/watch?v=-poRATwSZ_g"
         }
       ],
       "related": [],
-      "written": "2026-11-03"
+      "written": "2026-11-03",
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Me walking into the function in my one good jacket",
+        "The group chat when someone says \"outside?\""
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "while-theyre-out-partying": {
       "name": "While They're Out Partying",
       "ids": [
         "out-partying"
       ],
-      "status": "full",
+      "status": "short",
       "source_url": "https://knowyourmeme.com/memes/while-they-are-out-partying",
       "kym_url": "https://knowyourmeme.com/memes/while-they-are-out-partying",
-      "explainer": "A TikTok caption format: someone shows off an oddly specific, mostly useless skill (wrapping a burger at top speed, tossing trash bags without looking, a video-game trick) under the caption \"While they're out partying,\" joking that they perfected it while everyone else was having fun. It echoes the older \"While you were partying, I studied the blade\" meme.",
-      "origin": "Per Know Your Meme, the earliest known example was posted by TikToker @bellaa.1e on December 14, 2025. The format spread on TikTok and Instagram Reels between August and October 2026; an October 18, 2026 video by @ryu_da_sigma wrapping a McDonald's burger passed 35 million views in three days.",
+      "explainer": "A TikTok caption format: someone shows off an oddly specific, mostly useless skill, like wrapping a burger at top speed or tossing trash bags without looking, captioned \"While they're out partying.\" The joke is that they mastered it while everyone else was out having fun. It echoes the older \"While you were partying, I studied the blade\" meme.",
+      "origin": "Know Your Meme lists a December 14, 2025 video by TikToker @bellaa.1e as the earliest known example but says it's unclear whether that's the true origin. The format spread on TikTok and Instagram Reels between August and October 2026; an October 18 video by @ryu_da_sigma wrapping a McDonald's burger passed 35 million views in three days.",
       "sources": [
         {
           "name": "Know Your Meme: While They Are Out Partying",
           "url": "https://knowyourmeme.com/memes/while-they-are-out-partying"
+        },
+        {
+          "name": "@ryu_da_sigma on TikTok (burger-wrapping video)",
+          "url": "https://www.tiktok.com/@ryu_da_sigma/video/7698167502018333965"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": false,
+      "how_to_use": [
+        "While they're out partying, I'm perfecting my parallel parking",
+        "While they're out partying, I'm 400 hours into Stardew Valley"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     },
     "youre-blatantly-just-not-me-nan": {
       "name": "You're Blatantly Just Not Me Nan",
@@ -756,16 +1079,26 @@
       "status": "full",
       "source_url": "https://knowyourmeme.com/memes/youre-blatantly-just-not-me-nan",
       "kym_url": "https://knowyourmeme.com/memes/youre-blatantly-just-not-me-nan",
-      "explainer": "A TikTok sound used to call out an obvious impostor. It comes from a comedy skit retelling Little Red Riding Hood realistically: the hero walks in, sees a wolf in his grandmother's bed and says, \"You're blatantly just not me nan.\" The audio is often put over videos of dogs tucked into bed or dressed as grandmothers.",
+      "explainer": "A TikTok sound for calling out an obvious impostor. It comes from a comedy skit that retells Little Red Riding Hood realistically: the hero sees a wolf in his grandmother's bed and says, \"You're blatantly just not me nan.\" People put the audio over dogs tucked into bed or dressed as grandmothers.",
       "origin": "Per Know Your Meme, TikToker @irvo.11 posted the skit on June 16, 2025. The sound became a meme in August and September 2026; an August 17, 2026 video by @ems2001xx passed 12 million views.",
       "sources": [
         {
           "name": "Know Your Meme: You're Blatantly Just Not Me Nan",
           "url": "https://knowyourmeme.com/memes/youre-blatantly-just-not-me-nan"
+        },
+        {
+          "name": "@irvo.11 on TikTok (original skit)",
+          "url": "https://www.tiktok.com/@irvo.11/video/7516576057751883030"
         }
       ],
       "written": "2026-11-01",
-      "related": []
+      "related": [],
+      "origin_confirmed": true,
+      "how_to_use": [
+        "When the \"designer\" bag from the market has three Gs",
+        "Me looking at the off-brand cereal my mum bought"
+      ],
+      "checked": "2026-11-03T23:51:43-08:00"
     }
   }
 }
