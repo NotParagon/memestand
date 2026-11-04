@@ -109,7 +109,7 @@ def upd_html():
         "tick();setInterval(tick,30000);})();</script>"
     )
     return (
-        (f'<div class="upd">UPDATED <time id="upd-time" datetime="{ISO}">{absolute}</time> &middot; UPDATED HOURLY</div>' + chr(10))
+        (f'<div class="upd">UPDATED <time id="upd-time" datetime="{ISO}">{absolute}</time></div>' + chr(10))
         + script
     )
 
@@ -298,7 +298,7 @@ def mast(base, tag, h1=True):
     inner = f'<span class="logo"><a href="{base}index.html">MEMESTAND</a></span><span class="tag">{tag}</span>'
     return f'<header class="mast">{"<h1>" + inner + "</h1>" if h1 else "<div>" + inner + "</div>"}{THEME_TOGGLE}</header><div id="content"></div>'
 
-INTRO = "Ranked by cross-platform virality on X, TikTok, Instagram, Reddit, YouTube and Know Your Meme. Updated hourly."
+INTRO = "Ranked by cross-platform virality on X, TikTok, Instagram, Reddit, YouTube and Know Your Meme."
 
 def copyright_years():
     return f"{COPY_START}" if NOW.year <= COPY_START else f"{COPY_START}&ndash;{NOW.year}"
@@ -774,7 +774,7 @@ def build_period(p):
         start = NOW.date() - datetime.timedelta(days=6)
         title = f"Trending Memes This Week — Top 10 ({start.strftime('%b %-d')}–{fmt_short(NOW)}) | MemeStand"
         h1 = f"TRENDING MEMES THIS WEEK -- TOP 10 ({start.strftime('%b %-d').upper()} - {fmt_short(NOW).upper()})"
-        desc = f"The top 10 trending memes this week ({start.strftime('%b %-d')}–{fmt_short(NOW)}): #1 is \"{t}\". Ranked by cross-platform virality, updated hourly."
+        desc = f"The top 10 trending memes this week ({start.strftime('%b %-d')}–{fmt_short(NOW)}): #1 is \"{t}\". Ranked by cross-platform virality, updated through the day."
     else:
         title = f"Best Memes of the Month — Top 10, Last 30 Days ({NOW.strftime('%B %Y')}) | MemeStand"
         h1 = f"BEST MEMES OF THE MONTH -- TOP 10, LAST 30 DAYS"
