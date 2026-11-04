@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-03",
+  "as_of": "2026-11-04",
   "candidates": [
     {
       "id": "culkin-thousand-yard",
@@ -19,7 +19,7 @@
         }
       ],
       "ev": {
-        "peak_views": 16948983,
+        "peak_views": 16978722,
         "platforms": [
           "X",
           "KYM"
@@ -29,7 +29,7 @@
         "kym_editorial": false,
         "kym_views": 120954
       },
-      "notes": "351,696 likes / 16.95M views on the DiscussingFilm post (X API, Nov 3). Still circulating with Halloween roundups. KYM Thousand-Yard Stare entry 120,954 views."
+      "notes": "351,514 likes / 16.98M views on the DiscussingFilm post (X API, Nov 4). Still circulating in Halloween roundups. KYM Thousand-Yard Stare entry ~120,954 views."
     },
     {
       "id": "altman-ram",
@@ -64,7 +64,7 @@
         ],
         "x_news": true
       },
-      "notes": "#1 on r/memes top-this-week and #5 on top-this-month (Nov 3). Sparked by Sam Altman's Cheeky Pint remark (Oct 29) that DRAM in personal computers is a 'quite terrible' use of limited supply. Fresh RAM variants still topping r/memes and r/dankmemes today."
+      "notes": "#1 on r/memes top-this-week and still high on top-this-month (Nov 4). Sparked by Sam Altman's Cheeky Pint remark (Oct 29) that DRAM in personal computers is a 'quite terrible' use of limited supply. Fresh RAM variants keep topping Reddit."
     },
     {
       "id": "regretamine",
@@ -79,13 +79,13 @@
       "card_text": "“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”",
       "first_seen": "2026-11-01",
       "ev": {
-        "peak_views": 8081151,
+        "peak_views": 8199742,
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "92,258 likes / 8.08M views (X API, Nov 3). X News story on the spin-off memes."
+      "notes": "92,481 likes / 8.20M views (X API, Nov 4). Spin-off reply memes still circulating."
     },
     {
       "id": "pakistani-citizenship",
@@ -99,12 +99,12 @@
       "card_text": "“she only wants me for my pakistani citizenship”",
       "first_seen": "2026-10-31",
       "ev": {
-        "peak_views": 6250129,
+        "peak_views": 6472270,
         "platforms": [
           "X"
         ]
       },
-      "notes": "29,348 likes / 6.25M views (X API, Nov 3); copied with Syrian, Indian, Iranian variants."
+      "notes": "30,761 likes / 6.47M views on @vibeistani (X API, Nov 4). Copycat citizenship punchlines still circulating."
     },
     {
       "id": "heidi-32gb",
@@ -149,29 +149,6 @@
       "headline_reviewed": true
     },
     {
-      "id": "halloween-still-dressed",
-      "periods": [],
-      "title": "THE ULTIMATE TRICK OR TREAT: SHE'S STILL IN COSTUME",
-      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xl0j1p/the_ultimate_trick_or_treat/",
-      "source_name": "Reddit r/dankmemes",
-      "image_url": "https://i.redd.it/iba6y3xlizyh1.jpeg",
-      "first_seen": "2026-11-01",
-      "ev": {
-        "reddit": {
-          "sub": "dankmemes",
-          "rank": 5
-        },
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "Aged out of daily/weekly windows; kept for archive continuity.",
-      "flags": [
-        "demeaning"
-      ],
-      "flag_note": "Punchline is gender-identity 'panic' humor; excluded under the content policy (demeaning protected characteristics)."
-    },
-    {
       "id": "snow-leopard",
       "periods": [
         "weekly",
@@ -193,18 +170,18 @@
         }
       ],
       "ev": {
-        "peak_views": 1400000,
+        "peak_views": 328005,
         "platforms": [
           "X",
           "KYM",
-          "brands"
+          "TikTok"
         ],
         "kym": true,
         "x_news": true,
         "kym_editorial": true,
         "kym_views": 7227
       },
-      "notes": "KYM cites posts with 1.4M views / 151K likes; still an X News story (Nov 2-3). @dogwife333 23,694 likes / 327K views (X API). KYM page views 7,227.",
+      "notes": "23,698 likes / 328K views on an early *paws at you* post (X API, Nov 4). KYM entry ~7,227 views; still in weekly X News.",
       "first_seen_basis": "earliest viral X post found (@dogwife333, Oct 24 PT); KYM entry Oct 29"
     },
     {
@@ -231,15 +208,14 @@
       "ev": {
         "peak_views": 6400000,
         "platforms": [
-          "X",
-          "YouTube",
-          "TikTok"
+          "KYM",
+          "X"
         ],
         "kym": true,
         "kym_editorial": true,
         "kym_views": 17341
       },
-      "notes": "Per KYM, the memes followed Hila Klein's Instagram statements accusing Ethan Klein of an affair (Oct 22-23). KYM cites up to 181K likes / 6.4M views; @PopBase 43,162 likes / 2.20M views (X API, Nov 3). Still on KYM Fresh Entries. KYM Meme of the Month nominee.",
+      "notes": "H3 cheating-allegation meme factory still on KYM Top Entries This Month (Nov 4); event page ~17,341 views. Keep attribution framing.",
       "first_seen_basis": "KYM entry published date",
       "headline_reviewed": true
     },
@@ -328,13 +304,22 @@
       "ev": {
         "peak_views": 475000,
         "platforms": [
-          "X"
+          "KYM",
+          "X",
+          "TikTok"
         ],
         "kym": true,
-        "kym_views": 9621
+        "kym_views": 9621,
+        "x_news": true
       },
-      "notes": "KYM Popular right now / Top Entries This Month (Nov 3). KYM cites posts up to 475K views / 24K likes; entry page 9,621 views.",
-      "first_seen_basis": "KYM entry published date"
+      "notes": "KYM Anakin Skywalker Gen Z Male Rage Memes still Popular Right Now / Top Entry This Month (Nov 4); ~9,621 KYM page views. Election-night Anakin edits also hit X News.",
+      "first_seen_basis": "KYM entry published date",
+      "also": [
+        {
+          "name": "X News (election Anakin)",
+          "url": "https://x.com/i/trending/2117748883115962624"
+        }
+      ]
     },
     {
       "id": "lightning-cable",
@@ -441,7 +426,7 @@
       "ev": {
         "peak_likes": 89000,
         "platforms": [
-          "X",
+          "KYM",
           "TikTok"
         ],
         "kym": true,
@@ -449,7 +434,7 @@
         "x_news": true,
         "kym_views": 173326
       },
-      "notes": "Won KYM October 2026 Meme of the Month with 28% of votes (editorial published Nov 2). 173,326 KYM page views; KYM cites up to 89K likes.",
+      "notes": "KYM Malfoid still Popular Right Now / Top Entry This Month (Nov 4); ~173,326 KYM page views. October Meme of the Month winner context.",
       "first_seen_basis": "KYM entry published date"
     },
     {
@@ -538,13 +523,13 @@
         }
       ],
       "ev": {
-        "peak_views": 3485573,
+        "peak_views": 3492433,
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "118,733 likes / 3.49M views (X API, Nov 3). Photo via @EODCSM (2.58M views). X News: trail cam caught a bear carrying a round object resembling a TM-62 mine.",
+      "notes": "118,696 likes / 3.49M views on @EODHappyCaptain (X API, Nov 4). Trail-cam bear + UXO joke still circulating.",
       "headline_reviewed": true
     },
     {
@@ -565,13 +550,13 @@
         }
       ],
       "ev": {
-        "peak_views": 6906307,
+        "peak_views": 7007346,
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "82,888 likes / 6.91M views (X API, Nov 3). Clip of a small monkey on a bed holding a phone; reused with doomscrolling captions.",
+      "notes": "82,865 likes / 7.01M views on @vwxyz_4 (X API, Nov 4). Still a weekly/monthly fixture.",
       "headline_reviewed": true
     },
     {
@@ -593,13 +578,13 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 6
+          "rank": 4
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#6 on r/memes top-this-week (Nov 3).",
+      "notes": "#4 on r/memes top-this-week (Nov 4) as 'It's all for RAM and RAM's for all!' — Braveheart-style Altman DRAM shortage riff.",
       "headline_reviewed": true
     },
     {
@@ -615,13 +600,13 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 4
+          "rank": 3
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#4 on r/memes top-this-week (Nov 3).",
+      "notes": "#3 on r/memes top-this-week (Nov 4). Walrus colony standing in for sprouting potatoes.",
       "headline_reviewed": true
     },
     {
@@ -637,13 +622,13 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 13
+          "rank": 10
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#13 on r/memes top-this-week (Nov 3).",
+      "notes": "#10 on r/memes top-this-week (Nov 4).",
       "headline_reviewed": true
     },
     {
@@ -659,13 +644,13 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 5
+          "rank": 2
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#5 on r/dankmemes top-this-week (Nov 3).",
+      "notes": "#2 on r/dankmemes top-this-week (Nov 4). Angry Joe same-jacket gag.",
       "headline_reviewed": true
     },
     {
@@ -703,19 +688,18 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 3
+          "rank": 2
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#3 on r/memes top-this-week (Nov 3).",
+      "notes": "#2 on r/memes top-this-week (Nov 4).",
       "headline_reviewed": true
     },
     {
       "id": "no-money-bald",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "'ME AFTER USING MY MONEY TO LOOK FOR MONEY': BALD DISTRESS CLIP BECOMES A LOSS MEME",
@@ -734,19 +718,18 @@
         }
       ],
       "ev": {
-        "peak_views": 1323964,
+        "peak_views": 1427065,
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "26,490 likes / 1.32M views on @abdykeen (X API, Nov 3); caption 'Me after using my money to look for money and i end up with no money.' Widely copy-pasted; two X News stories on the gambling/money-loss framing.",
+      "notes": "26,788 likes / 1.43M views on @abdykeen (X API, Nov 4). Still quoted as a loss/gambling reaction clip.",
       "headline_reviewed": true
     },
     {
       "id": "hate-seals-fandom",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "MEME FORMAT: PARENTS SAY OK TO EVERY IDENTITY -- THEN LOSE IT OVER A FANDOM HATE",
@@ -765,91 +748,26 @@
         }
       ],
       "ev": {
-        "peak_views": 124494,
-        "peak_likes": 15367,
+        "peak_views": 134116,
+        "peak_likes": 16022,
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "15,367 likes / 124K views on @grindgod26 'dad, I hate seals' variant (X API, Nov 3); format lists accepted identities then ends on a fandom taboo. Two X News stories; many anime/K-pop swaps.",
-      "headline_reviewed": true
-    },
-    {
-      "id": "ai-bros-process",
-      "periods": [
-        "daily"
-      ],
-      "title": "AI BROS WHEN YOU TELL THEM 'THE PROCESS IS PART OF THE FUN'",
-      "source_url": "https://www.reddit.com/r/memes/comments/1xm6rl8/process_is_that_like_a_ram_thing/",
-      "source_name": "Reddit r/memes",
-      "image_url": "https://i.redd.it/00rph87o29zh1.jpeg",
-      "first_seen": "2026-11-02",
-      "ev": {
-        "reddit": {
-          "sub": "memes",
-          "rank": 2
-        },
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#2 on r/memes top-today (Nov 3). Sabrina Carpenter grimace reaction overlaid with the caption about AI bros and 'the process'.",
-      "headline_reviewed": true
-    },
-    {
-      "id": "ai-artists-hoverboard",
-      "periods": [
-        "daily"
-      ],
-      "title": "AI 'ARTISTS' AFTER GENERATING HUNDREDS OF BOOKS AND MOVIES IN ONE DAY",
-      "source_url": "https://www.reddit.com/r/memes/comments/1xm1ln7/yeah_thats_absolutely_very_sane_everything_is_fine/",
-      "source_name": "Reddit r/memes",
-      "image_url": "https://i.redd.it/fj3p2m2r58zh1.jpeg",
-      "first_seen": "2026-11-02",
-      "ev": {
-        "reddit": {
-          "sub": "memes",
-          "rank": 3
-        },
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#3 on r/memes top-today (Nov 3). Family Guy hipster-Peter-on-hoverboard frame captioned about AI 'artists' mass-generating media.",
-      "headline_reviewed": true
-    },
-    {
-      "id": "altman-ram-chart",
-      "periods": [
-        "daily"
-      ],
-      "title": "ALL THE RAM POINTS TO SAM ALTMAN: REDDIT'S FRESH ALTMAN RAM CHART",
-      "source_url": "https://www.reddit.com/r/memes/comments/1xlybm3/sam_altman_stuff/",
-      "source_name": "Reddit r/memes",
-      "image_url": "https://i.redd.it/m856opdnj7zh1.jpeg",
-      "first_seen": "2026-11-02",
-      "ev": {
-        "reddit": {
-          "sub": "memes",
-          "rank": 5
-        },
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#5 on r/memes top-today (Nov 3). Chart meme: every 'RAM' icon arrows exclusively to Sam Altman, skipping gamers and everyday users.",
+      "notes": "16,022 likes / 134K views on @grindgod26 'dad, I hate seals' variant (X API, Nov 4). Format still in X News today (identities OK, fandom betrayal is the punchline).",
       "headline_reviewed": true
     },
     {
       "id": "billionaires-blaming",
       "periods": [
-        "daily"
+        "daily",
+        "weekly"
       ],
       "title": "BILLIONAIRES LAUGHING WHEN BLAME LANDS ON IMMIGRANTS, THE POOR, OR TRANS PEOPLE",
-      "source_url": "https://www.reddit.com/r/memes/comments/1xmsh4e/billionaire_things/",
-      "source_name": "Reddit r/memes",
-      "image_url": "https://i.redd.it/5p7818egcezh1.jpeg",
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xm6s64/a_tale_as_old_as_time/",
+      "source_name": "Reddit r/dankmemes",
+      "image_url": "https://i.redd.it/573g9dwo29zh1.jpeg",
       "first_seen": "2026-11-03",
       "also": [
         {
@@ -859,109 +777,19 @@
       ],
       "ev": {
         "reddit": {
-          "sub": "memes",
-          "rank": 6
-        },
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#6 on r/memes top-today and #1 on r/dankmemes top-today (Nov 3). Collage of laughing billionaires with the caption about redirected blame.",
-      "headline_reviewed": true
-    },
-    {
-      "id": "twitch-vs-chatgpt",
-      "periods": [
-        "daily"
-      ],
-      "title": "'I'M GONNA ASK CHAT': TWITCH CHAT vs. CHATGPT TWO-PATHS MEME",
-      "source_url": "https://www.reddit.com/r/memes/comments/1xmmffa/every_time_i_hear_those_words/",
-      "source_name": "Reddit r/memes",
-      "image_url": "https://i.redd.it/0ejrtg5plczh1.jpeg",
-      "first_seen": "2026-11-03",
-      "ev": {
-        "reddit": {
-          "sub": "memes",
-          "rank": 7
-        },
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#7 on r/memes top-today (Nov 3). Yu-Gi-Oh two-paths template labels the bright castle Twitch Chat and the dark castle ChatGPT.",
-      "headline_reviewed": true,
-      "minor_reviewed": true
-    },
-    {
-      "id": "sips-ram",
-      "periods": [
-        "daily"
-      ],
-      "title": "BOSTON 'RAM' PARTY: COLONISTS DUMP MEMORY STICKS OVERBOARD",
-      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xm20x8/sips_ram/",
-      "source_name": "Reddit r/dankmemes",
-      "image_url": "https://i.redd.it/pwgepgdf88zh1.png",
-      "first_seen": "2026-11-02",
-      "ev": {
-        "reddit": {
           "sub": "dankmemes",
-          "rank": 6
+          "rank": 5
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#6 on r/dankmemes top-today (Nov 3). Boston Tea Party painting edited so the crates spill RAM sticks — another Altman/DRAM-shortage riff.",
-      "headline_reviewed": true
-    },
-    {
-      "id": "election-text-spam",
-      "periods": [
-        "daily"
-      ],
-      "title": "NO FRIENDS, BUT 104 UNREAD TEXTS: AMERICA ON NOVEMBER 3",
-      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xmkl5v/i_guess_i_should_vote_for_whoever_spammed_my/",
-      "source_name": "Reddit r/dankmemes",
-      "image_url": "https://i.redd.it/jookvqbg2czh1.jpeg",
-      "first_seen": "2026-11-03",
-      "ev": {
-        "reddit": {
-          "sub": "dankmemes",
-          "rank": 8
-        },
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#8 on r/dankmemes top-today (Nov 3). iOS Messages icon with 104 badge; caption about election-day political text spam.",
-      "headline_reviewed": true
-    },
-    {
-      "id": "they-live-altman-ram",
-      "periods": [
-        "daily"
-      ],
-      "title": "THEY LIVE GLASSES REVEAL ALTMAN: 'YOUR RAM ALL BELONG TO ME!'",
-      "source_url": "https://www.reddit.com/r/memes/comments/1xmajcd/wait_ive_seen_this_movie/",
-      "source_name": "Reddit r/memes",
-      "image_url": "https://i.redd.it/r3x0bwawr9zh1.jpeg",
-      "first_seen": "2026-11-02",
-      "ev": {
-        "reddit": {
-          "sub": "memes",
-          "rank": 10
-        },
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#10 on r/memes top-today (Nov 3). They Live sunglasses format: Sam Altman becomes a skeletal alien with 'Your RAM All Belong To Me!' on the shirt.",
+      "notes": "#5 on r/dankmemes top-this-week (Nov 4). Collage of laughing billionaires with the caption about redirected blame.",
       "headline_reviewed": true
     },
     {
       "id": "wassup-in-a-minute",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "'WASSUP IN A MINUTE WASSUP': BLUE LOCK DRIP ANIMATION TREND",
@@ -977,7 +805,7 @@
         "kym": true,
         "kym_views": 634
       },
-      "notes": "Fresh KYM entry published Nov 2, 2026. KYM cites clips over 2.6M / 1.8M views; anime characters (often Blue Lock) in streetwear drip animations.",
+      "notes": "KYM entry published Nov 2, 2026 (~634 page views). KYM cites clips over 2.6M / 1.8M views; anime drip animations still circulating.",
       "first_seen_basis": "KYM entry published date"
     },
     {
@@ -1002,6 +830,265 @@
       },
       "notes": "KYM cites posts over 100K likes; finished among October 2026 Meme of the Month related entries; 45,850 KYM page views.",
       "first_seen_basis": "KYM entry published date"
+    },
+    {
+      "id": "thesis-monkey",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'THESIS MONKEY': HEADPHONES PRIMATE GIF BECOMES THE STUDY-SESSION MEME",
+      "source_url": "https://x.com/studsyun/status/2117440926024884418",
+      "source_name": "X / @studsyun",
+      "image_url": "https://pbs.twimg.com/tweet_video_thumb/HV-FL9IbEAAeoB5.jpg",
+      "first_seen": "2026-11-03",
+      "also": [
+        {
+          "name": "X News",
+          "url": "https://x.com/i/trending/2117696464759718217"
+        },
+        {
+          "name": "Earlier GIF post @wellsuchup",
+          "url": "https://x.com/wellsuchup/status/2116556868600664480"
+        }
+      ],
+      "ev": {
+        "peak_views": 4423945,
+        "peak_likes": 146471,
+        "platforms": [
+          "X"
+        ],
+        "x_news": true
+      },
+      "notes": "146,471 likes / 4.42M views on @studsyun's Nov 3 share of the headphones-monkey GIF (X API, Nov 4). Captioned as frantic studying / 'Thesis Monkey'; X News story active Nov 4. Earlier @wellsuchup GIF post Oct 31.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "britannica-mitochondria",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "BRITANNICA'S ELECTION-NIGHT JOKE: 'CNN PROJECTS MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL'",
+      "source_url": "https://x.com/Britannica/status/2117805815050727630",
+      "source_name": "X / @Britannica",
+      "image_url": null,
+      "card_text": "CNN PROJECTS THAT THE MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL",
+      "image_policy": "none",
+      "first_seen": "2026-11-04",
+      "also": [
+        {
+          "name": "X News",
+          "url": "https://x.com/i/trending/2117885288085381473"
+        }
+      ],
+      "ev": {
+        "peak_views": 947003,
+        "peak_likes": 47957,
+        "platforms": [
+          "X"
+        ],
+        "x_news": true
+      },
+      "notes": "47,957 likes / 947K views on @Britannica's Nov 4 election-night parody (X API, Nov 4). Copycats flooded replies; X News story on the biology-joke wave.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "fancy-cafe",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'POV: YOUR FIRST TIME IN A FANCY CAFE': SITTING-ON-THE-TABLE SKIT SPAWNS AI REMIXES",
+      "source_url": "https://knowyourmeme.com/memes/your-first-time-in-a-fancy-cafe",
+      "source_name": "Know Your Meme",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/708/facycafecover.jpg",
+      "first_seen": "2026-11-01",
+      "also": [
+        {
+          "name": "X / @Flovaai (237K views)",
+          "url": "https://x.com/Flovaai/status/2117466712597839938"
+        },
+        {
+          "name": "X News (cafe mix-up)",
+          "url": "https://x.com/i/trending/2117626647205875908"
+        }
+      ],
+      "ev": {
+        "peak_views": 237335,
+        "platforms": [
+          "TikTok",
+          "X",
+          "KYM"
+        ],
+        "kym": true,
+        "kym_views": 813,
+        "x_news": true
+      },
+      "notes": "KYM entry published Nov 3, 2026 (~813 page views): original TikTok by @leehoustonx on Nov 1; wave of AI remakes on TikTok/Reels/X. @Flovaai remix 2,165 likes / 237K views (X API, Nov 4). X News story on the cafe seating mix-up.",
+      "first_seen_basis": "KYM cites TikTok original Nov 1, 2026",
+      "headline_reviewed": true
+    },
+    {
+      "id": "auto-1080p",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'AUTO 1080P' vs. MANUAL 1080P: PIXELATED TROJAN WAR SIDE-BY-SIDE",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xmtiyn/144p_disguised_as_1080p/",
+      "source_name": "Reddit r/memes",
+      "image_url": "https://i.redd.it/y28tueltkezh1.jpeg",
+      "first_seen": "2026-11-03",
+      "ev": {
+        "reddit": {
+          "sub": "memes",
+          "rank": 1
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#1 on r/memes top-today and #8 on top-this-week (Nov 4). Side-by-side: Auto 1080p looks like 144p; manually picking 1080p is sharp.",
+      "headline_reviewed": true,
+      "also": [
+        {
+          "name": "r/memes week #8",
+          "url": "https://www.reddit.com/r/memes/comments/1xmtiyn/144p_disguised_as_1080p/"
+        }
+      ]
+    },
+    {
+      "id": "chiropractor-kyary",
+      "periods": [
+        "daily"
+      ],
+      "title": "CHIROPRACTORS vs. DOCTORS AND DENTISTS: THE SLAM-DOWN PUNCHLINE CLIP",
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xmufk1/my_fuggin_back/",
+      "source_name": "Reddit r/dankmemes",
+      "image_url": "https://i.redd.it/qknao027rezh1.gif",
+      "first_seen": "2026-11-03",
+      "ev": {
+        "reddit": {
+          "sub": "dankmemes",
+          "rank": 1
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#1 on r/dankmemes top-today (Nov 4). List joke: doctors/dentists help; chiropractors get a frantic slam-down clip punchline.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "now-kith-economy",
+      "periods": [
+        "daily"
+      ],
+      "title": "RICH PEOPLE 'NOW KITH' RISING PRICES AND LAYOFFS -- MIKE TYSON PIGEON TEMPLATE",
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xn0rwh/fun_times_good_luck_economy/",
+      "source_name": "Reddit r/dankmemes",
+      "image_url": "https://i.redd.it/nat4u45uwfzh1.jpeg",
+      "first_seen": "2026-11-03",
+      "ev": {
+        "reddit": {
+          "sub": "dankmemes",
+          "rank": 2
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#2 on r/dankmemes top-today (Nov 4). Mike Tyson 'Now Kith' pigeon template labeled Raising prices / Layoffs.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "gym-cancel-holmes",
+      "periods": [
+        "daily"
+      ],
+      "title": "GYM STAFF ON CANCELING YOUR MEMBERSHIP: ELIZABETH HOLMES 'WHY WOULD I DECEIVE YOU?'",
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnmfpo/hotel_california_rules/",
+      "source_name": "Reddit r/dankmemes",
+      "image_url": "https://i.redd.it/6rq92vuk5lzh1.jpeg",
+      "first_seen": "2026-11-04",
+      "ev": {
+        "reddit": {
+          "sub": "dankmemes",
+          "rank": 3
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#3 on r/dankmemes top-today (Nov 4). Elizabeth Holmes interview still captioned about how 'easy' gym cancellations are.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "altman-houses-vs-datacenters",
+      "periods": [
+        "daily"
+      ],
+      "title": "ALTMAN-STYLE RANT MEME: HOUSES ARE A 'TERRIBLE USE OF SPACE' vs. AI DATA CENTERS",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xnkv3y/a_coffin_is_more_space_efficient/",
+      "source_name": "Reddit r/memes",
+      "image_url": "https://i.redd.it/zaxmv5z7pkzh1.jpeg",
+      "first_seen": "2026-11-04",
+      "ev": {
+        "reddit": {
+          "sub": "memes",
+          "rank": 6
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#6 on r/memes top-today (Nov 4). Sam Altman-at-the-window macro arguing houses waste space that data centers could use — satire of DRAM/AI-infra logic.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "meme-same-room-marge",
+      "periods": [
+        "daily"
+      ],
+      "title": "SENDING A MEME TO SOMEONE IN THE SAME ROOM: MARGE'S SIDE-EYE WAIT",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xn5m8f/based_on_real_events/",
+      "source_name": "Reddit r/memes",
+      "image_url": "https://i.redd.it/q8eg00ztsgzh1.jpeg",
+      "first_seen": "2026-11-03",
+      "ev": {
+        "reddit": {
+          "sub": "memes",
+          "rank": 4
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#4 on r/memes top-today (Nov 4). Marge Simpson side-eye reaction for waiting while someone next to you reads the meme you just sent.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "last-dance-trend",
+      "periods": [
+        "weekly"
+      ],
+      "title": "THE LAST DANCE TREND: TIKTOK'S PAIRED FAREWELL DANCE / ANIMATION MEME",
+      "source_url": "https://knowyourmeme.com/memes/the-last-dance-trend",
+      "source_name": "Know Your Meme",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/702/Screenshot_2026-11-03_154934.png",
+      "first_seen": "2026-11-02",
+      "ev": {
+        "platforms": [
+          "TikTok",
+          "KYM"
+        ],
+        "kym": true,
+        "kym_views": 863
+      },
+      "notes": "Fresh KYM entry published Nov 2, 2026 (~863 page views). TikTok dance/animation trend of two characters sharing a farewell dance; KYM home editorial called out the trend.",
+      "first_seen_basis": "KYM entry published date",
+      "headline_reviewed": true
     }
   ]
 }

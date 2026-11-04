@@ -90,6 +90,31 @@
       ],
       "checked": "2026-11-03T23:51:43-08:00"
     },
+    "altman-houses-vs-datacenters": {
+      "name": "Altman Houses vs AI Data Centers",
+      "ids": [
+        "altman-houses-vs-datacenters"
+      ],
+      "status": "full",
+      "explainer": "A macro using a widely circulated photo of OpenAI CEO Sam Altman looking in through a window. The caption argues that houses are a \"terrible use of space\" compared with AI data centers. It satirizes efficiency-speak around AI infrastructure and echoes earlier jokes about Altman calling DRAM in home PCs a poor allocation of scarce chips.",
+      "origin": "Posted to r/memes on November 4, 2026 as \"A coffin is more space efficient\" (post 1xnkv3y). It sits in the same Altman / DRAM / AI-infrastructure joke cycle that topped Reddit after Altman's October 29 Cheeky Pint remarks. We did not find an earlier post of this exact houses-vs-data-centers caption.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "When AI infrastructure logic meets housing",
+        "Data centers vs humans, according to a meme Altman"
+      ],
+      "source_url": "https://www.reddit.com/r/memes/comments/1xnkv3y/a_coffin_is_more_space_efficient/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "r/memes post",
+          "url": "https://www.reddit.com/r/memes/comments/1xnkv3y/a_coffin_is_more_space_efficient/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T06:05:50-08:00"
+    },
     "altman-ram-chart": {
       "name": "Altman RAM Chart",
       "ids": [
@@ -154,6 +179,31 @@
       ],
       "checked": "2026-11-03T23:51:43-08:00"
     },
+    "auto-1080p": {
+      "name": "Auto 1080p vs Manual 1080p",
+      "ids": [
+        "auto-1080p"
+      ],
+      "status": "full",
+      "explainer": "A side-by-side joke about streaming quality: the left panel labeled \"Auto 1080p\" looks like muddy 144p, while \"Manually selecting 1080p\" is sharp. The pictures are the same Trojan War / classical battle scene at two resolutions. It mocks how \"auto\" quality settings often fail to deliver the resolution they claim.",
+      "origin": "Posted to Reddit's r/memes on November 3, 2026 as \"144p disguised as 1080p\" (post 1xmtiyn). On November 4 it ranked #1 on r/memes top-today and also appeared on the subreddit's weekly top list. We did not find an earlier documented first post.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Auto 1080p vs me actually picking 1080p",
+        "Streaming sites when they say \"HD\""
+      ],
+      "source_url": "https://www.reddit.com/r/memes/comments/1xmtiyn/144p_disguised_as_1080p/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "r/memes post",
+          "url": "https://www.reddit.com/r/memes/comments/1xmtiyn/144p_disguised_as_1080p/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T06:05:50-08:00"
+    },
     "bear-landmine": {
       "name": "Bear Landmine (Never Zero)",
       "ids": [
@@ -213,6 +263,35 @@
       "how_to_use": [],
       "checked": "2026-11-03T23:51:43-08:00"
     },
+    "britannica-mitochondria": {
+      "name": "Britannica's Mitochondria Election Joke",
+      "ids": [
+        "britannica-mitochondria"
+      ],
+      "status": "full",
+      "explainer": "A one-line parody of cable-news election projections: Encyclopaedia Britannica posted \"CNN PROJECTS THAT THE MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL\" on election night. It riffs on the classroom biology meme and the style of network race calls; copycat biology jokes followed in replies.",
+      "origin": "Posted by the verified @Britannica account on X on November 4, 2026. Public counts the same day showed roughly 48K likes and about 947K views. An X News story tracked the wave of similar biology-joke replies.",
+      "origin_confirmed": true,
+      "how_to_use": [
+        "CNN projects that [obvious school fact] will remain true",
+        "Me during election coverage, thinking about mitochondria instead"
+      ],
+      "source_url": "https://x.com/Britannica/status/2117805815050727630",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@Britannica on X",
+          "url": "https://x.com/Britannica/status/2117805815050727630"
+        },
+        {
+          "name": "X News story",
+          "url": "https://x.com/i/trending/2117885288085381473"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T06:05:50-08:00"
+    },
     "bunker-bulking": {
       "name": "Bunker Bulking",
       "ids": [
@@ -237,6 +316,31 @@
         "Roommates when the groceries disappear on day two"
       ],
       "checked": "2026-11-03T23:51:43-08:00"
+    },
+    "chiropractor-kyary": {
+      "name": "Chiropractors Slam-Down Punchline",
+      "ids": [
+        "chiropractor-kyary"
+      ],
+      "status": "full",
+      "explainer": "A list joke: doctors give medicine, dentists keep teeth healthy, and chiropractors get a frantic slam-down video still as the punchline — poking fun at how aggressive spinal adjustments look. The clip still is a high-energy performance/music-video frame used as reaction media.",
+      "origin": "Posted to r/dankmemes on November 3, 2026 as \"MY FUGGIN BACK\" (post 1xmufk1) and ranked #1 on that subreddit's top-today list on November 4. The exact origin of the slam-down clip itself is not credited in the Reddit post.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Doctors / dentists / chiropractors starter pack",
+        "My back after sleeping weird"
+      ],
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xmufk1/my_fuggin_back/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "r/dankmemes post",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xmufk1/my_fuggin_back/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T06:05:50-08:00"
     },
     "election-text-spam": {
       "name": "Election Text Spam Badge",
@@ -296,6 +400,60 @@
       "origin_confirmed": true,
       "how_to_use": [],
       "checked": "2026-11-03T23:51:43-08:00"
+    },
+    "fancy-cafe": {
+      "name": "Your First Time In a Fancy Cafe",
+      "ids": [
+        "fancy-cafe"
+      ],
+      "status": "full",
+      "explainer": "A comedy skit (and its AI remakes) where someone sits down at a sleek modern cafe, thinks they're on a chair, then watches another customer walk in and realizes they've been sitting on the metal table instead of the concrete bench. People remake the mix-up with other characters and captions about first-timer awkwardness.",
+      "origin": "Know Your Meme documents the original TikTok by @leehoustonx on November 1, 2026. A KYM entry published November 3, 2026 describes the wave of AI remakes that followed on TikTok, Instagram Reels and X. Remix posts such as @Flovaai's November 3 X upload circulated hundreds of thousands of views.",
+      "origin_confirmed": true,
+      "how_to_use": [
+        "POV: your first time in a fancy cafe",
+        "Me confidently sitting down somewhere I've never been"
+      ],
+      "source_url": "https://knowyourmeme.com/memes/your-first-time-in-a-fancy-cafe",
+      "kym_url": "https://knowyourmeme.com/memes/your-first-time-in-a-fancy-cafe",
+      "sources": [
+        {
+          "name": "Know Your Meme: Your First Time In a Fancy Cafe",
+          "url": "https://knowyourmeme.com/memes/your-first-time-in-a-fancy-cafe"
+        },
+        {
+          "name": "@Flovaai remix on X",
+          "url": "https://x.com/Flovaai/status/2117466712597839938"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T06:05:50-08:00"
+    },
+    "gym-cancel-holmes": {
+      "name": "Gym Cancel / Elizabeth Holmes",
+      "ids": [
+        "gym-cancel-holmes"
+      ],
+      "status": "full",
+      "explainer": "A still of Theranos founder Elizabeth Holmes from an interview, captioned so gym staff insist canceling a membership is easy — while the meme implies the opposite (\"Hotel California\" rules). It jokes about how hard it can feel to quit a gym contract.",
+      "origin": "Posted to r/dankmemes on November 4, 2026 as \"Hotel California rules\" (post 1xnmfpo) and ranked high on that subreddit's top-today list the same day. The Holmes interview still is reused from older coverage; this caption pairing is the Reddit post.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Gym staff explaining how easy cancellation is",
+        "Trying to leave a subscription you regret"
+      ],
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnmfpo/hotel_california_rules/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "r/dankmemes post",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xnmfpo/hotel_california_rules/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T06:05:50-08:00"
     },
     "hate-seals-fandom": {
       "name": "Hate Seals Fandom Dealbreaker Format",
@@ -570,6 +728,31 @@
       "how_to_use": [],
       "checked": "2026-11-03T23:51:43-08:00"
     },
+    "meme-same-room-marge": {
+      "name": "Sending a Meme in the Same Room (Marge)",
+      "ids": [
+        "meme-same-room-marge"
+      ],
+      "status": "full",
+      "explainer": "A The Simpsons still of Marge looking aside with a long-suffering expression, captioned for the moment you text a meme to someone sitting next to you and then wait while they open it. A relatable social-awkwardness reaction image.",
+      "origin": "Posted to r/memes on November 3, 2026 as \"Based on real events\" (post 1xn5m8f) and ranked on that subreddit's top-today list on November 4. The Marge frame is from The Simpsons; this specific \"same room\" caption is the Reddit post we ranked.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Sending a meme to someone in the same room",
+        "Waiting for them to open the group chat"
+      ],
+      "source_url": "https://www.reddit.com/r/memes/comments/1xn5m8f/based_on_real_events/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "r/memes post",
+          "url": "https://www.reddit.com/r/memes/comments/1xn5m8f/based_on_real_events/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T06:05:50-08:00"
+    },
     "mini-producer": {
       "name": "Mini Producer",
       "ids": [
@@ -723,6 +906,35 @@
         "NNN day 1: confident. Day 1, 11pm:"
       ],
       "checked": "2026-11-03T23:51:43-08:00"
+    },
+    "now-kith-economy": {
+      "name": "Now Kith Economy (Mike Tyson Pigeons)",
+      "ids": [
+        "now-kith-economy"
+      ],
+      "status": "full",
+      "explainer": "A fresh use of the long-running \"Now Kith\" template: Mike Tyson holding two pigeons as if making them kiss, here labeled so \"rich people\" shove rising prices and layoffs together. The photo is the familiar 1985 Sports Illustrated shot that has powered \"now kiss\" / \"now kith\" jokes for years.",
+      "origin": "The underlying template is documented by Know Your Meme as \"Now Kith / Mike Tyson Holding Pigeons,\" based on a 1985 Sports Illustrated photo and meme use dating back to at least 2011. This economy-caption version was posted to r/dankmemes on November 3, 2026 (post 1xn0rwh) and ranked near the top of that subreddit's daily list on November 4.",
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Rich people making rising prices and layoffs \"now kith\"",
+        "When two bad headlines show up in the same week"
+      ],
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xn0rwh/fun_times_good_luck_economy/",
+      "kym_url": "https://knowyourmeme.com/memes/now-kith-mike-tyson-holding-pigeons",
+      "sources": [
+        {
+          "name": "r/dankmemes post",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xn0rwh/fun_times_good_luck_economy/"
+        },
+        {
+          "name": "Know Your Meme: Now Kith / Mike Tyson Holding Pigeons",
+          "url": "https://knowyourmeme.com/memes/now-kith-mike-tyson-holding-pigeons"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T06:05:50-08:00"
     },
     "polymarket-good-ending": {
       "name": "Good Ending (Polymarket Bet)",
@@ -982,6 +1194,39 @@
       "origin_confirmed": false,
       "how_to_use": [],
       "checked": "2026-11-03T23:51:43-08:00"
+    },
+    "thesis-monkey": {
+      "name": "Thesis Monkey",
+      "ids": [
+        "thesis-monkey"
+      ],
+      "status": "full",
+      "explainer": "An animated GIF of a monkey in white headphones scribbling frantically at a cluttered desk. People caption it as late-night studying, locking in for five minutes, or drafting a thesis — hence the nickname \"Thesis Monkey.\"",
+      "origin": "The same headphones-monkey GIF circulated on X in late October and early November 2026; an early share by @wellsuchup appeared October 31, and @studsyun's November 3 repost drew millions of views. An X News story on November 4 described users labeling it \"Thesis Monkey\" for study-session chaos. The original animator/creator of the GIF itself is not clearly credited in the posts we checked.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Me writing my thesis at 2am",
+        "After 5 minutes of locking in"
+      ],
+      "source_url": "https://x.com/studsyun/status/2117440926024884418",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@studsyun on X (4.4M+ views share)",
+          "url": "https://x.com/studsyun/status/2117440926024884418"
+        },
+        {
+          "name": "Earlier GIF share @wellsuchup",
+          "url": "https://x.com/wellsuchup/status/2116556868600664480"
+        },
+        {
+          "name": "X News: Headphones Monkey GIF",
+          "url": "https://x.com/i/trending/2117696464759718217"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T06:05:50-08:00"
     },
     "twitch-vs-chatgpt": {
       "name": "Twitch Chat vs ChatGPT Two Paths",

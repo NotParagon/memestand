@@ -53,7 +53,7 @@ OG_USE_MEME_THUMB = False   # False: social cards use our own og-default.png, ne
 COPY_START = 2026
 # Cloudflare Web Analytics beacon (cookieless; public site token). Goes just before </body> on EVERY page via footer(). Keep it.
 CF_ANALYTICS = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7fe3f90e5dc444b9a67ecfce9aed6c1e"}'></script><!-- End Cloudflare Web Analytics -->'''
-PRIVACY_UPDATED = "November 1, 2026"   # bump when the privacy policy text changes
+PRIVACY_UPDATED = "November 4, 2026"   # bump when the privacy policy text changes
 
 BLOCKS = load_blocklist()
 REMOVED = "[REMOVED IN RESPONSE TO A TAKEDOWN REQUEST]"
@@ -92,6 +92,28 @@ fmt_short = lambda d: d.strftime("%b %-d, %Y")         # Nov 1, 2026
 ACRONYMS = {"PC", "PC'S", "RAM", "AI", "NNN", "GPU", "TV", "US", "UK", "NBA", "NFL", "KYM", "CEO", "DIMMS", "DIMM", "GTA", "NPC", "POV", "OK", "LOL", "X", "H3'S", "H3", "USA", "NYC", "LA", "MLB", "UFC", "WWE"}
 SPECIAL = {"DIMMS": "DIMMs", "MEMES": "Memes", "IPHONE": "iPhone", "YOUTUBE": "YouTube", "TIKTOK": "TikTok", "CHATGPT": "ChatGPT", "MRBEAST": "MrBeast"}
 SMALL = {"a", "an", "and", "as", "at", "but", "by", "for", "in", "of", "on", "or", "the", "to", "vs", "with", "is"}
+
+def upd_html():
+    """Drudge-style UPDATED line: absolute stamp in <time datetime>, plus a tiny first-party
+    script that rewrites the visible text to a relative 'X MIN/HOURS/DAYS AGO' in the visitor's
+    browser. Falls back to the absolute PT stamp if JS is off."""
+    absolute = NOW.strftime("%a %b %-d, %Y %-I:%M %p PT").upper()
+    script = (
+        "<script>(function(){var t=document.getElementById('upd-time');if(!t)return;"
+        "var iso=t.getAttribute('datetime');if(!iso)return;var d=new Date(iso);if(isNaN(d))return;"
+        "function plural(n,u){return n+' '+u+(n===1?'':'S');}"
+        "function tick(){var s=Math.max(0,Math.floor((Date.now()-d.getTime())/1000));"
+        "var m=Math.floor(s/60),h=Math.floor(m/60),dy=Math.floor(h/24);"
+        "t.textContent=dy>=1?plural(dy,'DAY')+' AGO':h>=1?plural(h,'HOUR')+' AGO':"
+        "m>=1?plural(m,'MIN')+' AGO':'JUST NOW';}"
+        "tick();setInterval(tick,30000);})();</script>"
+    )
+    return (
+        (f'<div class="upd">UPDATED <time id="upd-time" datetime="{ISO}">{absolute}</time></div>' + chr(10))
+        + script
+    )
+
+
 def tc(s):
     """Headline in ALL CAPS -> readable Title Case for titles/descriptions/alt text."""
     out = []
@@ -708,7 +730,7 @@ def build_home():
     page = head(title=title, desc=desc, path="", base="", og_img=og, og_alt=og_alt, ld=[ld]) + f'''
 {mast("", "THE TOP MEMES TODAY, THIS WEEK &amp; THIS MONTH -- RANKED BY VIRALITY")}
 <p class="intro">{INTRO}</p>
-<div class="upd">UPDATED <time datetime="{ISO}">{NOW.strftime("%a %b %-d, %Y %-I:%M %p PT").upper()}</time></div>
+{upd_html()}
 {top_story(d, "")}
 <main class="grid">
   {column(d, "daily", "")}
@@ -745,7 +767,7 @@ def build_period(p):
     page = head(title=title, desc=desc, path=f"{info['slug']}/", base=base, og_img=og, og_alt=alt(m1, info["word"]) if og else None, ld=[ld]) + f'''
 {mast(base, h1)}
 <p class="intro">{INTRO}</p>
-<div class="upd">UPDATED <time datetime="{ISO}">{NOW.strftime("%a %b %-d, %Y %-I:%M %p PT").upper()}</time></div>
+{upd_html()}
 <main class="one">{column(d, p, base, link=False, notes=True)}</main>
 <p class="pager">{others} | <a href="../archive/">Daily Meme Report Archive</a></p>
 ''' + footer(base)
@@ -995,8 +1017,10 @@ static.cloudflareinsights.com, and the measurement is processed by Cloudflare, I
 content blocker without affecting the site.</p>
 
 <h2>Cookies and scripts</h2>
-<p>We don't set cookies or use advertising or social-media tracking. The only JavaScript on our pages is the Cloudflare Web Analytics
-beacon described above. The other script tags are structured data (JSON-LD) that search engines read and browsers don't execute.</p>
+<p>We don't set cookies or use advertising or social-media tracking. The JavaScript on our pages is: (1) the Cloudflare Web Analytics
+beacon described above, and (2) a tiny first-party inline script on ranking pages that rewrites the "Updated" stamp into a relative
+"X min/hours ago" label in your browser from the build timestamp already in the page (no cookies, no network calls, no fingerprinting).
+The other script tags are structured data (JSON-LD) that search engines read and browsers don't execute.</p>
 
 <h2>Third-party content and links</h2>
 <p>Thumbnails are served from memestand.com. If an item shows an image directly from its source platform (for example X, Reddit or

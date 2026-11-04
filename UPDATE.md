@@ -1,6 +1,6 @@
 # MemeStand.com: refresh and deploy runbook
 
-Static site. Plain HTML/CSS; the only JavaScript is the Cloudflare Web Analytics beacon (see below). Everything is generated from JSON.
+Static site. Plain HTML/CSS; JavaScript is the Cloudflare Web Analytics beacon plus a tiny first-party inline script that shows a relative "Updated … ago" stamp (see build.py). Everything is generated from JSON.
 
 > **No layout shift:** every `<img>` must always have explicit `width`/`height` (build.py's `wh_attrs()` reads them from the file with PIL) or a CSS `aspect-ratio` box, so space is reserved before it loads (CLS).
 
@@ -35,8 +35,30 @@ memestand/
   preview.png                screenshot of the current build
 ```
 
-## Daily refresh (about 20 minutes for an agent, run once a day, e.g. 6:00 AM PT)
+## Daily refresh (every ~3 hours, about 20 minutes for an agent)
 
+Site content refreshes on a fixed Pacific-time cadence so the home page and rankings stay current
+through the day. Agents (or a human) should run this checklist at about:
+
+| PT clock | Role |
+|----------|------|
+| **6:00 AM** | **Main daily refresh.** Full evidence gather, rewrite `candidates.json` `as_of` for today, rank + build, fill new meme-page explainers, deploy. Morning top-5 social video (~7 AM) uses these rankings. |
+| **9:00 AM** | Intraday re-rank. Pull fresh evidence; update metrics / add anything that clearly took off since 6 AM; age out as needed. Deploy only if the ranked lists or lead meaningfully change (no no-op commits). |
+| **12:00 PM (noon)** | Intraday re-rank. Same rules. Noon "Trending Up" social clip uses the latest rankings. |
+| **3:00 PM** | Intraday re-rank. Same rules. |
+| **6:00 PM** | Intraday re-rank. Same rules. 6 PM "Hot Meme" social clip uses the latest rankings. |
+| **9:00 PM** | **Final lock for the day.** Re-rank once more, then leave today's `data/archive/YYYY-MM-DD.json` and `archive/YYYY-MM-DD.html` as the official end-of-day top 10. Do not rewrite that day's archive snapshot after 9 PM. |
+
+Each run should finish within ~15 minutes of the hour above when practical. The header "Updated … ago" stamp
+comes from the build timestamp in the visitor's browser (see build.py).
+
+**Intraday rules (9 AM / noon / 3 PM / 6 PM / 9 PM):**
+- Re-check X / Reddit / KYM; refresh `ev` numbers; add only memes with **new verified evidence**.
+- Keep `as_of` as today's date. Lead rotation still applies (`data/lead_history.json`); prefer not to churn the lead mid-day unless a clearly bigger new meme takes the daily #1 and passes the 7-day lead rule.
+- Skip the git commit if nothing meaningful changed vs the currently published site.
+- Never invent memes, numbers, or URLs. NSFW / legal rules still apply.
+
+**Full checklist (every run; 6 AM is the heaviest):**
 1. **Gather evidence** (all free and anonymous; no API keys, no logins):
    - **X**, via Grok Bot's built-in public X reads (`x` namespace):
      - `search_news` with "meme" / "viral meme" / "memes trend" (max_age_hours 24 / 168 / 720). These are the X trending stories about memes.
@@ -179,7 +201,7 @@ Every `python3 build.py` regenerates all of this from `data/memes.json`, so no m
 - **Crawl files**: `sitemap.xml` (lastmod per URL), `robots.txt` (allows everyone incl. GPTBot, OAI-SearchBot, PerplexityBot,
   Google-Extended, ClaudeBot, Applebot-Extended, CCBot...), `llms.txt` (site summary + today's three lists in Markdown),
   `feed.xml` (Atom, newest 60 daily #1s).
-- The old 30-minute `<meta http-equiv="refresh">` was removed: content changes once a day, and Bing and accessibility
+- The old 30-minute `<meta http-equiv="refresh">` was removed: content changes on the ~3-hour cadence above, and Bing and accessibility
   guidelines treat timed refreshes as a negative. Don't add it back.
 - Headline title-casing for titles/descriptions uses `ACRONYMS` / `SPECIAL` in build.py; add a word there if one comes out wrong (e.g. "Gpu").
 
