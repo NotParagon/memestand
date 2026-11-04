@@ -4,6 +4,8 @@ Static site. Plain HTML/CSS; JavaScript is the Cloudflare Web Analytics beacon p
 
 > **No layout shift:** every `<img>` must always have explicit `width`/`height` (build.py's `wh_attrs()` reads them from the file with PIL) or a CSS `aspect-ratio` box, so space is reserved before it loads (CLS).
 
+> **Theming (light/dark):** all colors in build.py's `CSS` are CSS custom properties (`--bg`, `--fg`, `--red`, `--link`...) defined in `:root`, with dark values via `prefers-color-scheme` and `[data-theme=dark|light]` overrides. Use the variables for any new color, never hex literals. The header toggle (`THEME_TOGGLE`, fixed 34px, absolutely positioned) saves the choice in localStorage; `THEME_HEAD` applies it before paint.
+
 > **Keep the analytics snippet.** Every HTML page carries the Cloudflare Web Analytics beacon just before `</body>`
 > (`CF_ANALYTICS` in build.py, added by `footer()`). It is cookieless, aggregate-only, and disclosed on /privacy.html.
 > Don't remove it, don't duplicate it, and any new page template must end with `footer()` so it gets the snippet.
