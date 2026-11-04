@@ -19,7 +19,7 @@
         }
       ],
       "ev": {
-        "peak_views": 16978722,
+        "peak_views": 16980931,
         "platforms": [
           "X",
           "KYM"
@@ -29,7 +29,7 @@
         "kym_editorial": false,
         "kym_views": 120954
       },
-      "notes": "351,514 likes / 16.98M views on the DiscussingFilm post (X API, Nov 4). Still circulating in Halloween roundups. KYM Thousand-Yard Stare entry ~120,954 views."
+      "notes": "351,509 likes / 16.98M views on the DiscussingFilm post (X API, Nov 4 9am). Still circulating in Halloween roundups. KYM Thousand-Yard Stare entry ~120,954 views."
     },
     {
       "id": "altman-ram",
@@ -64,7 +64,7 @@
         ],
         "x_news": true
       },
-      "notes": "#1 on r/memes top-this-week and still high on top-this-month (Nov 4). Sparked by Sam Altman's Cheeky Pint remark (Oct 29) that DRAM in personal computers is a 'quite terrible' use of limited supply. Fresh RAM variants keep topping Reddit."
+      "notes": "#1 on r/memes top-this-week and still high on top-this-month (Nov 4 9am). Sparked by Sam Altman's Cheeky Pint remark (Oct 29) that DRAM in personal computers is a 'quite terrible' use of limited supply. Fresh RAM variants keep topping Reddit."
     },
     {
       "id": "regretamine",
@@ -79,13 +79,13 @@
       "card_text": "“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”",
       "first_seen": "2026-11-01",
       "ev": {
-        "peak_views": 8199742,
+        "peak_views": 8213197,
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "92,481 likes / 8.20M views (X API, Nov 4). Spin-off reply memes still circulating."
+      "notes": "92,501 likes / 8.21M views (X API, Nov 4 9am). Spin-off reply memes still circulating."
     },
     {
       "id": "pakistani-citizenship",
@@ -99,12 +99,12 @@
       "card_text": "“she only wants me for my pakistani citizenship”",
       "first_seen": "2026-10-31",
       "ev": {
-        "peak_views": 6472270,
+        "peak_views": 6481786,
         "platforms": [
           "X"
         ]
       },
-      "notes": "30,761 likes / 6.47M views on @vibeistani (X API, Nov 4). Copycat citizenship punchlines still circulating."
+      "notes": "30,791 likes / 6.48M views (X API, Nov 4 9am). Copycat citizenship-joke posts still circulating."
     },
     {
       "id": "heidi-32gb",
@@ -119,7 +119,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 8
+          "rank": 7
         },
         "platforms": [
           "Reddit"
@@ -170,7 +170,7 @@
         }
       ],
       "ev": {
-        "peak_views": 328005,
+        "peak_views": 328126,
         "platforms": [
           "X",
           "KYM",
@@ -309,10 +309,10 @@
           "TikTok"
         ],
         "kym": true,
-        "kym_views": 9621,
+        "kym_views": 14844,
         "x_news": true
       },
-      "notes": "KYM Anakin Skywalker Gen Z Male Rage Memes still Popular Right Now / Top Entry This Month (Nov 4); ~9,621 KYM page views. Election-night Anakin edits also hit X News.",
+      "notes": "KYM Anakin Skywalker Gen Z Male Rage Memes still Popular Right Now / Top Entry This Month (Nov 4 9am); ~14,844 KYM page views. Election-night Anakin edits also hit X News.",
       "first_seen_basis": "KYM entry published date",
       "also": [
         {
@@ -523,7 +523,7 @@
         }
       ],
       "ev": {
-        "peak_views": 3492433,
+        "peak_views": 3493277,
         "platforms": [
           "X"
         ],
@@ -550,7 +550,7 @@
         }
       ],
       "ev": {
-        "peak_views": 7007346,
+        "peak_views": 7021454,
         "platforms": [
           "X"
         ],
@@ -694,7 +694,7 @@
           "Reddit"
         ]
       },
-      "notes": "#2 on r/memes top-this-week (Nov 4).",
+      "notes": "#2 on r/memes top-this-week (Nov 4 9am). Manager vs handbook training joke.",
       "headline_reviewed": true
     },
     {
@@ -718,13 +718,13 @@
         }
       ],
       "ev": {
-        "peak_views": 1427065,
+        "peak_views": 1443405,
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "26,788 likes / 1.43M views on @abdykeen (X API, Nov 4). Still quoted as a loss/gambling reaction clip.",
+      "notes": "26,795 likes / 1.44M views on @abdykeen (X API, Nov 4 9am). Still quoted as a loss/gambling reaction clip.",
       "headline_reviewed": true
     },
     {
@@ -748,14 +748,14 @@
         }
       ],
       "ev": {
-        "peak_views": 134116,
-        "peak_likes": 16022,
+        "peak_views": 134644,
+        "peak_likes": 16051,
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "16,022 likes / 134K views on @grindgod26 'dad, I hate seals' variant (X API, Nov 4). Format still in X News today (identities OK, fandom betrayal is the punchline).",
+      "notes": "16,051 likes / 135K views on @grindgod26 'dad, I hate seals' variant (X API, Nov 4 9am). Format still in X News today (identities OK, fandom deal-breaker).",
       "headline_reviewed": true
     },
     {
@@ -784,7 +784,7 @@
           "Reddit"
         ]
       },
-      "notes": "#5 on r/dankmemes top-this-week (Nov 4). Collage of laughing billionaires with the caption about redirected blame.",
+      "notes": "#5 on r/dankmemes top-this-week (Nov 4 9am). Collage of laughing billionaires with the caption about redirected blame.",
       "headline_reviewed": true
     },
     {
@@ -853,14 +853,14 @@
         }
       ],
       "ev": {
-        "peak_views": 4423945,
-        "peak_likes": 146471,
+        "peak_views": 5229640,
+        "peak_likes": 164225,
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "146,471 likes / 4.42M views on @studsyun's Nov 3 share of the headphones-monkey GIF (X API, Nov 4). Captioned as frantic studying / 'Thesis Monkey'; X News story active Nov 4. Earlier @wellsuchup GIF post Oct 31.",
+      "notes": "164,225 likes / 5.23M views on @studsyun's Nov 3 share of the headphones-monkey GIF (X API, Nov 4 9am). Captioned as frantic studying / 'Thesis Monkey'; X News story still active.",
       "headline_reviewed": true
     },
     {
@@ -883,14 +883,14 @@
         }
       ],
       "ev": {
-        "peak_views": 947003,
-        "peak_likes": 47957,
+        "peak_views": 1011548,
+        "peak_likes": 50477,
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "47,957 likes / 947K views on @Britannica's Nov 4 election-night parody (X API, Nov 4). Copycats flooded replies; X News story on the biology-joke wave.",
+      "notes": "50,477 likes / 1.01M views on @Britannica's Nov 4 election-night parody (X API, Nov 4 9am). Copycats flooded replies; X News story on the biology-joke wave.",
       "headline_reviewed": true
     },
     {
@@ -906,7 +906,7 @@
       "first_seen": "2026-11-01",
       "also": [
         {
-          "name": "X / @Flovaai (237K views)",
+          "name": "X / @Flovaai (260K views)",
           "url": "https://x.com/Flovaai/status/2117466712597839938"
         },
         {
@@ -915,17 +915,17 @@
         }
       ],
       "ev": {
-        "peak_views": 237335,
+        "peak_views": 260318,
         "platforms": [
           "TikTok",
           "X",
           "KYM"
         ],
         "kym": true,
-        "kym_views": 813,
+        "kym_views": 954,
         "x_news": true
       },
-      "notes": "KYM entry published Nov 3, 2026 (~813 page views): original TikTok by @leehoustonx on Nov 1; wave of AI remakes on TikTok/Reels/X. @Flovaai remix 2,165 likes / 237K views (X API, Nov 4). X News story on the cafe seating mix-up.",
+      "notes": "KYM entry published Nov 3, 2026 (~954 page views): original TikTok by @leehoustonx on Nov 1; wave of AI remakes on TikTok/Reels/X. @Flovaai remix 2,343 likes / 260K views (X API, Nov 4 9am). X News story on the cafe seating mix-up.",
       "first_seen_basis": "KYM cites TikTok original Nov 1, 2026",
       "headline_reviewed": true
     },
@@ -943,17 +943,17 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 1
+          "rank": 9
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#1 on r/memes top-today and #8 on top-this-week (Nov 4). Side-by-side: Auto 1080p looks like 144p; manually picking 1080p is sharp.",
+      "notes": "#9 on r/memes top-this-week (Nov 4 9am); aged off top-today. Side-by-side: Auto 1080p looks like 144p; manually picking 1080p is sharp.",
       "headline_reviewed": true,
       "also": [
         {
-          "name": "r/memes week #8",
+          "name": "r/memes week #9",
           "url": "https://www.reddit.com/r/memes/comments/1xmtiyn/144p_disguised_as_1080p/"
         }
       ]
@@ -961,7 +961,7 @@
     {
       "id": "chiropractor-kyary",
       "periods": [
-        "daily"
+        "weekly"
       ],
       "title": "CHIROPRACTORS vs. DOCTORS AND DENTISTS: THE SLAM-DOWN PUNCHLINE CLIP",
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xmufk1/my_fuggin_back/",
@@ -971,19 +971,20 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 1
+          "rank": 22
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#1 on r/dankmemes top-today (Nov 4). List joke: doctors/dentists help; chiropractors get a frantic slam-down clip punchline.",
+      "notes": "#22 on r/dankmemes top-this-week (Nov 4 9am); aged off top-today. List joke: doctors/dentists help; chiropractors get a frantic slam-down clip punchline.",
       "headline_reviewed": true
     },
     {
       "id": "now-kith-economy",
       "periods": [
-        "daily"
+        "daily",
+        "weekly"
       ],
       "title": "RICH PEOPLE 'NOW KITH' RISING PRICES AND LAYOFFS -- MIKE TYSON PIGEON TEMPLATE",
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xn0rwh/fun_times_good_luck_economy/",
@@ -993,19 +994,20 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 2
+          "rank": 1
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#2 on r/dankmemes top-today (Nov 4). Mike Tyson 'Now Kith' pigeon template labeled Raising prices / Layoffs.",
+      "notes": "#1 on r/dankmemes top-today and still on top-this-week (Nov 4 9am). Mike Tyson 'Now Kith' pigeon template labeled Raising prices / Layoffs.",
       "headline_reviewed": true
     },
     {
       "id": "gym-cancel-holmes",
       "periods": [
-        "daily"
+        "daily",
+        "weekly"
       ],
       "title": "GYM STAFF ON CANCELING YOUR MEMBERSHIP: ELIZABETH HOLMES 'WHY WOULD I DECEIVE YOU?'",
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnmfpo/hotel_california_rules/",
@@ -1015,19 +1017,20 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 3
+          "rank": 2
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#3 on r/dankmemes top-today (Nov 4). Elizabeth Holmes interview still captioned about how 'easy' gym cancellations are.",
+      "notes": "#2 on r/dankmemes top-today (Nov 4 9am). Elizabeth Holmes interview still captioned about how 'easy' gym cancellations are.",
       "headline_reviewed": true
     },
     {
       "id": "altman-houses-vs-datacenters",
       "periods": [
-        "daily"
+        "daily",
+        "weekly"
       ],
       "title": "ALTMAN-STYLE RANT MEME: HOUSES ARE A 'TERRIBLE USE OF SPACE' vs. AI DATA CENTERS",
       "source_url": "https://www.reddit.com/r/memes/comments/1xnkv3y/a_coffin_is_more_space_efficient/",
@@ -1037,19 +1040,20 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 6
+          "rank": 2
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#6 on r/memes top-today (Nov 4). Sam Altman-at-the-window macro arguing houses waste space that data centers could use — satire of DRAM/AI-infra logic.",
+      "notes": "#2 on r/memes top-today and #11 on top-this-week (Nov 4 9am). Sam Altman-at-the-window macro arguing houses waste space that data centers could use — satire of DRAM/AI-infra logic.",
       "headline_reviewed": true
     },
     {
       "id": "meme-same-room-marge",
       "periods": [
-        "daily"
+        "daily",
+        "weekly"
       ],
       "title": "SENDING A MEME TO SOMEONE IN THE SAME ROOM: MARGE'S SIDE-EYE WAIT",
       "source_url": "https://www.reddit.com/r/memes/comments/1xn5m8f/based_on_real_events/",
@@ -1059,13 +1063,13 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 4
+          "rank": 3
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#4 on r/memes top-today (Nov 4). Marge Simpson side-eye reaction for waiting while someone next to you reads the meme you just sent.",
+      "notes": "#3 on r/memes top-today (Nov 4 9am). Marge Simpson side-eye reaction for waiting while someone next to you reads the meme you just sent.",
       "headline_reviewed": true
     },
     {
@@ -1088,6 +1092,87 @@
       },
       "notes": "Fresh KYM entry published Nov 2, 2026 (~863 page views). TikTok dance/animation trend of two characters sharing a farewell dance; KYM home editorial called out the trend.",
       "first_seen_basis": "KYM entry published date",
+      "headline_reviewed": true
+    },
+    {
+      "id": "ram-adan",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'RAM ADAN': SAM ALTMAN PHOTO JOKES HE'S INTERESTED AFTER HEARING ABOUT RAM",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xnikcz/really_got_his_interest/",
+      "source_name": "Reddit r/memes",
+      "image_url": "https://i.redd.it/1bh27opiyjzh1.png",
+      "first_seen": "2026-11-04",
+      "also": [
+        {
+          "name": "r/memes week #8",
+          "url": "https://www.reddit.com/r/memes/comments/1xnikcz/really_got_his_interest/"
+        }
+      ],
+      "ev": {
+        "reddit": {
+          "sub": "memes",
+          "rank": 1
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#1 on r/memes top-today and #8 on top-this-week (Nov 4 9am). Photo of Sam Altman with Gulf hosts captioned as his reaction after hearing about RAM — Ramadan pun on the ongoing AI DRAM joke wave.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "ai-slop-vs-nk",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'AI SLOP QUANTS' vs. A ONE-PDF PHISH: $0.17 vs. BILLIONS JOKE",
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnlwdj/money_muney/",
+      "source_name": "Reddit r/dankmemes",
+      "image_url": "https://i.redd.it/sgb6nz180lzh1.jpeg",
+      "first_seen": "2026-11-04",
+      "ev": {
+        "reddit": {
+          "sub": "dankmemes",
+          "rank": 3
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "#3 on r/dankmemes top-today (Nov 4 9am). Split meme: complex AI-trading dashboards make $0.17; a simple phishing PDF joke is labeled with a massive profit figure.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "hair-date",
+      "periods": [
+        "weekly"
+      ],
+      "title": "'HAIR DATE' JOKE: SHE PAYS FOR HIS HAIRCUT, HE BUYS HER A WIG",
+      "source_url": "https://x.com/marvo_sneh_/status/2117540565831066110",
+      "source_name": "X / @marvo_sneh_",
+      "image_url": null,
+      "card_text": "This girl said we should go on a hair date. She’ll pay for my haircut, and I’ll buy her a wig.",
+      "image_policy": "none",
+      "first_seen": "2026-11-03",
+      "also": [
+        {
+          "name": "X News",
+          "url": "https://x.com/i/trending/2117954845806084333"
+        }
+      ],
+      "ev": {
+        "peak_views": 131991,
+        "peak_likes": 6062,
+        "platforms": [
+          "X"
+        ],
+        "x_news": true
+      },
+      "notes": "6,062 likes / 132K views on @marvo_sneh_ Nov 3 post (X API, Nov 4 9am). Quote-replies joke about 'girl maths' / wig vs haircut costs; X News story active.",
       "headline_reviewed": true
     }
   ]

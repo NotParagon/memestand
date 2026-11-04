@@ -90,6 +90,31 @@
       ],
       "checked": "2026-11-03T23:51:43-08:00"
     },
+    "ai-slop-vs-nk": {
+      "name": "AI Slop Quants vs North Korea",
+      "ids": [
+        "ai-slop-vs-nk"
+      ],
+      "status": "short",
+      "explainer": "A two-panel money comparison. The left side labels \"AI slop quants\" with a wall of trading dashboards and a tiny $0.17 profit. The right side labels \"North Korea\" with a one-PDF phishing joke (fake job-offer email and a opened attachment) and a multi-billion profit figure. The joke is that flashy AI trading stacks make almost nothing while a simple social-engineering PDF supposedly prints enormous crypto gains.",
+      "origin": "Posted to r/dankmemes on November 4, 2026 as \"Money! Muney!\" by /u/Round-Good1179 (post 1xnlwdj). It ranked #3 on that subreddit's top-today feed during the November 4 morning refresh. We did not find an earlier post of this exact panel, so the original creator is unconfirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "AI slop quants vs one (1) PDF",
+        "When the trading bot makes seventeen cents"
+      ],
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnlwdj/money_muney/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "r/dankmemes: Money! Muney!",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xnlwdj/money_muney/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T09:03:58-08:00"
+    },
     "altman-houses-vs-datacenters": {
       "name": "Altman Houses vs AI Data Centers",
       "ids": [
@@ -982,6 +1007,31 @@
         "My fridge after a two-week vacation"
       ],
       "checked": "2026-11-03T23:51:43-08:00"
+    },
+    "ram-adan": {
+      "name": "Ram Adan",
+      "ids": [
+        "ram-adan"
+      ],
+      "status": "short",
+      "explainer": "A captioned photo joke that spells \"Ram Adan\" instead of Ramadan. It shows OpenAI CEO Sam Altman standing between two men in traditional Gulf dress, with the caption claiming that is his face after hearing about \"RAM.\" The punchline is a pun linking the Muslim holy month's name to computer memory, riding the wider wave of Altman / DRAM scarcity jokes.",
+      "origin": "Posted to r/memes on November 4, 2026 as \"really got his interest\" by /u/57evil (post 1xnikcz). It was #1 on that subreddit's top-today feed during the November 4 morning refresh. We did not find an earlier post of this exact \"Ram Adan\" caption, so the original creator is unconfirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Sam Altman after hearing about RAM Adan",
+        "When the DRAM shortage meets a calendar pun"
+      ],
+      "source_url": "https://www.reddit.com/r/memes/comments/1xnikcz/really_got_his_interest/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "r/memes: really got his interest",
+          "url": "https://www.reddit.com/r/memes/comments/1xnikcz/really_got_his_interest/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-04",
+      "checked": "2026-11-04T09:03:58-08:00"
     },
     "regretamine": {
       "name": "Regretamine",
