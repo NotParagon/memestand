@@ -2,7 +2,7 @@
 
 > MemeStand (https://memestand.com) is an independent, headline-style daily meme report: the internet's top 10 memes today, the top 10 trending memes this week, and the best memes of the month (last 30 days), ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated hourly, 6 AM to 9 PM Pacific Time. Every listed meme links to its original source.
 
-Last updated: 2026-11-04 14:10 PT (2026-11-04T14:10:00-08:00)
+Last updated: 2026-11-04 15:11 PT (2026-11-04T15:11:00-08:00)
 
 ## Key pages
 
@@ -28,7 +28,7 @@ Last updated: 2026-11-04 14:10 PT (2026-11-04T14:10:00-08:00)
 7. 'RAM Adan': Sam Altman Photo Jokes He's Interested After Hearing About RAM — source: https://www.reddit.com/r/memes/comments/1xnikcz/really_got_his_interest/ — credit: posted by u/57evil on r/memes — evidence: #1 on r/memes top-today and #8 on top-this-week (Nov 4 9am). Photo of Sam Altman with Gulf hosts captioned as his reaction after hearing about RAM — Ramadan pun on the ongoing AI DRAM joke wave. — explainer: https://memestand.com/meme/ram-adan/
 8. Americans Every Election, Convinced the Country is About to Change (It Won't) -- Squid Game Cheer — source: https://www.reddit.com/r/dankmemes/comments/1xnsnug/tale_as_old_as_time/ — credit: posted by u/Massive-Bass-347 on r/dankmemes — evidence: #1 on r/dankmemes top-today (Nov 4 noon). Squid Game Gi-hun cheer still captioned as Americans every election convinced the country is about to change (it won't). — explainer: https://memestand.com/meme/election-squid-hope/
 9. Gym Staff on Canceling Your Membership: Elizabeth Holmes 'Why Would I Deceive You?' — source: https://www.reddit.com/r/dankmemes/comments/1xnmfpo/hotel_california_rules/ — credit: posted by u/Renatop569 on r/dankmemes — evidence: #2 on r/dankmemes top-today (Nov 4 9am). Elizabeth Holmes interview still captioned about how 'easy' gym cancellations are. — explainer: https://memestand.com/meme/gym-cancel-holmes/
-10. 'AI Slop Quants' vs. a One-pdf Phish: $0.17 vs. Billions Joke — source: https://www.reddit.com/r/dankmemes/comments/1xnlwdj/money_muney/ — credit: posted by u/Round-Good1179 on r/dankmemes — evidence: #3 on r/dankmemes top-today (Nov 4 9am). Split meme: complex AI-trading dashboards make $0.17; a simple phishing PDF joke is labeled with a massive profit figure. — explainer: https://memestand.com/meme/ai-slop-vs-nk/
+10. Me Trying to Leave a Family Gathering After Saying Something Controversial -- Putin Suction-cup Arrow — source: https://www.reddit.com/r/memes/comments/1xnitsj/the_attack_was_inevitable/ — credit: posted by u/Mr_kalas22 on r/memes — evidence: #4 on r/memes top-today (Nov 4 noon). Viral Putin-in-Red-Square clip with a suction-cup toy arrow mid-flight at his head, captioned as leaving a family gathering after saying something controversial. | 3pm: r/memes day #3. — explainer: https://memestand.com/meme/putin-suction-arrow/
 
 ## Top 10 memes this week
 
@@ -61,7 +61,6 @@ Last updated: 2026-11-04 14:10 PT (2026-11-04T14:10:00-08:00)
 - [AI Artists Hoverboard](https://memestand.com/meme/ai-artists-hoverboard/): The Family Guy image of "hipster" Peter Griffin gliding along on a hoverboard while staring at his phone, captioned as an AI "artist" who has just generated…
 - [AI Bros Process Reaction](https://memestand.com/meme/ai-bros-process/): A grimacing reaction image captioned as an AI enthusiast hearing someone say they enjoy the creative process.
 - [AI Rumpelstiltskin Tip Toein' in My Jordans](https://memestand.com/meme/ai-rumpelstiltskin-tip-toein-in-my-jordans/): An AI-generated clip, made to look like a 1980s fantasy film, of Rumpelstiltskin dancing in a barn, set to Riff Raff's song "TIP TOE WING IN MY JAWWDINZ."…
-- [AI Slop Quants vs North Korea](https://memestand.com/meme/ai-slop-vs-nk/): A two-panel money comparison.
 - [Altman Houses vs AI Data Centers](https://memestand.com/meme/altman-houses-vs-datacenters/): A macro using a widely circulated photo of OpenAI CEO Sam Altman looking in through a window.
 - [Altman RAM Chart](https://memestand.com/meme/altman-ram-chart/): A flowchart where every stick of RAM gets routed to Sam Altman, skipping gamers and ordinary PC owners.
 - [Americans Every Election / Squid Game Cheer](https://memestand.com/meme/election-squid-hope/): A Squid Game still of players in green tracksuits cheering (Gi-hun front and center) captioned "Americans every election, convinced the country is about to…
@@ -91,6 +90,7 @@ Last updated: 2026-11-04 14:10 PT (2026-11-04T14:10:00-08:00)
 - [No Money Bald Distress Clip](https://memestand.com/meme/no-money-bald/): A short clip of a bald man slumped back looking drained, captioned "Me after using my money to look for money and I end up with no money." It's about losing…
 - [No Nut November](https://memestand.com/meme/no-nut-november/): No Nut November (NNN) is a tongue-in-cheek internet challenge to abstain from masturbation for all of November.
 - [Potatoes After a Few Days in the Bag](https://memestand.com/meme/potatoes-walrus/): A photo of a crowded walrus colony with tusks poking out in every direction, captioned as what potatoes look like after a few days in the bag.
+- [Putin Suction-Cup Arrow / Family Gathering Exit](https://memestand.com/meme/putin-suction-arrow/): A still from a viral clip of Vladimir Putin outdoors as a toy suction-cup arrow flies toward his head.
 - [Ram Adan](https://memestand.com/meme/ram-adan/): A captioned photo joke that spells "Ram Adan" instead of Ramadan.
 - [Regretamine](https://memestand.com/meme/regretamine/): "Regretamine" is a made-up drug from a joke post: one dose erases all your regrets, including the regret of taking it.
 - [Sam Altman RAM](https://memestand.com/meme/sam-altman-ram/): The Sam Altman RAM memes joke that PC owners now have to hide their memory sticks (RAM, or DIMMs) from OpenAI.
