@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T11:03-08:00",
+  "updated": "2026-11-05T12:09-08:00",
   "daily": [
     {
       "rank": 1,
@@ -21,7 +21,7 @@
           "url": "https://x.com/i/trending/2117626647205875908"
         },
         {
-          "name": "TikTok / @leehoustonx (10.8M views)",
+          "name": "TikTok / @leehoustonx (10.9M views)",
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
         },
         {
@@ -41,7 +41,7 @@
         "Instagram",
         "Know Your Meme"
       ],
-      "notes": "IG @kevinwinnik 11M likes (fetch_social Nov 5); TikTok @leehoustonx 10.8M views / 1.4M likes; @boby.biggsjohnson 5.7M; KYM 1,509 views. Yesterday's site lead."
+      "notes": "IG @kevinwinnik 11M likes (fetch_social Nov 5 noon); TikTok @leehoustonx 10.9M views / 1.4M likes; @boby.biggsjohnson 5.8M; KYM 1,663 views. Yesterday's site lead."
     },
     {
       "rank": 2,
@@ -59,7 +59,7 @@
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (246K views)",
+          "name": "X / @LashSleeper (247K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -84,7 +84,7 @@
         "YouTube",
         "Know Your Meme"
       ],
-      "notes": "KYM-cited TikTok @hard_plushie 9.1M views / 2.4M likes (fetch_social Nov 5); @watosis 322K; YT LiMC 485K; KYM 4,254 views; still on Popular/Weekly."
+      "notes": "KYM-cited TikTok @hard_plushie 9.1M views / 2.4M likes (kept; noon re-fetch no rehydration); @watosis 327K; YT LiMC ~541K; KYM 5,104 views; still on Popular/editorial."
     },
     {
       "rank": 3,
@@ -106,7 +106,7 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (850K views)",
+          "name": "TikTok / @elionwillpower (852K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
@@ -121,10 +121,33 @@
         "TikTok",
         "Know Your Meme"
       ],
-      "notes": "3.21M views / 173K likes on @MeganBitchell's WOKE 3 post (X API, Nov 5 6am). KYM entry 2,216 views. TikTok @elionwillpower 849K views."
+      "notes": "3.40M views / 185K likes on @MeganBitchell's WOKE 3 post (X API, Nov 5 noon). KYM entry 2,675 views. TikTok @elionwillpower 852K views."
     },
     {
       "rank": 4,
+      "id": "telegram-microsoft",
+      "title": "TELEGRAM'S OFFICIAL ACCOUNT: 'I CAN'T BELIEVE BILL GATES NAMED THAT COMPANY AFTER HIS PENIS'",
+      "image": null,
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/telegram/status/2117998301564043360",
+      "source_name": "X / @telegram",
+      "credit": "posted by @telegram on X",
+      "also": [
+        {
+          "name": "X News",
+          "url": "https://x.com/i/trending/2118107139155939611"
+        }
+      ],
+      "first_seen": "2026-11-04",
+      "score": 75.6,
+      "sources": [
+        "X"
+      ],
+      "notes": "Official @telegram post Nov 4 joking Microsoft was named after Bill Gates's anatomy. X API 11,427,568 views / 130,864 likes (Nov 5 noon); X News trending story."
+    },
+    {
+      "rank": 5,
       "id": "thesis-monkey",
       "title": "'THESIS MONKEY': HEADPHONES PRIMATE GIF BECOMES THE STUDY-SESSION MEME",
       "image": "images/thesis-monkey.jpg",
@@ -148,10 +171,10 @@
       "sources": [
         "X"
       ],
-      "notes": "183,725 likes / 6.13M views on @studsyun's headphones-monkey GIF (X API, Nov 5 6am). Still climbing; X News story was active Nov 4."
+      "notes": "183,973 likes / 6.21M views on @studsyun's headphones-monkey GIF (X API, Nov 5 noon). Still climbing."
     },
     {
-      "rank": 5,
+      "rank": 6,
       "id": "crack-a-monster",
       "title": "'IT'S NOT THAT DEEP. CRACK A MONSTER.': MONSTER ENERGY'S OWN POST BECOMES THE COPE MEME",
       "image": null,
@@ -162,14 +185,14 @@
       "credit": "posted by @MonsterEnergy on X",
       "also": [],
       "first_seen": "2026-11-05",
-      "score": 70.8,
+      "score": 71.0,
       "sources": [
         "X"
       ],
-      "notes": "Monster Energy brand post (Nov 4) 'it's not that deep. crack a monster.' X API 3,809,114 views / 46,320 likes (Nov 5 ~11am PT); X News trending story about the reply chain."
+      "notes": "Monster Energy brand post (Nov 4) 'it's not that deep. crack a monster.' X API 3,990,200 views / 46,727 likes (Nov 5 ~noon PT); X News trending story about the reply chain."
     },
     {
-      "rank": 6,
+      "rank": 7,
       "id": "britannica-mitochondria",
       "title": "BRITANNICA'S ELECTION-NIGHT JOKE: 'CNN PROJECTS MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL'",
       "image": null,
@@ -192,7 +215,7 @@
       "notes": "1.09M views / 54.5K likes on @Britannica's mitochondria powerhouse joke (X API, Nov 5 6am)."
     },
     {
-      "rank": 7,
+      "rank": 8,
       "id": "altman-ramesses",
       "title": "'LET THE MAN REST': SAM ALTMAN AS RAMESSES II IN THE RAM MEME WAVE",
       "image": "images/altman-ramesses.jpg",
@@ -210,7 +233,7 @@
       "notes": "#1 r/memes top-today and #21 week (Nov 5 ~11am PT). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme cycle."
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": "ww3-or-christmas",
       "title": "'WW3 OR CHRISTMAS?': BUDGET JOKE ABOUT PREPARING FOR BOTH GOES VIRAL",
       "image": null,
@@ -228,7 +251,7 @@
       "notes": "@HorrorGorl: 'Should I be preparing for WW3 or Christmas, because I dont have the budget for both.' 709K views / 36.5K likes (X API, Nov 5)."
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "altman-apollo-4kb",
       "title": "'APOLLO HAD 4KB OF RAM': ALTMAN SPACE-RACE COPE IN THE RAM SHORTAGE WAVE",
       "image": "images/altman-apollo-4kb.jpg",
@@ -244,24 +267,6 @@
         "Reddit"
       ],
       "notes": "#4 r/memes top-today (Nov 5 ~11am PT). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM."
-    },
-    {
-      "rank": 10,
-      "id": "election-squid-hope",
-      "title": "AMERICANS EVERY ELECTION: SQUID GAME CHEER — 'TALE AS OLD AS TIME'",
-      "image": "images/election-squid-hope.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnsnug/tale_as_old_as_time/",
-      "source_name": "Reddit r/dankmemes /u/Massive-Bass-347",
-      "credit": "posted by u/Massive-Bass-347 on r/dankmemes",
-      "also": [],
-      "first_seen": "2026-11-04",
-      "score": 56.0,
-      "sources": [
-        "Reddit"
-      ],
-      "notes": "#3 r/dankmemes top-week / #11 month (Nov 5 ~11am PT; off day top). Squid Game Gi-hun cheer as Americans every election."
     }
   ],
   "weekly": [
@@ -285,7 +290,7 @@
           "url": "https://x.com/i/trending/2117626647205875908"
         },
         {
-          "name": "TikTok / @leehoustonx (10.8M views)",
+          "name": "TikTok / @leehoustonx (10.9M views)",
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
         },
         {
@@ -305,7 +310,7 @@
         "Instagram",
         "Know Your Meme"
       ],
-      "notes": "IG @kevinwinnik 11M likes (fetch_social Nov 5); TikTok @leehoustonx 10.8M views / 1.4M likes; @boby.biggsjohnson 5.7M; KYM 1,509 views. Yesterday's site lead."
+      "notes": "IG @kevinwinnik 11M likes (fetch_social Nov 5 noon); TikTok @leehoustonx 10.9M views / 1.4M likes; @boby.biggsjohnson 5.8M; KYM 1,663 views. Yesterday's site lead."
     },
     {
       "rank": 2,
@@ -323,7 +328,7 @@
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (246K views)",
+          "name": "X / @LashSleeper (247K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -348,7 +353,7 @@
         "YouTube",
         "Know Your Meme"
       ],
-      "notes": "KYM-cited TikTok @hard_plushie 9.1M views / 2.4M likes (fetch_social Nov 5); @watosis 322K; YT LiMC 485K; KYM 4,254 views; still on Popular/Weekly."
+      "notes": "KYM-cited TikTok @hard_plushie 9.1M views / 2.4M likes (kept; noon re-fetch no rehydration); @watosis 327K; YT LiMC ~541K; KYM 5,104 views; still on Popular/editorial."
     },
     {
       "rank": 3,
@@ -467,7 +472,7 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (850K views)",
+          "name": "TikTok / @elionwillpower (852K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
@@ -482,7 +487,7 @@
         "TikTok",
         "Know Your Meme"
       ],
-      "notes": "3.21M views / 173K likes on @MeganBitchell's WOKE 3 post (X API, Nov 5 6am). KYM entry 2,216 views. TikTok @elionwillpower 849K views."
+      "notes": "3.40M views / 185K likes on @MeganBitchell's WOKE 3 post (X API, Nov 5 noon). KYM entry 2,675 views. TikTok @elionwillpower 852K views."
     },
     {
       "rank": 7,
@@ -552,6 +557,29 @@
     },
     {
       "rank": 9,
+      "id": "telegram-microsoft",
+      "title": "TELEGRAM'S OFFICIAL ACCOUNT: 'I CAN'T BELIEVE BILL GATES NAMED THAT COMPANY AFTER HIS PENIS'",
+      "image": null,
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/telegram/status/2117998301564043360",
+      "source_name": "X / @telegram",
+      "credit": "posted by @telegram on X",
+      "also": [
+        {
+          "name": "X News",
+          "url": "https://x.com/i/trending/2118107139155939611"
+        }
+      ],
+      "first_seen": "2026-11-04",
+      "score": 75.6,
+      "sources": [
+        "X"
+      ],
+      "notes": "Official @telegram post Nov 4 joking Microsoft was named after Bill Gates's anatomy. X API 11,427,568 views / 130,864 likes (Nov 5 noon); X News trending story."
+    },
+    {
+      "rank": 10,
       "id": "jiren-dancing",
       "title": "JIREN DANCES TO 'I'M SO IN LOVE WITH YOU'",
       "image": "images/jiren-dancing.jpg",
@@ -578,24 +606,6 @@
         "Know Your Meme"
       ],
       "notes": "KYM cites 2.1M views; KYM Weekly Meme Roundup (Oct 30). Nov 4 reads (10am PT): TikTok @notmemetime 3.6M views; YouTube 'I'm so in love with you' 95K views."
-    },
-    {
-      "rank": 10,
-      "id": "regretamine",
-      "title": "ELON MUSK JOKES ABOUT A DRUG CALLED 'REGRETAMINE'... REPLIES RUN WILD",
-      "image": null,
-      "image_url": null,
-      "card_text": "“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”",
-      "source_url": "https://x.com/elonmusk/status/2116875604889112772",
-      "source_name": "X / @elonmusk",
-      "credit": "posted by @elonmusk on X",
-      "also": [],
-      "first_seen": "2026-11-01",
-      "score": 74.2,
-      "sources": [
-        "X"
-      ],
-      "notes": "8.26M views / 92.5K likes on @elonmusk (X API, Nov 5). Weekly/monthly."
     }
   ],
   "monthly": [

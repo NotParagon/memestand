@@ -1473,6 +1473,35 @@
       ],
       "checked": "2026-11-03T23:51:43-08:00"
     },
+    "telegram-microsoft": {
+      "name": "Telegram's Bill Gates / Microsoft Joke",
+      "ids": [
+        "telegram-microsoft"
+      ],
+      "status": "full",
+      "explainer": "A crude one-liner from Telegram's official X account claiming Bill Gates named Microsoft after his anatomy. Fans treated the verified corporate account's joke as appointment comedy, quote-tweeting it with MACROHARD edits and brand-account boundary debates.",
+      "origin": "Posted by the official @telegram account on November 4, 2026 (X status 2117998301564043360): \"i can't believe bill gates named that company after his penis.\" The post itself went viral (11M+ views) and became an X News trending story.",
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Quote-tweet or screenshot the Telegram post as a reaction to brand accounts being unhinged",
+        "MACROHARD / Micro-Soft pun follow-ups"
+      ],
+      "source_url": "https://x.com/telegram/status/2117998301564043360",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@telegram on X",
+          "url": "https://x.com/telegram/status/2117998301564043360"
+        },
+        {
+          "name": "X News",
+          "url": "https://x.com/i/trending/2118107139155939611"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-05",
+      "checked": "2026-11-05T12:10:10-08:00"
+    },
     "the-myth-of-consensual-pc-building": {
       "name": "The Myth of Consensual PC Building",
       "ids": [
