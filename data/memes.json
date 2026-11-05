@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T10:23-08:00",
+  "updated": "2026-11-05T11:03-08:00",
   "daily": [
     {
       "rank": 1,
@@ -29,7 +29,7 @@
           "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         },
         {
-          "name": "TikTok / @boby.biggsjohnson (5.7M views)",
+          "name": "TikTok / @boby.biggsjohnson (5.8M views)",
           "url": "https://www.tiktok.com/@boby.biggsjohnson/video/7703585816429235487"
         }
       ],
@@ -98,11 +98,11 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @MeganBitchell (3.32M views)",
+          "name": "X / @MeganBitchell (3.4M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
-          "name": "X / @FabTheWoker (116K views)",
+          "name": "X / @FabTheWoker (3.4M views)",
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
@@ -162,11 +162,11 @@
       "credit": "posted by @MonsterEnergy on X",
       "also": [],
       "first_seen": "2026-11-05",
-      "score": 70.6,
+      "score": 70.8,
       "sources": [
         "X"
       ],
-      "notes": "Monster Energy brand post (Nov 4) 'it's not that deep. crack a monster.' X API 3,138,503 views / 43,816 likes; X News trending story about the reply chain (Nov 5)."
+      "notes": "Monster Energy brand post (Nov 4) 'it's not that deep. crack a monster.' X API 3,809,114 views / 46,320 likes (Nov 5 ~11am PT); X News trending story about the reply chain."
     },
     {
       "rank": 6,
@@ -207,7 +207,7 @@
       "sources": [
         "Reddit"
       ],
-      "notes": "#1 r/memes top-today (Nov 5 7am; was #3 at 6am). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme cycle."
+      "notes": "#1 r/memes top-today and #21 week (Nov 5 ~11am PT). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme cycle."
     },
     {
       "rank": 8,
@@ -243,7 +243,7 @@
       "sources": [
         "Reddit"
       ],
-      "notes": "#4 r/memes top-today (Nov 5 10am). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM."
+      "notes": "#4 r/memes top-today (Nov 5 ~11am PT). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM."
     },
     {
       "rank": 10,
@@ -261,7 +261,7 @@
       "sources": [
         "Reddit"
       ],
-      "notes": "#3 r/dankmemes top-week (Nov 5 10am; off day top). Squid Game Gi-hun cheer as Americans every election."
+      "notes": "#3 r/dankmemes top-week / #11 month (Nov 5 ~11am PT; off day top). Squid Game Gi-hun cheer as Americans every election."
     }
   ],
   "weekly": [
@@ -293,7 +293,7 @@
           "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         },
         {
-          "name": "TikTok / @boby.biggsjohnson (5.7M views)",
+          "name": "TikTok / @boby.biggsjohnson (5.8M views)",
           "url": "https://www.tiktok.com/@boby.biggsjohnson/video/7703585816429235487"
         }
       ],
@@ -362,7 +362,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @PopBase (2.20M views)",
+          "name": "X / @PopBase (2.2M views)",
           "url": "https://x.com/PopBase/status/2114415796890038370"
         },
         {
@@ -459,11 +459,11 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @MeganBitchell (3.32M views)",
+          "name": "X / @MeganBitchell (3.4M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
-          "name": "X / @FabTheWoker (116K views)",
+          "name": "X / @FabTheWoker (3.4M views)",
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
@@ -548,7 +548,7 @@
         "X",
         "Reddit"
       ],
-      "notes": "#1 r/memes top-this-week and #4 top-this-month (Nov 5 6am)."
+      "notes": "#1 r/memes top-this-week and #4 top-this-month (Nov 5 ~11am PT)."
     },
     {
       "rank": 9,
@@ -712,7 +712,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @PopBase (2.20M views)",
+          "name": "X / @PopBase (2.2M views)",
           "url": "https://x.com/PopBase/status/2114415796890038370"
         },
         {
@@ -915,7 +915,7 @@
         "X",
         "Reddit"
       ],
-      "notes": "#1 r/memes top-this-week and #4 top-this-month (Nov 5 6am)."
+      "notes": "#1 r/memes top-this-week and #4 top-this-month (Nov 5 ~11am PT)."
     }
   ]
 }

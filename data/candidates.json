@@ -19,14 +19,14 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 3655456,
-          "likes": 45939,
+          "views": 3809114,
+          "likes": 46320,
           "checked": "2026-11-05",
           "via": "X API"
         },
         "x_news": true
       },
-      "notes": "Monster Energy brand post (Nov 4) 'it's not that deep. crack a monster.' X API 3,138,503 views / 43,816 likes; X News trending story about the reply chain (Nov 5).",
+      "notes": "Monster Energy brand post (Nov 4) 'it's not that deep. crack a monster.' X API 3,809,114 views / 46,320 likes (Nov 5 ~11am PT); X News trending story about the reply chain.",
       "headline_reviewed": true
     },
     {
@@ -47,7 +47,7 @@
         ],
         "x": {
           "url": "https://x.com/HorrorGorl/status/2117609954563477790",
-          "views": 709638,
+          "views": 709762,
           "likes": 36553,
           "checked": "2026-11-05",
           "via": "X API"
@@ -92,7 +92,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 14128,
+        "kym_views": 14190,
         "tiktok": {
           "url": "https://www.tiktok.com/@tr0v0n/video/7698167604019547422",
           "views": 1400000,
@@ -137,10 +137,10 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 1
+          "rank": 25
         }
       },
-      "notes": "#1 r/memes top-today (Nov 5 6am). Template joke that YouTube channels add India B-roll / mention India to farm views. | periods refreshed 7 AM Nov 5 → ['weekly'].",
+      "notes": "#25 r/memes top-week (Nov 5 ~11am PT; aged off day top). Template joke that YouTube channels add India B-roll / mention India to farm views.",
       "headline_reviewed": true
     },
     {
@@ -157,7 +157,7 @@
       "ev": {
         "platforms": []
       },
-      "notes": "#2 r/memes top-today (Nov 5 7am). Nostalgia 'you finally woke up' CRT/N64 GoldenEye scene dismissing housing crisis / data centers.",
+      "notes": "Off r/memes day/week top-25 as of Nov 5 ~11am PT (was #2 day at 7am). Nostalgia 'you finally woke up' CRT/N64 GoldenEye scene. Kept weekly on prior evidence.",
       "headline_reviewed": true
     },
     {
@@ -181,7 +181,7 @@
           "rank": 1
         }
       },
-      "notes": "#1 r/memes top-today (Nov 5 7am; was #3 at 6am). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme cycle.",
+      "notes": "#1 r/memes top-today and #21 week (Nov 5 ~11am PT). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme cycle.",
       "headline_reviewed": true
     },
     {
@@ -205,7 +205,7 @@
           "rank": 4
         }
       },
-      "notes": "#4 r/memes top-today (Nov 5 10am). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM.",
+      "notes": "#4 r/memes top-today (Nov 5 ~11am PT). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM.",
       "headline_reviewed": true
     },
     {
@@ -226,10 +226,10 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 5
+          "rank": 6
         }
       },
-      "notes": "#5 r/memes top-today (Nov 5 7am). 'Gotta be one of my favorite genders' format celebrating void-faced mage characters (Orko).",
+      "notes": "#6 r/memes top-today (Nov 5 ~11am PT; was #5 at 10am). 'Gotta be one of my favorite genders' format celebrating void-faced mage characters (Orko).",
       "headline_reviewed": true
     },
     {
@@ -244,9 +244,15 @@
       "first_seen": "2026-11-05",
       "also": [],
       "ev": {
-        "platforms": []
+        "platforms": [
+          "Reddit"
+        ],
+        "reddit": {
+          "sub": "dankmemes",
+          "rank": 24
+        }
       },
-      "notes": "#3 r/dankmemes top-today (Nov 5 7am; was #2 at 6am). Over the Hedge still captioned for YouTube UI redesign whiplash.",
+      "notes": "#24 r/dankmemes top-this-week (Nov 5 ~11am PT; aged off day top). Over the Hedge still captioned for YouTube UI redesign whiplash.",
       "headline_reviewed": true
     },
     {
@@ -281,11 +287,11 @@
       "first_seen": "2026-11-03",
       "also": [
         {
-          "name": "X / @MeganBitchell (3.32M views)",
+          "name": "X / @MeganBitchell (3.4M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
-          "name": "X / @FabTheWoker (116K views)",
+          "name": "X / @FabTheWoker (3.4M views)",
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
@@ -304,18 +310,18 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 2529,
+        "kym_views": 2600,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3352272,
-          "likes": 181890,
+          "views": 3374521,
+          "likes": 183459,
           "checked": "2026-11-05",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 851000,
-          "likes": 133600,
+          "views": 851300,
+          "likes": 133700,
           "author": "@elionwillpower",
           "checked": "2026-11-05",
           "via": "fetch_social.py",
@@ -358,8 +364,8 @@
         "kym_views": 120954,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 16994387,
-          "likes": 351413,
+          "views": 16994902,
+          "likes": 351414,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -402,7 +408,7 @@
           "via": "earlier X API read"
         }
       },
-      "notes": "#1 r/memes top-this-week and #4 top-this-month (Nov 5 6am)."
+      "notes": "#1 r/memes top-this-week and #4 top-this-month (Nov 5 ~11am PT)."
     },
     {
       "id": "regretamine",
@@ -423,8 +429,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8270289,
-          "likes": 92524,
+          "views": 8271829,
+          "likes": 92519,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -450,8 +456,8 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6523224,
-          "likes": 30883,
+          "views": 6523950,
+          "likes": 30882,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -478,7 +484,7 @@
           "Reddit"
         ]
       },
-      "notes": "#8 on r/memes top-this-week (Nov 3).",
+      "notes": "#9 r/memes top-this-week (Nov 5 ~11am PT).",
       "also": []
     },
     {
@@ -499,7 +505,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 68079,
+          "views": 68084,
           "likes": 2788,
           "checked": "2026-11-05",
           "via": "X API"
@@ -546,7 +552,7 @@
         "kym_views": 8803,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 328834,
+          "views": 328852,
           "likes": 23695,
           "checked": "2026-11-05",
           "via": "X API"
@@ -578,7 +584,7 @@
       "first_seen": "2026-10-23",
       "also": [
         {
-          "name": "X / @PopBase (2.20M views)",
+          "name": "X / @PopBase (2.2M views)",
           "url": "https://x.com/PopBase/status/2114415796890038370"
         },
         {
@@ -611,8 +617,8 @@
         "kym_views": 18860,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2200384,
-          "likes": 43172,
+          "views": 2200422,
+          "likes": 43173,
           "checked": "2026-11-05",
           "via": "X API"
         },
@@ -798,7 +804,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 19411,
+        "kym_views": 19567,
         "x_news": true,
         "x": {
           "views": 475000,
@@ -845,7 +851,7 @@
           "Reddit"
         ]
       },
-      "notes": "#10 on r/memes top-this-month (Nov 3).",
+      "notes": "#10 r/memes top-this-month (Nov 5 ~11am PT).",
       "also": []
     },
     {
@@ -1033,7 +1039,7 @@
         "kym": true,
         "kym_editorial": true,
         "x_news": true,
-        "kym_views": 179778,
+        "kym_views": 179942,
         "tiktok": {
           "likes": 89000,
           "via": "KYM-cited count",
@@ -1176,7 +1182,7 @@
           "Reddit"
         ]
       },
-      "notes": "#1 on r/memes top-this-month (Nov 3).",
+      "notes": "#1 r/memes top-this-month (Nov 5 ~11am PT).",
       "also": []
     },
     {
@@ -1207,7 +1213,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3498788,
+          "views": 3498962,
           "likes": 118642,
           "checked": "2026-11-05",
           "via": "X API"
@@ -1240,8 +1246,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/vwxyz_4/status/2115203529795326309",
-          "views": 7246979,
-          "likes": 82831,
+          "views": 7251070,
+          "likes": 82832,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1274,7 +1280,7 @@
           "Reddit"
         ]
       },
-      "notes": "#4 on r/memes top-this-week (Nov 4) as 'It's all for RAM and RAM's for all!' — Braveheart-style Altman DRAM shortage riff.",
+      "notes": "#6 r/memes top-this-week (Nov 5 ~11am PT). Braveheart-style Altman DRAM shortage riff.",
       "headline_reviewed": true
     },
     {
@@ -1297,7 +1303,7 @@
           "Reddit"
         ]
       },
-      "notes": "#3 on r/memes top-this-week (Nov 4). Walrus colony standing in for sprouting potatoes.",
+      "notes": "#4 r/memes top-this-week / #19 month (Nov 5 ~11am PT). Walrus colony standing in for sprouting potatoes.",
       "headline_reviewed": true,
       "also": []
     },
@@ -1320,7 +1326,7 @@
           "Reddit"
         ]
       },
-      "notes": "#10 on r/memes top-this-week (Nov 4).",
+      "notes": "#10 r/memes top-this-week (Nov 5 ~11am PT).",
       "headline_reviewed": true,
       "also": []
     },
@@ -1344,7 +1350,7 @@
           "Reddit"
         ]
       },
-      "notes": "#1 r/dankmemes top-this-week / #7 month (Nov 5).",
+      "notes": "#1 r/dankmemes top-this-week / #7 month (Nov 5 ~11am PT).",
       "headline_reviewed": true,
       "also": []
     },
@@ -1367,7 +1373,7 @@
           "Reddit"
         ]
       },
-      "notes": "#2 on r/memes top-this-week and #14 on top-this-month (Nov 3). Drake-style panel contrasting Big Tech AI messaging with people using AI to jailbreak consoles and decompile games.",
+      "notes": "#14 r/memes top-this-month (Nov 5 ~11am PT).",
       "headline_reviewed": true,
       "also": []
     },
@@ -1391,7 +1397,7 @@
           "Reddit"
         ]
       },
-      "notes": "#2 on r/memes top-this-week (Nov 4 9am). Manager vs handbook training joke.",
+      "notes": "#5 r/memes top-this-week / #20 month (Nov 5 ~11am PT). Manager vs handbook training joke.",
       "headline_reviewed": true,
       "also": []
     },
@@ -1422,8 +1428,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1470321,
-          "likes": 26794,
+          "views": 1470861,
+          "likes": 26793,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1458,8 +1464,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 136768,
-          "likes": 16114,
+          "views": 136841,
+          "likes": 16120,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1492,7 +1498,7 @@
           "Reddit"
         ]
       },
-      "notes": "#5 on r/dankmemes top-this-week (Nov 4 9am). Collage of laughing billionaires with the caption about redirected blame.",
+      "notes": "#4 r/dankmemes top-this-week / #21 month (Nov 5 ~11am PT).",
       "headline_reviewed": true
     },
     {
@@ -1612,8 +1618,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6191130,
-          "likes": 183925,
+          "views": 6199190,
+          "likes": 183947,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1647,8 +1653,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1097090,
-          "likes": 54497,
+          "views": 1097537,
+          "likes": 54506,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1685,7 +1691,7 @@
           "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         },
         {
-          "name": "TikTok / @boby.biggsjohnson (5.7M views)",
+          "name": "TikTok / @boby.biggsjohnson (5.8M views)",
           "url": "https://www.tiktok.com/@boby.biggsjohnson/video/7703585816429235487"
         }
       ],
@@ -1697,12 +1703,12 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 1604,
+        "kym_views": 1626,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334091,
-          "likes": 3047,
+          "views": 334108,
+          "likes": 3048,
           "checked": "2026-11-05",
           "via": "X API"
         },
@@ -1746,13 +1752,13 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 19
+          "rank": 17
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#22 on r/dankmemes top-this-week (Nov 4 9am); aged off top-today. List joke: doctors/dentists help; chiropractors get a frantic slam-down clip punchline.",
+      "notes": "#17 r/dankmemes top-this-week (Nov 5 ~11am PT).",
       "headline_reviewed": true,
       "also": []
     },
@@ -1769,13 +1775,13 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 20
+          "rank": 19
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#1 on r/dankmemes top-today and still on top-this-week (Nov 4 9am). Mike Tyson 'Now Kith' pigeon template labeled Raising prices / Layoffs. Noon 11-04: dropped from dankmemes day top; still week #24.",
+      "notes": "#19 r/dankmemes top-this-week (Nov 5 ~11am PT).",
       "headline_reviewed": true,
       "also": []
     },
@@ -1798,7 +1804,7 @@
           "Reddit"
         ]
       },
-      "notes": "#9 r/dankmemes top-this-week (Nov 5). Elizabeth Holmes gym-cancel Hotel California Rules. First seen Nov 4. | periods refreshed 7 AM Nov 5 → ['weekly'].",
+      "notes": "#9 r/dankmemes top-this-week (Nov 5 ~11am PT). Elizabeth Holmes gym-cancel Hotel California Rules.",
       "headline_reviewed": true,
       "also": []
     },
@@ -1822,7 +1828,7 @@
           "Reddit"
         ]
       },
-      "notes": "#2 r/memes week / #15 month (Nov 5). Coffin more space-efficient than Altman housing vs datacenters. First seen Nov 4. | periods refreshed 7 AM Nov 5 → ['weekly', 'monthly'].",
+      "notes": "#2 r/memes week / #15 month (Nov 5 ~11am PT). Coffin more space-efficient than Altman housing vs datacenters.",
       "headline_reviewed": true,
       "also": []
     },
@@ -1889,7 +1895,7 @@
           "Reddit"
         ]
       },
-      "notes": "#5 r/memes week (Nov 5). Altman RAM-adan. First seen Nov 4. | periods refreshed 7 AM Nov 5 → ['weekly'].",
+      "notes": "#3 r/memes week / #18 month (Nov 5 ~11am PT). Altman RAM-adan.",
       "headline_reviewed": true
     },
     {
@@ -1905,13 +1911,13 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 24
+          "rank": 23
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#3 on r/dankmemes top-today (Nov 4 9am). Split meme: complex AI-trading dashboards make $0.17; a simple phishing PDF joke is labeled with a massive profit figure.",
+      "notes": "#23 r/dankmemes top-this-week (Nov 5 ~11am PT).",
       "headline_reviewed": true,
       "also": []
     },
@@ -1940,7 +1946,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 169156,
+          "views": 169472,
           "likes": 7468,
           "checked": "2026-11-05",
           "via": "X API"
@@ -2023,12 +2029,12 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 246295,
-          "likes": 27063,
+          "views": 246438,
+          "likes": 27069,
           "checked": "2026-11-05",
           "via": "X API"
         },
-        "kym_views": 4780
+        "kym_views": 4903
       },
       "notes": "KYM-cited TikTok @hard_plushie 9.1M views / 2.4M likes (fetch_social Nov 5); @watosis 322K; YT LiMC 485K; KYM 4,254 views; still on Popular/Weekly.",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026"
@@ -2054,7 +2060,7 @@
           "Reddit"
         ]
       },
-      "notes": "#3 r/dankmemes top-week (Nov 5 10am; off day top). Squid Game Gi-hun cheer as Americans every election.",
+      "notes": "#3 r/dankmemes top-week / #11 month (Nov 5 ~11am PT; off day top). Squid Game Gi-hun cheer as Americans every election.",
       "headline_reviewed": true,
       "also": []
     },
@@ -2077,7 +2083,7 @@
           "Reddit"
         ]
       },
-      "notes": "#3 on r/memes top-today (Nov 4 6pm). Putin-in-Red-Square suction-cup arrow clip, captioned as leaving a family gathering after saying something controversial.",
+      "notes": "#19 r/memes top-this-week (Nov 5 ~11am PT).",
       "headline_reviewed": true,
       "also": [],
       "minor_reviewed": true
@@ -2099,7 +2105,7 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 347060,
+        "kym_views": 347228,
         "kym_editorial": false
       }
     }
