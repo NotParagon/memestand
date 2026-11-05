@@ -14,7 +14,7 @@
       "first_seen": "2026-11-03",
       "also": [
         {
-          "name": "X / @MeganBitchell (2.82M views)",
+          "name": "X / @MeganBitchell (2.88M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -22,7 +22,7 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (785K views)",
+          "name": "TikTok / @elionwillpower (810K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
@@ -37,23 +37,22 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 1484,
+        "kym_views": 1598,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 2824368,
-          "likes": 150221,
+          "views": 2877505,
+          "likes": 153050,
           "checked": "2026-11-04",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 785300,
-          "likes": 129300,
+          "views": 809600,
+          "likes": 131000,
           "author": "@elionwillpower",
           "posted": "2026-11-04",
           "checked": "2026-11-04",
-          "via": "TikTok post page (embedded in the KYM entry)",
-          "posts_read": 3
+          "via": "fetch_social"
         }
       },
       "notes": "KYM entry + X News midterm blue-sweep slang. Peak X post @MeganBitchell ~2.82M views; TikTok @elionwillpower ~785K views (Nov 4 7pm).",
@@ -88,8 +87,8 @@
         "kym_views": 120954,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 16987499,
-          "likes": 351452,
+          "views": 16988088,
+          "likes": 351449,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -153,8 +152,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8239420,
-          "likes": 92504,
+          "views": 8241790,
+          "likes": 92510,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -179,8 +178,8 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6506595,
-          "likes": 30851,
+          "views": 6507879,
+          "likes": 30857,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -228,7 +227,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 67974,
+          "views": 67990,
           "likes": 2789,
           "checked": "2026-11-04",
           "via": "X API"
@@ -251,7 +250,7 @@
       "first_seen": "2026-10-24",
       "also": [
         {
-          "name": "X / @dogwife333 (328K views)",
+          "name": "X / @dogwife333 (329K views)",
           "url": "https://x.com/dogwife333/status/2114198070132961395"
         },
         {
@@ -272,10 +271,10 @@
         "kym": true,
         "x_news": true,
         "kym_editorial": true,
-        "kym_views": 8697,
+        "kym_views": 8775,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 328490,
+          "views": 328516,
           "likes": 23698,
           "checked": "2026-11-04",
           "via": "X API"
@@ -307,7 +306,7 @@
       "first_seen": "2026-10-23",
       "also": [
         {
-          "name": "X / @PopBase (2.2M views)",
+          "name": "X / @PopBase (2.20M views)",
           "url": "https://x.com/PopBase/status/2114415796890038370"
         },
         {
@@ -340,8 +339,8 @@
         "kym_views": 18407,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2199858,
-          "likes": 43180,
+          "views": 2199905,
+          "likes": 43172,
           "checked": "2026-11-04",
           "via": "X API"
         },
@@ -394,7 +393,7 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 1895,
+        "kym_views": 2058,
         "tiktok": {
           "url": "https://www.tiktok.com/@_mc_chicken_lover/video/7699223914823617823",
           "views": 16000000,
@@ -527,7 +526,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 17157,
+        "kym_views": 17388,
         "x_news": true,
         "x": {
           "views": 475000,
@@ -762,7 +761,7 @@
         "kym": true,
         "kym_editorial": true,
         "x_news": true,
-        "kym_views": 178317,
+        "kym_views": 178392,
         "tiktok": {
           "likes": 89000,
           "via": "KYM-cited count",
@@ -936,8 +935,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3495859,
-          "likes": 118664,
+          "views": 3496110,
+          "likes": 118662,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -969,8 +968,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/vwxyz_4/status/2115203529795326309",
-          "views": 7149469,
-          "likes": 82857,
+          "views": 7160364,
+          "likes": 82859,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1042,7 +1041,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 11
+          "rank": 10
         },
         "platforms": [
           "Reddit"
@@ -1078,7 +1077,7 @@
     {
       "id": "genie-ai-jailbreak",
       "periods": [
-        "weekly"
+        "monthly"
       ],
       "title": "THE GENIE IS OUT: REDDIT CONTRASTS CORPORATE AI WITH JAILBREAK CULTURE",
       "source_url": "https://www.reddit.com/r/memes/comments/1xhnyz5/the_genie_is_out_of_the_bottle/",
@@ -1148,8 +1147,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1457296,
-          "likes": 26803,
+          "views": 1460562,
+          "likes": 26804,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1184,8 +1183,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 135804,
-          "likes": 16088,
+          "views": 135909,
+          "likes": 16090,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1237,7 +1236,7 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 1088,
+        "kym_views": 1176,
         "tiktok": {
           "url": "https://www.tiktok.com/@ristyisvalid/video/7699927769479810335",
           "views": 2700000,
@@ -1277,7 +1276,7 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 47791,
+        "kym_views": 47901,
         "tiktok": {
           "url": "https://www.tiktok.com/@._bella_141/video/7672239822450265374",
           "views": 216200,
@@ -1338,8 +1337,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 5943999,
-          "likes": 182880,
+          "views": 5956848,
+          "likes": 182996,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1373,8 +1372,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1085574,
-          "likes": 54222,
+          "views": 1087514,
+          "likes": 54277,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1395,7 +1394,7 @@
       "first_seen": "2026-11-01",
       "also": [
         {
-          "name": "X / @Flovaai (330K views)",
+          "name": "X / @Flovaai (333K views)",
           "url": "https://x.com/Flovaai/status/2117466712597839938"
         },
         {
@@ -1423,12 +1422,12 @@
           "Instagram"
         ],
         "kym": true,
-        "kym_views": 1219,
+        "kym_views": 1251,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 329619,
-          "likes": 3004,
+          "views": 333419,
+          "likes": 3046,
           "checked": "2026-11-04",
           "via": "X API"
         },
@@ -1439,43 +1438,20 @@
           "author": "@leehoustonx",
           "posted": "2026-11-01",
           "checked": "2026-11-04",
-          "via": "TikTok post page (embedded in the KYM entry)",
-          "posts_read": 2
+          "via": "fetch_social"
         },
         "instagram": {
           "url": "https://www.instagram.com/reel/DfMHsr-hYPF/",
           "likes": 11000000,
           "author": "@kevinwinnik",
-          "posted": "October 31, 2026",
+          "posted": "2026-10-31",
           "checked": "2026-11-04",
-          "via": "Instagram post page (embedded in the KYM entry)"
+          "via": "fetch_social"
         }
       },
       "notes": "KYM entry published Nov 3, 2026 (~954 page views): original TikTok by @leehoustonx on Nov 1; wave of AI remakes on TikTok/Reels/X. @Flovaai remix 2,558 likes / 285K views (X API, Nov 4 noon). X News story on the cafe seating mix-up. Nov 4 noon reads: TikTok @leehoustonx 10.5M views; Instagram @kevinwinnik 11M likes.",
       "first_seen_basis": "KYM cites TikTok original Nov 1, 2026",
       "headline_reviewed": true
-    },
-    {
-      "id": "auto-1080p",
-      "periods": [],
-      "title": "'AUTO 1080P' vs. MANUAL 1080P: PIXELATED TROJAN WAR SIDE-BY-SIDE",
-      "source_url": "https://www.reddit.com/r/memes/comments/1xmtiyn/144p_disguised_as_1080p/",
-      "source_name": "Reddit r/memes",
-      "image_url": "https://i.redd.it/y28tueltkezh1.jpeg",
-      "first_seen": "2026-11-03",
-      "ev": {
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#9 on r/memes top-this-week (Nov 4 9am); aged off top-today. Side-by-side: Auto 1080p looks like 144p; manually picking 1080p is sharp.",
-      "headline_reviewed": true,
-      "also": [
-        {
-          "name": "r/memes week #9",
-          "url": "https://www.reddit.com/r/memes/comments/1xmtiyn/144p_disguised_as_1080p/"
-        }
-      ]
     },
     {
       "id": "chiropractor-kyary",
@@ -1490,7 +1466,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 20
+          "rank": 19
         },
         "platforms": [
           "Reddit"
@@ -1513,7 +1489,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 23
+          "rank": 21
         },
         "platforms": [
           "Reddit"
@@ -1587,7 +1563,7 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 863,
+        "kym_views": 1080,
         "tiktok": {
           "url": "https://www.tiktok.com/@yotwintsaccountistuff/video/7690778682075516174",
           "views": 8600000,
@@ -1687,8 +1663,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 158697,
-          "likes": 7291,
+          "views": 159660,
+          "likes": 7317,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1709,11 +1685,11 @@
       "first_seen": "2026-10-19",
       "also": [
         {
-          "name": "X / @LashSleeper (243K views)",
+          "name": "X / @LashSleeper (244K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
-          "name": "TikTok / @watosis (311K views)",
+          "name": "TikTok / @watosis (314K views)",
           "url": "https://www.tiktok.com/@watosis/video/7703458958266092831"
         },
         {
@@ -1737,20 +1713,20 @@
         "kym_editorial": true,
         "tiktok": {
           "url": "https://www.tiktok.com/@watosis/video/7703458958266092831",
-          "views": 312500,
-          "likes": 60600,
+          "views": 313500,
+          "likes": 60800,
           "author": "@watosis",
           "posted": "2026-11-02",
           "checked": "2026-11-04",
-          "via": "TikTok post page (cited in the KYM entry)"
+          "via": "fetch_social"
         },
         "instagram": {
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/",
-          "likes": 72000,
+          "likes": 73000,
           "author": "@thebigsolomando",
-          "posted": "November 2, 2026",
+          "posted": "2026-11-02",
           "checked": "2026-11-04",
-          "via": "Instagram post page (embedded in the KYM entry)"
+          "via": "fetch_social"
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI",
@@ -1762,12 +1738,12 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 243350,
-          "likes": 27031,
+          "views": 243695,
+          "likes": 27039,
           "checked": "2026-11-04",
           "via": "X API"
         },
-        "kym_views": 3210
+        "kym_views": 3379
       },
       "notes": "KYM entry added Nov 3, 2026, plus a KYM explainer the same day; earliest known use is an Oct 19 Instagram post. Reads on Nov 4 (10am PT): YouTube 'Frutiger Aero Yams To Your Right' 416K views in about a day; @LashSleeper yam image 240K views / 27K likes on X; @watosis slang-overload TikTok 299K views; @thebigsolomando Instagram post 70K likes.",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026"
@@ -1863,6 +1839,27 @@
       "notes": "#6 on r/memes top-today (Nov 4 6pm). Red Skull / Social Security gag.",
       "headline_reviewed": true,
       "also": []
+    },
+    {
+      "id": "were-just-normal-men",
+      "periods": [
+        "weekly",
+        "monthly"
+      ],
+      "title": "'WE'RE JUST NORMAL MEN': CBBC HACKER T. DOG CLIP KEEPS CIRCULATING AS A DENIAL MEME",
+      "source_url": "https://knowyourmeme.com/memes/were-just-normal-men",
+      "source_name": "Know Your Meme",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/040/269/rSwL0KBaHpfDWRGEFLGFX-vr3iAvRuyUQeK2WlNTgco.jpeg",
+      "first_seen": "2022-04-25",
+      "also": [],
+      "ev": {
+        "platforms": [
+          "Know Your Meme"
+        ],
+        "kym": true,
+        "kym_views": 346651,
+        "kym_editorial": false
+      }
     }
   ]
 }
