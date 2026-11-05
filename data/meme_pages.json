@@ -171,6 +171,31 @@
       ],
       "checked": "2026-11-03T23:51:43-08:00"
     },
+    "altman-ramesses": {
+      "name": "Let the Man Rest / Altman Ramesses",
+      "ids": [
+        "altman-ramesses"
+      ],
+      "status": "short",
+      "explainer": "A photo of Sam Altman smiling next to an Egyptian sarcophagus is captioned as Altman reacting after hearing about the mummy of King \"Ram esses II\" — a pun that splits Ramesses so the \"Ram\" lands like computer RAM. In the broader November 2026 wave of jokes about DRAM shortages and Altman comments on memory allocation, the punchline is that even a pharaoh's name sounds like free RAM to him. Commenters often reply \"let the man rest.\"",
+      "origin": "The ranked post is an r/memes upload by u/ZealousidealChain473 on November 5, 2026, titled \"Let the man rest,\" pairing the Altman-with-sarcophagus image with the Ramesses/RAM pun. MemeStand has not confirmed an earlier first post or the original photographer/creator of the image, so the original creator of this specific caption remains unconfirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Sam Altman after hearing about the mummy of King Ram esses II",
+        "let the man rest"
+      ],
+      "source_url": "https://www.reddit.com/r/memes/comments/1xod9dz/let_the_man_rest/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "Reddit r/memes — Let the man rest",
+          "url": "https://www.reddit.com/r/memes/comments/1xod9dz/let_the_man_rest/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-05",
+      "checked": "2026-11-05T07:14:10-08:00"
+    },
     "anakin-skywalker-gen-z-male-rage": {
       "name": "Anakin Skywalker Gen Z Male Rage",
       "ids": [
@@ -1632,6 +1657,30 @@
       "related": [],
       "written": "2026-11-05",
       "checked": "2026-11-05T06:13:38-08:00"
+    },
+    "ww3-or-christmas": {
+      "name": "WW3 or Christmas?",
+      "ids": [
+        "ww3-or-christmas"
+      ],
+      "status": "short",
+      "explainer": "A one-liner joke that asks whether the speaker should be preparing for World War III or for Christmas, \"because I dont have the budget for both.\" It treats escalating geopolitical anxiety and ordinary holiday spending as competing line items on the same exhausted personal budget.",
+      "origin": "The ranked post is from X user @HorrorGorl on November 3, 2026: \"Should I be preparing for WW3 or Christmas, because I dont have the budget for both. FFS.\" MemeStand has not confirmed whether the joke circulated in the same wording before that post, so the original creator remains unconfirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Should I be preparing for WW3 or Christmas, because I dont have the budget for both."
+      ],
+      "source_url": "https://x.com/HorrorGorl/status/2117609954563477790",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "X / @HorrorGorl",
+          "url": "https://x.com/HorrorGorl/status/2117609954563477790"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-05",
+      "checked": "2026-11-05T07:14:10-08:00"
     },
     "youre-blatantly-just-not-me-nan": {
       "name": "You're Blatantly Just Not Me Nan",

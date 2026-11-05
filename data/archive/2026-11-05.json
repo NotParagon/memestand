@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T06:12-08:00",
+  "updated": "2026-11-05T07:13-08:00",
   "daily": [
     {
       "rank": 1,
@@ -152,6 +152,24 @@
     },
     {
       "rank": 5,
+      "id": "crack-a-monster",
+      "title": "'IT'S NOT THAT DEEP. CRACK A MONSTER.': MONSTER ENERGY'S OWN POST BECOMES THE COPE MEME",
+      "image": null,
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/MonsterEnergy/status/2118012916586676345",
+      "source_name": "X / @MonsterEnergy",
+      "credit": "posted by @MonsterEnergy on X",
+      "also": [],
+      "first_seen": "2026-11-05",
+      "score": 70.0,
+      "sources": [
+        "X"
+      ],
+      "notes": "Monster Energy brand post (Nov 4) 'it's not that deep. crack a monster.' X API 3,138,503 views / 43,816 likes; X News trending story about the reply chain (Nov 5)."
+    },
+    {
+      "rank": 6,
       "id": "britannica-mitochondria",
       "title": "BRITANNICA'S ELECTION-NIGHT JOKE: 'CNN PROJECTS MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL'",
       "image": null,
@@ -174,40 +192,22 @@
       "notes": "1.09M views / 54.5K likes on @Britannica's mitochondria powerhouse joke (X API, Nov 5 6am)."
     },
     {
-      "rank": 6,
-      "id": "crack-a-monster",
-      "title": "'IT'S NOT THAT DEEP. CRACK A MONSTER.': MONSTER ENERGY'S OWN POST BECOMES THE COPE MEME",
-      "image": null,
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-      "source_name": "X / @MonsterEnergy",
-      "credit": "posted by @MonsterEnergy on X",
-      "also": [],
-      "first_seen": "2026-11-05",
-      "score": 64.7,
-      "sources": [
-        "X"
-      ],
-      "notes": "Official @MonsterEnergy reply-bait post 'it's not that deep. crack a monster.' hit 2.96M views / 42.8K likes (X API, Nov 5 6am). Spawned quote-tweet cope edits."
-    },
-    {
       "rank": 7,
-      "id": "just-mention-india",
-      "title": "'JUST MENTION INDIA': STOCK-FOOTAGE JOKE ABOUT YOUTUBE CHANNELS MILKING INDIA FOR VIEWS",
-      "image": "images/just-mention-india.jpg",
+      "id": "altman-ramesses",
+      "title": "'LET THE MAN REST': SAM ALTMAN AS RAMESSES II IN THE RAM MEME WAVE",
+      "image": "images/altman-ramesses.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://www.reddit.com/r/memes/comments/1xnp51d/just_mention_india/",
-      "source_name": "Reddit r/memes /u/DrDrakeRemorayy",
-      "credit": "posted by u/DrDrakeRemorayy on r/memes",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xod9dz/let_the_man_rest/",
+      "source_name": "Reddit r/memes /u/ZealousidealChain473",
+      "credit": "posted by u/ZealousidealChain473 on r/memes",
       "also": [],
       "first_seen": "2026-11-05",
       "score": 62.0,
       "sources": [
         "Reddit"
       ],
-      "notes": "#1 r/memes top-today (Nov 5 6am). Template joke that YouTube channels add India B-roll / mention India to farm views."
+      "notes": "#1 r/memes top-today (Nov 5 7am; was #3 at 6am). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme cycle."
     },
     {
       "rank": 8,
@@ -225,28 +225,10 @@
       "sources": [
         "Reddit"
       ],
-      "notes": "#2 r/memes top-today (Nov 5). Nostalgia 'you finally woke up' CRT/N64 GoldenEye scene dismissing housing crisis / data centers."
+      "notes": "#2 r/memes top-today (Nov 5 7am). Nostalgia 'you finally woke up' CRT/N64 GoldenEye scene dismissing housing crisis / data centers."
     },
     {
       "rank": 9,
-      "id": "altman-houses-vs-datacenters",
-      "title": "ALTMAN-STYLE RANT MEME: HOUSES ARE A 'TERRIBLE USE OF SPACE' vs. AI DATA CENTERS",
-      "image": "images/altman-houses-vs-datacenters.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://www.reddit.com/r/memes/comments/1xnkv3y/a_coffin_is_more_space_efficient/",
-      "source_name": "Reddit r/memes",
-      "credit": "posted by u/ManagerOfLove on r/memes",
-      "also": [],
-      "first_seen": "2026-11-04",
-      "score": 60.0,
-      "sources": [
-        "Reddit"
-      ],
-      "notes": "#2 r/memes week / #15 month (Nov 5). Coffin more space-efficient than Altman housing vs datacenters. First seen Nov 4."
-    },
-    {
-      "rank": 10,
       "id": "election-squid-hope",
       "title": "AMERICANS EVERY ELECTION: SQUID GAME CHEER — 'TALE AS OLD AS TIME'",
       "image": "images/election-squid-hope.jpg",
@@ -261,7 +243,25 @@
       "sources": [
         "Reddit"
       ],
-      "notes": "#1 r/dankmemes top-today, #3 week, #12 month (Nov 5). Squid Game Gi-hun cheer as Americans every election."
+      "notes": "#1 r/dankmemes top-today, #3 week, #12 month (Nov 5 7am). Squid Game Gi-hun cheer as Americans every election."
+    },
+    {
+      "rank": 10,
+      "id": "ww3-or-christmas",
+      "title": "'WW3 OR CHRISTMAS?': BUDGET JOKE ABOUT PREPARING FOR BOTH GOES VIRAL",
+      "image": null,
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/HorrorGorl/status/2117609954563477790",
+      "source_name": "X / @HorrorGorl",
+      "credit": "posted by @HorrorGorl on X",
+      "also": [],
+      "first_seen": "2026-11-03",
+      "score": 58.5,
+      "sources": [
+        "X"
+      ],
+      "notes": "@HorrorGorl: 'Should I be preparing for WW3 or Christmas, because I dont have the budget for both.' 709K views / 36.5K likes (X API, Nov 5)."
     }
   ],
   "weekly": [
