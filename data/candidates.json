@@ -14,7 +14,7 @@
       "first_seen": "2026-11-03",
       "also": [
         {
-          "name": "X / @MeganBitchell (2.88M views)",
+          "name": "X / @MeganBitchell (2.92M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -22,7 +22,7 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (810K views)",
+          "name": "TikTok / @elionwillpower (828K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
@@ -32,30 +32,30 @@
       ],
       "ev": {
         "platforms": [
-          "X",
+          "Know Your Meme",
           "TikTok",
-          "Know Your Meme"
+          "X"
         ],
         "kym": true,
-        "kym_views": 1598,
+        "kym_views": 1674,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 2877505,
-          "likes": 153050,
+          "views": 2918616,
+          "likes": 155441,
           "checked": "2026-11-04",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 809600,
-          "likes": 131000,
+          "views": 828400,
+          "likes": 132000,
           "author": "@elionwillpower",
           "posted": "2026-11-04",
           "checked": "2026-11-04",
           "via": "fetch_social"
         }
       },
-      "notes": "KYM entry + X News midterm blue-sweep slang. Peak X post @MeganBitchell ~2.82M views; TikTok @elionwillpower ~785K views (Nov 4 7pm).",
+      "notes": "KYM entry + X News midterm blue-sweep slang. Peak X post @MeganBitchell ~2.92M views; TikTok @elionwillpower ~828K views (Nov 4 9pm EOD).",
       "first_seen_basis": "KYM cites pre-election buildup; @MeganBitchell \"Woke 3 starts tonight\" Nov 3, 2026",
       "headline_reviewed": true
     },
@@ -78,8 +78,8 @@
       ],
       "ev": {
         "platforms": [
-          "X",
-          "Know Your Meme"
+          "Know Your Meme",
+          "X"
         ],
         "kym": true,
         "x_news": false,
@@ -87,8 +87,8 @@
         "kym_views": 120954,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 16988088,
-          "likes": 351449,
+          "views": 16988585,
+          "likes": 351448,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -152,8 +152,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8241790,
-          "likes": 92510,
+          "views": 8243751,
+          "likes": 92502,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -178,8 +178,8 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6507879,
-          "likes": 30857,
+          "views": 6508808,
+          "likes": 30860,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -227,7 +227,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 67990,
+          "views": 68000,
           "likes": 2789,
           "checked": "2026-11-04",
           "via": "X API"
@@ -264,17 +264,17 @@
       ],
       "ev": {
         "platforms": [
-          "X",
           "Know Your Meme",
-          "TikTok"
+          "TikTok",
+          "X"
         ],
         "kym": true,
         "x_news": true,
         "kym_editorial": true,
-        "kym_views": 8775,
+        "kym_views": 8803,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 328516,
+          "views": 328536,
           "likes": 23698,
           "checked": "2026-11-04",
           "via": "X API"
@@ -328,18 +328,18 @@
       ],
       "ev": {
         "platforms": [
-          "Know Your Meme",
-          "X",
-          "TikTok",
           "Instagram",
+          "Know Your Meme",
+          "TikTok",
+          "X",
           "YouTube"
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 18407,
+        "kym_views": 18528,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2199905,
+          "views": 2199953,
           "likes": 43172,
           "checked": "2026-11-04",
           "via": "X API"
@@ -388,12 +388,12 @@
       "first_seen": "2026-10-27",
       "ev": {
         "platforms": [
-          "TikTok",
-          "Know Your Meme"
+          "Know Your Meme",
+          "TikTok"
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 2058,
+        "kym_views": 2066,
         "tiktok": {
           "url": "https://www.tiktok.com/@_mc_chicken_lover/video/7699223914823617823",
           "views": 16000000,
@@ -427,12 +427,12 @@
       "first_seen": "2026-10-28",
       "ev": {
         "platforms": [
-          "TikTok",
-          "Know Your Meme"
+          "Know Your Meme",
+          "TikTok"
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 1455,
+        "kym_views": 1664,
         "tiktok": {
           "url": "https://www.tiktok.com/@durk.clips/video/7700402916250651934",
           "views": 13200000,
@@ -468,13 +468,13 @@
       "first_seen": "2026-10-26",
       "ev": {
         "platforms": [
+          "Know Your Meme",
           "TikTok",
-          "YouTube",
-          "Know Your Meme"
+          "YouTube"
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 4159,
+        "kym_views": 4527,
         "tiktok": {
           "url": "https://www.tiktok.com/@notmemetime/video/7700255100073217301",
           "views": 3600000,
@@ -521,12 +521,12 @@
       "ev": {
         "platforms": [
           "Know Your Meme",
-          "X",
           "TikTok",
+          "X",
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 17388,
+        "kym_views": 17567,
         "x_news": true,
         "x": {
           "views": 475000,
@@ -534,11 +534,11 @@
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=xJb6VuMWbRE",
-          "views": 543395,
+          "views": 558904,
           "title": "They're Not Happy About Zoomer Anakin",
           "channel": "Akkad Daily",
           "checked": "2026-11-04",
-          "via": "YouTube video page"
+          "via": "fetch_social"
         }
       },
       "notes": "KYM Anakin Skywalker Gen Z Male Rage Memes still Popular Right Now / Top Entry This Month (Nov 4 9am); ~14,844 KYM page views. Election-night Anakin edits also hit X News. Nov 4 reads (10am PT): YouTube 'They're Not Happy About Zoomer Anakin' 543K views.",
@@ -708,11 +708,11 @@
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=Y2nO505167Y",
-          "views": 489210,
+          "views": 505280,
           "title": "Im So Sorry Trend Is STUPID",
           "channel": "RICHLEV",
           "checked": "2026-11-04",
-          "via": "YouTube video page"
+          "via": "fetch_social"
         }
       },
       "notes": "KYM cites 25.6M views. Nov 4 reads (10am PT): largest TikTok read directly @kamdan.13 604K views; YouTube 'Im So Sorry Trend Is STUPID' 489K views.",
@@ -761,7 +761,7 @@
         "kym": true,
         "kym_editorial": true,
         "x_news": true,
-        "kym_views": 178392,
+        "kym_views": 178589,
         "tiktok": {
           "likes": 89000,
           "via": "KYM-cited count",
@@ -935,8 +935,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3496110,
-          "likes": 118662,
+          "views": 3496317,
+          "likes": 118650,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -968,8 +968,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/vwxyz_4/status/2115203529795326309",
-          "views": 7160364,
-          "likes": 82859,
+          "views": 7168611,
+          "likes": 82862,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1147,8 +1147,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1460562,
-          "likes": 26804,
+          "views": 1461527,
+          "likes": 26803,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1183,7 +1183,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 135909,
+          "views": 135984,
           "likes": 16090,
           "checked": "2026-11-04",
           "via": "X API"
@@ -1337,8 +1337,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 5956848,
-          "likes": 182996,
+          "views": 5970647,
+          "likes": 183101,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1372,8 +1372,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1087514,
-          "likes": 54277,
+          "views": 1088831,
+          "likes": 54319,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1416,17 +1416,17 @@
       ],
       "ev": {
         "platforms": [
-          "TikTok",
-          "X",
+          "Instagram",
           "Know Your Meme",
-          "Instagram"
+          "TikTok",
+          "X"
         ],
         "kym": true,
-        "kym_views": 1251,
+        "kym_views": 1278,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 333419,
+          "views": 333542,
           "likes": 3046,
           "checked": "2026-11-04",
           "via": "X API"
@@ -1559,11 +1559,11 @@
       "first_seen": "2026-11-02",
       "ev": {
         "platforms": [
-          "TikTok",
-          "Know Your Meme"
+          "Know Your Meme",
+          "TikTok"
         ],
         "kym": true,
-        "kym_views": 1080,
+        "kym_views": 1091,
         "tiktok": {
           "url": "https://www.tiktok.com/@yotwintsaccountistuff/video/7690778682075516174",
           "views": 8600000,
@@ -1663,8 +1663,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 159660,
-          "likes": 7317,
+          "views": 160421,
+          "likes": 7343,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1697,23 +1697,23 @@
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
         },
         {
-          "name": "YouTube / Lessons in Meme Culture (469K views)",
+          "name": "YouTube / Lessons in Meme Culture (485K views)",
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
         }
       ],
       "ev": {
         "platforms": [
-          "X",
-          "TikTok",
           "Instagram",
-          "YouTube",
-          "Know Your Meme"
+          "Know Your Meme",
+          "TikTok",
+          "X",
+          "YouTube"
         ],
         "kym": true,
         "kym_editorial": true,
         "tiktok": {
           "url": "https://www.tiktok.com/@watosis/video/7703458958266092831",
-          "views": 313500,
+          "views": 314400,
           "likes": 60800,
           "author": "@watosis",
           "posted": "2026-11-02",
@@ -1730,20 +1730,20 @@
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI",
-          "views": 469050,
+          "views": 485141,
           "title": "Frutiger Aero Yams To Your Right",
           "channel": "Lessons in Meme Culture",
           "checked": "2026-11-04",
-          "via": "YouTube watch page"
+          "via": "fetch_social"
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 243695,
-          "likes": 27039,
+          "views": 244002,
+          "likes": 27046,
           "checked": "2026-11-04",
           "via": "X API"
         },
-        "kym_views": 3379
+        "kym_views": 3493
       },
       "notes": "KYM entry added Nov 3, 2026, plus a KYM explainer the same day; earliest known use is an Oct 19 Instagram post. Reads on Nov 4 (10am PT): YouTube 'Frutiger Aero Yams To Your Right' 416K views in about a day; @LashSleeper yam image 240K views / 27K likes on X; @watosis slang-overload TikTok 299K views; @thebigsolomando Instagram post 70K likes.",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026"
@@ -1857,7 +1857,7 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 346651,
+        "kym_views": 346686,
         "kym_editorial": false
       }
     }
