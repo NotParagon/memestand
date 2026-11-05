@@ -14,7 +14,7 @@
       "first_seen": "2026-11-03",
       "also": [
         {
-          "name": "X / @MeganBitchell (2.53M views)",
+          "name": "X / @MeganBitchell (2.65M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -22,11 +22,11 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (699K views)",
+          "name": "TikTok / @elionwillpower (726K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
-          "name": "TikTok / @travelingnurse (245K views)",
+          "name": "TikTok / @travelingnurse (248K views)",
           "url": "https://www.tiktok.com/@travelingnurse/video/7704183300255927583"
         }
       ],
@@ -37,18 +37,18 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 1100,
+        "kym_views": 1234,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 2530788,
-          "likes": 135350,
+          "views": 2650252,
+          "likes": 141424,
           "checked": "2026-11-04",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 698800,
-          "likes": 121500,
+          "views": 726300,
+          "likes": 124500,
           "author": "@elionwillpower",
           "posted": "2026-11-04",
           "checked": "2026-11-04",
@@ -56,7 +56,7 @@
           "posts_read": 3
         }
       },
-      "notes": "KYM entry added Nov 4, 2026 (838 page views; page marked safe-for-work on KYM): satirical \"Woke 3 / Woke 3.0\" slang around the 2026 U.S. midterm Democratic \"blue sweep.\" Early X posts Nov 3–4 by @MeganBitchell (peak checked: 2.34M views / 125K likes on \"WOKE 3\"). TikTok same-day clips include @elionwillpower 633K views and @travelingnurse 238K views (fetch_social Nov 4 ~2PM PT).",
+      "notes": "KYM entry added Nov 4, 2026 (838 page views; page marked safe-for-work on KYM): satirical \"Woke 3 / Woke 3.0\" slang around the 2026 U.S. midterm Democratic \"blue sweep.\" Early X posts Nov 3\u20134 by @MeganBitchell (peak checked: 2.34M views / 125K likes on \"WOKE 3\"). TikTok same-day clips include @elionwillpower 633K views and @travelingnurse 238K views (fetch_social Nov 4 ~2PM PT).",
       "first_seen_basis": "KYM cites pre-election buildup; @MeganBitchell \"Woke 3 starts tonight\" Nov 3, 2026",
       "headline_reviewed": true
     },
@@ -88,8 +88,8 @@
         "kym_views": 120954,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 16985638,
-          "likes": 351488,
+          "views": 16986245,
+          "likes": 351459,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -144,7 +144,7 @@
       "source_url": "https://x.com/elonmusk/status/2116875604889112772",
       "source_name": "X / @elonmusk",
       "image_url": null,
-      "card_text": "“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”",
+      "card_text": "\u201cI have this great idea for a drug called Regretamine. One dose and all your regrets are gone!\u201d",
       "first_seen": "2026-11-01",
       "ev": {
         "platforms": [
@@ -153,8 +153,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8233086,
-          "likes": 92500,
+          "views": 8235113,
+          "likes": 92493,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -171,7 +171,7 @@
       "source_url": "https://x.com/vibeistani/status/2116644824703279122",
       "source_name": "X / @vibeistani",
       "image_url": null,
-      "card_text": "“she only wants me for my pakistani citizenship”",
+      "card_text": "\u201cshe only wants me for my pakistani citizenship\u201d",
       "first_seen": "2026-10-31",
       "ev": {
         "platforms": [
@@ -179,8 +179,8 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6502649,
-          "likes": 30855,
+          "views": 6503960,
+          "likes": 30846,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -219,7 +219,7 @@
       "source_url": "https://x.com/leftcoastbabe/status/2116590353973395609",
       "source_name": "X / @leftcoastbabe",
       "image_url": null,
-      "card_text": "“Ken Paxton eats salsa made in New York City.”",
+      "card_text": "\u201cKen Paxton eats salsa made in New York City.\u201d",
       "first_seen": "2026-10-30",
       "ev": {
         "platforms": [
@@ -228,7 +228,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 67914,
+          "views": 67931,
           "likes": 2789,
           "checked": "2026-11-04",
           "via": "X API"
@@ -272,10 +272,10 @@
         "kym": true,
         "x_news": true,
         "kym_editorial": true,
-        "kym_views": 8540,
+        "kym_views": 8654,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 328392,
+          "views": 328414,
           "likes": 23700,
           "checked": "2026-11-04",
           "via": "X API"
@@ -337,11 +337,11 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 17341,
+        "kym_views": 18407,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2199720,
-          "likes": 43173,
+          "views": 2199755,
+          "likes": 43180,
           "checked": "2026-11-04",
           "via": "X API"
         },
@@ -527,7 +527,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 16541,
+        "kym_views": 16779,
         "x_news": true,
         "x": {
           "views": 475000,
@@ -762,7 +762,7 @@
         "kym": true,
         "kym_editorial": true,
         "x_news": true,
-        "kym_views": 177969,
+        "kym_views": 178106,
         "tiktok": {
           "likes": 89000,
           "via": "KYM-cited count",
@@ -936,8 +936,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3495129,
-          "likes": 118674,
+          "views": 3495361,
+          "likes": 118675,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -969,8 +969,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/vwxyz_4/status/2115203529795326309",
-          "views": 7115382,
-          "likes": 82861,
+          "views": 7126043,
+          "likes": 82863,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1003,7 +1003,7 @@
           "Reddit"
         ]
       },
-      "notes": "#4 on r/memes top-this-week (Nov 4) as 'It's all for RAM and RAM's for all!' — Braveheart-style Altman DRAM shortage riff.",
+      "notes": "#4 on r/memes top-this-week (Nov 4) as 'It's all for RAM and RAM's for all!' \u2014 Braveheart-style Altman DRAM shortage riff.",
       "headline_reviewed": true
     },
     {
@@ -1148,8 +1148,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1454515,
-          "likes": 26805,
+          "views": 1455195,
+          "likes": 26802,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1184,8 +1184,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 135512,
-          "likes": 16082,
+          "views": 135629,
+          "likes": 16086,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1338,8 +1338,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 5869483,
-          "likes": 180648,
+          "views": 5901997,
+          "likes": 181705,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1373,8 +1373,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1074298,
-          "likes": 53732,
+          "views": 1078353,
+          "likes": 53928,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1395,7 +1395,7 @@
       "first_seen": "2026-11-01",
       "also": [
         {
-          "name": "X / @Flovaai (310K views)",
+          "name": "X / @Flovaai (317K views)",
           "url": "https://x.com/Flovaai/status/2117466712597839938"
         },
         {
@@ -1403,7 +1403,7 @@
           "url": "https://x.com/i/trending/2117626647205875908"
         },
         {
-          "name": "TikTok / @leehoustonx (10.5M views)",
+          "name": "TikTok / @leehoustonx (10.6M views)",
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
         },
         {
@@ -1423,18 +1423,18 @@
           "Instagram"
         ],
         "kym": true,
-        "kym_views": 1156,
+        "kym_views": 1177,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 309812,
-          "likes": 2801,
+          "views": 316524,
+          "likes": 2864,
           "checked": "2026-11-04",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-          "views": 10500000,
+          "views": 10600000,
           "likes": 1400000,
           "author": "@leehoustonx",
           "posted": "2026-11-01",
@@ -1567,7 +1567,7 @@
           "Reddit"
         ]
       },
-      "notes": "#2 on r/memes top-today and #11 on top-this-week (Nov 4 9am). Sam Altman-at-the-window macro arguing houses waste space that data centers could use — satire of DRAM/AI-infra logic.",
+      "notes": "#2 on r/memes top-today and #11 on top-this-week (Nov 4 9am). Sam Altman-at-the-window macro arguing houses waste space that data centers could use \u2014 satire of DRAM/AI-infra logic.",
       "headline_reviewed": true,
       "also": []
     },
@@ -1635,7 +1635,7 @@
           "Reddit"
         ]
       },
-      "notes": "#1 on r/memes top-today and #8 on top-this-week (Nov 4 9am). Photo of Sam Altman with Gulf hosts captioned as his reaction after hearing about RAM — Ramadan pun on the ongoing AI DRAM joke wave.",
+      "notes": "#1 on r/memes top-today and #8 on top-this-week (Nov 4 9am). Photo of Sam Altman with Gulf hosts captioned as his reaction after hearing about RAM \u2014 Ramadan pun on the ongoing AI DRAM joke wave.",
       "headline_reviewed": true
     },
     {
@@ -1652,7 +1652,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 3
+          "rank": 4
         },
         "platforms": [
           "Reddit"
@@ -1671,7 +1671,7 @@
       "source_url": "https://x.com/marvo_sneh_/status/2117540565831066110",
       "source_name": "X / @marvo_sneh_",
       "image_url": null,
-      "card_text": "This girl said we should go on a hair date. She’ll pay for my haircut, and I’ll buy her a wig.",
+      "card_text": "This girl said we should go on a hair date. She\u2019ll pay for my haircut, and I\u2019ll buy her a wig.",
       "image_policy": "none",
       "first_seen": "2026-11-03",
       "also": [
@@ -1687,8 +1687,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 156402,
-          "likes": 7191,
+          "views": 157226,
+          "likes": 7234,
           "checked": "2026-11-04",
           "via": "X API"
         }
@@ -1713,7 +1713,7 @@
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
-          "name": "TikTok / @watosis (308K views)",
+          "name": "TikTok / @watosis (310K views)",
           "url": "https://www.tiktok.com/@watosis/video/7703458958266092831"
         },
         {
@@ -1737,8 +1737,8 @@
         "kym_editorial": true,
         "tiktok": {
           "url": "https://www.tiktok.com/@watosis/video/7703458958266092831",
-          "views": 308400,
-          "likes": 60000,
+          "views": 309900,
+          "likes": 60200,
           "author": "@watosis",
           "posted": "2026-11-02",
           "checked": "2026-11-04",
@@ -1762,12 +1762,12 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 242106,
-          "likes": 27015,
+          "views": 242561,
+          "likes": 27019,
           "checked": "2026-11-04",
           "via": "X API"
         },
-        "kym_views": 2843
+        "kym_views": 2988
       },
       "notes": "KYM entry added Nov 3, 2026, plus a KYM explainer the same day; earliest known use is an Oct 19 Instagram post. Reads on Nov 4 (10am PT): YouTube 'Frutiger Aero Yams To Your Right' 416K views in about a day; @LashSleeper yam image 240K views / 27K likes on X; @watosis slang-overload TikTok 299K views; @thebigsolomando Instagram post 70K likes.",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026"
