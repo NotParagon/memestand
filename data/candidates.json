@@ -19,8 +19,8 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 3285572,
-          "likes": 44776,
+          "views": 3467355,
+          "likes": 45480,
           "checked": "2026-11-05",
           "via": "X API"
         },
@@ -47,8 +47,8 @@
         ],
         "x": {
           "url": "https://x.com/HorrorGorl/status/2117609954563477790",
-          "views": 709310,
-          "likes": 36549,
+          "views": 709492,
+          "likes": 36552,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -202,7 +202,7 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 2
+          "rank": 3
         }
       },
       "notes": "#3 r/memes top-today (Nov 5 7am; was #4 at 6am). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM.",
@@ -226,7 +226,7 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 4
+          "rank": 5
         }
       },
       "notes": "#5 r/memes top-today (Nov 5 7am). 'Gotta be one of my favorite genders' format celebrating void-faced mage characters (Orko).",
@@ -267,7 +267,7 @@
         ],
         "reddit": {
           "sub": "dankmemes",
-          "rank": 3
+          "rank": 2
         }
       },
       "notes": "#4 r/dankmemes top-today (Nov 5 7am; was #3 at 6am). Elizabeth Holmes toddler '365 hours on one drop of chocolate' joke.",
@@ -286,7 +286,7 @@
       "first_seen": "2026-11-03",
       "also": [
         {
-          "name": "X / @MeganBitchell (3.21M views)",
+          "name": "X / @MeganBitchell (3.32M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -294,11 +294,11 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (849K views)",
+          "name": "TikTok / @elionwillpower (850K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
-          "name": "TikTok / @travelingnurse (264K views)",
+          "name": "TikTok / @travelingnurse (266K views)",
           "url": "https://www.tiktok.com/@travelingnurse/video/7704183300255927583"
         }
       ],
@@ -312,22 +312,22 @@
         "kym_views": 2347,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3287463,
-          "likes": 177828,
+          "views": 3321019,
+          "likes": 179924,
           "checked": "2026-11-05",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 850100,
-          "likes": 133500,
+          "views": 850500,
+          "likes": 133600,
           "author": "@elionwillpower",
           "checked": "2026-11-05",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-            "views": 849100,
-            "likes": 133400
+            "views": 850500,
+            "likes": 133600
           }
         }
       },
@@ -363,8 +363,8 @@
         "kym_views": 120954,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 16993292,
-          "likes": 351416,
+          "views": 16993854,
+          "likes": 351415,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -428,8 +428,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8266231,
-          "likes": 92512,
+          "views": 8268459,
+          "likes": 92517,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -455,8 +455,8 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6521267,
-          "likes": 30878,
+          "views": 6522299,
+          "likes": 30879,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -504,7 +504,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 68073,
+          "views": 68075,
           "likes": 2788,
           "checked": "2026-11-05",
           "via": "X API"
@@ -551,7 +551,7 @@
         "kym_views": 8803,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 328779,
+          "views": 328809,
           "likes": 23696,
           "checked": "2026-11-05",
           "via": "X API"
@@ -616,7 +616,7 @@
         "kym_views": 18528,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2200314,
+          "views": 2200351,
           "likes": 43172,
           "checked": "2026-11-05",
           "via": "X API"
@@ -1212,8 +1212,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3498382,
-          "likes": 118646,
+          "views": 3498592,
+          "likes": 118643,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1245,8 +1245,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/vwxyz_4/status/2115203529795326309",
-          "views": 7233751,
-          "likes": 82832,
+          "views": 7241775,
+          "likes": 82831,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1296,7 +1296,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 3
+          "rank": 4
         },
         "platforms": [
           "Reddit"
@@ -1427,7 +1427,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1468859,
+          "views": 1469644,
           "likes": 26793,
           "checked": "2026-11-05",
           "via": "X API"
@@ -1463,8 +1463,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 136626,
-          "likes": 16106,
+          "views": 136700,
+          "likes": 16110,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1617,8 +1617,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6167303,
-          "likes": 183842,
+          "views": 6180884,
+          "likes": 183887,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1652,8 +1652,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1095778,
-          "likes": 54482,
+          "views": 1096484,
+          "likes": 54501,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1706,7 +1706,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334030,
+          "views": 334064,
           "likes": 3047,
           "checked": "2026-11-05",
           "via": "X API"
@@ -1888,7 +1888,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 4
+          "rank": 3
         },
         "platforms": [
           "Reddit"
@@ -1945,8 +1945,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 168472,
-          "likes": 7458,
+          "views": 168827,
+          "likes": 7464,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1971,7 +1971,7 @@
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (244K views)",
+          "name": "X / @LashSleeper (246K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -2028,8 +2028,8 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 245876,
-          "likes": 27060,
+          "views": 246110,
+          "likes": 27062,
           "checked": "2026-11-05",
           "via": "X API"
         },
@@ -2053,7 +2053,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 1
+          "rank": 3
         },
         "platforms": [
           "Reddit"

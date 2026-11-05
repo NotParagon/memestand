@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T08:05-08:00",
+  "updated": "2026-11-05T09:09-08:00",
   "daily": [
     {
       "rank": 1,
@@ -59,7 +59,7 @@
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (244K views)",
+          "name": "X / @LashSleeper (246K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -98,7 +98,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @MeganBitchell (3.21M views)",
+          "name": "X / @MeganBitchell (3.32M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -106,11 +106,11 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (849K views)",
+          "name": "TikTok / @elionwillpower (850K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
-          "name": "TikTok / @travelingnurse (264K views)",
+          "name": "TikTok / @travelingnurse (266K views)",
           "url": "https://www.tiktok.com/@travelingnurse/video/7704183300255927583"
         }
       ],
@@ -162,7 +162,7 @@
       "credit": "posted by @MonsterEnergy on X",
       "also": [],
       "first_seen": "2026-11-05",
-      "score": 70.2,
+      "score": 70.4,
       "sources": [
         "X"
       ],
@@ -211,42 +211,6 @@
     },
     {
       "rank": 8,
-      "id": "altman-apollo-4kb",
-      "title": "'APOLLO HAD 4KB OF RAM': ALTMAN SPACE-RACE COPE IN THE RAM SHORTAGE WAVE",
-      "image": "images/altman-apollo-4kb.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://www.reddit.com/r/memes/comments/1xo00z4/i_cant_get_enough_of_this_new_trend/",
-      "source_name": "Reddit r/memes /u/gregorio02",
-      "credit": "posted by u/gregorio02 on r/memes",
-      "also": [],
-      "first_seen": "2026-11-05",
-      "score": 60.0,
-      "sources": [
-        "Reddit"
-      ],
-      "notes": "#3 r/memes top-today (Nov 5 7am; was #4 at 6am). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM."
-    },
-    {
-      "rank": 9,
-      "id": "election-squid-hope",
-      "title": "AMERICANS EVERY ELECTION: SQUID GAME CHEER — 'TALE AS OLD AS TIME'",
-      "image": "images/election-squid-hope.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnsnug/tale_as_old_as_time/",
-      "source_name": "Reddit r/dankmemes /u/Massive-Bass-347",
-      "credit": "posted by u/Massive-Bass-347 on r/dankmemes",
-      "also": [],
-      "first_seen": "2026-11-04",
-      "score": 60.0,
-      "sources": [
-        "Reddit"
-      ],
-      "notes": "#1 r/dankmemes top-today, #3 week, #12 month (Nov 5 7am). Squid Game Gi-hun cheer as Americans every election."
-    },
-    {
-      "rank": 10,
       "id": "ww3-or-christmas",
       "title": "'WW3 OR CHRISTMAS?': BUDGET JOKE ABOUT PREPARING FOR BOTH GOES VIRAL",
       "image": null,
@@ -262,6 +226,42 @@
         "X"
       ],
       "notes": "@HorrorGorl: 'Should I be preparing for WW3 or Christmas, because I dont have the budget for both.' 709K views / 36.5K likes (X API, Nov 5)."
+    },
+    {
+      "rank": 9,
+      "id": "altman-apollo-4kb",
+      "title": "'APOLLO HAD 4KB OF RAM': ALTMAN SPACE-RACE COPE IN THE RAM SHORTAGE WAVE",
+      "image": "images/altman-apollo-4kb.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/memes/comments/1xo00z4/i_cant_get_enough_of_this_new_trend/",
+      "source_name": "Reddit r/memes /u/gregorio02",
+      "credit": "posted by u/gregorio02 on r/memes",
+      "also": [],
+      "first_seen": "2026-11-05",
+      "score": 58.0,
+      "sources": [
+        "Reddit"
+      ],
+      "notes": "#3 r/memes top-today (Nov 5 7am; was #4 at 6am). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM."
+    },
+    {
+      "rank": 10,
+      "id": "election-squid-hope",
+      "title": "AMERICANS EVERY ELECTION: SQUID GAME CHEER — 'TALE AS OLD AS TIME'",
+      "image": "images/election-squid-hope.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnsnug/tale_as_old_as_time/",
+      "source_name": "Reddit r/dankmemes /u/Massive-Bass-347",
+      "credit": "posted by u/Massive-Bass-347 on r/dankmemes",
+      "also": [],
+      "first_seen": "2026-11-04",
+      "score": 56.0,
+      "sources": [
+        "Reddit"
+      ],
+      "notes": "#1 r/dankmemes top-today, #3 week, #12 month (Nov 5 7am). Squid Game Gi-hun cheer as Americans every election."
     }
   ],
   "weekly": [
@@ -323,7 +323,7 @@
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (244K views)",
+          "name": "X / @LashSleeper (246K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -459,7 +459,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @MeganBitchell (3.21M views)",
+          "name": "X / @MeganBitchell (3.32M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -467,11 +467,11 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (849K views)",
+          "name": "TikTok / @elionwillpower (850K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
-          "name": "TikTok / @travelingnurse (264K views)",
+          "name": "TikTok / @travelingnurse (266K views)",
           "url": "https://www.tiktok.com/@travelingnurse/video/7704183300255927583"
         }
       ],
