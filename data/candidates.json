@@ -1,6 +1,292 @@
 {
-  "as_of": "2026-11-04",
+  "as_of": "2026-11-05",
   "candidates": [
+    {
+      "id": "crack-a-monster",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'IT'S NOT THAT DEEP. CRACK A MONSTER.': MONSTER ENERGY'S OWN POST BECOMES THE COPE MEME",
+      "source_url": "https://x.com/MonsterEnergy/status/2118012916586676345",
+      "source_name": "X / @MonsterEnergy",
+      "image_url": null,
+      "first_seen": "2026-11-05",
+      "also": [],
+      "ev": {
+        "platforms": [
+          "X"
+        ],
+        "x": {
+          "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
+          "views": 2963925,
+          "likes": 42832,
+          "checked": "2026-11-05",
+          "via": "X API"
+        }
+      },
+      "notes": "Official @MonsterEnergy reply-bait post 'it's not that deep. crack a monster.' hit 2.96M views / 42.8K likes (X API, Nov 5 6am). Spawned quote-tweet cope edits.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "ww3-or-christmas",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'WW3 OR CHRISTMAS?': BUDGET JOKE ABOUT PREPARING FOR BOTH GOES VIRAL",
+      "source_url": "https://x.com/HorrorGorl/status/2117609954563477790",
+      "source_name": "X / @HorrorGorl",
+      "image_url": null,
+      "first_seen": "2026-11-03",
+      "also": [],
+      "ev": {
+        "platforms": [
+          "X"
+        ],
+        "x": {
+          "url": "https://x.com/HorrorGorl/status/2117609954563477790",
+          "views": 708903,
+          "likes": 36544,
+          "checked": "2026-11-05",
+          "via": "X API"
+        }
+      },
+      "notes": "@HorrorGorl: 'Should I be preparing for WW3 or Christmas, because I dont have the budget for both.' 709K views / 36.5K likes (X API, Nov 5).",
+      "headline_reviewed": true
+    },
+    {
+      "id": "code-rot",
+      "periods": [
+        "weekly",
+        "monthly"
+      ],
+      "title": "'CODE ROT' / 'YEP IT'S CODE ROTTED INDEED': GLITCH FILTER MEME SPREADS ON TIKTOK",
+      "source_url": "https://knowyourmeme.com/memes/code-rot-filter-yep-its-code-rotted-indeed",
+      "source_name": "Know Your Meme",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/661/coderotcover.jpg",
+      "first_seen": "2026-10-22",
+      "also": [
+        {
+          "name": "TikTok / @tr0v0n (1.4M views)",
+          "url": "https://www.tiktok.com/@tr0v0n/video/7698167604019547422"
+        },
+        {
+          "name": "TikTok / @penutisthebestnickname (1.3M views)",
+          "url": "https://www.tiktok.com/@penutisthebestnickname/video/7698509810467114270"
+        },
+        {
+          "name": "TikTok / @ted.broome1 (1.3M views)",
+          "url": "https://www.tiktok.com/@ted.broome1/video/7697372713521794318"
+        },
+        {
+          "name": "YouTube / Lessons in Meme Culture (931K views)",
+          "url": "https://www.youtube.com/watch?v=aEi0M7t-poM"
+        }
+      ],
+      "ev": {
+        "platforms": [
+          "Know Your Meme",
+          "TikTok",
+          "YouTube"
+        ],
+        "kym": true,
+        "kym_views": 13901,
+        "tiktok": {
+          "url": "https://www.tiktok.com/@tr0v0n/video/7698167604019547422",
+          "views": 1400000,
+          "likes": 103900,
+          "author": "@tr0v0n",
+          "posted": "2026-10-19",
+          "checked": "2026-11-05",
+          "via": "fetch_social.py",
+          "largest_post_read": {
+            "url": "https://www.tiktok.com/@tr0v0n/video/7698167604019547422",
+            "views": 1400000,
+            "likes": 103900
+          }
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/watch?v=aEi0M7t-poM",
+          "views": 931298,
+          "title": "What Is Code Rot?",
+          "channel": "Lessons in Meme Culture",
+          "checked": "2026-11-05",
+          "via": "fetch_youtube.py"
+        }
+      },
+      "notes": "KYM entry 13,901 views (pub Oct 22). Peak TikTok @tr0v0n 1.4M views; multiple 1M+ posts. LiMC explainer 931K views (6d). On KYM Popular.",
+      "headline_reviewed": true,
+      "kym_url": "https://knowyourmeme.com/memes/code-rot-filter-yep-its-code-rotted-indeed"
+    },
+    {
+      "id": "just-mention-india",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'JUST MENTION INDIA': STOCK-FOOTAGE JOKE ABOUT YOUTUBE CHANNELS MILKING INDIA FOR VIEWS",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xnp51d/just_mention_india/",
+      "source_name": "Reddit r/memes /u/DrDrakeRemorayy",
+      "image_url": "https://i.redd.it/90f6lnndslzh1.jpeg",
+      "first_seen": "2026-11-05",
+      "also": [],
+      "ev": {
+        "platforms": [
+          "Reddit"
+        ],
+        "reddit": {
+          "sub": "memes",
+          "rank": 1
+        }
+      },
+      "notes": "#1 r/memes top-today (Nov 5 6am). Template joke that YouTube channels add India B-roll / mention India to farm views.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "woke-up-goldeneye",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'YOU FINALLY WOKE UP BABE': 90s GOLDENEYE / LIMP BIZKIT RESET VS HOUSING CRISIS & DATA CENTERS",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xnr7oi/maybe_it_was_all_a_dream/",
+      "source_name": "Reddit r/memes /u/JohnSkaoBoy",
+      "image_url": "https://i.redd.it/dv6qcm4a7mzh1.png",
+      "first_seen": "2026-11-05",
+      "also": [],
+      "ev": {
+        "platforms": [
+          "Reddit"
+        ],
+        "reddit": {
+          "sub": "memes",
+          "rank": 2
+        }
+      },
+      "notes": "#2 r/memes top-today (Nov 5). Nostalgia 'you finally woke up' CRT/N64 GoldenEye scene dismissing housing crisis / data centers.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "altman-ramesses",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'LET THE MAN REST': SAM ALTMAN AS RAMESSES II IN THE RAM MEME WAVE",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xod9dz/let_the_man_rest/",
+      "source_name": "Reddit r/memes /u/ZealousidealChain473",
+      "image_url": "https://i.redd.it/q9oupe6u5rzh1.jpeg",
+      "first_seen": "2026-11-05",
+      "also": [],
+      "ev": {
+        "platforms": [
+          "Reddit"
+        ],
+        "reddit": {
+          "sub": "memes",
+          "rank": 3
+        }
+      },
+      "notes": "#3 r/memes top-today (Nov 5). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme cycle.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "altman-apollo-4kb",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'APOLLO HAD 4KB OF RAM': ALTMAN SPACE-RACE COPE IN THE RAM SHORTAGE WAVE",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xo00z4/i_cant_get_enough_of_this_new_trend/",
+      "source_name": "Reddit r/memes /u/gregorio02",
+      "image_url": "https://i.redd.it/imx5afafvnzh1.jpeg",
+      "first_seen": "2026-11-05",
+      "also": [],
+      "ev": {
+        "platforms": [
+          "Reddit"
+        ],
+        "reddit": {
+          "sub": "memes",
+          "rank": 4
+        }
+      },
+      "notes": "#4 r/memes top-today (Nov 5). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "little-void-creatures",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'LITTLE VOID CREATURES IN BIG CLOTHES': FAVORITE-GENDERS TEMPLATE LOVES SHADOWY MAGES",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xo2ukx/i_just_really_like_little_guys/",
+      "source_name": "Reddit r/memes /u/Darian_Wulfbane",
+      "image_url": "https://i.redd.it/08z2kmo5gozh1.png",
+      "first_seen": "2026-11-05",
+      "also": [],
+      "ev": {
+        "platforms": [
+          "Reddit"
+        ],
+        "reddit": {
+          "sub": "memes",
+          "rank": 5
+        }
+      },
+      "notes": "#5 r/memes top-today (Nov 5). 'Gotta be one of my favorite genders' format celebrating void-faced mage characters (Orko, Black Mage, Veigar).",
+      "headline_reviewed": true
+    },
+    {
+      "id": "youtube-ui-over-the-hedge",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'EVERYTHING IS DIFFERENT': OVER THE HEDGE REACTS TO THE NEW YOUTUBE LAYOUT",
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnrorh/everything_is_different/",
+      "source_name": "Reddit r/dankmemes /u/pip_pip_pippin",
+      "image_url": "https://i.redd.it/u9ixi1goamzh1.jpeg",
+      "first_seen": "2026-11-05",
+      "also": [],
+      "ev": {
+        "platforms": [
+          "Reddit"
+        ],
+        "reddit": {
+          "sub": "dankmemes",
+          "rank": 2
+        }
+      },
+      "notes": "#2 r/dankmemes top-today (Nov 5). Over the Hedge still captioned for YouTube UI redesign whiplash.",
+      "headline_reviewed": true
+    },
+    {
+      "id": "toddler-chocolate-holmes",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'365 HOURS ON ONE DROP OF CHOCOLATE': ELIZABETH HOLMES TODDLER-STAMINA JOKE",
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xntp8o/i_can_run_for_365_hours_on_just_one_drop_of/",
+      "source_name": "Reddit r/dankmemes /u/TennisADHD",
+      "image_url": "https://i.redd.it/2cns0hudomzh1.jpeg",
+      "first_seen": "2026-11-05",
+      "also": [],
+      "ev": {
+        "platforms": [
+          "Reddit"
+        ],
+        "reddit": {
+          "sub": "dankmemes",
+          "rank": 3
+        }
+      },
+      "notes": "#3 r/dankmemes top-today (Nov 5). Elizabeth Holmes / Theranos blood-drop gag applied to a toddler and chocolate.",
+      "headline_reviewed": true
+    },
     {
       "id": "woke-3",
       "periods": [
@@ -14,7 +300,7 @@
       "first_seen": "2026-11-03",
       "also": [
         {
-          "name": "X / @MeganBitchell (2.92M views)",
+          "name": "X / @MeganBitchell (3.21M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -22,11 +308,11 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (828K views)",
+          "name": "TikTok / @elionwillpower (849K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
-          "name": "TikTok / @travelingnurse (256K views)",
+          "name": "TikTok / @travelingnurse (264K views)",
           "url": "https://www.tiktok.com/@travelingnurse/video/7704183300255927583"
         }
       ],
@@ -37,25 +323,29 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 1674,
+        "kym_views": 2216,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 2918616,
-          "likes": 155441,
-          "checked": "2026-11-04",
+          "views": 3208202,
+          "likes": 173431,
+          "checked": "2026-11-05",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 828400,
-          "likes": 132000,
+          "views": 849100,
+          "likes": 133400,
           "author": "@elionwillpower",
-          "posted": "2026-11-04",
-          "checked": "2026-11-04",
-          "via": "fetch_social"
+          "checked": "2026-11-05",
+          "via": "fetch_social.py",
+          "largest_post_read": {
+            "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
+            "views": 849100,
+            "likes": 133400
+          }
         }
       },
-      "notes": "KYM entry + X News midterm blue-sweep slang. Peak X post @MeganBitchell ~2.92M views; TikTok @elionwillpower ~828K views (Nov 4 9pm EOD).",
+      "notes": "3.21M views / 173K likes on @MeganBitchell's WOKE 3 post (X API, Nov 5 6am). KYM entry 2,216 views. TikTok @elionwillpower 849K views.",
       "first_seen_basis": "KYM cites pre-election buildup; @MeganBitchell \"Woke 3 starts tonight\" Nov 3, 2026",
       "headline_reviewed": true
     },
@@ -87,13 +377,13 @@
         "kym_views": 120954,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 16988585,
-          "likes": 351448,
-          "checked": "2026-11-04",
+          "views": 16992268,
+          "likes": 351422,
+          "checked": "2026-11-05",
           "via": "X API"
         }
       },
-      "notes": "351,509 likes / 16.98M views on the DiscussingFilm post (X API, Nov 4 9am). Still circulating in Halloween roundups. KYM Thousand-Yard Stare entry ~120,954 views."
+      "notes": "16.99M views / 351K likes on @DiscussingFilm (X API, Nov 5). Aged out of daily; still weekly/monthly."
     },
     {
       "id": "altman-ram",
@@ -131,7 +421,7 @@
           "via": "earlier X API read"
         }
       },
-      "notes": "#1 on r/memes top-this-week and still high on top-this-month (Nov 4 9am). Sparked by Sam Altman's Cheeky Pint remark (Oct 29) that DRAM in personal computers is a 'quite terrible' use of limited supply. Fresh RAM variants keep topping Reddit."
+      "notes": "#1 r/memes top-this-week and #4 top-this-month (Nov 5 6am)."
     },
     {
       "id": "regretamine",
@@ -152,19 +442,20 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8243751,
-          "likes": 92502,
-          "checked": "2026-11-04",
+          "views": 8261821,
+          "likes": 92506,
+          "checked": "2026-11-05",
           "via": "X API"
         }
       },
-      "notes": "92,501 likes / 8.21M views (X API, Nov 4 9am). Spin-off reply memes still circulating.",
+      "notes": "8.26M views / 92.5K likes on @elonmusk (X API, Nov 5). Weekly/monthly.",
       "also": []
     },
     {
       "id": "pakistani-citizenship",
       "periods": [
-        "weekly"
+        "weekly",
+        "monthly"
       ],
       "title": "'SHE ONLY WANTS ME FOR MY PAKISTANI CITIZENSHIP' -- COPYCATS FLOOD TIMELINE",
       "source_url": "https://x.com/vibeistani/status/2116644824703279122",
@@ -178,9 +469,9 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6508808,
-          "likes": 30860,
-          "checked": "2026-11-04",
+          "views": 6519627,
+          "likes": 30871,
+          "checked": "2026-11-05",
           "via": "X API"
         }
       },
@@ -227,9 +518,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 68000,
-          "likes": 2789,
-          "checked": "2026-11-04",
+          "views": 68057,
+          "likes": 2788,
+          "checked": "2026-11-05",
           "via": "X API"
         }
       },
@@ -274,9 +565,9 @@
         "kym_views": 8803,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 328536,
-          "likes": 23698,
-          "checked": "2026-11-04",
+          "views": 328746,
+          "likes": 23693,
+          "checked": "2026-11-05",
           "via": "X API"
         },
         "tiktok": {
@@ -339,9 +630,9 @@
         "kym_views": 18528,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2199953,
-          "likes": 43172,
-          "checked": "2026-11-04",
+          "views": 2200246,
+          "likes": 43174,
+          "checked": "2026-11-05",
           "via": "X API"
         },
         "tiktok": {
@@ -526,7 +817,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 17567,
+        "kym_views": 7101,
         "x_news": true,
         "x": {
           "views": 475000,
@@ -761,7 +1052,7 @@
         "kym": true,
         "kym_editorial": true,
         "x_news": true,
-        "kym_views": 178589,
+        "kym_views": 179286,
         "tiktok": {
           "likes": 89000,
           "via": "KYM-cited count",
@@ -781,7 +1072,7 @@
           "via": "YouTube video page"
         }
       },
-      "notes": "KYM Malfoid still Popular Right Now / Top Entry This Month (Nov 4); ~173,326 KYM page views. October Meme of the Month winner context. Nov 4 reads (10am PT): largest TikTok read directly @80saerobicz 2K views; YouTube 'Winter with Her | Draconia Malfoy' 887K views.",
+      "notes": "October 2026 KYM Meme of the Month. 179K KYM views (Nov 5).",
       "first_seen_basis": "KYM entry published date"
     },
     {
@@ -935,9 +1226,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3496317,
-          "likes": 118650,
-          "checked": "2026-11-04",
+          "views": 3497997,
+          "likes": 118644,
+          "checked": "2026-11-05",
           "via": "X API"
         }
       },
@@ -968,9 +1259,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/vwxyz_4/status/2115203529795326309",
-          "views": 7168611,
-          "likes": 82862,
-          "checked": "2026-11-04",
+          "views": 7220925,
+          "likes": 82831,
+          "checked": "2026-11-05",
           "via": "X API"
         }
       },
@@ -1008,7 +1299,8 @@
     {
       "id": "potatoes-walrus",
       "periods": [
-        "weekly"
+        "weekly",
+        "monthly"
       ],
       "title": "'POTATOES AFTER A FEW DAYS IN THE BAG': A WALRUS COLONY STANDS IN FOR SPROUTING SPUDS",
       "source_url": "https://www.reddit.com/r/memes/comments/1xlpirx/potatoes_after_a_few_days_in_bag/",
@@ -1018,7 +1310,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 4
+          "rank": 3
         },
         "platforms": [
           "Reddit"
@@ -1054,7 +1346,8 @@
     {
       "id": "jacket-still-works",
       "periods": [
-        "weekly"
+        "weekly",
+        "monthly"
       ],
       "title": "'THE JACKET STILL WORKS': ANGRY JOE'S SAME JACKET, YEARS APART",
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xlvthd/the_jacket_still_works/",
@@ -1070,7 +1363,7 @@
           "Reddit"
         ]
       },
-      "notes": "#2 on r/dankmemes top-this-week (Nov 4). Angry Joe same-jacket gag.",
+      "notes": "#1 r/dankmemes top-this-week / #7 month (Nov 5).",
       "headline_reviewed": true,
       "also": []
     },
@@ -1100,7 +1393,8 @@
     {
       "id": "handbook-train-employee",
       "periods": [
-        "weekly"
+        "weekly",
+        "monthly"
       ],
       "title": "TRAINING THE NEW HIRE: REMEMBER THE REAL RULES, NOT THE ONES YOU MADE UP",
       "source_url": "https://www.reddit.com/r/memes/comments/1xjsare/dont_do_what_i_do_do_what_the_handbook_says/",
@@ -1110,7 +1404,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 3
+          "rank": 4
         },
         "platforms": [
           "Reddit"
@@ -1147,9 +1441,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1461527,
-          "likes": 26803,
-          "checked": "2026-11-04",
+          "views": 1467122,
+          "likes": 26795,
+          "checked": "2026-11-05",
           "via": "X API"
         }
       },
@@ -1183,9 +1477,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 135984,
-          "likes": 16090,
-          "checked": "2026-11-04",
+          "views": 136435,
+          "likes": 16100,
+          "checked": "2026-11-05",
           "via": "X API"
         }
       },
@@ -1276,7 +1570,7 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 47901,
+        "kym_views": 48349,
         "tiktok": {
           "url": "https://www.tiktok.com/@._bella_141/video/7672239822450265374",
           "views": 216200,
@@ -1337,13 +1631,13 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 5970647,
-          "likes": 183101,
-          "checked": "2026-11-04",
+          "views": 6131763,
+          "likes": 183725,
+          "checked": "2026-11-05",
           "via": "X API"
         }
       },
-      "notes": "164,225 likes / 5.23M views on @studsyun's Nov 3 share of the headphones-monkey GIF (X API, Nov 4 9am). Captioned as frantic studying / 'Thesis Monkey'; X News story still active.",
+      "notes": "183,725 likes / 6.13M views on @studsyun's headphones-monkey GIF (X API, Nov 5 6am). Still climbing; X News story was active Nov 4.",
       "headline_reviewed": true
     },
     {
@@ -1372,13 +1666,13 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1088831,
-          "likes": 54319,
-          "checked": "2026-11-04",
+          "views": 1094551,
+          "likes": 54462,
+          "checked": "2026-11-05",
           "via": "X API"
         }
       },
-      "notes": "50,477 likes / 1.01M views on @Britannica's Nov 4 election-night parody (X API, Nov 4 9am). Copycats flooded replies; X News story on the biology-joke wave.",
+      "notes": "1.09M views / 54.5K likes on @Britannica's mitochondria powerhouse joke (X API, Nov 5 6am).",
       "headline_reviewed": true
     },
     {
@@ -1394,7 +1688,7 @@
       "first_seen": "2026-11-01",
       "also": [
         {
-          "name": "X / @Flovaai (333K views)",
+          "name": "X / @Flovaai (334K views)",
           "url": "https://x.com/Flovaai/status/2117466712597839938"
         },
         {
@@ -1402,7 +1696,7 @@
           "url": "https://x.com/i/trending/2117626647205875908"
         },
         {
-          "name": "TikTok / @leehoustonx (10.6M views)",
+          "name": "TikTok / @leehoustonx (10.8M views)",
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
         },
         {
@@ -1410,7 +1704,7 @@
           "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         },
         {
-          "name": "TikTok / @boby.biggsjohnson (5.4M views)",
+          "name": "TikTok / @boby.biggsjohnson (5.7M views)",
           "url": "https://www.tiktok.com/@boby.biggsjohnson/video/7703585816429235487"
         }
       ],
@@ -1422,34 +1716,39 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 1278,
+        "kym_views": 1509,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 333542,
+          "views": 333968,
           "likes": 3046,
-          "checked": "2026-11-04",
+          "checked": "2026-11-05",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-          "views": 10600000,
+          "views": 10800000,
           "likes": 1400000,
           "author": "@leehoustonx",
           "posted": "2026-11-01",
-          "checked": "2026-11-04",
-          "via": "fetch_social"
+          "checked": "2026-11-05",
+          "via": "fetch_social.py",
+          "largest_post_read": {
+            "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
+            "views": 10800000,
+            "likes": 1400000
+          }
         },
         "instagram": {
           "url": "https://www.instagram.com/reel/DfMHsr-hYPF/",
           "likes": 11000000,
           "author": "@kevinwinnik",
           "posted": "2026-10-31",
-          "checked": "2026-11-04",
-          "via": "fetch_social"
+          "checked": "2026-11-05",
+          "via": "fetch_social.py"
         }
       },
-      "notes": "KYM entry published Nov 3, 2026 (~954 page views): original TikTok by @leehoustonx on Nov 1; wave of AI remakes on TikTok/Reels/X. @Flovaai remix 2,558 likes / 285K views (X API, Nov 4 noon). X News story on the cafe seating mix-up. Nov 4 noon reads: TikTok @leehoustonx 10.5M views; Instagram @kevinwinnik 11M likes.",
+      "notes": "IG @kevinwinnik 11M likes (fetch_social Nov 5); TikTok @leehoustonx 10.8M views / 1.4M likes; @boby.biggsjohnson 5.7M; KYM 1,509 views. Yesterday's site lead.",
       "first_seen_basis": "KYM cites TikTok original Nov 1, 2026",
       "headline_reviewed": true
     },
@@ -1489,7 +1788,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 21
+          "rank": 20
         },
         "platforms": [
           "Reddit"
@@ -1513,13 +1812,13 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 2
+          "rank": 9
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#2 on r/dankmemes top-today (Nov 4 9am). Elizabeth Holmes interview still captioned about how 'easy' gym cancellations are.",
+      "notes": "#9 r/dankmemes top-this-week (Nov 5). Elizabeth Holmes gym-cancel Hotel California Rules. First seen Nov 4.",
       "headline_reviewed": true,
       "also": []
     },
@@ -1527,7 +1826,8 @@
       "id": "altman-houses-vs-datacenters",
       "periods": [
         "daily",
-        "weekly"
+        "weekly",
+        "monthly"
       ],
       "title": "ALTMAN-STYLE RANT MEME: HOUSES ARE A 'TERRIBLE USE OF SPACE' vs. AI DATA CENTERS",
       "source_url": "https://www.reddit.com/r/memes/comments/1xnkv3y/a_coffin_is_more_space_efficient/",
@@ -1537,13 +1837,13 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 1
+          "rank": 2
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#1 on r/memes top-today and #2 on top-this-week (Nov 4 6pm). Sam Altman-at-the-window / coffin macro arguing houses waste space that data centers could use.",
+      "notes": "#2 r/memes week / #15 month (Nov 5). Coffin more space-efficient than Altman housing vs datacenters. First seen Nov 4.",
       "headline_reviewed": true,
       "also": []
     },
@@ -1605,19 +1905,18 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 2
+          "rank": 5
         },
         "platforms": [
           "Reddit"
         ]
       },
-      "notes": "#2 on r/memes top-today and #5 on top-this-week (Nov 4 6pm). Photo of Sam Altman with Gulf hosts captioned as his reaction after hearing about RAM — Ramadan pun.",
+      "notes": "#5 r/memes week (Nov 5). Altman RAM-adan. First seen Nov 4.",
       "headline_reviewed": true
     },
     {
       "id": "ai-slop-vs-nk",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "'AI SLOP QUANTS' vs. A ONE-PDF PHISH: $0.17 vs. BILLIONS JOKE",
@@ -1628,7 +1927,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 3
+          "rank": 24
         },
         "platforms": [
           "Reddit"
@@ -1663,9 +1962,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 160421,
-          "likes": 7343,
-          "checked": "2026-11-04",
+          "views": 167553,
+          "likes": 7453,
+          "checked": "2026-11-05",
           "via": "X API"
         }
       },
@@ -1685,11 +1984,15 @@
       "first_seen": "2026-10-19",
       "also": [
         {
+          "name": "TikTok / @hard_plushie (9.1M views, KYM-cited)",
+          "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
+        },
+        {
           "name": "X / @LashSleeper (244K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
-          "name": "TikTok / @watosis (314K views)",
+          "name": "TikTok / @watosis (322K views)",
           "url": "https://www.tiktok.com/@watosis/video/7703458958266092831"
         },
         {
@@ -1712,13 +2015,17 @@
         "kym": true,
         "kym_editorial": true,
         "tiktok": {
-          "url": "https://www.tiktok.com/@watosis/video/7703458958266092831",
-          "views": 314400,
-          "likes": 60800,
-          "author": "@watosis",
-          "posted": "2026-11-02",
-          "checked": "2026-11-04",
-          "via": "fetch_social"
+          "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969",
+          "views": 9100000,
+          "likes": 2400000,
+          "author": "@hard_plushie",
+          "checked": "2026-11-05",
+          "via": "fetch_social.py",
+          "largest_post_read": {
+            "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969",
+            "views": 9100000,
+            "likes": 2400000
+          }
         },
         "instagram": {
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/",
@@ -1733,30 +2040,31 @@
           "views": 485141,
           "title": "Frutiger Aero Yams To Your Right",
           "channel": "Lessons in Meme Culture",
-          "checked": "2026-11-04",
-          "via": "fetch_social"
+          "checked": "2026-11-05",
+          "via": "fetch_social.py"
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 244002,
-          "likes": 27046,
-          "checked": "2026-11-04",
+          "views": 245548,
+          "likes": 27062,
+          "checked": "2026-11-05",
           "via": "X API"
         },
-        "kym_views": 3493
+        "kym_views": 4254
       },
-      "notes": "KYM entry added Nov 3, 2026, plus a KYM explainer the same day; earliest known use is an Oct 19 Instagram post. Reads on Nov 4 (10am PT): YouTube 'Frutiger Aero Yams To Your Right' 416K views in about a day; @LashSleeper yam image 240K views / 27K likes on X; @watosis slang-overload TikTok 299K views; @thebigsolomando Instagram post 70K likes.",
+      "notes": "KYM-cited TikTok @hard_plushie 9.1M views / 2.4M likes (fetch_social Nov 5); @watosis 322K; YT LiMC 485K; KYM 4,254 views; still on Popular/Weekly.",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026"
     },
     {
       "id": "election-squid-hope",
       "periods": [
         "daily",
-        "weekly"
+        "weekly",
+        "monthly"
       ],
-      "title": "AMERICANS EVERY ELECTION, CONVINCED THE COUNTRY IS ABOUT TO CHANGE (IT WON'T) -- SQUID GAME CHEER",
+      "title": "AMERICANS EVERY ELECTION: SQUID GAME CHEER — 'TALE AS OLD AS TIME'",
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnsnug/tale_as_old_as_time/",
-      "source_name": "Reddit r/dankmemes",
+      "source_name": "Reddit r/dankmemes /u/Massive-Bass-347",
       "image_url": "https://i.redd.it/n0pq1yjchmzh1.gif",
       "first_seen": "2026-11-04",
       "ev": {
@@ -1768,14 +2076,13 @@
           "Reddit"
         ]
       },
-      "notes": "#1 on r/dankmemes top-today and #3 on top-this-week (Nov 4 6pm). Squid Game Gi-hun cheer captioned as Americans every election convinced the country is about to change.",
+      "notes": "#1 r/dankmemes top-today, #3 week, #12 month (Nov 5). Squid Game Gi-hun cheer as Americans every election.",
       "headline_reviewed": true,
       "also": []
     },
     {
       "id": "putin-suction-arrow",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "ME TRYING TO LEAVE A FAMILY GATHERING AFTER SAYING SOMETHING CONTROVERSIAL -- PUTIN SUCTION-CUP ARROW",
@@ -1786,7 +2093,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 3
+          "rank": 19
         },
         "platforms": [
           "Reddit"
@@ -1796,49 +2103,6 @@
       "headline_reviewed": true,
       "also": [],
       "minor_reviewed": true
-    },
-    {
-      "id": "christianity-larpers",
-      "periods": [
-        "weekly"
-      ],
-      "title": "AMATEURS: JUJUTSU KAISEN AND PERSONA FANDOMS ARGUE OVER LARPERS -- CHRISTIANITY WINS",
-      "source_url": "https://www.reddit.com/r/memes/comments/1xn8gig/as_a_christian_i_agree/",
-      "source_name": "Reddit r/memes",
-      "image_url": "https://i.redd.it/252rndwidhzh1.jpeg",
-      "first_seen": "2026-11-04",
-      "ev": {
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#5 on r/memes top-today (Nov 4 noon). Owlturd Amateurs comic edit: JJK vs Persona 5 argue who has more LARPers; hooded Christianity figure calls them amateurs. | 3pm: r/memes day #4.",
-      "headline_reviewed": true,
-      "also": []
-    },
-    {
-      "id": "social-security-red-skull",
-      "periods": [
-        "daily",
-        "weekly"
-      ],
-      "title": "ME PAYING SOCIAL SECURITY TAXES KNOWING I'LL NEVER RETIRE -- RED SKULL 'TREASURE I CANNOT POSSESS'",
-      "source_url": "https://www.reddit.com/r/memes/comments/1xngefk/aint_america_great/",
-      "source_name": "Reddit r/memes",
-      "image_url": "https://i.redd.it/yqg22nkxajzh1.png",
-      "first_seen": "2026-11-04",
-      "ev": {
-        "reddit": {
-          "sub": "memes",
-          "rank": 6
-        },
-        "platforms": [
-          "Reddit"
-        ]
-      },
-      "notes": "#6 on r/memes top-today (Nov 4 6pm). Red Skull / Social Security gag.",
-      "headline_reviewed": true,
-      "also": []
     },
     {
       "id": "were-just-normal-men",
@@ -1857,7 +2121,7 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 346686,
+        "kym_views": 347060,
         "kym_editorial": false
       }
     }
