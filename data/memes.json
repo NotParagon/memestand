@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T18:07-08:00",
+  "updated": "2026-11-04T19:12-08:00",
   "daily": [
     {
       "rank": 1,
@@ -13,7 +13,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @Flovaai (323K views)",
+          "name": "X / @Flovaai (330K views)",
           "url": "https://x.com/Flovaai/status/2117466712597839938"
         },
         {
@@ -94,7 +94,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @MeganBitchell (2.75M views)",
+          "name": "X / @MeganBitchell (2.82M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -102,22 +102,22 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (757K views)",
+          "name": "TikTok / @elionwillpower (785K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
-          "name": "TikTok / @travelingnurse (252K views)",
+          "name": "TikTok / @travelingnurse (256K views)",
           "url": "https://www.tiktok.com/@travelingnurse/video/7704183300255927583"
         }
       ],
       "first_seen": "2026-11-03",
-      "score": 75.8,
+      "score": 75.9,
       "sources": [
         "X",
         "TikTok",
         "Know Your Meme"
       ],
-      "notes": "KYM entry + X News midterm blue-sweep slang. Peak X post @MeganBitchell ~2.75M views; TikTok @elionwillpower ~757K views (Nov 4 6pm)."
+      "notes": "KYM entry + X News midterm blue-sweep slang. Peak X post @MeganBitchell ~2.82M views; TikTok @elionwillpower ~785K views (Nov 4 7pm)."
     },
     {
       "rank": 4,
@@ -163,7 +163,7 @@
         }
       ],
       "first_seen": "2026-11-04",
-      "score": 65.3,
+      "score": 65.4,
       "sources": [
         "X"
       ],
@@ -278,7 +278,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @Flovaai (323K views)",
+          "name": "X / @Flovaai (330K views)",
           "url": "https://x.com/Flovaai/status/2117466712597839938"
         },
         {
@@ -320,7 +320,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @PopBase (2.20M views)",
+          "name": "X / @PopBase (2.2M views)",
           "url": "https://x.com/PopBase/status/2114415796890038370"
         },
         {
@@ -446,6 +446,43 @@
     },
     {
       "rank": 6,
+      "id": "woke-3",
+      "title": "'WOKE 3': MIDTERM 'BLUE SWEEP' SPAWNS SATIRICAL SEQUEL-SLANG MEMES",
+      "image": "images/woke-3.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://knowyourmeme.com/memes/woke-3",
+      "source_name": "Know Your Meme",
+      "credit": "image via Know Your Meme; original creators as documented there",
+      "also": [
+        {
+          "name": "X / @MeganBitchell (2.82M views)",
+          "url": "https://x.com/MeganBitchell/status/2117877144999154049"
+        },
+        {
+          "name": "X / @FabTheWoker (116K views)",
+          "url": "https://x.com/FabTheWoker/status/2117764756274860278"
+        },
+        {
+          "name": "TikTok / @elionwillpower (785K views)",
+          "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
+        },
+        {
+          "name": "TikTok / @travelingnurse (256K views)",
+          "url": "https://www.tiktok.com/@travelingnurse/video/7704183300255927583"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "score": 75.9,
+      "sources": [
+        "X",
+        "TikTok",
+        "Know Your Meme"
+      ],
+      "notes": "KYM entry + X News midterm blue-sweep slang. Peak X post @MeganBitchell ~2.82M views; TikTok @elionwillpower ~785K views (Nov 4 7pm)."
+    },
+    {
+      "rank": 7,
       "id": "altman-ram",
       "title": "ALTMAN: DRAM IN HOME PCS IS 'QUITE TERRIBLE' ALLOCATION... INTERNET HIDES ITS DIMMS",
       "image": "images/altman-ram.jpg",
@@ -471,43 +508,6 @@
         "Reddit"
       ],
       "notes": "#1 on r/memes top-this-week and still high on top-this-month (Nov 4 9am). Sparked by Sam Altman's Cheeky Pint remark (Oct 29) that DRAM in personal computers is a 'quite terrible' use of limited supply. Fresh RAM variants keep topping Reddit."
-    },
-    {
-      "rank": 7,
-      "id": "woke-3",
-      "title": "'WOKE 3': MIDTERM 'BLUE SWEEP' SPAWNS SATIRICAL SEQUEL-SLANG MEMES",
-      "image": "images/woke-3.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/woke-3",
-      "source_name": "Know Your Meme",
-      "credit": "image via Know Your Meme; original creators as documented there",
-      "also": [
-        {
-          "name": "X / @MeganBitchell (2.75M views)",
-          "url": "https://x.com/MeganBitchell/status/2117877144999154049"
-        },
-        {
-          "name": "X / @FabTheWoker (116K views)",
-          "url": "https://x.com/FabTheWoker/status/2117764756274860278"
-        },
-        {
-          "name": "TikTok / @elionwillpower (757K views)",
-          "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
-        },
-        {
-          "name": "TikTok / @travelingnurse (252K views)",
-          "url": "https://www.tiktok.com/@travelingnurse/video/7704183300255927583"
-        }
-      ],
-      "first_seen": "2026-11-03",
-      "score": 75.8,
-      "sources": [
-        "X",
-        "TikTok",
-        "Know Your Meme"
-      ],
-      "notes": "KYM entry + X News midterm blue-sweep slang. Peak X post @MeganBitchell ~2.75M views; TikTok @elionwillpower ~757K views (Nov 4 6pm)."
     },
     {
       "rank": 8,
@@ -694,7 +694,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @PopBase (2.20M views)",
+          "name": "X / @PopBase (2.2M views)",
           "url": "https://x.com/PopBase/status/2114415796890038370"
         },
         {
