@@ -19,8 +19,8 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 3138503,
-          "likes": 43816,
+          "views": 3285572,
+          "likes": 44776,
           "checked": "2026-11-05",
           "via": "X API"
         },
@@ -47,8 +47,8 @@
         ],
         "x": {
           "url": "https://x.com/HorrorGorl/status/2117609954563477790",
-          "views": 709156,
-          "likes": 36545,
+          "views": 709310,
+          "likes": 36549,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -146,7 +146,6 @@
     {
       "id": "woke-up-goldeneye",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "'YOU FINALLY WOKE UP BABE': 90s GOLDENEYE / LIMP BIZKIT RESET VS HOUSING CRISIS & DATA CENTERS",
@@ -156,13 +155,7 @@
       "first_seen": "2026-11-05",
       "also": [],
       "ev": {
-        "platforms": [
-          "Reddit"
-        ],
-        "reddit": {
-          "sub": "memes",
-          "rank": 2
-        }
+        "platforms": []
       },
       "notes": "#2 r/memes top-today (Nov 5 7am). Nostalgia 'you finally woke up' CRT/N64 GoldenEye scene dismissing housing crisis / data centers.",
       "headline_reviewed": true
@@ -209,7 +202,7 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 3
+          "rank": 2
         }
       },
       "notes": "#3 r/memes top-today (Nov 5 7am; was #4 at 6am). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM.",
@@ -233,7 +226,7 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 5
+          "rank": 4
         }
       },
       "notes": "#5 r/memes top-today (Nov 5 7am). 'Gotta be one of my favorite genders' format celebrating void-faced mage characters (Orko).",
@@ -242,7 +235,6 @@
     {
       "id": "youtube-ui-over-the-hedge",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "'EVERYTHING IS DIFFERENT': OVER THE HEDGE REACTS TO THE NEW YOUTUBE LAYOUT",
@@ -252,13 +244,7 @@
       "first_seen": "2026-11-05",
       "also": [],
       "ev": {
-        "platforms": [
-          "Reddit"
-        ],
-        "reddit": {
-          "sub": "dankmemes",
-          "rank": 3
-        }
+        "platforms": []
       },
       "notes": "#3 r/dankmemes top-today (Nov 5 7am; was #2 at 6am). Over the Hedge still captioned for YouTube UI redesign whiplash.",
       "headline_reviewed": true
@@ -281,7 +267,7 @@
         ],
         "reddit": {
           "sub": "dankmemes",
-          "rank": 4
+          "rank": 3
         }
       },
       "notes": "#4 r/dankmemes top-today (Nov 5 7am; was #3 at 6am). Elizabeth Holmes toddler '365 hours on one drop of chocolate' joke.",
@@ -323,18 +309,18 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 2295,
+        "kym_views": 2347,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3249704,
-          "likes": 175689,
+          "views": 3287463,
+          "likes": 177828,
           "checked": "2026-11-05",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 849100,
-          "likes": 133400,
+          "views": 850100,
+          "likes": 133500,
           "author": "@elionwillpower",
           "checked": "2026-11-05",
           "via": "fetch_social.py",
@@ -377,8 +363,8 @@
         "kym_views": 120954,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 16992809,
-          "likes": 351422,
+          "views": 16993292,
+          "likes": 351416,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -442,8 +428,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8264103,
-          "likes": 92510,
+          "views": 8266231,
+          "likes": 92512,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -469,8 +455,8 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6520504,
-          "likes": 30874,
+          "views": 6521267,
+          "likes": 30878,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -518,7 +504,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 68069,
+          "views": 68073,
           "likes": 2788,
           "checked": "2026-11-05",
           "via": "X API"
@@ -565,7 +551,7 @@
         "kym_views": 8803,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 328759,
+          "views": 328779,
           "likes": 23696,
           "checked": "2026-11-05",
           "via": "X API"
@@ -630,8 +616,8 @@
         "kym_views": 18528,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2200280,
-          "likes": 43174,
+          "views": 2200314,
+          "likes": 43172,
           "checked": "2026-11-05",
           "via": "X API"
         },
@@ -1226,8 +1212,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3498194,
-          "likes": 118645,
+          "views": 3498382,
+          "likes": 118646,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1259,7 +1245,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/vwxyz_4/status/2115203529795326309",
-          "views": 7227034,
+          "views": 7233751,
           "likes": 82832,
           "checked": "2026-11-05",
           "via": "X API"
@@ -1441,8 +1427,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1468104,
-          "likes": 26795,
+          "views": 1468859,
+          "likes": 26793,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1477,8 +1463,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 136545,
-          "likes": 16103,
+          "views": 136626,
+          "likes": 16106,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1631,8 +1617,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6150851,
-          "likes": 183787,
+          "views": 6167303,
+          "likes": 183842,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1666,8 +1652,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1095234,
-          "likes": 54471,
+          "views": 1095778,
+          "likes": 54482,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1716,12 +1702,12 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 1531,
+        "kym_views": 1551,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 333999,
-          "likes": 3046,
+          "views": 334030,
+          "likes": 3047,
           "checked": "2026-11-05",
           "via": "X API"
         },
@@ -1959,8 +1945,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 168059,
-          "likes": 7456,
+          "views": 168472,
+          "likes": 7458,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -2026,15 +2012,15 @@
         },
         "instagram": {
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/",
-          "likes": 73000,
+          "likes": 74000,
           "author": "@thebigsolomando",
           "posted": "2026-11-02",
-          "checked": "2026-11-04",
+          "checked": "2026-11-05",
           "via": "fetch_social"
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI",
-          "views": 485141,
+          "views": 531164,
           "title": "Frutiger Aero Yams To Your Right",
           "channel": "Lessons in Meme Culture",
           "checked": "2026-11-05",
@@ -2042,12 +2028,12 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 245755,
-          "likes": 27062,
+          "views": 245876,
+          "likes": 27060,
           "checked": "2026-11-05",
           "via": "X API"
         },
-        "kym_views": 4393
+        "kym_views": 4476
       },
       "notes": "KYM-cited TikTok @hard_plushie 9.1M views / 2.4M likes (fetch_social Nov 5); @watosis 322K; YT LiMC 485K; KYM 4,254 views; still on Popular/Weekly.",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026"

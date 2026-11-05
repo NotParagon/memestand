@@ -2,7 +2,7 @@
 
 > MemeStand (https://memestand.com) is an independent, headline-style daily meme report: the internet's top 10 memes today, the top 10 trending memes this week, and the best memes of the month (last 30 days), ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated hourly, 6 AM to 9 PM Pacific Time. Every listed meme links to its original source.
 
-Last updated: 2026-11-05 07:13 PT (2026-11-05T07:13:00-08:00)
+Last updated: 2026-11-05 08:05 PT (2026-11-05T08:05:00-08:00)
 
 ## Key pages
 
@@ -26,7 +26,7 @@ Last updated: 2026-11-05 07:13 PT (2026-11-05T07:13:00-08:00)
 5. 'It's Not That Deep. Crack a Monster.': Monster Energy's Own Post Becomes the Cope Meme — source: https://x.com/MonsterEnergy/status/2118012916586676345 — credit: posted by @MonsterEnergy on X — evidence: Monster Energy brand post (Nov 4) 'it's not that deep. crack a monster.' X API 3,138,503 views / 43,816 likes; X News trending story about the reply chain (Nov 5). — explainer: https://memestand.com/meme/crack-a-monster/
 6. Britannica's Election-night Joke: 'Cnn Projects Mitochondria Will Remain the Powerhouse of the Cell' — source: https://x.com/Britannica/status/2117805815050727630 — credit: posted by @Britannica on X — evidence: 1.09M views / 54.5K likes on @Britannica's mitochondria powerhouse joke (X API, Nov 5 6am). — explainer: https://memestand.com/meme/britannica-mitochondria/
 7. 'Let the Man Rest': Sam Altman as Ramesses Ii in the RAM Meme Wave — source: https://www.reddit.com/r/memes/comments/1xod9dz/let_the_man_rest/ — credit: posted by u/ZealousidealChain473 on r/memes — evidence: #1 r/memes top-today (Nov 5 7am; was #3 at 6am). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme cycle. — explainer: https://memestand.com/meme/altman-ramesses/
-8. 'You Finally Woke Up Babe': 90s Goldeneye / Limp Bizkit Reset vs Housing Crisis & Data Centers — source: https://www.reddit.com/r/memes/comments/1xnr7oi/maybe_it_was_all_a_dream/ — credit: posted by u/JohnSkaoBoy on r/memes — evidence: #2 r/memes top-today (Nov 5 7am). Nostalgia 'you finally woke up' CRT/N64 GoldenEye scene dismissing housing crisis / data centers. — explainer: https://memestand.com/meme/woke-up-goldeneye/
+8. 'Apollo Had 4KB of Ram': Altman Space-race Cope in the RAM Shortage Wave — source: https://www.reddit.com/r/memes/comments/1xo00z4/i_cant_get_enough_of_this_new_trend/ — credit: posted by u/gregorio02 on r/memes — evidence: #3 r/memes top-today (Nov 5 7am; was #4 at 6am). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM. — explainer: https://memestand.com/meme/altman-apollo-4kb/
 9. Americans Every Election: Squid Game Cheer — 'Tale as Old as Time' — source: https://www.reddit.com/r/dankmemes/comments/1xnsnug/tale_as_old_as_time/ — credit: posted by u/Massive-Bass-347 on r/dankmemes — evidence: #1 r/dankmemes top-today, #3 week, #12 month (Nov 5 7am). Squid Game Gi-hun cheer as Americans every election. — explainer: https://memestand.com/meme/election-squid-hope/
 10. 'WW3 or Christmas?': Budget Joke About Preparing for Both Goes Viral — source: https://x.com/HorrorGorl/status/2117609954563477790 — credit: posted by @HorrorGorl on X — evidence: @HorrorGorl: 'Should I be preparing for WW3 or Christmas, because I dont have the budget for both.' 709K views / 36.5K likes (X API, Nov 5). — explainer: https://memestand.com/meme/ww3-or-christmas/
 
@@ -65,6 +65,7 @@ Last updated: 2026-11-05 07:13 PT (2026-11-05T07:13:00-08:00)
 - [Altman RAM Chart](https://memestand.com/meme/altman-ram-chart/): A flowchart where every stick of RAM gets routed to Sam Altman, skipping gamers and ordinary PC owners.
 - [Americans Every Election / Squid Game Cheer](https://memestand.com/meme/election-squid-hope/): A Squid Game still of players in green tracksuits cheering (Gi-hun front and center) captioned "Americans every election, convinced the country is about to…
 - [Anakin Skywalker Gen Z Male Rage](https://memestand.com/meme/anakin-skywalker-gen-z-male-rage/): Star Wars prequel memes that cast Anakin Skywalker as a stand-in for frustrated young men.
+- [Apollo Had 4KB of RAM](https://memestand.com/meme/altman-apollo-4kb/): An image-macro paste of Sam Altman's face onto a rocket launching toward the moon is captioned "Sam Altman when he learns the Apollo missions went to the…
 - [Bear Landmine (Never Zero)](https://memestand.com/meme/bear-landmine/): A trail-camera photo of a brown bear carrying a round object that looks like an anti-tank mine in its mouth.
 - [Billionaires Blaming Collage](https://memestand.com/meme/billionaires-blaming/): A collage of billionaires laughing, captioned as their reaction when people blame immigrants, poor people or trans people for society's problems instead of…
 - [Black Cat Clapping](https://memestand.com/meme/black-cat-clapping/): A green-screen meme built on an AI-generated video of a black cat with human hands and a human smile, slowly clapping.
@@ -108,7 +109,6 @@ Last updated: 2026-11-05 07:13 PT (2026-11-05T07:13:00-08:00)
 - [While They're Out Partying](https://memestand.com/meme/while-theyre-out-partying/): A TikTok caption format: someone shows off an oddly specific, mostly useless skill, like wrapping a burger at top speed or tossing trash bags without…
 - [Woke 3](https://memestand.com/meme/woke-3/): Internet slang and a satirical sequel joke: after jokes about "Woke 1" (culture-war progressivism) and "Woke 2" (a more economically populist reboot), "Woke…
 - [WW3 or Christmas?](https://memestand.com/meme/ww3-or-christmas/): A one-liner joke that asks whether the speaker should be preparing for World War III or for Christmas, "because I dont have the budget for both." It treats…
-- [You Finally Woke Up Babe (GoldenEye)](https://memestand.com/meme/woke-up-goldeneye/): A nostalgia-reset image macro: a late-90s / early-2000s bedroom with a CRT TV, Nintendo 64, and GoldenEye on screen, captioned as a partner dismissing…
 - [You're Blatantly Just Not Me Nan](https://memestand.com/meme/youre-blatantly-just-not-me-nan/): A TikTok sound for calling out an obvious impostor.
 - [Your First Time In a Fancy Cafe](https://memestand.com/meme/fancy-cafe/): A comedy skit (and its AI remakes) where someone sits down at a sleek modern cafe, thinks they're on a chair, then watches another customer walk in and…
 

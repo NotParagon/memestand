@@ -115,6 +115,30 @@
       "written": "2026-11-04",
       "checked": "2026-11-04T09:03:58-08:00"
     },
+    "altman-apollo-4kb": {
+      "name": "Apollo Had 4KB of RAM",
+      "ids": [
+        "altman-apollo-4kb"
+      ],
+      "status": "short",
+      "explainer": "An image-macro paste of Sam Altman's face onto a rocket launching toward the moon is captioned \"Sam Altman when he learns the Apollo missions went to the moon with 4 KB of RAM.\" It rides the same November 2026 DRAM-shortage / Altman-RAM joke wave: the gag is that Apollo's tiny guidance-computer memory makes modern AI hardware hunger look absurd by comparison.",
+      "origin": "The ranked post is an r/memes upload by u/gregorio02 on November 5, 2026, titled \"I can't get enough of this new trend,\" using an imgflip-style macro. MemeStand has not confirmed an earlier first post or the original caption author beyond that upload, so the original creator of this specific version remains unconfirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "Sam Altman when he learns the Apollo missions went to the moon with 4 KB of RAM"
+      ],
+      "source_url": "https://www.reddit.com/r/memes/comments/1xo00z4/i_cant_get_enough_of_this_new_trend/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "Reddit r/memes — I can't get enough of this new trend",
+          "url": "https://www.reddit.com/r/memes/comments/1xo00z4/i_cant_get_enough_of_this_new_trend/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-05",
+      "checked": "2026-11-05T08:06:33-08:00"
+    },
     "altman-houses-vs-datacenters": {
       "name": "Altman Houses vs AI Data Centers",
       "ids": [
