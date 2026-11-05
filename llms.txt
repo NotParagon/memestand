@@ -2,7 +2,7 @@
 
 > MemeStand (https://memestand.com) is an independent, headline-style daily meme report: the internet's top 10 memes today, the top 10 trending memes this week, and the best memes of the month (last 30 days), ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated hourly, 6 AM to 9 PM Pacific Time. Every listed meme links to its original source.
 
-Last updated: 2026-11-05 09:09 PT (2026-11-05T09:09:00-08:00)
+Last updated: 2026-11-05 10:23 PT (2026-11-05T10:23:00-08:00)
 
 ## Key pages
 
@@ -27,8 +27,8 @@ Last updated: 2026-11-05 09:09 PT (2026-11-05T09:09:00-08:00)
 6. Britannica's Election-night Joke: 'Cnn Projects Mitochondria Will Remain the Powerhouse of the Cell' — source: https://x.com/Britannica/status/2117805815050727630 — credit: posted by @Britannica on X — evidence: 1.09M views / 54.5K likes on @Britannica's mitochondria powerhouse joke (X API, Nov 5 6am). — explainer: https://memestand.com/meme/britannica-mitochondria/
 7. 'Let the Man Rest': Sam Altman as Ramesses Ii in the RAM Meme Wave — source: https://www.reddit.com/r/memes/comments/1xod9dz/let_the_man_rest/ — credit: posted by u/ZealousidealChain473 on r/memes — evidence: #1 r/memes top-today (Nov 5 7am; was #3 at 6am). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme cycle. — explainer: https://memestand.com/meme/altman-ramesses/
 8. 'WW3 or Christmas?': Budget Joke About Preparing for Both Goes Viral — source: https://x.com/HorrorGorl/status/2117609954563477790 — credit: posted by @HorrorGorl on X — evidence: @HorrorGorl: 'Should I be preparing for WW3 or Christmas, because I dont have the budget for both.' 709K views / 36.5K likes (X API, Nov 5). — explainer: https://memestand.com/meme/ww3-or-christmas/
-9. 'Apollo Had 4KB of Ram': Altman Space-race Cope in the RAM Shortage Wave — source: https://www.reddit.com/r/memes/comments/1xo00z4/i_cant_get_enough_of_this_new_trend/ — credit: posted by u/gregorio02 on r/memes — evidence: #3 r/memes top-today (Nov 5 7am; was #4 at 6am). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM. — explainer: https://memestand.com/meme/altman-apollo-4kb/
-10. Americans Every Election: Squid Game Cheer — 'Tale as Old as Time' — source: https://www.reddit.com/r/dankmemes/comments/1xnsnug/tale_as_old_as_time/ — credit: posted by u/Massive-Bass-347 on r/dankmemes — evidence: #1 r/dankmemes top-today, #3 week, #12 month (Nov 5 7am). Squid Game Gi-hun cheer as Americans every election. — explainer: https://memestand.com/meme/election-squid-hope/
+9. 'Apollo Had 4KB of Ram': Altman Space-race Cope in the RAM Shortage Wave — source: https://www.reddit.com/r/memes/comments/1xo00z4/i_cant_get_enough_of_this_new_trend/ — credit: posted by u/gregorio02 on r/memes — evidence: #4 r/memes top-today (Nov 5 10am). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM. — explainer: https://memestand.com/meme/altman-apollo-4kb/
+10. Americans Every Election: Squid Game Cheer — 'Tale as Old as Time' — source: https://www.reddit.com/r/dankmemes/comments/1xnsnug/tale_as_old_as_time/ — credit: posted by u/Massive-Bass-347 on r/dankmemes — evidence: #3 r/dankmemes top-week (Nov 5 10am; off day top). Squid Game Gi-hun cheer as Americans every election. — explainer: https://memestand.com/meme/election-squid-hope/
 
 ## Top 10 memes this week
 

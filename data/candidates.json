@@ -19,8 +19,8 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 3467355,
-          "likes": 45480,
+          "views": 3655456,
+          "likes": 45939,
           "checked": "2026-11-05",
           "via": "X API"
         },
@@ -47,8 +47,8 @@
         ],
         "x": {
           "url": "https://x.com/HorrorGorl/status/2117609954563477790",
-          "views": 709492,
-          "likes": 36552,
+          "views": 709638,
+          "likes": 36553,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -92,7 +92,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 13901,
+        "kym_views": 14128,
         "tiktok": {
           "url": "https://www.tiktok.com/@tr0v0n/video/7698167604019547422",
           "views": 1400000,
@@ -109,7 +109,7 @@
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=aEi0M7t-poM",
-          "views": 931298,
+          "views": 936207,
           "title": "What Is Code Rot?",
           "channel": "Lessons in Meme Culture",
           "checked": "2026-11-05",
@@ -202,10 +202,10 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 3
+          "rank": 4
         }
       },
-      "notes": "#3 r/memes top-today (Nov 5 7am; was #4 at 6am). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM.",
+      "notes": "#4 r/memes top-today (Nov 5 10am). Altman/RAM shortage joke comparing modern AI buildout to Apollo's 4KB RAM.",
       "headline_reviewed": true
     },
     {
@@ -252,7 +252,6 @@
     {
       "id": "toddler-chocolate-holmes",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "'365 HOURS ON ONE DROP OF CHOCOLATE': ELIZABETH HOLMES TODDLER-STAMINA JOKE",
@@ -264,13 +263,9 @@
       "ev": {
         "platforms": [
           "Reddit"
-        ],
-        "reddit": {
-          "sub": "dankmemes",
-          "rank": 2
-        }
+        ]
       },
-      "notes": "#4 r/dankmemes top-today (Nov 5 7am; was #3 at 6am). Elizabeth Holmes toddler '365 hours on one drop of chocolate' joke.",
+      "notes": "Off r/dankmemes day/week top-25 as of Nov 5 10am (was #2/#4 earlier). Elizabeth Holmes toddler '365 hours on one drop of chocolate' joke. Kept weekly.",
       "headline_reviewed": true
     },
     {
@@ -309,24 +304,24 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 2347,
+        "kym_views": 2529,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3321019,
-          "likes": 179924,
+          "views": 3352272,
+          "likes": 181890,
           "checked": "2026-11-05",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 850500,
+          "views": 851000,
           "likes": 133600,
           "author": "@elionwillpower",
           "checked": "2026-11-05",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-            "views": 850500,
+            "views": 851000,
             "likes": 133600
           }
         }
@@ -363,8 +358,8 @@
         "kym_views": 120954,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 16993854,
-          "likes": 351415,
+          "views": 16994387,
+          "likes": 351413,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -428,8 +423,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8268459,
-          "likes": 92517,
+          "views": 8270289,
+          "likes": 92524,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -455,8 +450,8 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6522299,
-          "likes": 30879,
+          "views": 6523224,
+          "likes": 30883,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -504,7 +499,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 68075,
+          "views": 68079,
           "likes": 2788,
           "checked": "2026-11-05",
           "via": "X API"
@@ -551,8 +546,8 @@
         "kym_views": 8803,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 328809,
-          "likes": 23696,
+          "views": 328834,
+          "likes": 23695,
           "checked": "2026-11-05",
           "via": "X API"
         },
@@ -613,10 +608,10 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 18528,
+        "kym_views": 18860,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2200351,
+          "views": 2200384,
           "likes": 43172,
           "checked": "2026-11-05",
           "via": "X API"
@@ -803,7 +798,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 7101,
+        "kym_views": 19411,
         "x_news": true,
         "x": {
           "views": 475000,
@@ -811,11 +806,11 @@
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=xJb6VuMWbRE",
-          "views": 558904,
+          "views": 570731,
           "title": "They're Not Happy About Zoomer Anakin",
           "channel": "Akkad Daily",
-          "checked": "2026-11-04",
-          "via": "fetch_social"
+          "checked": "2026-11-05",
+          "via": "fetch_youtube.py"
         }
       },
       "notes": "KYM Anakin Skywalker Gen Z Male Rage Memes still Popular Right Now / Top Entry This Month (Nov 4 9am); ~14,844 KYM page views. Election-night Anakin edits also hit X News. Nov 4 reads (10am PT): YouTube 'They're Not Happy About Zoomer Anakin' 543K views.",
@@ -1038,7 +1033,7 @@
         "kym": true,
         "kym_editorial": true,
         "x_news": true,
-        "kym_views": 179286,
+        "kym_views": 179778,
         "tiktok": {
           "likes": 89000,
           "via": "KYM-cited count",
@@ -1212,8 +1207,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3498592,
-          "likes": 118643,
+          "views": 3498788,
+          "likes": 118642,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1245,7 +1240,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/vwxyz_4/status/2115203529795326309",
-          "views": 7241775,
+          "views": 7246979,
           "likes": 82831,
           "checked": "2026-11-05",
           "via": "X API"
@@ -1427,8 +1422,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1469644,
-          "likes": 26793,
+          "views": 1470321,
+          "likes": 26794,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1463,8 +1458,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 136700,
-          "likes": 16110,
+          "views": 136768,
+          "likes": 16114,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1617,8 +1612,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6180884,
-          "likes": 183887,
+          "views": 6191130,
+          "likes": 183925,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1652,8 +1647,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1096484,
-          "likes": 54501,
+          "views": 1097090,
+          "likes": 54497,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1702,11 +1697,11 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 1551,
+        "kym_views": 1604,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334064,
+          "views": 334091,
           "likes": 3047,
           "checked": "2026-11-05",
           "via": "X API"
@@ -1945,8 +1940,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 168827,
-          "likes": 7464,
+          "views": 169156,
+          "likes": 7468,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -2020,20 +2015,20 @@
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI",
-          "views": 531164,
+          "views": 541172,
           "title": "Frutiger Aero Yams To Your Right",
           "channel": "Lessons in Meme Culture",
           "checked": "2026-11-05",
-          "via": "fetch_social.py"
+          "via": "fetch_youtube.py"
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 246110,
-          "likes": 27062,
+          "views": 246295,
+          "likes": 27063,
           "checked": "2026-11-05",
           "via": "X API"
         },
-        "kym_views": 4476
+        "kym_views": 4780
       },
       "notes": "KYM-cited TikTok @hard_plushie 9.1M views / 2.4M likes (fetch_social Nov 5); @watosis 322K; YT LiMC 485K; KYM 4,254 views; still on Popular/Weekly.",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026"
@@ -2059,7 +2054,7 @@
           "Reddit"
         ]
       },
-      "notes": "#1 r/dankmemes top-today, #3 week, #12 month (Nov 5 7am). Squid Game Gi-hun cheer as Americans every election.",
+      "notes": "#3 r/dankmemes top-week (Nov 5 10am; off day top). Squid Game Gi-hun cheer as Americans every election.",
       "headline_reviewed": true,
       "also": []
     },
