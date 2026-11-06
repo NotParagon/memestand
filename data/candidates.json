@@ -30,8 +30,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-          "views": 1457972,
-          "likes": 129974,
+          "views": 1460324,
+          "likes": 130055,
           "checked": "2026-11-06",
           "via": "X API"
         }
@@ -54,7 +54,7 @@
       "first_seen": "2026-11-04",
       "also": [
         {
-          "name": "X / @MonsterEnergy (5.6M views)",
+          "name": "X / @MonsterEnergy (5.7M views)",
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345"
         }
       ],
@@ -64,8 +64,8 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 5637289,
-          "likes": 49829,
+          "views": 5680579,
+          "likes": 49913,
           "checked": "2026-11-06",
           "via": "X API"
         },
@@ -184,7 +184,7 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 24
+          "rank": 22
         }
       },
       "notes": "#25 r/memes top-week (Nov 5 ~11am PT; aged off day top). Template joke that YouTube channels add India B-roll / mention India to farm views.",
@@ -226,7 +226,7 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 17
+          "rank": 15
         }
       },
       "notes": "#17 r/memes top-week (Nov 6 6AM PT; was #2 day on Nov 5). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme wave.",
@@ -292,7 +292,7 @@
         ],
         "reddit": {
           "sub": "dankmemes",
-          "rank": 21
+          "rank": 19
         }
       },
       "notes": "#24 r/dankmemes top-this-week (Nov 5 ~11am PT; aged off day top). Over the Hedge still captioned for YouTube UI redesign whiplash.",
@@ -358,8 +358,8 @@
         "kym_views": 3964,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3510858,
-          "likes": 192227,
+          "views": 3511616,
+          "likes": 192234,
           "checked": "2026-11-06",
           "via": "X API"
         },
@@ -528,7 +528,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 8
+          "rank": 7
         },
         "platforms": [
           "Reddit"
@@ -1338,8 +1338,8 @@
       ],
       "ev": {
         "reddit": {
-          "sub": "dankmemes",
-          "rank": 6
+          "sub": "memes",
+          "rank": 5
         },
         "platforms": [
           "Reddit"
@@ -1347,7 +1347,7 @@
       },
       "notes": "#6 r/memes top-this-week (Nov 5 ~11am PT). Braveheart-style Altman DRAM shortage riff.",
       "headline_reviewed": true,
-      "credit": "posted by u/G-5-0 on r/dankmemes"
+      "credit": "posted by u/SirDoritos1 on r/memes"
     },
     {
       "id": "potatoes-walrus",
@@ -1387,7 +1387,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 9
+          "rank": 8
         },
         "platforms": [
           "Reddit"
@@ -1461,7 +1461,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 5
+          "rank": 19
         },
         "platforms": [
           "Reddit"
@@ -1698,8 +1698,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6280903,
-          "likes": 184012,
+          "views": 6283598,
+          "likes": 184016,
           "checked": "2026-11-06",
           "via": "X API"
         }
@@ -1738,7 +1738,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1102880,
+          "views": 1102982,
           "likes": 54568,
           "checked": "2026-11-06",
           "via": "X API"
@@ -1793,7 +1793,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334451,
+          "views": 334461,
           "likes": 3036,
           "checked": "2026-11-06",
           "via": "X API"
@@ -1839,7 +1839,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 19
+          "rank": 20
         },
         "platforms": [
           "Reddit"
@@ -1863,7 +1863,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 19
+          "rank": 21
         },
         "platforms": [
           "Reddit"
@@ -1912,7 +1912,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 8
+          "rank": 2
         },
         "platforms": [
           "Reddit"
@@ -1921,7 +1921,7 @@
       "notes": "#2 r/memes week / #15 month (Nov 5 ~11am PT). Coffin more space-efficient than Altman housing vs datacenters.",
       "headline_reviewed": true,
       "also": [],
-      "credit": "posted by u/FallenVampireLord on r/memes"
+      "credit": "posted by u/ManagerOfLove on r/memes"
     },
     {
       "id": "last-dance-trend",
@@ -2004,7 +2004,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 24
+          "rank": 25
         },
         "platforms": [
           "Reddit"
@@ -2124,8 +2124,8 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 250032,
-          "likes": 27124,
+          "views": 250231,
+          "likes": 27128,
           "checked": "2026-11-06",
           "via": "X API"
         },
@@ -2173,7 +2173,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 21
+          "rank": 19
         },
         "platforms": [
           "Reddit"
@@ -2224,8 +2224,8 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 14464848,
-          "likes": 157085,
+          "views": 14523707,
+          "likes": 157508,
           "checked": "2026-11-06",
           "via": "X API"
         },
@@ -2259,7 +2259,7 @@
       "first_seen": "2026-11-06",
       "also": [
         {
-          "name": "X / @2THUQQ (296K views)",
+          "name": "X / @2THUQQ (316K views)",
           "url": "https://x.com/2THUQQ/status/2118617523708965188"
         },
         {
@@ -2274,8 +2274,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/2THUQQ/status/2118617523708965188",
-          "views": 296226,
-          "likes": 27671,
+          "views": 316252,
+          "likes": 29384,
           "checked": "2026-11-06",
           "via": "X API"
         }
