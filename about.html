@@ -69,6 +69,8 @@
  .rk{color:var(--red)}
  li .hl .rk{display:inline-block;min-width:2.1em;margin-right:2px;padding:2px 6px;background:var(--redbg);color:#fff;text-align:center;line-height:1.3}
  .meta{font-size:11px;margin-top:6px;color:var(--muted)} .src{color:var(--link);margin-right:8px} .fs{color:var(--muted)}
+ .mv{display:flex;flex-wrap:wrap;column-gap:10px;row-gap:2px;align-items:baseline;margin:4px 0 0;font-size:11px;line-height:1.35;letter-spacing:.02em;color:var(--muted)}
+ .mv span{white-space:nowrap} .mv-up{color:var(--green)} .mv-down{color:var(--red)} .mv-new,.mv-first{color:var(--fg2)}
  .credit{font-size:11px;margin-top:4px;color:var(--muted)} .credit a{color:var(--link);text-decoration:underline}
  .skip{position:absolute;left:-9999px;top:0} .skip:focus{left:8px;top:8px;background:var(--card);color:var(--link);padding:6px;border:2px solid var(--link);z-index:9}
  a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
@@ -100,7 +102,7 @@
   .thumb,.one .thumb{max-height:380px}
   .card{font-size:17px}
   .hl{font-size:18px;line-height:1.3}
-  .meta,.credit{font-size:13px;line-height:1.45}
+  .meta,.credit,.mv{font-size:13px;line-height:1.45}
   .why{font-size:14px;line-height:1.45}
   .hl a{display:inline}
   li h3.hl{min-height:44px}
@@ -140,6 +142,7 @@ their numbers come from public post pages we open (usually posts that Know Your 
 Meme reports; we don't see the whole platform, so their coverage is partial.</p>
 <p>Windows: <b>today</b> = took off in the last ~36 hours; <b>this week</b> = active in the last 7 days; <b>this month</b> = active in the last 30 days.
 Engagement numbers come from the platforms' public pages and APIs and from Know Your Meme as they stood when we checked them; they can change or be wrong.</p>
+<p>On the daily top 10, a short note under the headline is computed from earlier daily archive files and the meme's stable page: <b>New today</b> means it is on today's list and was not on yesterday's; <b>First time</b> is added only when no earlier daily archive contains it and the archive has no missing day; <b>Up</b>, <b>Down</b>, or <b>Unchanged since yesterday</b> is the rank change; <b>N days at #1</b> counts a consecutive run of at least two Pacific days. An hourly refresh does not add a day. If a day's archive is missing, that note is left off. The weekly and monthly lists do not show these notes.</p>
 
 <h2 id="policy">Content and editorial policy</h2>
 <ul>
