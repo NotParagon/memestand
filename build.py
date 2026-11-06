@@ -22,6 +22,10 @@ Each run snapshots data/memes.json to data/archive/<PT date>.json (overwriting o
 snapshot), and never deletes older snapshots or archive pages, so past days survive rebuilds.
 The build is deterministic: re-running with the same data produces identical files.
 
+Daily top-10 rows can show a short history note (New today, First time, rank movement since
+yesterday, N days at #1). tools/rank_history.py derives that only from archived daily lists
+and the meme-page slug. Weekly and monthly lists, the lead headline, and the score are unchanged.
+
 Takedowns: items matching data/blocklist.json are replaced by a removal notice on every page (archives
 included), scrubbed from data/archive/*.json, and their local thumbnails deleted (see tools/legal.py).
 Blocked memes also lose their meme page and their entry in data/meme_pages.json.
@@ -30,6 +34,7 @@ import json, html, datetime, pathlib, re, shutil, sys
 from zoneinfo import ZoneInfo
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent / "tools"))
 from legal import load_blocklist, blocked_by, exclusion_reason
+from rank_history import daily_ranks, history_notes, meme_identity
 
 SITE = "https://memestand.com"
 NAME = "MemeStand"
@@ -214,6 +219,8 @@ CSS = """
  .rk{color:var(--red)}
  li .hl .rk{display:inline-block;min-width:2.1em;margin-right:2px;padding:2px 6px;background:var(--redbg);color:#fff;text-align:center;line-height:1.3}
  .meta{font-size:11px;margin-top:6px;color:var(--muted)} .src{color:var(--link);margin-right:8px} .fs{color:var(--muted)}
+ .mv{display:flex;flex-wrap:wrap;column-gap:10px;row-gap:2px;align-items:baseline;margin:4px 0 0;font-size:11px;line-height:1.35;letter-spacing:.02em;color:var(--muted)}
+ .mv span{white-space:nowrap} .mv-up{color:var(--green)} .mv-down{color:var(--red)} .mv-new,.mv-first{color:var(--fg2)}
  .credit{font-size:11px;margin-top:4px;color:var(--muted)} .credit a{color:var(--link);text-decoration:underline}
  .skip{position:absolute;left:-9999px;top:0} .skip:focus{left:8px;top:8px;background:var(--card);color:var(--link);padding:6px;border:2px solid var(--link);z-index:9}
  a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
@@ -245,7 +252,7 @@ CSS = """
   .thumb,.one .thumb{max-height:380px}
   .card{font-size:17px}
   .hl{font-size:18px;line-height:1.3}
-  .meta,.credit{font-size:13px;line-height:1.45}
+  .meta,.credit,.mv{font-size:13px;line-height:1.45}
   .why{font-size:14px;line-height:1.45}
   .hl a{display:inline}
   li h3.hl{min-height:44px}
@@ -361,21 +368,36 @@ def hl_link(m, base):
     if h: return f'<a href="{e(h)}">{e(m["title"])}</a>'
     return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m["title"])}</a>'
 
-def item(m, base, label, notes=False):
+def history_html(m, day, live):
+    """Subtle daily-list note. Empty for weekly/monthly, removed rows, and thin history."""
+    ident = meme_identity(m, SLUG)
+    if not ident or not day:
+        return ""
+    notes = history_notes(ident, day, RANK_DAYS, live=live)
+    if not notes:
+        return ""
+    spans = "".join(f'<span class="mv-{n["kind"]}" title="{e(n["title"])}">{e(n["text"])}</span>' for n in notes)
+    return f'\n  <div class="mv">{spans}</div>'
+
+def item(m, base, label, notes=False, hist=""):
     if m.get("removed"):
         return f'<li><h3 class="hl"><span class="rk">{m["rank"]}.</span> {e(REMOVED)}</h3><div class="meta"><a class="src" href="{base}dmca.html">Takedown policy</a></div></li>'
     why = f'\n  <div class="why">Why it ranks: {e(m["notes"])}</div>' if notes and m.get("notes") else ""
     return f'''<li>
   {thumb(m, base, label)}
-  <h3 class="hl"><span class="rk">{m["rank"]}.</span> {hl_link(m, base)}</h3>
+  <h3 class="hl"><span class="rk">{m["rank"]}.</span> {hl_link(m, base)}</h3>{hist}
   <div class="meta">{sources(m)}<span class="fs">since {e(m["first_seen"])}</span></div>
   {credit(m)}{why}
 </li>'''
 
-def column(d, p, base, link=True, notes=False):
+def column(d, p, base, link=True, notes=False, day=None, live=False):
     info = PERIODS[p]
     h = f'<a href="{base}{info["slug"]}/">{info["h2"]}</a>' if link else info["h2"]
-    return f'<section class="col" id="{p}"><h2>{h}</h2><ul>{"".join(item(m, base, info["word"], notes) for m in d[p])}</ul></section>'
+    lis = []
+    for m in d[p]:
+        hist = history_html(m, day, live) if p == "daily" else ""
+        lis.append(item(m, base, info["word"], notes, hist))
+    return f'<section class="col" id="{p}"><h2>{h}</h2><ul>{"".join(lis)}</ul></section>'
 
 def top_story(d, base, kicker="TODAY'S LEAD MEME", day=None):
     t = lead_of(d, day or TODAY)
@@ -754,7 +776,7 @@ def build_home():
 {upd_html()}
 {top_story(d, "")}
 <main class="grid">
-  {column(d, "daily", "")}
+  {column(d, "daily", "", day=TODAY, live=True)}
   {column(d, "weekly", "")}
   {column(d, "monthly", "")}
 </main>
@@ -789,7 +811,7 @@ def build_period(p):
 {mast(base, h1)}
 <p class="intro">{INTRO}</p>
 {upd_html()}
-<main class="one">{column(d, p, base, link=False, notes=True)}</main>
+<main class="one">{column(d, p, base, link=False, notes=True, day=TODAY if p == "daily" else None, live=True)}</main>
 <p class="pager">{others} | <a href="../archive/">Daily Meme Report Archive</a></p>
 ''' + footer(base)
     write(f"{info['slug']}/index.html", page)
@@ -833,7 +855,7 @@ def build_archive_day(day, d, prev, nxt):
 <p class="pager">{" ".join(pager)}</p>
 {top_story(d, base, kicker=f"LEAD MEME OF {fmt_short(dd).upper()}", day=day)}
 <main class="grid">
-  {column(d, "daily", base, link=False)}
+  {column(d, "daily", base, link=False, day=day, live=False)}
   {column(d, "weekly", base, link=False)}
   {column(d, "monthly", base, link=False)}
 </main>
@@ -897,6 +919,7 @@ their numbers come from public post pages we open (usually posts that Know Your 
 Meme reports; we don't see the whole platform, so their coverage is partial.</p>
 <p>Windows: <b>today</b> = took off in the last ~36 hours; <b>this week</b> = active in the last 7 days; <b>this month</b> = active in the last 30 days.
 Engagement numbers come from the platforms' public pages and APIs and from Know Your Meme as they stood when we checked them; they can change or be wrong.</p>
+<p>On the daily top 10, a short note under the headline is computed from earlier daily archive files and the meme's stable page: <b>New today</b> means it is on today's list and was not on yesterday's; <b>First time</b> is added only when no earlier daily archive contains it and the archive has no missing day; <b>Up</b>, <b>Down</b>, or <b>Unchanged since yesterday</b> is the rank change; <b>N days at #1</b> counts a consecutive run of at least two Pacific days. An hourly refresh does not add a day. If a day's archive is missing, that note is left off. The weekly and monthly lists do not show these notes.</p>
 
 <h2 id="policy">Content and editorial policy</h2>
 <ul>
@@ -1135,9 +1158,14 @@ Sitemap: {SITE}/sitemap.xml
 """)
 
 def build_llms():
+    def hist(m):
+        ident = meme_identity(m, SLUG)
+        notes = history_notes(ident, TODAY, RANK_DAYS, live=True) if ident else []
+        return (" — " + "; ".join(n["text"] for n in notes)) if notes else ""
     def lst(p):
         return "\n".join(f"{m['rank']}. {REMOVED}" if m.get("removed") else
                          f"{m['rank']}. {tc(m['title'])} — source: {m['source_url']} — credit: {m.get('credit') or m['source_name']}"
+                         + (hist(m) if p == "daily" else "")
                          + (f" — evidence: {m['notes']}" if m.get("notes") else "")
                          + (f" — explainer: {SITE}/{meme_href(m, '')}" if meme_href(m, "") else "")
                          for m in data[p])
@@ -1178,6 +1206,7 @@ Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 
 ## Notes for AI assistants
 
+- On the daily top 10, New today, First time, Up/Down/Unchanged since yesterday, and "N days at #1" come only from archived daily rankings and the meme's stable page identity. A missing archive day leaves the note off. Hourly refreshes do not add a day. Weekly and monthly lists do not carry these notes.
 - Cite MemeStand as "MemeStand (memestand.com) daily meme report" and link the dated archive page for a specific day.
 - Rankings change daily; the archive pages are permanent snapshots (items removed after a takedown request are marked as removed).
 - Headlines describe memes and online reactions; they are not MemeStand's statements of fact about the people involved. Where a headline mentions a claim about a person, it is attributed to its source.
@@ -1188,6 +1217,8 @@ Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 # ---------------------------------------------------------------- main
 snaps = snapshots()
 meme_registry(snaps)
+# One rank map per Pacific archive day, after slugs exist. Today's file is the latest hourly list.
+RANK_DAYS = {day: daily_ranks(d.get("daily") or [], SLUG) for day, d in snaps}
 lead_why = choose_leads(snaps)
 build_home()
 for p in PERIODS: build_period(p)

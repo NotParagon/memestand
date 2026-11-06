@@ -35,28 +35,40 @@ memestand/
   tools/fetch_youtube.py     YouTube search (sorted by views) + watch-page view counts into raw/youtube*.json
   tools/fetch_social.py      public TikTok / Instagram (/ YouTube) post counts into raw/social.json; --kym SLUG reads every post a KYM entry embeds
   tools/rank.py              scores candidates, picks the top 10 per period, downloads thumbnails
+  tools/rank_history.py      daily top-10 notes (New today, First time, movement, days at #1) from archive files + meme slug
   raw/                       scratch research data (Reddit RSS, KYM metadata); not deployed
   preview.png                screenshot of the current build
 ```
 
 ## Daily refresh (HOURLY 6 AM-9 PM PT since Nov 4, 2026; keep each run well under an hour)
 
-> Cadence change (Nov 4, 2026): the routine now runs every hour on the hour from 6 AM to 9 PM PT. The table below still describes the key anchor runs (6 AM main refresh, noon/6 PM social picks, 9 PM lock); every other hour is a light intraday re-rank under the same intraday rules. Hourly runs always rebuild and push so the 'Updated' stamp stays fresh (the header shows 'Updated X ago'; the about page and llms.txt say hourly 6 AM-9 PM PT). Mind the X read budget: light re-checks hourly, deep discovery at 6 AM.
+> Cadence (hourly 6 AM–9 PM PT since Nov 4, 2026): the routine runs every hour on the hour. 6 AM is the full refresh, 9 PM locks the day's archive, and every other hour is a light intraday re-rank under the same intraday rules. Hourly runs always rebuild and push so the 'Updated' stamp stays fresh (the header shows 'Updated X ago'; the about page and llms.txt say hourly 6 AM-9 PM PT). Mind the X read budget: light re-checks hourly, deep discovery at 6 AM. This repository does not schedule that cadence and does not publish social posts. Social clips are a separate routine; see "Social posts" below.
 
 Site content refreshes on a fixed Pacific-time cadence so the home page and rankings stay current
 through the day. Agents (or a human) should run this checklist at about:
 
 | PT clock | Role |
 |----------|------|
-| **6:00 AM** | **Main daily refresh.** Full evidence gather, rewrite `candidates.json` `as_of` for today, rank + build, fill new meme-page explainers, deploy. Morning top-5 social video (~7 AM) uses these rankings. |
+| **6:00 AM** | **Main daily refresh.** Full evidence gather, rewrite `candidates.json` `as_of` for today, rank + build, fill new meme-page explainers, deploy. |
 | **9:00 AM** | Intraday re-rank. Pull fresh evidence; update metrics / add anything that clearly took off since 6 AM; age out as needed. Deploy only if the ranked lists or lead meaningfully change (no no-op commits). |
-| **12:00 PM (noon)** | Intraday re-rank. Same rules. Noon "Trending Up" social clip uses the latest rankings. |
+| **12:00 PM (noon)** | Intraday re-rank. Same rules. |
 | **3:00 PM** | Intraday re-rank. Same rules. |
-| **6:00 PM** | Intraday re-rank. Same rules. 6 PM "Hot Meme" social clip uses the latest rankings. |
+| **6:00 PM** | Intraday re-rank. Same rules. |
 | **9:00 PM** | **Final lock for the day.** Re-rank once more, then leave today's `data/archive/YYYY-MM-DD.json` and `archive/YYYY-MM-DD.html` as the official end-of-day top 10. Do not rewrite that day's archive snapshot after 9 PM. |
 
 Each run should finish within ~15 minutes of the hour above when practical. The header "Updated … ago" stamp
 comes from the build timestamp in the visitor's browser (see build.py).
+
+### Social posts (not in this repo)
+
+Do not add a scheduler, a posting client, or social-card rendering to this repository. Refreshing the site does not publish anything, and it does not wait on a countdown rank or a locked morning top 5.
+
+Posting is a separate routine on the operator's machine (its templates are not part of this repo). It now does two things:
+
+- **New-entry singles**, about hourly from 6:30 AM to 9:30 PM Pacific. Only a meme's first entry into the daily top 10, with cross-day dedupe so the same meme is not posted again. The picture is on screen at the first frame, with the static red-M label and site name. No logo intro, no white intro, no end card, and no sung or spoken sting: render that still with the no-jingle option so the mix is the quiet instrumental bed alone.
+- **One nightly recap**, resumed around 8 PM Pacific, in addition to those singles. This is not the old countdown. There is no white frame and no logo intro; the first meme (the visual #5) is on screen at the first frame, with its rank badge. The original bed and the sung Meme-Stand jingle play over that first meme, and the voice starts after the jingle. The voice delivers the description and the joke only. It does not say "number five" or any other rank, because the number is already in the picture. The end card stays. Build it with the meme-first option, from the latest verified daily top 5 at recap time, not from a deprecated 6 AM locked list.
+
+The noon and 6 PM countdown clips are not part of this routine. Leaving the no-jingle and meme-first options off keeps the older template defaults for anything still rendered that way.
 
 **Intraday rules (9 AM / noon / 3 PM / 6 PM / 9 PM):**
 - Re-check all six sources (X, TikTok, Instagram, Reddit, YouTube, KYM); refresh `ev` numbers; add only memes with **new verified evidence**.
@@ -130,6 +142,7 @@ comes from the build timestamp in the visitor's browser (see build.py).
        --screenshot=preview.png "file://$PWD/index.html"
    ```
    - To refresh a changed thumbnail, delete `images/<id>.jpg` first. `rank.py` only downloads missing images.
+   - Daily history notes (New today, First time, movement since yesterday, N days at #1) are written by this build from `data/archive/`. Do not type them into the HTML.
    - Never delete old `images/*.jpg`, `archive/*.html` or `data/archive/*.json`: past archive pages still use them.
      The one exception is a takedown, and the blocklist handles that automatically.
    - Validate before pushing (see "SEO checks" below).
@@ -195,6 +208,21 @@ automatically (`choose_leads()` / `pick_lead()`); the daily, weekly and monthly 
   gives no diff. build.py prints `lead <date>: <slug> (<reason>)`; check it before pushing.
 - Don't hand-pick or hand-edit the lead. If the chosen lead needs a headline fix, fix the candidate in `data/candidates.json`
   and rerun rank.py + build.py. The kicker reads "TODAY'S LEAD MEME" (archives: "LEAD MEME OF <date>"), since the lead may not be #1.
+
+### Daily rank labels (daily top 10 only)
+
+`tools/rank_history.py`, called from `build.py`, adds a short note under each daily headline on the homepage and `/top-memes-today/`. The same note is on each `archive/YYYY-MM-DD.html`, worded so it stays true later ("New that day", "from the day before"). Weekly and monthly lists are unchanged. The lead-headline rule and the score in `tools/rank.py` are unchanged.
+
+The note uses only `data/archive/YYYY-MM-DD.json` daily lists — one file per Pacific calendar day — and the stable meme-page slug (`data/meme_pages.json` `ids`). An hourly rebuild overwrites today's file and does not add a day. A candidate id that maps to an existing slug is the same meme.
+
+| Note | When it is shown |
+|---|---|
+| **New today** | On this day's daily list, and not on the previous Pacific day's list. A return after a day off gets this note. It does not mean the meme has never ranked before. |
+| **First time** | Shown with New today only when no earlier daily archive contains that slug, and every Pacific day from the first archive file through yesterday has a file. This is a first-ever daily identity. A gap in the archive blocks it. |
+| **Up N / Down N / Unchanged since yesterday** | The slug was on yesterday's daily list. N is how many ranks it moved (rank 1 is best). |
+| **N days at #1** | The slug was daily #1 on this day and on each previous Pacific day, walking backward one day at a time, and N is at least 2. A missing file or a day that was not #1 stops the walk and drops the old count. The first day of a run shows no streak note. |
+
+If this is the first archived day, or yesterday's file is missing, the row gets no New / First time / movement note. A missing day is never filled in. Do not hand-write these notes. `python3 tools/test_rank_history.py` covers the first day, an unchanged #1, a broken #1 streak, a reentry, new-versus-first-time, up/down/unchanged, a missing archive, and the Pacific midnight / hourly boundary.
 
 ## Deploying with the GoDaddy domain
 
