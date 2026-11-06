@@ -1,6 +1,35 @@
 {
   "_doc": "Persistent per-meme explainer store for the /meme/<slug>/ pages, keyed by slug. build.py reads it and never regenerates written text. ids = candidate ids that map to this page (keep the slug forever). status: 'full' (real explanation + origin with sources) or 'short' (only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. Fields: explainer = 2-4 sentence plain-English meaning; origin = who/where/when if verified and how it spread, in our own words ('\\n\\n' between paragraphs); origin_confirmed = true only if the first post/creator is documented, false if unknown (the page then says so), null = not yet researched; how_to_use = 0-2 example captions; sources = [{name,url}] links that back the text (must return 200); checked = ISO datetime (PT) the text was last written or reviewed (feeds dateModified + sitemap lastmod). build.py adds a stub (explainer null) for any new meme; the daily routine fills it in (UPDATE.md step 5).",
   "memes": {
+    "affleck-i-voted-smoking": {
+      "name": "Ben Affleck 'I Voted' Smoking Update",
+      "ids": [
+        "affleck-i-voted-smoking"
+      ],
+      "status": "full",
+      "explainer": "A side-by-side update of the classic Ben Affleck \"tired smoking\" reaction meme. The left (or older) panel is the familiar paparazzi shot of Affleck looking exhausted with a cigarette; the new panel shows him again mid-smoke, this time still wearing an \"I VOTED\" sticker after the 2026 midterms. People use it as a post-election fatigue reaction — \"he's all of us\" after casting a ballot.",
+      "origin": "The classic Affleck-tired smoking image has circulated as a reaction meme for years (X News notes a 2016 London paparazzi lineage). The midterm \"update\" that ranked here is a Nov 4, 2026 X post by @BYRNEGRACES captioned \"Wake up, babe. Ben Affleck tired and smoking meme has been updated,\" pairing the old frame with a new paparazzi photo of Affleck outside Steak 48 in Beverly Hills. That post passed 1M views and became an X News story; MemeStand has not independently confirmed an earlier identical side-by-side.",
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Wake up, babe. Ben Affleck tired and smoking meme has been updated.",
+        "Me after voting / post-election stress"
+      ],
+      "source_url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@BYRNEGRACES on X",
+          "url": "https://x.com/BYRNEGRACES/status/2118046162838053124"
+        },
+        {
+          "name": "X News: Ben Affleck weary smoking photo",
+          "url": "https://x.com/i/trending/2118434501269574094"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-05",
+      "checked": "2026-11-05T17:05:00-08:00"
+    },
     "ai-artists-hoverboard": {
       "name": "AI Artists Hoverboard",
       "ids": [

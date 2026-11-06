@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T16:02-08:00",
+  "updated": "2026-11-05T17:05-08:00",
   "daily": [
     {
       "rank": 1,
@@ -29,7 +29,7 @@
           "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         },
         {
-          "name": "TikTok / @boby.biggsjohnson (5.8M views)",
+          "name": "TikTok / @boby.biggsjohnson (5.9M views)",
           "url": "https://www.tiktok.com/@boby.biggsjohnson/video/7703585816429235487"
         }
       ],
@@ -41,7 +41,7 @@
         "Instagram",
         "Know Your Meme"
       ],
-      "notes": "IG @kevinwinnik 11M likes (fetch_social Nov 5 noon); TikTok @leehoustonx 10.9M views / 1.4M likes; @boby.biggsjohnson 5.8M; KYM 1,663 views. Yesterday's site lead."
+      "notes": "IG @kevinwinnik 11M likes (fetch_social Nov 5 ~5PM); TikTok @leehoustonx 10.9M views / 1.4M likes; @boby.biggsjohnson 5.9M; KYM 1,663 views. Yesterday's site lead."
     },
     {
       "rank": 2,
@@ -84,7 +84,7 @@
         "YouTube",
         "Know Your Meme"
       ],
-      "notes": "KYM-cited TikTok @hard_plushie 9.1M views / 2.4M likes (kept; noon re-fetch no rehydration); @watosis 327K; YT LiMC ~541K; KYM 5,104 views; still on Popular/editorial."
+      "notes": "KYM-cited TikTok @hard_plushie 9.2M views / 2.4M likes; @watosis 331K; YT LiMC ~565K; KYM 5,979 views; still on Popular/editorial."
     },
     {
       "rank": 3,
@@ -121,7 +121,7 @@
         "TikTok",
         "Know Your Meme"
       ],
-      "notes": "3.40M views / 185K likes on @MeganBitchell's WOKE 3 post (X API, Nov 5 noon). KYM entry 2,675 views. TikTok @elionwillpower 852K views."
+      "notes": "KYM entry + TikTok @elionwillpower 853K views / 134K likes (fetch_social ~5PM); X @MeganBitchell 3.48M views / 191K likes. Midterm 'blue sweep' sequel-slang."
     },
     {
       "rank": 4,
@@ -140,11 +140,11 @@
         }
       ],
       "first_seen": "2026-11-04",
-      "score": 75.9,
+      "score": 76.0,
       "sources": [
         "X"
       ],
-      "notes": "Telegram official joke that Bill Gates named Microsoft after his penis. X API 12,255,249 views / 138,428 likes (Nov 5 ~3PM PT)."
+      "notes": "Telegram official joke that Bill Gates named Microsoft after his penis. X API 12,596,234 views / 141,511 likes (Nov 5 ~5PM PT)."
     },
     {
       "rank": 5,
@@ -171,7 +171,7 @@
       "sources": [
         "X"
       ],
-      "notes": "Headphones primate GIF study-session meme. X API 6,227,011 views / 184,007 likes (Nov 5 ~3PM PT)."
+      "notes": "Headphones primate GIF as study-session meme. X @studsyun 6.23M views / 184K likes (Nov 5 ~5PM PT)."
     },
     {
       "rank": 6,
@@ -185,11 +185,11 @@
       "credit": "posted by @MonsterEnergy on X",
       "also": [],
       "first_seen": "2026-11-05",
-      "score": 71.6,
+      "score": 71.7,
       "sources": [
         "X"
       ],
-      "notes": "Monster Energy brand post (Nov 4) 'it's not that deep. crack a monster.' X API 4,511,349 views / 47,724 likes (Nov 5 ~3PM PT); X News trending story about the reply chain."
+      "notes": "Monster Energy official: 'it's not that deep. crack a monster.' X API 4.72M views / 48.1K likes (Nov 5 ~5PM PT)."
     },
     {
       "rank": 7,
@@ -216,6 +216,29 @@
     },
     {
       "rank": 8,
+      "id": "affleck-i-voted-smoking",
+      "title": "BEN AFFLECK'S 'I VOTED' SMOKING PHOTO UPDATES THE CLASSIC TIRED MEME, PER X",
+      "image": null,
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
+      "source_name": "X / @BYRNEGRACES",
+      "credit": "posted by @BYRNEGRACES on X",
+      "also": [
+        {
+          "name": "X News (Affleck post-election meme)",
+          "url": "https://x.com/i/trending/2118434501269574094"
+        }
+      ],
+      "first_seen": "2026-11-04",
+      "score": 65.3,
+      "sources": [
+        "X"
+      ],
+      "notes": "Side-by-side of the classic Affleck-tired meme with a Nov 2026 paparazzi shot of Affleck smoking outside Steak 48 still wearing an 'I VOTED' sticker. X @BYRNEGRACES 1.07M views / 95K likes; X News story. Paparazzi photo — text card only."
+    },
+    {
+      "rank": 9,
       "id": "altman-ramesses",
       "title": "'LET THE MAN REST': SAM ALTMAN AS RAMESSES II IN THE RAM MEME WAVE",
       "image": "images/altman-ramesses.jpg",
@@ -226,14 +249,14 @@
       "credit": "posted by u/ZealousidealChain473 on r/memes",
       "also": [],
       "first_seen": "2026-11-05",
-      "score": 62.0,
+      "score": 60.0,
       "sources": [
         "Reddit"
       ],
-      "notes": "#1 r/memes top-today and #19 week (Nov 5 ~4PM PT). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme wave."
+      "notes": "#2 r/memes top-today (Nov 5 ~5PM PT; was #1 earlier). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme wave."
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "ww3-or-christmas",
       "title": "'WW3 OR CHRISTMAS?': BUDGET JOKE ABOUT PREPARING FOR BOTH GOES VIRAL",
       "image": null,
@@ -249,33 +272,6 @@
         "X"
       ],
       "notes": "@HorrorGorl: 'Should I be preparing for WW3 or Christmas, because I dont have the budget for both.' 709K views / 36.5K likes (X API, Nov 5)."
-    },
-    {
-      "rank": 10,
-      "id": "hate-seals-fandom",
-      "title": "MEME FORMAT: PARENTS SAY OK TO EVERY IDENTITY -- THEN LOSE IT OVER A FANDOM HATE",
-      "image": "images/hate-seals-fandom.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/grindgod26/status/2117272503500550159",
-      "source_name": "X / @grindgod26",
-      "credit": "posted by @grindgod26 on X",
-      "also": [
-        {
-          "name": "X News",
-          "url": "https://x.com/i/trending/2117361073187967418"
-        },
-        {
-          "name": "X News (dealbreakers)",
-          "url": "https://x.com/i/trending/2116638968385286223"
-        }
-      ],
-      "first_seen": "2026-11-01",
-      "score": 57.1,
-      "sources": [
-        "X"
-      ],
-      "notes": "16,051 likes / 135K views on @grindgod26 'dad, I hate seals' variant (X API, Nov 4 9am). Format still in X News today (identities OK, fandom deal-breaker). X News fandom-hating format still active Nov 5 noon."
     }
   ],
   "weekly": [
@@ -307,7 +303,7 @@
           "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         },
         {
-          "name": "TikTok / @boby.biggsjohnson (5.8M views)",
+          "name": "TikTok / @boby.biggsjohnson (5.9M views)",
           "url": "https://www.tiktok.com/@boby.biggsjohnson/video/7703585816429235487"
         }
       ],
@@ -319,7 +315,7 @@
         "Instagram",
         "Know Your Meme"
       ],
-      "notes": "IG @kevinwinnik 11M likes (fetch_social Nov 5 noon); TikTok @leehoustonx 10.9M views / 1.4M likes; @boby.biggsjohnson 5.8M; KYM 1,663 views. Yesterday's site lead."
+      "notes": "IG @kevinwinnik 11M likes (fetch_social Nov 5 ~5PM); TikTok @leehoustonx 10.9M views / 1.4M likes; @boby.biggsjohnson 5.9M; KYM 1,663 views. Yesterday's site lead."
     },
     {
       "rank": 2,
@@ -362,7 +358,7 @@
         "YouTube",
         "Know Your Meme"
       ],
-      "notes": "KYM-cited TikTok @hard_plushie 9.1M views / 2.4M likes (kept; noon re-fetch no rehydration); @watosis 327K; YT LiMC ~541K; KYM 5,104 views; still on Popular/editorial."
+      "notes": "KYM-cited TikTok @hard_plushie 9.2M views / 2.4M likes; @watosis 331K; YT LiMC ~565K; KYM 5,979 views; still on Popular/editorial."
     },
     {
       "rank": 3,
@@ -496,7 +492,7 @@
         "TikTok",
         "Know Your Meme"
       ],
-      "notes": "3.40M views / 185K likes on @MeganBitchell's WOKE 3 post (X API, Nov 5 noon). KYM entry 2,675 views. TikTok @elionwillpower 852K views."
+      "notes": "KYM entry + TikTok @elionwillpower 853K views / 134K likes (fetch_social ~5PM); X @MeganBitchell 3.48M views / 191K likes. Midterm 'blue sweep' sequel-slang."
     },
     {
       "rank": 7,
@@ -538,6 +534,29 @@
     },
     {
       "rank": 8,
+      "id": "telegram-microsoft",
+      "title": "TELEGRAM'S OFFICIAL ACCOUNT: 'I CAN'T BELIEVE BILL GATES NAMED THAT COMPANY AFTER HIS PENIS'",
+      "image": null,
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/telegram/status/2117998301564043360",
+      "source_name": "X / @telegram",
+      "credit": "posted by @telegram on X",
+      "also": [
+        {
+          "name": "X News",
+          "url": "https://x.com/i/trending/2118107139155939611"
+        }
+      ],
+      "first_seen": "2026-11-04",
+      "score": 76.0,
+      "sources": [
+        "X"
+      ],
+      "notes": "Telegram official joke that Bill Gates named Microsoft after his penis. X API 12,596,234 views / 141,511 likes (Nov 5 ~5PM PT)."
+    },
+    {
+      "rank": 9,
       "id": "altman-ram",
       "title": "ALTMAN: DRAM IN HOME PCS IS 'QUITE TERRIBLE' ALLOCATION... INTERNET HIDES ITS DIMMS",
       "image": "images/altman-ram.jpg",
@@ -563,29 +582,6 @@
         "Reddit"
       ],
       "notes": "#1 r/memes top-this-week and #4 top-this-month (Nov 5 ~11am PT)."
-    },
-    {
-      "rank": 9,
-      "id": "telegram-microsoft",
-      "title": "TELEGRAM'S OFFICIAL ACCOUNT: 'I CAN'T BELIEVE BILL GATES NAMED THAT COMPANY AFTER HIS PENIS'",
-      "image": null,
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/telegram/status/2117998301564043360",
-      "source_name": "X / @telegram",
-      "credit": "posted by @telegram on X",
-      "also": [
-        {
-          "name": "X News",
-          "url": "https://x.com/i/trending/2118107139155939611"
-        }
-      ],
-      "first_seen": "2026-11-04",
-      "score": 75.9,
-      "sources": [
-        "X"
-      ],
-      "notes": "Telegram official joke that Bill Gates named Microsoft after his penis. X API 12,255,249 views / 138,428 likes (Nov 5 ~3PM PT)."
     },
     {
       "rank": 10,

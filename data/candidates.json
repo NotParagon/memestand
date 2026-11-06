@@ -2,6 +2,41 @@
   "as_of": "2026-11-05",
   "candidates": [
     {
+      "id": "affleck-i-voted-smoking",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "BEN AFFLECK'S 'I VOTED' SMOKING PHOTO UPDATES THE CLASSIC TIRED MEME, PER X",
+      "source_url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
+      "source_name": "X / @BYRNEGRACES",
+      "image_url": null,
+      "image_policy": "none",
+      "first_seen": "2026-11-04",
+      "also": [
+        {
+          "name": "X News (Affleck post-election meme)",
+          "url": "https://x.com/i/trending/2118434501269574094"
+        }
+      ],
+      "ev": {
+        "platforms": [
+          "X"
+        ],
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
+          "views": 1072693,
+          "likes": 94969,
+          "checked": "2026-11-05",
+          "via": "X API"
+        }
+      },
+      "notes": "Side-by-side of the classic Affleck-tired meme with a Nov 2026 paparazzi shot of Affleck smoking outside Steak 48 still wearing an 'I VOTED' sticker. X @BYRNEGRACES 1.07M views / 95K likes; X News story. Paparazzi photo — text card only.",
+      "headline_reviewed": true,
+      "first_seen_basis": "X post by @BYRNEGRACES on Nov 4, 2026"
+    },
+    {
       "id": "crack-a-monster",
       "periods": [
         "daily",
@@ -19,14 +54,14 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 4608083,
-          "likes": 47885,
+          "views": 4724266,
+          "likes": 48134,
           "checked": "2026-11-05",
           "via": "X API"
         },
         "x_news": true
       },
-      "notes": "Monster Energy brand post (Nov 4) 'it's not that deep. crack a monster.' X API 4,511,349 views / 47,724 likes (Nov 5 ~3PM PT); X News trending story about the reply chain.",
+      "notes": "Monster Energy official: 'it's not that deep. crack a monster.' X API 4.72M views / 48.1K likes (Nov 5 ~5PM PT).",
       "headline_reviewed": true
     },
     {
@@ -47,7 +82,7 @@
         ],
         "x": {
           "url": "https://x.com/HorrorGorl/status/2117609954563477790",
-          "views": 710449,
+          "views": 710566,
           "likes": 36558,
           "checked": "2026-11-05",
           "via": "X API"
@@ -178,10 +213,10 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 1
+          "rank": 2
         }
       },
-      "notes": "#1 r/memes top-today and #19 week (Nov 5 ~4PM PT). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme wave.",
+      "notes": "#2 r/memes top-today (Nov 5 ~5PM PT; was #1 earlier). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme wave.",
       "headline_reviewed": true
     },
     {
@@ -302,18 +337,18 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 2934,
+        "kym_views": 3007,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3464434,
-          "likes": 189963,
+          "views": 3476557,
+          "likes": 190912,
           "checked": "2026-11-05",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 853100,
-          "likes": 133800,
+          "views": 853400,
+          "likes": 133900,
           "author": "@elionwillpower",
           "checked": "2026-11-05",
           "via": "fetch_social.py",
@@ -324,7 +359,7 @@
           }
         }
       },
-      "notes": "3.40M views / 185K likes on @MeganBitchell's WOKE 3 post (X API, Nov 5 noon). KYM entry 2,675 views. TikTok @elionwillpower 852K views.",
+      "notes": "KYM entry + TikTok @elionwillpower 853K views / 134K likes (fetch_social ~5PM); X @MeganBitchell 3.48M views / 191K likes. Midterm 'blue sweep' sequel-slang.",
       "first_seen_basis": "KYM cites pre-election buildup; @MeganBitchell \"Woke 3 starts tonight\" Nov 3, 2026",
       "headline_reviewed": true
     },
@@ -1445,8 +1480,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 137155,
-          "likes": 16129,
+          "views": 137219,
+          "likes": 16132,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1599,13 +1634,13 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6229826,
-          "likes": 183976,
+          "views": 6232628,
+          "likes": 183986,
           "checked": "2026-11-05",
           "via": "X API"
         }
       },
-      "notes": "Headphones primate GIF study-session meme. X API 6,227,011 views / 184,007 likes (Nov 5 ~3PM PT).",
+      "notes": "Headphones primate GIF as study-session meme. X @studsyun 6.23M views / 184K likes (Nov 5 ~5PM PT).",
       "headline_reviewed": true
     },
     {
@@ -1634,8 +1669,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1099657,
-          "likes": 54537,
+          "views": 1099983,
+          "likes": 54544,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1672,7 +1707,7 @@
           "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         },
         {
-          "name": "TikTok / @boby.biggsjohnson (5.8M views)",
+          "name": "TikTok / @boby.biggsjohnson (5.9M views)",
           "url": "https://www.tiktok.com/@boby.biggsjohnson/video/7703585816429235487"
         }
       ],
@@ -1684,12 +1719,12 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 1744,
+        "kym_views": 1663,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334224,
-          "likes": 3048,
+          "views": 334239,
+          "likes": 3040,
           "checked": "2026-11-05",
           "via": "X API"
         },
@@ -1716,7 +1751,7 @@
           "via": "fetch_social.py"
         }
       },
-      "notes": "IG @kevinwinnik 11M likes (fetch_social Nov 5 noon); TikTok @leehoustonx 10.9M views / 1.4M likes; @boby.biggsjohnson 5.8M; KYM 1,663 views. Yesterday's site lead.",
+      "notes": "IG @kevinwinnik 11M likes (fetch_social Nov 5 ~5PM); TikTok @leehoustonx 10.9M views / 1.4M likes; @boby.biggsjohnson 5.9M; KYM 1,663 views. Yesterday's site lead.",
       "first_seen_basis": "KYM cites TikTok original Nov 1, 2026",
       "headline_reviewed": true
     },
@@ -2010,14 +2045,14 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 247654,
-          "likes": 27083,
+          "views": 247902,
+          "likes": 27081,
           "checked": "2026-11-05",
           "via": "X API"
         },
-        "kym_views": 5742
+        "kym_views": 5979
       },
-      "notes": "KYM-cited TikTok @hard_plushie 9.1M views / 2.4M likes (kept; noon re-fetch no rehydration); @watosis 327K; YT LiMC ~541K; KYM 5,104 views; still on Popular/editorial.",
+      "notes": "KYM-cited TikTok @hard_plushie 9.2M views / 2.4M likes; @watosis 331K; YT LiMC ~565K; KYM 5,979 views; still on Popular/editorial.",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026"
     },
     {
@@ -2106,14 +2141,14 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 12405715,
-          "likes": 139691,
+          "views": 12596234,
+          "likes": 141511,
           "checked": "2026-11-05",
           "via": "X API"
         },
         "x_news": true
       },
-      "notes": "Telegram official joke that Bill Gates named Microsoft after his penis. X API 12,255,249 views / 138,428 likes (Nov 5 ~3PM PT).",
+      "notes": "Telegram official joke that Bill Gates named Microsoft after his penis. X API 12,596,234 views / 141,511 likes (Nov 5 ~5PM PT).",
       "headline_reviewed": true,
       "also": [
         {
