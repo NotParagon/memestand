@@ -15,7 +15,7 @@
       "first_seen": "2026-11-04",
       "also": [
         {
-          "name": "X / @BYRNEGRACES (1.44M views)",
+          "name": "X / @BYRNEGRACES (1.5M views)",
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124"
         },
         {
@@ -30,8 +30,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-          "views": 1451778,
-          "likes": 129730,
+          "views": 1454944,
+          "likes": 129866,
           "checked": "2026-11-06",
           "via": "X API"
         }
@@ -54,7 +54,7 @@
       "first_seen": "2026-11-04",
       "also": [
         {
-          "name": "X / @MonsterEnergy (5.53M views)",
+          "name": "X / @MonsterEnergy (5.6M views)",
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345"
         }
       ],
@@ -64,8 +64,8 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 5560394,
-          "likes": 49690,
+          "views": 5591856,
+          "likes": 49737,
           "checked": "2026-11-06",
           "via": "X API"
         },
@@ -292,7 +292,7 @@
         ],
         "reddit": {
           "sub": "dankmemes",
-          "rank": 23
+          "rank": 21
         }
       },
       "notes": "#24 r/dankmemes top-this-week (Nov 5 ~11am PT; aged off day top). Over the Hedge still captioned for YouTube UI redesign whiplash.",
@@ -332,7 +332,7 @@
       "first_seen": "2026-11-03",
       "also": [
         {
-          "name": "X / @MeganBitchell (3.51M views)",
+          "name": "X / @MeganBitchell (3.5M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -358,22 +358,22 @@
         "kym_views": 3964,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3509126,
-          "likes": 192184,
+          "views": 3510027,
+          "likes": 192209,
           "checked": "2026-11-06",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 855300,
-          "likes": 134000,
+          "views": 855900,
+          "likes": 134100,
           "author": "@elionwillpower",
           "checked": "2026-11-06",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-            "views": 855300,
-            "likes": 134000
+            "views": 855900,
+            "likes": 134100
           }
         }
       },
@@ -528,7 +528,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 9
+          "rank": 8
         },
         "platforms": [
           "Reddit"
@@ -1339,7 +1339,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 5
+          "rank": 6
         },
         "platforms": [
           "Reddit"
@@ -1387,7 +1387,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 10
+          "rank": 9
         },
         "platforms": [
           "Reddit"
@@ -1565,7 +1565,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 4
+          "rank": 5
         },
         "platforms": [
           "Reddit"
@@ -1679,7 +1679,7 @@
       "first_seen": "2026-11-03",
       "also": [
         {
-          "name": "X / @studsyun (6.27M views)",
+          "name": "X / @studsyun (6.3M views)",
           "url": "https://x.com/studsyun/status/2117440926024884418"
         },
         {
@@ -1698,8 +1698,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6276066,
-          "likes": 184030,
+          "views": 6278175,
+          "likes": 184033,
           "checked": "2026-11-06",
           "via": "X API"
         }
@@ -1738,7 +1738,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1102733,
+          "views": 1102806,
           "likes": 54565,
           "checked": "2026-11-06",
           "via": "X API"
@@ -1761,7 +1761,7 @@
       "first_seen": "2026-11-01",
       "also": [
         {
-          "name": "X / @Flovaai (334.4K views)",
+          "name": "X / @Flovaai (334K views)",
           "url": "https://x.com/Flovaai/status/2117466712597839938"
         },
         {
@@ -1793,7 +1793,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334439,
+          "views": 334447,
           "likes": 3036,
           "checked": "2026-11-06",
           "via": "X API"
@@ -1839,7 +1839,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 18
+          "rank": 19
         },
         "platforms": [
           "Reddit"
@@ -2067,7 +2067,7 @@
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (249.7K views)",
+          "name": "X / @LashSleeper (250K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -2124,8 +2124,8 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 249831,
-          "likes": 27121,
+          "views": 249915,
+          "likes": 27124,
           "checked": "2026-11-06",
           "via": "X API"
         },
@@ -2149,7 +2149,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 3
+          "rank": 2
         },
         "platforms": [
           "Reddit"
@@ -2202,9 +2202,10 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 348183,
+        "kym_views": 348205,
         "kym_editorial": false
-      }
+      },
+      "credit": "CBBC / Hacker T. Dog (with Lauren Layfield)"
     },
     {
       "id": "telegram-microsoft",
@@ -2223,8 +2224,8 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 14351523,
-          "likes": 156366,
+          "views": 14407404,
+          "likes": 156730,
           "checked": "2026-11-06",
           "via": "X API"
         },
@@ -2234,7 +2235,7 @@
       "headline_reviewed": true,
       "also": [
         {
-          "name": "X / @telegram (14.27M views)",
+          "name": "X / @telegram (14.4M views)",
           "url": "https://x.com/telegram/status/2117998301564043360"
         },
         {
@@ -2258,7 +2259,7 @@
       "first_seen": "2026-11-06",
       "also": [
         {
-          "name": "X / @2THUQQ (223K views)",
+          "name": "X / @2THUQQ (274K views)",
           "url": "https://x.com/2THUQQ/status/2118617523708965188"
         },
         {
@@ -2273,13 +2274,13 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/2THUQQ/status/2118617523708965188",
-          "views": 251778,
-          "likes": 23831,
+          "views": 274411,
+          "likes": 25800,
           "checked": "2026-11-06",
           "via": "X API"
         }
       },
-      "notes": "Nigerian Pidgin resilience motto reframing 'bouncing baby boy'. Posted by @2THUQQ (horsh) Nov 6 2026; X News story tracked copycats. Text card only. minor_reviewed: adult-metaphor Pidgin motto; no child depicted. X metrics refreshed ~11am PT (251k views / 23.8k likes).",
+      "notes": "Nigerian Pidgin resilience motto reframing 'bouncing baby boy'. Posted by @2THUQQ (horsh) Nov 6 2026; X News story tracked copycats. Text card only. minor_reviewed: adult-metaphor Pidgin motto; no child depicted. X metrics refreshed ~noon PT (274k views / 25.8k likes).",
       "headline_reviewed": true,
       "first_seen_basis": "X post by @2THUQQ on Nov 6, 2026",
       "credit": "posted by @2THUQQ on X",
