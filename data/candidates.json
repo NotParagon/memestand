@@ -26,8 +26,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-          "views": 1072693,
-          "likes": 94969,
+          "views": 1103892,
+          "likes": 97569,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -54,8 +54,8 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 4724266,
-          "likes": 48134,
+          "views": 4834137,
+          "likes": 48324,
           "checked": "2026-11-05",
           "via": "X API"
         },
@@ -82,8 +82,8 @@
         ],
         "x": {
           "url": "https://x.com/HorrorGorl/status/2117609954563477790",
-          "views": 710566,
-          "likes": 36558,
+          "views": 710676,
+          "likes": 36559,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -127,7 +127,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 14479,
+        "kym_views": 14280,
         "tiktok": {
           "url": "https://www.tiktok.com/@tr0v0n/video/7698167604019547422",
           "views": 1400000,
@@ -314,7 +314,7 @@
       "first_seen": "2026-11-03",
       "also": [
         {
-          "name": "X / @MeganBitchell (3.4M views)",
+          "name": "X / @MeganBitchell (3.48M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -322,7 +322,7 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (852K views)",
+          "name": "TikTok / @elionwillpower (854K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
@@ -340,22 +340,22 @@
         "kym_views": 3007,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3476557,
-          "likes": 190912,
+          "views": 3481776,
+          "likes": 191236,
           "checked": "2026-11-05",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 853400,
+          "views": 853600,
           "likes": 133900,
           "author": "@elionwillpower",
           "checked": "2026-11-05",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-            "views": 853100,
-            "likes": 133800
+            "views": 853600,
+            "likes": 133900
           }
         }
       },
@@ -391,8 +391,8 @@
         "kym_views": 120954,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 16997197,
-          "likes": 351389,
+          "views": 16998197,
+          "likes": 351383,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -456,8 +456,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8279228,
-          "likes": 92524,
+          "views": 8281934,
+          "likes": 92516,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -483,8 +483,8 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6527226,
-          "likes": 30881,
+          "views": 6528125,
+          "likes": 30879,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -532,7 +532,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 68121,
+          "views": 68137,
           "likes": 2787,
           "checked": "2026-11-05",
           "via": "X API"
@@ -576,10 +576,10 @@
         "kym": true,
         "x_news": true,
         "kym_editorial": true,
-        "kym_views": 9429,
+        "kym_views": 8697,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 328967,
+          "views": 329010,
           "likes": 23691,
           "checked": "2026-11-05",
           "via": "X API"
@@ -644,8 +644,8 @@
         "kym_views": 18965,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2200666,
-          "likes": 43165,
+          "views": 2200745,
+          "likes": 43160,
           "checked": "2026-11-05",
           "via": "X API"
         },
@@ -831,7 +831,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 20362,
+        "kym_views": 20652,
         "x_news": true,
         "x": {
           "views": 475000,
@@ -1066,7 +1066,7 @@
         "kym": true,
         "kym_editorial": true,
         "x_news": true,
-        "kym_views": 180837,
+        "kym_views": 181180,
         "tiktok": {
           "likes": 89000,
           "via": "KYM-cited count",
@@ -1240,8 +1240,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3499881,
-          "likes": 118627,
+          "views": 3500148,
+          "likes": 118625,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1264,7 +1264,16 @@
         }
       ],
       "ev": {
-        "platforms": []
+        "platforms": [
+          "X"
+        ],
+        "x": {
+          "views": 7270654,
+          "likes": 82804,
+          "checked": "2026-11-05",
+          "via": "X API",
+          "url": "https://x.com/i/status/2115203529795326309"
+        }
       },
       "notes": "Original @vwxyz_4 X post (was ~7.2M views) returned not-authorized on Nov 5 ~3PM PT re-check; treated as deleted/private. Dropped from active lists until a readable source post is verified. Prior X News story: https://x.com/i/trending/2115430446075121982",
       "headline_reviewed": true,
@@ -1443,8 +1452,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1473163,
-          "likes": 26796,
+          "views": 1473863,
+          "likes": 26792,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1480,8 +1489,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 137219,
-          "likes": 16132,
+          "views": 137284,
+          "likes": 16135,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1566,14 +1575,14 @@
       "first_seen": "2026-10-15",
       "ev": {
         "platforms": [
-          "X",
-          "TikTok",
           "Instagram",
-          "Know Your Meme"
+          "Know Your Meme",
+          "TikTok",
+          "X"
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 48349,
+        "kym_views": 47791,
         "tiktok": {
           "url": "https://www.tiktok.com/@._bella_141/video/7672239822450265374",
           "views": 216200,
@@ -1634,8 +1643,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6232628,
-          "likes": 183986,
+          "views": 6234944,
+          "likes": 183999,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1669,8 +1678,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1099983,
-          "likes": 54544,
+          "views": 1100318,
+          "likes": 54550,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -1723,7 +1732,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334239,
+          "views": 334260,
           "likes": 3040,
           "checked": "2026-11-05",
           "via": "X API"
@@ -1962,8 +1971,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 170520,
-          "likes": 7477,
+          "views": 170715,
+          "likes": 7478,
           "checked": "2026-11-05",
           "via": "X API"
         }
@@ -2000,7 +2009,7 @@
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
         },
         {
-          "name": "YouTube / Lessons in Meme Culture (485K views)",
+          "name": "YouTube / Lessons in Meme Culture (574K views)",
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
         }
       ],
@@ -2037,7 +2046,7 @@
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI",
-          "views": 565455,
+          "views": 573824,
           "title": "Frutiger Aero Yams To Your Right",
           "channel": "Lessons in Meme Culture",
           "checked": "2026-11-05",
@@ -2045,12 +2054,12 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 247902,
-          "likes": 27081,
+          "views": 248067,
+          "likes": 27085,
           "checked": "2026-11-05",
           "via": "X API"
         },
-        "kym_views": 5979
+        "kym_views": 6116
       },
       "notes": "KYM-cited TikTok @hard_plushie 9.2M views / 2.4M likes; @watosis 331K; YT LiMC ~565K; KYM 5,979 views; still on Popular/editorial.",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026"
@@ -2120,7 +2129,7 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 347468,
+        "kym_views": 347575,
         "kym_editorial": false
       }
     },
@@ -2141,8 +2150,8 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 12596234,
-          "likes": 141511,
+          "views": 12752397,
+          "likes": 143042,
           "checked": "2026-11-05",
           "via": "X API"
         },

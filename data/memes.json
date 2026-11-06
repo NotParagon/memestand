@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T17:05-08:00",
+  "updated": "2026-11-05T18:04-08:00",
   "daily": [
     {
       "rank": 1,
@@ -71,7 +71,7 @@
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
         },
         {
-          "name": "YouTube / Lessons in Meme Culture (485K views)",
+          "name": "YouTube / Lessons in Meme Culture (574K views)",
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
         }
       ],
@@ -98,7 +98,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @MeganBitchell (3.4M views)",
+          "name": "X / @MeganBitchell (3.48M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -106,7 +106,7 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (852K views)",
+          "name": "TikTok / @elionwillpower (854K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
@@ -140,7 +140,7 @@
         }
       ],
       "first_seen": "2026-11-04",
-      "score": 76.0,
+      "score": 76.1,
       "sources": [
         "X"
       ],
@@ -185,7 +185,7 @@
       "credit": "posted by @MonsterEnergy on X",
       "also": [],
       "first_seen": "2026-11-05",
-      "score": 71.7,
+      "score": 71.8,
       "sources": [
         "X"
       ],
@@ -193,6 +193,29 @@
     },
     {
       "rank": 7,
+      "id": "affleck-i-voted-smoking",
+      "title": "BEN AFFLECK'S 'I VOTED' SMOKING PHOTO UPDATES THE CLASSIC TIRED MEME, PER X",
+      "image": null,
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
+      "source_name": "X / @BYRNEGRACES",
+      "credit": "posted by @BYRNEGRACES on X",
+      "also": [
+        {
+          "name": "X News (Affleck post-election meme)",
+          "url": "https://x.com/i/trending/2118434501269574094"
+        }
+      ],
+      "first_seen": "2026-11-04",
+      "score": 65.4,
+      "sources": [
+        "X"
+      ],
+      "notes": "Side-by-side of the classic Affleck-tired meme with a Nov 2026 paparazzi shot of Affleck smoking outside Steak 48 still wearing an 'I VOTED' sticker. X @BYRNEGRACES 1.07M views / 95K likes; X News story. Paparazzi photo — text card only."
+    },
+    {
+      "rank": 8,
       "id": "britannica-mitochondria",
       "title": "BRITANNICA'S ELECTION-NIGHT JOKE: 'CNN PROJECTS MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL'",
       "image": null,
@@ -213,29 +236,6 @@
         "X"
       ],
       "notes": "1.09M views / 54.5K likes on @Britannica's mitochondria powerhouse joke (X API, Nov 5 6am)."
-    },
-    {
-      "rank": 8,
-      "id": "affleck-i-voted-smoking",
-      "title": "BEN AFFLECK'S 'I VOTED' SMOKING PHOTO UPDATES THE CLASSIC TIRED MEME, PER X",
-      "image": null,
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-      "source_name": "X / @BYRNEGRACES",
-      "credit": "posted by @BYRNEGRACES on X",
-      "also": [
-        {
-          "name": "X News (Affleck post-election meme)",
-          "url": "https://x.com/i/trending/2118434501269574094"
-        }
-      ],
-      "first_seen": "2026-11-04",
-      "score": 65.3,
-      "sources": [
-        "X"
-      ],
-      "notes": "Side-by-side of the classic Affleck-tired meme with a Nov 2026 paparazzi shot of Affleck smoking outside Steak 48 still wearing an 'I VOTED' sticker. X @BYRNEGRACES 1.07M views / 95K likes; X News story. Paparazzi photo — text card only."
     },
     {
       "rank": 9,
@@ -345,7 +345,7 @@
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
         },
         {
-          "name": "YouTube / Lessons in Meme Culture (485K views)",
+          "name": "YouTube / Lessons in Meme Culture (574K views)",
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
         }
       ],
@@ -469,7 +469,7 @@
       "credit": "image via Know Your Meme; original creators as documented there",
       "also": [
         {
-          "name": "X / @MeganBitchell (3.4M views)",
+          "name": "X / @MeganBitchell (3.48M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -477,7 +477,7 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (852K views)",
+          "name": "TikTok / @elionwillpower (854K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
@@ -549,7 +549,7 @@
         }
       ],
       "first_seen": "2026-11-04",
-      "score": 76.0,
+      "score": 76.1,
       "sources": [
         "X"
       ],
