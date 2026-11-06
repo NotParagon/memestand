@@ -30,8 +30,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-          "views": 1454944,
-          "likes": 129866,
+          "views": 1457972,
+          "likes": 129974,
           "checked": "2026-11-06",
           "via": "X API"
         }
@@ -64,8 +64,8 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 5591856,
-          "likes": 49737,
+          "views": 5637289,
+          "likes": 49829,
           "checked": "2026-11-06",
           "via": "X API"
         },
@@ -340,7 +340,7 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (855K views)",
+          "name": "TikTok / @elionwillpower (856K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
@@ -358,21 +358,21 @@
         "kym_views": 3964,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3510027,
-          "likes": 192209,
+          "views": 3510858,
+          "likes": 192227,
           "checked": "2026-11-06",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 855900,
+          "views": 856000,
           "likes": 134100,
           "author": "@elionwillpower",
           "checked": "2026-11-06",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-            "views": 855900,
+            "views": 856000,
             "likes": 134100
           }
         }
@@ -1698,8 +1698,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6278175,
-          "likes": 184033,
+          "views": 6280903,
+          "likes": 184012,
           "checked": "2026-11-06",
           "via": "X API"
         }
@@ -1738,8 +1738,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1102806,
-          "likes": 54565,
+          "views": 1102880,
+          "likes": 54568,
           "checked": "2026-11-06",
           "via": "X API"
         }
@@ -1769,7 +1769,7 @@
           "url": "https://x.com/i/trending/2117626647205875908"
         },
         {
-          "name": "TikTok / @leehoustonx (11.2M views)",
+          "name": "TikTok / @leehoustonx (11.3M views)",
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
         },
         {
@@ -1793,14 +1793,14 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334447,
+          "views": 334451,
           "likes": 3036,
           "checked": "2026-11-06",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-          "views": 11200000,
+          "views": 11300000,
           "likes": 1400000,
           "author": "@leehoustonx",
           "posted": "2026-11-01",
@@ -1808,7 +1808,7 @@
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-            "views": 11200000,
+            "views": 11300000,
             "likes": 1400000
           }
         },
@@ -2079,7 +2079,7 @@
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
         },
         {
-          "name": "YouTube / Lessons in Meme Culture (611K views)",
+          "name": "YouTube / Lessons in Meme Culture (630K views)",
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
         }
       ],
@@ -2116,7 +2116,7 @@
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI",
-          "views": 610666,
+          "views": 630452,
           "title": "Frutiger Aero Yams To Your Right",
           "channel": "Lessons in Meme Culture",
           "checked": "2026-11-06",
@@ -2124,7 +2124,7 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 249915,
+          "views": 250032,
           "likes": 27124,
           "checked": "2026-11-06",
           "via": "X API"
@@ -2224,8 +2224,8 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 14407404,
-          "likes": 156730,
+          "views": 14464848,
+          "likes": 157085,
           "checked": "2026-11-06",
           "via": "X API"
         },
@@ -2235,7 +2235,7 @@
       "headline_reviewed": true,
       "also": [
         {
-          "name": "X / @telegram (14.4M views)",
+          "name": "X / @telegram (14.5M views)",
           "url": "https://x.com/telegram/status/2117998301564043360"
         },
         {
@@ -2259,7 +2259,7 @@
       "first_seen": "2026-11-06",
       "also": [
         {
-          "name": "X / @2THUQQ (274K views)",
+          "name": "X / @2THUQQ (296K views)",
           "url": "https://x.com/2THUQQ/status/2118617523708965188"
         },
         {
@@ -2274,13 +2274,13 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/2THUQQ/status/2118617523708965188",
-          "views": 274411,
-          "likes": 25800,
+          "views": 296226,
+          "likes": 27671,
           "checked": "2026-11-06",
           "via": "X API"
         }
       },
-      "notes": "Nigerian Pidgin resilience motto reframing 'bouncing baby boy'. Posted by @2THUQQ (horsh) Nov 6 2026; X News story tracked copycats. Text card only. minor_reviewed: adult-metaphor Pidgin motto; no child depicted. X metrics refreshed ~noon PT (274k views / 25.8k likes).",
+      "notes": "Nigerian Pidgin resilience motto reframing 'bouncing baby boy'. Posted by @2THUQQ (horsh) Nov 6 2026; X News story tracked copycats. Text card only. minor_reviewed: adult-metaphor Pidgin motto; no child depicted. X metrics refreshed ~1 PM PT (296k views / 27.7k likes; still climbing since noon).",
       "headline_reviewed": true,
       "first_seen_basis": "X post by @2THUQQ on Nov 6, 2026",
       "credit": "posted by @2THUQQ on X",
