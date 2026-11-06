@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-05",
+  "as_of": "2026-11-06",
   "candidates": [
     {
       "id": "affleck-i-voted-smoking",
@@ -15,6 +15,10 @@
       "first_seen": "2026-11-04",
       "also": [
         {
+          "name": "X / @BYRNEGRACES (1.36M views)",
+          "url": "https://x.com/BYRNEGRACES/status/2118046162838053124"
+        },
+        {
           "name": "X News (Affleck post-election meme)",
           "url": "https://x.com/i/trending/2118434501269574094"
         }
@@ -26,15 +30,16 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-          "views": 1193166,
-          "likes": 106095,
-          "checked": "2026-11-05",
+          "views": 1362339,
+          "likes": 121944,
+          "checked": "2026-11-06",
           "via": "X API"
         }
       },
-      "notes": "Side-by-side of the classic Affleck-tired meme with a Nov 2026 paparazzi shot of Affleck smoking outside Steak 48 still wearing an 'I VOTED' sticker. X @BYRNEGRACES 1.13M views / 100K likes (X API ~7PM PT); X News story. Paparazzi photo — text card only.",
+      "notes": "Side-by-side of classic Affleck-tired meme with Nov 2026 paparazzi shot smoking outside Steak 48 with 'I VOTED' sticker. X @BYRNEGRACES 1.36M views / 121.9K likes (Nov 6 6AM PT); X News story still live. Paparazzi photo — text card only.",
       "headline_reviewed": true,
-      "first_seen_basis": "X post by @BYRNEGRACES on Nov 4, 2026"
+      "first_seen_basis": "X post by @BYRNEGRACES on Nov 4, 2026",
+      "credit": "posted by @BYRNEGRACES on X"
     },
     {
       "id": "crack-a-monster",
@@ -46,28 +51,33 @@
       "source_url": "https://x.com/MonsterEnergy/status/2118012916586676345",
       "source_name": "X / @MonsterEnergy",
       "image_url": null,
-      "first_seen": "2026-11-05",
-      "also": [],
+      "first_seen": "2026-11-04",
+      "also": [
+        {
+          "name": "X / @MonsterEnergy (5.38M views)",
+          "url": "https://x.com/MonsterEnergy/status/2118012916586676345"
+        }
+      ],
       "ev": {
         "platforms": [
           "X"
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 5079035,
-          "likes": 48786,
-          "checked": "2026-11-05",
+          "views": 5381937,
+          "likes": 49333,
+          "checked": "2026-11-06",
           "via": "X API"
         },
         "x_news": true
       },
-      "notes": "Monster Energy official: 'it's not that deep. crack a monster.' X API 4.93M views / 48.5K likes (Nov 5 ~7PM PT).",
-      "headline_reviewed": true
+      "notes": "Monster Energy official: 'it's not that deep. crack a monster.' X API 5.38M views / 49.3K likes (Nov 6 6AM PT). Fan art / quote wave ongoing.",
+      "headline_reviewed": true,
+      "credit": "posted by @MonsterEnergy on X"
     },
     {
       "id": "ww3-or-christmas",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "'WW3 OR CHRISTMAS?': BUDGET JOKE ABOUT PREPARING FOR BOTH GOES VIRAL",
@@ -82,14 +92,15 @@
         ],
         "x": {
           "url": "https://x.com/HorrorGorl/status/2117609954563477790",
-          "views": 710905,
-          "likes": 36558,
-          "checked": "2026-11-05",
+          "views": 711334,
+          "likes": 36552,
+          "checked": "2026-11-06",
           "via": "X API"
         }
       },
-      "notes": "@HorrorGorl: 'Should I be preparing for WW3 or Christmas, because I dont have the budget for both.' 709K views / 36.5K likes (X API, Nov 5).",
-      "headline_reviewed": true
+      "notes": "@HorrorGorl: 'Should I be preparing for WW3 or Christmas, because I dont have the budget for both.' 711K views / 36.6K likes (X API, Nov 6 6AM PT). Aged out of daily.",
+      "headline_reviewed": true,
+      "credit": "posted by @HorrorGorl on X"
     },
     {
       "id": "code-rot",
@@ -127,7 +138,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 14708,
+        "kym_views": 15146,
         "tiktok": {
           "url": "https://www.tiktok.com/@tr0v0n/video/7698167604019547422",
           "views": 1400000,
@@ -151,7 +162,7 @@
           "via": "fetch_youtube.py"
         }
       },
-      "notes": "KYM entry 13,901 views (pub Oct 22). Peak TikTok @tr0v0n 1.4M views; multiple 1M+ posts. LiMC explainer 931K views (6d). On KYM Popular.",
+      "notes": "KYM 15,146 views (Nov 6). TikTok @tr0v0n 1.4M views still the cited large post.",
       "headline_reviewed": true,
       "kym_url": "https://knowyourmeme.com/memes/code-rot-filter-yep-its-code-rotted-indeed",
       "credit": "posted by @tr0v0n on TikTok"
@@ -199,7 +210,6 @@
     {
       "id": "altman-ramesses",
       "periods": [
-        "daily",
         "weekly"
       ],
       "title": "'LET THE MAN REST': SAM ALTMAN AS RAMESSES II IN THE RAM MEME WAVE",
@@ -214,11 +224,12 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 2
+          "rank": 17
         }
       },
-      "notes": "#2 r/memes top-today (Nov 5 ~7PM PT; was #1 earlier). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme wave.",
-      "headline_reviewed": true
+      "notes": "#17 r/memes top-week (Nov 6 6AM PT; was #2 day on Nov 5). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme wave.",
+      "headline_reviewed": true,
+      "credit": "posted by u/ZealousidealChain473 on r/memes"
     },
     {
       "id": "altman-apollo-4kb",
@@ -315,7 +326,7 @@
       "first_seen": "2026-11-03",
       "also": [
         {
-          "name": "X / @MeganBitchell (3.48M views)",
+          "name": "X / @MeganBitchell (3.50M views)",
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
@@ -323,7 +334,7 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (854K views)",
+          "name": "TikTok / @elionwillpower (855K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
@@ -338,29 +349,29 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 3237,
+        "kym_views": 3643,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3487871,
-          "likes": 191520,
-          "checked": "2026-11-05",
+          "views": 3502444,
+          "likes": 191976,
+          "checked": "2026-11-06",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 854100,
-          "likes": 133900,
+          "views": 855100,
+          "likes": 134000,
           "author": "@elionwillpower",
-          "checked": "2026-11-05",
+          "checked": "2026-11-06",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-            "views": 854100,
-            "likes": 133900
+            "views": 855100,
+            "likes": 134000
           }
         }
       },
-      "notes": "KYM entry 3,162 views; TikTok @elionwillpower 854K views / 134K likes; X @MeganBitchell 3.48M views / 191K likes (Nov 5 ~7PM PT). Midterm 'blue sweep' sequel-slang.",
+      "notes": "KYM 3,643 views; TikTok @elionwillpower 855K / 134K likes; X @MeganBitchell 3.50M views / 192K likes (Nov 6 6AM PT).",
       "first_seen_basis": "KYM cites pre-election buildup; @MeganBitchell \"Woke 3 starts tonight\" Nov 3, 2026",
       "headline_reviewed": true,
       "credit": "posted by @MeganBitchell on X"
@@ -393,13 +404,14 @@
         "kym_views": 120954,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 17000155,
-          "likes": 351370,
-          "checked": "2026-11-05",
+          "views": 17007298,
+          "likes": 351310,
+          "checked": "2026-11-06",
           "via": "X API"
         }
       },
-      "notes": "16.99M views / 351K likes on @DiscussingFilm (X API, Nov 5). Aged out of daily; still weekly/monthly."
+      "notes": "17.01M views / 351.3K likes on @DiscussingFilm (X API, Nov 6 6AM PT). Aged out of daily; still weekly/monthly.",
+      "credit": "posted by @DiscussingFilm on X"
     },
     {
       "id": "altman-ram",
@@ -437,7 +449,8 @@
           "via": "earlier X API read"
         }
       },
-      "notes": "#1 r/memes top-this-week and #4 top-this-month (Nov 5 ~11am PT)."
+      "notes": "#1 r/memes top-this-week and #4 top-this-month (Nov 5 ~11am PT). | r/memes week #1 Kiss your ram still (Nov 6).",
+      "credit": "posted by u/famsteve20015 on r/memes"
     },
     {
       "id": "regretamine",
@@ -458,14 +471,15 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8285925,
-          "likes": 92519,
-          "checked": "2026-11-05",
+          "views": 8296952,
+          "likes": 92492,
+          "checked": "2026-11-06",
           "via": "X API"
         }
       },
       "notes": "8.26M views / 92.5K likes on @elonmusk (X API, Nov 5). Weekly/monthly.",
-      "also": []
+      "also": [],
+      "credit": "posted by @elonmusk on X"
     },
     {
       "id": "pakistani-citizenship",
@@ -485,14 +499,15 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6529390,
-          "likes": 30891,
-          "checked": "2026-11-05",
+          "views": 6533962,
+          "likes": 30884,
+          "checked": "2026-11-06",
           "via": "X API"
         }
       },
       "notes": "30,791 likes / 6.48M views (X API, Nov 4 9am). Copycat citizenship-joke posts still circulating.",
-      "also": []
+      "also": [],
+      "credit": "posted by @vibeistani on X"
     },
     {
       "id": "heidi-32gb",
@@ -534,15 +549,16 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 68155,
+          "views": 68199,
           "likes": 2787,
-          "checked": "2026-11-05",
+          "checked": "2026-11-06",
           "via": "X API"
         }
       },
       "notes": "Joke post riffing on the old 'salsa made in New York City' ad line; not a factual claim. 2,791 likes / 66,884 views (X API, Nov 3); X News story.",
       "headline_reviewed": true,
-      "also": []
+      "also": [],
+      "credit": "posted by @leftcoastbabe on X"
     },
     {
       "id": "snow-leopard",
@@ -578,12 +594,12 @@
         "kym": true,
         "x_news": true,
         "kym_editorial": true,
-        "kym_views": 8697,
+        "kym_views": 9871,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 329034,
-          "likes": 23690,
-          "checked": "2026-11-05",
+          "views": 329229,
+          "likes": 23687,
+          "checked": "2026-11-06",
           "via": "X API"
         },
         "tiktok": {
@@ -597,9 +613,9 @@
           "posts_read": 1
         }
       },
-      "notes": "23,698 likes / 328K views on an early *paws at you* post (X API, Nov 4). KYM entry ~7,227 views; still in weekly X News. Nov 4 reads (10am PT): TikTok @angelickk4 13K views.",
+      "notes": "23.7K likes / 329K views on early *paws at you* post (X API, Nov 6). KYM entry 9,871 views; still on KYM newest/related.",
       "first_seen_basis": "earliest viral X post found (@dogwife333, Oct 24 PT); KYM entry Oct 29",
-      "credit": "posted by @angelickk4 on TikTok"
+      "credit": "posted by @dogwife333 on X"
     },
     {
       "id": "ethan-klein",
@@ -647,9 +663,9 @@
         "kym_views": 18965,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2200890,
-          "likes": 43165,
-          "checked": "2026-11-05",
+          "views": 2201165,
+          "likes": 43157,
+          "checked": "2026-11-06",
           "via": "X API"
         },
         "tiktok": {
@@ -838,7 +854,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 20975,
+        "kym_views": 22140,
         "x_news": true,
         "x": {
           "views": 475000,
@@ -846,22 +862,22 @@
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=xJb6VuMWbRE",
-          "views": 583118,
+          "views": 589081,
           "title": "They're Not Happy About Zoomer Anakin",
           "channel": "Akkad Daily",
-          "checked": "2026-11-05",
+          "checked": "2026-11-06",
           "via": "fetch_youtube.py"
         }
       },
-      "notes": "KYM Anakin Skywalker Gen Z Male Rage Memes still Popular Right Now / Top Entry This Month (Nov 4 9am); ~14,844 KYM page views. Election-night Anakin edits also hit X News. Nov 4 reads (10am PT): YouTube 'They're Not Happy About Zoomer Anakin' 543K views.",
+      "notes": "KYM Anakin Gen Z Male Rage still Popular Right Now / Top Entry This Month (Nov 6 6AM); 22,140 KYM views. YouTube Akkad Daily 'They're Not Happy About Zoomer Anakin' 589K views; 'The Zoomer Anakin Meme' 468K. X News still covering Malfoid+Anakin pairings.",
       "first_seen_basis": "KYM entry published date",
       "also": [
         {
-          "name": "X News (election Anakin)",
+          "name": "X News (Malfoid and Anakin)",
           "url": "https://x.com/i/trending/2117748883115962624"
         },
         {
-          "name": "YouTube / Akkad Daily (543K views)",
+          "name": "YouTube / Akkad Daily (589K views)",
           "url": "https://www.youtube.com/watch?v=xJb6VuMWbRE"
         }
       ],
@@ -1077,7 +1093,7 @@
         "kym": true,
         "kym_editorial": true,
         "x_news": true,
-        "kym_views": 181420,
+        "kym_views": 182455,
         "tiktok": {
           "likes": 89000,
           "via": "KYM-cited count",
@@ -1097,7 +1113,7 @@
           "via": "YouTube video page"
         }
       },
-      "notes": "October 2026 KYM Meme of the Month. 179K KYM views (Nov 5).",
+      "notes": "October 2026 KYM Meme of the Month. 179K KYM views (Nov 5). KYM still Top Entry This Month / Popular (182,455 views, Nov 6).",
       "first_seen_basis": "KYM entry published date",
       "credit": "posted by @redteneri on X"
     },
@@ -1254,14 +1270,15 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3500545,
-          "likes": 118616,
-          "checked": "2026-11-05",
+          "views": 3501496,
+          "likes": 118626,
+          "checked": "2026-11-06",
           "via": "X API"
         }
       },
       "notes": "118,696 likes / 3.49M views on @EODHappyCaptain (X API, Nov 4). Trail-cam bear + UXO joke still circulating.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "credit": "posted by @EODHappyCaptain on X"
     },
     {
       "id": "monkey-doomscrolling",
@@ -1282,16 +1299,17 @@
           "X"
         ],
         "x": {
-          "views": 7270654,
-          "likes": 82804,
-          "checked": "2026-11-05",
+          "views": 7297953,
+          "likes": 82783,
+          "checked": "2026-11-06",
           "via": "X API",
-          "url": "https://x.com/i/status/2115203529795326309"
+          "url": "https://x.com/stasj1e/status/2115203529795326309"
         }
       },
       "notes": "Original @vwxyz_4 X post (was ~7.2M views) returned not-authorized on Nov 5 ~3PM PT re-check; treated as deleted/private. Dropped from active lists until a readable source post is verified. Prior X News story: https://x.com/i/trending/2115430446075121982",
       "headline_reviewed": true,
-      "flags": []
+      "flags": [],
+      "credit": "posted by @stasj1e on X"
     },
     {
       "id": "hold-the-ram",
@@ -1466,14 +1484,15 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1474757,
-          "likes": 26789,
-          "checked": "2026-11-05",
+          "views": 1477475,
+          "likes": 26777,
+          "checked": "2026-11-06",
           "via": "X API"
         }
       },
       "notes": "26,795 likes / 1.44M views on @abdykeen (X API, Nov 4 9am). Still quoted as a loss/gambling reaction clip.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "credit": "posted by @abdykeen on X"
     },
     {
       "id": "hate-seals-fandom",
@@ -1502,14 +1521,15 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 137429,
-          "likes": 16136,
-          "checked": "2026-11-05",
+          "views": 137764,
+          "likes": 16132,
+          "checked": "2026-11-06",
           "via": "X API"
         }
       },
       "notes": "16,051 likes / 135K views on @grindgod26 'dad, I hate seals' variant (X API, Nov 4 9am). Format still in X News today (identities OK, fandom deal-breaker). X News fandom-hating format still active Nov 5 noon.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "credit": "posted by @grindgod26 on X"
     },
     {
       "id": "billionaires-blaming",
@@ -1643,6 +1663,10 @@
       "first_seen": "2026-11-03",
       "also": [
         {
+          "name": "X / @studsyun (6.26M views)",
+          "url": "https://x.com/studsyun/status/2117440926024884418"
+        },
+        {
           "name": "X News",
           "url": "https://x.com/i/trending/2117696464759718217"
         },
@@ -1658,14 +1682,15 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6241760,
-          "likes": 183999,
-          "checked": "2026-11-05",
+          "views": 6264093,
+          "likes": 184016,
+          "checked": "2026-11-06",
           "via": "X API"
         }
       },
-      "notes": "Headphones primate GIF as study-session meme. X @studsyun 6.24M views / 184K likes (Nov 5 ~7PM PT).",
-      "headline_reviewed": true
+      "notes": "Headphones primate GIF as study-session meme. X @studsyun 6.26M views / 184.0K likes (Nov 6 6AM PT).",
+      "headline_reviewed": true,
+      "credit": "posted by @studsyun on X"
     },
     {
       "id": "britannica-mitochondria",
@@ -1682,6 +1707,10 @@
       "first_seen": "2026-11-04",
       "also": [
         {
+          "name": "X / @Britannica (1.10M views)",
+          "url": "https://x.com/Britannica/status/2117805815050727630"
+        },
+        {
           "name": "X News",
           "url": "https://x.com/i/trending/2117885288085381473"
         }
@@ -1693,14 +1722,15 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1101236,
-          "likes": 54563,
-          "checked": "2026-11-05",
+          "views": 1102241,
+          "likes": 54568,
+          "checked": "2026-11-06",
           "via": "X API"
         }
       },
-      "notes": "1.09M views / 54.5K likes on @Britannica's mitochondria powerhouse joke (X API, Nov 5 6am).",
-      "headline_reviewed": true
+      "notes": "1.10M views / 54.6K likes on @Britannica's mitochondria powerhouse joke (X API, Nov 6 6AM PT).",
+      "headline_reviewed": true,
+      "credit": "posted by @Britannica on X"
     },
     {
       "id": "fancy-cafe",
@@ -1723,7 +1753,7 @@
           "url": "https://x.com/i/trending/2117626647205875908"
         },
         {
-          "name": "TikTok / @leehoustonx (10.9M views)",
+          "name": "TikTok / @leehoustonx (11.1M views)",
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
         },
         {
@@ -1731,7 +1761,7 @@
           "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         },
         {
-          "name": "TikTok / @boby.biggsjohnson (5.9M views)",
+          "name": "TikTok / @boby.biggsjohnson (6.1M views)",
           "url": "https://www.tiktok.com/@boby.biggsjohnson/video/7703585816429235487"
         }
       ],
@@ -1743,26 +1773,26 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 1858,
+        "kym_views": 2023,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334297,
-          "likes": 3039,
-          "checked": "2026-11-05",
+          "views": 334392,
+          "likes": 3037,
+          "checked": "2026-11-06",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-          "views": 10900000,
+          "views": 11100000,
           "likes": 1400000,
           "author": "@leehoustonx",
           "posted": "2026-11-01",
-          "checked": "2026-11-05",
+          "checked": "2026-11-06",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-            "views": 10900000,
+            "views": 11100000,
             "likes": 1400000
           }
         },
@@ -1771,11 +1801,11 @@
           "likes": 11000000,
           "author": "@kevinwinnik",
           "posted": "2026-10-31",
-          "checked": "2026-11-05",
+          "checked": "2026-11-06",
           "via": "fetch_social.py"
         }
       },
-      "notes": "IG @kevinwinnik 11M likes; TikTok @leehoustonx 10.9M views / 1.4M likes; @boby.biggsjohnson 5.9M; KYM 1,663 views (Nov 5 ~7PM PT).",
+      "notes": "IG @kevinwinnik 11M likes; TikTok @leehoustonx 11.1M views / 1.4M likes; @boby.biggsjohnson 6.1M; KYM 2,023 views (Nov 6 6AM PT).",
       "first_seen_basis": "KYM cites TikTok original Nov 1, 2026",
       "headline_reviewed": true,
       "credit": "posted by @leehoustonx on TikTok"
@@ -1988,14 +2018,15 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 170913,
+          "views": 171817,
           "likes": 7480,
-          "checked": "2026-11-05",
+          "checked": "2026-11-06",
           "via": "X API"
         }
       },
       "notes": "6,062 likes / 132K views on @marvo_sneh_ Nov 3 post (X API, Nov 4 9am). Quote-replies joke about 'girl maths' / wig vs haircut costs; X News story active.",
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "credit": "posted by @marvo_sneh_ on X"
     },
     {
       "id": "frutiger-aero-yams",
@@ -2014,7 +2045,7 @@
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (247K views)",
+          "name": "X / @LashSleeper (249K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -2026,7 +2057,7 @@
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
         },
         {
-          "name": "YouTube / Lessons in Meme Culture (574K views)",
+          "name": "YouTube / Lessons in Meme Culture (606K views)",
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
         }
       ],
@@ -2045,7 +2076,7 @@
           "views": 9200000,
           "likes": 2400000,
           "author": "@hard_plushie",
-          "checked": "2026-11-05",
+          "checked": "2026-11-06",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969",
@@ -2055,30 +2086,30 @@
         },
         "instagram": {
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/",
-          "likes": 75000,
+          "likes": 76000,
           "author": "@thebigsolomando",
           "posted": "2026-11-02",
-          "checked": "2026-11-05",
+          "checked": "2026-11-06",
           "via": "fetch_social.py"
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI",
-          "views": 585006,
+          "views": 605827,
           "title": "Frutiger Aero Yams To Your Right",
           "channel": "Lessons in Meme Culture",
-          "checked": "2026-11-05",
+          "checked": "2026-11-06",
           "via": "fetch_youtube.py"
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 248508,
-          "likes": 27100,
-          "checked": "2026-11-05",
+          "views": 249348,
+          "likes": 27111,
+          "checked": "2026-11-06",
           "via": "X API"
         },
-        "kym_views": 6421
+        "kym_views": 7378
       },
-      "notes": "KYM-cited TikTok @hard_plushie 9.2M views / 2.4M likes; @watosis 332K; YT LiMC ~574K; KYM 6,260 views; still on Popular/editorial.",
+      "notes": "KYM 7,378 views; TikTok @hard_plushie 9.2M / 2.4M likes; IG @thebigsolomando 76K likes; YouTube Lessons in Meme Culture 605.8K views (Nov 6 6AM PT).",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026",
       "credit": "posted by @seiyaposting on Instagram"
     },
@@ -2147,7 +2178,7 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 347701,
+        "kym_views": 348059,
         "kym_editorial": false
       }
     },
@@ -2168,21 +2199,26 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 13164908,
-          "likes": 147078,
-          "checked": "2026-11-05",
+          "views": 13977070,
+          "likes": 153967,
+          "checked": "2026-11-06",
           "via": "X API"
         },
         "x_news": true
       },
-      "notes": "Telegram official joke that Bill Gates named Microsoft after his penis. X API 12.90M views / 144.6K likes (Nov 5 ~7PM PT).",
+      "notes": "Telegram official joke that Bill Gates named Microsoft after his penis. X API 13.98M views / 154.0K likes (Nov 6 6AM PT). Still circulating on X News.",
       "headline_reviewed": true,
       "also": [
+        {
+          "name": "X / @telegram (14.0M views)",
+          "url": "https://x.com/telegram/status/2117998301564043360"
+        },
         {
           "name": "X News",
           "url": "https://x.com/i/trending/2118107139155939611"
         }
-      ]
+      ],
+      "credit": "posted by @telegram on X"
     }
   ]
 }
