@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T15:12-08:00",
+  "updated": "2026-11-05T16:02-08:00",
   "daily": [
     {
       "rank": 1,
@@ -185,7 +185,7 @@
       "credit": "posted by @MonsterEnergy on X",
       "also": [],
       "first_seen": "2026-11-05",
-      "score": 71.5,
+      "score": 71.6,
       "sources": [
         "X"
       ],
@@ -230,7 +230,7 @@
       "sources": [
         "Reddit"
       ],
-      "notes": "#1 r/memes top-today and #19 week (Nov 5 ~3PM PT). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme cycle."
+      "notes": "#1 r/memes top-today and #19 week (Nov 5 ~4PM PT). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme wave."
     },
     {
       "rank": 9,
@@ -252,21 +252,30 @@
     },
     {
       "rank": 10,
-      "id": "little-void-creatures",
-      "title": "'LITTLE VOID CREATURES IN BIG CLOTHES': FAVORITE-GENDERS TEMPLATE LOVES SHADOWY MAGES",
-      "image": "images/little-void-creatures.jpg",
+      "id": "hate-seals-fandom",
+      "title": "MEME FORMAT: PARENTS SAY OK TO EVERY IDENTITY -- THEN LOSE IT OVER A FANDOM HATE",
+      "image": "images/hate-seals-fandom.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://www.reddit.com/r/memes/comments/1xo2ukx/i_just_really_like_little_guys/",
-      "source_name": "Reddit r/memes /u/Darian_Wulfbane",
-      "credit": "posted by u/Darian_Wulfbane on r/memes",
-      "also": [],
-      "first_seen": "2026-11-05",
-      "score": 54.0,
-      "sources": [
-        "Reddit"
+      "source_url": "https://x.com/grindgod26/status/2117272503500550159",
+      "source_name": "X / @grindgod26",
+      "credit": "posted by @grindgod26 on X",
+      "also": [
+        {
+          "name": "X News",
+          "url": "https://x.com/i/trending/2117361073187967418"
+        },
+        {
+          "name": "X News (dealbreakers)",
+          "url": "https://x.com/i/trending/2116638968385286223"
+        }
       ],
-      "notes": "#5 r/memes top-today (Nov 5 ~3PM PT). 'Gotta be one of my favorite genders' format celebrating void-faced mage characters (Orko)."
+      "first_seen": "2026-11-01",
+      "score": 57.1,
+      "sources": [
+        "X"
+      ],
+      "notes": "16,051 likes / 135K views on @grindgod26 'dad, I hate seals' variant (X API, Nov 4 9am). Format still in X News today (identities OK, fandom deal-breaker). X News fandom-hating format still active Nov 5 noon."
     }
   ],
   "weekly": [
