@@ -30,8 +30,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-          "views": 1476986,
-          "likes": 130442,
+          "views": 1477359,
+          "likes": 130439,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -64,8 +64,8 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 6131872,
-          "likes": 50688,
+          "views": 6141751,
+          "likes": 50707,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -92,8 +92,8 @@
         ],
         "x": {
           "url": "https://x.com/HorrorGorl/status/2117609954563477790",
-          "views": 712693,
-          "likes": 36542,
+          "views": 712817,
+          "likes": 36543,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -185,7 +185,8 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 21
+          "rank": 19,
+          "url": "https://www.reddit.com/r/memes/comments/1xnp51d/just_mention_india/"
         }
       },
       "notes": "#25 r/memes top-week (Nov 5 ~11am PT; aged off day top). Template joke that YouTube channels add India B-roll / mention India to farm views.",
@@ -227,7 +228,8 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 15
+          "rank": 13,
+          "url": "https://www.reddit.com/r/memes/comments/1xod9dz/let_the_man_rest/"
         }
       },
       "notes": "#17 r/memes top-week (Nov 6 6AM PT; was #2 day on Nov 5). Photoshop/joke casting Altman as Ramesses II amid the RAM-shortage meme wave.",
@@ -251,7 +253,8 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 4
+          "rank": 25,
+          "url": "https://www.reddit.com/r/memes/comments/1xo00z4/i_cant_get_enough_of_this_new_trend/"
         }
       },
       "notes": "Was #4 r/memes top-today earlier Nov 5; aged out of day top by ~3PM PT. Kept weekly only. Apollo 4KB RAM / Altman space-race cope.",
@@ -359,8 +362,8 @@
         "kym_views": 6072,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3530411,
-          "likes": 192256,
+          "views": 3530657,
+          "likes": 192250,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -411,8 +414,8 @@
         "kym_views": 121247,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 17057314,
-          "likes": 351195,
+          "views": 17060157,
+          "likes": 351196,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -444,7 +447,8 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 1
+          "rank": 4,
+          "url": "https://www.reddit.com/r/memes/comments/1xky93a/kiss_your_ram/"
         },
         "platforms": [
           "Reddit",
@@ -478,8 +482,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8323547,
-          "likes": 92477,
+          "views": 8325565,
+          "likes": 92470,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -506,8 +510,8 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6549039,
-          "likes": 30901,
+          "views": 6550287,
+          "likes": 30905,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -557,7 +561,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 68374,
+          "views": 68387,
           "likes": 2786,
           "checked": "2026-11-07",
           "via": "X API"
@@ -605,8 +609,8 @@
         "kym_views": 11456,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 329769,
-          "likes": 23679,
+          "views": 329841,
+          "likes": 23681,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -671,8 +675,8 @@
         "kym_views": 19740,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2202061,
-          "likes": 43139,
+          "views": 2202146,
+          "likes": 43138,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -1281,8 +1285,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3504568,
-          "likes": 118617,
+          "views": 3504852,
+          "likes": 118619,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -1309,8 +1313,9 @@
       ],
       "ev": {
         "reddit": {
-          "sub": "dankmemes",
-          "rank": 6
+          "sub": "memes",
+          "rank": 5,
+          "url": "https://www.reddit.com/r/memes/comments/1xla9os/its_all_for_ram_and_rams_for_all/"
         },
         "platforms": [
           "Reddit"
@@ -1334,7 +1339,8 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 4
+          "rank": 17,
+          "url": "https://www.reddit.com/r/memes/comments/1xlpirx/potatoes_after_a_few_days_in_bag/"
         },
         "platforms": [
           "Reddit"
@@ -1383,7 +1389,8 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 1
+          "rank": 5,
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xlvthd/the_jacket_still_works/"
         },
         "platforms": [
           "Reddit"
@@ -1407,7 +1414,8 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 14
+          "rank": 13,
+          "url": "https://www.reddit.com/r/memes/comments/1xhnyz5/the_genie_is_out_of_the_bottle/"
         },
         "platforms": [
           "Reddit"
@@ -1432,7 +1440,8 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 19
+          "rank": 18,
+          "url": "https://www.reddit.com/r/memes/comments/1xjsare/dont_do_what_i_do_do_what_the_handbook_says/"
         },
         "platforms": [
           "Reddit"
@@ -1470,8 +1479,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1484271,
-          "likes": 26772,
+          "views": 1484942,
+          "likes": 26769,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -1507,8 +1516,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 138734,
-          "likes": 16151,
+          "views": 138814,
+          "likes": 16153,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -1536,7 +1545,8 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 5
+          "rank": 20,
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xm6s64/a_tale_as_old_as_time/"
         },
         "platforms": [
           "Reddit"
@@ -1669,7 +1679,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6317632,
+          "views": 6319084,
           "likes": 183941,
           "checked": "2026-11-07",
           "via": "X API"
@@ -1709,7 +1719,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1104312,
+          "views": 1104353,
           "likes": 54554,
           "checked": "2026-11-07",
           "via": "X API"
@@ -1764,7 +1774,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334847,
+          "views": 334855,
           "likes": 3037,
           "checked": "2026-11-07",
           "via": "X API"
@@ -1810,7 +1820,8 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 19
+          "rank": 20,
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xmufk1/my_fuggin_back/"
         },
         "platforms": [
           "Reddit"
@@ -1834,7 +1845,8 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 20
+          "rank": 19,
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xn0rwh/fun_times_good_luck_economy/"
         },
         "platforms": [
           "Reddit"
@@ -1883,7 +1895,8 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 2
+          "rank": 12,
+          "url": "https://www.reddit.com/r/memes/comments/1xnkv3y/a_coffin_is_more_space_efficient/"
         },
         "platforms": [
           "Reddit"
@@ -1952,7 +1965,8 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 3
+          "rank": 16,
+          "url": "https://www.reddit.com/r/memes/comments/1xnikcz/really_got_his_interest/"
         },
         "platforms": [
           "Reddit"
@@ -1975,7 +1989,8 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 23
+          "rank": 22,
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xnlwdj/money_muney/"
         },
         "platforms": [
           "Reddit"
@@ -2011,8 +2026,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 174965,
-          "likes": 7486,
+          "views": 175297,
+          "likes": 7487,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -2095,8 +2110,8 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 253013,
-          "likes": 27148,
+          "views": 253136,
+          "likes": 27149,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -2120,7 +2135,8 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 2
+          "rank": 7,
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xnsnug/tale_as_old_as_time/"
         },
         "platforms": [
           "Reddit"
@@ -2144,7 +2160,8 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 20
+          "rank": 18,
+          "url": "https://www.reddit.com/r/memes/comments/1xnitsj/the_attack_was_inevitable/"
         },
         "platforms": [
           "Reddit"
@@ -2195,8 +2212,8 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 14907814,
-          "likes": 159935,
+          "views": 14910071,
+          "likes": 159941,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -2245,8 +2262,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/2THUQQ/status/2118617523708965188",
-          "views": 468977,
-          "likes": 39240,
+          "views": 471374,
+          "likes": 39442,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -2289,8 +2306,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/tuna_petal/status/2118514084140229097",
-          "views": 1861869,
-          "likes": 32151,
+          "views": 1863129,
+          "likes": 32226,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -2332,8 +2349,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/sbxloch/status/2118821023151706276",
-          "views": 1136208,
-          "likes": 94479,
+          "views": 1223226,
+          "likes": 101244,
           "checked": "2026-11-07",
           "via": "X API"
         }

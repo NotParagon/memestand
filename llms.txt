@@ -2,7 +2,7 @@
 
 > MemeStand (https://memestand.com) is an independent, headline-style daily meme report. The main lists are the top 10 memes today and the best memes of the month (last 30 days). The weekly top 10 remains at its existing address. Ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated hourly, 6 AM to 9 PM Pacific Time. Every listed meme links to its original source.
 
-Last updated: 2026-11-07 13:08 PT (2026-11-07T13:08:00-08:00)
+Last updated: 2026-11-07 14:04 PT (2026-11-07T14:04:00-08:00)
 
 ## Key pages
 
@@ -40,8 +40,8 @@ Last updated: 2026-11-07 13:08 PT (2026-11-07T13:08:00-08:00)
 6. 'Code Rot' / 'Yep It's Code Rotted Indeed': Glitch Filter Meme Spreads on TikTok — source: https://knowyourmeme.com/memes/code-rot-filter-yep-its-code-rotted-indeed — credit: posted by @tr0v0n on TikTok — evidence: KYM 15,146 views (Nov 6). TikTok @tr0v0n 1.4M views still the cited large post. — explainer: https://memestand.com/meme/code-rot/
 7. 'Woke 3': Midterm 'Blue Sweep' Spawns Satirical Sequel-slang Memes — source: https://knowyourmeme.com/memes/woke-3 — credit: posted by @MeganBitchell on X — evidence: KYM 3,643 views; TikTok @elionwillpower 855K / 134K likes; X @MeganBitchell 3.50M views / 192K likes (Nov 6 6AM PT). — explainer: https://memestand.com/meme/woke-3/
 8. Telegram's Official Account: 'I Can't Believe Bill Gates Named That Company After His Penis' — source: https://x.com/telegram/status/2117998301564043360 — credit: posted by @telegram on X — evidence: Telegram official joke that Bill Gates named Microsoft after his penis. X API 13.98M views / 154.0K likes (Nov 6 6AM PT). Still circulating on X News. — explainer: https://memestand.com/meme/telegram-microsoft/
-9. Altman: Dram in Home Pcs is 'Quite Terrible' Allocation... Internet Hides Its DIMMs — source: https://www.reddit.com/r/memes/comments/1xky93a/kiss_your_ram/ — credit: posted by u/famsteve20015 on r/memes — evidence: #1 r/memes top-this-week and #4 top-this-month (Nov 5 ~11am PT). | r/memes week #1 Kiss your ram still (Nov 6). — explainer: https://memestand.com/meme/sam-altman-ram/
-10. Jiren Dances to 'I'm So in Love with You' — source: https://knowyourmeme.com/memes/im-so-in-love-with-you-dragon-ball-dance-jiren-dancing — credit: posted by @notmemetime on TikTok — evidence: KYM cites 2.1M views; KYM Weekly Meme Roundup (Oct 30). Nov 4 reads (10am PT): TikTok @notmemetime 3.6M views; YouTube 'I'm so in love with you' 95K views. — explainer: https://memestand.com/meme/jiren-dancing/
+9. Jiren Dances to 'I'm So in Love with You' — source: https://knowyourmeme.com/memes/im-so-in-love-with-you-dragon-ball-dance-jiren-dancing — credit: posted by @notmemetime on TikTok — evidence: KYM cites 2.1M views; KYM Weekly Meme Roundup (Oct 30). Nov 4 reads (10am PT): TikTok @notmemetime 3.6M views; YouTube 'I'm so in love with you' 95K views. — explainer: https://memestand.com/meme/jiren-dancing/
+10. Elon Musk Jokes About a Drug Called 'Regretamine'... Replies Run Wild — source: https://x.com/elonmusk/status/2116875604889112772 — credit: posted by @elonmusk on X — evidence: 8.26M views / 92.5K likes on @elonmusk (X API, Nov 5). Weekly/monthly. — explainer: https://memestand.com/meme/regretamine/
 
 ## Top 10 memes this month (last 30 days)
 
