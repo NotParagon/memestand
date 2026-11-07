@@ -198,7 +198,8 @@ CSS = """
  .top img{box-sizing:content-box;max-width:calc(100% - 2px);max-height:520px;border:1px solid var(--rule);object-fit:contain}
  .top .card{min-height:240px;font-size:28px}
  .top h2{margin:10px 0 0;text-decoration:none}
- .top .hl a{color:var(--red);font-size:40px;font-weight:bold;line-height:1.12;text-transform:uppercase}
+ .top .hl a{color:var(--red);font-size:22px;font-weight:bold;line-height:1.2;text-transform:uppercase}
+ .top .hl.clip a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
  .top .kick{display:block;font-size:13px;letter-spacing:2px;color:var(--red);margin-bottom:4px}
  .top .meta{margin-top:6px}
  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:10px}
@@ -219,6 +220,10 @@ CSS = """
  .one .thumb{max-height:420px}
  .card{display:flex;align-items:center;justify-content:center;text-align:center;min-height:120px;padding:14px;border:2px solid var(--rule);font-weight:bold;font-size:17px;background:var(--card)}
  .hl{font-size:16px;font-weight:bold;line-height:1.25;text-transform:uppercase}
+ .hl.clip a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ .textmeme{text-transform:none}
+ .textmeme .card{text-transform:none;font-size:17px;line-height:1.35}
+ .top .textmeme .card{font-size:26px;line-height:1.25;min-height:140px}
  .rk{color:var(--red)}
  li .hl .rk{display:inline-block;min-width:2.1em;margin-right:2px;padding:2px 6px;background:var(--redbg);color:#fff;text-align:center;line-height:1.3}
  .meta{font-size:11px;margin-top:6px;color:var(--muted)} .src{color:var(--link);margin-right:8px} .fs{color:var(--muted)}
@@ -244,7 +249,8 @@ CSS = """
   .top{margin:14px auto 26px;padding-bottom:20px}
   .top img{max-height:60vh}
   .top .card{min-height:0;font-size:20px;padding:18px 14px}
-  .top .hl a{font-size:27px;line-height:1.15}
+  .top .hl a{font-size:20px;line-height:1.2}
+  .top .textmeme .card{font-size:22px;min-height:0}
   .grid{display:block;margin-top:0}
   .grid .col,.grid .col:first-child,.grid .col:last-child{padding:0}
   .grid .col+.col{border-left:0;margin-top:40px;padding-top:14px;border-top:3px double var(--rule)}
@@ -338,17 +344,27 @@ def alt(m, label):
     a = f"{tc(m['title'])} meme"
     return f"{a} - #{m['rank']} {label} on MemeStand" if label else a
 
+def joke_text(m):
+    """The words on a text-only post. Not a generated stand-in for a missing picture."""
+    return m.get("card_text") or m["title"]
+
+def text_face(m, base, cls="card"):
+    """One text block for a post that has no real image. Links to the meme page; View original stays in the credit."""
+    inner = e(joke_text(m))
+    h = meme_href(m, base)
+    if h: return f'<a class="{cls}" href="{e(h)}">{inner}</a>'
+    return f'<a class="{cls}" href="{e(m["source_url"])}" target="_blank" rel="noopener">{inner}</a>'
+
 def thumb(m, base, label, cls="thumb", eager=False):
     if m.get("removed"): return ""
     src = img_src(m)
-    if src:
-        ext = src.startswith("http")
-        src = src if ext else base + src
-        load = 'fetchpriority="high"' if eager else 'loading="lazy"'
-        ref = ' referrerpolicy="no-referrer"' if ext else ""
-        wh = wh_attrs(img_src(m))   # explicit size (or a fixed 4:3 box for hotlinks) reserves space: no layout shift
-        return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener"><img class="{cls}" src="{e(src)}" alt="{e(alt(m, label))}"{wh} {load}{ref}></a>'
-    return f'<a class="card {cls}" href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m.get("card_text") or m["title"])}</a>'
+    if not src: return ""
+    ext = src.startswith("http")
+    src = src if ext else base + src
+    load = 'fetchpriority="high"' if eager else 'loading="lazy"'
+    ref = ' referrerpolicy="no-referrer"' if ext else ""
+    wh = wh_attrs(img_src(m))   # explicit size (or a fixed 4:3 box for hotlinks) reserves space: no layout shift
+    return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener"><img class="{cls}" src="{e(src)}" alt="{e(alt(m, label))}"{wh} {load}{ref}></a>'
 
 def credit(m):
     c = m.get("credit") or f'via {m.get("source_name", "the original source")}'
@@ -386,9 +402,16 @@ def item(m, base, label, notes=False, hist=""):
     if m.get("removed"):
         return f'<li><h3 class="hl"><span class="rk">{m["rank"]}.</span> {e(REMOVED)}</h3><div class="meta"><a class="src" href="{base}dmca.html">Takedown policy</a></div></li>'
     why = f'\n  <div class="why">Why it ranks: {e(m["notes"])}</div>' if notes and m.get("notes") else ""
+    pic = thumb(m, base, label)
+    if pic:
+        # The picture is the meme. The full headline stays in the link for search and screen readers, clamped on screen.
+        head = f'<h3 class="hl clip"><span class="rk">{m["rank"]}.</span> {hl_link(m, base)}</h3>'
+    else:
+        # A text post has no photo. Show its words once, not again as a second headline.
+        head = f'<h3 class="hl textmeme"><span class="rk">{m["rank"]}.</span> {text_face(m, base)}</h3>'
     return f'''<li>
-  {thumb(m, base, label)}
-  <h3 class="hl"><span class="rk">{m["rank"]}.</span> {hl_link(m, base)}</h3>{hist}
+  {pic}
+  {head}{hist}
   <div class="meta">{sources(m)}<span class="fs">since {e(m["first_seen"])}</span></div>
   {credit(m)}{why}
 </li>'''
@@ -405,9 +428,14 @@ def column(d, p, base, link=True, notes=False, day=None, live=False):
 def top_story(d, base, kicker="TODAY'S LEAD MEME", day=None):
     t = lead_of(d, day or TODAY)
     if t.get("removed"): return ""
+    pic = thumb(t, base, "today", "topimg", eager=True)
+    if pic:
+        head = f'<h2 class="hl clip"><span class="kick">{kicker}</span>{hl_link(t, base)}</h2>'
+    else:
+        head = f'<h2 class="hl textmeme"><span class="kick">{kicker}</span>{text_face(m=t, base=base, cls="card topimg")}</h2>'
     return f'''<div class="top">
-  {thumb(t, base, "today", "topimg", eager=True)}
-  <h2 class="hl"><span class="kick">{kicker}</span>{hl_link(t, base)}</h2>
+  {pic}
+  {head}
   <div class="meta">{sources(t, "")}</div>
   {credit(t)}
 </div>'''
