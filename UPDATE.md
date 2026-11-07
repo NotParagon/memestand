@@ -20,7 +20,7 @@ memestand/
   top-memes-today/ trending-memes-this-week/ best-memes-this-month/   generated single-list pages
     Homepage, footer, and the period switcher show Today and This Month only.
     /trending-memes-this-week/ is still generated every build. Do not delete it or redirect it.
-    A real local or hotlinked image is the meme on the page. A post with no image (image_policy none, or no image file) stays a single text card of its own words. Do not draw a fake screenshot. The headline is not repeated under that card. Rank, history notes, credit, and source links stay.
+    A real local or hotlinked image is the meme on the page. A post with no image stays a single text card of its own words, unless data/post_cards.json lists an owner-approved post card for that slug. Do not draw a fake screenshot. The headline is not repeated under the picture or the text card. Rank, history notes, credit, and source links stay.
   archive/YYYY-MM-DD.html    generated "Daily Meme Report" for each day; archive/index.html lists them
   about.html                 generated about + ranking-method page
   feed.xml sitemap.xml robots.txt llms.txt   generated each build
@@ -31,6 +31,8 @@ memestand/
   data/archive/YYYY-MM-DD.json   build.py's per-day snapshot of memes.json (source of the archive pages); COMMIT, never delete
   data/lead_history.json     date -> slug of each day's lead headline (see "Lead headline"); written by build.py; COMMIT, never delete
   images/                    local thumbnails (<= 400px everywhere, EXIF/metadata stripped), named <id>.jpg
+  images/post-cards/         owner-approved attributed post cards (see "Post cards" below). Not shrunk to 400px.
+  data/post_cards.json       slug -> images/post-cards/<slug>.jpg. The durable list hourly builds keep using.
   data/blocklist.json        takedown/DMCA blocklist (see "Legal rules"); never delete entries
   tools/legal.py             blocklist matching, content exclusions, headline-neutrality check, credit lines
   terms.html privacy.html dmca.html   generated legal pages (text + LEGAL settings live in build.py)
@@ -391,8 +393,15 @@ Not legal advice. These rules keep the site's copyright, defamation and content 
 - Every item shows a credit line ("posted by u/<user> on r/<sub>", "posted by @handle on X", "image via Know Your Meme") plus "View original".
   rank.py fills it in automatically (Reddit authors from raw/reddit.json). Set `"credit"` on a candidate to override it, e.g. with the real creator.
 - `"image_policy"` per candidate: `local` (default, small thumbnail), `hotlink` (show the platform's own image URL, nothing stored here; use it
-  for professional or agency photos), `none` (text card only; use it for paparazzi or stock photos, screenshots of private messages,
-  or anything a rights holder is sensitive about).
+  for professional or agency photos), `none` (no third-party photo; use it for paparazzi or stock photos, screenshots of private messages,
+  or anything a rights holder is sensitive about). `none` does not block an owner-approved post card listed in `data/post_cards.json`.
+  Do not change `image_policy` on other memes to force a card.
+
+**Post cards** (`data/post_cards.json`, files in `images/post-cards/`)
+- These are self-rendered cards of a public post: avatar, name, handle, and the full post text, with no MemeStand header. They are not screenshots of X and not a title-only substitute.
+- The site shows one only when that meme has no local thumbnail and no hotlinked photo. The ranking headline under it stays the short clamped headline. Credit, source links, and the quote on the card stay. The credit says it is an attributed post card, not a screenshot.
+- To add one: save the unlabeled square as `images/post-cards/<slug>.jpg` and add an entry in `data/post_cards.json` keyed by the canonical meme slug, with `ids`, `file`, `quote`, `kind`, and `native_screenshot: false`. The next `build.py` and the next hourly `rank.py` both read that file, so the card survives a refresh. Do not put the file in `images/<id>.jpg`. `normalize_images` shrinks only `images/*.jpg`, and a 400px copy makes the post text hard to read.
+- If there is no approved card, leave the text fallback. Do not invent a picture. Affleck's "I Voted" post has no card and stays text.
 - Social preview cards (og:image) use our own `og-default.png`, not someone else's meme (`OG_USE_MEME_THUMB = False` in build.py).
 - Don't add other JavaScript embeds (X widgets.js etc.) without first updating /privacy.html: they set third-party cookies.
   The Cloudflare Web Analytics beacon is the only allowed script (cookieless, disclosed on /privacy.html).

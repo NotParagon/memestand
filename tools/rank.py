@@ -30,6 +30,7 @@ import json, math, sys, pathlib, subprocess, io, datetime
 from zoneinfo import ZoneInfo
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from legal import load_blocklist, blocked_by, exclusion_reason, default_credit
+from post_cards import local_image as post_card_image
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA, IMG = ROOT / "data", ROOT / "images"
@@ -163,7 +164,10 @@ def main():
             pol = c.get("image_policy", "local")
             local = None if (no_img or pol != "local") else fetch_image(c)
             ext = c.get("image_url") if pol == "hotlink" else None
+            # image_policy none still skips third-party photos. A mapped post card fills in only when there is no photo.
+            local = post_card_image(c, local, ext)
             rows.append({"rank": i, "id": c["id"], "title": c["title"], "image": local, "image_url": ext,
+                         **({"image_kind": "post_card"} if local and local.startswith("images/post-cards/") else {}),
                          "card_text": c.get("card_text"), "source_url": c["source_url"], "source_name": c["source_name"],
                          "credit": default_credit(c, authors),
                          "also": c.get("also") or [], "first_seen": c["first_seen"], "score": c["score"], "sources": c["sources"], "notes": c.get("notes", "")})

@@ -1,0 +1,41 @@
+{
+  "note": "Add a card by saving the unlabeled square (avatar, handle, full post, no MemeStand header) as images/post-cards/<slug>.jpg and adding an entry here. Do not put these files in images/<id>.jpg: that folder is the 400px photo-thumbnail store and rank.py will shrink it. image_policy none still blocks unlisted third-party photos. A listed card is shown only when the meme has no photo of its own.",
+  "cards": {
+    "telegram-microsoft": {
+      "ids": ["telegram-microsoft"],
+      "file": "images/post-cards/telegram-microsoft.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "i can't believe bill gates named that company after his penis",
+      "source_asset": "social/2026-11-06/memestand-countdown-3-2026-11-06.jpg",
+      "prepared": "Unlabeled square of the owner-approved social post card. The MemeStand header was removed. Avatar, handle, and the full post remain."
+    },
+    "crack-a-monster": {
+      "ids": ["crack-a-monster"],
+      "file": "images/post-cards/crack-a-monster.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "it's not that deep. crack a monster.",
+      "source_asset": "social/2026-11-06/memestand-countdown-5-2026-11-06.jpg",
+      "prepared": "Unlabeled square of the owner-approved social post card. The MemeStand header was removed. Avatar, handle, and the full post remain."
+    },
+    "britannica-mitochondria": {
+      "ids": ["britannica-mitochondria"],
+      "file": "images/post-cards/britannica-mitochondria.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "CNN PROJECTS THAT THE MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL",
+      "source_asset": "social/2026-11-05/memestand-countdown-4-2026-11-05.jpg",
+      "prepared": "Unlabeled square of the owner-approved social post card. The MemeStand header was removed. Avatar, handle, and the full post remain."
+    },
+    "bounce-baby-boy": {
+      "ids": ["bounce-baby-boy"],
+      "file": "images/post-cards/bounce-baby-boy.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "Boys go always bounce back na why dem dey call us bouncing baby boy",
+      "source_asset": "social/2026-11-06/memestand-trending-2026-11-06.jpg",
+      "prepared": "Unlabeled square of the owner-approved social post card. The MemeStand header was removed. Avatar, handle, and the full post remain."
+    }
+  }
+}

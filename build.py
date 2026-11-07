@@ -35,6 +35,7 @@ from zoneinfo import ZoneInfo
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent / "tools"))
 from legal import load_blocklist, blocked_by, exclusion_reason
 from rank_history import daily_ranks, history_notes, meme_identity
+from post_cards import file_for as post_card_file
 
 SITE = "https://memestand.com"
 NAME = "MemeStand"
@@ -132,7 +133,17 @@ def tc(s):
         out.append(re.sub(r"[a-z]", lambda m: m.group().upper(), lw, count=1))
     return " ".join(out)
 
-def img_src(m):  return m.get("image") or m.get("image_url")
+def uses_post_card(m):
+    """True when the picture is an approved attributed post card, not a photo or a hotlink."""
+    if m.get("image") or m.get("image_url"):
+        return False
+    return bool(post_card_file(m.get("id")))
+
+def img_src(m):
+    native = m.get("image") or m.get("image_url")
+    if native:
+        return native
+    return post_card_file(m.get("id"))
 
 _DIMS = {}
 def img_dims(src):
@@ -217,6 +228,8 @@ CSS = """
  ul{list-style:none;padding:0;margin:0}
  li{margin:0 0 22px;padding:12px;border:1px solid var(--line);border-top:3px solid var(--rule);background:var(--card);box-shadow:0 2px 4px rgba(0,0,0,.10)}
  .thumb{display:block;width:100%;max-height:260px;object-fit:contain;background:var(--thumb);border:1px solid var(--line);margin-bottom:10px}
+ .thumb.postcard{width:100%;height:auto;max-height:none;object-fit:contain;background:var(--card)}
+ .top img.postcard{width:100%;height:auto;max-height:640px;object-fit:contain;background:var(--card)}
  .one .thumb{max-height:420px}
  .card{display:flex;align-items:center;justify-content:center;text-align:center;min-height:120px;padding:14px;border:2px solid var(--rule);font-weight:bold;font-size:17px;background:var(--card)}
  .hl{font-size:16px;font-weight:bold;line-height:1.25;text-transform:uppercase}
@@ -238,7 +251,7 @@ CSS = """
  .prose{max-width:760px;margin:16px auto;font-size:14px;line-height:1.5} .prose a{color:var(--link);text-decoration:underline} .prose h2{text-align:left;text-decoration:none;margin-top:28px;padding:7px 10px;background:var(--bar);color:var(--barfg);font-size:17px;letter-spacing:1px} .prose li{border:0;margin:0 0 6px;padding:0;list-style:disc;box-shadow:none;background:none} .prose ul,.prose ol{padding-left:22px} .prose td,.prose th{border:1px solid var(--line);padding:3px 6px;font-size:12px} .prose table{border-collapse:collapse;max-width:100%}
  nav.foot{margin-bottom:6px;font-size:12px} nav.foot a{color:var(--link);margin:0 6px;text-decoration:underline} footer p{margin:6px auto;max-width:860px}
  .crumbs{font-size:12px;margin:10px auto 0;max-width:760px} .crumbs a{color:var(--link);text-decoration:underline}
- .prose h1{font-size:24px;line-height:1.25;margin:10px 0 12px} .prose h3{margin:14px 0 6px} .prose .thumb{max-height:420px;max-width:400px} .prose .card{max-width:400px}
+ .prose h1{font-size:24px;line-height:1.25;margin:10px 0 12px} .prose h3{margin:14px 0 6px} .prose .thumb{max-height:420px;max-width:400px} .prose .thumb.postcard{max-width:520px;max-height:none} .prose .card{max-width:400px}
  .prose .note{font-size:12px;color:var(--muted)} .az{text-align:center;font-size:14px;margin:8px 0} .az a{color:var(--link);margin:0 4px;text-decoration:underline}
  .one h2[id]{position:sticky;top:0;z-index:5;text-align:left;text-decoration:none;margin:28px 0 14px;padding:8px 12px;background:var(--bar);color:var(--barfg);border-bottom:5px solid var(--redbg)}
  footer{border-top:3px double var(--rule);margin-top:28px;padding-top:10px;font-size:11px;text-align:center;color:var(--muted)}
@@ -343,6 +356,8 @@ their names are used only to identify sources. Rights holders: see <a href="{bas
 # ---------------------------------------------------------------- items
 def alt(m, label):
     a = f"{tc(m['title'])} meme"
+    if uses_post_card(m):
+        a += ". Attributed post card of the original post, not a screenshot"
     return f"{a} - #{m['rank']} {label} on MemeStand" if label else a
 
 def joke_text(m):
@@ -365,11 +380,13 @@ def thumb(m, base, label, cls="thumb", eager=False):
     load = 'fetchpriority="high"' if eager else 'loading="lazy"'
     ref = ' referrerpolicy="no-referrer"' if ext else ""
     wh = wh_attrs(img_src(m))   # explicit size (or a fixed 4:3 box for hotlinks) reserves space: no layout shift
-    return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener"><img class="{cls}" src="{e(src)}" alt="{e(alt(m, label))}"{wh} {load}{ref}></a>'
+    kind = " postcard" if uses_post_card(m) else ""
+    return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener"><img class="{cls}{kind}" src="{e(src)}" alt="{e(alt(m, label))}"{wh} {load}{ref}></a>'
 
 def credit(m):
     c = m.get("credit") or f'via {m.get("source_name", "the original source")}'
-    return (f'<div class="credit">Credit: {e(c)}. &copy; its owner; shown in small form for ranking and commentary. '
+    card = " Shown as an attributed post card of that post, not a screenshot." if uses_post_card(m) else ""
+    return (f'<div class="credit">Credit: {e(c)}.{card} &copy; its owner; shown in small form for ranking and commentary. '
             f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener">View original</a></div>')
 
 def sources(m, lead=" "):
