@@ -30,8 +30,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-          "views": 1476583,
-          "likes": 130436,
+          "views": 1476986,
+          "likes": 130442,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -64,8 +64,8 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 6118616,
-          "likes": 50663,
+          "views": 6131872,
+          "likes": 50688,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -356,11 +356,11 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 4495,
+        "kym_views": 6072,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3530086,
-          "likes": 192254,
+          "views": 3530411,
+          "likes": 192256,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -1669,8 +1669,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6315964,
-          "likes": 183947,
+          "views": 6317632,
+          "likes": 183941,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -1709,7 +1709,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1104260,
+          "views": 1104312,
           "likes": 54554,
           "checked": "2026-11-07",
           "via": "X API"
@@ -1764,8 +1764,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334842,
-          "likes": 3036,
+          "views": 334847,
+          "likes": 3037,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -2095,12 +2095,12 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 252888,
-          "likes": 27147,
+          "views": 253013,
+          "likes": 27148,
           "checked": "2026-11-07",
           "via": "X API"
         },
-        "kym_views": 10235
+        "kym_views": 10987
       },
       "notes": "KYM 7,378 views; TikTok @hard_plushie 9.2M / 2.4M likes; IG @thebigsolomando 76K likes; YouTube Lessons in Meme Culture 605.8K views (Nov 6 6AM PT).",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026",
@@ -2195,8 +2195,8 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 14904945,
-          "likes": 159944,
+          "views": 14907814,
+          "likes": 159935,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -2245,8 +2245,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/2THUQQ/status/2118617523708965188",
-          "views": 464991,
-          "likes": 38967,
+          "views": 468977,
+          "likes": 39240,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -2289,8 +2289,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/tuna_petal/status/2118514084140229097",
-          "views": 1860036,
-          "likes": 32018,
+          "views": 1861869,
+          "likes": 32151,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -2299,6 +2299,49 @@
       "headline_reviewed": true,
       "first_seen_basis": "X posts captioning the bakery clip as me instructing, Nov 5–6 2026; X News story Nov 7",
       "credit": "posted by @tuna_petal on X"
+    },
+    {
+      "id": "newton-fourth-law",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'NEWTON WOULD ADD A FOURTH LAW OF MOTION': THE HUSTLE BRAG EVERYONE IS COPYING",
+      "source_url": "https://x.com/sbxloch/status/2118821023151706276",
+      "source_name": "X / @sbxloch",
+      "image_url": null,
+      "first_seen": "2026-11-06",
+      "also": [
+        {
+          "name": "X / @sbxloch (1.1M views)",
+          "url": "https://x.com/sbxloch/status/2118821023151706276"
+        },
+        {
+          "name": "X News (Newton's Fourth Law meme)",
+          "url": "https://x.com/i/trending/2119145538318946478"
+        },
+        {
+          "name": "X / @HirooOnodaon (Madueke variation)",
+          "url": "https://x.com/HirooOnodaon/status/2119119953274302685"
+        }
+      ],
+      "ev": {
+        "platforms": [
+          "X"
+        ],
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/sbxloch/status/2118821023151706276",
+          "views": 1136208,
+          "likes": 94479,
+          "checked": "2026-11-07",
+          "via": "X API"
+        }
+      },
+      "notes": "Text post 'If newton saw the way I be moving these days he'd add a fourth law of motion' (@sbxloch, Nov 6 1:41 PM PT). X API 1.14M views / 94.5K likes (Nov 7 1PM PT). Dozens of independent accounts reposting the line verbatim Nov 7 plus swaps (Madueke, Declan Rice, '@user is the fourth law'); X News story Nov 7.",
+      "headline_reviewed": true,
+      "first_seen_basis": "Earliest post found on X search is @sbxloch Nov 6 2026; copies/variations Nov 7; X News story Nov 7",
+      "credit": "posted by @sbxloch on X"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T12:11-08:00",
+  "updated": "2026-11-07T13:08-08:00",
   "daily": [
     {
       "rank": 1,
@@ -266,6 +266,37 @@
     },
     {
       "rank": 9,
+      "id": "newton-fourth-law",
+      "title": "'NEWTON WOULD ADD A FOURTH LAW OF MOTION': THE HUSTLE BRAG EVERYONE IS COPYING",
+      "image": null,
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/sbxloch/status/2118821023151706276",
+      "source_name": "X / @sbxloch",
+      "credit": "posted by @sbxloch on X",
+      "also": [
+        {
+          "name": "X / @sbxloch (1.1M views)",
+          "url": "https://x.com/sbxloch/status/2118821023151706276"
+        },
+        {
+          "name": "X News (Newton's Fourth Law meme)",
+          "url": "https://x.com/i/trending/2119145538318946478"
+        },
+        {
+          "name": "X / @HirooOnodaon (Madueke variation)",
+          "url": "https://x.com/HirooOnodaon/status/2119119953274302685"
+        }
+      ],
+      "first_seen": "2026-11-06",
+      "score": 65.6,
+      "sources": [
+        "X"
+      ],
+      "notes": "Text post 'If newton saw the way I be moving these days he'd add a fourth law of motion' (@sbxloch, Nov 6 1:41 PM PT). X API 1.14M views / 94.5K likes (Nov 7 1PM PT). Dozens of independent accounts reposting the line verbatim Nov 7 plus swaps (Madueke, Declan Rice, '@user is the fourth law'); X News story Nov 7."
+    },
+    {
+      "rank": 10,
       "id": "britannica-mitochondria",
       "title": "BRITANNICA'S ELECTION-NIGHT JOKE: 'CNN PROJECTS MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL'",
       "image": "images/post-cards/britannica-mitochondria.jpg",
@@ -291,34 +322,6 @@
         "X"
       ],
       "notes": "1.10M views / 54.6K likes on @Britannica's mitochondria powerhouse joke (X API, Nov 6 6AM PT)."
-    },
-    {
-      "rank": 10,
-      "id": "bounce-baby-boy",
-      "title": "'BOYS GO ALWAYS BOUNCE BACK': NIGERIAN PIDGIN 'BOUNCING BABY BOY' MOTTO GOES VIRAL",
-      "image": "images/post-cards/bounce-baby-boy.jpg",
-      "image_url": null,
-      "image_kind": "post_card",
-      "card_text": null,
-      "source_url": "https://x.com/2THUQQ/status/2118617523708965188",
-      "source_name": "X / @2THUQQ",
-      "credit": "posted by @2THUQQ on X",
-      "also": [
-        {
-          "name": "X / @2THUQQ (465K views)",
-          "url": "https://x.com/2THUQQ/status/2118617523708965188"
-        },
-        {
-          "name": "X News (Nigerian Pidgin bouncing baby boy)",
-          "url": "https://x.com/i/trending/2118722212274561149"
-        }
-      ],
-      "first_seen": "2026-11-06",
-      "score": 61.7,
-      "sources": [
-        "X"
-      ],
-      "notes": "Nigerian Pidgin resilience motto reframing 'bouncing baby boy'. Posted by @2THUQQ (horsh) Nov 6 2026; X News story tracked copycats. Text card only. minor_reviewed: adult-metaphor Pidgin motto; no child depicted. X metrics refreshed ~6 PM PT (351k views / 31.9k likes)."
     }
   ],
   "weekly": [

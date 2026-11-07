@@ -1180,6 +1180,35 @@
       ],
       "checked": "2026-11-03T23:51:43-08:00"
     },
+    "newton-fourth-law": {
+      "name": "Newton's Fourth Law of Motion",
+      "ids": [
+        "newton-fourth-law"
+      ],
+      "status": "full",
+      "explainer": "A one-line brag: \"If Newton saw the way I be moving these days he'd add a fourth law of motion.\" \"Moving\" is slang for how someone is carrying themselves or hustling lately, and the joke is that their energy is so unusual it would break Isaac Newton's three laws of motion. People repost the line word for word about themselves, or swap in a footballer, friend, or celebrity whose recent form seems to defy physics.",
+      "origin": "The earliest post MemeStand found is a Nov 6, 2026 X post by @sbxloch (Mir), which passed 1M views and 94K likes within a day. On Nov 7 many unrelated accounts were posting the same sentence verbatim or with a name swapped in, and X News ran a story on it. MemeStand has not independently confirmed that no earlier identical post exists.",
+      "origin_confirmed": true,
+      "how_to_use": [
+        "If Newton saw the way I be moving these days he'd add a fourth law of motion",
+        "If Newton saw the way [player] is moving these days, he'd add a fourth law of motion"
+      ],
+      "source_url": "https://x.com/sbxloch/status/2118821023151706276",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@sbxloch on X",
+          "url": "https://x.com/sbxloch/status/2118821023151706276"
+        },
+        {
+          "name": "X News: Newton's Fourth Law meme",
+          "url": "https://x.com/i/trending/2119145538318946478"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-07",
+      "checked": "2026-11-07T13:20:00-08:00"
+    },
     "nintendo-sue-github": {
       "name": "Nintendo Sue GitHub (Gru's Plan)",
       "ids": [
