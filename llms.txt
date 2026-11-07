@@ -2,7 +2,7 @@
 
 > MemeStand (https://memestand.com) is an independent, headline-style daily meme report: the internet's top 10 memes today, the top 10 trending memes this week, and the best memes of the month (last 30 days), ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated hourly, 6 AM to 9 PM Pacific Time. Every listed meme links to its original source.
 
-Last updated: 2026-11-06 17:06 PT (2026-11-06T17:06:00-08:00)
+Last updated: 2026-11-06 18:08 PT (2026-11-06T18:08:00-08:00)
 
 ## Key pages
 
@@ -27,7 +27,7 @@ Last updated: 2026-11-06 17:06 PT (2026-11-06T17:06:00-08:00)
 6. 'It's Not That Deep. Crack a Monster.': Monster Energy's Own Post Becomes the Cope Meme — source: https://x.com/MonsterEnergy/status/2118012916586676345 — credit: posted by @MonsterEnergy on X — Unchanged since yesterday — evidence: Monster Energy official: 'it's not that deep. crack a monster.' X API 5.38M views / 49.3K likes (Nov 6 6AM PT). Fan art / quote wave ongoing. — explainer: https://memestand.com/meme/crack-a-monster/
 7. Ben Affleck's 'I Voted' Smoking Photo Updates the Classic Tired Meme, Per X — source: https://x.com/BYRNEGRACES/status/2118046162838053124 — credit: posted by @BYRNEGRACES on X — Unchanged since yesterday — evidence: Side-by-side of classic Affleck-tired meme with Nov 2026 paparazzi shot smoking outside Steak 48 with 'I VOTED' sticker. X @BYRNEGRACES 1.36M views / 121.9K likes (Nov 6 6AM PT); X News story still live. Paparazzi photo — text card only. — explainer: https://memestand.com/meme/affleck-i-voted-smoking/
 8. Britannica's Election-night Joke: 'Cnn Projects Mitochondria Will Remain the Powerhouse of the Cell' — source: https://x.com/Britannica/status/2117805815050727630 — credit: posted by @Britannica on X — Unchanged since yesterday — evidence: 1.10M views / 54.6K likes on @Britannica's mitochondria powerhouse joke (X API, Nov 6 6AM PT). — explainer: https://memestand.com/meme/britannica-mitochondria/
-9. 'Boys Go Always Bounce Back': Nigerian Pidgin 'Bouncing Baby Boy' Motto Goes Viral — source: https://x.com/2THUQQ/status/2118617523708965188 — credit: posted by @2THUQQ on X — New today; First time — evidence: Nigerian Pidgin resilience motto reframing 'bouncing baby boy'. Posted by @2THUQQ (horsh) Nov 6 2026; X News story tracked copycats. Text card only. minor_reviewed: adult-metaphor Pidgin motto; no child depicted. X metrics refreshed ~4 PM PT (340k views / 31.2k likes; still climbing). — explainer: https://memestand.com/meme/bounce-baby-boy/
+9. 'Boys Go Always Bounce Back': Nigerian Pidgin 'Bouncing Baby Boy' Motto Goes Viral — source: https://x.com/2THUQQ/status/2118617523708965188 — credit: posted by @2THUQQ on X — New today; First time — evidence: Nigerian Pidgin resilience motto reframing 'bouncing baby boy'. Posted by @2THUQQ (horsh) Nov 6 2026; X News story tracked copycats. Text card only. minor_reviewed: adult-metaphor Pidgin motto; no child depicted. X metrics refreshed ~6 PM PT (351k views / 31.9k likes). — explainer: https://memestand.com/meme/bounce-baby-boy/
 
 ## Top 10 memes this week
 
