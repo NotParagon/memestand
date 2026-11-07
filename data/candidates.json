@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-06",
+  "as_of": "2026-11-07",
   "candidates": [
     {
       "id": "affleck-i-voted-smoking",
@@ -30,9 +30,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-          "views": 1468515,
-          "likes": 130298,
-          "checked": "2026-11-06",
+          "views": 1473618,
+          "likes": 130378,
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
@@ -54,7 +54,7 @@
       "first_seen": "2026-11-04",
       "also": [
         {
-          "name": "X / @MonsterEnergy (5.8M views)",
+          "name": "X / @MonsterEnergy (6.0M views)",
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345"
         }
       ],
@@ -64,9 +64,9 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 5881802,
-          "likes": 50269,
-          "checked": "2026-11-06",
+          "views": 6024398,
+          "likes": 50486,
+          "checked": "2026-11-07",
           "via": "X API"
         },
         "x_news": true
@@ -92,9 +92,9 @@
         ],
         "x": {
           "url": "https://x.com/HorrorGorl/status/2117609954563477790",
-          "views": 712147,
+          "views": 712492,
           "likes": 36541,
-          "checked": "2026-11-06",
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
@@ -138,7 +138,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 16054,
+        "kym_views": 16483,
         "tiktok": {
           "url": "https://www.tiktok.com/@tr0v0n/video/7698167604019547422",
           "views": 1400000,
@@ -160,7 +160,8 @@
           "channel": "Lessons in Meme Culture",
           "checked": "2026-11-05",
           "via": "fetch_youtube.py"
-        }
+        },
+        "kym_editorial": true
       },
       "notes": "KYM 15,146 views (Nov 6). TikTok @tr0v0n 1.4M views still the cited large post.",
       "headline_reviewed": true,
@@ -344,7 +345,7 @@
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
-          "name": "TikTok / @travelingnurse (277K views)",
+          "name": "TikTok / @travelingnurse (278K views)",
           "url": "https://www.tiktok.com/@travelingnurse/video/7704183300255927583"
         }
       ],
@@ -355,20 +356,20 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 4592,
+        "kym_views": 4495,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3516427,
-          "likes": 192274,
-          "checked": "2026-11-06",
+          "views": 3523563,
+          "likes": 192238,
+          "checked": "2026-11-07",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 856900,
+          "views": 857400,
           "likes": 134200,
           "author": "@elionwillpower",
-          "checked": "2026-11-06",
+          "checked": "2026-11-07",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
@@ -410,9 +411,9 @@
         "kym_views": 121247,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 17036470,
-          "likes": 351256,
-          "checked": "2026-11-06",
+          "views": 17049760,
+          "likes": 351206,
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
@@ -477,9 +478,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8311193,
-          "likes": 92488,
-          "checked": "2026-11-06",
+          "views": 8318860,
+          "likes": 92471,
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
@@ -505,9 +506,9 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6542092,
-          "likes": 30881,
-          "checked": "2026-11-06",
+          "views": 6546767,
+          "likes": 30891,
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
@@ -556,9 +557,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 68304,
+          "views": 68345,
           "likes": 2786,
-          "checked": "2026-11-06",
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
@@ -580,7 +581,7 @@
       "first_seen": "2026-10-24",
       "also": [
         {
-          "name": "X / @dogwife333 (329K views)",
+          "name": "X / @dogwife333 (330K views)",
           "url": "https://x.com/dogwife333/status/2114198070132961395"
         },
         {
@@ -601,12 +602,12 @@
         "kym": true,
         "x_news": true,
         "kym_editorial": true,
-        "kym_views": 10817,
+        "kym_views": 11456,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 329504,
-          "likes": 23683,
-          "checked": "2026-11-06",
+          "views": 329659,
+          "likes": 23682,
+          "checked": "2026-11-07",
           "via": "X API"
         },
         "tiktok": {
@@ -670,9 +671,9 @@
         "kym_views": 19740,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2201571,
-          "likes": 43142,
-          "checked": "2026-11-06",
+          "views": 2201860,
+          "likes": 43135,
+          "checked": "2026-11-07",
           "via": "X API"
         },
         "tiktok": {
@@ -861,7 +862,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 24239,
+        "kym_views": 24986,
         "x_news": true,
         "x": {
           "views": 475000,
@@ -874,7 +875,8 @@
           "channel": "Akkad Daily",
           "checked": "2026-11-06",
           "via": "fetch_youtube.py"
-        }
+        },
+        "kym_editorial": true
       },
       "notes": "KYM Anakin Gen Z Male Rage still Popular Right Now / Top Entry This Month (Nov 6 6AM); 22,140 KYM views. YouTube Akkad Daily 'They're Not Happy About Zoomer Anakin' 589K views; 'The Zoomer Anakin Meme' 468K. X News still covering Malfoid+Anakin pairings.",
       "first_seen_basis": "KYM entry published date",
@@ -1101,7 +1103,7 @@
         "kym": true,
         "kym_editorial": true,
         "x_news": true,
-        "kym_views": 184269,
+        "kym_views": 185218,
         "tiktok": {
           "likes": 89000,
           "via": "KYM-cited count",
@@ -1279,46 +1281,15 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3503298,
-          "likes": 118621,
-          "checked": "2026-11-06",
+          "views": 3504047,
+          "likes": 118619,
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
       "notes": "118,696 likes / 3.49M views on @EODHappyCaptain (X API, Nov 4). Trail-cam bear + UXO joke still circulating.",
       "headline_reviewed": true,
       "credit": "posted by @EODHappyCaptain on X"
-    },
-    {
-      "id": "monkey-doomscrolling",
-      "periods": [],
-      "title": "TINY MONKEY 'DOOMSCROLLING' IN BED HITS 6.9M VIEWS",
-      "source_url": "https://x.com/vwxyz_4/status/2115203529795326309",
-      "source_name": "X / @vwxyz_4",
-      "image_url": "https://pbs.twimg.com/amplify_video_thumb/2115203514674630657/img/4KlSR_QVBtXCukE6.jpg",
-      "first_seen": "2026-10-27",
-      "also": [
-        {
-          "name": "X trending story",
-          "url": "https://x.com/i/trending/2115430446075121982"
-        }
-      ],
-      "ev": {
-        "platforms": [
-          "X"
-        ],
-        "x": {
-          "views": 7335950,
-          "likes": 82763,
-          "checked": "2026-11-06",
-          "via": "X API",
-          "url": "https://x.com/stasj1e/status/2115203529795326309"
-        }
-      },
-      "notes": "Original @vwxyz_4 X post (was ~7.2M views) returned not-authorized on Nov 5 ~3PM PT re-check; treated as deleted/private. Dropped from active lists until a readable source post is verified. Prior X News story: https://x.com/i/trending/2115430446075121982",
-      "headline_reviewed": true,
-      "flags": [],
-      "credit": "posted by @stasj1e on X"
     },
     {
       "id": "hold-the-ram",
@@ -1387,7 +1358,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 9
+          "rank": 8
         },
         "platforms": [
           "Reddit"
@@ -1499,9 +1470,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1481082,
-          "likes": 26773,
-          "checked": "2026-11-06",
+          "views": 1483116,
+          "likes": 26770,
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
@@ -1536,9 +1507,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 138273,
-          "likes": 16140,
-          "checked": "2026-11-06",
+          "views": 138591,
+          "likes": 16151,
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
@@ -1632,7 +1603,7 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 49227,
+        "kym_views": 50815,
         "tiktok": {
           "url": "https://www.tiktok.com/@._bella_141/video/7672239822450265374",
           "views": 216200,
@@ -1698,9 +1669,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6293289,
-          "likes": 183991,
-          "checked": "2026-11-06",
+          "views": 6305365,
+          "likes": 183965,
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
@@ -1738,9 +1709,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1103525,
+          "views": 1103925,
           "likes": 54564,
-          "checked": "2026-11-06",
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
@@ -1761,7 +1732,7 @@
       "first_seen": "2026-11-01",
       "also": [
         {
-          "name": "X / @Flovaai (334K views)",
+          "name": "X / @Flovaai (335K views)",
           "url": "https://x.com/Flovaai/status/2117466712597839938"
         },
         {
@@ -1769,7 +1740,7 @@
           "url": "https://x.com/i/trending/2117626647205875908"
         },
         {
-          "name": "TikTok / @leehoustonx (11.4M views)",
+          "name": "TikTok / @leehoustonx (11.5M views)",
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
         },
         {
@@ -1777,7 +1748,7 @@
           "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         },
         {
-          "name": "TikTok / @boby.biggsjohnson (6.3M views)",
+          "name": "TikTok / @boby.biggsjohnson (6.4M views)",
           "url": "https://www.tiktok.com/@boby.biggsjohnson/video/7703585816429235487"
         }
       ],
@@ -1789,26 +1760,26 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 2253,
+        "kym_views": 2229,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334498,
-          "likes": 3039,
-          "checked": "2026-11-06",
+          "views": 334730,
+          "likes": 3036,
+          "checked": "2026-11-07",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-          "views": 11400000,
+          "views": 11500000,
           "likes": 1500000,
           "author": "@leehoustonx",
           "posted": "2026-11-01",
-          "checked": "2026-11-06",
+          "checked": "2026-11-07",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-            "views": 11400000,
+            "views": 11500000,
             "likes": 1500000
           }
         },
@@ -1817,7 +1788,7 @@
           "likes": 11000000,
           "author": "@kevinwinnik",
           "posted": "2026-10-31",
-          "checked": "2026-11-06",
+          "checked": "2026-11-07",
           "via": "fetch_social.py"
         }
       },
@@ -2040,9 +2011,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 172888,
-          "likes": 7483,
-          "checked": "2026-11-06",
+          "views": 174230,
+          "likes": 7484,
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
@@ -2063,15 +2034,15 @@
       "first_seen": "2026-10-19",
       "also": [
         {
-          "name": "TikTok / @hard_plushie (9.3M views)",
+          "name": "TikTok / @hard_plushie (9.4M views)",
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (251K views)",
+          "name": "X / @LashSleeper (252K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
-          "name": "TikTok / @watosis (344K views)",
+          "name": "TikTok / @watosis (349K views)",
           "url": "https://www.tiktok.com/@watosis/video/7703458958266092831"
         },
         {
@@ -2095,14 +2066,14 @@
         "kym_editorial": true,
         "tiktok": {
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969",
-          "views": 9300000,
+          "views": 9400000,
           "likes": 2400000,
           "author": "@hard_plushie",
-          "checked": "2026-11-06",
+          "checked": "2026-11-07",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969",
-            "views": 9300000,
+            "views": 9400000,
             "likes": 2400000
           }
         },
@@ -2111,7 +2082,7 @@
           "likes": 78000,
           "author": "@thebigsolomando",
           "posted": "2026-11-02",
-          "checked": "2026-11-06",
+          "checked": "2026-11-07",
           "via": "fetch_social.py"
         },
         "youtube": {
@@ -2124,12 +2095,12 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 251314,
-          "likes": 27131,
-          "checked": "2026-11-06",
+          "views": 252081,
+          "likes": 27139,
+          "checked": "2026-11-07",
           "via": "X API"
         },
-        "kym_views": 9323
+        "kym_views": 10235
       },
       "notes": "KYM 7,378 views; TikTok @hard_plushie 9.2M / 2.4M likes; IG @thebigsolomando 76K likes; YouTube Lessons in Meme Culture 605.8K views (Nov 6 6AM PT).",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026",
@@ -2202,8 +2173,8 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 348183,
-        "kym_editorial": false
+        "kym_views": 348595,
+        "kym_editorial": true
       },
       "credit": "CBBC / Hacker T. Dog (with Lauren Layfield)"
     },
@@ -2224,9 +2195,9 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 14778213,
-          "likes": 159163,
-          "checked": "2026-11-06",
+          "views": 14881906,
+          "likes": 159888,
+          "checked": "2026-11-07",
           "via": "X API"
         },
         "x_news": true
@@ -2235,7 +2206,7 @@
       "headline_reviewed": true,
       "also": [
         {
-          "name": "X / @telegram (14.7M views)",
+          "name": "X / @telegram (14.9M views)",
           "url": "https://x.com/telegram/status/2117998301564043360"
         },
         {
@@ -2259,7 +2230,7 @@
       "first_seen": "2026-11-06",
       "also": [
         {
-          "name": "X / @2THUQQ (351K views)",
+          "name": "X / @2THUQQ (432K views)",
           "url": "https://x.com/2THUQQ/status/2118617523708965188"
         },
         {
@@ -2274,9 +2245,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/2THUQQ/status/2118617523708965188",
-          "views": 365050,
-          "likes": 32661,
-          "checked": "2026-11-06",
+          "views": 432415,
+          "likes": 36860,
+          "checked": "2026-11-07",
           "via": "X API"
         }
       },
@@ -2285,6 +2256,49 @@
       "first_seen_basis": "X post by @2THUQQ on Nov 6, 2026",
       "credit": "posted by @2THUQQ on X",
       "minor_reviewed": true
+    },
+    {
+      "id": "me-instructing",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "'ME INSTRUCTING': BAKERY-COUNTER CLIP BECOMES THE BOSSY-DIRECTION REACTION MEME",
+      "source_url": "https://x.com/tuna_petal/status/2118514084140229097",
+      "source_name": "X / @tuna_petal",
+      "image_url": "https://pbs.twimg.com/amplify_video_thumb/2093417214686982144/img/N8bbcIEfXhHveQhv.jpg",
+      "first_seen": "2026-11-06",
+      "also": [
+        {
+          "name": "X / @tuna_petal (1.8M views)",
+          "url": "https://x.com/tuna_petal/status/2118514084140229097"
+        },
+        {
+          "name": "X News (Bakery Counter / Me Instructing)",
+          "url": "https://x.com/i/trending/2119063066327278020"
+        },
+        {
+          "name": "X / @NuggetsItz (33K views)",
+          "url": "https://x.com/NuggetsItz/status/2118414453255418233"
+        }
+      ],
+      "ev": {
+        "platforms": [
+          "X"
+        ],
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/tuna_petal/status/2118514084140229097",
+          "views": 1841826,
+          "likes": 30993,
+          "checked": "2026-11-07",
+          "via": "X API"
+        }
+      },
+      "notes": "Bakery-counter clip of a woman emphatically pointing at a pastry while coaching a man; captions use 'me instructing [X] to [Y]'. Strong X News story Nov 7; largest verified post @tuna_petal 1.84M views / 31.0K likes (Nov 6).",
+      "headline_reviewed": true,
+      "first_seen_basis": "X posts captioning the bakery clip as me instructing, Nov 5–6 2026; X News story Nov 7",
+      "credit": "posted by @tuna_petal on X"
     }
   ]
 }

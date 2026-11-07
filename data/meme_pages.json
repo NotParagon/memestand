@@ -1068,6 +1068,35 @@
       "how_to_use": [],
       "checked": "2026-11-03T23:51:43-08:00"
     },
+    "me-instructing": {
+      "name": "Me Instructing",
+      "ids": [
+        "me-instructing"
+      ],
+      "status": "short",
+      "explainer": "A reaction format that pairs a short bakery-counter clip — a woman emphatically pointing at a pastry and coaching the man beside her, until he stops following — with the caption \"me instructing [someone] to [do something ridiculous].\" The joke is the mismatch: her serious, bossy body language stands in for how people feel when they are trying to micromanage a bot, a company, a fandom, or a friend who will not listen.",
+      "origin": "In early November 2026 the bakery clip spread on X as a reusable \"me instructing…\" reaction. A high-reach example is @tuna_petal's November 6, 2026 post (\"me instructing spotify to delete bts discography\"), which crossed 1.8M views, and an X News story tracked the wave on November 7. MemeStand has not confirmed who filmed or first posted the bakery video itself, so the original creator of the clip is unconfirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "me instructing [company] to [fix my wishlist]",
+        "me instructing my tweet to go viral"
+      ],
+      "source_url": "https://x.com/tuna_petal/status/2118514084140229097",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@tuna_petal on X",
+          "url": "https://x.com/tuna_petal/status/2118514084140229097"
+        },
+        {
+          "name": "X News: Bakery Counter Clip Fuels Me Instructing Memes",
+          "url": "https://x.com/i/trending/2119063066327278020"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-07",
+      "checked": "2026-11-07T06:15:00-08:00"
+    },
     "meme-same-room-marge": {
       "name": "Sending a Meme in the Same Room (Marge)",
       "ids": [
@@ -1437,6 +1466,35 @@
         "Me hiding my RAM in the cereal box"
       ],
       "checked": "2026-11-03T23:51:43-08:00"
+    },
+    "scientists-reveal-hi": {
+      "name": "Scientists Reveal the Hi",
+      "ids": [
+        "scientists-reveal-hi"
+      ],
+      "status": "full",
+      "explainer": "An exploitable image-macro that looks like a fake BBC-style news thumbnail. A pet (often an orange cat) sits over a deadpan headline that starts \"Scientists reveal the…\" and ends with something trivial — most famously \"hi.\" People edit the face, the background, or the final word, so the joke is the solemn science framing for a nothing-burger reveal.",
+      "origin": "On July 16, 2025, Instagram user @cheemsitz posted a dog-on-a-couch macro captioned \"Scientists reveal the secret,\" styled like a BBC News thumbnail (per Know Your Meme). Cat edits followed; on May 28, 2026, Redditor matthweewhttam swapped \"secret\" for \"hi\" on r/xertunposting. The \"hi\" version and further recaptions spread on Instagram and TikTok into late 2026.",
+      "origin_confirmed": true,
+      "how_to_use": [
+        "Scientists reveal the hi",
+        "Scientists reveal the [mundane thing]"
+      ],
+      "source_url": "https://knowyourmeme.com/memes/scientists-reveal-the-hi",
+      "kym_url": "https://knowyourmeme.com/memes/scientists-reveal-the-hi",
+      "sources": [
+        {
+          "name": "Know Your Meme: Scientists Reveal the Hi",
+          "url": "https://knowyourmeme.com/memes/scientists-reveal-the-hi"
+        },
+        {
+          "name": "@cheemsitz on Instagram (original \"secret\" post, per KYM)",
+          "url": "https://www.instagram.com/p/DMLiHlNPudv/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-07",
+      "checked": "2026-11-07T06:15:00-08:00"
     },
     "she-only-wants-me-for-my-pakistani-citizenship": {
       "name": "She Only Wants Me for My Pakistani Citizenship",
