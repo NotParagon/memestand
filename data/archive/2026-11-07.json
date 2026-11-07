@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T11:10-08:00",
+  "updated": "2026-11-07T12:11-08:00",
   "daily": [
     {
       "rank": 1,
@@ -59,7 +59,7 @@
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (252K views)",
+          "name": "X / @LashSleeper (253K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -102,7 +102,7 @@
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
-          "name": "X / @FabTheWoker (3.4M views)",
+          "name": "X / @FabTheWoker (117K views)",
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
@@ -127,8 +127,9 @@
       "rank": 4,
       "id": "telegram-microsoft",
       "title": "TELEGRAM'S OFFICIAL ACCOUNT: 'I CAN'T BELIEVE BILL GATES NAMED THAT COMPANY AFTER HIS PENIS'",
-      "image": null,
+      "image": "images/post-cards/telegram-microsoft.jpg",
       "image_url": null,
+      "image_kind": "post_card",
       "card_text": null,
       "source_url": "https://x.com/telegram/status/2117998301564043360",
       "source_name": "X / @telegram",
@@ -185,15 +186,16 @@
       "rank": 6,
       "id": "crack-a-monster",
       "title": "'IT'S NOT THAT DEEP. CRACK A MONSTER.': MONSTER ENERGY'S OWN POST BECOMES THE COPE MEME",
-      "image": null,
+      "image": "images/post-cards/crack-a-monster.jpg",
       "image_url": null,
+      "image_kind": "post_card",
       "card_text": null,
       "source_url": "https://x.com/MonsterEnergy/status/2118012916586676345",
       "source_name": "X / @MonsterEnergy",
       "credit": "posted by @MonsterEnergy on X",
       "also": [
         {
-          "name": "X / @MonsterEnergy (6.0M views)",
+          "name": "X / @MonsterEnergy (6.1M views)",
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345"
         }
       ],
@@ -216,7 +218,7 @@
       "credit": "posted by @tuna_petal on X",
       "also": [
         {
-          "name": "X / @tuna_petal (1.8M views)",
+          "name": "X / @tuna_petal (1.9M views)",
           "url": "https://x.com/tuna_petal/status/2118514084140229097"
         },
         {
@@ -266,8 +268,9 @@
       "rank": 9,
       "id": "britannica-mitochondria",
       "title": "BRITANNICA'S ELECTION-NIGHT JOKE: 'CNN PROJECTS MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL'",
-      "image": null,
+      "image": "images/post-cards/britannica-mitochondria.jpg",
       "image_url": null,
+      "image_kind": "post_card",
       "card_text": "CNN PROJECTS THAT THE MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL",
       "source_url": "https://x.com/Britannica/status/2117805815050727630",
       "source_name": "X / @Britannica",
@@ -293,15 +296,16 @@
       "rank": 10,
       "id": "bounce-baby-boy",
       "title": "'BOYS GO ALWAYS BOUNCE BACK': NIGERIAN PIDGIN 'BOUNCING BABY BOY' MOTTO GOES VIRAL",
-      "image": null,
+      "image": "images/post-cards/bounce-baby-boy.jpg",
       "image_url": null,
+      "image_kind": "post_card",
       "card_text": null,
       "source_url": "https://x.com/2THUQQ/status/2118617523708965188",
       "source_name": "X / @2THUQQ",
       "credit": "posted by @2THUQQ on X",
       "also": [
         {
-          "name": "X / @2THUQQ (432K views)",
+          "name": "X / @2THUQQ (465K views)",
           "url": "https://x.com/2THUQQ/status/2118617523708965188"
         },
         {
@@ -310,7 +314,7 @@
         }
       ],
       "first_seen": "2026-11-06",
-      "score": 61.6,
+      "score": 61.7,
       "sources": [
         "X"
       ],
@@ -376,7 +380,7 @@
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (252K views)",
+          "name": "X / @LashSleeper (253K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -554,7 +558,7 @@
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
-          "name": "X / @FabTheWoker (3.4M views)",
+          "name": "X / @FabTheWoker (117K views)",
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
@@ -579,8 +583,9 @@
       "rank": 8,
       "id": "telegram-microsoft",
       "title": "TELEGRAM'S OFFICIAL ACCOUNT: 'I CAN'T BELIEVE BILL GATES NAMED THAT COMPANY AFTER HIS PENIS'",
-      "image": null,
+      "image": "images/post-cards/telegram-microsoft.jpg",
       "image_url": null,
+      "image_kind": "post_card",
       "card_text": null,
       "source_url": "https://x.com/telegram/status/2117998301564043360",
       "source_name": "X / @telegram",
