@@ -18,6 +18,8 @@ memestand/
   build.py                   data/memes.json -> the whole site (all HTML + feed/sitemap/robots/llms.txt)
   index.html                 generated homepage, don't hand-edit
   top-memes-today/ trending-memes-this-week/ best-memes-this-month/   generated single-list pages
+    Homepage, footer, and the period switcher show Today and This Month only.
+    /trending-memes-this-week/ is still generated every build. Do not delete it or redirect it.
   archive/YYYY-MM-DD.html    generated "Daily Meme Report" for each day; archive/index.html lists them
   about.html                 generated about + ranking-method page
   feed.xml sitemap.xml robots.txt llms.txt   generated each build

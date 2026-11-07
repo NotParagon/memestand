@@ -160,6 +160,8 @@ PERIODS = {
     "weekly":  {"h2": "TOP 10 MEMES THIS WEEK",  "slug": "trending-memes-this-week", "word": "this week"},
     "monthly": {"h2": "TOP 10 MEMES THIS MONTH", "slug": "best-memes-this-month",    "word": "this month"},
 }
+# Homepage, footer, and the period switcher. The weekly page stays at its URL.
+MAIN_PERIODS = ("daily", "monthly")
 
 THEME_HEAD = ('<meta name="color-scheme" content="light dark">'
     '<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">'
@@ -200,6 +202,7 @@ CSS = """
  .top .kick{display:block;font-size:13px;letter-spacing:2px;color:var(--red);margin-bottom:4px}
  .top .meta{margin-top:6px}
  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:10px}
+ .grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
  .grid .col{padding:0 20px;min-width:0} .grid .col:first-child{padding-left:0} .grid .col:last-child{padding-right:0}
  .grid .col+.col{border-left:2px solid var(--rule)}
  .one{max-width:640px;margin:10px auto 0}
@@ -311,7 +314,7 @@ def copyright_years():
     return f"{COPY_START}" if NOW.year <= COPY_START else f"{COPY_START}&ndash;{NOW.year}"
 
 def footer(base):
-    links = [("index.html", "Home"), ("top-memes-today/", "Top Memes Today"), ("trending-memes-this-week/", "Trending This Week"),
+    links = [("index.html", "Home"), ("top-memes-today/", "Top Memes Today"),
              ("best-memes-this-month/", "Best of the Month"), ("archive/", "Daily Meme Report Archive"),
              ("memes/", "Memes A&ndash;Z"), ("feed.xml", "RSS/Atom Feed"), ("llms.txt", "llms.txt")]
     legal = [("about.html", "About &amp; Content Policy"), ("terms.html", "Terms of Use"), ("privacy.html", "Privacy"),
@@ -761,23 +764,27 @@ def write(rel, text):
     if not p.exists() or p.read_text() != text: p.write_text(text)
     written.append(rel)
 
+def period_switch(current, base):
+    """Links between the main lists. Weekly is omitted; its own page still links here."""
+    keys = [k for k in MAIN_PERIODS if k != current]
+    return " | ".join(f'<a href="{base}{PERIODS[k]["slug"]}/">{PERIODS[k]["h2"].title()}</a>' for k in keys)
+
 def build_home():
     d, url = data, f"{SITE}/"
     t1 = tc(d["daily"][0]["title"])
-    title = "MemeStand — Top 10 Memes Today, This Week & This Month | Daily Meme Report"
-    desc = (f"MemeStand's daily meme report: the internet's top 10 trending memes today, this week and this month, "
+    title = "MemeStand — Top 10 Memes Today & This Month | Daily Meme Report"
+    desc = (f"MemeStand's daily meme report: the internet's top 10 memes today and this month, "
             f"ranked by virality. Today's #1 ({fmt_short(NOW)}): \"{t1}\".")
     og, og_alt = og_for(d)
-    lists = [itemlist(d, p, url, fmt_short(NOW)) for p in PERIODS]
+    lists = [itemlist(d, p, url, fmt_short(NOW)) for p in MAIN_PERIODS]
     ld = graph(ORG, WEBSITE, webpage(url, title, desc, ISO, about_lists=[x["@id"] for x in lists]), *lists)
-    page = head(title=title, desc=desc, path="", base="", og_img=og, og_alt=og_alt, ld=[ld]) + f'''
-{mast("", "THE TOP MEMES TODAY, THIS WEEK &amp; THIS MONTH -- RANKED BY VIRALITY")}
+    page = head(title=title, desc=desc, path="", base="", og_img=og, og_alt=og_alt or "MemeStand: top 10 memes today and this month", ld=[ld]) + f'''
+{mast("", "THE TOP MEMES TODAY &amp; THIS MONTH -- RANKED BY VIRALITY")}
 <p class="intro">{INTRO}</p>
 {upd_html()}
 {top_story(d, "")}
-<main class="grid">
+<main class="grid two">
   {column(d, "daily", "", day=TODAY, live=True)}
-  {column(d, "weekly", "")}
   {column(d, "monthly", "")}
 </main>
 <p class="more"><a href="archive/{TODAY}.html">Today's daily meme report ({fmt_long(NOW)})</a> | <a href="archive/">Past daily meme reports</a></p>
@@ -806,7 +813,7 @@ def build_period(p):
     m1 = d[p][0]
     og = abs_img(m1) if (OG_USE_MEME_THUMB and m1.get("image") and not m1.get("removed")) else None
     ld = graph(ORG, WEBSITE, webpage(url, title, desc, ISO, crumbs=crumbs, about_lists=[lst["@id"]]), lst)
-    others = " | ".join(f'<a href="../{v["slug"]}/">{v["h2"].title()}</a>' for k, v in PERIODS.items() if k != p)
+    others = period_switch(p, "../")
     page = head(title=title, desc=desc, path=f"{info['slug']}/", base=base, og_img=og, og_alt=alt(m1, info["word"]) if og else None, ld=[ld]) + f'''
 {mast(base, h1)}
 <p class="intro">{INTRO}</p>
@@ -896,9 +903,9 @@ def build_about():
     title = "About MemeStand — How We Rank the Internet's Top Memes"
     desc = "MemeStand ranks the top 10 memes today, this week and this month using a virality evidence score built from X, TikTok, Instagram, Reddit, YouTube and Know Your Meme data."
     body = f"""<h2>What is MemeStand?</h2>
-<p>MemeStand (memestand.com) is an independent, headline-style daily meme report. It publishes three ranked lists, updated hourly from 6 AM to 9 PM Pacific:
-the <a href="top-memes-today/">top 10 memes today</a>, the <a href="trending-memes-this-week/">top 10 trending memes this week</a>
-and the <a href="best-memes-this-month/">best memes of the month</a> (last 30 days). Each day's rankings are saved in the
+<p>MemeStand (memestand.com) is an independent, headline-style daily meme report. The main lists, updated hourly from 6 AM to 9 PM Pacific, are
+the <a href="top-memes-today/">top 10 memes today</a> and the <a href="best-memes-this-month/">best memes of the month</a> (last 30 days).
+The <a href="trending-memes-this-week/">weekly top 10</a> is still published at that address so older links keep working. Each day's rankings are saved in the
 <a href="archive/">daily meme report archive</a> and published in an <a href="feed.xml">Atom feed</a>.</p>
 <h2>How are memes ranked?</h2>
 <p>Each candidate meme gets a <b>virality evidence score</b>. Every meme listed links to a real, checked source post or entry.</p>
@@ -1171,16 +1178,16 @@ def build_llms():
                          for m in data[p])
     write("llms.txt", f"""# MemeStand
 
-> MemeStand (https://memestand.com) is an independent, headline-style daily meme report: the internet's top 10 memes today, the top 10 trending memes this week, and the best memes of the month (last 30 days), ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated hourly, 6 AM to 9 PM Pacific Time. Every listed meme links to its original source.
+> MemeStand (https://memestand.com) is an independent, headline-style daily meme report. The main lists are the top 10 memes today and the best memes of the month (last 30 days). The weekly top 10 remains at its existing address. Ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated hourly, 6 AM to 9 PM Pacific Time. Every listed meme links to its original source.
 
 Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 
 ## Key pages
 
-- [Homepage — top 10 memes today, this week and this month]({SITE}/): the live daily meme report
+- [Homepage — top 10 memes today and this month]({SITE}/): the live report
 - [Top 10 memes today]({SITE}/top-memes-today/): the most viral memes of the last 24-36 hours, with evidence
-- [Trending memes this week]({SITE}/trending-memes-this-week/): top 10 memes of the last 7 days
 - [Best memes of the month]({SITE}/best-memes-this-month/): top 10 memes of the last 30 days
+- [Trending memes this week]({SITE}/trending-memes-this-week/): still published here so older links work; not in the main navigation
 - [Daily meme report archive]({SITE}/archive/): one dated page per day, e.g. {SITE}/archive/{TODAY}.html
 - [All memes A–Z]({SITE}/memes/): index of MemeStand's per-meme explainer pages
 - Meme explainer pages ({SITE}/meme/<slug>/): what each meme means, where it came from (with sources), and its MemeStand ranking history
