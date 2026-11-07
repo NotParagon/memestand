@@ -53,3 +53,16 @@ def local_image(candidate, fetched_local, hotlink):
     if fetched_local or hotlink:
         return fetched_local
     return file_for(candidate.get("id"))
+
+def is_post_card_path(path):
+    return bool(path) and str(path).startswith("images/post-cards/")
+
+def displayed_as_post_card(image, image_url, image_kind, meme_id):
+    """True when the picture on the page is an attributed post card, including after rank.py stores its path."""
+    if image_url:
+        return False
+    if is_post_card_path(image) or image_kind == "post_card":
+        return True
+    if image:
+        return False
+    return file_for(meme_id) is not None

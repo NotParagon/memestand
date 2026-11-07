@@ -35,7 +35,7 @@ from zoneinfo import ZoneInfo
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent / "tools"))
 from legal import load_blocklist, blocked_by, exclusion_reason
 from rank_history import daily_ranks, history_notes, meme_identity
-from post_cards import file_for as post_card_file
+from post_cards import file_for as post_card_file, displayed_as_post_card
 
 SITE = "https://memestand.com"
 NAME = "MemeStand"
@@ -134,10 +134,9 @@ def tc(s):
     return " ".join(out)
 
 def uses_post_card(m):
-    """True when the picture is an approved attributed post card, not a photo or a hotlink."""
-    if m.get("image") or m.get("image_url"):
-        return False
-    return bool(post_card_file(m.get("id")))
+    """True when the picture is an approved attributed post card, not a photo or a hotlink.
+    Stays true after rank.py writes the card path onto the row."""
+    return displayed_as_post_card(m.get("image"), m.get("image_url"), m.get("image_kind"), m.get("id"))
 
 def img_src(m):
     native = m.get("image") or m.get("image_url")
