@@ -264,6 +264,7 @@ CSS = """
   .meta,.credit,.mv{font-size:13px;line-height:1.45}
   .why{font-size:14px;line-height:1.45}
   .hl a{display:inline}
+  .hl a.card{display:flex}
   li h3.hl{min-height:44px}
   .meta{display:flex;flex-wrap:wrap;align-items:center;column-gap:12px;margin-top:4px}
   .src{display:inline-flex;align-items:center;min-height:44px;margin-right:0}
