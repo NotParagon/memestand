@@ -1,15 +1,15 @@
 # MemeStand
 
-> MemeStand (https://memestand.com) is an independent, headline-style daily meme report: the internet's top 10 memes today, the top 10 trending memes this week, and the best memes of the month (last 30 days), ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated hourly, 6 AM to 9 PM Pacific Time. Every listed meme links to its original source.
+> MemeStand (https://memestand.com) is an independent, headline-style daily meme report. The main lists are the top 10 memes today and the best memes of the month (last 30 days). The weekly top 10 remains at its existing address. Ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated hourly, 6 AM to 9 PM Pacific Time. Every listed meme links to its original source.
 
 Last updated: 2026-11-07 10:11 PT (2026-11-07T10:11:00-08:00)
 
 ## Key pages
 
-- [Homepage — top 10 memes today, this week and this month](https://memestand.com/): the live daily meme report
+- [Homepage — top 10 memes today and this month](https://memestand.com/): the live report
 - [Top 10 memes today](https://memestand.com/top-memes-today/): the most viral memes of the last 24-36 hours, with evidence
-- [Trending memes this week](https://memestand.com/trending-memes-this-week/): top 10 memes of the last 7 days
 - [Best memes of the month](https://memestand.com/best-memes-this-month/): top 10 memes of the last 30 days
+- [Trending memes this week](https://memestand.com/trending-memes-this-week/): still published here so older links work; not in the main navigation
 - [Daily meme report archive](https://memestand.com/archive/): one dated page per day, e.g. https://memestand.com/archive/2026-11-07.html
 - [All memes A–Z](https://memestand.com/memes/): index of MemeStand's per-meme explainer pages
 - Meme explainer pages (https://memestand.com/meme/<slug>/): what each meme means, where it came from (with sources), and its MemeStand ranking history
