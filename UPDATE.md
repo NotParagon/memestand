@@ -261,6 +261,8 @@ Content note: thumbnails are small, attributed, and link back to the original po
 
 Every `python3 build.py` regenerates all of this from `data/memes.json`, so no manual SEO step is needed each day:
 
+- **Home links:** the logo, footer Home, and breadcrumb back to the site root use the directory URL (`./` or `../`), not `index.html`. Canonical remains `https://memestand.com/`. No redirect is added.
+- **Evidence dates:** live "Why it ranks" text is built from `candidates.json` `ev` (each platform's count and its own `checked` date). The header Updated time is `memes.json` `updated`, the page build. Archive HTML keeps the snapshot's link labels and does not reprint later counts. A rebuild does not overwrite today's `data/archive/YYYY-MM-DD.json` unless `memes.json` `updated` is newer than that file.
 - **Head tags** on every page: keyword title, meta description naming today's #1, canonical `https://memestand.com/...`,
   Open Graph + Twitter `summary_large_image` (og:image = today's #1 local thumbnail as an absolute URL, or `og-default.png`
   when #1 is a text card), favicon links, Atom feed link, `lang="en"`.
@@ -307,9 +309,9 @@ Every meme that has ever ranked gets a permanent page at `https://memestand.com/
 (names ending in "memes"/"trend" are used as-is) and the meta description starts "<Meme name> meme meaning: <first sentence>".
 The page shows the thumbnail, then H2 "What does the <name> meme mean?" (explainer), H2 "Where did the <name> meme come from?"
 (origin, plus the note "The original creator of this meme hasn't been confirmed." when `origin_confirmed` is false), an optional
-H2 "How to use it" (the `how_to_use` captions), first- and last-seen dates on MemeStand, the best rank per list, links to every archive day it appeared on, sources and related memes.
-`/memes/` is the A–Z index. Every headline on the home, period and archive pages links to the meme page; the thumbnail
-and "View original" still link to the source. The pages are also listed in `sitemap.xml` and `llms.txt` automatically.
+H2 "Source caption" (a `how_to_use` line only when it is the exact full card_text or post-card quote of a direct post), first- and last-seen dates on MemeStand, the best rank per list, links to every archive day it appeared on, sources and related memes.
+Related memes are the slugs in `related` only. Ranking on the same day is not treated as related. If `related` is empty, the section is omitted.
+`/memes/` is the A–Z index. Every headline on the home, period and archive pages links to the meme page. The thumbnail and the credit button use the creator's post when that post is documented; Know Your Meme is labeled "Know Your Meme explainer". The pages are also listed in `sitemap.xml` and `llms.txt` automatically.
 
 **Store format** (`data/meme_pages.json`, keyed by slug, sorted; build.py rewrites it deterministically):
 ```json
@@ -321,9 +323,10 @@ and "View original" still link to the source. The pages are also listed in `site
   "explainer": "2-4 sentences, plain English: what the meme shows, what the joke means, how people use it",
   "origin": "1-2 short paragraphs: who posted it, where, when (only if verified) and how it spread",
   "origin_confirmed": true,             // true only if a source documents the first post/creator; false = unknown (page says so); null = not researched yet
-  "how_to_use": ["example caption", "another"],  // 0-2 short example captions in our own words; [] to skip the section
+  "original_url": "https://...",        // verified creator post. Optional. Hourly edits must not delete it. View original uses it. Know Your Meme stays kym_url and is an explainer.
+  "how_to_use": ["exact post text"],  // 0-2 lines that equal card_text or a post-card quote, with a direct post URL. Explainer/origin quotes do not count. [] if none.
   "sources": [{"name": "The Verge: ...", "url": "..."}],   // every source the text relies on (the ranked post is added automatically)
-  "related": ["other-slug"],            // optional; build.py adds memes that shared the same lists
+  "related": ["other-slug"],            // optional, same meme family only. build.py does not add co-ranked memes.
   "written": "YYYY-MM-DD",
   "checked": "2026-11-03T23:50:00-08:00"  // when the text was written or last reviewed (PT, real time); feeds dateModified + sitemap lastmod
 }
@@ -337,7 +340,9 @@ and "View original" still link to the source. The pages are also listed in `site
     List each one in `sources` (KYM entry, the original post, the Reddit/X post). Link the original post or KYM. Never invent a fact, number,
     date or URL; view counts come from the X API or the cited source and are phrased "per X's public counts" / "per KYM".
   - Write everything in your own words. Never copy KYM (or any source) sentences. Concise, factual, friendly, no fluff.
-  - "What it means" is your own short, original explanation (don't copy KYM text). Explain the joke format and how people use it.
+  - "What it means" is your own short, original explanation (don't copy KYM text). Explain the joke format. Do not invent example punchlines. If a source calls the original clip AI-generated, say that; do not describe it as a filmed sketch with AI remakes unless the source says that.
+  - `how_to_use` may repeat a caption only when that caption is the complete `card_text` or post-card `quote` of a direct post (TikTok, Instagram, X, Reddit, or YouTube). A sentence in the explainer or origin, a partial overlap, and a Know Your Meme URL do not count. `build.py` drops anything else. Prefer `[]`.
+  - `original_url`, when set, is the creator's post. Do not point it at Know Your Meme, a news story, or a remix. "View original" requires `origin_confirmed: true`. `false`, `null`, or a missing value uses "View credited post" for a direct post, and "Know Your Meme explainer" when the only URL is KYM.
   - "Origin" is neutral and factual: who posted what, where, and when, per the source. **Never invent an origin.** If it isn't documented,
     say what the ranked post shows, say plainly that the original creator hasn't been confirmed, and set `"origin_confirmed": false`
     and `"status": "short"`. For a remix of an old template (Gru's Plan, Two Paths...), give the template's documented origin with its
@@ -376,7 +381,7 @@ Not legal advice. These rules keep the site's copyright, defamation and content 
 - Label jokes as jokes: `X USERS JOKE THAT KEN PAXTON 'EATS SALSA...'`, `ELON MUSK JOKES ABOUT...`.
 - rank.py **excludes** a candidate whose title or card text uses an allegation word without an attribution word (per / alleged / accused /
   memes about / jokes / reportedly...). Set `"headline_reviewed": true` only after you have checked the wording against these rules.
-- Notes ("Why it ranks") follow the same rules.
+- Notes ("Why it ranks") follow the same rules. On live pages the visible line is generated from `ev`, so update `ev.checked` when you re-read a count. Do not put a newer number in `also[].name` or `notes` unless that same number and date are in `ev`. Do not change `memes.json` `updated` just to look fresher.
 
 **3. Content exclusions** (also published on /about.html#policy)
 - Add `"flags": [...]` to a candidate to exclude it: `nsfw`, `sexual`, `hate`, `demeaning` (mocks race, ethnicity, national origin,
@@ -390,8 +395,13 @@ Not legal advice. These rules keep the site's copyright, defamation and content 
 **4. Images and attribution**
 - Thumbnails: max 400 px on the longest side, re-encoded JPEG with EXIF/GPS/ICC metadata stripped. rank.py enforces this on every run for
   all files in images/ (`normalize_images`), so never commit a larger or raw image.
-- Every item shows a credit line ("posted by u/<user> on r/<sub>", "posted by @handle on X", "image via Know Your Meme") plus "View original".
-  rank.py fills it in automatically (Reddit authors from raw/reddit.json). Set `"credit"` on a candidate to override it, e.g. with the real creator.
+- Every item shows a credit line ("posted by u/<user> on r/<sub>", "posted by @handle on X", "image via Know Your Meme").
+  rank.py fills the credit in automatically (Reddit authors from raw/reddit.json). Set `"credit"` on a candidate to override it, e.g. with the real creator.
+  The outbound button is chosen at build time and is not stored in the archive snapshot:
+  "View original" only when `origin_confirmed` is true and the URL is that creator's direct post (`original_url`, or the credited handle's TikTok, Instagram, X, Reddit, or YouTube URL). Missing or null confirmation is not a yes.
+  "View credited post" for any other direct post.
+  "Know Your Meme explainer" when the only URL is a KYM entry. Never label KYM, a news article, or an X News topic link as the original.
+  The thumbnail uses the same URL as that button. Live source chips that match an `ev` URL reuse that record's count; archive pages keep the count written in that day's snapshot.
 - `"image_policy"` per candidate: `local` (default, small thumbnail), `hotlink` (show the platform's own image URL, nothing stored here; use it
   for professional or agency photos), `none` (no third-party photo; use it for paparazzi or stock photos, screenshots of private messages,
   or anything a rights holder is sensitive about). `none` does not block an owner-approved post card listed in `data/post_cards.json`.
