@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T17:05-08:00",
+  "updated": "2026-11-07T18:10-08:00",
   "daily": [
     {
       "rank": 1,
@@ -21,7 +21,7 @@
           "url": "https://x.com/i/trending/2117626647205875908"
         },
         {
-          "name": "TikTok / @leehoustonx (11.5M views)",
+          "name": "TikTok / @leehoustonx (11.6M views)",
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
         },
         {
@@ -55,11 +55,11 @@
       "credit": "posted by @seiyaposting on Instagram",
       "also": [
         {
-          "name": "TikTok / @hard_plushie (9.4M views)",
+          "name": "TikTok / @hard_plushie (9.5M views)",
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (253K views)",
+          "name": "X / @LashSleeper (254K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -67,11 +67,11 @@
           "url": "https://www.tiktok.com/@watosis/video/7703458958266092831"
         },
         {
-          "name": "Instagram / @thebigsolomando (76K likes)",
+          "name": "Instagram / @thebigsolomando (79K likes)",
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
         },
         {
-          "name": "YouTube / Lessons in Meme Culture (640K views)",
+          "name": "YouTube / Lessons in Meme Culture (698K views)",
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
         }
       ],
@@ -106,7 +106,7 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (857K views)",
+          "name": "TikTok / @elionwillpower (858K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
@@ -239,6 +239,37 @@
     },
     {
       "rank": 8,
+      "id": "newton-fourth-law",
+      "title": "'NEWTON WOULD ADD A FOURTH LAW OF MOTION': THE HUSTLE BRAG EVERYONE IS COPYING",
+      "image": null,
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/sbxloch/status/2118821023151706276",
+      "source_name": "X / @sbxloch",
+      "credit": "posted by @sbxloch on X",
+      "also": [
+        {
+          "name": "X / @sbxloch (1.6M views)",
+          "url": "https://x.com/sbxloch/status/2118821023151706276"
+        },
+        {
+          "name": "X News (Newton's Fourth Law meme)",
+          "url": "https://x.com/i/trending/2119145538318946478"
+        },
+        {
+          "name": "X / @HirooOnodaon (Madueke variation)",
+          "url": "https://x.com/HirooOnodaon/status/2119119953274302685"
+        }
+      ],
+      "first_seen": "2026-11-06",
+      "score": 67.0,
+      "sources": [
+        "X"
+      ],
+      "notes": "Text post 'If newton saw the way I be moving these days he'd add a fourth law of motion' (@sbxloch, Nov 6 1:41 PM PT). X API 1.14M views / 94.5K likes (Nov 7 1PM PT). Dozens of independent accounts reposting the line verbatim Nov 7 plus swaps (Madueke, Declan Rice, '@user is the fourth law'); X News story Nov 7."
+    },
+    {
+      "rank": 9,
       "id": "affleck-i-voted-smoking",
       "title": "BEN AFFLECK'S 'I VOTED' SMOKING PHOTO UPDATES THE CLASSIC TIRED MEME, PER X",
       "image": null,
@@ -263,37 +294,6 @@
         "X"
       ],
       "notes": "Side-by-side of classic Affleck-tired meme with Nov 2026 paparazzi shot smoking outside Steak 48 with 'I VOTED' sticker. X @BYRNEGRACES 1.36M views / 121.9K likes (Nov 6 6AM PT); X News story still live. Paparazzi photo — text card only."
-    },
-    {
-      "rank": 9,
-      "id": "newton-fourth-law",
-      "title": "'NEWTON WOULD ADD A FOURTH LAW OF MOTION': THE HUSTLE BRAG EVERYONE IS COPYING",
-      "image": null,
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/sbxloch/status/2118821023151706276",
-      "source_name": "X / @sbxloch",
-      "credit": "posted by @sbxloch on X",
-      "also": [
-        {
-          "name": "X / @sbxloch (1.3M views)",
-          "url": "https://x.com/sbxloch/status/2118821023151706276"
-        },
-        {
-          "name": "X News (Newton's Fourth Law meme)",
-          "url": "https://x.com/i/trending/2119145538318946478"
-        },
-        {
-          "name": "X / @HirooOnodaon (Madueke variation)",
-          "url": "https://x.com/HirooOnodaon/status/2119119953274302685"
-        }
-      ],
-      "first_seen": "2026-11-06",
-      "score": 66.7,
-      "sources": [
-        "X"
-      ],
-      "notes": "Text post 'If newton saw the way I be moving these days he'd add a fourth law of motion' (@sbxloch, Nov 6 1:41 PM PT). X API 1.14M views / 94.5K likes (Nov 7 1PM PT). Dozens of independent accounts reposting the line verbatim Nov 7 plus swaps (Madueke, Declan Rice, '@user is the fourth law'); X News story Nov 7."
     },
     {
       "rank": 10,
@@ -345,7 +345,7 @@
           "url": "https://x.com/i/trending/2117626647205875908"
         },
         {
-          "name": "TikTok / @leehoustonx (11.5M views)",
+          "name": "TikTok / @leehoustonx (11.6M views)",
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
         },
         {
@@ -379,11 +379,11 @@
       "credit": "posted by @seiyaposting on Instagram",
       "also": [
         {
-          "name": "TikTok / @hard_plushie (9.4M views)",
+          "name": "TikTok / @hard_plushie (9.5M views)",
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (253K views)",
+          "name": "X / @LashSleeper (254K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -391,11 +391,11 @@
           "url": "https://www.tiktok.com/@watosis/video/7703458958266092831"
         },
         {
-          "name": "Instagram / @thebigsolomando (76K likes)",
+          "name": "Instagram / @thebigsolomando (79K likes)",
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
         },
         {
-          "name": "YouTube / Lessons in Meme Culture (640K views)",
+          "name": "YouTube / Lessons in Meme Culture (698K views)",
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
         }
       ],
@@ -565,7 +565,7 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (857K views)",
+          "name": "TikTok / @elionwillpower (858K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {

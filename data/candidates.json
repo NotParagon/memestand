@@ -30,13 +30,13 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-          "views": 1478198,
-          "likes": 130449,
+          "views": 1478511,
+          "likes": 130451,
           "checked": "2026-11-07",
           "via": "X API"
         }
       },
-      "notes": "Side-by-side of classic Affleck-tired meme with Nov 2026 paparazzi shot smoking outside Steak 48 with 'I VOTED' sticker. X @BYRNEGRACES 1.36M views / 121.9K likes (Nov 6 6AM PT); X News story still live. Paparazzi photo — text card only.",
+      "notes": "Side-by-side of classic Affleck-tired meme with Nov 2026 paparazzi shot smoking outside Steak 48 with 'I VOTED' sticker. X @BYRNEGRACES 1.36M views / 121.9K likes (Nov 6 6AM PT); X News story still live. Paparazzi photo \u2014 text card only.",
       "headline_reviewed": true,
       "first_seen_basis": "X post by @BYRNEGRACES on Nov 4, 2026",
       "credit": "posted by @BYRNEGRACES on X"
@@ -64,8 +64,8 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 6174623,
-          "likes": 50758,
+          "views": 6185709,
+          "likes": 50778,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -92,8 +92,8 @@
         ],
         "x": {
           "url": "https://x.com/HorrorGorl/status/2117609954563477790",
-          "views": 712917,
-          "likes": 36544,
+          "views": 712973,
+          "likes": 36542,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -344,7 +344,7 @@
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (857K views)",
+          "name": "TikTok / @elionwillpower (858K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
@@ -359,25 +359,25 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 6304,
+        "kym_views": 6575,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3531578,
+          "views": 3531841,
           "likes": 192250,
           "checked": "2026-11-07",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 857400,
-          "likes": 134200,
+          "views": 858300,
+          "likes": 134300,
           "author": "@elionwillpower",
           "checked": "2026-11-07",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-            "views": 856900,
-            "likes": 134200
+            "views": 858300,
+            "likes": 134300
           }
         }
       },
@@ -414,8 +414,8 @@
         "kym_views": 121247,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 17062140,
-          "likes": 351182,
+          "views": 17063354,
+          "likes": 351155,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -473,7 +473,7 @@
       "source_url": "https://x.com/elonmusk/status/2116875604889112772",
       "source_name": "X / @elonmusk",
       "image_url": null,
-      "card_text": "“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”",
+      "card_text": "\u201cI have this great idea for a drug called Regretamine. One dose and all your regrets are gone!\u201d",
       "first_seen": "2026-11-01",
       "ev": {
         "platforms": [
@@ -482,8 +482,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8326979,
-          "likes": 92471,
+          "views": 8328249,
+          "likes": 92468,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -502,7 +502,7 @@
       "source_url": "https://x.com/vibeistani/status/2116644824703279122",
       "source_name": "X / @vibeistani",
       "image_url": null,
-      "card_text": "“she only wants me for my pakistani citizenship”",
+      "card_text": "\u201cshe only wants me for my pakistani citizenship\u201d",
       "first_seen": "2026-10-31",
       "ev": {
         "platforms": [
@@ -510,8 +510,8 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6550986,
-          "likes": 30907,
+          "views": 6551526,
+          "likes": 30905,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -552,7 +552,7 @@
       "source_url": "https://x.com/leftcoastbabe/status/2116590353973395609",
       "source_name": "X / @leftcoastbabe",
       "image_url": null,
-      "card_text": "“Ken Paxton eats salsa made in New York City.”",
+      "card_text": "\u201cKen Paxton eats salsa made in New York City.\u201d",
       "first_seen": "2026-10-30",
       "ev": {
         "platforms": [
@@ -561,7 +561,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 68399,
+          "views": 68409,
           "likes": 2786,
           "checked": "2026-11-07",
           "via": "X API"
@@ -609,8 +609,8 @@
         "kym_views": 12130,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 329907,
-          "likes": 23680,
+          "views": 329951,
+          "likes": 23681,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -675,7 +675,7 @@
         "kym_views": 19740,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2202204,
+          "views": 2202254,
           "likes": 43138,
           "checked": "2026-11-07",
           "via": "X API"
@@ -1285,8 +1285,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3505032,
-          "likes": 118619,
+          "views": 3505204,
+          "likes": 118608,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -1479,7 +1479,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1485368,
+          "views": 1485693,
           "likes": 26769,
           "checked": "2026-11-07",
           "via": "X API"
@@ -1516,8 +1516,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 138866,
-          "likes": 16154,
+          "views": 138914,
+          "likes": 16156,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -1679,8 +1679,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6323100,
-          "likes": 183918,
+          "views": 6324119,
+          "likes": 183922,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -1719,8 +1719,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1104528,
-          "likes": 54556,
+          "views": 1104591,
+          "likes": 54555,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -1750,7 +1750,7 @@
           "url": "https://x.com/i/trending/2117626647205875908"
         },
         {
-          "name": "TikTok / @leehoustonx (11.5M views)",
+          "name": "TikTok / @leehoustonx (11.6M views)",
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
         },
         {
@@ -1770,18 +1770,18 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 2485,
+        "kym_views": 2518,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334878,
+          "views": 334885,
           "likes": 3036,
           "checked": "2026-11-07",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-          "views": 11500000,
+          "views": 11600000,
           "likes": 1500000,
           "author": "@leehoustonx",
           "posted": "2026-11-01",
@@ -1789,7 +1789,7 @@
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-            "views": 11500000,
+            "views": 11600000,
             "likes": 1500000
           }
         },
@@ -1820,7 +1820,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 19,
+          "rank": 18,
           "url": "https://www.reddit.com/r/dankmemes/comments/1xmufk1/my_fuggin_back/"
         },
         "platforms": [
@@ -1845,7 +1845,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 18,
+          "rank": 17,
           "url": "https://www.reddit.com/r/dankmemes/comments/1xn0rwh/fun_times_good_luck_economy/"
         },
         "platforms": [
@@ -1989,7 +1989,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 22,
+          "rank": 21,
           "url": "https://www.reddit.com/r/dankmemes/comments/1xnlwdj/money_muney/"
         },
         "platforms": [
@@ -2010,7 +2010,7 @@
       "source_url": "https://x.com/marvo_sneh_/status/2117540565831066110",
       "source_name": "X / @marvo_sneh_",
       "image_url": null,
-      "card_text": "This girl said we should go on a hair date. She’ll pay for my haircut, and I’ll buy her a wig.",
+      "card_text": "This girl said we should go on a hair date. She\u2019ll pay for my haircut, and I\u2019ll buy her a wig.",
       "image_policy": "none",
       "first_seen": "2026-11-03",
       "also": [
@@ -2026,7 +2026,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 175433,
+          "views": 175515,
           "likes": 7486,
           "checked": "2026-11-07",
           "via": "X API"
@@ -2049,11 +2049,11 @@
       "first_seen": "2026-10-19",
       "also": [
         {
-          "name": "TikTok / @hard_plushie (9.4M views)",
+          "name": "TikTok / @hard_plushie (9.5M views)",
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (253K views)",
+          "name": "X / @LashSleeper (254K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -2061,11 +2061,11 @@
           "url": "https://www.tiktok.com/@watosis/video/7703458958266092831"
         },
         {
-          "name": "Instagram / @thebigsolomando (76K likes)",
+          "name": "Instagram / @thebigsolomando (79K likes)",
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
         },
         {
-          "name": "YouTube / Lessons in Meme Culture (640K views)",
+          "name": "YouTube / Lessons in Meme Culture (698K views)",
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
         }
       ],
@@ -2081,20 +2081,20 @@
         "kym_editorial": true,
         "tiktok": {
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969",
-          "views": 9400000,
+          "views": 9500000,
           "likes": 2400000,
           "author": "@hard_plushie",
           "checked": "2026-11-07",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969",
-            "views": 9400000,
+            "views": 9500000,
             "likes": 2400000
           }
         },
         "instagram": {
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/",
-          "likes": 78000,
+          "likes": 79000,
           "author": "@thebigsolomando",
           "posted": "2026-11-02",
           "checked": "2026-11-07",
@@ -2102,20 +2102,20 @@
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI",
-          "views": 640245,
+          "views": 697980,
           "title": "Frutiger Aero Yams To Your Right",
           "channel": "Lessons in Meme Culture",
-          "checked": "2026-11-06",
-          "via": "fetch_youtube.py"
+          "checked": "2026-11-07",
+          "via": "YouTube watch page"
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 253573,
-          "likes": 27160,
+          "views": 253779,
+          "likes": 27164,
           "checked": "2026-11-07",
           "via": "X API"
         },
-        "kym_views": 11341
+        "kym_views": 11808
       },
       "notes": "KYM 7,378 views; TikTok @hard_plushie 9.2M / 2.4M likes; IG @thebigsolomando 76K likes; YouTube Lessons in Meme Culture 605.8K views (Nov 6 6AM PT).",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026",
@@ -2127,7 +2127,7 @@
         "weekly",
         "monthly"
       ],
-      "title": "AMERICANS EVERY ELECTION: SQUID GAME CHEER — 'TALE AS OLD AS TIME'",
+      "title": "AMERICANS EVERY ELECTION: SQUID GAME CHEER \u2014 'TALE AS OLD AS TIME'",
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnsnug/tale_as_old_as_time/",
       "source_name": "Reddit r/dankmemes /u/Massive-Bass-347",
       "image_url": "https://i.redd.it/n0pq1yjchmzh1.gif",
@@ -2212,8 +2212,8 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 14916062,
-          "likes": 159940,
+          "views": 14918071,
+          "likes": 159949,
           "checked": "2026-11-07",
           "via": "X API"
         },
@@ -2247,7 +2247,7 @@
       "first_seen": "2026-11-06",
       "also": [
         {
-          "name": "X / @2THUQQ (475K views)",
+          "name": "X / @2THUQQ (480K views)",
           "url": "https://x.com/2THUQQ/status/2118617523708965188"
         },
         {
@@ -2262,8 +2262,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/2THUQQ/status/2118617523708965188",
-          "views": 478427,
-          "likes": 39965,
+          "views": 479777,
+          "likes": 40070,
           "checked": "2026-11-07",
           "via": "X API"
         }
@@ -2306,15 +2306,15 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/tuna_petal/status/2118514084140229097",
-          "views": 1866785,
-          "likes": 32401,
+          "views": 1867690,
+          "likes": 32440,
           "checked": "2026-11-07",
           "via": "X API"
         }
       },
       "notes": "Bakery-counter clip of a woman emphatically pointing at a pastry while coaching a man; captions use 'me instructing [X] to [Y]'. Strong X News story Nov 7; largest verified post @tuna_petal 1.84M views / 31.0K likes (Nov 6).",
       "headline_reviewed": true,
-      "first_seen_basis": "X posts captioning the bakery clip as me instructing, Nov 5–6 2026; X News story Nov 7",
+      "first_seen_basis": "X posts captioning the bakery clip as me instructing, Nov 5\u20136 2026; X News story Nov 7",
       "credit": "posted by @tuna_petal on X"
     },
     {
@@ -2330,7 +2330,7 @@
       "first_seen": "2026-11-06",
       "also": [
         {
-          "name": "X / @sbxloch (1.3M views)",
+          "name": "X / @sbxloch (1.6M views)",
           "url": "https://x.com/sbxloch/status/2118821023151706276"
         },
         {
@@ -2349,8 +2349,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/sbxloch/status/2118821023151706276",
-          "views": 1472703,
-          "likes": 121791,
+          "views": 1570898,
+          "likes": 129923,
           "checked": "2026-11-07",
           "via": "X API"
         }
