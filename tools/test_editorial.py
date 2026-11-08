@@ -141,26 +141,27 @@ def test_store_captions_match_a_direct_post_record():
 def test_evidence_line_uses_the_checked_observation_not_the_page_build():
     ev = build.EVIDENCE["fancy-cafe"]
     sentence = build.evidence_sentence(ev)
-    assert "11.6M views" in sentence
-    assert "1.5M likes" in sentence
-    assert "observed 2026-11-07" in sentence
+    count = build.chip_count(ev, TIKTOK)
+    assert count and count in sentence
+    assert f"observed {ev['tiktok']['checked']}" in sentence
     assert "11.1M" not in sentence
     assert "21:09" not in sentence
     assert "6AM" not in sentence
     # The same TikTok URL contributes the same count to the chip and the sentence.
-    assert build.chip_count(ev, TIKTOK) == "11.6M views"
-    assert "11.6M views" in sentence
+    assert count in sentence
     # Know Your Meme's page-view field has no checked clock, so it must not borrow the page build time.
     assert "no separate observation time on file" in sentence
     stale = {"id": "fancy-cafe", "notes": "TikTok @leehoustonx 11.1M views (Nov 6 6AM PT)."}
-    assert "11.6M" in build.why_text(stale, True)
+    assert count.split()[0] in build.why_text(stale, True)
+    assert "11.1M" not in build.why_text(stale, True)
     assert build.why_text(stale, False).startswith("TikTok @leehoustonx 11.1M")
 
 
 def test_archive_labels_are_not_rewritten_from_later_evidence():
     meme = {"id": "fancy-cafe", "also": [{"name": "TikTok / @leehoustonx (10.9M views)", "url": TIKTOK}]}
     assert build.synced_also_name(meme, meme["also"][0], False) == "TikTok / @leehoustonx (10.9M views)"
-    assert build.synced_also_name(meme, meme["also"][0], True) == "TikTok / @leehoustonx (11.6M views)"
+    live = build.chip_count(build.EVIDENCE["fancy-cafe"], TIKTOK)
+    assert build.synced_also_name(meme, meme["also"][0], True) == f"TikTok / @leehoustonx ({live})"
 
 
 def test_related_links_are_only_the_curated_list():
@@ -226,6 +227,82 @@ def _hrefs(html, label):
     return re.findall(rf'<a href="([^"]+)"[^>]*>{label}</a>', html)
 
 
+def test_display_title_and_source_labels():
+    shout = "'POV: YOUR FIRST TIME IN A FANCY CAFE': AI-GENERATED CAFE SEATING MIX-UP"
+    assert build.display_title(shout) == "'POV: Your First Time in a Fancy Cafe': AI-Generated Cafe Seating Mix-up"
+    yams = "'FRUTIGER AERO YAMS': BRAINROT CATCHPHRASE TEASING FANS OF THE GLOSSY 2000s AESTHETIC GETS A KYM ENTRY"
+    cased = build.display_title(yams)
+    assert cased.startswith("'Frutiger Aero Yams':")
+    assert "2000s" in cased
+    assert "AESTHETIC" not in cased
+    quoted = "X users joke that Ken Paxton 'eats salsa made in New York City'"
+    assert build.display_title(quoted) == quoted
+    assert build.display_title(build.REMOVED) == build.REMOVED
+    assert build.short_source_label("TikTok / @leehoustonx (11.7M views)") == "TikTok / @leehoustonx"
+    assert build.short_source_label("Instagram / @kevinwinnik (11M likes)") == "Instagram / @kevinwinnik"
+    assert build.short_source_label("X News (cafe mix-up)") == "X News (cafe mix-up)"
+    assert build.short_source_label("Credited post (original creator not confirmed)") == \
+        "Credited post (original creator not confirmed)"
+
+
+def test_details_keep_snapshot_counts_and_live_observation_dates():
+    live = {
+        "id": "fancy-cafe",
+        "source_url": KYM,
+        "source_name": "Know Your Meme",
+        "credit": "posted by @leehoustonx on TikTok",
+        "first_seen": "2026-11-01",
+        "sources": ["X", "TikTok", "Instagram", "Know Your Meme"],
+        "also": [{"name": "TikTok / @leehoustonx (10.9M views)", "url": TIKTOK}],
+        "notes": "TikTok @leehoustonx 11.1M views",
+    }
+    opened = build.details_block(live, True)
+    sentence = build.evidence_sentence(build.EVIDENCE["fancy-cafe"])
+    assert opened.startswith("<details")
+    assert "Sources &amp; details" in opened
+    assert sentence in opened
+    assert "11.1M" not in opened
+    assert "November 1, 2026" in opened
+    assert "Know Your Meme explainer" in opened
+    frozen = build.details_block(live, False)
+    assert "10.9M views" in frozen
+    assert "11.1M" not in frozen
+    assert sentence not in frozen
+    build.SLUG["fancy-cafe"] = "fancy-cafe"
+    build.PAGES["fancy-cafe"] = {"origin_confirmed": True, "original_url": TIKTOK, "sources": []}
+    try:
+        credit = build.credit(live)
+    finally:
+        build.SLUG.pop("fancy-cafe", None)
+        build.PAGES.pop("fancy-cafe", None)
+    assert "Posted by @leehoustonx on TikTok." in credit
+    assert "View original" in credit
+    assert TIKTOK in credit
+    assert "knowyourmeme.com" not in credit
+    others = build.other_source_entries(live, True)
+    assert all(build._url_key(url) != TIKTOK.rstrip("/") for url, _name in others)
+    assert any("knowyourmeme.com" in url for url, _name in others)
+    zones = build.caption_zones("<h3>Title</h3>", "<p class=\"dek\">AI-generated video.</p>",
+                                "<div class=\"mv\">note</div>", credit, "links", "<details>x</details>")
+    assert zones.index("zone-lead") < zones.index("zone-hist") < zones.index("zone-by")
+    assert zones.index("zone-by") < zones.index("zone-src") < zones.index("zone-more")
+
+
+def test_reading_css_wraps_and_keeps_a_keyboard_focus_ring():
+    css = build.CSS
+    assert "overflow-wrap:anywhere" in css
+    assert ".fold summary:focus-visible" in css
+    assert "text-transform:none" in css or ".hl{" in css
+    for rule in re.findall(r"\.hl\{[^}]+\}", css):
+        assert "uppercase" not in rule, rule
+    for rule in re.findall(r"\.top \.hl a\{[^}]+\}", css):
+        assert "uppercase" not in rule, rule
+    assert "text-transform:uppercase" in css  # section bars keep the masthead voice
+    assert "--hair:" in css
+    assert ".copy .zone+.zone" in css
+    assert "border-top:1px solid var(--hair)" in css
+
+
 def test_built_pages_match_the_rules():
     today = (ROOT / "top-memes-today" / "index.html").read_text()
     home = (ROOT / "index.html").read_text()
@@ -240,24 +317,38 @@ def test_built_pages_match_the_rules():
     assert originals, "expected at least one View original link"
     assert all("knowyourmeme.com" not in u for u in originals)
     assert TIKTOK in originals
+    sentence = build.evidence_sentence(build.EVIDENCE["fancy-cafe"])
     assert "Know Your Meme explainer" in today
-    assert "11.6M views" in today and "observed 2026-11-07" in today
-    assert "11.1M" not in today
-    assert 'datetime="2026-11-07T21:09:00-08:00"' in today
+    assert "<summary>Sources &amp; details</summary>" in today
+    assert 'class="zone zone-lead"' in today and 'class="zone zone-hist"' in today
+    assert 'class="zone zone-by"' in today and 'class="zone zone-src"' in today
+    assert 'class="zone zone-more"' in today
+    assert sentence in today and "11.1M" not in today
+    assert "AI-generated video" in today
+    # The page stamp is the memes.json build time, not an evidence observation.
+    assert f'datetime="{build.ISO}"' in today
+    assert "21:09" not in today
 
     assert TIKTOK in _hrefs(fancy, "View original")
     assert KYM not in _hrefs(fancy, "View original")
     assert "Know Your Meme explainer" in fancy
     assert "AI-generated" in fancy
     assert "comedy skit (and its AI remakes)" not in fancy
-    assert "SKIT SPAWNS" not in today and "SKIT SPAWNS" not in fancy and "SKIT SPAWNS" not in home
-    assert "AI-GENERATED CAFE SEATING MIX-UP" in today
-    assert "SKIT SPAWNS" in nov7
+    assert "SKIT SPAWNS" not in today and "Skit Spawns" not in today
+    assert "SKIT SPAWNS" not in fancy and "SKIT SPAWNS" not in home
+    assert "AI-Generated Cafe Seating Mix-up" in today
+    assert "POV: Your First Time in a Fancy Cafe" in today
+    assert "Sitting-on-the-table Skit Spawns" in nov7
+    assert "AI-Generated Cafe Seating Mix-up" not in nov7
     assert "Me confidently sitting down" not in fancy
     assert "11.1M" not in fancy
-    assert "11.6M views" in fancy and "observed 2026-11-07" in fancy
+    assert sentence in fancy
     assert "21:09" not in fancy
     assert "index.html" not in fancy
+    assert "<summary>Sources &amp; details</summary>" in fancy
+    # The AI-generated disclosure stays in the reading text, not only inside the disclosure.
+    before, _, _rest = fancy.partition("<details")
+    assert "AI-generated" in before
 
     assert "your country" not in cite
     assert "How to use it" not in cite
@@ -273,6 +364,10 @@ def test_built_pages_match_the_rules():
     assert "11.4M" in nov6 and "11.6M" not in nov6
     assert "11.1M views" in snap
     assert "11.1M" not in nov7
+    assert "11.6M" in nov7
+    live_count = build.chip_count(build.EVIDENCE["fancy-cafe"], TIKTOK).split()[0]
+    if live_count != "11.6M":
+        assert live_count not in nov7
     assert TIKTOK in _hrefs(nov5, "View original")
 
     assert "index.html" not in home
