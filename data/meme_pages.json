@@ -1388,6 +1388,37 @@
       "written": "2026-11-07",
       "checked": "2026-11-07T22:51:54-08:00"
     },
+    "seatbelt-dog": {
+      "name": "Seatbelt Dog",
+      "ids": [
+        "seatbelt-dog"
+      ],
+      "status": "full",
+      "explainer": "A short video of a small Jack Russell Terrier sitting buckled into a car seat, staring at the camera with one paw near the belt. People copy the clip and reply with it — a deadpan reaction that reads as being strapped in, unbothered, and ready for whatever someone just posted. The joke is how prepared and calm the tiny dog looks.",
+      "origin": "The clip was posted on X by @acervodoguinhos on November 5, 2025 (per X's public counts on November 8, 2026: about 12.1 million views). In early November 2026, users began repeatedly replying with that same video. A November 7, 2026 post by @anacomlula about still learning to reply with the video reached about 1.6 million views, and an X News story described Seatbelt Dog spreading through copied video replies.",
+      "origin_confirmed": true,
+      "original_url": "https://x.com/acervodoguinhos/status/1986031760011079881",
+      "how_to_use": [],
+      "source_url": "https://x.com/acervodoguinhos/status/1986031760011079881",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@acervodoguinhos on X (original clip)",
+          "url": "https://x.com/acervodoguinhos/status/1986031760011079881"
+        },
+        {
+          "name": "@anacomlula on X (reply-trick post)",
+          "url": "https://x.com/anacomlula/status/2119093703277187568"
+        },
+        {
+          "name": "X News: Seatbelt Dog Video Becomes X's Fastest Meme",
+          "url": "https://x.com/i/trending/2119278609299050551"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-08",
+      "checked": "2026-11-08T06:16:07-08:00"
+    },
     "she-only-wants-me-for-my-pakistani-citizenship": {
       "name": "She Only Wants Me for My Pakistani Citizenship",
       "ids": [

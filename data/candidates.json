@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "candidates": [
     {
       "id": "affleck-i-voted-smoking",
@@ -30,9 +30,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-          "views": 1479177,
-          "likes": 130457,
-          "checked": "2026-11-07",
+          "views": 1480498,
+          "likes": 130446,
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
@@ -54,7 +54,7 @@
       "first_seen": "2026-11-04",
       "also": [
         {
-          "name": "X / @MonsterEnergy (6.2M views)",
+          "name": "X / @MonsterEnergy (6.3M views)",
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345"
         }
       ],
@@ -64,9 +64,9 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 6220733,
-          "likes": 50832,
-          "checked": "2026-11-07",
+          "views": 6292975,
+          "likes": 50942,
+          "checked": "2026-11-08",
           "via": "X API"
         },
         "x_news": true
@@ -85,16 +85,21 @@
       "source_name": "X / @HorrorGorl",
       "image_url": null,
       "first_seen": "2026-11-03",
-      "also": [],
+      "also": [
+        {
+          "name": "X / @HorrorGorl (713K views)",
+          "url": "https://x.com/HorrorGorl/status/2117609954563477790"
+        }
+      ],
       "ev": {
         "platforms": [
           "X"
         ],
         "x": {
           "url": "https://x.com/HorrorGorl/status/2117609954563477790",
-          "views": 713065,
-          "likes": 36539,
-          "checked": "2026-11-07",
+          "views": 713307,
+          "likes": 36534,
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
@@ -115,7 +120,7 @@
       "first_seen": "2026-10-22",
       "also": [
         {
-          "name": "TikTok / @tr0v0n (1.4M views)",
+          "name": "TikTok / @tr0v0n (1.5M views)",
           "url": "https://www.tiktok.com/@tr0v0n/video/7698167604019547422"
         },
         {
@@ -138,19 +143,19 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 16929,
+        "kym_views": 17564,
         "tiktok": {
           "url": "https://www.tiktok.com/@tr0v0n/video/7698167604019547422",
-          "views": 1400000,
-          "likes": 104000,
+          "views": 1500000,
+          "likes": 104800,
           "author": "@tr0v0n",
           "posted": "2026-10-19",
-          "checked": "2026-11-05",
+          "checked": "2026-11-08",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@tr0v0n/video/7698167604019547422",
-            "views": 1400000,
-            "likes": 104000
+            "views": 1500000,
+            "likes": 104800
           }
         },
         "youtube": {
@@ -185,7 +190,7 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 19,
+          "rank": 18,
           "url": "https://www.reddit.com/r/memes/comments/1xnp51d/just_mention_india/"
         }
       },
@@ -228,7 +233,7 @@
         ],
         "reddit": {
           "sub": "memes",
-          "rank": 13,
+          "rank": 14,
           "url": "https://www.reddit.com/r/memes/comments/1xod9dz/let_the_man_rest/"
         }
       },
@@ -248,14 +253,7 @@
       "first_seen": "2026-11-05",
       "also": [],
       "ev": {
-        "platforms": [
-          "Reddit"
-        ],
-        "reddit": {
-          "sub": "memes",
-          "rank": 25,
-          "url": "https://www.reddit.com/r/memes/comments/1xo00z4/i_cant_get_enough_of_this_new_trend/"
-        }
+        "platforms": []
       },
       "notes": "Was #4 r/memes top-today earlier Nov 5; aged out of day top by ~3PM PT. Kept weekly only. Apollo 4KB RAM / Altman space-race cope.",
       "headline_reviewed": true,
@@ -296,7 +294,8 @@
         ],
         "reddit": {
           "sub": "dankmemes",
-          "rank": 17
+          "rank": 15,
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xnrorh/everything_is_different/"
         }
       },
       "notes": "#24 r/dankmemes top-this-week (Nov 5 ~11am PT; aged off day top). Over the Hedge still captioned for YouTube UI redesign whiplash.",
@@ -340,11 +339,11 @@
           "url": "https://x.com/MeganBitchell/status/2117877144999154049"
         },
         {
-          "name": "X / @FabTheWoker (3.5M views)",
+          "name": "X / @FabTheWoker (117K views)",
           "url": "https://x.com/FabTheWoker/status/2117764756274860278"
         },
         {
-          "name": "TikTok / @elionwillpower (858K views)",
+          "name": "TikTok / @elionwillpower (859K views)",
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253"
         },
         {
@@ -359,24 +358,24 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 6575,
+        "kym_views": 7429,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3532512,
+          "views": 3534256,
           "likes": 192248,
-          "checked": "2026-11-07",
+          "checked": "2026-11-08",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 858300,
+          "views": 858700,
           "likes": 134300,
           "author": "@elionwillpower",
-          "checked": "2026-11-07",
+          "checked": "2026-11-08",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-            "views": 858300,
+            "views": 858700,
             "likes": 134300
           }
         }
@@ -401,6 +400,10 @@
         {
           "name": "Know Your Meme",
           "url": "https://knowyourmeme.com/memes/thousand-yard-stare"
+        },
+        {
+          "name": "X / @DiscussingFilm (17.1M views)",
+          "url": "https://x.com/DiscussingFilm/status/2116776966141415441"
         }
       ],
       "ev": {
@@ -411,12 +414,12 @@
         "kym": true,
         "x_news": false,
         "kym_editorial": false,
-        "kym_views": 121247,
+        "kym_views": 121330,
         "x": {
           "url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-          "views": 17064800,
-          "likes": 351138,
-          "checked": "2026-11-07",
+          "views": 17067466,
+          "likes": 351120,
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
@@ -447,7 +450,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 1,
+          "rank": 4,
           "url": "https://www.reddit.com/r/memes/comments/1xky93a/kiss_your_ram/"
         },
         "platforms": [
@@ -482,14 +485,19 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/elonmusk/status/2116875604889112772",
-          "views": 8330019,
-          "likes": 92470,
-          "checked": "2026-11-07",
+          "views": 8335339,
+          "likes": 92475,
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
       "notes": "8.26M views / 92.5K likes on @elonmusk (X API, Nov 5). Weekly/monthly.",
-      "also": [],
+      "also": [
+        {
+          "name": "X / @elonmusk (8.3M views)",
+          "url": "https://x.com/elonmusk/status/2116875604889112772"
+        }
+      ],
       "credit": "posted by @elonmusk on X"
     },
     {
@@ -510,14 +518,19 @@
         ],
         "x": {
           "url": "https://x.com/vibeistani/status/2116644824703279122",
-          "views": 6552405,
-          "likes": 30906,
-          "checked": "2026-11-07",
+          "views": 6555363,
+          "likes": 30905,
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
       "notes": "30,791 likes / 6.48M views (X API, Nov 4 9am). Copycat citizenship-joke posts still circulating.",
-      "also": [],
+      "also": [
+        {
+          "name": "X / @vibeistani (6.6M views)",
+          "url": "https://x.com/vibeistani/status/2116644824703279122"
+        }
+      ],
       "credit": "posted by @vibeistani on X"
     },
     {
@@ -531,13 +544,7 @@
       "image_url": "https://i.redd.it/ia2ewdo4vzyh1.jpeg",
       "first_seen": "2026-11-01",
       "ev": {
-        "reddit": {
-          "sub": "memes",
-          "rank": 7
-        },
-        "platforms": [
-          "Reddit"
-        ]
+        "platforms": []
       },
       "notes": "#9 r/memes top-this-week (Nov 5 ~11am PT).",
       "also": [],
@@ -561,15 +568,20 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/leftcoastbabe/status/2116590353973395609",
-          "views": 68422,
+          "views": 68446,
           "likes": 2786,
-          "checked": "2026-11-07",
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
       "notes": "Joke post riffing on the old 'salsa made in New York City' ad line; not a factual claim. 2,791 likes / 66,884 views (X API, Nov 3); X News story.",
       "headline_reviewed": true,
-      "also": [],
+      "also": [
+        {
+          "name": "X / @leftcoastbabe (68K views)",
+          "url": "https://x.com/leftcoastbabe/status/2116590353973395609"
+        }
+      ],
       "credit": "posted by @leftcoastbabe on X"
     },
     {
@@ -593,7 +605,7 @@
           "url": "https://x.com/i/trending/2117374174196830291"
         },
         {
-          "name": "TikTok / @angelickk4 (13K views)",
+          "name": "TikTok / @angelickk4 (15K views)",
           "url": "https://www.tiktok.com/@angelickk4/video/7700321423641808146"
         }
       ],
@@ -606,22 +618,22 @@
         "kym": true,
         "x_news": true,
         "kym_editorial": true,
-        "kym_views": 12130,
+        "kym_views": 12914,
         "x": {
           "url": "https://x.com/dogwife333/status/2114198070132961395",
-          "views": 330041,
-          "likes": 23682,
-          "checked": "2026-11-07",
+          "views": 330198,
+          "likes": 23677,
+          "checked": "2026-11-08",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@angelickk4/video/7700321423641808146",
-          "views": 13700,
-          "likes": 1237,
+          "views": 14500,
+          "likes": 1285,
           "author": "@angelickk4",
           "posted": "2026-10-24",
-          "checked": "2026-11-06",
-          "via": "TikTok post page (embedded in the KYM entry)",
+          "checked": "2026-11-08",
+          "via": "fetch_social.py",
           "posts_read": 1
         }
       },
@@ -672,12 +684,12 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 19740,
+        "kym_views": 20408,
         "x": {
           "url": "https://x.com/PopBase/status/2114415796890038370",
-          "views": 2202311,
-          "likes": 43135,
-          "checked": "2026-11-07",
+          "views": 2202465,
+          "likes": 43132,
+          "checked": "2026-11-08",
           "via": "X API"
         },
         "tiktok": {
@@ -730,7 +742,7 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 2192,
+        "kym_views": 2266,
         "tiktok": {
           "url": "https://www.tiktok.com/@_mc_chicken_lover/video/7699223914823617823",
           "views": 16000000,
@@ -770,7 +782,7 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 1865,
+        "kym_views": 1961,
         "tiktok": {
           "url": "https://www.tiktok.com/@durk.clips/video/7700402916250651934",
           "views": 13200000,
@@ -813,15 +825,15 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 4868,
+        "kym_views": 5008,
         "tiktok": {
           "url": "https://www.tiktok.com/@notmemetime/video/7700255100073217301",
-          "views": 3600000,
-          "likes": 665000,
+          "views": 4100000,
+          "likes": 731900,
           "author": "@notmemetime",
           "posted": "2026-10-24",
-          "checked": "2026-11-04",
-          "via": "TikTok post page (embedded in the KYM entry)",
+          "checked": "2026-11-08",
+          "via": "fetch_social.py",
           "posts_read": 7
         },
         "youtube": {
@@ -837,7 +849,7 @@
       "first_seen_basis": "KYM entry published date",
       "also": [
         {
-          "name": "TikTok / @notmemetime (3.6M views)",
+          "name": "TikTok / @notmemetime (4.1M views)",
           "url": "https://www.tiktok.com/@notmemetime/video/7700255100073217301"
         },
         {
@@ -866,7 +878,7 @@
           "YouTube"
         ],
         "kym": true,
-        "kym_views": 25745,
+        "kym_views": 26817,
         "x_news": true,
         "x": {
           "views": 475000,
@@ -874,10 +886,10 @@
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=xJb6VuMWbRE",
-          "views": 589081,
+          "views": 633324,
           "title": "They're Not Happy About Zoomer Anakin",
           "channel": "Akkad Daily",
-          "checked": "2026-11-06",
+          "checked": "2026-11-08",
           "via": "fetch_youtube.py"
         },
         "kym_editorial": true
@@ -909,7 +921,8 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 10
+          "rank": 10,
+          "url": "https://www.reddit.com/r/memes/comments/1xfqtfz/thank_god_they_changed_it/"
         },
         "platforms": [
           "Reddit"
@@ -937,7 +950,7 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 67975,
+        "kym_views": 68718,
         "tiktok": {
           "views": 9800000,
           "via": "KYM-cited count",
@@ -977,7 +990,7 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 5561,
+        "kym_views": 5680,
         "tiktok": {
           "url": "https://www.tiktok.com/@ryu_da_sigma/video/7698167502018333965",
           "views": 51300000,
@@ -1040,7 +1053,7 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 6971,
+        "kym_views": 7061,
         "tiktok": {
           "views": 25600000,
           "via": "KYM-cited count",
@@ -1107,7 +1120,7 @@
         "kym": true,
         "kym_editorial": true,
         "x_news": true,
-        "kym_views": 186347,
+        "kym_views": 187482,
         "tiktok": {
           "likes": 89000,
           "via": "KYM-cited count",
@@ -1147,7 +1160,7 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 27544,
+        "kym_views": 27820,
         "tiktok": {
           "url": "https://www.tiktok.com/@ems2001xx/video/7675017791757487382",
           "views": 13400000,
@@ -1188,7 +1201,7 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 26914,
+        "kym_views": 27458,
         "tiktok": {
           "url": "https://www.tiktok.com/@asian5767/video/7690722850595982606",
           "views": 6500000,
@@ -1247,7 +1260,8 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 1
+          "rank": 1,
+          "url": "https://www.reddit.com/r/memes/comments/1xbq3m7/just_ask_for_more_money/"
         },
         "platforms": [
           "Reddit"
@@ -1276,6 +1290,10 @@
         {
           "name": "X / @EODCSM",
           "url": "https://x.com/EODCSM/status/2115886753592795549"
+        },
+        {
+          "name": "X / @EODHappyCaptain (3.5M views)",
+          "url": "https://x.com/EODHappyCaptain/status/2115887607238328723"
         }
       ],
       "ev": {
@@ -1285,9 +1303,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/EODHappyCaptain/status/2115887607238328723",
-          "views": 3505445,
-          "likes": 118612,
-          "checked": "2026-11-07",
+          "views": 3506109,
+          "likes": 118613,
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
@@ -1314,7 +1332,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 5,
+          "rank": 4,
           "url": "https://www.reddit.com/r/memes/comments/1xla9os/its_all_for_ram_and_rams_for_all/"
         },
         "platforms": [
@@ -1339,7 +1357,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 4,
+          "rank": 3,
           "url": "https://www.reddit.com/r/memes/comments/1xlpirx/potatoes_after_a_few_days_in_bag/"
         },
         "platforms": [
@@ -1364,7 +1382,8 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 8
+          "rank": 7,
+          "url": "https://www.reddit.com/r/memes/comments/1xlnh1a/good_ending/"
         },
         "platforms": [
           "Reddit"
@@ -1470,6 +1489,10 @@
         {
           "name": "X News (distress face)",
           "url": "https://x.com/i/trending/2117236603353747851"
+        },
+        {
+          "name": "X / @abdykeen (1.5M views)",
+          "url": "https://x.com/abdykeen/status/2117175866232868947"
         }
       ],
       "ev": {
@@ -1479,9 +1502,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/abdykeen/status/2117175866232868947",
-          "views": 1486053,
-          "likes": 26767,
-          "checked": "2026-11-07",
+          "views": 1487545,
+          "likes": 26763,
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
@@ -1507,6 +1530,10 @@
         {
           "name": "X News (dealbreakers)",
           "url": "https://x.com/i/trending/2116638968385286223"
+        },
+        {
+          "name": "X / @grindgod26 (139K views)",
+          "url": "https://x.com/grindgod26/status/2117272503500550159"
         }
       ],
       "ev": {
@@ -1516,9 +1543,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/grindgod26/status/2117272503500550159",
-          "views": 138986,
+          "views": 139201,
           "likes": 16157,
-          "checked": "2026-11-07",
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
@@ -1572,7 +1599,7 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 1570,
+        "kym_views": 1735,
         "tiktok": {
           "url": "https://www.tiktok.com/@ristyisvalid/video/7699927769479810335",
           "views": 2700000,
@@ -1613,7 +1640,7 @@
         ],
         "kym": true,
         "kym_editorial": true,
-        "kym_views": 50815,
+        "kym_views": 51840,
         "tiktok": {
           "url": "https://www.tiktok.com/@._bella_141/video/7672239822450265374",
           "views": 216200,
@@ -1679,9 +1706,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6326296,
-          "likes": 183925,
-          "checked": "2026-11-07",
+          "views": 6334955,
+          "likes": 183915,
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
@@ -1719,9 +1746,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1104728,
-          "likes": 54554,
-          "checked": "2026-11-07",
+          "views": 1105062,
+          "likes": 54553,
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
@@ -1750,7 +1777,7 @@
           "url": "https://x.com/i/trending/2117626647205875908"
         },
         {
-          "name": "TikTok / @leehoustonx (11.6M views)",
+          "name": "TikTok / @leehoustonx (11.7M views)",
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
         },
         {
@@ -1758,7 +1785,7 @@
           "url": "https://www.instagram.com/reel/DfMHsr-hYPF/"
         },
         {
-          "name": "TikTok / @boby.biggsjohnson (6.4M views)",
+          "name": "TikTok / @boby.biggsjohnson (6.6M views)",
           "url": "https://www.tiktok.com/@boby.biggsjohnson/video/7703585816429235487"
         }
       ],
@@ -1770,26 +1797,26 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 2518,
+        "kym_views": 2651,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334907,
+          "views": 334942,
           "likes": 3036,
-          "checked": "2026-11-07",
+          "checked": "2026-11-08",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-          "views": 11600000,
+          "views": 11700000,
           "likes": 1500000,
           "author": "@leehoustonx",
           "posted": "2026-11-01",
-          "checked": "2026-11-07",
+          "checked": "2026-11-08",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-            "views": 11600000,
+            "views": 11700000,
             "likes": 1500000
           }
         },
@@ -1798,7 +1825,7 @@
           "likes": 11000000,
           "author": "@kevinwinnik",
           "posted": "2026-10-31",
-          "checked": "2026-11-07",
+          "checked": "2026-11-08",
           "via": "fetch_social.py"
         }
       },
@@ -1820,7 +1847,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 18,
+          "rank": 20,
           "url": "https://www.reddit.com/r/dankmemes/comments/1xmufk1/my_fuggin_back/"
         },
         "platforms": [
@@ -1845,7 +1872,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 17,
+          "rank": 19,
           "url": "https://www.reddit.com/r/dankmemes/comments/1xn0rwh/fun_times_good_luck_economy/"
         },
         "platforms": [
@@ -1870,7 +1897,8 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 8
+          "rank": 7,
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xnmfpo/hotel_california_rules/"
         },
         "platforms": [
           "Reddit"
@@ -1895,7 +1923,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 2,
+          "rank": 1,
           "url": "https://www.reddit.com/r/memes/comments/1xnkv3y/a_coffin_is_more_space_efficient/"
         },
         "platforms": [
@@ -1923,7 +1951,7 @@
           "TikTok"
         ],
         "kym": true,
-        "kym_views": 1522,
+        "kym_views": 1883,
         "tiktok": {
           "url": "https://www.tiktok.com/@yotwintsaccountistuff/video/7690778682075516174",
           "views": 8600000,
@@ -1965,7 +1993,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 3,
+          "rank": 2,
           "url": "https://www.reddit.com/r/memes/comments/1xnikcz/really_got_his_interest/"
         },
         "platforms": [
@@ -1989,7 +2017,7 @@
       "ev": {
         "reddit": {
           "sub": "dankmemes",
-          "rank": 21,
+          "rank": 22,
           "url": "https://www.reddit.com/r/dankmemes/comments/1xnlwdj/money_muney/"
         },
         "platforms": [
@@ -2017,6 +2045,10 @@
         {
           "name": "X News",
           "url": "https://x.com/i/trending/2117954845806084333"
+        },
+        {
+          "name": "X / @marvo_sneh_ (176K views)",
+          "url": "https://x.com/marvo_sneh_/status/2117540565831066110"
         }
       ],
       "ev": {
@@ -2026,9 +2058,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/marvo_sneh_/status/2117540565831066110",
-          "views": 175709,
+          "views": 176348,
           "likes": 7486,
-          "checked": "2026-11-07",
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
@@ -2049,11 +2081,11 @@
       "first_seen": "2026-10-19",
       "also": [
         {
-          "name": "TikTok / @hard_plushie (9.5M views)",
+          "name": "TikTok / @hard_plushie (9.6M views)",
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (254K views)",
+          "name": "X / @LashSleeper (255K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -2081,14 +2113,14 @@
         "kym_editorial": true,
         "tiktok": {
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969",
-          "views": 9500000,
+          "views": 9600000,
           "likes": 2400000,
           "author": "@hard_plushie",
-          "checked": "2026-11-07",
+          "checked": "2026-11-08",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969",
-            "views": 9500000,
+            "views": 9600000,
             "likes": 2400000
           }
         },
@@ -2097,7 +2129,7 @@
           "likes": 79000,
           "author": "@thebigsolomando",
           "posted": "2026-11-02",
-          "checked": "2026-11-07",
+          "checked": "2026-11-08",
           "via": "fetch_social.py"
         },
         "youtube": {
@@ -2110,12 +2142,12 @@
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 254170,
-          "likes": 27168,
-          "checked": "2026-11-07",
+          "views": 255166,
+          "likes": 27182,
+          "checked": "2026-11-08",
           "via": "X API"
         },
-        "kym_views": 11808
+        "kym_views": 13195
       },
       "notes": "KYM 7,378 views; TikTok @hard_plushie 9.2M / 2.4M likes; IG @thebigsolomando 76K likes; YouTube Lessons in Meme Culture 605.8K views (Nov 6 6AM PT).",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026",
@@ -2160,7 +2192,7 @@
       "ev": {
         "reddit": {
           "sub": "memes",
-          "rank": 18,
+          "rank": 19,
           "url": "https://www.reddit.com/r/memes/comments/1xnitsj/the_attack_was_inevitable/"
         },
         "platforms": [
@@ -2190,7 +2222,7 @@
           "Know Your Meme"
         ],
         "kym": true,
-        "kym_views": 348788,
+        "kym_views": 349057,
         "kym_editorial": true
       },
       "credit": "CBBC / Hacker T. Dog (with Lauren Layfield)"
@@ -2212,9 +2244,9 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 14922754,
-          "likes": 159950,
-          "checked": "2026-11-07",
+          "views": 14937325,
+          "likes": 159953,
+          "checked": "2026-11-08",
           "via": "X API"
         },
         "x_news": true
@@ -2247,7 +2279,7 @@
       "first_seen": "2026-11-06",
       "also": [
         {
-          "name": "X / @2THUQQ (480K views)",
+          "name": "X / @2THUQQ (490K views)",
           "url": "https://x.com/2THUQQ/status/2118617523708965188"
         },
         {
@@ -2262,9 +2294,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/2THUQQ/status/2118617523708965188",
-          "views": 481387,
-          "likes": 40163,
-          "checked": "2026-11-07",
+          "views": 489522,
+          "likes": 40612,
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
@@ -2295,7 +2327,7 @@
           "url": "https://x.com/i/trending/2119063066327278020"
         },
         {
-          "name": "X / @NuggetsItz (1.9M views)",
+          "name": "X / @NuggetsItz (33K views)",
           "url": "https://x.com/NuggetsItz/status/2118414453255418233"
         }
       ],
@@ -2306,9 +2338,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/tuna_petal/status/2118514084140229097",
-          "views": 1869259,
-          "likes": 32463,
-          "checked": "2026-11-07",
+          "views": 1872304,
+          "likes": 32493,
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
@@ -2330,7 +2362,7 @@
       "first_seen": "2026-11-06",
       "also": [
         {
-          "name": "X / @sbxloch (1.6M views)",
+          "name": "X / @sbxloch (2.1M views)",
           "url": "https://x.com/sbxloch/status/2118821023151706276"
         },
         {
@@ -2349,9 +2381,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/sbxloch/status/2118821023151706276",
-          "views": 1763467,
-          "likes": 146408,
-          "checked": "2026-11-07",
+          "views": 2131583,
+          "likes": 179449,
+          "checked": "2026-11-08",
           "via": "X API"
         }
       },
@@ -2359,6 +2391,49 @@
       "headline_reviewed": true,
       "first_seen_basis": "Earliest post found on X search is @sbxloch Nov 6 2026; copies/variations Nov 7; X News story Nov 7",
       "credit": "posted by @sbxloch on X"
+    },
+    {
+      "id": "seatbelt-dog",
+      "periods": [
+        "daily",
+        "weekly"
+      ],
+      "title": "SEATBELT DOG: BUCKLED-IN PUP BECOMES X'S REPLY-VIDEO REACTION MEME",
+      "source_url": "https://x.com/acervodoguinhos/status/1986031760011079881",
+      "source_name": "X / @acervodoguinhos",
+      "image_url": "https://pbs.twimg.com/amplify_video_thumb/1986031748958846977/img/LXEedwyrSrdVfz6l.jpg",
+      "first_seen": "2026-11-07",
+      "first_seen_basis": "Reply-with-this-video wave documented on X News Nov 7–8 2026; original clip posted by @acervodoguinhos on Nov 5 2025",
+      "also": [
+        {
+          "name": "X / @anacomlula (1.6M views)",
+          "url": "https://x.com/anacomlula/status/2119093703277187568"
+        },
+        {
+          "name": "X / @acervodoguinhos original clip (12.1M views)",
+          "url": "https://x.com/acervodoguinhos/status/1986031760011079881"
+        },
+        {
+          "name": "X News (Seatbelt Dog)",
+          "url": "https://x.com/i/trending/2119278609299050551"
+        }
+      ],
+      "ev": {
+        "platforms": [
+          "X"
+        ],
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/anacomlula/status/2119093703277187568",
+          "views": 1604884,
+          "likes": 74929,
+          "checked": "2026-11-08",
+          "via": "X API"
+        }
+      },
+      "notes": "Cute Jack Russell clipped in a car seatbelt, used as a copy-paste reply video on X. Original clip posted by @acervodoguinhos on Nov 5 2025 (12,087,008 views / 43,911 likes, X API Nov 8). Current wave: people reply with the same video; @anacomlula Nov 7 post about learning the reply trick has 1,604,884 views / 74,929 likes. X News story \"Seatbelt Dog Video Becomes X's Fastest Meme\" (2119278609299050551). Independent reuse of the clip as a reaction format.",
+      "headline_reviewed": true,
+      "credit": "posted by @acervodoguinhos on X"
     }
   ]
 }
