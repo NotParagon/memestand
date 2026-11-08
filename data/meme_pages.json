@@ -1,5 +1,5 @@
 {
-  "_doc": "Persistent per-meme explainer store for the /meme/<slug>/ pages, keyed by slug. build.py reads it and never regenerates written text. ids = candidate ids that map to this page (keep the slug forever). status: 'full' (real explanation + origin with sources) or 'short' (only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. Fields: explainer = 2-4 sentence plain-English meaning; origin = who/where/when if verified and how it spread, in our own words ('\\n\\n' between paragraphs); origin_confirmed = true only if the first post/creator is documented, false if unknown (the page then says so), null = not yet researched; how_to_use = 0-2 captions copied verbatim from the explainer, origin, or ranked post (never an invented, translated, or fill-in variant; [] if none); original_url = verified creator post when one is documented (View original uses it; never drop it on a refresh); sources = [{name,url}] links that back the text (must return 200); checked = ISO datetime (PT) the text was last written or reviewed (feeds dateModified + sitemap lastmod). build.py adds a stub (explainer null) for any new meme; the daily routine fills it in (UPDATE.md step 5). Know Your Meme is an explainer, not the original post.",
+  "_doc": "Persistent per-meme explainer store for the /meme/<slug>/ pages, keyed by slug. build.py reads it and never regenerates written text. ids = candidate ids that map to this page (keep the slug forever). status: 'full' (real explanation + origin with sources) or 'short' (only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. Fields: explainer = 2-4 sentence plain-English meaning; origin = who/where/when if verified and how it spread, in our own words ('\\n\\n' between paragraphs); origin_confirmed = true only if the first post/creator is documented, false if unknown (the page then says so), null = not yet researched and must not be labeled the original; how_to_use = 0-2 captions that exactly equal a source card_text or post-card quote tied to a direct post URL (explainer and origin prose are not evidence; [] if none); original_url = verified creator post when one is documented (View original uses it only when origin_confirmed is true; never drop it on a refresh); sources = [{name,url}] links that back the text (must return 200); checked = ISO datetime (PT) the text was last written or reviewed (feeds dateModified + sitemap lastmod). build.py adds a stub (explainer null) for any new meme; the daily routine fills it in (UPDATE.md step 5). Know Your Meme is an explainer, not the original post.",
   "memes": {
     "affleck-i-voted-smoking": {
       "name": "Ben Affleck 'I Voted' Smoking Update",
@@ -138,9 +138,7 @@
       "explainer": "An image-macro paste of Sam Altman's face onto a rocket launching toward the moon is captioned \"Sam Altman when he learns the Apollo missions went to the moon with 4 KB of RAM.\" It rides the same November 2026 DRAM-shortage / Altman-RAM joke wave: the gag is that Apollo's tiny guidance-computer memory makes modern AI hardware hunger look absurd by comparison.",
       "origin": "The ranked post is an r/memes upload by u/gregorio02 on November 5, 2026, titled \"I can't get enough of this new trend,\" using an imgflip-style macro. MemeStand has not confirmed an earlier first post or the original caption author beyond that upload, so the original creator of this specific version remains unconfirmed.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Sam Altman when he learns the Apollo missions went to the moon with 4 KB of RAM"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/memes/comments/1xo00z4/i_cant_get_enough_of_this_new_trend/",
       "kym_url": null,
       "sources": [
@@ -151,7 +149,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-05T08:06:33-08:00"
+      "checked": "2026-11-07T23:13:29-08:00"
     },
     "altman-houses-vs-datacenters": {
       "name": "Altman Houses vs AI Data Centers",
@@ -212,9 +210,7 @@
       "explainer": "A photo of Sam Altman smiling next to an Egyptian sarcophagus is captioned as Altman reacting after hearing about the mummy of King \"Ram esses II\" — a pun that splits Ramesses so the \"Ram\" lands like computer RAM. In the broader November 2026 wave of jokes about DRAM shortages and Altman comments on memory allocation, the punchline is that even a pharaoh's name sounds like free RAM to him. Commenters often reply \"let the man rest.\"",
       "origin": "The ranked post is an r/memes upload by u/ZealousidealChain473 on November 5, 2026, titled \"Let the man rest,\" pairing the Altman-with-sarcophagus image with the Ramesses/RAM pun. MemeStand has not confirmed an earlier first post or the original photographer/creator of the image, so the original creator of this specific caption remains unconfirmed.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "let the man rest"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/memes/comments/1xod9dz/let_the_man_rest/",
       "kym_url": null,
       "sources": [
@@ -225,7 +221,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-07T22:51:54-08:00"
+      "checked": "2026-11-07T23:13:29-08:00"
     },
     "anakin-skywalker-gen-z-male-rage": {
       "name": "Anakin Skywalker Gen Z Male Rage",
@@ -633,9 +629,7 @@
       "explainer": "A nonsense brainrot catchphrase that teases fans of Frutiger Aero, the glossy, bubbly, water-and-clouds design look of the late 2000s. \"Yams\" is slang for someone's backside, so \"Frutiger Aero yams to your right\" jokingly treats the aesthetic as so irresistible that even that gets the glossy treatment. People also apply it literally, with shiny Frutiger Aero-style yams, and pile it into slang-overload videos next to spin-offs like \"code rot yams.\"",
       "origin": "Know Your Meme's earliest known example is an October 19, 2026 Instagram post by seiyaposting: an edited image of streamer CallMeCarson looking to the right, captioned \"Frutiger Aero yams to your right\" (KYM says it's unconfirmed whether this is the true origin). The phrase spread in late October on X, including an image of a glossy Frutiger Aero yam by @LashSleeper, and on November 2 TikToker @watosis used it in a slang-overload video. KYM published its entry on November 3, 2026.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Frutiger Aero yams to your right"
-      ],
+      "how_to_use": [],
       "source_url": "https://knowyourmeme.com/memes/frutiger-aero-yams",
       "kym_url": "https://knowyourmeme.com/memes/frutiger-aero-yams",
       "sources": [
@@ -662,7 +656,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-07T22:51:54-08:00"
+      "checked": "2026-11-07T23:13:29-08:00"
     },
     "gym-cancel-holmes": {
       "name": "Gym Cancel / Elizabeth Holmes",
@@ -914,9 +908,7 @@
       "explainer": "A \"Gotta be one of my favorite genders\" image macro that celebrates \"little void creatures in big clothes\" — tiny mage characters whose faces are just glowing eyes in a shadowed void under oversized robes and hats. The ranked version edits Orko (He-Man), Veigar (League of Legends), and a classic Final Fantasy–style black mage onto a stock photo of a man gesturing in praise. The joke treats the shadowy-mage silhouette as a wholesome identity category.",
       "origin": "The \"gotta be one of my favorite genders\" praise format is an older reaction-image template; this specific \"little void creatures in big clothes\" caption was posted to r/memes by u/Darian_Wulfbane on November 5, 2026 under the title \"I just really like little guys.\" MemeStand has not confirmed an earlier first post for this exact caption or the original photo/edit author, so the creator of this version remains unconfirmed.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Gotta be one of my favorite genders"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/memes/comments/1xo2ukx/i_just_really_like_little_guys/",
       "kym_url": null,
       "sources": [
@@ -927,7 +919,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-07T22:51:54-08:00"
+      "checked": "2026-11-07T23:13:29-08:00"
     },
     "macaulay-culkin-thousand-yard-stare": {
       "name": "Macaulay Culkin Thousand-Yard Stare",
@@ -1090,9 +1082,7 @@
       "explainer": "A one-line brag: \"If Newton saw the way I be moving these days he'd add a fourth law of motion.\" \"Moving\" is slang for how someone is carrying themselves or hustling lately, and the joke is that their energy is so unusual it would break Isaac Newton's three laws of motion. People repost the line word for word about themselves, or swap in a footballer, friend, or celebrity whose recent form seems to defy physics.",
       "origin": "The earliest post MemeStand found is a Nov 6, 2026 X post by @sbxloch (Mir), which passed 1M views and 94K likes within a day. On Nov 7 many unrelated accounts were posting the same sentence verbatim or with a name swapped in, and X News ran a story on it. MemeStand has not independently confirmed that no earlier identical post exists.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "If Newton saw the way I be moving these days he'd add a fourth law of motion"
-      ],
+      "how_to_use": [],
       "source_url": "https://x.com/sbxloch/status/2118821023151706276",
       "kym_url": null,
       "sources": [
@@ -1107,7 +1097,7 @@
       ],
       "related": [],
       "written": "2026-11-07",
-      "checked": "2026-11-07T22:51:54-08:00"
+      "checked": "2026-11-07T23:13:29-08:00"
     },
     "nintendo-sue-github": {
       "name": "Nintendo Sue GitHub (Gru's Plan)",
@@ -1684,9 +1674,7 @@
       "explainer": "Internet slang and a satirical sequel joke: after jokes about \"Woke 1\" (culture-war progressivism) and \"Woke 2\" (a more economically populist reboot), \"Woke 3\" / \"Woke 3.0\" imagines an even more extreme, over-the-top next era. Memes spiked around the 2026 U.S. midterms' Democratic \"blue sweep,\" treating the wins like the start of a ridiculous new season of wokeness.",
       "origin": "Know Your Meme traces \"Woke 2\" talk through 2026 (including Chi Ossé's May 22, 2026 \"Woke 1 was crazyyyy\" post) and early \"Woke 3\" jokes on X from August 2026 (e.g. invite-code and Chick-fil-A-on-Sunday bits). A KYM entry published November 4, 2026 covers the midterm surge; TikToker @megitchell posted a comic \"Woke 3\" rundown on October 15, 2026, and posts such as @MeganBitchell's November 3–4 \"Woke 3 starts tonight\" / \"WOKE 3\" uploads helped push the phrase after election night.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "Woke 3 starts tonight"
-      ],
+      "how_to_use": [],
       "source_url": "https://knowyourmeme.com/memes/woke-3",
       "kym_url": "https://knowyourmeme.com/memes/woke-3",
       "sources": [
@@ -1705,7 +1693,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-07T22:51:54-08:00"
+      "checked": "2026-11-07T23:13:29-08:00"
     },
     "woke-up-goldeneye": {
       "name": "You Finally Woke Up Babe (GoldenEye)",
@@ -1738,9 +1726,7 @@
       "explainer": "A one-liner joke that asks whether the speaker should be preparing for World War III or for Christmas, \"because I dont have the budget for both.\" It treats escalating geopolitical anxiety and ordinary holiday spending as competing line items on the same exhausted personal budget.",
       "origin": "The ranked post is from X user @HorrorGorl on November 3, 2026: \"Should I be preparing for WW3 or Christmas, because I dont have the budget for both. FFS.\" MemeStand has not confirmed whether the joke circulated in the same wording before that post, so the original creator remains unconfirmed.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Should I be preparing for WW3 or Christmas, because I dont have the budget for both."
-      ],
+      "how_to_use": [],
       "source_url": "https://x.com/HorrorGorl/status/2117609954563477790",
       "kym_url": null,
       "sources": [
@@ -1751,7 +1737,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-05T07:14:10-08:00"
+      "checked": "2026-11-07T23:13:29-08:00"
     },
     "youre-blatantly-just-not-me-nan": {
       "name": "You're Blatantly Just Not Me Nan",

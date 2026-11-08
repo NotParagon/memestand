@@ -382,15 +382,28 @@ def thumb(m, base, label, cls="thumb", eager=False):
     kind = " postcard" if uses_post_card(m) else ""
     return f'<a href="{e(outbound(m))}" target="_blank" rel="noopener"><img class="{cls}{kind}" src="{e(src)}" alt="{e(alt(m, label))}"{wh} {load}{ref}></a>'
 
-def load_evidence():
-    """Candidate ev records, keyed by id. Counts and checked dates live here, not in the page build time."""
+def load_candidate_rows():
+    """Evidence counts and the post text stored with each candidate. Explainer prose is not loaded."""
     try:
         doc = json.loads((ROOT / "data" / "candidates.json").read_text())
     except Exception:
-        return {}
-    return {c.get("id"): c.get("ev") or {} for c in doc.get("candidates", []) if c.get("id")}
+        return {}, {}
+    ev, cards = {}, {}
+    for c in doc.get("candidates", []):
+        if not c.get("id"):
+            continue
+        ev[c["id"]] = c.get("ev") or {}
+        cards[c["id"]] = {"card_text": c.get("card_text") or "", "source_url": c.get("source_url") or ""}
+    return ev, cards
 
-EVIDENCE = load_evidence()
+def load_post_cards():
+    try:
+        return json.loads((ROOT / "data" / "post_cards.json").read_text()).get("cards") or {}
+    except Exception:
+        return {}
+
+EVIDENCE, CANDIDATE_CARDS = load_candidate_rows()
+POST_CARDS = load_post_cards()
 _DIRECT_POST = re.compile(
     r"^https?://(?:www\.)?("
     r"tiktok\.com/@[^/]+/video/\d+"
@@ -465,7 +478,8 @@ def primary_link(m, page=None, ev=None):
         return {"url": creator, "label": "View original" if original else "View credited post",
                 "kind": "original" if original else "credited"}
     if is_direct_post(source):
-        original = confirmed is not False
+        # Missing, null, or false origin_confirmed must not be labeled the original.
+        original = confirmed is True
         return {"url": source, "label": "View original" if original else "View credited post",
                 "kind": "original" if original else "credited"}
     if is_kym_url(source):
@@ -591,23 +605,84 @@ def norm_caption(s):
     s = (s or "").replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
     return re.sub(r"\s+", " ", s).strip().lower()
 
-def sourced_captions(captions, explainer="", origin="", card_text=""):
-    """Keep a caption only when it is already a verbatim quotation in the sourced text.
-    Invented variants, translations, and fill-in templates are dropped."""
-    quotes = []
-    for blob in (explainer or "", origin or ""):
-        quotes += re.findall(r'["\u201c](.+?)["\u201d]', blob)
-    if card_text:
-        quotes.append(str(card_text).strip().strip("\"'\u201c\u201d"))
-    allowed = [norm_caption(q) for q in quotes if norm_caption(q)]
+def strip_wrapping_quotes(s):
+    s = str(s or "").strip()
+    if len(s) >= 2 and s[0] in "\"'\u201c\u2018" and s[-1] in "\"'\u201d\u2019":
+        return s[1:-1].strip()
+    return s
+
+def source_wordings(card_text="", source_url="", source_posts=None):
+    """Complete wording from source records only. Explainer and origin prose are not accepted.
+    card_text counts only together with a direct post URL. source_posts are {text, url, kind}
+    and likewise need a direct post URL. A Know Your Meme URL is not provenance for a caption."""
+    recs, seen = [], set()
+    def add(text, url, kind):
+        text = strip_wrapping_quotes(text)
+        if not text or not is_direct_post(url):
+            return
+        key = (norm_caption(text), url)
+        if key in seen:
+            return
+        seen.add(key)
+        recs.append({"text": text, "url": url, "kind": kind})
+    add(card_text, source_url, "card_text")
+    for rec in source_posts or []:
+        add(rec.get("text"), rec.get("url"), rec.get("kind") or "source_post")
+    return recs
+
+def match_source_wording(caption, records):
+    """Exact complete match only. A fragment of a source text is not that source text."""
+    if caption is None or "[" in str(caption) or "]" in str(caption):
+        return None
+    c = norm_caption(caption)
+    if not c:
+        return None
+    for rec in records or []:
+        if norm_caption(rec.get("text")) == c:
+            return rec
+    return None
+
+def sourced_captions(captions, card_text="", source_url="", source_posts=None):
+    """Keep a caption only when it equals a complete source record. Our own prose is not a source."""
+    records = source_wordings(card_text, source_url, source_posts)
     kept = []
     for cap in captions or []:
-        c = norm_caption(cap)
-        if not c or "[" in cap or "]" in cap:
-            continue
-        if any(c == q or (len(c) >= 12 and c in q) for q in allowed):
+        if match_source_wording(cap, records) and cap not in kept:
             kept.append(cap)
     return kept[:2]
+
+def caption_records_for(m, info):
+    """Source-post records for one meme page. Explainer and origin text are ignored.
+    card_text and an attributed post-card quote count only with a direct post URL."""
+    info = info or {}
+    ids = list(info.get("ids") or [])
+    if m.get("id") and m.get("id") not in ids:
+        ids.append(m.get("id"))
+    quote = (POST_CARDS.get(info.get("slug")) or {}).get("quote")
+    pairs = []
+    if m.get("card_text"):
+        pairs.append((m.get("card_text"), m.get("source_url"), "card_text"))
+    if quote:
+        pairs.append((quote, m.get("source_url"), "post_card"))
+    for i in ids:
+        row = CANDIDATE_CARDS.get(i) or {}
+        if row.get("card_text"):
+            pairs.append((row["card_text"], row.get("source_url") or m.get("source_url"), "card_text"))
+        if quote and row.get("source_url"):
+            pairs.append((quote, row["source_url"], "post_card"))
+    seen, posts = set(), []
+    for text, url, kind in pairs:
+        recs = source_wordings(
+            card_text=text if kind == "card_text" else "",
+            source_url=url if kind == "card_text" else "",
+            source_posts=None if kind == "card_text" else [{"text": text, "url": url, "kind": kind}])
+        for rec in recs:
+            key = (norm_caption(rec["text"]), rec["url"], rec["kind"])
+            if key in seen:
+                continue
+            seen.add(key)
+            posts.append(rec)
+    return posts
 
 def credit(m):
     c = m.get("credit") or f'via {m.get("source_name", "the source")}'
@@ -735,9 +810,10 @@ STORE_DOC = ("Persistent per-meme explainer store for the /meme/<slug>/ pages, k
              "(only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. "
              "Fields: explainer = 2-4 sentence plain-English meaning; origin = who/where/when if verified and how it spread, in our own words "
              "('\\n\\n' between paragraphs); origin_confirmed = true only if the first post/creator is documented, false if unknown (the page then "
-             "says so), null = not yet researched; how_to_use = 0-2 captions copied verbatim from the explainer, origin, or ranked post "
-             "(never an invented, translated, or fill-in variant; [] if none); original_url = verified creator post when one is documented "
-             "(View original uses it; never drop it on a refresh); sources = [{name,url}] links that back the text (must return "
+             "says so), null = not yet researched and must not be labeled the original; how_to_use = 0-2 captions that exactly equal "
+             "a source card_text or post-card quote tied to a direct post URL (explainer and origin prose are not evidence; [] if none); "
+             "original_url = verified creator post when one is documented "
+             "(View original uses it only when origin_confirmed is true; never drop it on a refresh); sources = [{name,url}] links that back the text (must return "
              "200); checked = ISO datetime (PT) the text was last written or reviewed (feeds dateModified + sitemap lastmod). "
              "build.py adds a stub (explainer null) for any new meme; the daily routine fills it in (UPDATE.md step 5). "
              "Know Your Meme is an explainer, not the original post.")
@@ -867,6 +943,7 @@ def meme_registry(snaps):
         PAGES[sl] = {"slug": sl, "name": ent["name"], "explainer": ent.get("explainer"), "origin": ent.get("origin"),
                      "status": "full" if full else "short", "kym_url": ent.get("kym_url"),
                      "origin_confirmed": ent.get("origin_confirmed"), "how_to_use": ent.get("how_to_use") or [],
+                     "ids": ent.get("ids") or [],
                      "sources": ent.get("sources", []), "related": ent.get("related", []),
                      "original_url": ent.get("original_url"), "written": ent.get("written"),
                      "days": days, "best": best, "latest": latest, "rows": rows,
@@ -942,7 +1019,8 @@ def build_meme_page(sl):
               'linked sources show.</p>') if info["origin"] and info["origin_confirmed"] is False else ""
     short = ('<p class="note">This page is deliberately short: little verified information about this meme is available, '
              'so we only state what the source shows.</p>') if info["status"] != "full" and not unconf else ""
-    uses = sourced_captions(info["how_to_use"], info.get("explainer"), info.get("origin"), m.get("card_text"))
+    records = caption_records_for(m, info)
+    uses = sourced_captions(info["how_to_use"], source_posts=records)
     use_html = ("<h2>Source caption</h2><ul>" + "".join(f"<li>&ldquo;{e(x)}&rdquo;</li>" for x in uses) + "</ul>") if uses else ""
     days, fs = info["days"], m.get("first_seen")
     stats = [f'<li>First seen on MemeStand: <a href="{base}archive/{days[0]}.html">{fmt_long(first_dd)}</a></li>',
@@ -1128,6 +1206,15 @@ def build_period(p):
 ''' + footer(base)
     write(f"{info['slug']}/index.html", page)
 
+def snapshot_replaces(existing, incoming):
+    """True only when incoming memes.json is a newer evidence refresh.
+    An equal or older updated stamp must not replace frozen ranks, notes, or counts.
+    Takedown scrub does not use this decision: it edits matching rows in place."""
+    try:
+        return parse_dt(incoming) > parse_dt(existing)
+    except Exception:
+        return True
+
 def snapshots():
     ARCH_DATA.mkdir(parents=True, exist_ok=True)
     snap = ARCH_DATA / f"{TODAY}.json"
@@ -1135,9 +1222,7 @@ def snapshots():
     write_today = not snap.exists()
     if snap.exists():
         try:
-            # A newer memes.json updated time is a real refresh. The same timestamp must not
-            # rewrite that day's frozen observations, scores, notes, or order.
-            write_today = parse_dt(data) > parse_dt(json.loads(snap.read_text()))
+            write_today = snapshot_replaces(json.loads(snap.read_text()), data)
         except Exception:
             write_today = True
     if write_today and (not snap.exists() or snap.read_text() != txt):
@@ -1145,6 +1230,8 @@ def snapshots():
     out = []
     for f in sorted(ARCH_DATA.glob("????-??-??.json")):
         try:
+            # Blocklist removals still apply when updated was not bumped. scrub replaces only the
+            # matching row and keeps its rank; other rows' notes, scores, and order stay.
             d = scrub(json.loads(f.read_text()))
             t = json.dumps(d, indent=2, ensure_ascii=False) + "\n"
             if t != f.read_text(): f.write_text(t)          # takedowns are scrubbed from the public JSON too
@@ -1246,7 +1333,7 @@ On a live list, the &ldquo;Why it ranks&rdquo; line repeats those checked figure
 <h2 id="policy">Content and editorial policy</h2>
 <ul>
 <li><b>What we pick:</b> memes with public, checkable evidence of spread. We never invent memes, numbers, links, or punchlines. A caption on an explainer is a quotation from the source, or it is left off.</li>
-<li><b>Credit:</b> every item names who posted it when that is known. &ldquo;View original&rdquo; goes to the creator's post when a source documents that post. If the first creator is not confirmed, the link says &ldquo;View credited post&rdquo; and the explainer says so. Know Your Meme is labeled as an explainer, not as the original. Thumbnails are small (400&nbsp;px max, metadata stripped) and link to that same post.</li>
+<li><b>Credit:</b> every item names who posted it when that is known. &ldquo;View original&rdquo; is used only when the meme page's origin is explicitly confirmed. Otherwise a direct post is &ldquo;View credited post&rdquo;. An unresearched page is not labeled the original. Know Your Meme is an explainer, not the original. Thumbnails are small (400&nbsp;px max, metadata stripped) and link to that same post.</li>
 <li><b>Counts and dates:</b> on the live lists, each platform's views or likes are the figure stored for that check, with that check's date. The &ldquo;Updated&rdquo; line is only when the page was built. A dated archive page keeps the counts recorded that day. We do not write a new observation time just to look current.</li>
 <li><b>Headlines:</b> headlines describe the meme and how people are reacting to it. They are not MemeStand's statements of fact about anyone. When a meme is about an allegation or controversy involving a real person, the headline says so and names the source (for example, &ldquo;per KYM&rdquo;); we don't repeat unverified claims as fact. Jokes and parody are labeled as jokes.</li>
 <li><b>What we leave out:</b> sexually explicit or nude content; hate speech and memes that demean people for race, ethnicity, national origin, religion, sex, sexual orientation, gender identity or disability; content that sexualizes, targets or identifies minors; graphic violence or gore; self-harm; harassment or doxxing of private individuals; and anything a rights holder asks us to remove. When in doubt, we leave it out.</li>
@@ -1533,7 +1620,7 @@ Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 - Cite MemeStand as "MemeStand (memestand.com) daily meme report" and link the dated archive page for a specific day.
 - Rankings change daily; the archive pages are permanent snapshots (items removed after a takedown request are marked as removed).
 - Headlines describe memes and online reactions; they are not MemeStand's statements of fact about the people involved. Where a headline mentions a claim about a person, it is attributed to its source.
-- Meme explainer pages state only what the ranked source post, the linked creator posts, or Know Your Meme document. Know Your Meme is an explainer. "View original" is the documented creator post. A "short" page means little verified information exists, not that anything was guessed. Captions are quotations from those sources; MemeStand does not invent variants.
+- Meme explainer pages state only what the ranked source post, the linked creator posts, or Know Your Meme document. Know Your Meme is an explainer. "View original" is used only when origin_confirmed is true. Captions must match a stored post text (card_text or post-card quote) tied to a direct post URL. Wording in the explainer is not a source. A "short" page means little verified information exists, not that anything was guessed.
 - Live "Why it ranks" counts come from each platform's checked evidence and carry that observation date. The Updated stamp is the page build time. Archive pages keep the counts stored for that day.
 - The memes themselves belong to their creators and owners. MemeStand is independent and not affiliated with, endorsed by or sponsored by X, TikTok, Instagram, Reddit, YouTube, Know Your Meme or any person or brand mentioned.
 """)

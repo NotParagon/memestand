@@ -309,7 +309,7 @@ Every meme that has ever ranked gets a permanent page at `https://memestand.com/
 (names ending in "memes"/"trend" are used as-is) and the meta description starts "<Meme name> meme meaning: <first sentence>".
 The page shows the thumbnail, then H2 "What does the <name> meme mean?" (explainer), H2 "Where did the <name> meme come from?"
 (origin, plus the note "The original creator of this meme hasn't been confirmed." when `origin_confirmed` is false), an optional
-H2 "Source caption" (only a `how_to_use` quotation that already appears in the sourced text), first- and last-seen dates on MemeStand, the best rank per list, links to every archive day it appeared on, sources and related memes.
+H2 "Source caption" (a `how_to_use` line only when it is the exact full card_text or post-card quote of a direct post), first- and last-seen dates on MemeStand, the best rank per list, links to every archive day it appeared on, sources and related memes.
 Related memes are the slugs in `related` only. Ranking on the same day is not treated as related. If `related` is empty, the section is omitted.
 `/memes/` is the A–Z index. Every headline on the home, period and archive pages links to the meme page. The thumbnail and the credit button use the creator's post when that post is documented; Know Your Meme is labeled "Know Your Meme explainer". The pages are also listed in `sitemap.xml` and `llms.txt` automatically.
 
@@ -324,7 +324,7 @@ Related memes are the slugs in `related` only. Ranking on the same day is not tr
   "origin": "1-2 short paragraphs: who posted it, where, when (only if verified) and how it spread",
   "origin_confirmed": true,             // true only if a source documents the first post/creator; false = unknown (page says so); null = not researched yet
   "original_url": "https://...",        // verified creator post. Optional. Hourly edits must not delete it. View original uses it. Know Your Meme stays kym_url and is an explainer.
-  "how_to_use": ["verbatim source caption"],  // 0-2 quotations already in the explainer, origin, or ranked post; [] if none. Never invent, translate, or template a punchline.
+  "how_to_use": ["exact post text"],  // 0-2 lines that equal card_text or a post-card quote, with a direct post URL. Explainer/origin quotes do not count. [] if none.
   "sources": [{"name": "The Verge: ...", "url": "..."}],   // every source the text relies on (the ranked post is added automatically)
   "related": ["other-slug"],            // optional, same meme family only. build.py does not add co-ranked memes.
   "written": "YYYY-MM-DD",
@@ -341,8 +341,8 @@ Related memes are the slugs in `related` only. Ranking on the same day is not tr
     date or URL; view counts come from the X API or the cited source and are phrased "per X's public counts" / "per KYM".
   - Write everything in your own words. Never copy KYM (or any source) sentences. Concise, factual, friendly, no fluff.
   - "What it means" is your own short, original explanation (don't copy KYM text). Explain the joke format. Do not invent example punchlines. If a source calls the original clip AI-generated, say that; do not describe it as a filmed sketch with AI remakes unless the source says that.
-  - `how_to_use` may repeat a caption only when that exact wording is already in the explainer, the origin, or the ranked post. `build.py` drops anything else, including fill-in templates (`[your country]`, bracketed swaps). Prefer `[]` over a made-up example.
-  - `original_url`, when set, is the creator's post. Do not point it at Know Your Meme, a news story, or a remix. If the creator is not documented, leave it unset and set `origin_confirmed` false. The page then says the creator is unconfirmed, and the button reads "View credited post" or "Know Your Meme explainer" instead of "View original".
+  - `how_to_use` may repeat a caption only when that caption is the complete `card_text` or post-card `quote` of a direct post (TikTok, Instagram, X, Reddit, or YouTube). A sentence in the explainer or origin, a partial overlap, and a Know Your Meme URL do not count. `build.py` drops anything else. Prefer `[]`.
+  - `original_url`, when set, is the creator's post. Do not point it at Know Your Meme, a news story, or a remix. "View original" requires `origin_confirmed: true`. `false`, `null`, or a missing value uses "View credited post" for a direct post, and "Know Your Meme explainer" when the only URL is KYM.
   - "Origin" is neutral and factual: who posted what, where, and when, per the source. **Never invent an origin.** If it isn't documented,
     say what the ranked post shows, say plainly that the original creator hasn't been confirmed, and set `"origin_confirmed": false`
     and `"status": "short"`. For a remix of an old template (Gru's Plan, Two Paths...), give the template's documented origin with its
@@ -398,8 +398,8 @@ Not legal advice. These rules keep the site's copyright, defamation and content 
 - Every item shows a credit line ("posted by u/<user> on r/<sub>", "posted by @handle on X", "image via Know Your Meme").
   rank.py fills the credit in automatically (Reddit authors from raw/reddit.json). Set `"credit"` on a candidate to override it, e.g. with the real creator.
   The outbound button is chosen at build time and is not stored in the archive snapshot:
-  "View original" only when the meme page confirms the creator and the URL is that creator's post (`original_url`, or the credited handle's direct TikTok, Instagram, X, Reddit, or YouTube URL).
-  "View credited post" when a direct post is known but the first creator is not confirmed.
+  "View original" only when `origin_confirmed` is true and the URL is that creator's direct post (`original_url`, or the credited handle's TikTok, Instagram, X, Reddit, or YouTube URL). Missing or null confirmation is not a yes.
+  "View credited post" for any other direct post.
   "Know Your Meme explainer" when the only URL is a KYM entry. Never label KYM, a news article, or an X News topic link as the original.
   The thumbnail uses the same URL as that button. Live source chips that match an `ev` URL reuse that record's count; archive pages keep the count written in that day's snapshot.
 - `"image_policy"` per candidate: `local` (default, small thumbnail), `hotlink` (show the platform's own image URL, nothing stored here; use it
