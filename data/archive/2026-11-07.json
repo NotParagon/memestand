@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T18:10-08:00",
+  "updated": "2026-11-07T19:12-08:00",
   "daily": [
     {
       "rank": 1,
@@ -262,7 +262,7 @@
         }
       ],
       "first_seen": "2026-11-06",
-      "score": 67.0,
+      "score": 67.1,
       "sources": [
         "X"
       ],
@@ -612,6 +612,34 @@
     },
     {
       "rank": 9,
+      "id": "altman-ram",
+      "title": "ALTMAN: DRAM IN HOME PCS IS 'QUITE TERRIBLE' ALLOCATION... INTERNET HIDES ITS DIMMS",
+      "image": "images/altman-ram.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/memes/comments/1xky93a/kiss_your_ram/",
+      "source_name": "Reddit r/memes /u/famsteve20015",
+      "credit": "posted by u/famsteve20015 on r/memes",
+      "also": [
+        {
+          "name": "X trending story",
+          "url": "https://x.com/i/trending/2116915793342398671"
+        },
+        {
+          "name": "r/dankmemes: DIMM sockets",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xl1v6m/point_out_to_me_the_dimm_sockets_where_they_are/"
+        }
+      ],
+      "first_seen": "2026-10-30",
+      "score": 75.9,
+      "sources": [
+        "X",
+        "Reddit"
+      ],
+      "notes": "#1 r/memes top-this-week and #4 top-this-month (Nov 5 ~11am PT). | r/memes week #1 Kiss your ram still (Nov 6)."
+    },
+    {
+      "rank": 10,
       "id": "jiren-dancing",
       "title": "JIREN DANCES TO 'I'M SO IN LOVE WITH YOU'",
       "image": "images/jiren-dancing.jpg",
@@ -638,24 +666,6 @@
         "Know Your Meme"
       ],
       "notes": "KYM cites 2.1M views; KYM Weekly Meme Roundup (Oct 30). Nov 4 reads (10am PT): TikTok @notmemetime 3.6M views; YouTube 'I'm so in love with you' 95K views."
-    },
-    {
-      "rank": 10,
-      "id": "regretamine",
-      "title": "ELON MUSK JOKES ABOUT A DRUG CALLED 'REGRETAMINE'... REPLIES RUN WILD",
-      "image": null,
-      "image_url": null,
-      "card_text": "“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”",
-      "source_url": "https://x.com/elonmusk/status/2116875604889112772",
-      "source_name": "X / @elonmusk",
-      "credit": "posted by @elonmusk on X",
-      "also": [],
-      "first_seen": "2026-11-01",
-      "score": 74.2,
-      "sources": [
-        "X"
-      ],
-      "notes": "8.26M views / 92.5K likes on @elonmusk (X API, Nov 5). Weekly/monthly."
     }
   ],
   "monthly": [
