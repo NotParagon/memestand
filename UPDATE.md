@@ -21,6 +21,7 @@ memestand/
     Homepage, footer, and the period switcher show Today and This Month only.
     /trending-memes-this-week/ is still generated every build. Do not delete it or redirect it.
     A real local or hotlinked image is the meme on the page. A post with no image stays a single text card of its own words, unless data/post_cards.json lists an owner-approved post card for that slug. Do not draw a fake screenshot. The headline is not repeated under the picture or the text card. Rank, history notes, credit, and source links stay.
+    Under the picture, the headline is title case (a quotation that is already mixed case is not recased) and the stored explainer's first sentence leads. Rank movement stays visible but quieter. The creator credit and source links stay in view. View counts and observation dates sit in the closed "Sources & details" disclosure. "View original", "View credited post", and "Know Your Meme explainer" keep those exact labels. Do not move the AI-generated disclosure or the unconfirmed-creator note into that disclosure.
   archive/YYYY-MM-DD.html    generated "Daily Meme Report" for each day; archive/index.html lists them
   about.html                 generated about + ranking-method page
   feed.xml sitemap.xml robots.txt llms.txt   generated each build

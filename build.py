@@ -120,18 +120,39 @@ def upd_html():
     )
 
 
+def _tc_plain(w, i):
+    core = re.sub(r"^[^\w]+|[^\w']+$", "", w)
+    if core.upper() in SPECIAL: return w.replace(core, SPECIAL[core.upper()])
+    if core.upper().endswith("'S") and core.upper()[:-2] in ACRONYMS: return w[:-1] + "s"
+    if core.upper() in ACRONYMS or re.search(r"\d", core): return w
+    lw = w.lower()
+    if i and core.lower() in SMALL: return lw
+    return re.sub(r"[a-z]", lambda m: m.group().upper(), lw, count=1)
+
+def _tc_word(w, i):
+    """Keep an acronym at the start of a hyphenated word: AI-GENERATED -> AI-Generated."""
+    bits = w.split("-")
+    if len(bits) > 1:
+        cores = [re.sub(r"^[^\w]+|[^\w']+$", "", b).upper() for b in bits]
+        if any(c in ACRONYMS or c in SPECIAL for c in cores):
+            return "-".join(_tc_plain(b, i if n == 0 else 1) for n, b in enumerate(bits))
+    return _tc_plain(w, i)
+
 def tc(s):
     """Headline in ALL CAPS -> readable Title Case for titles/descriptions/alt text."""
-    out = []
-    for i, w in enumerate((s or "").split()):
-        core = re.sub(r"^[^\w]+|[^\w']+$", "", w)
-        if core.upper() in SPECIAL: out.append(w.replace(core, SPECIAL[core.upper()])); continue
-        if core.upper().endswith("'S") and core.upper()[:-2] in ACRONYMS: out.append(w[:-1] + "s"); continue
-        if core.upper() in ACRONYMS or re.search(r"\d", core): out.append(w); continue
-        lw = w.lower()
-        if i and core.lower() in SMALL: out.append(lw); continue
-        out.append(re.sub(r"[a-z]", lambda m: m.group().upper(), lw, count=1))
-    return " ".join(out)
+    return " ".join(_tc_word(w, i) for i, w in enumerate((s or "").split()))
+
+def display_title(s):
+    """Sensible casing for a stored headline. A line that is already written in sentence
+    case is left alone, so a mixed-case quotation is not recased. A few lowercase letters
+    inside a token like 2000s do not keep the rest of an ALL CAPS headline shouting."""
+    s = str(s or "")
+    if not s or s == REMOVED:
+        return s
+    letters = [c for c in s if c.isalpha()]
+    if letters and sum(c.islower() for c in letters) / len(letters) >= 0.2:
+        return s
+    return tc(s)
 
 def uses_post_card(m):
     """True when the picture is an approved attributed post card, not a photo or a hotlink.
@@ -186,7 +207,7 @@ THEME_TOGGLE = ('<button class="tt" type="button" aria-label="Toggle dark mode" 
     "document.querySelectorAll('meta[name=theme-color]').forEach(function(m){m.content=n==='dark'?'#121212':'#ffffff'});});})();</script>")
 
 CSS = """
- :root{--bg:#fff;--fg:#000;--fg2:#222;--muted:#444;--line:#bbb;--rule:#000;--card:#fff;--thumb:#f3f3f3;--bar:#000;--barfg:#fff;--red:#c00;--redbg:#c00;--link:#00c;--green:#080;color-scheme:light}
+ :root{--bg:#fff;--fg:#000;--fg2:#222;--muted:#444;--line:#bbb;--rule:#000;--card:#fff;--thumb:#f3f3f3;--bar:#000;--barfg:#fff;--red:#c00;--redbg:#c00;--link:#00c;--green:#080;--read:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Liberation Serif","Noto Serif","Times New Roman",serif;color-scheme:light}
  @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121212;--fg:#ececec;--fg2:#d6d6d6;--muted:#b4b4b4;--line:#444;--rule:#8a8a8a;--card:#1c1c1c;--thumb:#262626;--bar:#2a2a2a;--barfg:#fff;--red:#ff5c5c;--redbg:#c00;--link:#8fb4ff;--green:#3fb950;color-scheme:dark}}
  :root[data-theme=dark]{--bg:#121212;--fg:#ececec;--fg2:#d6d6d6;--muted:#b4b4b4;--line:#444;--rule:#8a8a8a;--card:#1c1c1c;--thumb:#262626;--bar:#2a2a2a;--barfg:#fff;--red:#ff5c5c;--redbg:#c00;--link:#8fb4ff;--green:#3fb950;color-scheme:dark}
  .tt{position:absolute;top:4px;right:0;width:34px;height:34px;padding:0;margin:0;border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--fg);font:18px/32px sans-serif;text-align:center;cursor:pointer}
@@ -208,8 +229,8 @@ CSS = """
  .top img{box-sizing:content-box;max-width:calc(100% - 2px);max-height:520px;border:1px solid var(--rule);object-fit:contain}
  .top .card{min-height:240px;font-size:28px}
  .top h2{margin:10px 0 0;text-decoration:none}
- .top .hl a{color:var(--red);font-size:22px;font-weight:bold;line-height:1.2;text-transform:uppercase}
- .top .hl.clip a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ .top .hl a{color:var(--red);font-size:26px;font-weight:650;line-height:1.3}
+ .top .hl.clip a,.hl.clip a{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
  .top .kick{display:block;font-size:13px;letter-spacing:2px;color:var(--red);margin-bottom:4px}
  .top .meta{margin-top:6px}
  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:10px}
@@ -231,8 +252,7 @@ CSS = """
  .top img.postcard{width:100%;height:auto;max-height:640px;object-fit:contain;background:var(--card)}
  .one .thumb{max-height:420px}
  .card{display:flex;align-items:center;justify-content:center;text-align:center;min-height:120px;padding:14px;border:2px solid var(--rule);font-weight:bold;font-size:17px;background:var(--card)}
- .hl{font-size:16px;font-weight:bold;line-height:1.25;text-transform:uppercase}
- .hl.clip a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ .hl{font-size:18px;font-weight:650;line-height:1.35}
  .textmeme{text-transform:none}
  .textmeme .card{text-transform:none;font-size:17px;line-height:1.35}
  .top .textmeme .card{font-size:26px;line-height:1.25;min-height:140px}
@@ -251,6 +271,38 @@ CSS = """
  nav.foot{margin-bottom:6px;font-size:12px} nav.foot a{color:var(--link);margin:0 6px;text-decoration:underline} footer p{margin:6px auto;max-width:860px}
  .crumbs{font-size:12px;margin:10px auto 0;max-width:760px} .crumbs a{color:var(--link);text-decoration:underline}
  .prose h1{font-size:24px;line-height:1.25;margin:10px 0 12px} .prose h3{margin:14px 0 6px} .prose .thumb{max-height:420px;max-width:400px} .prose .thumb.postcard{max-width:520px;max-height:none} .prose .card{max-width:400px}
+ .copy{font-family:var(--read);min-width:0;color:var(--fg)}
+ .copy .hl,.copy .dek,.copy .credit,.copy .meta,.copy .go,.copy .fold{font-family:var(--read)}
+ .copy .hl a{color:var(--fg);overflow-wrap:break-word}
+ .dek{margin:8px 0 0;max-width:62ch;font-size:17px;line-height:1.55;color:var(--fg2)}
+ .copy .mv{margin:8px 0 0;font-size:13px;line-height:1.45;letter-spacing:0;font-weight:400;color:var(--muted)}
+ .copy .mv span+span::before{content:"\\00b7";margin-right:8px;color:var(--muted)}
+ .copy .credit{margin:12px 0 0;font-size:15px;line-height:1.5;color:var(--fg2)}
+ .copy .rights{color:var(--muted)}
+ .copy .go{margin:4px 0 0;font-size:15px;line-height:1.4}
+ .copy .go a{color:var(--link);font-weight:650;text-decoration:underline;text-underline-offset:2px}
+ .copy .meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-top:10px;font-size:15px;line-height:1.45}
+ .copy .src{color:var(--link);margin:0;min-width:0;max-width:100%;text-decoration:underline;text-underline-offset:2px;overflow-wrap:anywhere}
+ .fold{margin-top:4px;min-width:0;max-width:100%}
+ .fold summary{cursor:pointer;color:var(--link);font-size:15px;line-height:1.4;width:fit-content;max-width:100%;overflow-wrap:anywhere;list-style:none}
+ .fold summary::-webkit-details-marker{display:none}
+ .fold summary::before{content:"\\25B8\\00a0"}
+ .fold[open] summary::before{content:"\\25BE\\00a0"}
+ .fold summary:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+ .foldbody{margin-top:8px;color:var(--fg2);font-size:15px;line-height:1.55;overflow-wrap:anywhere}
+ .foldbody p{margin:0 0 8px}
+ .srcrow{display:flex;flex-wrap:wrap;gap:6px 14px;min-width:0}
+ .top .copy{text-align:center}
+ .top .copy .hl a{color:var(--red)}
+ .top .dek{margin-left:auto;margin-right:auto}
+ .top .copy .meta{justify-content:center}
+ .top .copy .fold summary{margin-left:auto;margin-right:auto}
+ .top .kick{font-family:"Courier New",Courier,monospace}
+ .explainer{font-family:var(--read);font-size:18px;line-height:1.65}
+ .explainer h1,.explainer h2,.explainer h3,.explainer p,.explainer li{font-family:var(--read)}
+ .explainer h1{font-size:1.75rem;line-height:1.28;font-weight:650}
+ .explainer h2{background:none;color:var(--fg);letter-spacing:0;text-align:left;text-decoration:none;margin:1.35em 0 .4em;padding:0;font-size:1.28rem;font-weight:650;line-height:1.3}
+ .explainer h3{font-size:1.05rem;font-weight:650;color:var(--fg2);letter-spacing:0}
  .prose .note{font-size:12px;color:var(--muted)} .az{text-align:center;font-size:14px;margin:8px 0} .az a{color:var(--link);margin:0 4px;text-decoration:underline}
  .one h2[id]{position:sticky;top:0;z-index:5;text-align:left;text-decoration:none;margin:28px 0 14px;padding:8px 12px;background:var(--bar);color:var(--barfg);border-bottom:5px solid var(--redbg)}
  footer{border-top:3px double var(--rule);margin-top:28px;padding-top:10px;font-size:11px;text-align:center;color:var(--muted)}
@@ -261,7 +313,7 @@ CSS = """
   .top{margin:14px auto 26px;padding-bottom:20px}
   .top img{max-height:60vh}
   .top .card{min-height:0;font-size:20px;padding:18px 14px}
-  .top .hl a{font-size:20px;line-height:1.2}
+  .top .hl a{font-size:24px;line-height:1.3}
   .top .textmeme .card{font-size:22px;min-height:0}
   .grid{display:block;margin-top:0}
   .grid .col,.grid .col:first-child,.grid .col:last-child{padding:0}
@@ -272,19 +324,23 @@ CSS = """
   li{margin:0 0 26px;padding:12px}
   .thumb,.one .thumb{max-height:380px}
   .card{font-size:17px}
-  .hl{font-size:18px;line-height:1.3}
-  .meta,.credit,.mv{font-size:13px;line-height:1.45}
-  .why{font-size:14px;line-height:1.45}
+  .hl,.copy .hl{font-size:19px;line-height:1.35}
+  .dek{font-size:17px}
+  .copy .credit,.foldbody,.copy .meta{font-size:16px;line-height:1.5}
+  .copy .mv{font-size:13px}
+  .srcrow{flex-direction:row;flex-wrap:wrap;align-items:center}
+  .why{font-size:16px;line-height:1.5}
   .hl a{display:inline}
   .hl a.card{display:flex}
   li h3.hl{min-height:44px}
-  .meta{display:flex;flex-wrap:wrap;align-items:center;column-gap:12px;margin-top:4px}
-  .src{display:inline-flex;align-items:center;min-height:44px;margin-right:0}
-  .credit a{display:flex;align-items:center;width:fit-content;min-height:44px}
-  .top .meta{justify-content:center} .top .credit a{margin:0 auto}
+  .copy .meta{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:14px;row-gap:0}
+  .copy .src{display:inline-flex;align-items:center;min-height:44px;width:auto;max-width:100%;padding:6px 0;white-space:normal}
+  .copy .go a{display:inline-flex;align-items:center;min-height:44px}
+  .fold summary{display:inline-flex;align-items:center;min-height:44px;padding:8px 0}
+  .top .copy .meta{align-items:center}
   .pager a,.more a,.crumbs a,.az a,nav.foot a{display:inline-block;min-height:44px;line-height:44px;padding:0 4px}
   nav.foot{font-size:13px;line-height:1.2} footer{font-size:12px}
-  .prose{font-size:16px} .prose h1{font-size:22px} .prose .thumb,.prose .card{max-width:100%}
+  .prose{font-size:16px} .explainer{font-size:18px} .prose h1{font-size:22px} .prose .thumb,.prose .card{max-width:100%}
   .prose li{margin-bottom:10px} .prose li a{display:inline-block;padding:10px 0}
  }
 """
@@ -684,23 +740,96 @@ def caption_records_for(m, info):
             posts.append(rec)
     return posts
 
+_COUNT_TAIL = re.compile(
+    r"\s*\((?:~?\d[\d.,]*\s*[KMBkmb]?)\s+(?:views|likes|page views)\)\s*$", re.I)
+
+def short_source_label(name):
+    """Drop a trailing view/like count from a link label. Other parentheses stay."""
+    name = name or ""
+    short = _COUNT_TAIL.sub("", name).strip()
+    return short or name
+
+def human_list(items):
+    items = [str(x) for x in items if x]
+    if len(items) <= 1:
+        return ", ".join(items)
+    if len(items) == 2:
+        return f"{items[0]} and {items[1]}"
+    return ", ".join(items[:-1]) + ", and " + items[-1]
+
+def pretty_day(value):
+    try:
+        return fmt_long(datetime.date.fromisoformat(str(value)[:10]))
+    except Exception:
+        return str(value or "")
+
+def card_dek(m):
+    """First sentence of the stored explainer. Not a new joke, and not the title repeated."""
+    page = page_of(m)
+    if not page or not page.get("explainer"):
+        return ""
+    text = page.get("blurb") or ""
+    if text.startswith("Ranked by MemeStand:"):
+        return ""
+    return text
+
+def source_entries(m, live_evidence):
+    """Unique outbound links. The same URL is not listed twice when source and also match."""
+    out, seen = [], set()
+    def add(url, name):
+        if not url or url in seen:
+            return
+        seen.add(url)
+        out.append((url, name or "Source"))
+    src_name = "Know Your Meme explainer" if is_kym_url(m.get("source_url")) else (m.get("source_name") or "Source")
+    add(m.get("source_url"), src_name)
+    for a in m.get("also") or []:
+        add(a.get("url"), synced_also_name(m, a, live_evidence))
+    return out
+
+def link_row(entries, short):
+    parts = []
+    for url, name in entries:
+        label = short_source_label(name) if short else name
+        parts.append(f'<a class="src" href="{e(url)}" target="_blank" rel="noopener">{e(label)}</a>')
+    return "".join(parts)
+
 def credit(m):
     c = m.get("credit") or f'via {m.get("source_name", "the source")}'
+    if c[:1].islower():
+        c = c[:1].upper() + c[1:]
     card = " Shown as an attributed post card of that post, not a screenshot." if uses_post_card(m) else ""
     link = primary_link(m)
     href = link["url"] or m.get("source_url") or ""
-    anchor = f'<a href="{e(href)}" target="_blank" rel="noopener">{e(link["label"])}</a>' if href else ""
-    return (f'<div class="credit">Credit: {e(c)}.{card} &copy; its owner; shown in small form for ranking and commentary. '
-            f'{anchor}</div>')
+    go = (f'\n  <p class="go"><a href="{e(href)}" target="_blank" rel="noopener">{e(link["label"])}</a></p>'
+          if href else "")
+    return (f'<p class="credit"><span class="who">{e(c)}.{card}</span> '
+            f'<span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>{go}')
 
-def sources(m, lead=" ", live_evidence=False):
-    also = " ".join(
-        f'<a class="src" href="{e(a["url"])}" target="_blank" rel="noopener">{e(synced_also_name(m, a, live_evidence))}</a>'
-        for a in m.get("also", []))
-    seen = m.get("sources") or []           # platforms with confirmed evidence (tools/rank.py sources())
-    seen_html = f'<span class="fs">Seen on {e(", ".join(seen))}:</span> ' if len(seen) > 1 else ""
-    src_name = "Know Your Meme explainer" if is_kym_url(m.get("source_url")) else m.get("source_name")
-    return f'{seen_html}<a class="src" href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(src_name)}</a>{lead}{also}'
+def details_block(m, live_evidence):
+    """Counts, observation dates, and full source labels. Closed until the reader asks."""
+    entries = source_entries(m, live_evidence)
+    parts = []
+    bits = []
+    seen = [s for s in (m.get("sources") or []) if s]
+    if len(seen) > 1:
+        bits.append("Seen on " + e(human_list(seen)))
+    if m.get("first_seen"):
+        fs = str(m["first_seen"])
+        bits.append(f'First seen online <time datetime="{e(fs[:10])}">{e(pretty_day(fs))}</time>')
+    if bits:
+        parts.append("<p>" + ". ".join(bits) + ".</p>")
+    if live_evidence:
+        sentence = why_text(m, True)
+        if sentence:
+            parts.append(f"<p>{e(sentence)}</p>")
+    full = link_row(entries, short=False)
+    if full:
+        parts.append(f'<p class="srcrow">{full}</p>')
+    if not parts:
+        return ""
+    return ('<details class="fold"><summary>Sources &amp; details</summary>'
+            f'<div class="foldbody">{"".join(parts)}</div></details>')
 
 def meme_href(m, base):
     """Relative link to the meme's own page, or None (removed / unknown)."""
@@ -709,8 +838,9 @@ def meme_href(m, base):
 
 def hl_link(m, base):
     h = meme_href(m, base)
-    if h: return f'<a href="{e(h)}">{e(m["title"])}</a>'
-    return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m["title"])}</a>'
+    title = display_title(m.get("title"))
+    if h: return f'<a href="{e(h)}">{e(title)}</a>'
+    return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(title)}</a>'
 
 def history_html(m, day, live):
     """Subtle daily-list note. Empty for weekly/monthly, removed rows, and thin history."""
@@ -724,10 +854,9 @@ def history_html(m, day, live):
     return f'\n  <div class="mv">{spans}</div>'
 
 def item(m, base, label, notes=False, hist="", live_evidence=False):
+    del notes  # checked figures live in Sources & details; this flag no longer adds a second line
     if m.get("removed"):
         return f'<li><h3 class="hl"><span class="rk">{m["rank"]}.</span> {e(REMOVED)}</h3><div class="meta"><a class="src" href="{base}dmca.html">Takedown policy</a></div></li>'
-    body = why_text(m, live_evidence)
-    why = f'\n  <div class="why">Why it ranks: {e(body)}</div>' if notes and body else ""
     pic = thumb(m, base, label)
     if pic:
         # The picture is the meme. The full headline stays in the link for search and screen readers, clamped on screen.
@@ -735,11 +864,21 @@ def item(m, base, label, notes=False, hist="", live_evidence=False):
     else:
         # A text post has no photo. Show its words once, not again as a second headline.
         head = f'<h3 class="hl textmeme"><span class="rk">{m["rank"]}.</span> {text_face(m, base)}</h3>'
+    dek = ""
+    if live_evidence:
+        text = card_dek(m)
+        if text:
+            dek = f'\n  <p class="dek">{e(text)}</p>'
+    links = link_row(source_entries(m, live_evidence), short=True)
+    meta = f'\n  <div class="meta">{links}</div>' if links else ""
+    fold = details_block(m, live_evidence)
+    fold = f'\n  {fold}' if fold else ""
     return f'''<li>
   {pic}
-  {head}{hist}
-  <div class="meta">{sources(m, live_evidence=live_evidence)}<span class="fs">since {e(m["first_seen"])}</span></div>
-  {credit(m)}{why}
+  <div class="copy">
+  {head}{dek}{hist}
+  {credit(m)}{meta}{fold}
+  </div>
 </li>'''
 
 def column(d, p, base, link=True, notes=False, day=None, live=False, live_evidence=False):
@@ -759,11 +898,21 @@ def top_story(d, base, kicker="TODAY'S LEAD MEME", day=None, live_evidence=False
         head = f'<h2 class="hl clip"><span class="kick">{kicker}</span>{hl_link(t, base)}</h2>'
     else:
         head = f'<h2 class="hl textmeme"><span class="kick">{kicker}</span>{text_face(m=t, base=base, cls="card topimg")}</h2>'
+    dek = ""
+    if live_evidence:
+        text = card_dek(t)
+        if text:
+            dek = f'\n  <p class="dek">{e(text)}</p>'
+    links = link_row(source_entries(t, live_evidence), short=True)
+    meta = f'\n  <div class="meta">{links}</div>' if links else ""
+    fold = details_block(t, live_evidence)
+    fold = f'\n  {fold}' if fold else ""
     return f'''<div class="top">
   {pic}
-  {head}
-  <div class="meta">{sources(t, "", live_evidence=live_evidence)}</div>
-  {credit(t)}
+  <div class="copy">
+  {head}{dek}
+  {credit(t)}{meta}{fold}
+  </div>
 </div>'''
 
 def og_for(d, day=None):
@@ -1023,12 +1172,16 @@ def build_meme_page(sl):
     uses = sourced_captions(info["how_to_use"], source_posts=records)
     use_html = ("<h2>Source caption</h2><ul>" + "".join(f"<li>&ldquo;{e(x)}&rdquo;</li>" for x in uses) + "</ul>") if uses else ""
     days, fs = info["days"], m.get("first_seen")
-    stats = [f'<li>First seen on MemeStand: <a href="{base}archive/{days[0]}.html">{fmt_long(first_dd)}</a></li>',
-             f'<li>Last seen on MemeStand: <a href="{base}archive/{days[-1]}.html">{fmt_long(datetime.date.fromisoformat(days[-1]))}</a></li>',
-             f'<li>Best rank: {best_rank_text(info, base)}</li>']
-    if fs: stats.append(f"<li>Ranked post or trend first seen online: {e(fs)}</li>")
+    last_dd = datetime.date.fromisoformat(days[-1])
+    stat_bits = [
+        f'First seen on MemeStand <a href="{base}archive/{days[0]}.html">{fmt_long(first_dd)}</a>. '
+        f'Last seen on MemeStand <a href="{base}archive/{days[-1]}.html">{fmt_long(last_dd)}</a>. '
+        f'Best rank: {best_rank_text(info, base)}.']
+    if fs:
+        stat_bits.append(f"Ranked post or trend first seen online: {e(pretty_day(fs))}.")
     evidence = why_text(m, True)
-    if evidence: stats.append(f"<li>Latest evidence on file: {e(evidence)}</li>")
+    if evidence:
+        stat_bits.append(f"Latest evidence on file: {e(evidence)}")
     day_links = "".join(f'<li><a href="{base}archive/{d}.html">Daily Meme Report, {fmt_long(datetime.date.fromisoformat(d))}</a></li>' for d in reversed(days))
     srcs, seen_u = [], set()
     def add_src(nm, u):
@@ -1046,6 +1199,11 @@ def build_meme_page(sl):
     for a in m.get("also", []): add_src(synced_also_name(m, a, True), a["url"])
     if info["kym_url"]: add_src("Know Your Meme explainer", info["kym_url"])
     src_html = "".join(f'<li><a href="{e(u)}" target="_blank" rel="noopener">{e(nm)}</a></li>' for nm, u in srcs)
+    short_links = "".join(
+        f'<a class="src" href="{e(u)}" target="_blank" rel="noopener">{e(short_source_label(nm))}</a>' for nm, u in srcs)
+    stat_html = "".join(f"<p>{bit}</p>" for bit in stat_bits)
+    detail_fold = ('<details class="fold"><summary>Sources &amp; details</summary>'
+                   f'<div class="foldbody">{stat_html}<ul>{src_html}</ul></div></details>')
     rel = related_for(sl)
     rel_html = ("<h2>Related memes</h2><ul>" + "".join(
         f'<li><a href="{base}meme/{o}/">{e(meme_phrase(PAGES[o]["name"]))}</a>: {e(PAGES[o]["blurb"])}</li>' for o in rel) + "</ul>") if rel else ""
@@ -1070,23 +1228,23 @@ def build_meme_page(sl):
     body = f"""
 {mast(base, "MEME EXPLAINED -- WHAT IT MEANS AND WHERE IT CAME FROM", h1=False)}
 <nav class="crumbs" aria-label="Breadcrumb"><a href="{home_href(base)}">MemeStand</a> &rsaquo; <a href="{base}memes/">Memes A&ndash;Z</a> &rsaquo; <span aria-current="page">{e(name)}</span></nav>
-<main class="prose">
+<main class="prose explainer">
 <article>
 <h1>{e(h1)}</h1>
 {thumb(m, base, "")}
+<div class="copy">
 {credit(m)}
+<div class="meta">{short_links}</div>
+</div>
 <h2>{e(q_mean)}</h2>
 {means}
 <h2>{e(q_orig)}</h2>
 {origin}
 {unconf}{short}
 {use_html}
-<h2>{e(name)} on MemeStand</h2>
-<ul>{"".join(stats)}</ul>
+{detail_fold}
 <h3>Daily meme reports featuring it</h3>
 <ul>{day_links}</ul>
-<h2>Sources</h2>
-<ul>{src_html}</ul>
 {rel_html}
 <p class="note">Written {e(info["written"] or days[0])}{"; last reviewed " + e(info["modified"][:10]) if info["modified"][:10] != (info["written"] or days[0]) and info["explainer"] else ""} from the sources above. Explanations describe memes and online reactions; they are not
 MemeStand's statements of fact about the people in them. Corrections or removals: {contact_html()}. Rights holders: see <a href="{base}dmca.html">DMCA / Takedowns</a>.</p>
@@ -1276,7 +1434,7 @@ def build_archive_index(snaps):
     title = "Daily Meme Report Archive — Top Memes by Date | MemeStand"
     desc = "Every MemeStand daily meme report: the #1 meme and top 10 memes of each day, week and month, by date."
     rows = "".join(f'<li><h3 class="hl"><a href="{day}.html">{fmt_long(datetime.date.fromisoformat(day)).upper()}</a></h3>'
-                   f'<div class="meta">#1: {e(d["daily"][0]["title"])}</div></li>' for day, d in reversed(snaps))
+                   f'<div class="meta">#1: {e(display_title(d["daily"][0]["title"]))}</div></li>' for day, d in reversed(snaps))
     il = {"@type": "ItemList", "@id": f"{url}#reports", "name": "MemeStand daily meme reports", "numberOfItems": len(snaps),
           "itemListElement": [{"@type": "ListItem", "position": i, "url": f"{SITE}/archive/{day}.html",
                                "name": f"Daily Meme Report, {fmt_long(datetime.date.fromisoformat(day))}"}
@@ -1327,14 +1485,14 @@ their numbers come from public post pages we open (usually posts that Know Your 
 Meme reports; we don't see the whole platform, so their coverage is partial.</p>
 <p>Windows: <b>today</b> = took off in the last ~36 hours; <b>this week</b> = active in the last 7 days; <b>this month</b> = active in the last 30 days.
 Engagement numbers come from the platforms' public pages and APIs and from Know Your Meme as they stood when we checked them; they can change or be wrong.
-On a live list, the &ldquo;Why it ranks&rdquo; line repeats those checked figures and the date of each check. That date is not the page's Updated time.</p>
+On a live list, Sources &amp; details repeats those checked figures and the date of each check. That date is not the page's Updated time.</p>
 <p>On the daily top 10, a short note under the headline is computed from earlier daily archive files and the meme's stable page: <b>New today</b> means it is on today's list and was not on yesterday's; <b>First time</b> is added only when no earlier daily archive contains it and the archive has no missing day; <b>Up</b>, <b>Down</b>, or <b>Unchanged since yesterday</b> is the rank change; <b>N days at #1</b> counts a consecutive run of at least two Pacific days. An hourly refresh does not add a day. If a day's archive is missing, that note is left off. The weekly and monthly lists do not show these notes.</p>
 
 <h2 id="policy">Content and editorial policy</h2>
 <ul>
 <li><b>What we pick:</b> memes with public, checkable evidence of spread. We never invent memes, numbers, links, or punchlines. A caption on an explainer is a quotation from the source, or it is left off.</li>
 <li><b>Credit:</b> every item names who posted it when that is known. &ldquo;View original&rdquo; is used only when the meme page's origin is explicitly confirmed. Otherwise a direct post is &ldquo;View credited post&rdquo;. An unresearched page is not labeled the original. Know Your Meme is an explainer, not the original. Thumbnails are small (400&nbsp;px max, metadata stripped) and link to that same post.</li>
-<li><b>Counts and dates:</b> on the live lists, each platform's views or likes are the figure stored for that check, with that check's date. The &ldquo;Updated&rdquo; line is only when the page was built. A dated archive page keeps the counts recorded that day. We do not write a new observation time just to look current.</li>
+<li><b>Counts and dates:</b> on the live lists, each platform's views or likes are the figure stored for that check, with that check's date, under Sources &amp; details. The &ldquo;Updated&rdquo; line is only when the page was built. A dated archive page keeps the counts recorded that day. We do not write a new observation time just to look current.</li>
 <li><b>Headlines:</b> headlines describe the meme and how people are reacting to it. They are not MemeStand's statements of fact about anyone. When a meme is about an allegation or controversy involving a real person, the headline says so and names the source (for example, &ldquo;per KYM&rdquo;); we don't repeat unverified claims as fact. Jokes and parody are labeled as jokes.</li>
 <li><b>What we leave out:</b> sexually explicit or nude content; hate speech and memes that demean people for race, ethnicity, national origin, religion, sex, sexual orientation, gender identity or disability; content that sexualizes, targets or identifies minors; graphic violence or gore; self-harm; harassment or doxxing of private individuals; and anything a rights holder asks us to remove. When in doubt, we leave it out.</li>
 <li><b>Corrections and removals:</b> if a headline is wrong or unfair, or you want your content removed, {contact_html()}. Copyright notices follow our <a href="dmca.html">DMCA policy</a>.</li>
@@ -1621,7 +1779,7 @@ Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 - Rankings change daily; the archive pages are permanent snapshots (items removed after a takedown request are marked as removed).
 - Headlines describe memes and online reactions; they are not MemeStand's statements of fact about the people involved. Where a headline mentions a claim about a person, it is attributed to its source.
 - Meme explainer pages state only what the ranked source post, the linked creator posts, or Know Your Meme document. Know Your Meme is an explainer. "View original" is used only when origin_confirmed is true. Captions must match a stored post text (card_text or post-card quote) tied to a direct post URL. Wording in the explainer is not a source. A "short" page means little verified information exists, not that anything was guessed.
-- Live "Why it ranks" counts come from each platform's checked evidence and carry that observation date. The Updated stamp is the page build time. Archive pages keep the counts stored for that day.
+- Live "Sources & details" counts come from each platform's checked evidence and carry that observation date. The Updated stamp is the page build time. Archive pages keep the counts stored for that day.
 - The memes themselves belong to their creators and owners. MemeStand is independent and not affiliated with, endorsed by or sponsored by X, TikTok, Instagram, Reddit, YouTube, Know Your Meme or any person or brand mentioned.
 """)
 
