@@ -207,9 +207,9 @@ THEME_TOGGLE = ('<button class="tt" type="button" aria-label="Toggle dark mode" 
     "document.querySelectorAll('meta[name=theme-color]').forEach(function(m){m.content=n==='dark'?'#121212':'#ffffff'});});})();</script>")
 
 CSS = """
- :root{--bg:#fff;--fg:#000;--fg2:#222;--muted:#444;--line:#bbb;--rule:#000;--card:#fff;--thumb:#f3f3f3;--bar:#000;--barfg:#fff;--red:#c00;--redbg:#c00;--link:#00c;--green:#080;--read:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Liberation Serif","Noto Serif","Times New Roman",serif;color-scheme:light}
- @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121212;--fg:#ececec;--fg2:#d6d6d6;--muted:#b4b4b4;--line:#444;--rule:#8a8a8a;--card:#1c1c1c;--thumb:#262626;--bar:#2a2a2a;--barfg:#fff;--red:#ff5c5c;--redbg:#c00;--link:#8fb4ff;--green:#3fb950;color-scheme:dark}}
- :root[data-theme=dark]{--bg:#121212;--fg:#ececec;--fg2:#d6d6d6;--muted:#b4b4b4;--line:#444;--rule:#8a8a8a;--card:#1c1c1c;--thumb:#262626;--bar:#2a2a2a;--barfg:#fff;--red:#ff5c5c;--redbg:#c00;--link:#8fb4ff;--green:#3fb950;color-scheme:dark}
+ :root{--bg:#fff;--fg:#000;--fg2:#222;--muted:#444;--line:#bbb;--hair:#e0e0e0;--rule:#000;--card:#fff;--thumb:#f3f3f3;--bar:#000;--barfg:#fff;--red:#c00;--redbg:#c00;--link:#00c;--green:#080;--read:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Liberation Serif","Noto Serif","Times New Roman",serif;color-scheme:light}
+ @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121212;--fg:#ececec;--fg2:#d6d6d6;--muted:#b4b4b4;--line:#444;--hair:#3a3a3a;--rule:#8a8a8a;--card:#1c1c1c;--thumb:#262626;--bar:#2a2a2a;--barfg:#fff;--red:#ff5c5c;--redbg:#c00;--link:#8fb4ff;--green:#3fb950;color-scheme:dark}}
+ :root[data-theme=dark]{--bg:#121212;--fg:#ececec;--fg2:#d6d6d6;--muted:#b4b4b4;--line:#444;--hair:#3a3a3a;--rule:#8a8a8a;--card:#1c1c1c;--thumb:#262626;--bar:#2a2a2a;--barfg:#fff;--red:#ff5c5c;--redbg:#c00;--link:#8fb4ff;--green:#3fb950;color-scheme:dark}
  .tt{position:absolute;top:4px;right:0;width:34px;height:34px;padding:0;margin:0;border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--fg);font:18px/32px sans-serif;text-align:center;cursor:pointer}
  .tt::before{content:"\\263E"} :root[data-theme=dark] .tt::before{content:"\\2600"}
  @media(prefers-color-scheme:dark){:root:not([data-theme=light]) .tt::before{content:"\\2600"}}
@@ -275,15 +275,17 @@ CSS = """
  .copy .hl,.copy .dek,.copy .credit,.copy .meta,.copy .go,.copy .fold{font-family:var(--read)}
  .copy .hl a{color:var(--fg);overflow-wrap:break-word}
  .dek{margin:8px 0 0;max-width:62ch;font-size:17px;line-height:1.55;color:var(--fg2)}
- .copy .mv{margin:8px 0 0;font-size:13px;line-height:1.45;letter-spacing:0;font-weight:400;color:var(--muted)}
+ .copy .zone+.zone{margin-top:12px;padding-top:11px;border-top:1px solid var(--hair)}
+ .copy .mv{margin:0;font-size:13px;line-height:1.45;letter-spacing:0;font-weight:400;color:var(--muted)}
  .copy .mv span+span::before{content:"\\00b7";margin-right:8px;color:var(--muted)}
- .copy .credit{margin:12px 0 0;font-size:15px;line-height:1.5;color:var(--fg2)}
+ .copy .credit{margin:0;font-size:15px;line-height:1.5;color:var(--fg2)}
  .copy .rights{color:var(--muted)}
- .copy .go{margin:4px 0 0;font-size:15px;line-height:1.4}
+ .copy .go{margin:2px 0 0;font-size:15px;line-height:1.4}
  .copy .go a{color:var(--link);font-weight:650;text-decoration:underline;text-underline-offset:2px}
- .copy .meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-top:10px;font-size:15px;line-height:1.45}
+ .copy .meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:0;font-size:14px;line-height:1.45}
  .copy .src{color:var(--link);margin:0;min-width:0;max-width:100%;text-decoration:underline;text-underline-offset:2px;overflow-wrap:anywhere}
- .fold{margin-top:4px;min-width:0;max-width:100%}
+ .fold{margin:0;min-width:0;max-width:100%}
+ .explainer .zone-more{margin-top:22px;padding-top:14px;border-top:1px solid var(--hair)}
  .fold summary{cursor:pointer;color:var(--link);font-size:15px;line-height:1.4;width:fit-content;max-width:100%;overflow-wrap:anywhere;list-style:none}
  .fold summary::-webkit-details-marker{display:none}
  .fold summary::before{content:"\\25B8\\00a0"}
@@ -333,9 +335,9 @@ CSS = """
   .hl a{display:inline}
   .hl a.card{display:flex}
   li h3.hl{min-height:44px}
-  .copy .meta{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:14px;row-gap:0}
-  .copy .src{display:inline-flex;align-items:center;min-height:44px;width:auto;max-width:100%;padding:6px 0;white-space:normal}
+  .copy .meta{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:12px;row-gap:0}
   .copy .go a{display:inline-flex;align-items:center;min-height:44px}
+  .copy .zone-src .src{display:inline;min-height:0;padding:2px 0}
   .fold summary{display:inline-flex;align-items:center;min-height:44px;padding:8px 0}
   .top .copy .meta{align-items:center}
   .pager a,.more a,.crumbs a,.az a,nav.foot a{display:inline-block;min-height:44px;line-height:44px;padding:0 4px}
@@ -794,6 +796,27 @@ def link_row(entries, short):
         parts.append(f'<a class="src" href="{e(url)}" target="_blank" rel="noopener">{e(label)}</a>')
     return "".join(parts)
 
+def _url_key(url):
+    return (url or "").split("?")[0].rstrip("/")
+
+def other_source_entries(m, live_evidence):
+    """Links other than the primary credit button. That button stays the visible creator source."""
+    primary = _url_key(primary_link(m).get("url") or m.get("source_url"))
+    return [(url, name) for url, name in source_entries(m, live_evidence) if _url_key(url) != primary]
+
+def caption_zones(head, dek, hist, credit_html, others_html, fold_html):
+    """Description, rank note, attribution, other links, and details, each its own band."""
+    parts = [f'<div class="zone zone-lead">{head}{dek}</div>']
+    if hist and hist.strip():
+        parts.append(f'<div class="zone zone-hist">{hist.strip()}</div>')
+    if credit_html and credit_html.strip():
+        parts.append(f'<div class="zone zone-by">{credit_html.strip()}</div>')
+    if others_html:
+        parts.append(f'<div class="zone zone-src"><div class="meta">{others_html}</div></div>')
+    if fold_html and fold_html.strip():
+        parts.append(f'<div class="zone zone-more">{fold_html.strip()}</div>')
+    return "\n  ".join(parts)
+
 def credit(m):
     c = m.get("credit") or f'via {m.get("source_name", "the source")}'
     if c[:1].islower():
@@ -869,15 +892,13 @@ def item(m, base, label, notes=False, hist="", live_evidence=False):
         text = card_dek(m)
         if text:
             dek = f'\n  <p class="dek">{e(text)}</p>'
-    links = link_row(source_entries(m, live_evidence), short=True)
-    meta = f'\n  <div class="meta">{links}</div>' if links else ""
+    others = link_row(other_source_entries(m, live_evidence), short=True)
     fold = details_block(m, live_evidence)
-    fold = f'\n  {fold}' if fold else ""
+    body = caption_zones(head, dek, hist, credit(m), others, fold)
     return f'''<li>
   {pic}
   <div class="copy">
-  {head}{dek}{hist}
-  {credit(m)}{meta}{fold}
+  {body}
   </div>
 </li>'''
 
@@ -903,15 +924,13 @@ def top_story(d, base, kicker="TODAY'S LEAD MEME", day=None, live_evidence=False
         text = card_dek(t)
         if text:
             dek = f'\n  <p class="dek">{e(text)}</p>'
-    links = link_row(source_entries(t, live_evidence), short=True)
-    meta = f'\n  <div class="meta">{links}</div>' if links else ""
+    others = link_row(other_source_entries(t, live_evidence), short=True)
     fold = details_block(t, live_evidence)
-    fold = f'\n  {fold}' if fold else ""
+    body = caption_zones(head, dek, "", credit(t), others, fold)
     return f'''<div class="top">
   {pic}
   <div class="copy">
-  {head}{dek}
-  {credit(t)}{meta}{fold}
+  {body}
   </div>
 </div>'''
 
@@ -1199,8 +1218,11 @@ def build_meme_page(sl):
     for a in m.get("also", []): add_src(synced_also_name(m, a, True), a["url"])
     if info["kym_url"]: add_src("Know Your Meme explainer", info["kym_url"])
     src_html = "".join(f'<li><a href="{e(u)}" target="_blank" rel="noopener">{e(nm)}</a></li>' for nm, u in srcs)
+    primary_url = _url_key(role.get("url"))
     short_links = "".join(
-        f'<a class="src" href="{e(u)}" target="_blank" rel="noopener">{e(short_source_label(nm))}</a>' for nm, u in srcs)
+        f'<a class="src" href="{e(u)}" target="_blank" rel="noopener">{e(short_source_label(nm))}</a>'
+        for nm, u in srcs if _url_key(u) != primary_url)
+    src_zone = f'<div class="zone zone-src"><div class="meta">{short_links}</div></div>' if short_links else ""
     stat_html = "".join(f"<p>{bit}</p>" for bit in stat_bits)
     detail_fold = ('<details class="fold"><summary>Sources &amp; details</summary>'
                    f'<div class="foldbody">{stat_html}<ul>{src_html}</ul></div></details>')
@@ -1233,8 +1255,10 @@ def build_meme_page(sl):
 <h1>{e(h1)}</h1>
 {thumb(m, base, "")}
 <div class="copy">
+<div class="zone zone-by">
 {credit(m)}
-<div class="meta">{short_links}</div>
+</div>
+{src_zone}
 </div>
 <h2>{e(q_mean)}</h2>
 {means}
@@ -1242,7 +1266,9 @@ def build_meme_page(sl):
 {origin}
 {unconf}{short}
 {use_html}
+<div class="zone zone-more">
 {detail_fold}
+</div>
 <h3>Daily meme reports featuring it</h3>
 <ul>{day_links}</ul>
 {rel_html}

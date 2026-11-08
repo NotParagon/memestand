@@ -279,6 +279,13 @@ def test_details_keep_snapshot_counts_and_live_observation_dates():
     assert "View original" in credit
     assert TIKTOK in credit
     assert "knowyourmeme.com" not in credit
+    others = build.other_source_entries(live, True)
+    assert all(build._url_key(url) != TIKTOK.rstrip("/") for url, _name in others)
+    assert any("knowyourmeme.com" in url for url, _name in others)
+    zones = build.caption_zones("<h3>Title</h3>", "<p class=\"dek\">AI-generated video.</p>",
+                                "<div class=\"mv\">note</div>", credit, "links", "<details>x</details>")
+    assert zones.index("zone-lead") < zones.index("zone-hist") < zones.index("zone-by")
+    assert zones.index("zone-by") < zones.index("zone-src") < zones.index("zone-more")
 
 
 def test_reading_css_wraps_and_keeps_a_keyboard_focus_ring():
@@ -291,6 +298,9 @@ def test_reading_css_wraps_and_keeps_a_keyboard_focus_ring():
     for rule in re.findall(r"\.top \.hl a\{[^}]+\}", css):
         assert "uppercase" not in rule, rule
     assert "text-transform:uppercase" in css  # section bars keep the masthead voice
+    assert "--hair:" in css
+    assert ".copy .zone+.zone" in css
+    assert "border-top:1px solid var(--hair)" in css
 
 
 def test_built_pages_match_the_rules():
@@ -310,6 +320,9 @@ def test_built_pages_match_the_rules():
     sentence = build.evidence_sentence(build.EVIDENCE["fancy-cafe"])
     assert "Know Your Meme explainer" in today
     assert "<summary>Sources &amp; details</summary>" in today
+    assert 'class="zone zone-lead"' in today and 'class="zone zone-hist"' in today
+    assert 'class="zone zone-by"' in today and 'class="zone zone-src"' in today
+    assert 'class="zone zone-more"' in today
     assert sentence in today and "11.1M" not in today
     assert "AI-generated video" in today
     # The page stamp is the memes.json build time, not an evidence observation.
