@@ -30,8 +30,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-          "views": 1481027,
-          "likes": 130441,
+          "views": 1481230,
+          "likes": 130442,
           "checked": "2026-11-08",
           "via": "X API"
         }
@@ -64,8 +64,8 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 6316430,
-          "likes": 50972,
+          "views": 6324212,
+          "likes": 50982,
           "checked": "2026-11-08",
           "via": "X API"
         },
@@ -358,24 +358,24 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 7493,
+        "kym_views": 7757,
         "x": {
           "url": "https://x.com/MeganBitchell/status/2117877144999154049",
-          "views": 3534865,
+          "views": 3535090,
           "likes": 192248,
           "checked": "2026-11-08",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-          "views": 858700,
+          "views": 858800,
           "likes": 134300,
           "author": "@elionwillpower",
           "checked": "2026-11-08",
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@elionwillpower/video/7704203995216170253",
-            "views": 858700,
+            "views": 858800,
             "likes": 134300
           }
         }
@@ -1706,8 +1706,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/studsyun/status/2117440926024884418",
-          "views": 6338549,
-          "likes": 183908,
+          "views": 6339848,
+          "likes": 183897,
           "checked": "2026-11-08",
           "via": "X API"
         }
@@ -1746,7 +1746,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Britannica/status/2117805815050727630",
-          "views": 1105146,
+          "views": 1105257,
           "likes": 54553,
           "checked": "2026-11-08",
           "via": "X API"
@@ -1777,7 +1777,7 @@
           "url": "https://x.com/i/trending/2117626647205875908"
         },
         {
-          "name": "TikTok / @leehoustonx (11.7M views)",
+          "name": "TikTok / @leehoustonx (11.8M views)",
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
         },
         {
@@ -1797,18 +1797,18 @@
           "X"
         ],
         "kym": true,
-        "kym_views": 2659,
+        "kym_views": 2698,
         "x_news": true,
         "x": {
           "url": "https://x.com/Flovaai/status/2117466712597839938",
-          "views": 334955,
+          "views": 334958,
           "likes": 3037,
           "checked": "2026-11-08",
           "via": "X API"
         },
         "tiktok": {
           "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-          "views": 11700000,
+          "views": 11800000,
           "likes": 1500000,
           "author": "@leehoustonx",
           "posted": "2026-11-01",
@@ -1816,7 +1816,7 @@
           "via": "fetch_social.py",
           "largest_post_read": {
             "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806",
-            "views": 11700000,
+            "views": 11800000,
             "likes": 1500000
           }
         },
@@ -2085,7 +2085,7 @@
           "url": "https://www.tiktok.com/@hard_plushie/video/7698783115593927969"
         },
         {
-          "name": "X / @LashSleeper (255K views)",
+          "name": "X / @LashSleeper (256K views)",
           "url": "https://x.com/LashSleeper/status/2115636173221896615"
         },
         {
@@ -2097,7 +2097,7 @@
           "url": "https://www.instagram.com/p/DfPoDOpyeO2/"
         },
         {
-          "name": "YouTube / Lessons in Meme Culture (698K views)",
+          "name": "YouTube / Lessons in Meme Culture (730K views)",
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI"
         }
       ],
@@ -2134,20 +2134,20 @@
         },
         "youtube": {
           "url": "https://www.youtube.com/watch?v=g8kgJLgzZzI",
-          "views": 697980,
+          "views": 729658,
           "title": "Frutiger Aero Yams To Your Right",
           "channel": "Lessons in Meme Culture",
-          "checked": "2026-11-07",
+          "checked": "2026-11-08",
           "via": "YouTube watch page"
         },
         "x": {
           "url": "https://x.com/LashSleeper/status/2115636173221896615",
-          "views": 255534,
-          "likes": 27187,
+          "views": 255644,
+          "likes": 27189,
           "checked": "2026-11-08",
           "via": "X API"
         },
-        "kym_views": 13291
+        "kym_views": 13685
       },
       "notes": "KYM 7,378 views; TikTok @hard_plushie 9.2M / 2.4M likes; IG @thebigsolomando 76K likes; YouTube Lessons in Meme Culture 605.8K views (Nov 6 6AM PT).",
       "first_seen_basis": "KYM: earliest known example is an Instagram post by seiyaposting on Oct 19, 2026",
@@ -2244,8 +2244,8 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 14942061,
-          "likes": 159964,
+          "views": 14943751,
+          "likes": 159970,
           "checked": "2026-11-08",
           "via": "X API"
         },
@@ -2279,7 +2279,7 @@
       "first_seen": "2026-11-06",
       "also": [
         {
-          "name": "X / @2THUQQ (490K views)",
+          "name": "X / @2THUQQ (492K views)",
           "url": "https://x.com/2THUQQ/status/2118617523708965188"
         },
         {
@@ -2294,8 +2294,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/2THUQQ/status/2118617523708965188",
-          "views": 490509,
-          "likes": 40632,
+          "views": 491835,
+          "likes": 40655,
           "checked": "2026-11-08",
           "via": "X API"
         }
@@ -2338,8 +2338,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/tuna_petal/status/2118514084140229097",
-          "views": 1873358,
-          "likes": 32505,
+          "views": 1873728,
+          "likes": 32509,
           "checked": "2026-11-08",
           "via": "X API"
         }
@@ -2362,7 +2362,7 @@
       "first_seen": "2026-11-06",
       "also": [
         {
-          "name": "X / @sbxloch (2.2M views)",
+          "name": "X / @sbxloch (2.3M views)",
           "url": "https://x.com/sbxloch/status/2118821023151706276"
         },
         {
@@ -2381,8 +2381,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/sbxloch/status/2118821023151706276",
-          "views": 2276115,
-          "likes": 190662,
+          "views": 2338302,
+          "likes": 195275,
           "checked": "2026-11-08",
           "via": "X API"
         }
@@ -2406,11 +2406,11 @@
       "first_seen_basis": "Reply-with-this-video wave documented on X News Nov 7–8 2026; original clip posted by @acervodoguinhos on Nov 5 2025",
       "also": [
         {
-          "name": "X / @anacomlula (1.6M views)",
+          "name": "X / @anacomlula (1.7M views)",
           "url": "https://x.com/anacomlula/status/2119093703277187568"
         },
         {
-          "name": "X / @acervodoguinhos original clip (12.1M views)",
+          "name": "X / @acervodoguinhos original clip (12.9M views)",
           "url": "https://x.com/acervodoguinhos/status/1986031760011079881"
         },
         {
@@ -2425,8 +2425,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/anacomlula/status/2119093703277187568",
-          "views": 1659952,
-          "likes": 78292,
+          "views": 1670843,
+          "likes": 78832,
           "checked": "2026-11-08",
           "via": "X API"
         }
@@ -2449,7 +2449,7 @@
       "first_seen_basis": "Quote-chain remix wave on X Nov 7-8 2026 (earliest read: @fallenseraphimn Nov 7 06:25 PT); X News story updated Nov 8",
       "also": [
         {
-          "name": "X / @websofmj (369K views)",
+          "name": "X / @websofmj (424K views)",
           "url": "https://x.com/websofmj/status/2119174999701422578"
         },
         {
@@ -2468,8 +2468,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/websofmj/status/2119174999701422578",
-          "views": 399075,
-          "likes": 30025,
+          "views": 423683,
+          "likes": 31020,
           "checked": "2026-11-08",
           "via": "X API"
         }
