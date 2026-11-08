@@ -1,5 +1,5 @@
 {
-  "_doc": "Persistent per-meme explainer store for the /meme/<slug>/ pages, keyed by slug. build.py reads it and never regenerates written text. ids = candidate ids that map to this page (keep the slug forever). status: 'full' (real explanation + origin with sources) or 'short' (only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. Fields: explainer = 2-4 sentence plain-English meaning; origin = who/where/when if verified and how it spread, in our own words ('\\n\\n' between paragraphs); origin_confirmed = true only if the first post/creator is documented, false if unknown (the page then says so), null = not yet researched; how_to_use = 0-2 example captions; sources = [{name,url}] links that back the text (must return 200); checked = ISO datetime (PT) the text was last written or reviewed (feeds dateModified + sitemap lastmod). build.py adds a stub (explainer null) for any new meme; the daily routine fills it in (UPDATE.md step 5).",
+  "_doc": "Persistent per-meme explainer store for the /meme/<slug>/ pages, keyed by slug. build.py reads it and never regenerates written text. ids = candidate ids that map to this page (keep the slug forever). status: 'full' (real explanation + origin with sources) or 'short' (only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. Fields: explainer = 2-4 sentence plain-English meaning; origin = who/where/when if verified and how it spread, in our own words ('\\n\\n' between paragraphs); origin_confirmed = true only if the first post/creator is documented, false if unknown (the page then says so), null = not yet researched; how_to_use = 0-2 captions copied verbatim from the explainer, origin, or ranked post (never an invented, translated, or fill-in variant; [] if none); original_url = verified creator post when one is documented (View original uses it; never drop it on a refresh); sources = [{name,url}] links that back the text (must return 200); checked = ISO datetime (PT) the text was last written or reviewed (feeds dateModified + sitemap lastmod). build.py adds a stub (explainer null) for any new meme; the daily routine fills it in (UPDATE.md step 5). Know Your Meme is an explainer, not the original post.",
   "memes": {
     "affleck-i-voted-smoking": {
       "name": "Ben Affleck 'I Voted' Smoking Update",
@@ -10,10 +10,7 @@
       "explainer": "A side-by-side update of the classic Ben Affleck \"tired smoking\" reaction meme. The left (or older) panel is the familiar paparazzi shot of Affleck looking exhausted with a cigarette; the new panel shows him again mid-smoke, this time still wearing an \"I VOTED\" sticker after the 2026 midterms. People use it as a post-election fatigue reaction — \"he's all of us\" after casting a ballot.",
       "origin": "The classic Affleck-tired smoking image has circulated as a reaction meme for years (X News notes a 2016 London paparazzi lineage). The midterm \"update\" that ranked here is a Nov 4, 2026 X post by @BYRNEGRACES captioned \"Wake up, babe. Ben Affleck tired and smoking meme has been updated,\" pairing the old frame with a new paparazzi photo of Affleck outside Steak 48 in Beverly Hills. That post passed 1M views and became an X News story; MemeStand has not independently confirmed an earlier identical side-by-side.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "Wake up, babe. Ben Affleck tired and smoking meme has been updated.",
-        "Me after voting / post-election stress"
-      ],
+      "how_to_use": [],
       "source_url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
       "kym_url": null,
       "sources": [
@@ -28,7 +25,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-05T17:05:00-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "ai-artists-hoverboard": {
       "name": "AI Artists Hoverboard",
@@ -53,11 +50,8 @@
       "related": [],
       "written": "2026-11-03",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Me after \"writing\" 400 novels with one prompt",
-        "AI artists heading to the gallery opening of their 9,000th painting this week"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "ai-bros-process": {
       "name": "AI Bros Process Reaction",
@@ -80,11 +74,8 @@
       ],
       "written": "2026-11-03",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Artists: the process is the fun part. AI bros:",
-        "When someone says they spent six months learning to draw hands"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "ai-rumpelstiltskin-tip-toein-in-my-jordans": {
       "name": "AI Rumpelstiltskin Tip Toein' in My Jordans",
@@ -113,11 +104,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": true,
-      "how_to_use": [
-        "My brain at 3am replaying something I said in 2014",
-        "Me walking into work after one (1) good night of sleep"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "ai-slop-vs-nk": {
       "name": "AI Slop Quants vs North Korea",
@@ -128,10 +116,7 @@
       "explainer": "A two-panel money comparison. The left side labels \"AI slop quants\" with a wall of trading dashboards and a tiny $0.17 profit. The right side labels \"North Korea\" with a one-PDF phishing joke (fake job-offer email and a opened attachment) and a multi-billion profit figure. The joke is that flashy AI trading stacks make almost nothing while a simple social-engineering PDF supposedly prints enormous crypto gains.",
       "origin": "Posted to r/dankmemes on November 4, 2026 as \"Money! Muney!\" by /u/Round-Good1179 (post 1xnlwdj). It ranked #3 on that subreddit's top-today feed during the November 4 morning refresh. We did not find an earlier post of this exact panel, so the original creator is unconfirmed.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "AI slop quants vs one (1) PDF",
-        "When the trading bot makes seventeen cents"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnlwdj/money_muney/",
       "kym_url": null,
       "sources": [
@@ -142,7 +127,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T09:03:58-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "altman-apollo-4kb": {
       "name": "Apollo Had 4KB of RAM",
@@ -177,10 +162,7 @@
       "explainer": "A macro using a widely circulated photo of OpenAI CEO Sam Altman looking in through a window. The caption argues that houses are a \"terrible use of space\" compared with AI data centers. It satirizes efficiency-speak around AI infrastructure and echoes earlier jokes about Altman calling DRAM in home PCs a poor allocation of scarce chips.",
       "origin": "Posted to r/memes on November 4, 2026 as \"A coffin is more space efficient\" (post 1xnkv3y). It sits in the same Altman / DRAM / AI-infrastructure joke cycle that topped Reddit after Altman's October 29 Cheeky Pint remarks. We did not find an earlier post of this exact houses-vs-data-centers caption.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "When AI infrastructure logic meets housing",
-        "Data centers vs humans, according to a meme Altman"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/memes/comments/1xnkv3y/a_coffin_is_more_space_efficient/",
       "kym_url": null,
       "sources": [
@@ -191,7 +173,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T06:05:50-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "altman-ram-chart": {
       "name": "Altman RAM Chart",
@@ -218,11 +200,8 @@
       ],
       "written": "2026-11-03",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Where my RAM is going in 2027",
-        "Supply chain explained"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "altman-ramesses": {
       "name": "Let the Man Rest / Altman Ramesses",
@@ -234,7 +213,6 @@
       "origin": "The ranked post is an r/memes upload by u/ZealousidealChain473 on November 5, 2026, titled \"Let the man rest,\" pairing the Altman-with-sarcophagus image with the Ramesses/RAM pun. MemeStand has not confirmed an earlier first post or the original photographer/creator of the image, so the original creator of this specific caption remains unconfirmed.",
       "origin_confirmed": false,
       "how_to_use": [
-        "Sam Altman after hearing about the mummy of King Ram esses II",
         "let the man rest"
       ],
       "source_url": "https://www.reddit.com/r/memes/comments/1xod9dz/let_the_man_rest/",
@@ -247,7 +225,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-05T07:14:10-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "anakin-skywalker-gen-z-male-rage": {
       "name": "Anakin Skywalker Gen Z Male Rage",
@@ -276,11 +254,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": true,
-      "how_to_use": [
-        "Gen Z men when the landlord raises rent again",
-        "Me after the fourth rejection email this week"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "auto-1080p": {
       "name": "Auto 1080p vs Manual 1080p",
@@ -291,10 +266,7 @@
       "explainer": "A side-by-side joke about streaming quality: the left panel labeled \"Auto 1080p\" looks like muddy 144p, while \"Manually selecting 1080p\" is sharp. The pictures are the same Trojan War / classical battle scene at two resolutions. It mocks how \"auto\" quality settings often fail to deliver the resolution they claim.",
       "origin": "Posted to Reddit's r/memes on November 3, 2026 as \"144p disguised as 1080p\" (post 1xmtiyn). On November 4 it ranked #1 on r/memes top-today and also appeared on the subreddit's weekly top list. We did not find an earlier documented first post.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Auto 1080p vs me actually picking 1080p",
-        "Streaming sites when they say \"HD\""
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/memes/comments/1xmtiyn/144p_disguised_as_1080p/",
       "kym_url": null,
       "sources": [
@@ -305,7 +277,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T06:05:50-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "bear-landmine": {
       "name": "Bear Landmine (Never Zero)",
@@ -334,11 +306,8 @@
       "related": [],
       "written": "2026-11-02",
       "origin_confirmed": false,
-      "how_to_use": [
-        "The chances of my code working on the first try are low, but they are never zero",
-        "Odds of my ex texting me tonight: low, but never zero"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "billionaires-blaming": {
       "name": "Billionaires Blaming Collage",
@@ -375,10 +344,7 @@
       "explainer": "A green-screen meme built on an AI-generated video of a black cat with human hands and a human smile, slowly clapping. People drop the clapping cat into their own clips and captions to sarcastically \"applaud\" someone, usually for doing something bad or embarrassing.",
       "origin": "Know Your Meme traces it to a September 25, 2026 Instagram comedy video by merkurianin in which he feeds his cat and the AI-generated cat smiles and claps at him. On September 28, TikToker @asian5767 posted a green-screen version captioned about a teacher taking their phone, and the clip spread as a reaction meme through October 2026; it finished fourth in KYM's October 2026 Meme of the Month poll.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "Slow-clapping cat as a reaction to someone's questionable decision",
-        "\"I answered correctly and bro started clapping\""
-      ],
+      "how_to_use": [],
       "source_url": "https://knowyourmeme.com/memes/black-cat-clapping",
       "kym_url": "https://knowyourmeme.com/memes/black-cat-clapping",
       "sources": [
@@ -397,7 +363,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T18:15:15+00:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "bounce-baby-boy": {
       "name": "Boys Go Always Bounce Back / Bouncing Baby Boy",
@@ -409,8 +375,7 @@
       "origin": "Posted by @2THUQQ (horsh) on X on November 6, 2026: \"Boys go always bounce back na why dem dey call us bouncing baby boy.\" The post passed 200K views and ~21K likes the same day and became an X News story tracking quote-variants. MemeStand has not confirmed an earlier identical viral formulation.",
       "origin_confirmed": true,
       "how_to_use": [
-        "Boys go always bounce back na why dem dey call us bouncing baby boy",
-        "We fall, we rise, we bounce… na why dem no call us crawling baby boys"
+        "Boys go always bounce back na why dem dey call us bouncing baby boy"
       ],
       "source_url": "https://x.com/2THUQQ/status/2118617523708965188",
       "kym_url": null,
@@ -426,7 +391,7 @@
       ],
       "related": [],
       "written": "2026-11-06",
-      "checked": "2026-11-06T10:10:00-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "britannica-mitochondria": {
       "name": "Britannica's Mitochondria Election Joke",
@@ -437,10 +402,7 @@
       "explainer": "A one-line parody of cable-news election projections: Encyclopaedia Britannica posted \"CNN PROJECTS THAT THE MITOCHONDRIA WILL REMAIN THE POWERHOUSE OF THE CELL\" on election night. It riffs on the classroom biology meme and the style of network race calls; copycat biology jokes followed in replies.",
       "origin": "Posted by the verified @Britannica account on X on November 4, 2026. Public counts the same day showed roughly 48K likes and about 947K views. An X News story tracked the wave of similar biology-joke replies.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "CNN projects that [obvious school fact] will remain true",
-        "Me during election coverage, thinking about mitochondria instead"
-      ],
+      "how_to_use": [],
       "source_url": "https://x.com/Britannica/status/2117805815050727630",
       "kym_url": null,
       "sources": [
@@ -455,7 +417,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T06:05:50-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "bunker-bulking": {
       "name": "Bunker Bulking",
@@ -476,11 +438,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": false,
-      "how_to_use": [
-        "Me explaining why the whole pizza is gone: I'm bulking",
-        "Roommates when the groceries disappear on day two"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "chiropractor-kyary": {
       "name": "Chiropractors Slam-Down Punchline",
@@ -491,10 +450,7 @@
       "explainer": "A list joke: doctors give medicine, dentists keep teeth healthy, and chiropractors get a frantic slam-down video still as the punchline — poking fun at how aggressive spinal adjustments look. The clip still is a high-energy performance/music-video frame used as reaction media.",
       "origin": "Posted to r/dankmemes on November 3, 2026 as \"MY FUGGIN BACK\" (post 1xmufk1) and ranked #1 on that subreddit's top-today list on November 4. The exact origin of the slam-down clip itself is not credited in the Reddit post.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Doctors / dentists / chiropractors starter pack",
-        "My back after sleeping weird"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xmufk1/my_fuggin_back/",
       "kym_url": null,
       "sources": [
@@ -505,7 +461,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T06:05:50-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "code-rot": {
       "name": "Code Rot Filter / Yep It's Code Rotted Indeed",
@@ -516,11 +472,7 @@
       "explainer": "A TikTok scare-format around the 'Despicable Me 4 – Correct' filter game. Creators caption clips as if the filter itself has 'code rot' — software decay that supposedly breaks the game — then lean into eerie music, text-to-speech, and 'yep it's code rotted indeed' punchlines. The joke treats a glitchy or unfinished AR filter like a cursed first-of-its-kind digital plague.",
       "origin": "Know Your Meme's October 22, 2026 entry documents the wave: in October 2026 TikTokers started posting videos claiming the Despicable Me 4 filter was code-rotted, often with horror vibes and captions calling it the first filter to rot. High-view examples include posts from @tr0v0n, @penutisthebestnickname and @ted.broome1; Lessons in Meme Culture posted a 'What Is Code Rot?' explainer that passed 900K views.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "Yep it's code rotted indeed",
-        "POV: the filter has code rot",
-        "First TikTok filter to experience code rot"
-      ],
+      "how_to_use": [],
       "source_url": "https://knowyourmeme.com/memes/code-rot-filter-yep-its-code-rotted-indeed",
       "kym_url": "https://knowyourmeme.com/memes/code-rot-filter-yep-its-code-rotted-indeed",
       "sources": [
@@ -539,7 +491,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-05T06:13:38-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "crack-a-monster": {
       "name": "It's Not That Deep. Crack a Monster.",
@@ -550,10 +502,7 @@
       "explainer": "A short cope / shut-it-down catchphrase from Monster Energy's own X account: 'it's not that deep. crack a monster.' People quote-tweet or stitch it whenever a discourse feels overcooked, using the brand's own voice as a one-liner to dismiss drama and suggest cracking open an energy drink instead.",
       "origin": "Posted by the official @MonsterEnergy account on November 4, 2026 (X status 2118012916586676345). The brand post itself went massively viral and spawned quote-tweet remakes treating the line as a general-purpose dismissal meme.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "it's not that deep. crack a monster.",
-        "Replying to any overthought discourse with the Monster Energy line"
-      ],
+      "how_to_use": [],
       "source_url": "https://x.com/MonsterEnergy/status/2118012916586676345",
       "kym_url": null,
       "sources": [
@@ -564,7 +513,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-05T06:13:38-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "election-squid-hope": {
       "name": "Americans Every Election / Squid Game Cheer",
@@ -575,10 +524,7 @@
       "explainer": "A Squid Game still of players in green tracksuits cheering (Gi-hun front and center) captioned \"Americans every election, convinced the country is about to change (it won't).\" The joke pairs election-night excitement with a deadly, rigged game — hope that feels huge in the moment while the system stays the same.",
       "origin": "Posted to r/dankmemes on November 4, 2026 by u/Massive-Bass-347 as \"tale as old as time\" (post 1xnsnug) and ranked #1 on that subreddit's top-today list the same day. The Squid Game cheer still is reused from the Netflix series; this caption pairing is the Reddit post. No Know Your Meme entry or clear first-poster was found for this exact caption.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Election night optimism that ages poorly",
-        "Any 'this time will be different' political cycle joke"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnsnug/tale_as_old_as_time/",
       "kym_url": null,
       "sources": [
@@ -589,7 +535,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T12:05:00-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "election-text-spam": {
       "name": "Election Text Spam Badge",
@@ -610,11 +556,8 @@
       "related": [],
       "written": "2026-11-03",
       "origin_confirmed": false,
-      "how_to_use": [
-        "My phone the week before the election",
-        "Only people who text me: my mom and three Senate campaigns"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "ethan-klein-h3-memes": {
       "name": "Ethan Klein H3 Memes",
@@ -656,16 +599,17 @@
         "fancy-cafe"
       ],
       "status": "full",
-      "explainer": "A comedy skit (and its AI remakes) where someone sits down at a sleek modern cafe, thinks they're on a chair, then watches another customer walk in and realizes they've been sitting on the metal table instead of the concrete bench. People remake the mix-up with other characters and captions about first-timer awkwardness.",
-      "origin": "Know Your Meme documents the original TikTok by @leehoustonx on November 1, 2026. A KYM entry published November 3, 2026 describes the wave of AI remakes that followed on TikTok, Instagram Reels and X. Remix posts such as @Flovaai's November 3 X upload circulated hundreds of thousands of views.",
+      "explainer": "Per Know Your Meme, the original clip is an AI-generated video, not a filmed comedy sketch that was remade later. A man sits down at a modern cafe on what he thinks is a chair. When another person walks in, he realizes he is sitting on the metal table instead of the concrete bench. Later posts are further AI edits that keep that mix-up and replace the people.",
+      "origin": "Know Your Meme's origin section documents a TikTok by @leehoustonx on November 1, 2026 as the original and links that video. KYM describes the format spreading afterward on TikTok and Instagram, including a November 2, 2026 reel by @kevinwinnik and a November 2 TikTok by @boby.biggsjohnson. @Flovaai's November 3 post on X is one remix also listed here. MemeStand is attributing the origin to that Know Your Meme entry.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "POV: your first time in a fancy cafe",
-        "Me confidently sitting down somewhere I've never been"
-      ],
+      "how_to_use": [],
       "source_url": "https://knowyourmeme.com/memes/your-first-time-in-a-fancy-cafe",
       "kym_url": "https://knowyourmeme.com/memes/your-first-time-in-a-fancy-cafe",
       "sources": [
+        {
+          "name": "Original TikTok by @leehoustonx (cited by Know Your Meme)",
+          "url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
+        },
         {
           "name": "Know Your Meme: Your First Time In a Fancy Cafe",
           "url": "https://knowyourmeme.com/memes/your-first-time-in-a-fancy-cafe"
@@ -677,7 +621,8 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T06:05:50-08:00"
+      "checked": "2026-11-07T22:51:54-08:00",
+      "original_url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
     },
     "frutiger-aero-yams": {
       "name": "Frutiger Aero Yams",
@@ -689,8 +634,7 @@
       "origin": "Know Your Meme's earliest known example is an October 19, 2026 Instagram post by seiyaposting: an edited image of streamer CallMeCarson looking to the right, captioned \"Frutiger Aero yams to your right\" (KYM says it's unconfirmed whether this is the true origin). The phrase spread in late October on X, including an image of a glossy Frutiger Aero yam by @LashSleeper, and on November 2 TikToker @watosis used it in a slang-overload video. KYM published its entry on November 3, 2026.",
       "origin_confirmed": false,
       "how_to_use": [
-        "Frutiger Aero yams to your right",
-        "Captioning any glossy, bubbly, early-2000s-looking image as \"Frutiger Aero yams\""
+        "Frutiger Aero yams to your right"
       ],
       "source_url": "https://knowyourmeme.com/memes/frutiger-aero-yams",
       "kym_url": "https://knowyourmeme.com/memes/frutiger-aero-yams",
@@ -718,7 +662,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T18:15:15+00:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "gym-cancel-holmes": {
       "name": "Gym Cancel / Elizabeth Holmes",
@@ -729,10 +673,7 @@
       "explainer": "A still of Theranos founder Elizabeth Holmes from an interview, captioned so gym staff insist canceling a membership is easy — while the meme implies the opposite (\"Hotel California\" rules). It jokes about how hard it can feel to quit a gym contract.",
       "origin": "Posted to r/dankmemes on November 4, 2026 as \"Hotel California rules\" (post 1xnmfpo) and ranked high on that subreddit's top-today list the same day. The Holmes interview still is reused from older coverage; this caption pairing is the Reddit post.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Gym staff explaining how easy cancellation is",
-        "Trying to leave a subscription you regret"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xnmfpo/hotel_california_rules/",
       "kym_url": null,
       "sources": [
@@ -743,7 +684,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T06:05:50-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "hate-seals-fandom": {
       "name": "Hate Seals Fandom Dealbreaker Format",
@@ -772,11 +713,8 @@
       "related": [],
       "written": "2026-11-03",
       "origin_confirmed": false,
-      "how_to_use": [
-        "\"Dad, I'm a therian\" ok. \"Dad, I skip the intro songs\"",
-        "\"Dad, I'm trans\" ok. \"Dad, I think the sequel was better\""
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "heidi-32gb-ram": {
       "name": "Heidi 32GB RAM",
@@ -808,11 +746,8 @@
       ],
       "written": "2026-11-01",
       "origin_confirmed": true,
-      "how_to_use": [
-        "\"Do you have a PC at home?\" \"Yes, with 64 GB\" *push*",
-        "\"Do you still use your 2019 laptop?\" \"Yes\" *push*"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "hold-the-ram": {
       "name": "Hold the RAM",
@@ -837,11 +772,8 @@
       "related": [],
       "written": "2026-11-02",
       "origin_confirmed": false,
-      "how_to_use": [
-        "PC gamers when OpenAI says it needs their RAM",
-        "Me guarding my last two DIMM slots"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "im-so-sorry-trend": {
       "name": "I'm So Sorry Trend",
@@ -866,11 +798,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": true,
-      "how_to_use": [
-        "Slide 1: my glow-up. Slide 5: I'm so sorry",
-        "My \"Halloween costume\" vs. what I actually wore in 2009"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "jacket-still-works": {
       "name": "The Jacket Still Works",
@@ -891,11 +820,8 @@
       "related": [],
       "written": "2026-11-02",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Me in my 2012 hoodie at every family photo since",
-        "Dad's one winter coat, 1998 to present"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "jiren-dancing": {
       "name": "Jiren Dancing (I'm So in Love With You)",
@@ -920,11 +846,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": true,
-      "how_to_use": [
-        "Me when my crush texts back \"lol\"",
-        "The strongest man in the universe after hearing she has a boyfriend"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "just-mention-india": {
       "name": "Just Mention India",
@@ -935,10 +858,7 @@
       "explainer": "A joke about YouTube / content-farm incentives: the punchline is that channels can juice views by dropping India into the title, thumbnail, or B-roll — stock footage of crowds, maps, or 'India' text — regardless of whether the video is actually about India. The meme mocks milking a huge audience for clicks rather than the country itself.",
       "origin": "Posted to r/memes by /u/DrDrakeRemorayy on November 5, 2026 as 'Just mention India' and hit #1 on the subreddit's top-today ranking the same morning. Format follows classic stock-photo / caption image macros calling out algorithmic bait.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "Just mention India",
-        "How to get easy YouTube views starter pack"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/memes/comments/1xnp51d/just_mention_india/",
       "kym_url": null,
       "sources": [
@@ -949,7 +869,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-05T06:13:38-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "ken-paxton-salsa-made-in-new-york-city": {
       "name": "Ken Paxton Eats Salsa Made in New York City",
@@ -982,11 +902,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": true,
-      "how_to_use": [
-        "Ken Paxton microwaves fish in the office break room",
-        "Ken Paxton puts the empty milk carton back in the fridge"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "little-void-creatures": {
       "name": "Little Void Creatures",
@@ -998,7 +915,6 @@
       "origin": "The \"gotta be one of my favorite genders\" praise format is an older reaction-image template; this specific \"little void creatures in big clothes\" caption was posted to r/memes by u/Darian_Wulfbane on November 5, 2026 under the title \"I just really like little guys.\" MemeStand has not confirmed an earlier first post for this exact caption or the original photo/edit author, so the creator of this version remains unconfirmed.",
       "origin_confirmed": false,
       "how_to_use": [
-        "Shout out to little void creatures in big clothes",
         "Gotta be one of my favorite genders"
       ],
       "source_url": "https://www.reddit.com/r/memes/comments/1xo2ukx/i_just_really_like_little_guys/",
@@ -1011,7 +927,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-05T15:13:28-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "macaulay-culkin-thousand-yard-stare": {
       "name": "Macaulay Culkin Thousand-Yard Stare",
@@ -1036,11 +952,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": true,
-      "how_to_use": [
-        "Me after one shift in retail on Black Friday",
-        "Parents after the kids' Halloween sugar crash"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "malfoid": {
       "name": "Malfoid",
@@ -1077,10 +990,7 @@
       "explainer": "A reaction format that pairs a short bakery-counter clip — a woman emphatically pointing at a pastry and coaching the man beside her, until he stops following — with the caption \"me instructing [someone] to [do something ridiculous].\" The joke is the mismatch: her serious, bossy body language stands in for how people feel when they are trying to micromanage a bot, a company, a fandom, or a friend who will not listen.",
       "origin": "In early November 2026 the bakery clip spread on X as a reusable \"me instructing…\" reaction. A high-reach example is @tuna_petal's November 6, 2026 post (\"me instructing spotify to delete bts discography\"), which crossed 1.8M views, and an X News story tracked the wave on November 7. MemeStand has not confirmed who filmed or first posted the bakery video itself, so the original creator of the clip is unconfirmed.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "me instructing [company] to [fix my wishlist]",
-        "me instructing my tweet to go viral"
-      ],
+      "how_to_use": [],
       "source_url": "https://x.com/tuna_petal/status/2118514084140229097",
       "kym_url": null,
       "sources": [
@@ -1095,7 +1005,7 @@
       ],
       "related": [],
       "written": "2026-11-07",
-      "checked": "2026-11-07T06:15:00-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "meme-same-room-marge": {
       "name": "Sending a Meme in the Same Room (Marge)",
@@ -1106,10 +1016,7 @@
       "explainer": "A The Simpsons still of Marge looking aside with a long-suffering expression, captioned for the moment you text a meme to someone sitting next to you and then wait while they open it. A relatable social-awkwardness reaction image.",
       "origin": "Posted to r/memes on November 3, 2026 as \"Based on real events\" (post 1xn5m8f) and ranked on that subreddit's top-today list on November 4. The Marge frame is from The Simpsons; this specific \"same room\" caption is the Reddit post we ranked.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Sending a meme to someone in the same room",
-        "Waiting for them to open the group chat"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/memes/comments/1xn5m8f/based_on_real_events/",
       "kym_url": null,
       "sources": [
@@ -1120,7 +1027,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T06:05:50-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "mini-producer": {
       "name": "Mini Producer",
@@ -1145,11 +1052,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": true,
-      "how_to_use": [
-        "Me when the group chat finally picks a restaurant",
-        "When the mac and cheese hits the Thanksgiving table"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "monkey-doomscrolling": {
       "name": "Monkey Doomscrolling",
@@ -1174,11 +1078,8 @@
       "related": [],
       "written": "2026-11-02",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Me at 3am: one more video",
-        "Me telling myself I'll sleep after this reel"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "newton-fourth-law": {
       "name": "Newton's Fourth Law of Motion",
@@ -1190,8 +1091,7 @@
       "origin": "The earliest post MemeStand found is a Nov 6, 2026 X post by @sbxloch (Mir), which passed 1M views and 94K likes within a day. On Nov 7 many unrelated accounts were posting the same sentence verbatim or with a name swapped in, and X News ran a story on it. MemeStand has not independently confirmed that no earlier identical post exists.",
       "origin_confirmed": true,
       "how_to_use": [
-        "If Newton saw the way I be moving these days he'd add a fourth law of motion",
-        "If Newton saw the way [player] is moving these days, he'd add a fourth law of motion"
+        "If Newton saw the way I be moving these days he'd add a fourth law of motion"
       ],
       "source_url": "https://x.com/sbxloch/status/2118821023151706276",
       "kym_url": null,
@@ -1207,7 +1107,7 @@
       ],
       "related": [],
       "written": "2026-11-07",
-      "checked": "2026-11-07T13:20:00-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "nintendo-sue-github": {
       "name": "Nintendo Sue GitHub (Gru's Plan)",
@@ -1262,11 +1162,8 @@
       "related": [],
       "written": "2026-11-03",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Me after the parlay missed by one leg",
-        "Me after buying a course on how to make money"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "no-nut-november": {
       "name": "No Nut November",
@@ -1299,11 +1196,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": true,
-      "how_to_use": [
-        "November 2nd and already out of the running",
-        "NNN day 1: confident. Day 1, 11pm:"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "now-kith-economy": {
       "name": "Now Kith Economy (Mike Tyson Pigeons)",
@@ -1314,10 +1208,7 @@
       "explainer": "A fresh use of the long-running \"Now Kith\" template: Mike Tyson holding two pigeons as if making them kiss, here labeled so \"rich people\" shove rising prices and layoffs together. The photo is the familiar 1985 Sports Illustrated shot that has powered \"now kiss\" / \"now kith\" jokes for years.",
       "origin": "The underlying template is documented by Know Your Meme as \"Now Kith / Mike Tyson Holding Pigeons,\" based on a 1985 Sports Illustrated photo and meme use dating back to at least 2011. This economy-caption version was posted to r/dankmemes on November 3, 2026 (post 1xn0rwh) and ranked near the top of that subreddit's daily list on November 4.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "Rich people making rising prices and layoffs \"now kith\"",
-        "When two bad headlines show up in the same week"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/dankmemes/comments/1xn0rwh/fun_times_good_luck_economy/",
       "kym_url": "https://knowyourmeme.com/memes/now-kith-mike-tyson-holding-pigeons",
       "sources": [
@@ -1332,7 +1223,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T06:05:50-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "polymarket-good-ending": {
       "name": "Good Ending (Polymarket Bet)",
@@ -1375,11 +1266,8 @@
       "related": [],
       "written": "2026-11-02",
       "origin_confirmed": false,
-      "how_to_use": [
-        "The onions I forgot under the sink",
-        "My fridge after a two-week vacation"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "putin-suction-arrow": {
       "name": "Putin Suction-Cup Arrow / Family Gathering Exit",
@@ -1390,10 +1278,7 @@
       "explainer": "A still from a viral clip of Vladimir Putin outdoors as a toy suction-cup arrow flies toward his head. The Reddit caption frames it as someone trying to leave a family gathering after saying something controversial — the joke is the sudden, inevitable \"attack\" that follows an awkward remark.",
       "origin": "Posted to r/memes on November 4, 2026 as \"The attack was inevitable\" by /u/Mr_kalas22 (post 1xnitsj). It ranked in that subreddit's top-today list the same day (as high as #3 during the 3 PM PT refresh). We did not find a Know Your Meme entry or an earlier post of this exact caption, so the original creator of the caption pairing is unconfirmed. The underlying Putin clip circulates separately as a reaction video.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Leaving the group chat after that one comment",
-        "When the family dinner takes a turn"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/memes/comments/1xnitsj/the_attack_was_inevitable/",
       "kym_url": null,
       "sources": [
@@ -1404,7 +1289,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T15:13:26-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "ram-adan": {
       "name": "Ram Adan",
@@ -1415,10 +1300,7 @@
       "explainer": "A captioned photo joke that spells \"Ram Adan\" instead of Ramadan. It shows OpenAI CEO Sam Altman standing between two men in traditional Gulf dress, with the caption claiming that is his face after hearing about \"RAM.\" The punchline is a pun linking the Muslim holy month's name to computer memory, riding the wider wave of Altman / DRAM scarcity jokes.",
       "origin": "Posted to r/memes on November 4, 2026 as \"really got his interest\" by /u/57evil (post 1xnikcz). It was #1 on that subreddit's top-today feed during the November 4 morning refresh. We did not find an earlier post of this exact \"Ram Adan\" caption, so the original creator is unconfirmed.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Sam Altman after hearing about RAM Adan",
-        "When the DRAM shortage meets a calendar pun"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/memes/comments/1xnikcz/really_got_his_interest/",
       "kym_url": null,
       "sources": [
@@ -1429,7 +1311,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T09:03:58-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "regretamine": {
       "name": "Regretamine",
@@ -1450,11 +1332,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": true,
-      "how_to_use": [
-        "Side effects of Regretamine may include texting your ex again",
-        "Me reaching for the Regretamine after checking my bank app"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "sam-altman-ram": {
       "name": "Sam Altman RAM",
@@ -1490,11 +1369,8 @@
       ],
       "written": "2026-11-01",
       "origin_confirmed": true,
-      "how_to_use": [
-        "You're hiding a 32GB kit in that tower, are you not?",
-        "Me hiding my RAM in the cereal box"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "scientists-reveal-hi": {
       "name": "Scientists Reveal the Hi",
@@ -1505,10 +1381,7 @@
       "explainer": "An exploitable image-macro that looks like a fake BBC-style news thumbnail. A pet (often an orange cat) sits over a deadpan headline that starts \"Scientists reveal the…\" and ends with something trivial — most famously \"hi.\" People edit the face, the background, or the final word, so the joke is the solemn science framing for a nothing-burger reveal.",
       "origin": "On July 16, 2025, Instagram user @cheemsitz posted a dog-on-a-couch macro captioned \"Scientists reveal the secret,\" styled like a BBC News thumbnail (per Know Your Meme). Cat edits followed; on May 28, 2026, Redditor matthweewhttam swapped \"secret\" for \"hi\" on r/xertunposting. The \"hi\" version and further recaptions spread on Instagram and TikTok into late 2026.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "Scientists reveal the hi",
-        "Scientists reveal the [mundane thing]"
-      ],
+      "how_to_use": [],
       "source_url": "https://knowyourmeme.com/memes/scientists-reveal-the-hi",
       "kym_url": "https://knowyourmeme.com/memes/scientists-reveal-the-hi",
       "sources": [
@@ -1523,7 +1396,7 @@
       ],
       "related": [],
       "written": "2026-11-07",
-      "checked": "2026-11-07T06:15:00-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "she-only-wants-me-for-my-pakistani-citizenship": {
       "name": "She Only Wants Me for My Pakistani Citizenship",
@@ -1534,7 +1407,7 @@
       "source_url": "https://x.com/vibeistani/status/2116644824703279122",
       "kym_url": null,
       "explainer": "A one-line joke: \"She only wants me for my Pakistani citizenship.\" It flips the usual complaint that someone is only after a partner's passport, which is normally about citizenships seen as highly desirable, by applying it to the poster's own. Others copied the line with their own nationalities.",
-      "origin": "The version MemeStand ranked was posted on X by @vibeistani on October 31, 2026 and passed 6.4 million views, per X's public counts. An X search found no earlier post with the exact line, but MemeStand hasn't confirmed that this was the first.",
+      "origin": "The version MemeStand ranked was posted on X by @vibeistani on October 31, 2026. An X search found no earlier post with the exact line, but MemeStand hasn't confirmed that this was the first.",
       "sources": [
         {
           "name": "@vibeistani on X (original post)",
@@ -1544,10 +1417,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": false,
-      "how_to_use": [
-        "She only wants me for my [your country] passport"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:55:09-08:00"
     },
     "sips-ram": {
       "name": "Boston RAM Party",
@@ -1600,11 +1471,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": false,
-      "how_to_use": [
-        "Me before vs. after the beanie goes on",
-        "Nobody: the skull cap at 7:59am on picture day:"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "snow-leopard-paws-at-you": {
       "name": "Snow Leopard Paws at You",
@@ -1637,11 +1505,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": true,
-      "how_to_use": [
-        "*paws at you* minecraft?",
-        "*paws at you* are you awake"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "telegram-microsoft": {
       "name": "Telegram's Bill Gates / Microsoft Joke",
@@ -1652,10 +1517,7 @@
       "explainer": "A crude one-liner from Telegram's official X account claiming Bill Gates named Microsoft after his anatomy. Fans treated the verified corporate account's joke as appointment comedy, quote-tweeting it with MACROHARD edits and brand-account boundary debates.",
       "origin": "Posted by the official @telegram account on November 4, 2026 (X status 2117998301564043360): \"i can't believe bill gates named that company after his penis.\" The post itself went viral (11M+ views) and became an X News trending story.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "Quote-tweet or screenshot the Telegram post as a reaction to brand accounts being unhinged",
-        "MACROHARD / Micro-Soft pun follow-ups"
-      ],
+      "how_to_use": [],
       "source_url": "https://x.com/telegram/status/2117998301564043360",
       "kym_url": null,
       "sources": [
@@ -1670,7 +1532,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-05T12:10:10-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "the-myth-of-consensual-pc-building": {
       "name": "The Myth of Consensual PC Building",
@@ -1710,10 +1572,7 @@
       "explainer": "An animated GIF of a monkey in white headphones scribbling frantically at a cluttered desk. People caption it as late-night studying, locking in for five minutes, or drafting a thesis — hence the nickname \"Thesis Monkey.\"",
       "origin": "The same headphones-monkey GIF circulated on X in late October and early November 2026; an early share by @wellsuchup appeared October 31, and @studsyun's November 3 repost drew millions of views. An X News story on November 4 described users labeling it \"Thesis Monkey\" for study-session chaos. The original animator/creator of the GIF itself is not clearly credited in the posts we checked.",
       "origin_confirmed": false,
-      "how_to_use": [
-        "Me writing my thesis at 2am",
-        "After 5 minutes of locking in"
-      ],
+      "how_to_use": [],
       "source_url": "https://x.com/studsyun/status/2117440926024884418",
       "kym_url": null,
       "sources": [
@@ -1732,7 +1591,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T06:05:50-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "twitch-vs-chatgpt": {
       "name": "Twitch Chat vs ChatGPT Two Paths",
@@ -1787,11 +1646,8 @@
       "related": [],
       "written": "2026-11-03",
       "origin_confirmed": true,
-      "how_to_use": [
-        "Me walking into the function in my one good jacket",
-        "The group chat when someone says \"outside?\""
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "while-theyre-out-partying": {
       "name": "While They're Out Partying",
@@ -1816,11 +1672,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": false,
-      "how_to_use": [
-        "While they're out partying, I'm perfecting my parallel parking",
-        "While they're out partying, I'm 400 hours into Stardew Valley"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "woke-3": {
       "name": "Woke 3",
@@ -1832,9 +1685,7 @@
       "origin": "Know Your Meme traces \"Woke 2\" talk through 2026 (including Chi Ossé's May 22, 2026 \"Woke 1 was crazyyyy\" post) and early \"Woke 3\" jokes on X from August 2026 (e.g. invite-code and Chick-fil-A-on-Sunday bits). A KYM entry published November 4, 2026 covers the midterm surge; TikToker @megitchell posted a comic \"Woke 3\" rundown on October 15, 2026, and posts such as @MeganBitchell's November 3–4 \"Woke 3 starts tonight\" / \"WOKE 3\" uploads helped push the phrase after election night.",
       "origin_confirmed": true,
       "how_to_use": [
-        "Woke 3 starts tonight",
-        "POV: we skipped Woke 2 and went straight to Woke 3",
-        "In Woke 3 we're gonna…"
+        "Woke 3 starts tonight"
       ],
       "source_url": "https://knowyourmeme.com/memes/woke-3",
       "kym_url": "https://knowyourmeme.com/memes/woke-3",
@@ -1854,7 +1705,7 @@
       ],
       "related": [],
       "written": "2026-11-04",
-      "checked": "2026-11-04T14:10:00-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "woke-up-goldeneye": {
       "name": "You Finally Woke Up Babe (GoldenEye)",
@@ -1865,10 +1716,7 @@
       "explainer": "A nostalgia-reset image macro: a late-90s / early-2000s bedroom with a CRT TV, Nintendo 64, and GoldenEye on screen, captioned as a partner dismissing modern doomscroll topics ('housing crisis? data centers?') and inviting you to play multiplayer while listening to Limp Bizkit. It jokes that waking up from today's anxieties drops you back into a simpler gaming night.",
       "origin": "Posted to r/memes by /u/JohnSkaoBoy on November 5, 2026 titled 'Maybe it was all a dream' and ranked #2 on r/memes top-today that morning. It riffs on the broader 'you finally woke up babe' nostalgia template paired with Altman / housing-vs-datacenters discourse.",
       "origin_confirmed": true,
-      "how_to_use": [
-        "You finally woke up babe... housing crisis? data centers?",
-        "Come on, pick a controller, I just put it in GoldenEye"
-      ],
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/memes/comments/1xnr7oi/maybe_it_was_all_a_dream/",
       "kym_url": null,
       "sources": [
@@ -1879,7 +1727,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-05T06:13:38-08:00"
+      "checked": "2026-11-07T22:51:54-08:00"
     },
     "ww3-or-christmas": {
       "name": "WW3 or Christmas?",
@@ -1928,11 +1776,8 @@
       "written": "2026-11-01",
       "related": [],
       "origin_confirmed": true,
-      "how_to_use": [
-        "When the \"designer\" bag from the market has three Gs",
-        "Me looking at the off-brand cereal my mum bought"
-      ],
-      "checked": "2026-11-03T23:51:43-08:00"
+      "how_to_use": [],
+      "checked": "2026-11-07T22:51:54-08:00"
     }
   }
 }
