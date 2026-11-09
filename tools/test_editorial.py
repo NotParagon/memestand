@@ -215,6 +215,87 @@ def test_blocklist_scrub_keeps_neighbor_evidence_without_a_new_stamp():
         {"updated": "2026-11-07T21:09:00-08:00"}) is False
 
 
+def test_list_h1_is_the_headline_and_weekly_is_in_the_nav():
+    head = build.mast("", "THE TOP MEMES TODAY")
+    h1 = re.search(r"<h1[^>]*>(.*?)</h1>", head).group(1)
+    assert h1 == "THE TOP MEMES TODAY"
+    assert "MEMESTAND" not in h1
+    assert head.index('<span class="logo">') < head.index("<h1")
+    assert 'href="trending-memes-this-week/"' in head
+    assert 'href="top-memes-today/"' in head
+    assert 'href="best-memes-this-month/"' in head
+    plain = build.mast("../../", "MEME EXPLAINED", h1=False)
+    assert "<h1" not in plain
+    assert "MEMESTAND" in plain
+    foot = build.footer("")
+    assert 'href="trending-memes-this-week/">Trending This Week</a>' in foot
+    switch = build.period_switch("daily", "../")
+    assert "trending-memes-this-week/" in switch
+    assert "best-memes-this-month/" in switch
+
+
+def test_custom_public_title_is_not_suffixed_again():
+    custom = "Crack a Monster Meme ('It's Not That Deep'): Meaning & Origin | MemeStand"
+    info = {"name": "It's Not That Deep. Crack a Monster.", "seo_title": custom, "explainer": "A cope line."}
+    assert build.public_title(info) == custom
+    assert info["seo_title"].count("MemeStand") == 1
+    plain = {"name": "Seatbelt Dog", "explainer": "A dog."}
+    assert build.public_title(plain) == "Seatbelt Dog Meme: Meaning & Origin | MemeStand"
+    cousins = "What My Little Cousins Do When They See Me Meme (Hippo & Alligator) | MemeStand"
+    assert build.public_title({"name": "Little Cousins (Hippo and Alligator)", "seo_title": cousins}) == cousins
+
+
+def test_content_stamp_prefers_the_review_time():
+    import datetime
+    fallback = datetime.datetime.fromisoformat("2026-11-09T14:04:00-08:00")
+    got = build.content_stamp("2026-11-07T23:13:29-08:00", fallback)
+    assert got.isoformat(timespec="seconds") == "2026-11-07T23:13:29-08:00"
+    assert build.content_stamp(None, fallback) == fallback
+    assert build.content_stamp("not-a-date", fallback) == fallback
+
+
+def test_written_explainer_stays_when_it_is_off_the_lists():
+    saved = dict(build.PAGES)
+    blobs = {}
+    real_write = build.write
+    build.PAGES.clear()
+
+    def capture(rel, text):
+        blobs[rel] = text
+
+    build.write = capture
+    try:
+        build.retain_written_pages({
+            "kept-off-list": {
+                "name": "Kept Off List",
+                "ids": ["kept-off-list"],
+                "explainer": "A real explanation of the joke.",
+                "origin": "The first post has not been confirmed.",
+                "origin_confirmed": False,
+                "status": "short",
+                "sources": [{"name": "Example", "url": "https://example.com/post"}],
+                "written": "2026-11-04",
+                "checked": "2026-11-04T12:00:00-08:00",
+                "source_url": "https://x.com/someone/status/1",
+            },
+            "empty-stub": {"name": "Empty Stub", "ids": ["empty-stub"], "explainer": None, "origin": None},
+        })
+        assert "kept-off-list" in build.PAGES
+        assert "empty-stub" not in build.PAGES
+        assert build.PAGES["kept-off-list"]["days"] == []
+        assert build.PAGES["kept-off-list"]["modified"].startswith("2026-11-04T12:00:00")
+        build.build_meme_page("kept-off-list")
+    finally:
+        build.write = real_write
+        build.PAGES.clear()
+        build.PAGES.update(saved)
+    html = blobs["meme/kept-off-list/index.html"]
+    assert "A real explanation of the joke." in html
+    assert "archive/" not in html.split("<h1", 1)[-1].split("Daily meme reports", 1)[0] or "No saved daily report" in html
+    assert "No saved daily report includes this meme right now." in html
+    assert "archive/2026-11-04.html" not in html
+
+
 def test_home_links_do_not_use_index_html():
     assert build.home_href("") == "./"
     assert build.home_href("../../") == "../../"
@@ -316,15 +397,18 @@ def test_built_pages_match_the_rules():
     originals = _hrefs(today, "View original")
     assert originals, "expected at least one View original link"
     assert all("knowyourmeme.com" not in u for u in originals)
-    assert TIKTOK in originals
+    # Fancy Cafe left the daily list and stays on the weekly list. Do not put it back on daily.
+    week = (ROOT / "trending-memes-this-week" / "index.html").read_text()
+    assert TIKTOK in _hrefs(week, "View original")
     sentence = build.evidence_sentence(build.EVIDENCE["fancy-cafe"])
-    assert "Know Your Meme explainer" in today
+    assert "Know Your Meme explainer" in week
     assert "<summary>Sources &amp; details</summary>" in today
     assert 'class="zone zone-lead"' in today and 'class="zone zone-hist"' in today
     assert 'class="zone zone-by"' in today and 'class="zone zone-src"' in today
     assert 'class="zone zone-more"' in today
-    assert sentence in today and "11.1M" not in today
-    assert "AI-generated video" in today
+    assert sentence in week and "11.1M" not in week
+    assert "AI-generated video" in week
+    assert "AI-generated video" not in today
     # The page stamp is the memes.json build time, not an evidence observation.
     assert f'datetime="{build.ISO}"' in today
     assert "21:09" not in today
@@ -336,8 +420,9 @@ def test_built_pages_match_the_rules():
     assert "comedy skit (and its AI remakes)" not in fancy
     assert "SKIT SPAWNS" not in today and "Skit Spawns" not in today
     assert "SKIT SPAWNS" not in fancy and "SKIT SPAWNS" not in home
-    assert "AI-Generated Cafe Seating Mix-up" in today
-    assert "POV: Your First Time in a Fancy Cafe" in today
+    assert "AI-Generated Cafe Seating Mix-up" in week
+    assert "POV: Your First Time in a Fancy Cafe" in week
+    assert "AI-Generated Cafe Seating Mix-up" not in today
     assert "Sitting-on-the-table Skit Spawns" in nov7
     assert "AI-Generated Cafe Seating Mix-up" not in nov7
     assert "Me confidently sitting down" not in fancy
@@ -375,6 +460,64 @@ def test_built_pages_match_the_rules():
     # Curated RAM family links remain.
     heidi = (ROOT / "meme" / "heidi-32gb-ram" / "index.html").read_text()
     assert "meme/sam-altman-ram/" in heidi
+
+    import html as html_lib
+    def title_text(page):
+        return html_lib.unescape(re.search(r"<title>(.*?)</title>", page).group(1))
+    def h1_text(page):
+        return html_lib.unescape(re.search(r"<h1[^>]*>(.*?)</h1>", page, re.S).group(1))
+    def desc_text(page):
+        return html_lib.unescape(re.search(r'<meta name="description" content="(.*?)"', page).group(1))
+
+    assert "MEMESTAND" not in h1_text(home)
+    assert "THE TOP MEMES TODAY" in h1_text(home)
+    assert title_text(home) == "MemeStand — Daily Meme Report: Today's Top Memes, Ranked by Virality"
+    assert not title_text(home).startswith("Top 10 Memes Today")
+    assert title_text(today).startswith("Top 10 Memes Today (")
+    assert "Trending Memes Right Now | MemeStand" in title_text(today)
+    month = (ROOT / "best-memes-this-month" / "index.html").read_text()
+    assert title_text(month).startswith("Best Memes of ")
+    assert "Top 10 Memes This Month | MemeStand" in title_text(month)
+    assert "November 2026" in title_text(month) or build.NOW.strftime("%B %Y") in title_text(month)
+    assert 'href="trending-memes-this-week/"' in home
+    assert "trending memes this week" in home
+    assert "best memes of the month" in home
+    about = (ROOT / "about.html").read_text()
+    assert "older links keep working" not in about
+    assert "trending-memes-this-week/" in about
+    crack = title_text((ROOT / "meme" / "crack-a-monster" / "index.html").read_text())
+    assert crack == "Crack a Monster Meme ('It's Not That Deep'): Meaning & Origin | MemeStand"
+    telegram = title_text((ROOT / "meme" / "telegram-microsoft" / "index.html").read_text())
+    assert telegram == "Telegram Bill Gates Microsoft Joke Meme: Meaning & Origin | MemeStand"
+    assert "/" not in telegram.split("|")[0]
+    newton = (ROOT / "meme" / "newton-fourth-law" / "index.html").read_text()
+    assert title_text(newton) == "Newton's Fourth Law of Motion Meme: Meaning & Origin | MemeStand"
+    assert desc_text(newton).lower().startswith('"if newton saw the way i be moving')
+    assert title_text((ROOT / "meme" / "seatbelt-dog" / "index.html").read_text()) == "Seatbelt Dog Meme: Meaning & Origin | MemeStand"
+    assert title_text((ROOT / "meme" / "me-instructing" / "index.html").read_text()) == "Me Instructing Meme (Bakery Pointing Clip): Meaning & Origin | MemeStand"
+    assert title_text((ROOT / "meme" / "affleck-i-voted-smoking" / "index.html").read_text()) == "Ben Affleck 'I Voted' Smoking Update Meme: Meaning & Origin | MemeStand"
+    assert title_text((ROOT / "meme" / "bounce-baby-boy" / "index.html").read_text()) == "Boys Go Always Bounce Back Meme (Bouncing Baby Boy): Meaning & Origin | MemeStand"
+    assert title_text((ROOT / "meme" / "why-is-my-sister-named-lily" / "index.html").read_text()) == "Why Is My Sister Named Lily Meme: Meaning & Origin | MemeStand"
+    cousins = (ROOT / "meme" / "little-cousins-hippo-and-alligator" / "index.html").read_text()
+    assert title_text(cousins) == "What My Little Cousins Do When They See Me Meme (Hippo & Alligator) | MemeStand"
+    assert desc_text(cousins).lower().startswith('"what my little cousins do when they see me')
+    assert title_text((ROOT / "meme" / "people-my-age-pregnancy-tests" / "index.html").read_text()) == "People My Age Buying Pregnancy Tests Meme: Meaning & Origin | MemeStand"
+    regret = (ROOT / "meme" / "regretamine" / "index.html").read_text()
+    assert "March 1, 2021" in regret
+    assert "November 1, 2026" in regret
+    assert "brought the joke back" in regret
+    assert "The Independent" in regret and "Newsweek" in regret and "News18" in regret
+    assert "origin_confirmed" not in regret
+    assert "hasn’t been confirmed" in regret or "hasn't been confirmed" in regret
+    assert "View original" not in regret
+    kept = ROOT / "meme" / "little-void-creatures" / "index.html"
+    assert kept.exists()
+    assert "No saved daily report includes this meme right now." in kept.read_text()
+    assert not (ROOT / "meme" / "fortnite-pirate-shop-token").exists()
+    sm = (ROOT / "sitemap.xml").read_text()
+    assert "<loc>https://memestand.com/meme/newton-fourth-law/</loc><lastmod>2026-11-09T14:17:26-08:00</lastmod>" in sm
+    assert "<loc>https://memestand.com/meme/little-void-creatures/</loc><lastmod>2026-11-07T23:13:29-08:00</lastmod>" in sm
+    assert "<loc>https://memestand.com/meme/seatbelt-dog/</loc><lastmod>2026-11-08T06:16:07-08:00</lastmod>" in sm
 
 
 def main():

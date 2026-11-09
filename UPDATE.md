@@ -267,13 +267,14 @@ Every `python3 build.py` regenerates all of this from `data/memes.json`, so no m
 - **Head tags** on every page: keyword title, meta description naming today's #1, canonical `https://memestand.com/...`,
   Open Graph + Twitter `summary_large_image` (og:image = today's #1 local thumbnail as an absolute URL, or `og-default.png`
   when #1 is a text card), favicon links, Atom feed link, `lang="en"`.
-- **Headings**: one `<h1>` per page (masthead + tagline), `<h2>` "Top 10 Memes Today / This Week / This Month", `<h3>` per meme.
+- **Headings**: one `<h1>` per page. On list pages the h1 is the headline only; the MEMESTAND logo sits outside it. Explainer pages keep their own h1. `<h2>` "Top 10 Memes Today / This Week / This Month", `<h3>` per meme.
+- **Weekly list**: `/trending-memes-this-week/` is a supported ranking, linked from the header, the footer, the period pager, and one sentence in the homepage intro. Do not describe it as a legacy URL.
   Alt text on every image is "<Title-Case headline> meme - #N today on MemeStand".
 - **JSON-LD** (`@graph`): Organization, WebSite, CollectionPage (dateModified = build time), and an ItemList per top-10 list
   (ListItem position / name / url / image). Archive pages add datePublished and a BreadcrumbList.
 - **Pages**: `/top-memes-today/`, `/trending-memes-this-week/`, `/best-memes-this-month/` (with the evidence notes),
   `/archive/YYYY-MM-DD.html` (one per day; same-day rebuilds overwrite only today's), `/archive/`, `/about.html`.
-- **Crawl files**: `sitemap.xml` (lastmod per URL), `robots.txt` (allows everyone incl. GPTBot, OAI-SearchBot, PerplexityBot,
+- **Crawl files**: `sitemap.xml` (lastmod per URL; a meme page uses its `checked` time when that field is set, not the hourly build time), `robots.txt` (allows everyone incl. GPTBot, OAI-SearchBot, PerplexityBot,
   Google-Extended, ClaudeBot, Applebot-Extended, CCBot...), `llms.txt` (site summary + today's three lists in Markdown),
   `feed.xml` (Atom, newest 60 daily #1s).
 - The old 30-minute `<meta http-equiv="refresh">` was removed: content changes on the ~3-hour cadence above, and Bing and accessibility
@@ -305,9 +306,9 @@ After pushing: `curl -s https://memestand.com/ | grep -c 'application/ld+json'` 
 
 ## Meme pages (`/meme/<slug>/`, `/memes/`, store: `data/meme_pages.json`)
 
-Every meme that has ever ranked gets a permanent page at `https://memestand.com/meme/<slug>/`. The H1 is
+Every meme that has ever ranked gets a permanent page at `https://memestand.com/meme/<slug>/`. A written explainer or origin in `data/meme_pages.json` is built even when that meme is absent from the current lists and from every archive snapshot, so the URL does not 404 after it drops off. An entry with no explainer text does not get a page unless the meme is actually ranked. Do not invent a stub for an unranked meme. The H1 is
 "<Meme name> meme: what it means and where it came from"; the `<title>` is "<Meme name> Meme: Meaning & Origin | MemeStand"
-(names ending in "memes"/"trend" are used as-is) and the meta description starts "<Meme name> meme meaning: <first sentence>".
+(names ending in "memes"/"trend" are used as-is) unless the entry sets `seo_title` to the full public title. The meta description starts "<Meme name> meme meaning: <first sentence>" unless the entry sets `meta_description`. Do not append `| MemeStand` again when `seo_title` already includes it.
 The page shows the thumbnail, then H2 "What does the <name> meme mean?" (explainer), H2 "Where did the <name> meme come from?"
 (origin, plus the note "The original creator of this meme hasn't been confirmed." when `origin_confirmed` is false), an optional
 H2 "Source caption" (a `how_to_use` line only when it is the exact full card_text or post-card quote of a direct post), first- and last-seen dates on MemeStand, the best rank per list, links to every archive day it appeared on, sources and related memes.
@@ -329,7 +330,9 @@ Related memes are the slugs in `related` only. Ranking on the same day is not tr
   "sources": [{"name": "The Verge: ...", "url": "..."}],   // every source the text relies on (the ranked post is added automatically)
   "related": ["other-slug"],            // optional, same meme family only. build.py does not add co-ranked memes.
   "written": "YYYY-MM-DD",
-  "checked": "2026-11-03T23:50:00-08:00"  // when the text was written or last reviewed (PT, real time); feeds dateModified + sitemap lastmod
+  "checked": "2026-11-03T23:50:00-08:00",  // when the text was written or last reviewed (PT, real time); this is dateModified + sitemap lastmod when set
+  "seo_title": "Optional full document title",  // omit to use the generated title. Do not add a second brand suffix.
+  "meta_description": "Optional meta description"  // omit to use the generated description
 }
 ```
 - **Slugs are permanent.** build.py makes a slug from the meme's name (or id), dedupes it (`-2`, `-3`) and stores it. Never rename a slug or
