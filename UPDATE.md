@@ -125,7 +125,7 @@ The noon and 6 PM countdown clips are not part of this routine. Leaving the no-j
 2. **Edit `data/candidates.json`**:
    - Add new memes and update the numbers on existing ones.
    - Set `periods` to the lists each meme qualifies for:
-     - `daily`: took off in the last ~36h
+     - `daily`: trending on evidence from the last ~24-36h, ranked by that window's momentum (not leftover multi-day totals). A meme first posted yesterday that exploded today qualifies. Older hits without a new wave inside the window come off `daily` and stay `weekly`/`monthly`. If fewer than 10 qualify, publish the shorter list; never pad (Roger, Nov 9 2026).
      - `weekly`: active in the last 7 days
      - `monthly`: active in the last 30 days
    - Remove memes that have aged out of every window.
