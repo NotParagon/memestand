@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T06:07-08:00",
+  "updated": "2026-11-09T07:11-08:00",
   "daily": [
     {
       "rank": 1,
@@ -208,6 +208,38 @@
     },
     {
       "rank": 7,
+      "id": "little-cousins-hippo-gator",
+      "title": "'WHAT MY LITTLE COUSINS DO WHEN THEY SEE ME': AI HIPPO-AND-ALLIGATOR GIF BECOMES THE GO-TO FAMILY REACTION",
+      "image": "images/little-cousins-hippo-gator.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/accekid/status/2119342124143448127",
+      "source_name": "X / @accekid",
+      "credit": "posted by @accekid on X",
+      "also": [
+        {
+          "name": "X / @accekid (2.8M views)",
+          "url": "https://x.com/accekid/status/2119342124143448127"
+        },
+        {
+          "name": "X News (alligator and baby hippo GIF)",
+          "url": "https://x.com/i/trending/2119440325441733025"
+        },
+        {
+          "name": "X / @iam_obc70 (same clip, 40K views)",
+          "url": "https://x.com/iam_obc70/status/2119347975541383516"
+        }
+      ],
+      "first_seen": "2026-11-08",
+      "score": 69.9,
+      "sources": [
+        "X"
+      ],
+      "notes": "AI-generated clip of a baby hippo and an alligator standing upright on a street, posted as a GIF by @accekid on X Nov 8 2026 (12:11 AM PT) captioned 'What my little cousins do when they see me instead of just saying hello'. X API Nov 9 6AM PT: 2.82M views / 68.6K likes. X recent counts: ~10,000 posts using 'little cousins' + see me/hello/greeting Nov 8-9 vs single digits the days before; other accounts repost the clip with their own captions (e.g. @iam_obc70 40K views). X News story Nov 8-9. Clip carries a TikTok watermark; original clip creator not confirmed.",
+      "name": "Little Cousins (Hippo and Alligator)"
+    },
+    {
+      "rank": 8,
       "id": "newton-fourth-law",
       "title": "'NEWTON WOULD ADD A FOURTH LAW OF MOTION': THE HUSTLE BRAG EVERYONE IS COPYING",
       "image": null,
@@ -236,38 +268,6 @@
         "X"
       ],
       "notes": "Text post 'If newton saw the way I be moving these days he'd add a fourth law of motion' (@sbxloch, Nov 6 1:41 PM PT). X API 1.14M views / 94.5K likes (Nov 7 1PM PT). Dozens of independent accounts reposting the line verbatim Nov 7 plus swaps (Madueke, Declan Rice, '@user is the fourth law'); X News story Nov 7."
-    },
-    {
-      "rank": 8,
-      "id": "little-cousins-hippo-gator",
-      "title": "'WHAT MY LITTLE COUSINS DO WHEN THEY SEE ME': AI HIPPO-AND-ALLIGATOR GIF BECOMES THE GO-TO FAMILY REACTION",
-      "image": "images/little-cousins-hippo-gator.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/accekid/status/2119342124143448127",
-      "source_name": "X / @accekid",
-      "credit": "posted by @accekid on X",
-      "also": [
-        {
-          "name": "X / @accekid (2.8M views)",
-          "url": "https://x.com/accekid/status/2119342124143448127"
-        },
-        {
-          "name": "X News (alligator and baby hippo GIF)",
-          "url": "https://x.com/i/trending/2119440325441733025"
-        },
-        {
-          "name": "X / @iam_obc70 (same clip, 40K views)",
-          "url": "https://x.com/iam_obc70/status/2119347975541383516"
-        }
-      ],
-      "first_seen": "2026-11-08",
-      "score": 69.5,
-      "sources": [
-        "X"
-      ],
-      "notes": "AI-generated clip of a baby hippo and an alligator standing upright on a street, posted as a GIF by @accekid on X Nov 8 2026 (12:11 AM PT) captioned 'What my little cousins do when they see me instead of just saying hello'. X API Nov 9 6AM PT: 2.82M views / 68.6K likes. X recent counts: ~10,000 posts using 'little cousins' + see me/hello/greeting Nov 8-9 vs single digits the days before; other accounts repost the clip with their own captions (e.g. @iam_obc70 40K views). X News story Nov 8-9. Clip carries a TikTok watermark; original clip creator not confirmed.",
-      "name": "Little Cousins (Hippo and Alligator)"
     },
     {
       "rank": 9,
