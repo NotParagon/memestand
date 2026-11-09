@@ -30,8 +30,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-          "views": 1484549,
-          "likes": 130404,
+          "views": 1484642,
+          "likes": 130401,
           "checked": "2026-11-09",
           "via": "X API"
         }
@@ -64,8 +64,8 @@
         ],
         "x": {
           "url": "https://x.com/MonsterEnergy/status/2118012916586676345",
-          "views": 6439248,
-          "likes": 51054,
+          "views": 6443317,
+          "likes": 51059,
           "checked": "2026-11-09",
           "via": "X API"
         },
@@ -2239,8 +2239,8 @@
         ],
         "x": {
           "url": "https://x.com/telegram/status/2117998301564043360",
-          "views": 14976439,
-          "likes": 159961,
+          "views": 14977285,
+          "likes": 159962,
           "checked": "2026-11-09",
           "via": "X API"
         },
@@ -2289,7 +2289,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/2THUQQ/status/2118617523708965188",
-          "views": 499958,
+          "views": 500165,
           "likes": 40713,
           "checked": "2026-11-09",
           "via": "X API"
@@ -2333,7 +2333,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/tuna_petal/status/2118514084140229097",
-          "views": 1878763,
+          "views": 1878937,
           "likes": 32510,
           "checked": "2026-11-09",
           "via": "X API"
@@ -2376,8 +2376,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/sbxloch/status/2118821023151706276",
-          "views": 2887486,
-          "likes": 219188,
+          "views": 2891082,
+          "likes": 219269,
           "checked": "2026-11-09",
           "via": "X API"
         }
@@ -2420,8 +2420,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/anacomlula/status/2119093703277187568",
-          "views": 1722536,
-          "likes": 80842,
+          "views": 1722987,
+          "likes": 80841,
           "checked": "2026-11-09",
           "via": "X API"
         }
@@ -2463,7 +2463,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/websofmj/status/2119174999701422578",
-          "views": 660411,
+          "views": 663556,
           "likes": 34045,
           "checked": "2026-11-09",
           "via": "X API"
@@ -2506,8 +2506,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/accekid/status/2119342124143448127",
-          "views": 4289908,
-          "likes": 81862,
+          "views": 4414208,
+          "likes": 83054,
           "checked": "2026-11-09",
           "via": "X API"
         }
@@ -2553,8 +2553,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/loomie_my/status/2119273290099532286",
-          "views": 308513,
-          "likes": 26204,
+          "views": 309164,
+          "likes": 26253,
           "checked": "2026-11-09",
           "via": "X API"
         }
@@ -2563,6 +2563,65 @@
       "first_seen_basis": "Earliest post of this wave found on X search is @loomie_my Nov 8 2026 UTC; X News says the template is older",
       "headline_reviewed": true,
       "credit": "posted by @loomie_my on X"
+    },
+    {
+      "id": "fortnite-pirate-shop-token",
+      "periods": [
+        "weekly",
+        "monthly"
+      ],
+      "name": "Fortnite Pirate Shop Token",
+      "title": "FORTNITE PLAYERS MEME THEIR HUNT FOR THE ULTRA-RARE 'PIRATE SHOP TOKEN'",
+      "source_url": "https://knowyourmeme.com/memes/fortnite-pirate-shop-token",
+      "source_name": "Know Your Meme",
+      "kym_url": "https://knowyourmeme.com/memes/fortnite-pirate-shop-token",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/737/Screenshot_2026-11-09_162055.png",
+      "first_seen": "2026-11-02",
+      "first_seen_basis": "earliest reaction TikTok cited by KYM (@ebihazul, Nov 2 2026); in-game item launched Nov 1 2026 per KYM; KYM entry added Nov 9 2026",
+      "credit": "posted by @tw.amnishi.legend on TikTok",
+      "also": [
+        {
+          "name": "TikTok / @tw.amnishi.legend (5M views)",
+          "url": "https://www.tiktok.com/@tw.amnishi.legend/video/7705335436113186055"
+        },
+        {
+          "name": "TikTok / @zqusk (3M views)",
+          "url": "https://www.tiktok.com/@zqusk/video/7705420796625308936"
+        },
+        {
+          "name": "TikTok / @sahhyameiii (1.3M views)",
+          "url": "https://www.tiktok.com/@sahhyameiii/video/7704412686930529549"
+        },
+        {
+          "name": "TikTok / @ebihazul (1.3M views)",
+          "url": "https://www.tiktok.com/@ebihazul/video/7703602339487304982"
+        },
+        {
+          "name": "TikTok / @denile_river (697.8K views)",
+          "url": "https://www.tiktok.com/@denile_river/video/7705994811765050645"
+        }
+      ],
+      "ev": {
+        "platforms": [
+          "TikTok",
+          "Know Your Meme"
+        ],
+        "kym": true,
+        "kym_views": 133,
+        "tiktok": {
+          "url": "https://www.tiktok.com/@tw.amnishi.legend/video/7705335436113186055",
+          "views": 5000000,
+          "likes": 1100000,
+          "author": "@tw.amnishi.legend",
+          "posted": "2026-11-07",
+          "checked": "2026-11-09",
+          "via": "fetch_social.py",
+          "posts_read": 5
+        }
+      },
+      "notes": "KYM entry added Nov 9 2026 (Submission). Independent TikTok variations read via fetch_social.py --kym: @tw.amnishi.legend 5M views (Nov 7), @zqusk 3M (Nov 7), @sahhyameiii 1.3M (Nov 4), @ebihazul 1.3M (Nov 2), @denile_river 697.8K (posted Nov 9). Official Fortnite trailer (YouTube) excluded as not a meme post. X posts found small (<4K impressions), not scored. Daily: not placed at 2PM Nov 9 run; the posts inside the 24-36h window are the Nov 9 @denile_river compilation (697.8K) and the new KYM entry, which score below the current daily #10 on window momentum (largest posts are Nov 7). Recheck at next run.",
+      "headline_reviewed": true,
+      "minor_reviewed": true
     }
   ]
 }
