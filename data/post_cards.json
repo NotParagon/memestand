@@ -36,6 +36,36 @@
       "quote": "Boys go always bounce back na why dem dey call us bouncing baby boy",
       "source_asset": "social/2026-11-06/memestand-trending-2026-11-06.jpg",
       "prepared": "Unlabeled square of the owner-approved social post card. The MemeStand header was removed. Avatar, handle, and the full post remain."
+    },
+    "why-is-my-sister-named-lily": {
+      "ids": ["lily-name-joke"],
+      "file": "images/post-cards/why-is-my-sister-named-lily.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "Mom why is my sister named lily\n\nBecause your mother likes lilies \n\nOh thanks mom\n\nNo problem nasi kandar kuah banjir",
+      "source_url": "https://x.com/loomie_my/status/2119273290099532286",
+      "source_asset": "memestand-video/cache/2026-11-09/lily-name-joke-card.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 9 2026 from the public post read via the X API (text, handle, display name, avatar). Not a screenshot of X. Decorative symbols in the display name were omitted because the font cannot draw them."
+    },
+    "affleck-i-voted-smoking": {
+      "ids": ["affleck-i-voted-smoking"],
+      "file": "images/post-cards/affleck-i-voted-smoking.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "Wake up, babe. Ben Affleck tired and smoking meme has been updated.",
+      "source_url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
+      "source_asset": "memestand-video/cache/2026-11-09/affleck-i-voted-smoking-card.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 9 2026 from the public post read via the X API (text, handle, display name, avatar). Not a screenshot of X. Decorative symbols in the display name were omitted because the font cannot draw them. The post's two attached photos (paparazzi image) are not reproduced; image_policy stays none. The trailing t.co media link is omitted."
+    },
+    "newton-fourth-law": {
+      "ids": ["newton-fourth-law"],
+      "file": "images/post-cards/newton-fourth-law.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "If newton saw the way I be moving these days he'd add a fourth law of motion",
+      "source_url": "https://x.com/sbxloch/status/2118821023151706276",
+      "source_asset": "memestand-video/cache/2026-11-09/newton-fourth-law-card.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 9 2026 from the public post read via the X API (text, handle, display name, avatar); same content as the owner-approved social card social/2026-11-07/memestand-trending-now-newton-fourth-law.jpg, without the MemeStand header. Not a screenshot of X."
     }
   }
 }

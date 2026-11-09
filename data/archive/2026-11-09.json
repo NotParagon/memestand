@@ -1,8 +1,60 @@
 {
-  "updated": "2026-11-09T10:15-08:00",
+  "updated": "2026-11-09T10:23-08:00",
   "daily": [
     {
       "rank": 1,
+      "id": "telegram-microsoft",
+      "title": "TELEGRAM'S OFFICIAL ACCOUNT: 'I CAN'T BELIEVE BILL GATES NAMED THAT COMPANY AFTER HIS PENIS'",
+      "image": "images/post-cards/telegram-microsoft.jpg",
+      "image_url": null,
+      "image_kind": "post_card",
+      "card_text": null,
+      "source_url": "https://x.com/telegram/status/2117998301564043360",
+      "source_name": "X / @telegram",
+      "credit": "posted by @telegram on X",
+      "also": [
+        {
+          "name": "X / @telegram (14.9M views)",
+          "url": "https://x.com/telegram/status/2117998301564043360"
+        },
+        {
+          "name": "X News",
+          "url": "https://x.com/i/trending/2118107139155939611"
+        }
+      ],
+      "first_seen": "2026-11-04",
+      "score": 76.8,
+      "sources": [
+        "X"
+      ],
+      "notes": "Telegram official joke that Bill Gates named Microsoft after his penis. X API 13.98M views / 154.0K likes (Nov 6 6AM PT). Still circulating on X News."
+    },
+    {
+      "rank": 2,
+      "id": "crack-a-monster",
+      "title": "'IT'S NOT THAT DEEP. CRACK A MONSTER.': MONSTER ENERGY'S OWN POST BECOMES THE COPE MEME",
+      "image": "images/post-cards/crack-a-monster.jpg",
+      "image_url": null,
+      "image_kind": "post_card",
+      "card_text": null,
+      "source_url": "https://x.com/MonsterEnergy/status/2118012916586676345",
+      "source_name": "X / @MonsterEnergy",
+      "credit": "posted by @MonsterEnergy on X",
+      "also": [
+        {
+          "name": "X / @MonsterEnergy (6.3M views)",
+          "url": "https://x.com/MonsterEnergy/status/2118012916586676345"
+        }
+      ],
+      "first_seen": "2026-11-04",
+      "score": 73.1,
+      "sources": [
+        "X"
+      ],
+      "notes": "Monster Energy official: 'it's not that deep. crack a monster.' X API 5.38M views / 49.3K likes (Nov 6 6AM PT). Fan art / quote wave ongoing."
+    },
+    {
+      "rank": 3,
       "id": "little-cousins-hippo-gator",
       "title": "'WHAT MY LITTLE COUSINS DO WHEN THEY SEE ME': AI HIPPO-AND-ALLIGATOR GIF BECOMES THE GO-TO FAMILY REACTION",
       "image": "images/little-cousins-hippo-gator.jpg",
@@ -34,7 +86,128 @@
       "name": "Little Cousins (Hippo and Alligator)"
     },
     {
-      "rank": 2,
+      "rank": 4,
+      "id": "newton-fourth-law",
+      "title": "'NEWTON WOULD ADD A FOURTH LAW OF MOTION': THE HUSTLE BRAG EVERYONE IS COPYING",
+      "image": null,
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/sbxloch/status/2118821023151706276",
+      "source_name": "X / @sbxloch",
+      "credit": "posted by @sbxloch on X",
+      "also": [
+        {
+          "name": "X / @sbxloch (2.5M views)",
+          "url": "https://x.com/sbxloch/status/2118821023151706276"
+        },
+        {
+          "name": "X News (Newton's Fourth Law meme)",
+          "url": "https://x.com/i/trending/2119145538318946478"
+        },
+        {
+          "name": "X / @HirooOnodaon (Madueke variation)",
+          "url": "https://x.com/HirooOnodaon/status/2119119953274302685"
+        }
+      ],
+      "first_seen": "2026-11-06",
+      "score": 69.6,
+      "sources": [
+        "X"
+      ],
+      "notes": "Text post 'If newton saw the way I be moving these days he'd add a fourth law of motion' (@sbxloch, Nov 6 1:41 PM PT). X API 1.14M views / 94.5K likes (Nov 7 1PM PT). Dozens of independent accounts reposting the line verbatim Nov 7 plus swaps (Madueke, Declan Rice, '@user is the fourth law'); X News story Nov 7."
+    },
+    {
+      "rank": 5,
+      "id": "me-instructing",
+      "title": "'ME INSTRUCTING': BAKERY-COUNTER CLIP BECOMES THE BOSSY-DIRECTION REACTION MEME",
+      "image": "images/me-instructing.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/tuna_petal/status/2118514084140229097",
+      "source_name": "X / @tuna_petal",
+      "credit": "posted by @tuna_petal on X",
+      "also": [
+        {
+          "name": "X / @tuna_petal (1.9M views)",
+          "url": "https://x.com/tuna_petal/status/2118514084140229097"
+        },
+        {
+          "name": "X News (Bakery Counter / Me Instructing)",
+          "url": "https://x.com/i/trending/2119063066327278020"
+        },
+        {
+          "name": "X / @NuggetsItz (33K views)",
+          "url": "https://x.com/NuggetsItz/status/2118414453255418233"
+        }
+      ],
+      "first_seen": "2026-11-06",
+      "score": 67.7,
+      "sources": [
+        "X"
+      ],
+      "notes": "Bakery-counter clip of a woman emphatically pointing at a pastry while coaching a man; captions use 'me instructing [X] to [Y]'. Strong X News story Nov 7; largest verified post @tuna_petal 1.84M views / 31.0K likes (Nov 6)."
+    },
+    {
+      "rank": 6,
+      "id": "seatbelt-dog",
+      "title": "SEATBELT DOG: BUCKLED-IN PUP BECOMES X'S REPLY-VIDEO REACTION MEME",
+      "image": "images/seatbelt-dog.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/acervodoguinhos/status/1986031760011079881",
+      "source_name": "X / @acervodoguinhos",
+      "credit": "posted by @acervodoguinhos on X",
+      "also": [
+        {
+          "name": "X / @anacomlula (1.7M views)",
+          "url": "https://x.com/anacomlula/status/2119093703277187568"
+        },
+        {
+          "name": "X / @acervodoguinhos original clip (12.9M views)",
+          "url": "https://x.com/acervodoguinhos/status/1986031760011079881"
+        },
+        {
+          "name": "X News (Seatbelt Dog)",
+          "url": "https://x.com/i/trending/2119278609299050551"
+        }
+      ],
+      "first_seen": "2026-11-07",
+      "score": 67.4,
+      "sources": [
+        "X"
+      ],
+      "notes": "Cute Jack Russell clipped in a car seatbelt, used as a copy-paste reply video on X. Original clip posted by @acervodoguinhos on Nov 5 2025 (12,087,008 views / 43,911 likes, X API Nov 8). Current wave: people reply with the same video; @anacomlula Nov 7 post about learning the reply trick has 1,604,884 views / 74,929 likes. X News story \"Seatbelt Dog Video Becomes X's Fastest Meme\" (2119278609299050551). Independent reuse of the clip as a reaction format. Nov 9 10:30 AM PT: wave dates to Nov 7 (@anacomlula post 1.60M to 1.72M views over the past day); on daily under the widened Nov 4-8 window."
+    },
+    {
+      "rank": 7,
+      "id": "affleck-i-voted-smoking",
+      "title": "BEN AFFLECK'S 'I VOTED' SMOKING PHOTO UPDATES THE CLASSIC TIRED MEME, PER X",
+      "image": "images/post-cards/affleck-i-voted-smoking.jpg",
+      "image_url": null,
+      "image_kind": "post_card",
+      "card_text": null,
+      "source_url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
+      "source_name": "X / @BYRNEGRACES",
+      "credit": "posted by @BYRNEGRACES on X",
+      "also": [
+        {
+          "name": "X / @BYRNEGRACES (1.5M views)",
+          "url": "https://x.com/BYRNEGRACES/status/2118046162838053124"
+        },
+        {
+          "name": "X News (Affleck post-election meme)",
+          "url": "https://x.com/i/trending/2118434501269574094"
+        }
+      ],
+      "first_seen": "2026-11-04",
+      "score": 66.7,
+      "sources": [
+        "X"
+      ],
+      "notes": "Side-by-side of classic Affleck-tired meme with Nov 2026 paparazzi shot smoking outside Steak 48 with 'I VOTED' sticker. X @BYRNEGRACES 1.36M views / 121.9K likes (Nov 6 6AM PT); X News story still live. Paparazzi photo — text card only."
+    },
+    {
+      "rank": 8,
       "id": "people-my-age-pregnancy-tests",
       "title": "'PEOPLE MY AGE BUYING PREGNANCY TESTS AND ME...': X USERS SWAP IN THEIR HOBBIES OVER A CHEERFUL RED SLUG CLIP",
       "image": "images/people-my-age-pregnancy-tests.jpg",
@@ -65,11 +238,40 @@
       "notes": "Format: 'people my age buying pregnancy tests and me buying <hobby item>' over the same cheerful red-slug video clip, mostly Portuguese-language quote chains spreading into English. @websofmj Nov 7 post: 399,075 views / 30,025 likes / 1,253 quotes (X API Nov 8, 9 AM PT); many independent English and Portuguese variants (Lego, Snoopy blind boxes, Genshin crystals, My Little Pony cards). X News story 2119314363773284552. Window check Nov 9 10:15 AM PT (X recent counts, Portuguese 'teste de gravidez' + 'minha idade'): 2,406 posts Nov 7 UTC, 21,721 Nov 8 UTC, 11,646 Nov 9 UTC through 10:14 AM PT, so the wave peaked inside the last 36 hours."
     },
     {
-      "rank": 3,
+      "rank": 9,
+      "id": "bounce-baby-boy",
+      "title": "'BOYS GO ALWAYS BOUNCE BACK': NIGERIAN PIDGIN 'BOUNCING BABY BOY' MOTTO GOES VIRAL",
+      "image": "images/post-cards/bounce-baby-boy.jpg",
+      "image_url": null,
+      "image_kind": "post_card",
+      "card_text": null,
+      "source_url": "https://x.com/2THUQQ/status/2118617523708965188",
+      "source_name": "X / @2THUQQ",
+      "credit": "posted by @2THUQQ on X",
+      "also": [
+        {
+          "name": "X / @2THUQQ (493K views)",
+          "url": "https://x.com/2THUQQ/status/2118617523708965188"
+        },
+        {
+          "name": "X News (Nigerian Pidgin bouncing baby boy)",
+          "url": "https://x.com/i/trending/2118722212274561149"
+        }
+      ],
+      "first_seen": "2026-11-06",
+      "score": 62.0,
+      "sources": [
+        "X"
+      ],
+      "notes": "Nigerian Pidgin resilience motto reframing 'bouncing baby boy'. Posted by @2THUQQ (horsh) Nov 6 2026; X News story tracked copycats. Text card only. minor_reviewed: adult-metaphor Pidgin motto; no child depicted. X metrics refreshed ~6 PM PT (351k views / 31.9k likes)."
+    },
+    {
+      "rank": 10,
       "id": "lily-name-joke",
       "title": "'MOM, WHY IS MY SISTER NAMED LILY?': THE NAME JOKE WITH A SWAPPED-IN NON-SEQUITUR PUNCHLINE",
-      "image": null,
+      "image": "images/post-cards/why-is-my-sister-named-lily.jpg",
       "image_url": null,
+      "image_kind": "post_card",
       "card_text": "Mom why is my sister named lily\n\nBecause your mother likes lilies \n\nOh thanks mom\n\nNo problem nasi kandar kuah banjir",
       "source_url": "https://x.com/loomie_my/status/2119273290099532286",
       "source_name": "X / @loomie_my",
