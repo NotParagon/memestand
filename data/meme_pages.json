@@ -1,5 +1,5 @@
 {
-  "_doc": "Persistent per-meme explainer store for the /meme/<slug>/ pages, keyed by slug. build.py reads it and never regenerates written text. ids = candidate ids that map to this page (keep the slug forever). status: 'full' (real explanation + origin with sources) or 'short' (only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. Fields: explainer = 2-4 sentence plain-English meaning; origin = who/where/when if verified and how it spread, in our own words ('\\n\\n' between paragraphs); origin_confirmed = true only if the first post/creator is documented, false if unknown (the page then says so), null = not yet researched and must not be labeled the original; how_to_use = 0-2 captions that exactly equal a source card_text or post-card quote tied to a direct post URL (explainer and origin prose are not evidence; [] if none); original_url = verified creator post when one is documented (View original uses it only when origin_confirmed is true; never drop it on a refresh); sources = [{name,url}] links that back the text (must return 200); checked = ISO datetime (PT) the text was last written or reviewed (feeds dateModified + sitemap lastmod). build.py adds a stub (explainer null) for any new meme; the daily routine fills it in (UPDATE.md step 5). Know Your Meme is an explainer, not the original post.",
+  "_doc": "Persistent per-meme explainer store for the /meme/<slug>/ pages, keyed by slug. build.py reads it and never regenerates written text. ids = candidate ids that map to this page (keep the slug forever). status: 'full' (real explanation + origin with sources) or 'short' (only what is known). Text must follow UPDATE.md 'Legal rules' and 'Meme pages': neutral, factual, attributed, no invented origins. Fields: explainer = 2-4 sentence plain-English meaning; origin = who/where/when if verified and how it spread, in our own words ('\\n\\n' between paragraphs); origin_confirmed = true only if the first post/creator is documented, false if unknown (the page then says so), null = not yet researched and must not be labeled the original; how_to_use = 0-2 captions that exactly equal a source card_text or post-card quote tied to a direct post URL (explainer and origin prose are not evidence; [] if none); original_url = verified creator post when one is documented (View original uses it only when origin_confirmed is true; never drop it on a refresh); sources = [{name,url}] links that back the text (must return 200); checked = ISO datetime (PT) the text was last written or reviewed (feeds dateModified + sitemap lastmod). build.py adds a stub (explainer null) for any new ranked meme; the daily routine fills it in (UPDATE.md step 5). Optional seo_title is the full public title (do not append another brand suffix). Optional meta_description replaces the generated meta description. A written explainer or origin stays on /meme/<slug>/ after the meme leaves the ranked lists; an entry with no text does not get a page unless it is ranked. Sitemap lastmod and dateModified use checked when it is set. Know Your Meme is an explainer, not the original post.",
   "memes": {
     "affleck-i-voted-smoking": {
       "name": "Ben Affleck 'I Voted' Smoking Update",
@@ -363,6 +363,7 @@
     },
     "bounce-baby-boy": {
       "name": "Boys Go Always Bounce Back / Bouncing Baby Boy",
+      "seo_title": "Boys Go Always Bounce Back Meme (Bouncing Baby Boy): Meaning & Origin | MemeStand",
       "ids": [
         "bounce-baby-boy"
       ],
@@ -387,7 +388,7 @@
       ],
       "related": [],
       "written": "2026-11-06",
-      "checked": "2026-11-07T22:51:54-08:00"
+      "checked": "2026-11-09T14:17:26-08:00"
     },
     "britannica-mitochondria": {
       "name": "Britannica's Mitochondria Election Joke",
@@ -491,6 +492,7 @@
     },
     "crack-a-monster": {
       "name": "It's Not That Deep. Crack a Monster.",
+      "seo_title": "Crack a Monster Meme ('It's Not That Deep'): Meaning & Origin | MemeStand",
       "ids": [
         "crack-a-monster"
       ],
@@ -509,7 +511,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-07T22:51:54-08:00"
+      "checked": "2026-11-09T14:17:26-08:00"
     },
     "election-squid-hope": {
       "name": "Americans Every Election / Squid Game Cheer",
@@ -901,6 +903,8 @@
     },
     "little-cousins-hippo-and-alligator": {
       "name": "Little Cousins (Hippo and Alligator)",
+      "seo_title": "What My Little Cousins Do When They See Me Meme (Hippo & Alligator) | MemeStand",
+      "meta_description": "\"What my little cousins do when they see me instead of just saying hello.\" The hippo-and-alligator clip people use for awkward family reactions.",
       "ids": [
         "little-cousins-hippo-gator"
       ],
@@ -927,7 +931,7 @@
       ],
       "related": [],
       "written": "2026-11-09",
-      "checked": "2026-11-09T06:08:00-08:00"
+      "checked": "2026-11-09T14:17:26-08:00"
     },
     "little-void-creatures": {
       "name": "Little Void Creatures",
@@ -1005,6 +1009,7 @@
     },
     "me-instructing": {
       "name": "Me Instructing",
+      "seo_title": "Me Instructing Meme (Bakery Pointing Clip): Meaning & Origin | MemeStand",
       "ids": [
         "me-instructing"
       ],
@@ -1027,7 +1032,7 @@
       ],
       "related": [],
       "written": "2026-11-07",
-      "checked": "2026-11-07T22:51:54-08:00"
+      "checked": "2026-11-09T14:17:26-08:00"
     },
     "meme-same-room-marge": {
       "name": "Sending a Meme in the Same Room (Marge)",
@@ -1105,6 +1110,7 @@
     },
     "newton-fourth-law": {
       "name": "Newton's Fourth Law of Motion",
+      "meta_description": "\"If Newton saw the way I be moving these days he'd add a fourth law of motion.\" What the Newton's Fourth Law meme means, and where that line came from.",
       "ids": [
         "newton-fourth-law"
       ],
@@ -1127,7 +1133,7 @@
       ],
       "related": [],
       "written": "2026-11-07",
-      "checked": "2026-11-07T23:13:29-08:00"
+      "checked": "2026-11-09T14:17:26-08:00"
     },
     "nintendo-sue-github": {
       "name": "Nintendo Sue GitHub (Gru's Plan)",
@@ -1247,6 +1253,7 @@
     },
     "people-my-age-pregnancy-tests": {
       "name": "People My Age Pregnancy Tests",
+      "seo_title": "People My Age Buying Pregnancy Tests Meme: Meaning & Origin | MemeStand",
       "ids": [
         "people-my-age-pregnancy-tests"
       ],
@@ -1277,7 +1284,7 @@
       ],
       "related": [],
       "written": "2026-11-09",
-      "checked": "2026-11-09T10:25:00-08:00"
+      "checked": "2026-11-09T14:17:26-08:00"
     },
     "polymarket-good-ending": {
       "name": "Good Ending (Polymarket Bet)",
@@ -1372,22 +1379,34 @@
       "ids": [
         "regretamine"
       ],
-      "status": "full",
+      "status": "short",
       "source_url": "https://x.com/elonmusk/status/2116875604889112772",
       "kym_url": null,
       "explainer": "\"Regretamine\" is a made-up drug from a joke post: one dose erases all your regrets, including the regret of taking it. The punchline is the paradox, and replies ran with fake side effects, labels and other pun-named drugs. It's a joke, not a real medication.",
-      "origin": "Elon Musk posted the joke on X on November 1, 2026: \"I have this great idea for a drug called Regretamine. One dose and all your regrets are gone! Including, obviously, having taken Regretamine in the first place.\" The post passed 8 million views, per X's public counts, and spin-off posts followed the same day.",
+      "origin": "The joke dates to March 1, 2021. The Independent, Newsweek, and News18 reported that Elon Musk posted: \"New drug coming out called Regretamine. Pop one & all regrets are gone.\" Those stories describe the meme replies that followed. MemeStand does not have that 2021 post's own URL, so the first appearance is documented by the reports rather than by the post itself.\n\nOn November 1, 2026, Musk brought the joke back on X with different wording: \"I have this great idea for a drug called Regretamine. One dose and all your regrets are gone! Including, obviously, having taken Regretamine in the first place.\" Spin-off posts followed the same day.",
       "sources": [
         {
-          "name": "@elonmusk on X (original post)",
+          "name": "The Independent: Elon Musk tweets about a new drug called Regretamine (March 3, 2021)",
+          "url": "https://www.independent.co.uk/news/world/americas/elon-musk-regretamine-twitter-b1811623.html"
+        },
+        {
+          "name": "Newsweek: Elon Musk jokes about Regretamine (March 2, 2021)",
+          "url": "https://www.newsweek.com/cryptocurrency-elon-musk-tweet-regretamine-dogecoin-memes-twitter-1573116"
+        },
+        {
+          "name": "News18: Elon Musk's Regretamine tweet (March 2, 2021)",
+          "url": "https://www.news18.com/news/buzz/elon-musks-tweet-on-new-drug-regretamine-is-stonking-internet-with-memes-no-ones-regretting-3491231.html"
+        },
+        {
+          "name": "@elonmusk on X (November 1, 2026 post)",
           "url": "https://x.com/elonmusk/status/2116875604889112772"
         }
       ],
       "written": "2026-11-01",
       "related": [],
-      "origin_confirmed": true,
+      "origin_confirmed": false,
       "how_to_use": [],
-      "checked": "2026-11-07T22:51:54-08:00"
+      "checked": "2026-11-09T14:17:26-08:00"
     },
     "sam-altman-ram": {
       "name": "Sam Altman RAM",
@@ -1595,6 +1614,7 @@
     },
     "telegram-microsoft": {
       "name": "Telegram's Bill Gates / Microsoft Joke",
+      "seo_title": "Telegram Bill Gates Microsoft Joke Meme: Meaning & Origin | MemeStand",
       "ids": [
         "telegram-microsoft"
       ],
@@ -1617,7 +1637,7 @@
       ],
       "related": [],
       "written": "2026-11-05",
-      "checked": "2026-11-07T22:51:54-08:00"
+      "checked": "2026-11-09T14:17:26-08:00"
     },
     "the-myth-of-consensual-pc-building": {
       "name": "The Myth of Consensual PC Building",

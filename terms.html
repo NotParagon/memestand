@@ -37,10 +37,11 @@
  img{max-width:100%;height:auto}
  a{color:var(--fg);text-decoration:none} a:hover{text-decoration:underline}
  .mast{position:relative;text-align:center;border-bottom:3px double var(--rule);padding-bottom:8px}
- .mast h1{margin:6px 0 0;font-weight:bold;font-size:inherit}
- .mast .logo{display:block;font-size:56px;letter-spacing:4px} .mast .logo a{color:var(--fg)}
+ .mast h1{margin:0;font-weight:normal;font-size:inherit}
+ .mast .logo{display:block;font-size:56px;letter-spacing:4px;margin-top:6px} .mast .logo a{color:var(--fg)}
  .mast .tag{display:block;font-size:13px;letter-spacing:2px;font-weight:normal}
- .intro{text-align:center;font-size:12px;margin:6px auto 0;max-width:820px;color:var(--muted)}
+ .mast .periods{margin:8px 0 0;font-size:12px;letter-spacing:0} .mast .periods a{color:var(--link);margin:0 6px;text-decoration:underline}
+ .intro{text-align:center;font-size:12px;margin:6px auto 0;max-width:820px;color:var(--muted)} .intro a{color:var(--link);text-decoration:underline}
  .upd{text-align:center;font-size:12px;margin:6px 0 2px}
  .top{text-align:center;margin:18px auto 30px;max-width:900px;padding-bottom:22px;border-bottom:3px double var(--rule)}
  .top img{box-sizing:content-box;max-width:calc(100% - 2px);max-height:520px;border:1px solid var(--rule);object-fit:contain}
@@ -157,13 +158,13 @@
   .copy .zone-src .src{display:inline;min-height:0;padding:2px 0}
   .fold summary{display:inline-flex;align-items:center;min-height:44px;padding:8px 0}
   .top .copy .meta{align-items:center}
-  .pager a,.more a,.crumbs a,.az a,nav.foot a{display:inline-block;min-height:44px;line-height:44px;padding:0 4px}
+  .pager a,.more a,.crumbs a,.az a,nav.foot a,.mast .periods a{display:inline-block;min-height:44px;line-height:44px;padding:0 4px}
   nav.foot{font-size:13px;line-height:1.2} footer{font-size:12px}
   .prose{font-size:16px} .explainer{font-size:18px} .prose h1{font-size:22px} .prose .thumb,.prose .card{max-width:100%}
   .prose li{margin-bottom:10px} .prose li a{display:inline-block;padding:10px 0}
  }
 </style></head><body><a class="skip" href="#content">Skip to content</a>
-<header class="mast"><h1><span class="logo"><a href="./">MEMESTAND</a></span><span class="tag">TERMS OF USE</span></h1><button class="tt" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"></button><script>(function(){var b=document.querySelector('.tt'),r=document.documentElement;if(!b)return;b.addEventListener('click',function(){var c=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var n=c==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}document.querySelectorAll('meta[name=theme-color]').forEach(function(m){m.content=n==='dark'?'#121212':'#ffffff'});});})();</script></header><div id="content"></div>
+<header class="mast"><span class="logo"><a href="./">MEMESTAND</a></span><h1 class="tag">TERMS OF USE</h1><nav class="periods" aria-label="Rankings"><a href="top-memes-today/">Top Memes Today</a> | <a href="trending-memes-this-week/">Trending This Week</a> | <a href="best-memes-this-month/">Best of the Month</a></nav><button class="tt" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"></button><script>(function(){var b=document.querySelector('.tt'),r=document.documentElement;if(!b)return;b.addEventListener('click',function(){var c=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var n=c==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}document.querySelectorAll('meta[name=theme-color]').forEach(function(m){m.content=n==='dark'?'#121212':'#ffffff'});});})();</script></header><div id="content"></div>
 <main class="prose">
 <p><i>Effective November 1, 2026.</i></p>
 <p>These terms apply to your use of memestand.com (&ldquo;MemeStand&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;). By using the site you agree to them.
@@ -215,7 +216,7 @@ ANY CLAIM RELATING TO THE SITE IS LIMITED TO US$100. Some jurisdictions don't al
 <h2>10. Contact</h2>
 <p>Questions about these terms: email <a href="mailto:hello@memestand.com">hello@memestand.com</a>.</p>
 </main>
-<footer><nav class="foot" aria-label="Site"><a href="./">Home</a> | <a href="top-memes-today/">Top Memes Today</a> | <a href="best-memes-this-month/">Best of the Month</a> | <a href="archive/">Daily Meme Report Archive</a> | <a href="memes/">Memes A&ndash;Z</a> | <a href="feed.xml">RSS/Atom Feed</a> | <a href="llms.txt">llms.txt</a></nav>
+<footer><nav class="foot" aria-label="Site"><a href="./">Home</a> | <a href="top-memes-today/">Top Memes Today</a> | <a href="trending-memes-this-week/">Trending This Week</a> | <a href="best-memes-this-month/">Best of the Month</a> | <a href="archive/">Daily Meme Report Archive</a> | <a href="memes/">Memes A&ndash;Z</a> | <a href="feed.xml">RSS/Atom Feed</a> | <a href="llms.txt">llms.txt</a></nav>
 <nav class="foot" aria-label="Legal"><a href="about.html">About &amp; Content Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="privacy.html">Privacy</a> | <a href="dmca.html">DMCA / Takedowns</a></nav>
 <p>Ranked by cross-platform virality: X engagement and trending stories, TikTok and Instagram post counts, Reddit top feeds, YouTube views and Know Your Meme.
 Headlines describe memes and online reactions, not verified facts about the people in them.</p>
