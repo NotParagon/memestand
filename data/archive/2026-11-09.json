@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T10:23-08:00",
+  "updated": "2026-11-09T10:59-08:00",
   "daily": [
     {
       "rank": 1,
@@ -89,8 +89,9 @@
       "rank": 4,
       "id": "newton-fourth-law",
       "title": "'NEWTON WOULD ADD A FOURTH LAW OF MOTION': THE HUSTLE BRAG EVERYONE IS COPYING",
-      "image": null,
+      "image": "images/post-cards/newton-fourth-law.jpg",
       "image_url": null,
+      "image_kind": "post_card",
       "card_text": null,
       "source_url": "https://x.com/sbxloch/status/2118821023151706276",
       "source_name": "X / @sbxloch",
