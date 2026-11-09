@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T21:04-08:00",
+  "updated": "2026-11-09T06:07-08:00",
   "daily": [
     {
       "rank": 1,
@@ -76,7 +76,7 @@
         }
       ],
       "first_seen": "2026-10-19",
-      "score": 88.9,
+      "score": 89.0,
       "sources": [
         "X",
         "TikTok",
@@ -145,7 +145,7 @@
         }
       ],
       "first_seen": "2026-11-04",
-      "score": 76.7,
+      "score": 76.8,
       "sources": [
         "X"
       ],
@@ -231,7 +231,7 @@
         }
       ],
       "first_seen": "2026-11-06",
-      "score": 69.4,
+      "score": 69.5,
       "sources": [
         "X"
       ],
@@ -239,6 +239,38 @@
     },
     {
       "rank": 8,
+      "id": "little-cousins-hippo-gator",
+      "title": "'WHAT MY LITTLE COUSINS DO WHEN THEY SEE ME': AI HIPPO-AND-ALLIGATOR GIF BECOMES THE GO-TO FAMILY REACTION",
+      "image": "images/little-cousins-hippo-gator.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/accekid/status/2119342124143448127",
+      "source_name": "X / @accekid",
+      "credit": "posted by @accekid on X",
+      "also": [
+        {
+          "name": "X / @accekid (2.8M views)",
+          "url": "https://x.com/accekid/status/2119342124143448127"
+        },
+        {
+          "name": "X News (alligator and baby hippo GIF)",
+          "url": "https://x.com/i/trending/2119440325441733025"
+        },
+        {
+          "name": "X / @iam_obc70 (same clip, 40K views)",
+          "url": "https://x.com/iam_obc70/status/2119347975541383516"
+        }
+      ],
+      "first_seen": "2026-11-08",
+      "score": 69.5,
+      "sources": [
+        "X"
+      ],
+      "notes": "AI-generated clip of a baby hippo and an alligator standing upright on a street, posted as a GIF by @accekid on X Nov 8 2026 (12:11 AM PT) captioned 'What my little cousins do when they see me instead of just saying hello'. X API Nov 9 6AM PT: 2.82M views / 68.6K likes. X recent counts: ~10,000 posts using 'little cousins' + see me/hello/greeting Nov 8-9 vs single digits the days before; other accounts repost the clip with their own captions (e.g. @iam_obc70 40K views). X News story Nov 8-9. Clip carries a TikTok watermark; original clip creator not confirmed.",
+      "name": "Little Cousins (Hippo and Alligator)"
+    },
+    {
+      "rank": 9,
       "id": "me-instructing",
       "title": "'ME INSTRUCTING': BAKERY-COUNTER CLIP BECOMES THE BOSSY-DIRECTION REACTION MEME",
       "image": "images/me-instructing.jpg",
@@ -269,7 +301,7 @@
       "notes": "Bakery-counter clip of a woman emphatically pointing at a pastry while coaching a man; captions use 'me instructing [X] to [Y]'. Strong X News story Nov 7; largest verified post @tuna_petal 1.84M views / 31.0K likes (Nov 6)."
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "seatbelt-dog",
       "title": "SEATBELT DOG: BUCKLED-IN PUP BECOMES X'S REPLY-VIDEO REACTION MEME",
       "image": "images/seatbelt-dog.jpg",
@@ -293,38 +325,11 @@
         }
       ],
       "first_seen": "2026-11-07",
-      "score": 67.3,
+      "score": 67.4,
       "sources": [
         "X"
       ],
       "notes": "Cute Jack Russell clipped in a car seatbelt, used as a copy-paste reply video on X. Original clip posted by @acervodoguinhos on Nov 5 2025 (12,087,008 views / 43,911 likes, X API Nov 8). Current wave: people reply with the same video; @anacomlula Nov 7 post about learning the reply trick has 1,604,884 views / 74,929 likes. X News story \"Seatbelt Dog Video Becomes X's Fastest Meme\" (2119278609299050551). Independent reuse of the clip as a reaction format."
-    },
-    {
-      "rank": 10,
-      "id": "affleck-i-voted-smoking",
-      "title": "BEN AFFLECK'S 'I VOTED' SMOKING PHOTO UPDATES THE CLASSIC TIRED MEME, PER X",
-      "image": null,
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/BYRNEGRACES/status/2118046162838053124",
-      "source_name": "X / @BYRNEGRACES",
-      "credit": "posted by @BYRNEGRACES on X",
-      "also": [
-        {
-          "name": "X / @BYRNEGRACES (1.5M views)",
-          "url": "https://x.com/BYRNEGRACES/status/2118046162838053124"
-        },
-        {
-          "name": "X News (Affleck post-election meme)",
-          "url": "https://x.com/i/trending/2118434501269574094"
-        }
-      ],
-      "first_seen": "2026-11-04",
-      "score": 66.7,
-      "sources": [
-        "X"
-      ],
-      "notes": "Side-by-side of classic Affleck-tired meme with Nov 2026 paparazzi shot smoking outside Steak 48 with 'I VOTED' sticker. X @BYRNEGRACES 1.36M views / 121.9K likes (Nov 6 6AM PT); X News story still live. Paparazzi photo — text card only."
     }
   ],
   "weekly": [
@@ -403,7 +408,7 @@
         }
       ],
       "first_seen": "2026-10-19",
-      "score": 88.9,
+      "score": 89.0,
       "sources": [
         "X",
         "TikTok",
@@ -611,7 +616,7 @@
         }
       ],
       "first_seen": "2026-11-04",
-      "score": 76.7,
+      "score": 76.8,
       "sources": [
         "X"
       ],
@@ -638,7 +643,7 @@
         }
       ],
       "first_seen": "2026-10-26",
-      "score": 75.6,
+      "score": 75.7,
       "sources": [
         "TikTok",
         "YouTube",
@@ -730,7 +735,7 @@
         }
       ],
       "first_seen": "2026-10-21",
-      "score": 90.2,
+      "score": 90.4,
       "sources": [
         "TikTok",
         "Instagram",
