@@ -40,7 +40,10 @@
  a{color:var(--fg);text-decoration:none} a:hover{text-decoration:underline}
  .mast{position:relative;text-align:center;border-bottom:3px double var(--rule);padding-bottom:8px}
  .mast h1{margin:0;font-weight:normal;font-size:inherit}
- .mast .logo{display:block;font-size:56px;letter-spacing:4px;margin-top:6px} .mast .logo a{color:var(--fg)}
+ .mast .logo{display:block;font-size:52px;letter-spacing:3px;margin-top:6px}
+ .mast .logo a{display:inline-flex;align-items:center;justify-content:center;gap:10px;color:var(--fg);text-decoration:none}
+ .mast .logo .mark{width:.78em;height:.78em;flex:none;display:block}
+ .mast .word{border-bottom:3px solid var(--redbg);line-height:.9}
  .mast .tag{display:block;font-size:13px;letter-spacing:2px;font-weight:normal}
  .mast .periods{margin:8px 0 0;font-size:12px;letter-spacing:0} .mast .periods a{color:var(--link);margin:0 6px;text-decoration:underline}
  .intro{text-align:center;font-size:12px;margin:6px auto 0;max-width:820px;color:var(--muted)} .intro a{color:var(--link);text-decoration:underline}
@@ -129,10 +132,31 @@
  .explainer h3{font-size:1.05rem;font-weight:650;color:var(--fg2);letter-spacing:0}
  .prose .note{font-size:12px;color:var(--muted)} .az{text-align:center;font-size:14px;margin:8px 0} .az a{color:var(--link);margin:0 4px;text-decoration:underline}
  .one h2[id]{position:sticky;top:0;z-index:5;text-align:left;text-decoration:none;margin:28px 0 14px;padding:8px 12px;background:var(--bar);color:var(--barfg);border-bottom:5px solid var(--redbg)}
+ .prose .life,.life{list-style:none;padding-left:0}
+ .life li{display:grid;grid-template-columns:5.4rem minmax(0,1fr);column-gap:.8rem;align-items:center}
+ .prose .life li{border:1px solid var(--line);border-top:3px solid var(--rule);margin:0 0 12px;padding:10px;list-style:none;box-shadow:0 2px 4px rgba(0,0,0,.10);background:var(--card)}
+ .life .who{font-family:var(--read);font-size:18px;font-weight:650;line-height:1.3} .life .who a{color:var(--fg)}
+ .life .sub{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.4}
+ .life .st{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:650}
+ .st-rising{color:var(--green)} .st-fading{color:var(--red)} .st-peaking{color:var(--fg)} .st-new{color:var(--link)}
+ .spark{display:block;color:inherit} .delta{font-family:var(--read);font-size:1.65rem;font-weight:650;line-height:.85;text-align:right;font-variant-numeric:tabular-nums}
+ .delta.up{color:var(--green)} .delta.down{color:var(--red)}
+ .method{font-size:13px;line-height:1.5;text-align:left}
+ .embed-wrap{max-width:420px;margin:0 auto}
+ .embed-brand{display:flex;align-items:center;justify-content:center;gap:8px;font-size:22px;letter-spacing:2px;border-bottom:3px double var(--rule);padding:2px 8px 6px}
+ .embed-brand img{width:22px;height:22px;flex:none;display:block}
+ .embed-brand a{display:inline-flex;align-items:center;gap:8px;color:var(--fg);text-decoration:none}
+ .embed-brand .word{border-bottom:3px solid var(--redbg);line-height:.9}
+ .embed-wrap h1{font-family:"Courier New",Courier,monospace;font-size:13px;letter-spacing:1px;font-weight:normal;text-align:center;margin:8px 0 10px}
+ .embed-list li{display:grid;grid-template-columns:2.4rem minmax(0,1fr);column-gap:.6rem;align-items:start;margin:0 0 8px;padding:8px 8px 8px 4px}
+ .embed-list .rk{margin:0;padding:0;background:none;color:var(--red);font-family:var(--read);font-size:1.85rem;font-weight:650;line-height:.82;letter-spacing:-.03em;font-variant-numeric:lining-nums tabular-nums;text-align:right}
+ .embed-list .name{font-family:var(--read);font-size:16px;font-weight:650;line-height:1.3;color:var(--fg)}
+ .embed-foot{text-align:center;font-size:12px;margin:8px 0 0} .embed-foot a{color:var(--link);text-decoration:underline}
+ .snippet{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;line-height:1.45;border:1px solid var(--line);padding:10px;background:var(--thumb);text-align:left}
  footer{border-top:3px double var(--rule);margin-top:28px;padding-top:10px;font-size:11px;text-align:center;color:var(--muted)}
  @media(max-width:860px){
   body{padding:8px 14px 32px}
-  .mast .logo{font-size:40px;letter-spacing:3px} .mast .tag{font-size:12px;letter-spacing:1px}
+  .mast .logo{font-size:32px;letter-spacing:1px} .mast .logo a{gap:6px} .mast .tag{font-size:12px;letter-spacing:1px}
   .intro{font-size:13px;line-height:1.4}
   .top{margin:14px auto 26px;padding-bottom:20px}
   .top img{max-height:60vh}
@@ -167,10 +191,12 @@
   .pager a,.more a,.crumbs a,.az a,nav.foot a,.mast .periods a{display:inline-block;min-height:44px;line-height:44px;padding:0 4px}
   nav.foot{font-size:13px;line-height:1.2} footer{font-size:12px}
   .prose{font-size:16px} .explainer{font-size:18px} .prose h1{font-size:22px} .prose .thumb,.prose .card{max-width:100%}
+  .life li{grid-template-columns:4.6rem minmax(0,1fr);column-gap:.65rem}
+  .life .who{font-size:17px} .embed-brand{font-size:18px;letter-spacing:1px}
   .prose li{margin-bottom:10px} .prose li a{display:inline-block;padding:10px 0}
  }
 </style></head><body><a class="skip" href="#content">Skip to content</a>
-<header class="mast"><span class="logo"><a href="../">MEMESTAND</a></span><h1 class="tag">TOP 10 MEMES TODAY -- NOVEMBER 9, 2026</h1><nav class="periods" aria-label="Rankings"><a href="../top-memes-today/">Top Memes Today</a> | <a href="../trending-memes-this-week/">Trending This Week</a> | <a href="../best-memes-this-month/">Best of the Month</a></nav><button class="tt" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"></button><script>(function(){var b=document.querySelector('.tt'),r=document.documentElement;if(!b)return;b.addEventListener('click',function(){var c=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var n=c==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}document.querySelectorAll('meta[name=theme-color]').forEach(function(m){m.content=n==='dark'?'#121212':'#ffffff'});});})();</script></header><div id="content"></div>
+<header class="mast"><span class="logo"><a href="../"><img class="mark" src="../favicon.svg" alt="" width="64" height="64"><span class="word">MEMESTAND</span></a></span><h1 class="tag">TOP 10 MEMES TODAY -- NOVEMBER 9, 2026</h1><nav class="periods" aria-label="Rankings"><a href="../top-memes-today/">Top Memes Today</a> | <a href="../trending-memes-this-week/">Trending This Week</a> | <a href="../best-memes-this-month/">Best of the Month</a> | <a href="../meme-index/">Meme Index</a></nav><button class="tt" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"></button><script>(function(){var b=document.querySelector('.tt'),r=document.documentElement;if(!b)return;b.addEventListener('click',function(){var c=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var n=c==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}document.querySelectorAll('meta[name=theme-color]').forEach(function(m){m.content=n==='dark'?'#121212':'#ffffff'});});})();</script></header><div id="content"></div>
 <p class="intro">Ranked by cross-platform virality on X, TikTok, Instagram, Reddit, YouTube and Know Your Meme.</p>
 <div class="upd">UPDATED <time id="upd-time" datetime="2026-11-09T21:06:00-08:00">MON NOV 9, 2026 9:06 PM PT</time></div>
 <script>(function(){var t=document.getElementById('upd-time');if(!t)return;var iso=t.getAttribute('datetime');if(!iso)return;var d=new Date(iso);if(isNaN(d))return;function plural(n,u){return n+' '+u+(n===1?'':'S');}function tick(){var s=Math.max(0,Math.floor((Date.now()-d.getTime())/1000));var m=Math.floor(s/60),h=Math.floor(m/60),dy=Math.floor(h/24);t.textContent=dy>=1?plural(dy,'DAY')+' AGO':h>=1?plural(h,'HOUR')+' AGO':m>=1?plural(m,'MIN')+' AGO':'JUST NOW';}tick();setInterval(tick,30000);})();</script>
@@ -285,7 +311,7 @@
   </div>
 </li></ul></section></main>
 <p class="pager"><a href="../trending-memes-this-week/">Top 10 Memes This Week</a> | <a href="../best-memes-this-month/">Top 10 Memes This Month</a> | <a href="../archive/">Daily Meme Report Archive</a></p>
-<footer><nav class="foot" aria-label="Site"><a href="../">Home</a> | <a href="../top-memes-today/">Top Memes Today</a> | <a href="../trending-memes-this-week/">Trending This Week</a> | <a href="../best-memes-this-month/">Best of the Month</a> | <a href="../archive/">Daily Meme Report Archive</a> | <a href="../memes/">Memes A&ndash;Z</a> | <a href="../feed.xml">RSS/Atom Feed</a> | <a href="../llms.txt">llms.txt</a></nav>
+<footer><nav class="foot" aria-label="Site"><a href="../">Home</a> | <a href="../top-memes-today/">Top Memes Today</a> | <a href="../trending-memes-this-week/">Trending This Week</a> | <a href="../best-memes-this-month/">Best of the Month</a> | <a href="../meme-index/">Meme Index</a> | <a href="../archive/">Daily Meme Report Archive</a> | <a href="../memes/">Memes A&ndash;Z</a> | <a href="../embed/">Embed</a> | <a href="../feed.xml">RSS/Atom Feed</a> | <a href="../llms.txt">llms.txt</a></nav>
 <nav class="foot" aria-label="Legal"><a href="../about.html">About &amp; Content Policy</a> | <a href="../terms.html">Terms of Use</a> | <a href="../privacy.html">Privacy</a> | <a href="../dmca.html">DMCA / Takedowns</a></nav>
 <p>Ranked by cross-platform virality: X engagement and trending stories, TikTok and Instagram post counts, Reddit top feeds, YouTube views and Know Your Meme.
 Headlines describe memes and online reactions, not verified facts about the people in them.</p>

@@ -294,12 +294,14 @@ for p in pathlib.Path('.').rglob('*.html'):
     if 'raw' in p.parts or p.name == 'google327e53c932d0bf40.html': continue  # Search Console token, not a page
     d = html.fromstring(p.read_text())
     [json.loads(s.text) for s in d.xpath('//script[@type="application/ld+json"]')]   # raises if JSON-LD is broken
-    assert len(d.xpath('//h1')) == 1 and all(i.get('alt') for i in d.xpath('//img')), p
+    assert len(d.xpath('//h1')) == 1 and all(i.get('alt') is not None for i in d.xpath('//img')), p
     if p.parts[0] == 'meme':   # every meme page: FAQPage whose questions are the first two H2s
         g = json.loads(d.xpath('//script[@type="application/ld+json"]')[0].text)['@graph']
         faq = [n for n in g if n.get('@type') == 'FAQPage']
         assert faq and all(q['@type'] == 'Question' and q['acceptedAnswer']['text'] for q in faq[0]['mainEntity']), p
-        assert [h.text_content() for h in d.xpath('//h2')][:2] == [q['name'] for q in faq[0]['mainEntity']][:2], p
+        h2s = [h.text_content() for h in d.xpath('//h2')]
+        names = [q['name'] for q in faq[0]['mainEntity']]
+        assert h2s[:len(names)] == names, p
 etree.parse('sitemap.xml'); etree.parse('feed.xml')
 print('ok')
 PY
@@ -308,13 +310,11 @@ After pushing: `curl -s https://memestand.com/ | grep -c 'application/ld+json'` 
 
 ## Meme pages (`/meme/<slug>/`, `/memes/`, store: `data/meme_pages.json`)
 
-Every meme that has ever ranked gets a permanent page at `https://memestand.com/meme/<slug>/`. A written explainer or origin in `data/meme_pages.json` is built even when that meme is absent from the current lists and from every archive snapshot, so the URL does not 404 after it drops off. An entry with no explainer text does not get a page unless the meme is actually ranked. Do not invent a stub for an unranked meme. The H1 is
-"<Meme name> meme: what it means and where it came from"; the `<title>` is "<Meme name> Meme: Meaning & Origin | MemeStand"
+Every meme that has ever ranked gets a permanent page at `https://memestand.com/meme/<slug>/`. build.py adds the page the same run the meme first appears in a snapshot, which is how the hourly job publishes it the same day. A written explainer stays up after the meme leaves the lists, including when it is absent from every archive snapshot. An entry with a `written` date stays up too, even if the explainer is still empty, so dropping out of the top 10 does not 404 the URL. An entry with no text and no `written` date does not get a page. Do not invent a stub for an unranked meme. The H1 is
+"<Meme name> meme: meaning and origin"; the `<title>` is "<Meme name> Meme: Meaning & Origin | MemeStand"
 (names ending in "memes"/"trend" are used as-is) unless the entry sets `seo_title` to the full public title. The meta description starts "<Meme name> meme meaning: <first sentence>" unless the entry sets `meta_description`. Do not append `| MemeStand` again when `seo_title` already includes it.
-The page shows the thumbnail, then H2 "What does the <name> meme mean?" (explainer), H2 "Where did the <name> meme come from?"
-(origin, plus the note "The original creator of this meme hasn't been confirmed." when `origin_confirmed` is false), an optional
-H2 "Source caption" (a `how_to_use` line only when it is the exact full card_text or post-card quote of a direct post), first- and last-seen dates on MemeStand, the best rank per list, links to every archive day it appeared on, sources and related memes.
-Related memes are the slugs in `related` only. Ranking on the same day is not treated as related. If `related` is empty, the section is omitted.
+The page shows the thumbnail and the existing credit, then only the sections the data can support. H2 "What it means" is the stored explainer, and it is omitted when `explainer` is empty (the build does not invent a meaning). H2 "Where it started" is the stored origin, plus the first source and credit already on file. When `origin_confirmed` is true and the link is that creator's post, the line says "First known source". Otherwise it says "Earliest source on file" and does not call the post the original. The note "The original creator of this meme hasn't been confirmed." is added when origin text exists and `origin_confirmed` is false. If there is no origin text and no safe source URL, the section is omitted. H2 "Why it's trending" uses only MemeStand's own archive: first seen on MemeStand, peak rank, daily reports, the post's `first_seen` when that field exists, current status (Rising, Peaking, Fading, or New; see `/meme-index/#method`), and the latest momentum score. If none of those are on file, the section is omitted. Optional H2 "Source caption" is unchanged. Related memes are the slugs in `related` only. Ranking on the same day is not treated as related. If `related` is empty, the section is omitted.
+`/meme-index/` is the lifecycle index (status, week risers and fallers, sparklines). `/embed/` explains the top-5 iframe; `/embed/top5.html` is the frame. Both are generated by build.py. They do not change ranking or the data files the hourly job writes.
 `/memes/` is the A–Z index. Every headline on the home, period and archive pages links to the meme page. The thumbnail and the credit button use the creator's post when that post is documented; Know Your Meme is labeled "Know Your Meme explainer". The pages are also listed in `sitemap.xml` and `llms.txt` automatically.
 
 **Store format** (`data/meme_pages.json`, keyed by slug, sorted; build.py rewrites it deterministically):
@@ -357,9 +357,7 @@ Related memes are the slugs in `related` only. Ranking on the same day is not tr
   - No unverified claims about real people. Frame allegations as allegations attributed to their source ("per KYM"). Don't name private
     people or people only connected to an allegation. Quote real people only from the primary source.
   - Don't publish Roger's full name or address, and don't use the Drudge name.
-- `FAQPage` JSON-LD (inside the page's single `@graph`) is added to every page that has both `explainer` and `origin`. Its questions are
-  the visible H2s word for word and its answers are the visible text (plus "How do you use the <name> meme?" when `how_to_use` is set),
-  so it always matches what readers see. Pages without text get no FAQ and say they are deliberately short.
+- `FAQPage` JSON-LD (inside the page's single `@graph`) is added when the page has at least one of those H2 sections. Its question names are the visible H2s, in the same order, and each answer is the section's text. A section that was omitted is not in the FAQ. Article JSON-LD is on every meme page.
 - Blocked memes (`data/blocklist.json`) get no page: build.py drops their store entry and deletes `meme/<slug>/`. Archive pages are never deleted.
 - og:image on meme pages follows `OG_USE_MEME_THUMB` (currently off, so `og-default.png`).
 
