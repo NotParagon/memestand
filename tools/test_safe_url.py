@@ -206,6 +206,8 @@ def test_csp_hashes_match_emitted_scripts_and_skip_jsonld():
         "form-action 'self'"
     )
     assert "frame-ancestors" not in policy
+    # The embed is meant to be iframed on other sites. A meta policy cannot
+    # set frame-ancestors, and this builder must not start emitting one.
     script_src = policy.split("script-src ", 1)[1].split(";", 1)[0]
     assert "'unsafe-inline'" not in script_src
     assert "https://static.cloudflareinsights.com" in script_src

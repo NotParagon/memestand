@@ -12,7 +12,9 @@ Last updated: 2026-11-10 09:07 PT (2026-11-10T09:07:00-08:00)
 - [Trending memes this week](https://memestand.com/trending-memes-this-week/): the top 10 memes of the last 7 days
 - [Daily meme report archive](https://memestand.com/archive/): one dated page per day, e.g. https://memestand.com/archive/2026-11-10.html
 - [All memes A–Z](https://memestand.com/memes/): index of MemeStand's per-meme explainer pages
-- Meme explainer pages (https://memestand.com/meme/<slug>/): what each meme means, where it came from (with sources), and its MemeStand ranking history
+- [Meme Index](https://memestand.com/meme-index/): which tracked memes are rising, peaking, or fading, from archived momentum scores. It does not change the top 10.
+- [Embed the top memes today](https://memestand.com/embed/): iframe snippet for the top 5. The frame itself is https://memestand.com/embed/top5.html
+- Meme explainer pages (https://memestand.com/meme/<slug>/): what each meme means, where it started (only when a source is on file), why it is trending on MemeStand, and related memes. A page stays up after the meme leaves the top 10.
 - [Atom feed](https://memestand.com/feed.xml): the #1 meme of each day
 - [About, ranking method and content policy](https://memestand.com/about.html)
 - [Terms of Use](https://memestand.com/terms.html), [Privacy Policy](https://memestand.com/privacy.html), [DMCA / takedowns](https://memestand.com/dmca.html)

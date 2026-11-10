@@ -130,12 +130,20 @@ def test_store_captions_match_a_direct_post_record():
             assert build.is_direct_post(hit["url"])
             assert build.sourced_captions([cap]) == []
             kept.append((sl, cap, hit["kind"], hit["url"]))
-    assert kept == [(
-        "bounce-baby-boy",
-        "Boys go always bounce back na why dem dey call us bouncing baby boy",
-        "post_card",
-        "https://x.com/2THUQQ/status/2118617523708965188",
-    )]
+    assert kept == [
+        (
+            "bounce-baby-boy",
+            "Boys go always bounce back na why dem dey call us bouncing baby boy",
+            "post_card",
+            "https://x.com/2THUQQ/status/2118617523708965188",
+        ),
+        (
+            "spongebob-is-friend-with-patrick",
+            "Love him or hate him, SpongeBob is friend with Patrick so if you wanna watch the show he’s gonna be there. sorry.",
+            "card_text",
+            "https://x.com/Dayscd/status/2119910679402418346",
+        ),
+    ]
 
 
 def test_evidence_line_uses_the_checked_observation_not_the_page_build():
@@ -224,6 +232,10 @@ def test_list_h1_is_the_headline_and_weekly_is_in_the_nav():
     assert 'href="trending-memes-this-week/"' in head
     assert 'href="top-memes-today/"' in head
     assert 'href="best-memes-this-month/"' in head
+    assert 'href="meme-index/"' in head
+    assert 'class="mark"' in head and 'src="favicon.svg"' in head
+    assert '<span class="word">MEMESTAND</span>' in head
+    assert head.index('class="mark"') < head.index('class="word"')
     plain = build.mast("../../", "MEME EXPLAINED", h1=False)
     assert "<h1" not in plain
     assert "MEMESTAND" in plain
@@ -282,18 +294,40 @@ def test_written_explainer_stays_when_it_is_off_the_lists():
         })
         assert "kept-off-list" in build.PAGES
         assert "empty-stub" not in build.PAGES
+        build.retain_written_pages({
+            "ranked-then-gone": {
+                "name": "Ranked Then Gone",
+                "ids": ["ranked-then-gone"],
+                "explainer": None,
+                "origin": None,
+                "status": "short",
+                "written": "2026-11-02",
+                "source_url": "https://x.com/someone/status/99",
+            },
+        })
+        assert "ranked-then-gone" in build.PAGES
         assert build.PAGES["kept-off-list"]["days"] == []
         assert build.PAGES["kept-off-list"]["modified"].startswith("2026-11-04T12:00:00")
         build.build_meme_page("kept-off-list")
+        build.build_meme_page("ranked-then-gone")
     finally:
         build.write = real_write
         build.PAGES.clear()
         build.PAGES.update(saved)
     html = blobs["meme/kept-off-list/index.html"]
     assert "A real explanation of the joke." in html
-    assert "archive/" not in html.split("<h1", 1)[-1].split("Daily meme reports", 1)[0] or "No saved daily report" in html
-    assert "No saved daily report includes this meme right now." in html
+    assert "<h2>What it means</h2>" in html
+    assert "<h2>Where it started</h2>" in html
+    assert "MemeStand hasn't written an explanation" not in html
+    assert "has not confirmed where this meme started" not in html
     assert "archive/2026-11-04.html" not in html
+    stub = blobs["meme/ranked-then-gone/index.html"]
+    assert "<h1>Ranked Then Gone meme: meaning and origin</h1>" in stub
+    assert "<h2>What it means</h2>" not in stub
+    assert "MemeStand hasn't written an explanation" not in stub
+    assert "has not confirmed where this meme started" not in stub
+    assert "https://x.com/someone/status/99" in stub
+    assert "<h2>Where it started</h2>" in stub
 
 
 def test_home_links_do_not_use_index_html():
@@ -512,9 +546,42 @@ def test_built_pages_match_the_rules():
     assert "View original" not in regret
     kept = ROOT / "meme" / "little-void-creatures" / "index.html"
     assert kept.exists()
-    assert "No saved daily report includes this meme right now." in kept.read_text()
+    kept_html = kept.read_text()
+    assert "<h2>What it means</h2>" in kept_html
+    assert "No saved daily report includes this meme right now." not in kept_html
+    assert "MemeStand hasn't written an explanation" not in kept_html
+    fancy_h1 = h1_text(fancy)
+    assert fancy_h1.endswith("meme: meaning and origin")
+    assert "<h2>What it means</h2>" in fancy
+    assert "<h2>Where it started</h2>" in fancy
+    assert "<h2>Why it&#x27;s trending</h2>" in fancy
+    assert "has not confirmed where this meme started" not in fancy
+    assert 'href="../../meme-index/"' in fancy
+    assert 'class="mark"' in fancy and "favicon.svg" in fancy
+    index = (ROOT / "meme-index" / "index.html").read_text()
+    assert "Which memes are rising, peaking, and fading" in index
+    assert "Status comes from each meme's momentum score over the last 7 daily snapshots" in index
+    assert '<details class="fold" id="method"><summary>How this works</summary>' in index
+    assert "Missing at the start means the meme entered" not in index
+    assert index.index("<h1") < index.index("last 7 daily snapshots") < index.index('id="risers"')
+    assert index.index('id="fallers"') < index.index('id="method"') < index.index('id="tracked"')
+    assert "Biggest risers this week" in index and "Biggest fallers this week" in index
+    assert "<svg" in index and "frame-ancestors" not in index
+    assert "<script" not in index.split('id="method"', 1)[1].split("</details>", 1)[0]
+    assert 'href="../meme/' in index
+    widget = (ROOT / "embed" / "top5.html").read_text()
+    guide = (ROOT / "embed" / "index.html").read_text()
+    assert "frame-ancestors" not in widget and "frame-ancestors" not in guide
+    assert 'name="referrer"' in widget and "Content-Security-Policy" in widget
+    assert "https://memestand.com/meme/" in widget
+    assert 'target="_blank"' in widget and 'rel="noopener"' in widget
+    assert "<h1>Top memes today</h1>" in widget
+    assert "embed/top5.html" in guide and "<iframe" in guide
     assert not (ROOT / "meme" / "fortnite-pirate-shop-token").exists()
     sm = (ROOT / "sitemap.xml").read_text()
+    assert "https://memestand.com/meme-index/" in sm
+    assert "https://memestand.com/embed/" in sm
+    assert "https://memestand.com/embed/top5.html" in sm
     assert "<loc>https://memestand.com/meme/newton-fourth-law/</loc><lastmod>2026-11-09T14:17:26-08:00</lastmod>" in sm
     assert "<loc>https://memestand.com/meme/little-void-creatures/</loc><lastmod>2026-11-07T23:13:29-08:00</lastmod>" in sm
     assert "<loc>https://memestand.com/meme/seatbelt-dog/</loc><lastmod>2026-11-08T06:16:07-08:00</lastmod>" in sm
@@ -642,9 +709,34 @@ def test_hanging_rank_replaces_the_filled_badge():
     lead, _, _lists = home.partition("<main")
     assert 'class="rk"' not in lead
     week = (ROOT / "trending-memes-this-week" / "index.html").read_text()
-    assert 'class="hl textmeme"' in week and 'aria-hidden="true">10</span>' in week
+    assert 'aria-hidden="true">10</span>' in week
+    # The live weekly list has no text-only card right now. The Nov 5 report still does.
+    nov5_text = (ROOT / "archive" / "2026-11-05.html").read_text()
+    assert 'class="hl textmeme"' in nov5_text and 'aria-hidden="true">10</span>' in nov5_text
     today = (ROOT / "top-memes-today" / "index.html").read_text()
     assert "postcard" in today and 'aria-hidden="true">6</span>' in today
+
+
+def test_daily_top10_pages_are_permanent():
+    """A meme that has been on a daily top 10 keeps a page after it leaves today's list."""
+    import json
+    pages = json.loads((ROOT / "data" / "meme_pages.json").read_text())["memes"]
+    id_to_slug = {i: sl for sl, ent in pages.items() for i in ent.get("ids") or []}
+    today = {m.get("id") for m in json.loads((ROOT / "data" / "memes.json").read_text())["daily"] if m.get("id")}
+    seen = set()
+    for path in sorted((ROOT / "data" / "archive").glob("????-??-??.json")):
+        snap = json.loads(path.read_text())
+        for m in snap.get("daily") or []:
+            if m.get("removed") or not m.get("id"):
+                continue
+            seen.add(m["id"])
+            sl = id_to_slug[m["id"]]
+            assert (ROOT / "meme" / sl / "index.html").exists(), sl
+    left = seen - today
+    assert left, "expected at least one meme to have left the daily top 10"
+    for mid in left:
+        page = (ROOT / "meme" / id_to_slug[mid] / "index.html").read_text()
+        assert "meaning and origin" in page
 
 
 def test_search_console_file_is_exact_and_restored_by_build():
