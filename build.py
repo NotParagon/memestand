@@ -1866,7 +1866,7 @@ def build_home():
     ld = graph(ORG, WEBSITE, webpage(url, title, desc, ISO, about_lists=[x["@id"] for x in lists]), *lists)
     page = head(title=title, desc=desc, path="", base="", og_img=og, og_alt=og_alt or "MemeStand: top 10 memes today and this month", ld=[ld]) + f'''
 {mast("", "THE TOP MEMES TODAY &amp; THIS MONTH -- RANKED BY VIRALITY")}
-<p class="intro">{e(INTRO)} See the full <a href="top-memes-today/">top 10 memes today</a>, <a href="trending-memes-this-week/">trending memes this week</a>, and <a href="best-memes-this-month/">best memes of the month</a>.</p>
+<p class="intro">{e(INTRO)}</p>
 {upd_html()}
 {top_story(d, "", live_evidence=True)}
 <main class="grid two">
