@@ -260,8 +260,10 @@ CSS = """
  .textmeme{text-transform:none}
  .textmeme .card{text-transform:none;font-size:17px;line-height:1.35}
  .top .textmeme .card{font-size:26px;line-height:1.25;min-height:140px}
- .rk{color:var(--red)}
- li .hl .rk{display:inline-block;min-width:2.1em;margin-right:2px;padding:2px 6px;background:var(--redbg);color:#fff;text-align:center;line-height:1.3}
+ .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+ li .zone-lead{display:grid;grid-template-columns:3.15rem minmax(0,1fr);column-gap:1rem;align-items:start}
+ li .zone-lead>.rk{margin:0;padding:0;background:none;color:var(--red);font-family:var(--read);font-size:2.55rem;font-weight:650;line-height:.82;letter-spacing:-.03em;font-variant-numeric:lining-nums tabular-nums;text-align:right;white-space:nowrap}
+ li .lead-copy{min-width:0}
  .meta{font-size:11px;margin-top:6px;color:var(--muted)} .src{color:var(--link);margin-right:8px} .fs{color:var(--muted)}
  .mv{display:flex;flex-wrap:wrap;column-gap:10px;row-gap:2px;align-items:baseline;margin:4px 0 0;font-size:11px;line-height:1.35;letter-spacing:.02em;color:var(--muted)}
  .mv span{white-space:nowrap} .mv-up{color:var(--green)} .mv-down{color:var(--red)} .mv-new,.mv-first{color:var(--fg2)}
@@ -339,6 +341,8 @@ CSS = """
   .hl a{display:inline}
   .hl a.card{display:flex}
   li h3.hl{min-height:44px}
+  li .zone-lead{column-gap:.75rem}
+  li .zone-lead>.rk{font-size:2.4rem}
   .copy .meta{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:12px;row-gap:0}
   .copy .go a{display:inline-flex;align-items:center;min-height:44px}
   .copy .zone-src .src{display:inline;min-height:0;padding:2px 0}
@@ -821,9 +825,11 @@ def other_source_entries(m, live_evidence):
     primary = _url_key(primary_link(m).get("url") or m.get("source_url"))
     return [(url, name) for url, name in source_entries(m, live_evidence) if _url_key(url) != primary]
 
-def caption_zones(head, dek, hist, credit_html, others_html, fold_html):
-    """Description, rank note, attribution, other links, and details, each its own band."""
-    parts = [f'<div class="zone zone-lead">{head}{dek}</div>']
+def caption_zones(head, dek, hist, credit_html, others_html, fold_html, rank=""):
+    """Description, rank note, attribution, other links, and details, each its own band.
+    A rank mark hangs in the lead only; later bands stay full width under that block."""
+    lead = f'{rank}<div class="lead-copy">{head}{dek}</div>' if rank else f'{head}{dek}'
+    parts = [f'<div class="zone zone-lead">{lead}</div>']
     if hist and hist.strip():
         parts.append(f'<div class="zone zone-hist">{hist.strip()}</div>')
     if credit_html and credit_html.strip():
@@ -893,17 +899,33 @@ def history_html(m, day, live):
     spans = "".join(f'<span class="mv-{n["kind"]}" title="{e(n["title"])}">{e(n["text"])}</span>' for n in notes)
     return f'\n  <div class="mv">{spans}</div>'
 
+def rank_digits(rank):
+    """Visible rank is the bare number. Screen readers hear it from the heading."""
+    try:
+        return str(int(rank))
+    except (TypeError, ValueError):
+        return str(rank)
+
+def hanging_rank(rank):
+    return f'<span class="rk" aria-hidden="true">{rank_digits(rank)}</span>'
+
+def rank_for_reader(rank):
+    return f'<span class="sr-only">Rank {rank_digits(rank)}. </span>'
+
 def item(m, base, label, notes=False, hist="", live_evidence=False):
     del notes  # checked figures live in Sources & details; this flag no longer adds a second line
     if m.get("removed"):
-        return f'<li><h3 class="hl"><span class="rk">{m["rank"]}.</span> {e(REMOVED)}</h3><div class="meta"><a class="src" href="{base}dmca.html">Takedown policy</a></div></li>'
+        return (f'<li><div class="copy"><div class="zone zone-lead">{hanging_rank(m["rank"])}'
+                f'<div class="lead-copy"><h3 class="hl">{rank_for_reader(m["rank"])}{e(REMOVED)}</h3></div></div>'
+                f'<div class="meta"><a class="src" href="{base}dmca.html">Takedown policy</a></div></div></li>')
     pic = thumb(m, base, label)
+    heard = rank_for_reader(m["rank"])
     if pic:
         # The picture is the meme. The full headline stays in the link for search and screen readers, clamped on screen.
-        head = f'<h3 class="hl clip"><span class="rk">{m["rank"]}.</span> {hl_link(m, base)}</h3>'
+        head = f'<h3 class="hl clip">{heard}{hl_link(m, base)}</h3>'
     else:
         # A text post has no photo. Show its words once, not again as a second headline.
-        head = f'<h3 class="hl textmeme"><span class="rk">{m["rank"]}.</span> {text_face(m, base)}</h3>'
+        head = f'<h3 class="hl textmeme">{heard}{text_face(m, base)}</h3>'
     dek = ""
     if live_evidence:
         text = card_dek(m)
@@ -911,7 +933,7 @@ def item(m, base, label, notes=False, hist="", live_evidence=False):
             dek = f'\n  <p class="dek">{e(text)}</p>'
     others = link_row(other_source_entries(m, live_evidence), short=True)
     fold = details_block(m, live_evidence)
-    body = caption_zones(head, dek, hist, credit(m), others, fold)
+    body = caption_zones(head, dek, hist, credit(m), others, fold, rank=hanging_rank(m["rank"]))
     return f'''<li>
   {pic}
   <div class="copy">

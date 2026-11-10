@@ -520,6 +520,133 @@ def test_built_pages_match_the_rules():
     assert "<loc>https://memestand.com/meme/seatbelt-dog/</loc><lastmod>2026-11-08T06:16:07-08:00</lastmod>" in sm
 
 
+def test_hanging_rank_replaces_the_filled_badge():
+    """Ranked cards hang a bare red number. The filled badge and the trailing period must not come back."""
+    css = build.CSS
+    assert "li .hl .rk" not in css
+    assert "min-width:2.1em" not in css
+    grid = re.search(r"li \.zone-lead\{([^}]+)\}", css)
+    assert grid and "grid-template-columns:3.15rem minmax(0,1fr)" in grid.group(1)
+    assert "text-align:right" in css
+    rk = re.search(r"li \.zone-lead>\.rk\{([^}]+)\}", css)
+    assert rk, css
+    body = rk.group(1)
+    assert "background:none" in body
+    assert "color:var(--red)" in body
+    assert "font-family:var(--read)" in body
+    assert "font-size:2.55rem" in body
+    assert "font-weight:650" in body
+    assert "letter-spacing:-.03em" in body
+    assert "tabular-nums" in body
+    assert "line-height:.82" in body
+    # Dark mode keeps its own red; the number follows the variable instead of a hardcoded badge.
+    assert "--red:#c00" in css and "--red:#ff5c5c" in css
+    assert "background:var(--redbg);color:#fff" not in css
+
+    saved_slug, saved_pages = dict(build.SLUG), dict(build.PAGES)
+    try:
+        build.SLUG["seatbelt-dog"] = "seatbelt-dog"
+        build.PAGES["seatbelt-dog"] = {
+            "explainer": "A short video of a small Jack Russell.",
+            "blurb": "A short video of a small Jack Russell Terrier sitting buckled into a car seat.",
+            "origin_confirmed": True,
+            "original_url": "https://x.com/acervodoguinhos/status/1",
+            "sources": [],
+        }
+        photo = {
+            "rank": 6, "id": "seatbelt-dog",
+            "title": "Seatbelt Dog: Buckled-in Pup Becomes X's Reply-video Reaction Meme",
+            "image": "images/seatbelt-dog.jpg",
+            "source_url": "https://x.com/acervodoguinhos/status/1",
+            "source_name": "X / @acervodoguinhos",
+            "credit": "Posted by @acervodoguinhos on X",
+        }
+        hist = '\n  <div class="mv"><span class="mv-up">Up 3 since yesterday</span></div>'
+        html = build.item(photo, "", "today", hist=hist, live_evidence=True)
+        assert re.fullmatch(r'<span class="rk" aria-hidden="true">\d+</span>',
+                            re.search(r'<span class="rk"[^>]*>.*?</span>', html).group(0))
+        assert not re.search(r'<span class="rk"[^>]*>\d+\.', html)
+        assert '<h3 class="hl clip"><span class="sr-only">Rank 6. </span>' in html
+        assert html.index("<img") < html.index('class="copy"') < html.index('class="rk"')
+        i_copy = html.index('class="lead-copy"')
+        i_dek = html.index('class="dek"')
+        i_hist = html.index("zone-hist")
+        i_by = html.index("zone-by")
+        assert i_copy < i_dek < i_hist < i_by
+        assert html.index("Up 3 since yesterday") > i_hist
+        assert "Posted by @acervodoguinhos" in html[i_by:]
+        # The picture stays above the text. The rank is not painted onto it.
+        assert "rk" not in html.split("<img", 1)[0]
+
+        card = {
+            "rank": 1, "id": "telegram-microsoft",
+            "title": "Telegram joke",
+            "image": "images/post-cards/telegram-microsoft.jpg",
+            "image_kind": "post_card",
+            "source_url": "https://x.com/telegram/status/2117998301564043360",
+            "source_name": "X",
+            "credit": "Posted by @telegram on X",
+        }
+        posted = build.item(card, "../", "today", live_evidence=False)
+        assert 'class="thumb postcard"' in posted
+        assert '<span class="rk" aria-hidden="true">1</span>' in posted
+        assert posted.index("<img") < posted.index('class="rk"')
+
+        text = {
+            "rank": 10, "id": "not-a-real-meme-for-rank-test",
+            "title": "Mom, why is my sister named Lily?",
+            "card_text": "Mom, why is my sister named Lily?",
+            "source_url": "https://x.com/websofmj/status/1",
+            "source_name": "X",
+            "credit": "Posted by @websofmj on X",
+        }
+        words = build.item(text, "../", "week", live_evidence=False)
+        assert "<img" not in words
+        assert 'class="hl textmeme"' in words
+        assert '<span class="rk" aria-hidden="true">10</span>' in words
+        assert '<span class="sr-only">Rank 10. </span>' in words
+        assert 'class="card"' in words
+
+        gone = build.item({"rank": 10, "removed": True}, "../", "today")
+        assert '<span class="rk" aria-hidden="true">10</span>' in gone
+        assert "10." not in gone.replace("Rank 10. ", "")
+        assert gone.index("zone-lead") < gone.index("lead-copy") < gone.index("Takedown policy")
+        assert build.REMOVED in gone
+    finally:
+        build.SLUG.clear()
+        build.SLUG.update(saved_slug)
+        build.PAGES.clear()
+        build.PAGES.update(saved_pages)
+
+    badge = re.compile(r'<span class="rk">\d+\.')
+    naked = re.compile(r'<span class="rk" aria-hidden="true">(\d+)</span>')
+    pages = [
+        ROOT / "index.html",
+        ROOT / "top-memes-today" / "index.html",
+        ROOT / "trending-memes-this-week" / "index.html",
+        ROOT / "best-memes-this-month" / "index.html",
+        ROOT / "archive" / "2026-11-09.html",
+    ]
+    for path in pages:
+        text = path.read_text()
+        assert "li .hl .rk" not in text, path
+        assert "min-width:2.1em" not in text, path
+        assert not badge.search(text), path
+        marks = naked.findall(text)
+        assert marks, path
+        assert "10" in marks, path
+        assert text.count('class="sr-only">Rank ') == len(marks)
+        assert "grid-template-columns:3.15rem" in text
+        assert "font-size:2.55rem" in text
+    home = (ROOT / "index.html").read_text()
+    lead, _, _lists = home.partition("<main")
+    assert 'class="rk"' not in lead
+    week = (ROOT / "trending-memes-this-week" / "index.html").read_text()
+    assert 'class="hl textmeme"' in week and 'aria-hidden="true">10</span>' in week
+    today = (ROOT / "top-memes-today" / "index.html").read_text()
+    assert "postcard" in today and 'aria-hidden="true">6</span>' in today
+
+
 def test_search_console_file_is_exact_and_restored_by_build():
     path = ROOT / "google327e53c932d0bf40.html"
     path.write_bytes(b"<html>wrapped</html>\n")

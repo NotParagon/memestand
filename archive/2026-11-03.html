@@ -75,8 +75,10 @@
  .textmeme{text-transform:none}
  .textmeme .card{text-transform:none;font-size:17px;line-height:1.35}
  .top .textmeme .card{font-size:26px;line-height:1.25;min-height:140px}
- .rk{color:var(--red)}
- li .hl .rk{display:inline-block;min-width:2.1em;margin-right:2px;padding:2px 6px;background:var(--redbg);color:#fff;text-align:center;line-height:1.3}
+ .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+ li .zone-lead{display:grid;grid-template-columns:3.15rem minmax(0,1fr);column-gap:1rem;align-items:start}
+ li .zone-lead>.rk{margin:0;padding:0;background:none;color:var(--red);font-family:var(--read);font-size:2.55rem;font-weight:650;line-height:.82;letter-spacing:-.03em;font-variant-numeric:lining-nums tabular-nums;text-align:right;white-space:nowrap}
+ li .lead-copy{min-width:0}
  .meta{font-size:11px;margin-top:6px;color:var(--muted)} .src{color:var(--link);margin-right:8px} .fs{color:var(--muted)}
  .mv{display:flex;flex-wrap:wrap;column-gap:10px;row-gap:2px;align-items:baseline;margin:4px 0 0;font-size:11px;line-height:1.35;letter-spacing:.02em;color:var(--muted)}
  .mv span{white-space:nowrap} .mv-up{color:var(--green)} .mv-down{color:var(--red)} .mv-new,.mv-first{color:var(--fg2)}
@@ -154,6 +156,8 @@
   .hl a{display:inline}
   .hl a.card{display:flex}
   li h3.hl{min-height:44px}
+  li .zone-lead{column-gap:.75rem}
+  li .zone-lead>.rk{font-size:2.4rem}
   .copy .meta{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:12px;row-gap:0}
   .copy .go a{display:inline-flex;align-items:center;min-height:44px}
   .copy .zone-src .src{display:inline;min-height:0;padding:2px 0}
@@ -181,7 +185,7 @@
   <section class="col" id="daily"><h2>TOP 10 MEMES TODAY</h2><ul><li>
   <a href="https://knowyourmeme.com/memes/wassup-in-a-minute-wassup" target="_blank" rel="noopener"><img class="thumb" src="../images/wassup-in-a-minute.jpg" alt="&#x27;Wassup in a Minute Wassup&#x27;: Blue Lock Drip Animation Trend meme - #1 today on MemeStand" width="400" height="225" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">1.</span> <a href="../meme/wassup-in-a-minute/">&#x27;Wassup in a Minute Wassup&#x27;: Blue Lock Drip Animation Trend</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">1</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 1. </span><a href="../meme/wassup-in-a-minute/">&#x27;Wassup in a Minute Wassup&#x27;: Blue Lock Drip Animation Trend</a></h3></div></div>
   <div class="zone zone-hist"><div class="mv"><span class="mv-new" title="On this day&#x27;s daily top 10, not on the previous Pacific day&#x27;s list">New that day</span><span class="mv-first" title="No earlier archived daily top 10 includes this meme">First time</span></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/wassup-in-a-minute-wassup" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
@@ -190,7 +194,7 @@
 </li><li>
   <a href="https://x.com/abdykeen/status/2117175866232868947" target="_blank" rel="noopener"><img class="thumb" src="../images/no-money-bald.jpg" alt="&#x27;Me After Using My Money to Look for Money&#x27;: Bald Distress Clip Becomes a Loss Meme meme - #2 today on MemeStand" width="307" height="400" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">2.</span> <a href="../meme/no-money-bald/">&#x27;Me After Using My Money to Look for Money&#x27;: Bald Distress Clip Becomes a Loss Meme</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">2</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 2. </span><a href="../meme/no-money-bald/">&#x27;Me After Using My Money to Look for Money&#x27;: Bald Distress Clip Becomes a Loss Meme</a></h3></div></div>
   <div class="zone zone-hist"><div class="mv"><span class="mv-new" title="On this day&#x27;s daily top 10, not on the previous Pacific day&#x27;s list">New that day</span><span class="mv-first" title="No earlier archived daily top 10 includes this meme">First time</span></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by @abdykeen on X.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://x.com/abdykeen/status/2117175866232868947" target="_blank" rel="noopener">View credited post</a></p></div>
@@ -200,7 +204,7 @@
 </li><li>
   <a href="https://www.reddit.com/r/memes/comments/1xm6rl8/process_is_that_like_a_ram_thing/" target="_blank" rel="noopener"><img class="thumb" src="../images/ai-bros-process.jpg" alt="AI Bros When You Tell Them &#x27;the Process is Part of the Fun&#x27; meme - #3 today on MemeStand" width="331" height="400" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">3.</span> <a href="../meme/ai-bros-process/">AI Bros When You Tell Them &#x27;the Process is Part of the Fun&#x27;</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">3</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 3. </span><a href="../meme/ai-bros-process/">AI Bros When You Tell Them &#x27;the Process is Part of the Fun&#x27;</a></h3></div></div>
   <div class="zone zone-hist"><div class="mv"><span class="mv-new" title="On this day&#x27;s daily top 10, not on the previous Pacific day&#x27;s list">New that day</span><span class="mv-first" title="No earlier archived daily top 10 includes this meme">First time</span></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by u/MahmoudAO on r/memes.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://www.reddit.com/r/memes/comments/1xm6rl8/process_is_that_like_a_ram_thing/" target="_blank" rel="noopener">View credited post</a></p></div>
@@ -209,7 +213,7 @@
 </li><li>
   <a href="https://www.reddit.com/r/memes/comments/1xm1ln7/yeah_thats_absolutely_very_sane_everything_is_fine/" target="_blank" rel="noopener"><img class="thumb" src="../images/ai-artists-hoverboard.jpg" alt="AI &#x27;Artists&#x27; After Generating Hundreds of Books and Movies in One Day meme - #4 today on MemeStand" width="311" height="400" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">4.</span> <a href="../meme/ai-artists-hoverboard/">AI &#x27;Artists&#x27; After Generating Hundreds of Books and Movies in One Day</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">4</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 4. </span><a href="../meme/ai-artists-hoverboard/">AI &#x27;Artists&#x27; After Generating Hundreds of Books and Movies in One Day</a></h3></div></div>
   <div class="zone zone-hist"><div class="mv"><span class="mv-new" title="On this day&#x27;s daily top 10, not on the previous Pacific day&#x27;s list">New that day</span><span class="mv-first" title="No earlier archived daily top 10 includes this meme">First time</span></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by u/MahmoudAO on r/memes.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://www.reddit.com/r/memes/comments/1xm1ln7/yeah_thats_absolutely_very_sane_everything_is_fine/" target="_blank" rel="noopener">View credited post</a></p></div>
@@ -218,7 +222,7 @@
 </li><li>
   <a href="https://x.com/grindgod26/status/2117272503500550159" target="_blank" rel="noopener"><img class="thumb" src="../images/hate-seals-fandom.jpg" alt="Meme Format: Parents Say OK to Every Identity -- Then Lose It Over a Fandom Hate meme - #5 today on MemeStand" width="400" height="190" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">5.</span> <a href="../meme/hate-seals-fandom/">Meme Format: Parents Say OK to Every Identity -- Then Lose It Over a Fandom Hate</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">5</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 5. </span><a href="../meme/hate-seals-fandom/">Meme Format: Parents Say OK to Every Identity -- Then Lose It Over a Fandom Hate</a></h3></div></div>
   <div class="zone zone-hist"><div class="mv"><span class="mv-new" title="On this day&#x27;s daily top 10, not on the previous Pacific day&#x27;s list">New that day</span><span class="mv-first" title="No earlier archived daily top 10 includes this meme">First time</span></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by @grindgod26 on X.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://x.com/grindgod26/status/2117272503500550159" target="_blank" rel="noopener">View credited post</a></p></div>
@@ -228,7 +232,7 @@
 </li><li>
   <a href="https://www.reddit.com/r/memes/comments/1xlybm3/sam_altman_stuff/" target="_blank" rel="noopener"><img class="thumb" src="../images/altman-ram-chart.jpg" alt="All the RAM Points to Sam Altman: Reddit&#x27;s Fresh Altman RAM Chart meme - #6 today on MemeStand" width="400" height="318" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">6.</span> <a href="../meme/altman-ram-chart/">All the RAM Points to Sam Altman: Reddit&#x27;s Fresh Altman RAM Chart</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">6</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 6. </span><a href="../meme/altman-ram-chart/">All the RAM Points to Sam Altman: Reddit&#x27;s Fresh Altman RAM Chart</a></h3></div></div>
   <div class="zone zone-hist"><div class="mv"><span class="mv-new" title="On this day&#x27;s daily top 10, not on the previous Pacific day&#x27;s list">New that day</span><span class="mv-first" title="No earlier archived daily top 10 includes this meme">First time</span></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by u/real_dusky on r/memes.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://www.reddit.com/r/memes/comments/1xlybm3/sam_altman_stuff/" target="_blank" rel="noopener">View credited post</a></p></div>
@@ -237,7 +241,7 @@
 </li><li>
   <a href="https://www.reddit.com/r/memes/comments/1xmsh4e/billionaire_things/" target="_blank" rel="noopener"><img class="thumb" src="../images/billionaires-blaming.jpg" alt="Billionaires Laughing When Blame Lands on Immigrants, the Poor, or Trans People meme - #7 today on MemeStand" width="400" height="317" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">7.</span> <a href="../meme/billionaires-blaming/">Billionaires Laughing When Blame Lands on Immigrants, the Poor, or Trans People</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">7</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 7. </span><a href="../meme/billionaires-blaming/">Billionaires Laughing When Blame Lands on Immigrants, the Poor, or Trans People</a></h3></div></div>
   <div class="zone zone-hist"><div class="mv"><span class="mv-new" title="On this day&#x27;s daily top 10, not on the previous Pacific day&#x27;s list">New that day</span><span class="mv-first" title="No earlier archived daily top 10 includes this meme">First time</span></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by u/Rich_Amount1565 on r/memes.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://www.reddit.com/r/memes/comments/1xmsh4e/billionaire_things/" target="_blank" rel="noopener">View credited post</a></p></div>
@@ -247,7 +251,7 @@
 </li><li>
   <a href="https://www.reddit.com/r/memes/comments/1xmmffa/every_time_i_hear_those_words/" target="_blank" rel="noopener"><img class="thumb" src="../images/twitch-vs-chatgpt.jpg" alt="&#x27;I&#x27;m Gonna Ask Chat&#x27;: Twitch Chat vs. ChatGPT Two-paths Meme meme - #8 today on MemeStand" width="398" height="400" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">8.</span> <a href="../meme/twitch-vs-chatgpt/">&#x27;I&#x27;m Gonna Ask Chat&#x27;: Twitch Chat vs. ChatGPT Two-paths Meme</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">8</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 8. </span><a href="../meme/twitch-vs-chatgpt/">&#x27;I&#x27;m Gonna Ask Chat&#x27;: Twitch Chat vs. ChatGPT Two-paths Meme</a></h3></div></div>
   <div class="zone zone-hist"><div class="mv"><span class="mv-new" title="On this day&#x27;s daily top 10, not on the previous Pacific day&#x27;s list">New that day</span><span class="mv-first" title="No earlier archived daily top 10 includes this meme">First time</span></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by u/comedy_haha on r/memes.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://www.reddit.com/r/memes/comments/1xmmffa/every_time_i_hear_those_words/" target="_blank" rel="noopener">View credited post</a></p></div>
@@ -256,7 +260,7 @@
 </li><li>
   <a href="https://www.reddit.com/r/dankmemes/comments/1xm20x8/sips_ram/" target="_blank" rel="noopener"><img class="thumb" src="../images/sips-ram.jpg" alt="Boston &#x27;Ram&#x27; Party: Colonists Dump Memory Sticks Overboard meme - #9 today on MemeStand" width="400" height="308" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">9.</span> <a href="../meme/sips-ram/">Boston &#x27;Ram&#x27; Party: Colonists Dump Memory Sticks Overboard</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">9</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 9. </span><a href="../meme/sips-ram/">Boston &#x27;Ram&#x27; Party: Colonists Dump Memory Sticks Overboard</a></h3></div></div>
   <div class="zone zone-hist"><div class="mv"><span class="mv-new" title="On this day&#x27;s daily top 10, not on the previous Pacific day&#x27;s list">New that day</span><span class="mv-first" title="No earlier archived daily top 10 includes this meme">First time</span></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by u/C-3POsMidriff on r/dankmemes.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://www.reddit.com/r/dankmemes/comments/1xm20x8/sips_ram/" target="_blank" rel="noopener">View credited post</a></p></div>
@@ -265,7 +269,7 @@
 </li><li>
   <a href="https://www.reddit.com/r/dankmemes/comments/1xmkl5v/i_guess_i_should_vote_for_whoever_spammed_my/" target="_blank" rel="noopener"><img class="thumb" src="../images/election-text-spam.jpg" alt="No Friends, but 104 Unread Texts: America on November 3 meme - #10 today on MemeStand" width="334" height="400" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">10.</span> <a href="../meme/election-text-spam/">No Friends, but 104 Unread Texts: America on November 3</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">10</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 10. </span><a href="../meme/election-text-spam/">No Friends, but 104 Unread Texts: America on November 3</a></h3></div></div>
   <div class="zone zone-hist"><div class="mv"><span class="mv-new" title="On this day&#x27;s daily top 10, not on the previous Pacific day&#x27;s list">New that day</span><span class="mv-first" title="No earlier archived daily top 10 includes this meme">First time</span></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by u/TGVMinecraftMap on r/dankmemes.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://www.reddit.com/r/dankmemes/comments/1xmkl5v/i_guess_i_should_vote_for_whoever_spammed_my/" target="_blank" rel="noopener">View credited post</a></p></div>
@@ -275,7 +279,7 @@
   <section class="col" id="weekly"><h2>TOP 10 MEMES THIS WEEK</h2><ul><li>
   <a href="https://x.com/DiscussingFilm/status/2116776966141415441" target="_blank" rel="noopener"><img class="thumb" src="../images/culkin-thousand-yard.jpg" alt="Macaulay Culkin Goes as the &#x27;Thousand-yard Stare&#x27; Meme for Halloween meme - #1 this week on MemeStand" width="303" height="400" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">1.</span> <a href="../meme/macaulay-culkin-thousand-yard-stare/">Macaulay Culkin Goes as the &#x27;Thousand-yard Stare&#x27; Meme for Halloween</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">1</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 1. </span><a href="../meme/macaulay-culkin-thousand-yard-stare/">Macaulay Culkin Goes as the &#x27;Thousand-yard Stare&#x27; Meme for Halloween</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by @DiscussingFilm on X.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://x.com/DiscussingFilm/status/2116776966141415441" target="_blank" rel="noopener">View original</a></p></div>
   <div class="zone zone-src"><div class="meta"><a class="src" href="https://knowyourmeme.com/memes/thousand-yard-stare" target="_blank" rel="noopener">Know Your Meme</a></div></div>
@@ -284,7 +288,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/events/ethan-klein-cheating-controversy-h3-affair-scandal" target="_blank" rel="noopener"><img class="thumb" src="../images/ethan-klein.jpg" alt="H3&#x27;s Ethan Klein Cheating Allegations Spawn a Meme Factory, Per KYM meme - #2 this week on MemeStand" width="400" height="225" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">2.</span> <a href="../meme/ethan-klein-h3-memes/">H3&#x27;s Ethan Klein Cheating Allegations Spawn a Meme Factory, Per KYM</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">2</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 2. </span><a href="../meme/ethan-klein-h3-memes/">H3&#x27;s Ethan Klein Cheating Allegations Spawn a Meme Factory, Per KYM</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/events/ethan-klein-cheating-controversy-h3-affair-scandal" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-src"><div class="meta"><a class="src" href="https://x.com/PopBase/status/2114415796890038370" target="_blank" rel="noopener">X / @PopBase</a><a class="src" href="https://knowyourmeme.com/memes/ethan-klein-ai-edits-kleinification" target="_blank" rel="noopener">KYM: Kleinification</a></div></div>
@@ -293,7 +297,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/snow-leopard-paws-at-you" target="_blank" rel="noopener"><img class="thumb" src="../images/snow-leopard.jpg" alt="&#x27;*Paws at You*&#x27;: AI Snow Leopard &#x27;Snowmei&#x27; Begs Its Way Across the Internet meme - #3 this week on MemeStand" width="400" height="217" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">3.</span> <a href="../meme/snow-leopard-paws-at-you/">&#x27;*Paws at You*&#x27;: AI Snow Leopard &#x27;Snowmei&#x27; Begs Its Way Across the Internet</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">3</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 3. </span><a href="../meme/snow-leopard-paws-at-you/">&#x27;*Paws at You*&#x27;: AI Snow Leopard &#x27;Snowmei&#x27; Begs Its Way Across the Internet</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/snow-leopard-paws-at-you" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-src"><div class="meta"><a class="src" href="https://x.com/dogwife333/status/2114198070132961395" target="_blank" rel="noopener">X / @dogwife333</a><a class="src" href="https://x.com/i/trending/2117374174196830291" target="_blank" rel="noopener">X News</a></div></div>
@@ -302,7 +306,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/skull-cap-trend" target="_blank" rel="noopener"><img class="thumb" src="../images/skull-cap.jpg" alt="Tiktok&#x27;s Skull Cap Glow-up Trend Hits 12.8M Views meme - #4 this week on MemeStand" width="400" height="208" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">4.</span> <a href="../meme/skull-cap-trend/">Tiktok&#x27;s Skull Cap Glow-up Trend Hits 12.8M Views</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">4</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 4. </span><a href="../meme/skull-cap-trend/">Tiktok&#x27;s Skull Cap Glow-up Trend Hits 12.8M Views</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/skull-cap-trend" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-more"><details class="fold"><summary>Sources &amp; details</summary><div class="foldbody"><p>First seen online <time datetime="2026-10-27">October 27, 2026</time>.</p><p class="srcrow"><a class="src" href="https://knowyourmeme.com/memes/skull-cap-trend" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div></details></div>
@@ -310,7 +314,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel" target="_blank" rel="noopener"><img class="thumb" src="../images/mini-producer.jpg" alt="&#x27;Mini Producer&#x27; Jay Thomas Manuel Takes Over Feeds meme - #5 this week on MemeStand" width="400" height="225" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">5.</span> <a href="../meme/mini-producer/">&#x27;Mini Producer&#x27; Jay Thomas Manuel Takes Over Feeds</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">5</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 5. </span><a href="../meme/mini-producer/">&#x27;Mini Producer&#x27; Jay Thomas Manuel Takes Over Feeds</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-more"><details class="fold"><summary>Sources &amp; details</summary><div class="foldbody"><p>First seen online <time datetime="2026-10-28">October 28, 2026</time>.</p><p class="srcrow"><a class="src" href="https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div></details></div>
@@ -318,7 +322,7 @@
 </li><li>
   
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl textmeme"><span class="rk">6.</span> <a class="card" href="../meme/regretamine/">“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">6</span><div class="lead-copy"><h3 class="hl textmeme"><span class="sr-only">Rank 6. </span><a class="card" href="../meme/regretamine/">“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by @elonmusk on X.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://x.com/elonmusk/status/2116875604889112772" target="_blank" rel="noopener">View credited post</a></p></div>
   <div class="zone zone-more"><details class="fold"><summary>Sources &amp; details</summary><div class="foldbody"><p>First seen online <time datetime="2026-11-01">November 1, 2026</time>.</p><p class="srcrow"><a class="src" href="https://x.com/elonmusk/status/2116875604889112772" target="_blank" rel="noopener">X / @elonmusk</a></p></div></details></div>
@@ -326,7 +330,7 @@
 </li><li>
   <a href="https://x.com/vwxyz_4/status/2115203529795326309" target="_blank" rel="noopener"><img class="thumb" src="../images/monkey-doomscrolling.jpg" alt="Tiny Monkey &#x27;Doomscrolling&#x27; in Bed Hits 6.9M Views meme - #7 this week on MemeStand" width="400" height="350" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">7.</span> <a href="../meme/monkey-doomscrolling/">Tiny Monkey &#x27;Doomscrolling&#x27; in Bed Hits 6.9M Views</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">7</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 7. </span><a href="../meme/monkey-doomscrolling/">Tiny Monkey &#x27;Doomscrolling&#x27; in Bed Hits 6.9M Views</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by @vwxyz_4 on X.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://x.com/vwxyz_4/status/2115203529795326309" target="_blank" rel="noopener">View credited post</a></p></div>
   <div class="zone zone-src"><div class="meta"><a class="src" href="https://x.com/i/trending/2115430446075121982" target="_blank" rel="noopener">X trending story</a></div></div>
@@ -335,7 +339,7 @@
 </li><li>
   <a href="https://www.reddit.com/r/memes/comments/1xky93a/kiss_your_ram/" target="_blank" rel="noopener"><img class="thumb" src="../images/altman-ram.jpg" alt="Altman: Dram in Home Pcs is &#x27;Quite Terrible&#x27; Allocation... Internet Hides Its DIMMs meme - #8 this week on MemeStand" width="400" height="225" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">8.</span> <a href="../meme/sam-altman-ram/">Altman: Dram in Home Pcs is &#x27;Quite Terrible&#x27; Allocation... Internet Hides Its DIMMs</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">8</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 8. </span><a href="../meme/sam-altman-ram/">Altman: Dram in Home Pcs is &#x27;Quite Terrible&#x27; Allocation... Internet Hides Its DIMMs</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by u/famsteve20015 on r/memes.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://www.reddit.com/r/memes/comments/1xky93a/kiss_your_ram/" target="_blank" rel="noopener">View original</a></p></div>
   <div class="zone zone-src"><div class="meta"><a class="src" href="https://x.com/i/trending/2116915793342398671" target="_blank" rel="noopener">X trending story</a><a class="src" href="https://www.reddit.com/r/dankmemes/comments/1xl1v6m/point_out_to_me_the_dimm_sockets_where_they_are/" target="_blank" rel="noopener">r/dankmemes: DIMM sockets</a></div></div>
@@ -344,7 +348,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/im-so-in-love-with-you-dragon-ball-dance-jiren-dancing" target="_blank" rel="noopener"><img class="thumb" src="../images/jiren-dancing.jpg" alt="Jiren Dances to &#x27;I&#x27;m So in Love with You&#x27; meme - #9 this week on MemeStand" width="400" height="225" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">9.</span> <a href="../meme/jiren-dancing/">Jiren Dances to &#x27;I&#x27;m So in Love with You&#x27;</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">9</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 9. </span><a href="../meme/jiren-dancing/">Jiren Dances to &#x27;I&#x27;m So in Love with You&#x27;</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/im-so-in-love-with-you-dragon-ball-dance-jiren-dancing" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-more"><details class="fold"><summary>Sources &amp; details</summary><div class="foldbody"><p>First seen online <time datetime="2026-10-26">October 26, 2026</time>.</p><p class="srcrow"><a class="src" href="https://knowyourmeme.com/memes/im-so-in-love-with-you-dragon-ball-dance-jiren-dancing" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div></details></div>
@@ -352,7 +356,7 @@
 </li><li>
   <a href="https://x.com/EODHappyCaptain/status/2115887607238328723" target="_blank" rel="noopener"><img class="thumb" src="../images/bear-landmine.jpg" alt="&#x27;Never Zero&#x27;: Trail-cam Bear Carrying a Mine-like Object Becomes an Eod Meme meme - #10 this week on MemeStand" width="400" height="400" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">10.</span> <a href="../meme/bear-landmine/">&#x27;Never Zero&#x27;: Trail-cam Bear Carrying a Mine-like Object Becomes an Eod Meme</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">10</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 10. </span><a href="../meme/bear-landmine/">&#x27;Never Zero&#x27;: Trail-cam Bear Carrying a Mine-like Object Becomes an Eod Meme</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by @EODHappyCaptain on X.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://x.com/EODHappyCaptain/status/2115887607238328723" target="_blank" rel="noopener">View credited post</a></p></div>
   <div class="zone zone-src"><div class="meta"><a class="src" href="https://x.com/i/trending/2116300713361834385" target="_blank" rel="noopener">X trending story</a><a class="src" href="https://x.com/EODCSM/status/2115886753592795549" target="_blank" rel="noopener">X / @EODCSM</a></div></div>
@@ -362,7 +366,7 @@
   <section class="col" id="monthly"><h2>TOP 10 MEMES THIS MONTH</h2><ul><li>
   <a href="https://knowyourmeme.com/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans" target="_blank" rel="noopener"><img class="thumb" src="../images/tip-toein.jpg" alt="AI Rumpelstiltskin &#x27;Tip Toein&#x27; in My Jordans&#x27; meme - #1 this month on MemeStand" width="400" height="225" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">1.</span> <a href="../meme/ai-rumpelstiltskin-tip-toein-in-my-jordans/">AI Rumpelstiltskin &#x27;Tip Toein&#x27; in My Jordans&#x27;</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">1</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 1. </span><a href="../meme/ai-rumpelstiltskin-tip-toein-in-my-jordans/">AI Rumpelstiltskin &#x27;Tip Toein&#x27; in My Jordans&#x27;</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-more"><details class="fold"><summary>Sources &amp; details</summary><div class="foldbody"><p>First seen online <time datetime="2026-10-06">October 6, 2026</time>.</p><p class="srcrow"><a class="src" href="https://knowyourmeme.com/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div></details></div>
@@ -370,7 +374,7 @@
 </li><li>
   <a href="https://x.com/DiscussingFilm/status/2116776966141415441" target="_blank" rel="noopener"><img class="thumb" src="../images/culkin-thousand-yard.jpg" alt="Macaulay Culkin Goes as the &#x27;Thousand-yard Stare&#x27; Meme for Halloween meme - #2 this month on MemeStand" width="303" height="400" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">2.</span> <a href="../meme/macaulay-culkin-thousand-yard-stare/">Macaulay Culkin Goes as the &#x27;Thousand-yard Stare&#x27; Meme for Halloween</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">2</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 2. </span><a href="../meme/macaulay-culkin-thousand-yard-stare/">Macaulay Culkin Goes as the &#x27;Thousand-yard Stare&#x27; Meme for Halloween</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Posted by @DiscussingFilm on X.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://x.com/DiscussingFilm/status/2116776966141415441" target="_blank" rel="noopener">View original</a></p></div>
   <div class="zone zone-src"><div class="meta"><a class="src" href="https://knowyourmeme.com/memes/thousand-yard-stare" target="_blank" rel="noopener">Know Your Meme</a></div></div>
@@ -379,7 +383,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/events/ethan-klein-cheating-controversy-h3-affair-scandal" target="_blank" rel="noopener"><img class="thumb" src="../images/ethan-klein.jpg" alt="H3&#x27;s Ethan Klein Cheating Allegations Spawn a Meme Factory, Per KYM meme - #3 this month on MemeStand" width="400" height="225" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">3.</span> <a href="../meme/ethan-klein-h3-memes/">H3&#x27;s Ethan Klein Cheating Allegations Spawn a Meme Factory, Per KYM</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">3</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 3. </span><a href="../meme/ethan-klein-h3-memes/">H3&#x27;s Ethan Klein Cheating Allegations Spawn a Meme Factory, Per KYM</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/events/ethan-klein-cheating-controversy-h3-affair-scandal" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-src"><div class="meta"><a class="src" href="https://x.com/PopBase/status/2114415796890038370" target="_blank" rel="noopener">X / @PopBase</a><a class="src" href="https://knowyourmeme.com/memes/ethan-klein-ai-edits-kleinification" target="_blank" rel="noopener">KYM: Kleinification</a></div></div>
@@ -388,7 +392,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/snow-leopard-paws-at-you" target="_blank" rel="noopener"><img class="thumb" src="../images/snow-leopard.jpg" alt="&#x27;*Paws at You*&#x27;: AI Snow Leopard &#x27;Snowmei&#x27; Begs Its Way Across the Internet meme - #4 this month on MemeStand" width="400" height="217" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">4.</span> <a href="../meme/snow-leopard-paws-at-you/">&#x27;*Paws at You*&#x27;: AI Snow Leopard &#x27;Snowmei&#x27; Begs Its Way Across the Internet</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">4</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 4. </span><a href="../meme/snow-leopard-paws-at-you/">&#x27;*Paws at You*&#x27;: AI Snow Leopard &#x27;Snowmei&#x27; Begs Its Way Across the Internet</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/snow-leopard-paws-at-you" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-src"><div class="meta"><a class="src" href="https://x.com/dogwife333/status/2114198070132961395" target="_blank" rel="noopener">X / @dogwife333</a><a class="src" href="https://x.com/i/trending/2117374174196830291" target="_blank" rel="noopener">X News</a></div></div>
@@ -397,7 +401,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/malfoid-female-draco-malfoy" target="_blank" rel="noopener"><img class="thumb" src="../images/malfoid.jpg" alt="&#x27;Malfoid&#x27;: Female Draco Malfoy Art Takes Over -- October Meme of the Month meme - #5 this month on MemeStand" width="400" height="225" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">5.</span> <a href="../meme/malfoid/">&#x27;Malfoid&#x27;: Female Draco Malfoy Art Takes Over -- October Meme of the Month</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">5</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 5. </span><a href="../meme/malfoid/">&#x27;Malfoid&#x27;: Female Draco Malfoy Art Takes Over -- October Meme of the Month</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/malfoid-female-draco-malfoy" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-src"><div class="meta"><a class="src" href="https://knowyourmeme.com/editorials/see-the-winner-of-october-2026s-meme-of-the-month" target="_blank" rel="noopener">KYM: October 2026 Meme of the Month winner</a></div></div>
@@ -406,7 +410,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/while-they-are-out-partying" target="_blank" rel="noopener"><img class="thumb" src="../images/out-partying.jpg" alt="&#x27;While They Are Out Partying...&#x27; -- 35M Views meme - #6 this month on MemeStand" width="400" height="225" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">6.</span> <a href="../meme/while-theyre-out-partying/">&#x27;While They Are Out Partying...&#x27; -- 35M Views</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">6</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 6. </span><a href="../meme/while-theyre-out-partying/">&#x27;While They Are Out Partying...&#x27; -- 35M Views</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/while-they-are-out-partying" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-more"><details class="fold"><summary>Sources &amp; details</summary><div class="foldbody"><p>First seen online <time datetime="2026-10-21">October 21, 2026</time>.</p><p class="srcrow"><a class="src" href="https://knowyourmeme.com/memes/while-they-are-out-partying" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div></details></div>
@@ -414,7 +418,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/skull-cap-trend" target="_blank" rel="noopener"><img class="thumb" src="../images/skull-cap.jpg" alt="Tiktok&#x27;s Skull Cap Glow-up Trend Hits 12.8M Views meme - #7 this month on MemeStand" width="400" height="208" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">7.</span> <a href="../meme/skull-cap-trend/">Tiktok&#x27;s Skull Cap Glow-up Trend Hits 12.8M Views</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">7</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 7. </span><a href="../meme/skull-cap-trend/">Tiktok&#x27;s Skull Cap Glow-up Trend Hits 12.8M Views</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/skull-cap-trend" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-more"><details class="fold"><summary>Sources &amp; details</summary><div class="foldbody"><p>First seen online <time datetime="2026-10-27">October 27, 2026</time>.</p><p class="srcrow"><a class="src" href="https://knowyourmeme.com/memes/skull-cap-trend" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div></details></div>
@@ -422,7 +426,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/im-so-sorry-tiktok-trend" target="_blank" rel="noopener"><img class="thumb" src="../images/im-so-sorry.jpg" alt="&#x27;I&#x27;m So Sorry&#x27; TikTok Slideshow Trend -- 25.6M Views meme - #8 this month on MemeStand" width="400" height="225" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">8.</span> <a href="../meme/im-so-sorry-trend/">&#x27;I&#x27;m So Sorry&#x27; TikTok Slideshow Trend -- 25.6M Views</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">8</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 8. </span><a href="../meme/im-so-sorry-trend/">&#x27;I&#x27;m So Sorry&#x27; TikTok Slideshow Trend -- 25.6M Views</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/im-so-sorry-tiktok-trend" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-more"><details class="fold"><summary>Sources &amp; details</summary><div class="foldbody"><p>First seen online <time datetime="2026-10-22">October 22, 2026</time>.</p><p class="srcrow"><a class="src" href="https://knowyourmeme.com/memes/im-so-sorry-tiktok-trend" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div></details></div>
@@ -430,7 +434,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel" target="_blank" rel="noopener"><img class="thumb" src="../images/mini-producer.jpg" alt="&#x27;Mini Producer&#x27; Jay Thomas Manuel Takes Over Feeds meme - #9 this month on MemeStand" width="400" height="225" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">9.</span> <a href="../meme/mini-producer/">&#x27;Mini Producer&#x27; Jay Thomas Manuel Takes Over Feeds</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">9</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 9. </span><a href="../meme/mini-producer/">&#x27;Mini Producer&#x27; Jay Thomas Manuel Takes Over Feeds</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-more"><details class="fold"><summary>Sources &amp; details</summary><div class="foldbody"><p>First seen online <time datetime="2026-10-28">October 28, 2026</time>.</p><p class="srcrow"><a class="src" href="https://knowyourmeme.com/memes/people/mini-producer-jay-thomas-manuel" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div></details></div>
@@ -438,7 +442,7 @@
 </li><li>
   <a href="https://knowyourmeme.com/memes/youre-blatantly-just-not-me-nan" target="_blank" rel="noopener"><img class="thumb" src="../images/not-me-nan.jpg" alt="&#x27;You&#x27;re Blatantly Just Not Me Nan&#x27; -- 12M Views meme - #10 this month on MemeStand" width="400" height="225" loading="lazy"></a>
   <div class="copy">
-  <div class="zone zone-lead"><h3 class="hl clip"><span class="rk">10.</span> <a href="../meme/youre-blatantly-just-not-me-nan/">&#x27;You&#x27;re Blatantly Just Not Me Nan&#x27; -- 12M Views</a></h3></div>
+  <div class="zone zone-lead"><span class="rk" aria-hidden="true">10</span><div class="lead-copy"><h3 class="hl clip"><span class="sr-only">Rank 10. </span><a href="../meme/youre-blatantly-just-not-me-nan/">&#x27;You&#x27;re Blatantly Just Not Me Nan&#x27; -- 12M Views</a></h3></div></div>
   <div class="zone zone-by"><p class="credit"><span class="who">Image via Know Your Meme; original creators as documented there.</span> <span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>
   <p class="go"><a href="https://knowyourmeme.com/memes/youre-blatantly-just-not-me-nan" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div>
   <div class="zone zone-more"><details class="fold"><summary>Sources &amp; details</summary><div class="foldbody"><p>First seen online <time datetime="2026-10-02">October 2, 2026</time>.</p><p class="srcrow"><a class="src" href="https://knowyourmeme.com/memes/youre-blatantly-just-not-me-nan" target="_blank" rel="noopener">Know Your Meme explainer</a></p></div></details></div>
