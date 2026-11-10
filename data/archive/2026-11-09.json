@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T19:10-08:00",
+  "updated": "2026-11-09T20:01-08:00",
   "daily": [
     {
       "rank": 1,
@@ -78,7 +78,7 @@
         }
       ],
       "first_seen": "2026-11-08",
-      "score": 71.8,
+      "score": 71.9,
       "sources": [
         "X"
       ],
@@ -623,8 +623,9 @@
       "rank": 10,
       "id": "regretamine",
       "title": "ELON MUSK JOKES ABOUT A DRUG CALLED 'REGRETAMINE'... REPLIES RUN WILD",
-      "image": null,
+      "image": "images/post-cards/regretamine.jpg",
       "image_url": null,
+      "image_kind": "post_card",
       "card_text": "“I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!”",
       "source_url": "https://x.com/elonmusk/status/2116875604889112772",
       "source_name": "X / @elonmusk",

@@ -1,6 +1,16 @@
 {
   "note": "Add a card by saving the unlabeled square (avatar, handle, full post, no MemeStand header) as images/post-cards/<slug>.jpg and adding an entry here. Do not put these files in images/<id>.jpg: that folder is the 400px photo-thumbnail store and rank.py will shrink it. image_policy none still blocks unlisted third-party photos. A listed card is shown only when the meme has no photo of its own.",
   "cards": {
+    "regretamine": {
+      "ids": ["regretamine"],
+      "file": "images/post-cards/regretamine.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "I have this great idea for a drug called Regretamine. One dose and all your regrets are gone!\n\nIncluding, obviously, having taken Regretamine in the first place.",
+      "source_url": "https://x.com/elonmusk/status/2116875604889112772",
+      "source_asset": "memestand-video/cache/2026-11-09/regretamine-card.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 9 2026 (8 PM PT refresh) with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, avatar). Not a screenshot of X."
+    },
     "telegram-microsoft": {
       "ids": ["telegram-microsoft"],
       "file": "images/post-cards/telegram-microsoft.jpg",
