@@ -490,6 +490,36 @@
       "written": "2026-11-05",
       "checked": "2026-11-07T22:51:54-08:00"
     },
+    "copy-gif-orange-cat": {
+      "name": "Copy GIF Orange Cat",
+      "ids": [
+        "copy-gif-orange-cat"
+      ],
+      "status": "short",
+      "explainer": "A short looping GIF shows an orange-and-white cat standing on its hind legs on a wet street at night, throwing its front paws around like it is boxing. It took off when people on X realized they could copy a GIF from someone else's post and reuse it, so the same cat suddenly turned up everywhere with captions like \"I didn't know you could copy GIFs.\" People now drop it as a reaction, turn it into WhatsApp stickers, or post it to complain that their whole timeline is this cat.",
+      "origin": "The biggest post found is by @miensha00 on X on November 9, 2026, with a Spanish caption saying they had learned to make GIF stickers from a TikTok tutorial; it had about 36.3 million views per X's public counts on November 10. On November 10 the same GIF spread across X in several languages as other accounts reposted it with their own copy-the-GIF captions and how-to replies, and X News ran a story about it becoming a WhatsApp sticker. Where the cat clip was first filmed or posted hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/miensha00/status/2119869530327732250",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@miensha00 on X",
+          "url": "https://x.com/miensha00/status/2119869530327732250"
+        },
+        {
+          "name": "@srdelaSandia on X (same GIF)",
+          "url": "https://x.com/srdelaSandia/status/2119899138670096659"
+        },
+        {
+          "name": "X News: Orange Cat GIF Becomes WhatsApp Sticker Favorite",
+          "url": "https://x.com/i/trending/2119854312042234276"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-10",
+      "checked": "2026-11-10T15:20:00-08:00"
+    },
     "crack-a-monster": {
       "name": "It's Not That Deep. Crack a Monster.",
       "seo_title": "Crack a Monster Meme ('It's Not That Deep'): Meaning & Origin | MemeStand",
