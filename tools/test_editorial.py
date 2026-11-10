@@ -130,12 +130,20 @@ def test_store_captions_match_a_direct_post_record():
             assert build.is_direct_post(hit["url"])
             assert build.sourced_captions([cap]) == []
             kept.append((sl, cap, hit["kind"], hit["url"]))
-    assert kept == [(
-        "bounce-baby-boy",
-        "Boys go always bounce back na why dem dey call us bouncing baby boy",
-        "post_card",
-        "https://x.com/2THUQQ/status/2118617523708965188",
-    )]
+    assert kept == [
+        (
+            "bounce-baby-boy",
+            "Boys go always bounce back na why dem dey call us bouncing baby boy",
+            "post_card",
+            "https://x.com/2THUQQ/status/2118617523708965188",
+        ),
+        (
+            "spongebob-is-friend-with-patrick",
+            "Love him or hate him, SpongeBob is friend with Patrick so if you wanna watch the show he’s gonna be there. sorry.",
+            "card_text",
+            "https://x.com/Dayscd/status/2119910679402418346",
+        ),
+    ]
 
 
 def test_evidence_line_uses_the_checked_observation_not_the_page_build():
