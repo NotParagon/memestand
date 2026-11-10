@@ -12,6 +12,8 @@ Writes (all generated, don't hand-edit):
   terms.html, privacy.html, dmca.html legal pages (text lives in this file; settings in LEGAL below)
   feed.xml                            Atom feed, one entry per daily report
   sitemap.xml, robots.txt, llms.txt   crawler / AI-assistant discovery
+  google327e53c932d0bf40.html         Google Search Console URL-prefix verification (exact one-line body;
+                                      rewritten every build, not a page, not in the sitemap)
   meme/<slug>/index.html              one permanent explainer page per meme (text from data/meme_pages.json;
                                       a written explainer stays even after the meme leaves the ranked lists)
   memes/index.html                    A-Z index of every meme page
@@ -1852,6 +1854,21 @@ def build_sitemap(snaps):
 BOTS = ["Googlebot", "Google-Extended", "Bingbot", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "PerplexityBot", "Perplexity-User",
         "ClaudeBot", "Claude-SearchBot", "Claude-User", "anthropic-ai", "Applebot", "Applebot-Extended", "DuckDuckBot",
         "CCBot", "Meta-ExternalAgent", "Amazonbot", "cohere-ai", "MistralAI-User", "YouBot", "xAI-Bot", "GrokBot"]
+# Google Search Console URL-prefix verification for https://memestand.com/
+# (memestandhq@gmail.com). Google re-fetches this URL, so do not remove it after
+# verification. The body is the downloaded token: one line, no trailing newline, no HTML.
+# prune_meme_pages() only deletes stale meme/<slug>/ directories, so a committed root
+# file would already survive a build. Rewriting the bytes here also restores the file
+# if a refresh deletes it or wraps it in a page template. Not a page: no analytics beacon.
+GSC_FILE = "google327e53c932d0bf40.html"
+GSC_BODY = b"google-site-verification: google327e53c932d0bf40.html"
+
+def build_search_console():
+    p = ROOT / GSC_FILE
+    if not p.exists() or p.read_bytes() != GSC_BODY:
+        p.write_bytes(GSC_BODY)
+    written.append(GSC_FILE)
+
 def build_robots():
     groups = "\n".join(f"User-agent: {b}" for b in BOTS)
     write("robots.txt", f"""# MemeStand.com -- all crawlers, search engines and AI assistants are welcome.
@@ -1944,6 +1961,7 @@ def main():
     build_feed(snaps)
     build_sitemap(snaps)
     build_robots()
+    build_search_console()
     build_llms()
     full = sum(1 for v in PAGES.values() if v["status"] == "full")
     print(f"built {len(written)} files ({len(snaps)} archive day(s), {len(PAGES)} meme pages: {full} full, {len(PAGES) - full} short); latest report {TODAY}")
