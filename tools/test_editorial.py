@@ -591,6 +591,26 @@ def test_built_pages_match_the_rules():
     assert "<loc>https://memestand.com/meme/seatbelt-dog/</loc><lastmod>2026-11-08T06:16:07-08:00</lastmod>" in sm
 
 
+def _assert_ranked_cards(text, path):
+    """Picture cards put the rank and headline above the image and the blurb under it.
+    Text-only and removed rows keep the rank with the headline and leave no image slot."""
+    for li in re.findall(r"<li\b[^>]*>(.*?)</li>", text, re.S):
+        if 'class="rk"' not in li:
+            continue
+        if "<img" in li:
+            assert li.index('class="rk"') < li.index('class="hl') < li.index("<img"), path
+            lead_copy = li.split('class="lead-copy"', 1)[1].split("</div>", 1)[0]
+            assert "<img" not in lead_copy and 'class="dek"' not in lead_copy, path
+            if 'class="dek"' in li:
+                assert li.index("<img") < li.index('class="dek"'), path
+            for band in ("zone-hist", "zone-by", "zone-src", "zone-more"):
+                if band in li:
+                    assert li.index("<img") < li.index(band), path
+        else:
+            assert 'class="thumb"' not in li, path
+            assert li.index('class="rk"') < li.index('class="lead-copy"'), path
+
+
 def test_hanging_rank_replaces_the_filled_badge():
     """Ranked cards hang a bare red number. The filled badge and the trailing period must not come back."""
     css = build.CSS
@@ -599,6 +619,11 @@ def test_hanging_rank_replaces_the_filled_badge():
     grid = re.search(r"li \.zone-lead\{([^}]+)\}", css)
     assert grid and "grid-template-columns:3.15rem minmax(0,1fr)" in grid.group(1)
     assert "text-align:right" in css
+    shot = re.search(r"li \.zone-lead>a\{([^}]+)\}", css)
+    assert shot and "grid-column:1 / -1" in shot.group(1) and "margin:12px 0 0" in shot.group(1)
+    assert "li .zone-lead>a .thumb{margin:0}" in css
+    dek_row = re.search(r"li \.zone-lead>\.dek\{([^}]+)\}", css)
+    assert dek_row and "grid-column:1 / -1" in dek_row.group(1) and "margin-top:10px" in dek_row.group(1)
     rk = re.search(r"li \.zone-lead>\.rk\{([^}]+)\}", css)
     assert rk, css
     body = rk.group(1)
@@ -638,16 +663,21 @@ def test_hanging_rank_replaces_the_filled_badge():
                             re.search(r'<span class="rk"[^>]*>.*?</span>', html).group(0))
         assert not re.search(r'<span class="rk"[^>]*>\d+\.', html)
         assert '<h3 class="hl clip"><span class="sr-only">Rank 6. </span>' in html
-        assert html.index("<img") < html.index('class="copy"') < html.index('class="rk"')
+        # Rank and headline sit above the picture. The blurb and later bands stay under it.
+        assert html.index('class="copy"') < html.index('class="rk"') < html.index('class="hl')
+        assert html.index('class="hl') < html.index("<img") < html.index('class="dek"')
         i_copy = html.index('class="lead-copy"')
+        i_img = html.index("<img")
         i_dek = html.index('class="dek"')
         i_hist = html.index("zone-hist")
         i_by = html.index("zone-by")
-        assert i_copy < i_dek < i_hist < i_by
+        assert i_copy < i_img < i_dek < i_hist < i_by
+        lead_copy = html.split('class="lead-copy"', 1)[1].split("</div>", 1)[0]
+        assert 'class="hl' in lead_copy and "<img" not in lead_copy and 'class="dek"' not in lead_copy
         assert html.index("Up 3 since yesterday") > i_hist
         assert "Posted by @acervodoguinhos" in html[i_by:]
-        # The picture stays above the text. The rank is not painted onto it.
-        assert "rk" not in html.split("<img", 1)[0]
+        # The rank hangs beside the headline. It is not painted onto the picture.
+        assert "rk" not in html.split("<img", 1)[1].split(">", 1)[0]
 
         card = {
             "rank": 1, "id": "telegram-microsoft",
@@ -661,7 +691,8 @@ def test_hanging_rank_replaces_the_filled_badge():
         posted = build.item(card, "../", "today", live_evidence=False)
         assert 'class="thumb postcard"' in posted
         assert '<span class="rk" aria-hidden="true">1</span>' in posted
-        assert posted.index("<img") < posted.index('class="rk"')
+        assert posted.index('class="rk"') < posted.index('class="hl') < posted.index("<img")
+        assert 'class="dek"' not in posted
 
         text = {
             "rank": 10, "id": "not-a-real-meme-for-rank-test",
@@ -673,10 +704,12 @@ def test_hanging_rank_replaces_the_filled_badge():
         }
         words = build.item(text, "../", "week", live_evidence=False)
         assert "<img" not in words
+        assert 'class="thumb"' not in words
         assert 'class="hl textmeme"' in words
         assert '<span class="rk" aria-hidden="true">10</span>' in words
         assert '<span class="sr-only">Rank 10. </span>' in words
         assert 'class="card"' in words
+        assert words.index('class="rk"') < words.index('class="lead-copy"') < words.index('class="hl textmeme"')
 
         gone = build.item({"rank": 10, "removed": True}, "../", "today")
         assert '<span class="rk" aria-hidden="true">10</span>' in gone
@@ -709,14 +742,26 @@ def test_hanging_rank_replaces_the_filled_badge():
         assert text.count('class="sr-only">Rank ') == len(marks)
         assert "grid-template-columns:3.15rem" in text
         assert "font-size:2.55rem" in text
+        if 'class="top"' in text:
+            top = text.split('class="top"', 1)[1].split("<main", 1)[0]
+            assert 'class="rk"' not in top, path
+            if "<img" in top and 'class="hl' in top:
+                assert top.index("<img") < top.index('class="hl'), path
     home = (ROOT / "index.html").read_text()
     lead, _, _lists = home.partition("<main")
     assert 'class="rk"' not in lead
+    # The lead story has no hanging rank and stays image-first.
+    top = lead.split('class="top"', 1)[1]
+    assert 'class="rk"' not in top
+    assert top.index("<img") < top.index('class="hl') < top.index('class="dek"')
+    for path in pages:
+        _assert_ranked_cards(path.read_text(), path)
     week = (ROOT / "trending-memes-this-week" / "index.html").read_text()
     assert 'aria-hidden="true">10</span>' in week
     # The live weekly list has no text-only card right now. The Nov 5 report still does.
     nov5_text = (ROOT / "archive" / "2026-11-05.html").read_text()
     assert 'class="hl textmeme"' in nov5_text and 'aria-hidden="true">10</span>' in nov5_text
+    _assert_ranked_cards(nov5_text, ROOT / "archive" / "2026-11-05.html")
     today = (ROOT / "top-memes-today" / "index.html").read_text()
     assert "postcard" in today and 'aria-hidden="true">6</span>' in today
 

@@ -274,6 +274,9 @@ CSS = """
  li .zone-lead{display:grid;grid-template-columns:3.15rem minmax(0,1fr);column-gap:1rem;align-items:start}
  li .zone-lead>.rk{margin:0;padding:0;background:none;color:var(--red);font-family:var(--read);font-size:2.55rem;font-weight:650;line-height:.82;letter-spacing:-.03em;font-variant-numeric:lining-nums tabular-nums;text-align:right;white-space:nowrap}
  li .lead-copy{min-width:0}
+ li .zone-lead>a{grid-column:1 / -1;display:block;margin:12px 0 0;min-width:0}
+ li .zone-lead>a .thumb{margin:0}
+ li .zone-lead>.dek{grid-column:1 / -1;margin-top:10px;min-width:0}
  .meta{font-size:11px;margin-top:6px;color:var(--muted)} .src{color:var(--link);margin-right:8px} .fs{color:var(--muted)}
  .mv{display:flex;flex-wrap:wrap;column-gap:10px;row-gap:2px;align-items:baseline;margin:4px 0 0;font-size:11px;line-height:1.35;letter-spacing:.02em;color:var(--muted)}
  .mv span{white-space:nowrap} .mv-up{color:var(--green)} .mv-down{color:var(--red)} .mv-new,.mv-first{color:var(--fg2)}
@@ -927,10 +930,15 @@ def other_source_entries(m, live_evidence):
     primary = _url_key(primary_link(m).get("url") or m.get("source_url"))
     return [(url, name) for url, name in source_entries(m, live_evidence) if _url_key(url) != primary]
 
-def caption_zones(head, dek, hist, credit_html, others_html, fold_html, rank=""):
+def caption_zones(head, dek, hist, credit_html, others_html, fold_html, rank="", media=""):
     """Description, rank note, attribution, other links, and details, each its own band.
-    A rank mark hangs in the lead only; later bands stay full width under that block."""
-    lead = f'{rank}<div class="lead-copy">{head}{dek}</div>' if rank else f'{head}{dek}'
+    A rank mark hangs in the lead only; later bands stay full width under that block.
+    When media is the picture, it sits under the headline and above the blurb, full width.
+    No picture leaves the rank and headline together, with the blurb in that same block."""
+    if media:
+        lead = f'{rank}<div class="lead-copy">{head}</div>{media}{dek}' if rank else f'{head}{media}{dek}'
+    else:
+        lead = f'{rank}<div class="lead-copy">{head}{dek}</div>' if rank else f'{head}{dek}'
     parts = [f'<div class="zone zone-lead">{lead}</div>']
     if hist and hist.strip():
         parts.append(f'<div class="zone zone-hist">{hist.strip()}</div>')
@@ -1038,9 +1046,10 @@ def item(m, base, label, notes=False, hist="", live_evidence=False):
             dek = f'\n  <p class="dek">{e(text)}</p>'
     others = link_row(other_source_entries(m, live_evidence), short=True)
     fold = details_block(m, live_evidence)
-    body = caption_zones(head, dek, hist, credit(m), others, fold, rank=hanging_rank(m["rank"]))
+    # A picture splits the card: hanging rank and headline above it, blurb and bands below.
+    # Text-only and removed rows pass no picture, so the rank stays with the headline.
+    body = caption_zones(head, dek, hist, credit(m), others, fold, rank=hanging_rank(m["rank"]), media=pic)
     return f'''<li>
-  {pic}
   <div class="copy">
   {body}
   </div>
