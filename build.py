@@ -390,6 +390,19 @@ CSS = """
   .life .who{font-size:17px} .embed-brand{font-size:18px;letter-spacing:1px}
   .prose li{margin-bottom:10px} .prose li a{display:inline-block;padding:10px 0}
  }
+ /* Phone: the 44px line boxes above wrap these four links into tall rows with a dangling pipe.
+    Same labels, packed as a two-column block. Tablet and desktop keep the single row. */
+ @media(max-width:640px){
+  .mast{padding-bottom:4px}
+  .mast .periods{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;justify-items:center;max-width:23rem;margin:2px auto 0;line-height:1.25}
+  .mast .periods .sep{display:none}
+  .mast .periods a{display:flex;align-items:center;justify-content:center;width:100%;min-height:0;margin:0;padding:6px 4px;line-height:1.25;text-align:center}
+  .mast .periods a:nth-of-type(1){grid-area:1/1} .mast .periods a:nth-of-type(2){grid-area:1/3}
+  .mast .periods a:nth-of-type(3){grid-area:2/1} .mast .periods a:nth-of-type(4){grid-area:2/3}
+  .mast .periods::before,.mast .periods::after{content:"|";color:var(--fg);grid-column:2;line-height:1}
+  .mast .periods::before{grid-row:1} .mast .periods::after{grid-row:2}
+  .intro{margin-top:8px} .upd{margin:5px 0 0} .top{margin-top:10px}
+ }
 """
 
 # ---------------------------------------------------------------- page chrome
@@ -474,10 +487,12 @@ def head(*, title, desc, path, base, og_img=None, og_alt=None, og_type="website"
 <style>{CSS}</style></head><body><a class="skip" href="#content">Skip to content</a>'''
 
 def period_nav(base):
-    """Header links for the three ranked lists, plus the meme index. Weekly is one of them."""
+    """Header links for the three ranked lists, plus the meme index. Weekly is one of them.
+    Pipes sit in spans so phone CSS can drop them and place the four links in a grid."""
     labels = (("daily", "Top Memes Today"), ("weekly", "Trending This Week"), ("monthly", "Best of the Month"))
-    inner = " | ".join(f'<a href="{base}{PERIODS[k]["slug"]}/">{label}</a>' for k, label in labels)
-    inner += f' | <a href="{base}meme-index/">Meme Index</a>'
+    parts = [f'<a href="{base}{PERIODS[k]["slug"]}/">{label}</a>' for k, label in labels]
+    parts.append(f'<a href="{base}meme-index/">Meme Index</a>')
+    inner = '<span class="sep" aria-hidden="true"> | </span>'.join(parts)
     return f'<nav class="periods" aria-label="Rankings">{inner}</nav>'
 
 def logo_html(base):
