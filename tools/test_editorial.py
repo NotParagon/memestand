@@ -520,6 +520,104 @@ def test_built_pages_match_the_rules():
     assert "<loc>https://memestand.com/meme/seatbelt-dog/</loc><lastmod>2026-11-08T06:16:07-08:00</lastmod>" in sm
 
 
+def test_ranked_cards_hang_the_number_without_a_badge():
+    """The filled red rank badge, and the period after the visible number, must not come back."""
+    css = build.CSS
+    assert "li .hl .rk{display:inline-block" not in css
+    assert "background:var(--redbg);color:#fff" not in css
+    assert "min-width:2.1em" not in css
+    assert "--red:#c00" in css and "--red:#ff5c5c" in css
+    for bit in ("font-family:var(--read)", "font-size:2.55rem", "font-weight:650",
+                "font-variant-numeric:tabular-nums", "letter-spacing:-.03em",
+                "text-align:right", "color:var(--red)", "--rank-col:3.15rem",
+                "background:none"):
+        assert bit in css, bit
+    # The dek shares the headline's indent. Notes and credits stay outside that column.
+    assert "li .rankline > .dek{margin-left:calc(var(--rank-col) + var(--rank-gap))}" in css
+    # A narrow viewport keeps a hanging numeral instead of collapsing back into a badge.
+    assert "li .rankline > .hl > .rk{font-size:2.4rem" in css
+
+    build.SLUG["rank-photo"] = "rank-photo"
+    build.SLUG["rank-text"] = "rank-text"
+    build.PAGES["rank-photo"] = {"explainer": "A dog.", "blurb": "A short video of a buckled-in pup."}
+    build.PAGES["rank-text"] = {"explainer": "A joke.", "blurb": "A setup-and-punchline name joke."}
+    try:
+        photo = build.item({
+            "rank": 6, "id": "rank-photo", "title": "Seatbelt Dog Example",
+            "image": "images/seatbelt-dog.jpg",
+            "source_url": "https://x.com/acervodoguinhos/status/1986031760011079881",
+            "source_name": "X", "credit": "posted by @acervodoguinhos on X",
+        }, "../", "today", hist='\n  <div class="mv"><span class="mv-up">Up 3 since yesterday</span></div>',
+           live_evidence=True)
+        text = build.item({
+            "rank": 10, "id": "rank-text", "title": "Regretamine",
+            "card_text": "I have this great idea for a drug called Regretamine.",
+            "source_url": "https://x.com/elonmusk/status/2116875604889112772",
+            "credit": "posted by @elonmusk on X",
+        }, "../", "today", live_evidence=True)
+    finally:
+        build.SLUG.pop("rank-photo", None)
+        build.SLUG.pop("rank-text", None)
+        build.PAGES.pop("rank-photo", None)
+        build.PAGES.pop("rank-text", None)
+
+    removed = build.item({"rank": 4, "removed": True, "title": build.REMOVED}, "../", "today")
+    for html, numeral in ((photo, "6"), (text, "10"), (removed, "4")):
+        assert f'class="rk">{numeral}<span class="sr">. </span></span>' in html
+        assert f'class="rk">{numeral}.</span>' not in html
+        assert f">{numeral}.</span>" not in html
+        assert "background:" not in html
+        assert 'class="rankline"' in html
+        # The heading still carries the rank, including the spoken period.
+        h3 = re.search(r"<h3[^>]*>(.*?)</h3>", html).group(1)
+        assert h3.startswith(f'<span class="rk">{numeral}<span class="sr">. </span></span>')
+        assert "hl-text" in h3
+
+    assert "<img" in photo and photo.index("<img") < photo.index('class="rankline"')
+    assert 'class="rk"' not in photo.split('class="rankline"', 1)[0]
+    before_hist, _, after_hist = photo.partition('class="zone zone-hist"')
+    assert 'class="dek"' in before_hist and "buckled-in pup" in before_hist
+    assert "Up 3 since yesterday" in after_hist
+    assert 'class="rk"' not in after_hist
+    assert 'class="credit"' in after_hist
+
+    assert 'class="hl textmeme"' in text
+    assert "I have this great idea" in text
+    text_lead, _, text_rest = text.partition('class="zone zone-by"')
+    assert 'class="dek"' in text_lead and 'class="card"' in text_lead
+    assert "View credited post" in text_rest or "View original" in text_rest
+    assert 'class="rk"' not in text_rest
+
+    lead, _, meta = removed.partition('<div class="meta">')
+    assert 'class="rankline"' in lead and "Takedown policy" in meta
+    assert 'class="rk"' not in meta
+    assert build.REMOVED in lead
+
+    pages = {
+        "home": ROOT / "index.html",
+        "today": ROOT / "top-memes-today" / "index.html",
+        "week": ROOT / "trending-memes-this-week" / "index.html",
+        "month": ROOT / "best-memes-this-month" / "index.html",
+    }
+    for name, path in pages.items():
+        page = path.read_text()
+        assert "background:var(--redbg);color:#fff" not in page, name
+        assert re.search(r'class="rk">\d+\.', page) is None, name
+        assert re.search(r'class="rk">\d+<span class="sr">\. </span></span>', page), name
+        assert "font-variant-numeric:tabular-nums" in page, name
+        assert 'class="rankline"' in page, name
+    home = pages["home"].read_text()
+    lead_html, _, lists = home.partition("<main")
+    assert 'class="rk"' not in lead_html
+    assert 'class="rk"' in lists
+    week = pages["week"].read_text()
+    assert re.search(
+        r'<h3 class="hl textmeme"><span class="rk">\d+<span class="sr">\. </span></span>', week)
+    today = pages["today"].read_text()
+    assert re.search(r'class="rk">6<span class="sr">', today)
+    assert re.search(r'class="rk">10<span class="sr">', today)
+
+
 def test_search_console_file_is_exact_and_restored_by_build():
     path = ROOT / "google327e53c932d0bf40.html"
     path.write_bytes(b"<html>wrapped</html>\n")

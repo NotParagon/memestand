@@ -260,8 +260,11 @@ CSS = """
  .textmeme{text-transform:none}
  .textmeme .card{text-transform:none;font-size:17px;line-height:1.35}
  .top .textmeme .card{font-size:26px;line-height:1.25;min-height:140px}
- .rk{color:var(--red)}
- li .hl .rk{display:inline-block;min-width:2.1em;margin-right:2px;padding:2px 6px;background:var(--redbg);color:#fff;text-align:center;line-height:1.3}
+ .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0}
+ .rankline{--rank-col:3.15rem;--rank-gap:.65rem}
+ li .rankline > .hl{display:grid;grid-template-columns:var(--rank-col) minmax(0,1fr);column-gap:var(--rank-gap);align-items:start;min-width:0}
+ li .rankline > .hl > .rk{font-family:var(--read);font-size:2.55rem;font-weight:650;line-height:.8;letter-spacing:-.03em;font-variant-numeric:tabular-nums;text-align:right;color:var(--red);background:none;padding:0;margin:.1rem 0 0;white-space:nowrap}
+ li .rankline > .hl > .hl-text{min-width:0}
  .meta{font-size:11px;margin-top:6px;color:var(--muted)} .src{color:var(--link);margin-right:8px} .fs{color:var(--muted)}
  .mv{display:flex;flex-wrap:wrap;column-gap:10px;row-gap:2px;align-items:baseline;margin:4px 0 0;font-size:11px;line-height:1.35;letter-spacing:.02em;color:var(--muted)}
  .mv span{white-space:nowrap} .mv-up{color:var(--green)} .mv-down{color:var(--red)} .mv-new,.mv-first{color:var(--fg2)}
@@ -279,6 +282,7 @@ CSS = """
  .copy .hl,.copy .dek,.copy .credit,.copy .meta,.copy .go,.copy .fold{font-family:var(--read)}
  .copy .hl a{color:var(--fg);overflow-wrap:break-word}
  .dek{margin:8px 0 0;max-width:62ch;font-size:17px;line-height:1.55;color:var(--fg2)}
+ li .rankline > .dek{margin-left:calc(var(--rank-col) + var(--rank-gap))}
  .copy .zone+.zone{margin-top:12px;padding-top:11px;border-top:1px solid var(--hair)}
  .copy .mv{margin:0;font-size:13px;line-height:1.45;letter-spacing:0;font-weight:400;color:var(--muted)}
  .copy .mv span+span::before{content:"\\00b7";margin-right:8px;color:var(--muted)}
@@ -332,6 +336,8 @@ CSS = """
   .card{font-size:17px}
   .hl,.copy .hl{font-size:19px;line-height:1.35}
   .dek{font-size:17px}
+  li .rankline{--rank-gap:.5rem}
+  li .rankline > .hl > .rk{font-size:2.4rem;margin-top:.08rem}
   .copy .credit,.foldbody,.copy .meta{font-size:16px;line-height:1.5}
   .copy .mv{font-size:13px}
   .srcrow{flex-direction:row;flex-wrap:wrap;align-items:center}
@@ -893,25 +899,36 @@ def history_html(m, day, live):
     spans = "".join(f'<span class="mv-{n["kind"]}" title="{e(n["title"])}">{e(n["text"])}</span>' for n in notes)
     return f'\n  <div class="mv">{spans}</div>'
 
+def rank_html(rank):
+    """Hanging numeral. The period is in the heading for screen readers and is not shown."""
+    n = e(rank)
+    return f'<span class="rk">{n}<span class="sr">. </span></span>'
+
+def ranked_lead(hl_class, rank, inner, dek=""):
+    """Rank column plus the headline (and dek) indented beside it. No space between the two cells."""
+    head = f'<h3 class="{hl_class}">{rank_html(rank)}<span class="hl-text">{inner}</span></h3>'
+    return f'<div class="rankline">{head}{dek}</div>'
+
 def item(m, base, label, notes=False, hist="", live_evidence=False):
     del notes  # checked figures live in Sources & details; this flag no longer adds a second line
     if m.get("removed"):
-        return f'<li><h3 class="hl"><span class="rk">{m["rank"]}.</span> {e(REMOVED)}</h3><div class="meta"><a class="src" href="{base}dmca.html">Takedown policy</a></div></li>'
+        lead = ranked_lead("hl", m["rank"], e(REMOVED))
+        return f'<li>{lead}<div class="meta"><a class="src" href="{base}dmca.html">Takedown policy</a></div></li>'
     pic = thumb(m, base, label)
-    if pic:
-        # The picture is the meme. The full headline stays in the link for search and screen readers, clamped on screen.
-        head = f'<h3 class="hl clip"><span class="rk">{m["rank"]}.</span> {hl_link(m, base)}</h3>'
-    else:
-        # A text post has no photo. Show its words once, not again as a second headline.
-        head = f'<h3 class="hl textmeme"><span class="rk">{m["rank"]}.</span> {text_face(m, base)}</h3>'
     dek = ""
     if live_evidence:
         text = card_dek(m)
         if text:
             dek = f'\n  <p class="dek">{e(text)}</p>'
+    if pic:
+        # The picture is the meme and stays full width above this block. The headline link keeps the rank for screen readers.
+        head = ranked_lead("hl clip", m["rank"], hl_link(m, base), dek)
+    else:
+        # A text post has no photo. Show its words once, not again as a second headline.
+        head = ranked_lead("hl textmeme", m["rank"], text_face(m, base), dek)
     others = link_row(other_source_entries(m, live_evidence), short=True)
     fold = details_block(m, live_evidence)
-    body = caption_zones(head, dek, hist, credit(m), others, fold)
+    body = caption_zones(head, "", hist, credit(m), others, fold)
     return f'''<li>
   {pic}
   <div class="copy">
