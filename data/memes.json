@@ -1,8 +1,40 @@
 {
-  "updated": "2026-11-10T14:17-08:00",
+  "updated": "2026-11-10T15:13-08:00",
   "daily": [
     {
       "rank": 1,
+      "id": "copy-gif-orange-cat",
+      "title": "ORANGE 'KARATE CAT' GIF FLOODS X AS USERS DISCOVER THEY CAN COPY GIFS",
+      "image": "images/copy-gif-orange-cat.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/miensha00/status/2119869530327732250",
+      "source_name": "X / @miensha00",
+      "credit": "posted by @miensha00 on X",
+      "also": [
+        {
+          "name": "X / @miensha00 (36.3M views)",
+          "url": "https://x.com/miensha00/status/2119869530327732250"
+        },
+        {
+          "name": "X / @srdelaSandia (same GIF, 1.4M views)",
+          "url": "https://x.com/srdelaSandia/status/2119899138670096659"
+        },
+        {
+          "name": "X News (orange cat GIF WhatsApp stickers)",
+          "url": "https://x.com/i/trending/2119854312042234276"
+        }
+      ],
+      "first_seen": "2026-11-09",
+      "score": 80.0,
+      "sources": [
+        "X"
+      ],
+      "notes": "Short looping GIF of an orange-and-white cat standing on its hind legs on a wet night-time street, swinging its front paws like it is boxing. @miensha00 posted it Nov 9 19:07 UTC with a Spanish caption saying they had learned to make GIF stickers from a TikTok tutorial (X API Nov 10 3PM PT: 36,288,453 views / 550,644 likes / 1,187 quotes). On Nov 10 the same GIF spread across X in many languages as people realized they could copy a GIF from a post and reuse it (@srdelaSandia reposted it, 1,390,342 views), with separate accounts posting their own 'I didn't know you could copy GIFs' captions, how-to replies, complaint posts and an 'anti copy gif cat' parody. X News story 'Orange Cat GIF Becomes WhatsApp Sticker Favorite' (Nov 10). Where the clip was first filmed or posted is not confirmed.",
+      "name": "Copy GIF Orange Cat"
+    },
+    {
+      "rank": 2,
       "id": "jensen-huang-spy",
       "title": "'ENJOYING A SUCCULENT CHINESE SPY?': MEMES ABOUT NVIDIA CEO JENSEN HUANG'S REPORTED SPY-AFFAIR STORY REMIX THE 'SUCCULENT CHINESE MEAL' CLIP",
       "image": "images/jensen-huang-spy.jpg",
@@ -45,7 +77,7 @@
       "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "id": "get-a-load-netero",
       "title": "'GET A LOAD OF THIS GUY': NETERO'S HUNTER X HUNTER POINT REVIVES THE HAND-GESTURE MEME",
       "image": "images/get-a-load-netero.jpg",
@@ -83,7 +115,7 @@
       "kym_url": "https://knowyourmeme.com/memes/get-a-load-of-this-guy"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "id": "little-cousins-hippo-gator",
       "title": "'WHAT MY LITTLE COUSINS DO WHEN THEY SEE ME': AI HIPPO-AND-ALLIGATOR GIF BECOMES THE GO-TO FAMILY REACTION",
       "image": "images/little-cousins-hippo-gator.jpg",
@@ -123,7 +155,7 @@
       "name": "Little Cousins (Hippo and Alligator)"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "id": "me-instructing",
       "title": "'ME INSTRUCTING': BAKERY-COUNTER CLIP BECOMES THE BOSSY-DIRECTION REACTION MEME",
       "image": "images/me-instructing.jpg",
@@ -154,7 +186,7 @@
       "notes": "Bakery-counter clip of a woman emphatically pointing at a pastry while coaching a man; captions use 'me instructing [X] to [Y]'. Strong X News story Nov 7; largest verified post @tuna_petal 1.84M views / 31.0K likes (Nov 6). Nov 10 6AM PT: X recent counts for 'me instructing' 281 posts Nov 9 UTC, 103 Nov 10 UTC through 6 AM PT."
     },
     {
-      "rank": 5,
+      "rank": 6,
       "id": "seatbelt-dog",
       "title": "SEATBELT DOG: BUCKLED-IN PUP BECOMES X'S REPLY-VIDEO REACTION MEME",
       "image": "images/seatbelt-dog.jpg",
@@ -185,7 +217,7 @@
       "notes": "Cute Jack Russell clipped in a car seatbelt, used as a copy-paste reply video on X. Original clip posted by @acervodoguinhos on Nov 5 2025 (12,087,008 views / 43,911 likes, X API Nov 8). Current wave: people reply with the same video; @anacomlula Nov 7 post about learning the reply trick has 1,604,884 views / 74,929 likes. X News story \"Seatbelt Dog Video Becomes X's Fastest Meme\" (2119278609299050551). Independent reuse of the clip as a reaction format. Nov 9 10:30 AM PT: wave dates to Nov 7 (@anacomlula post 1.60M to 1.72M views over the past day); on daily under the widened Nov 4-8 window. Nov 10 6AM PT: @anacomlula 1,727,471 views; wave Nov 7-8, kept on daily under the widened window to fill 10."
     },
     {
-      "rank": 6,
+      "rank": 7,
       "id": "monkey-wok-gif",
       "title": "'WEREY NO BELIEVE HIM EYES': SHOCKED COOKING-MONKEY GIF BECOMES X'S NEW REACTION STICKER",
       "image": "images/monkey-wok-gif.jpg",
@@ -217,7 +249,7 @@
       "name": "Shocked Cooking Monkey"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "id": "people-my-age-pregnancy-tests",
       "title": "'PEOPLE MY AGE BUYING PREGNANCY TESTS AND ME...': X USERS SWAP IN THEIR HOBBIES OVER A CHEERFUL RED SLUG CLIP",
       "image": "images/people-my-age-pregnancy-tests.jpg",
@@ -248,7 +280,7 @@
       "notes": "Format: 'people my age buying pregnancy tests and me buying <hobby item>' over the same cheerful red-slug video clip, mostly Portuguese-language quote chains spreading into English. @websofmj Nov 7 post: 399,075 views / 30,025 likes / 1,253 quotes (X API Nov 8, 9 AM PT); many independent English and Portuguese variants (Lego, Snoopy blind boxes, Genshin crystals, My Little Pony cards). X News story 2119314363773284552. Window check Nov 9 10:15 AM PT (X recent counts, Portuguese 'teste de gravidez' + 'minha idade'): 2,406 posts Nov 7 UTC, 21,721 Nov 8 UTC, 11,646 Nov 9 UTC through 10:14 AM PT, so the wave peaked inside the last 36 hours. Nov 10 6AM PT: X recent counts 34 posts Nov 9 UTC, 11 Nov 10 UTC through 6 AM PT."
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": "spongebob-patrick-package-deal",
       "title": "'LOVE HIM OR HATE HIM, SPONGEBOB IS FRIEND WITH PATRICK': FANS REWRITE THE PACKAGE-DEAL POST FOR THEIR OWN SHOWS",
       "image": "images/post-cards/spongebob-is-friend-with-patrick.jpg",
@@ -277,7 +309,7 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 62.2,
+      "score": 62.3,
       "sources": [
         "X"
       ],
@@ -285,7 +317,7 @@
       "name": "SpongeBob Is Friend With Patrick"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "harmattan-bath-dog",
       "title": "'ME DURING HARMATTAN': GIF OF A DOG DODGING THE SHOWER BECOMES NIGERIAN X'S COLD-BATH JOKE",
       "image": "images/harmattan-bath-dog.jpg",
@@ -313,40 +345,12 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 62.1,
+      "score": 62.2,
       "sources": [
         "X"
       ],
       "notes": "Looping GIF of a light-colored dog standing on its hind legs in a tiled bathroom, holding a red bowl and edging away from the shower, with a crying emoji overlay. @olajiire101 uploaded it Nov 9 18:45 UTC captioned only with crying emojis (X API Nov 10 12PM PT: 482,633 views / 16,703 likes / 304 quotes). From Nov 9-10 many separate accounts reposted the same GIF with their own captions about bathing in cold harmattan weather ('Me during harmattan', 'How boys bath during harmattan season'), and X News ran a story on it Nov 10. Where the clip was first filmed or posted is not confirmed.",
       "name": "Harmattan Bath Dog"
-    },
-    {
-      "rank": 10,
-      "id": "bounce-baby-boy",
-      "title": "'BOYS GO ALWAYS BOUNCE BACK': NIGERIAN PIDGIN 'BOUNCING BABY BOY' MOTTO GOES VIRAL",
-      "image": "images/post-cards/bounce-baby-boy.jpg",
-      "image_url": null,
-      "image_kind": "post_card",
-      "card_text": null,
-      "source_url": "https://x.com/2THUQQ/status/2118617523708965188",
-      "source_name": "X / @2THUQQ",
-      "credit": "posted by @2THUQQ on X",
-      "also": [
-        {
-          "name": "X / @2THUQQ (493K views)",
-          "url": "https://x.com/2THUQQ/status/2118617523708965188"
-        },
-        {
-          "name": "X News (Nigerian Pidgin bouncing baby boy)",
-          "url": "https://x.com/i/trending/2118722212274561149"
-        }
-      ],
-      "first_seen": "2026-11-06",
-      "score": 62.0,
-      "sources": [
-        "X"
-      ],
-      "notes": "Nigerian Pidgin resilience motto reframing 'bouncing baby boy'. Posted by @2THUQQ (horsh) Nov 6 2026; X News story tracked copycats. Text card only. minor_reviewed: adult-metaphor Pidgin motto; no child depicted. X metrics refreshed ~6 PM PT (351k views / 31.9k likes). Nov 10 6AM PT: X recent counts for 'bouncing baby boy' 105 posts Nov 9 UTC, 47 Nov 10 UTC through 6 AM PT."
     }
   ],
   "weekly": [
@@ -538,6 +542,38 @@
     },
     {
       "rank": 6,
+      "id": "copy-gif-orange-cat",
+      "title": "ORANGE 'KARATE CAT' GIF FLOODS X AS USERS DISCOVER THEY CAN COPY GIFS",
+      "image": "images/copy-gif-orange-cat.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/miensha00/status/2119869530327732250",
+      "source_name": "X / @miensha00",
+      "credit": "posted by @miensha00 on X",
+      "also": [
+        {
+          "name": "X / @miensha00 (36.3M views)",
+          "url": "https://x.com/miensha00/status/2119869530327732250"
+        },
+        {
+          "name": "X / @srdelaSandia (same GIF, 1.4M views)",
+          "url": "https://x.com/srdelaSandia/status/2119899138670096659"
+        },
+        {
+          "name": "X News (orange cat GIF WhatsApp stickers)",
+          "url": "https://x.com/i/trending/2119854312042234276"
+        }
+      ],
+      "first_seen": "2026-11-09",
+      "score": 80.0,
+      "sources": [
+        "X"
+      ],
+      "notes": "Short looping GIF of an orange-and-white cat standing on its hind legs on a wet night-time street, swinging its front paws like it is boxing. @miensha00 posted it Nov 9 19:07 UTC with a Spanish caption saying they had learned to make GIF stickers from a TikTok tutorial (X API Nov 10 3PM PT: 36,288,453 views / 550,644 likes / 1,187 quotes). On Nov 10 the same GIF spread across X in many languages as people realized they could copy a GIF from a post and reuse it (@srdelaSandia reposted it, 1,390,342 views), with separate accounts posting their own 'I didn't know you could copy GIFs' captions, how-to replies, complaint posts and an 'anti copy gif cat' parody. X News story 'Orange Cat GIF Becomes WhatsApp Sticker Favorite' (Nov 10). Where the clip was first filmed or posted is not confirmed.",
+      "name": "Copy GIF Orange Cat"
+    },
+    {
+      "rank": 7,
       "id": "code-rot",
       "title": "'CODE ROT' / 'YEP IT'S CODE ROTTED INDEED': GLITCH FILTER MEME SPREADS ON TIKTOK",
       "image": "images/code-rot.jpg",
@@ -575,7 +611,7 @@
       "kym_url": "https://knowyourmeme.com/memes/code-rot-filter-yep-its-code-rotted-indeed"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "id": "jensen-huang-spy",
       "title": "'ENJOYING A SUCCULENT CHINESE SPY?': MEMES ABOUT NVIDIA CEO JENSEN HUANG'S REPORTED SPY-AFFAIR STORY REMIX THE 'SUCCULENT CHINESE MEAL' CLIP",
       "image": "images/jensen-huang-spy.jpg",
@@ -618,7 +654,7 @@
       "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": "get-a-load-netero",
       "title": "'GET A LOAD OF THIS GUY': NETERO'S HUNTER X HUNTER POINT REVIVES THE HAND-GESTURE MEME",
       "image": "images/get-a-load-netero.jpg",
@@ -656,7 +692,7 @@
       "kym_url": "https://knowyourmeme.com/memes/get-a-load-of-this-guy"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "woke-3",
       "title": "'WOKE 3': MIDTERM 'BLUE SWEEP' SPAWNS SATIRICAL SEQUEL-SLANG MEMES",
       "image": "images/woke-3.jpg",
@@ -691,34 +727,6 @@
         "Know Your Meme"
       ],
       "notes": "KYM 3,643 views; TikTok @elionwillpower 855K / 134K likes; X @MeganBitchell 3.50M views / 192K likes (Nov 6 6AM PT)."
-    },
-    {
-      "rank": 10,
-      "id": "telegram-microsoft",
-      "title": "TELEGRAM'S OFFICIAL ACCOUNT: 'I CAN'T BELIEVE BILL GATES NAMED THAT COMPANY AFTER HIS PENIS'",
-      "image": "images/post-cards/telegram-microsoft.jpg",
-      "image_url": null,
-      "image_kind": "post_card",
-      "card_text": null,
-      "source_url": "https://x.com/telegram/status/2117998301564043360",
-      "source_name": "X / @telegram",
-      "credit": "posted by @telegram on X",
-      "also": [
-        {
-          "name": "X / @telegram (14.9M views)",
-          "url": "https://x.com/telegram/status/2117998301564043360"
-        },
-        {
-          "name": "X News",
-          "url": "https://x.com/i/trending/2118107139155939611"
-        }
-      ],
-      "first_seen": "2026-11-04",
-      "score": 76.8,
-      "sources": [
-        "X"
-      ],
-      "notes": "Telegram official joke that Bill Gates named Microsoft after his penis. X API 13.98M views / 154.0K likes (Nov 6 6AM PT). Still circulating on X News. Nov 10 6AM PT: off daily (first seen Nov 4; X post views flat over the past 24h); stays weekly."
     }
   ],
   "monthly": [
@@ -955,6 +963,38 @@
     },
     {
       "rank": 8,
+      "id": "copy-gif-orange-cat",
+      "title": "ORANGE 'KARATE CAT' GIF FLOODS X AS USERS DISCOVER THEY CAN COPY GIFS",
+      "image": "images/copy-gif-orange-cat.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/miensha00/status/2119869530327732250",
+      "source_name": "X / @miensha00",
+      "credit": "posted by @miensha00 on X",
+      "also": [
+        {
+          "name": "X / @miensha00 (36.3M views)",
+          "url": "https://x.com/miensha00/status/2119869530327732250"
+        },
+        {
+          "name": "X / @srdelaSandia (same GIF, 1.4M views)",
+          "url": "https://x.com/srdelaSandia/status/2119899138670096659"
+        },
+        {
+          "name": "X News (orange cat GIF WhatsApp stickers)",
+          "url": "https://x.com/i/trending/2119854312042234276"
+        }
+      ],
+      "first_seen": "2026-11-09",
+      "score": 80.0,
+      "sources": [
+        "X"
+      ],
+      "notes": "Short looping GIF of an orange-and-white cat standing on its hind legs on a wet night-time street, swinging its front paws like it is boxing. @miensha00 posted it Nov 9 19:07 UTC with a Spanish caption saying they had learned to make GIF stickers from a TikTok tutorial (X API Nov 10 3PM PT: 36,288,453 views / 550,644 likes / 1,187 quotes). On Nov 10 the same GIF spread across X in many languages as people realized they could copy a GIF from a post and reuse it (@srdelaSandia reposted it, 1,390,342 views), with separate accounts posting their own 'I didn't know you could copy GIFs' captions, how-to replies, complaint posts and an 'anti copy gif cat' parody. X News story 'Orange Cat GIF Becomes WhatsApp Sticker Favorite' (Nov 10). Where the clip was first filmed or posted is not confirmed.",
+      "name": "Copy GIF Orange Cat"
+    },
+    {
+      "rank": 9,
       "id": "code-rot",
       "title": "'CODE ROT' / 'YEP IT'S CODE ROTTED INDEED': GLITCH FILTER MEME SPREADS ON TIKTOK",
       "image": "images/code-rot.jpg",
@@ -992,7 +1032,7 @@
       "kym_url": "https://knowyourmeme.com/memes/code-rot-filter-yep-its-code-rotted-indeed"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "jensen-huang-spy",
       "title": "'ENJOYING A SUCCULENT CHINESE SPY?': MEMES ABOUT NVIDIA CEO JENSEN HUANG'S REPORTED SPY-AFFAIR STORY REMIX THE 'SUCCULENT CHINESE MEAL' CLIP",
       "image": "images/jensen-huang-spy.jpg",
@@ -1033,31 +1073,6 @@
       "notes": "Edited still of the 'Democracy Manifest' / 'Succulent Chinese Meal' arrest clip with Jensen Huang's face on the man being arrested, captioned 'what is the charge? enjoying a succulent chinese spy?', posted by u/REAL__NOWHEREMAN on r/memes Nov 9 2026 (r/memes top-of-week #13 on Nov 10 1 PM PT). Part of a wider wave of memes about the reported affair and espionage allegations, per Know Your Meme (entry published Nov 9 2026): @timo_rf on X 'JENSEN! THATS NOT WHAT WE MEANT BY CHINESE MODELS!!!!!!!' (X API Nov 10 1 PM PT: 2,651,353 views / 122,527 likes), @SoveyX AI video 'Huang met Huang' (Nov 10, 902,892 views), and more r/memes and r/dankmemes posts on Nov 9-10. Owner-approved for the site Nov 10 2026 (Roger). The separate X 'I am NOT a Chinese spy' selfie trend is excluded and not part of this entry.",
       "name": "Jensen Huang Spy",
       "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
-    },
-    {
-      "rank": 10,
-      "id": "tip-toein",
-      "title": "AI RUMPELSTILTSKIN 'TIP TOEIN' IN MY JORDANS'",
-      "image": "images/tip-toein.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://knowyourmeme.com/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans",
-      "source_name": "Know Your Meme",
-      "credit": "posted by @6aimbot9 on TikTok",
-      "also": [
-        {
-          "name": "TikTok / @pfuzzypiffdoozy (6.1M views)",
-          "url": "https://www.tiktok.com/@pfuzzypiffdoozy/video/7692746647612312862"
-        }
-      ],
-      "first_seen": "2026-10-06",
-      "score": 78.9,
-      "sources": [
-        "X",
-        "TikTok",
-        "Know Your Meme"
-      ],
-      "notes": "KYM cites 9.8M views; 65,864 KYM page views; October Meme of the Month nominee (mentioned in results editorial). Nov 4 reads (10am PT): largest TikTok read directly @pfuzzypiffdoozy 6.1M views."
     }
   ]
 }
