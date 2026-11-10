@@ -514,8 +514,12 @@ def test_built_pages_match_the_rules():
     assert "Top 10 Memes This Month | MemeStand" in title_text(month)
     assert "November 2026" in title_text(month) or build.NOW.strftime("%B %Y") in title_text(month)
     assert 'href="trending-memes-this-week/"' in home
-    assert "trending memes this week" in home
-    assert "best memes of the month" in home
+    # The intro states the ranking sources only. Header nav already links the three lists.
+    for page in (home, today, week, month):
+        intro = re.search(r'<p class="intro">(.*?)</p>', page).group(1)
+        assert intro == build.INTRO
+        assert "See the full" not in intro
+    assert 'class="upd">UPDATED' in home
     about = (ROOT / "about.html").read_text()
     assert "older links keep working" not in about
     assert "trending-memes-this-week/" in about
