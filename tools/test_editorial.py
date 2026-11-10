@@ -520,6 +520,18 @@ def test_built_pages_match_the_rules():
     assert "<loc>https://memestand.com/meme/seatbelt-dog/</loc><lastmod>2026-11-08T06:16:07-08:00</lastmod>" in sm
 
 
+def test_search_console_file_is_exact_and_restored_by_build():
+    path = ROOT / "google327e53c932d0bf40.html"
+    path.write_bytes(b"<html>wrapped</html>\n")
+    build.build_search_console()
+    assert path.read_bytes() == b"google-site-verification: google327e53c932d0bf40.html"
+    assert b"cloudflareinsights" not in path.read_bytes()
+    assert b"<" not in path.read_bytes()
+    path.unlink()
+    build.build_search_console()
+    assert path.read_bytes() == b"google-site-verification: google327e53c932d0bf40.html"
+
+
 def main():
     fns = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]
     for fn in fns:
