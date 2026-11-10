@@ -36,13 +36,22 @@ def test_status_labels_match_the_window_rules():
     assert mo.status_of([], seen_before=False) is None
 
 
-def test_week_delta_treats_entry_and_exit_as_the_change():
-    assert mo.week_delta([None, 4, 10]) == 10
-    assert mo.week_delta([8, 9, None]) == -8
+def test_week_delta_needs_a_score_on_both_ends():
+    assert mo.week_delta([None, 4, 10]) is None
+    assert mo.week_delta([8, 9, None]) is None
     assert mo.week_delta([8, 9, 11]) == 3
     assert mo.week_delta([4, 9, 4]) == 0
     assert mo.week_delta([None, 9, None]) is None
     assert mo.week_delta([]) is None
+    rows = [
+        {"slug": "entered", "name": "Entered", "delta": None},
+        {"slug": "left", "name": "Left", "delta": None},
+        {"slug": "up", "name": "Up", "delta": 1.5},
+        {"slug": "down", "name": "Down", "delta": -0.4},
+    ]
+    risers, fallers = mo.movers(rows)
+    assert [r["slug"] for r in risers] == ["up"]
+    assert [r["slug"] for r in fallers] == ["down"]
 
 
 def test_movers_are_the_largest_gains_and_drops():
@@ -71,6 +80,9 @@ def test_sparkline_is_static_svg_and_breaks_on_gaps():
     assert "no score" in svg
     assert mo.sparkline([None, None]) == ""
     assert mo.sparkline([]) == ""
+    assert mo.sparkline([10]) == ""
+    assert mo.sparkline([None, 10, None]) == ""
+    assert mo.sparkline([4, 4]).startswith("<svg")
 
 
 def main():

@@ -19,10 +19,10 @@ The window is the last WINDOW archive days. Status uses only that window:
   from the latest day after appearing earlier.
 - No label when the meme has no score in the window and none before it.
 
-Week change compares the first day of the window with the latest day. Missing
-at the start means the meme entered (change = the latest score). Missing at
-the end means it left (change = minus the starting score). Missing at both
-ends has no week change.
+Week change is the latest score minus the score on the first day of the
+window, and only when both days have a real score. A missing start or end is
+not treated as zero: a new entrant is not a riser, and a meme that has left
+the list is not a faller.
 """
 
 WINDOW = 7
@@ -89,16 +89,16 @@ def status_of(series, seen_before=False):
 
 
 def week_delta(series):
-    """Score change from the first window day to the latest. None when both are gaps."""
+    """Score change from the first window day to the latest.
+
+    None unless both days have a real score. A gap is not a zero, so entering
+    or leaving the lists is not a rise or a fall.
+    """
     if not series:
         return None
     start, end = series[0], series[-1]
-    if start is None and end is None:
+    if start is None or end is None:
         return None
-    if start is None:
-        return end
-    if end is None:
-        return -start
     return end - start
 
 
@@ -132,11 +132,14 @@ def movers(rows, limit=5):
 
 
 def sparkline(series, width=84, height=24):
-    """Inline SVG polyline. Gaps break the line. No script and no external asset."""
+    """Inline SVG polyline. Gaps break the line. No script and no external asset.
+
+    Fewer than two scored days is not a trend, so the chart is omitted.
+    """
     if not series:
         return ""
     present = [(i, s) for i, s in enumerate(series) if s is not None]
-    if not present:
+    if len(present) < 2:
         return ""
     vals = [s for _, s in present]
     lo, hi = min(vals), max(vals)

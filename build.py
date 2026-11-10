@@ -324,6 +324,7 @@ CSS = """
  .prose .note{font-size:12px;color:var(--muted)} .az{text-align:center;font-size:14px;margin:8px 0} .az a{color:var(--link);margin:0 4px;text-decoration:underline}
  .one h2[id]{position:sticky;top:0;z-index:5;text-align:left;text-decoration:none;margin:28px 0 14px;padding:8px 12px;background:var(--bar);color:var(--barfg);border-bottom:5px solid var(--redbg)}
  .prose .life,.life{list-style:none;padding-left:0}
+ .prose .fold{margin:22px 0}
  .life li{display:grid;grid-template-columns:5.4rem minmax(0,1fr);column-gap:.8rem;align-items:center}
  .prose .life li{border:1px solid var(--line);border-top:3px solid var(--rule);margin:0 0 12px;padding:10px;list-style:none;box-shadow:0 2px 4px rgba(0,0,0,.10);background:var(--card)}
  .life .who{font-family:var(--read);font-size:18px;font-weight:650;line-height:1.3} .life .who a{color:var(--fg)}
@@ -1675,8 +1676,9 @@ METHOD = ("Status is the shape of each meme's momentum score over the last 7 sav
           "Rising means the latest score is up from the previous score in the window and is the high of the window. "
           "Peaking means the latest score is that high and did not rise from the previous score. "
           "Fading means the latest score is below the window high, or the meme is absent from the latest day after appearing earlier. "
-          "Week change compares the first day of the window with the latest day. Missing at the start means the meme entered. "
-          "Missing at the end means it left. This page does not change how the top 10 is ranked.")
+          "Biggest risers and fallers compare the score on the first day of that window with the score on the latest day, "
+          "and only when both days have a score. A meme that just arrived is New, not a riser. A meme that has left the lists "
+          "is Fading, and is not listed as a faller. This page does not change how the top 10 is ranked.")
 
 def _status_class(status):
     return {"Rising": "st-rising", "New": "st-new", "Peaking": "st-peaking", "Fading": "st-fading"}.get(status or "", "")
@@ -1747,13 +1749,14 @@ def build_meme_index():
 <nav class="crumbs" aria-label="Breadcrumb"><a href="{home_href(base)}">MemeStand</a> &rsaquo; <span aria-current="page">Meme Index</span></nav>
 <main class="prose">
 <h1>Which memes are rising, peaking, and fading</h1>
-<p class="intro">{e(desc)} {e(tally)}.</p>
+<p class="intro">{e(tally)}.</p>
 {upd_html()}
-<p class="method" id="method">{e(METHOD)} Window: {e(span)}.</p>
+<p>Status comes from each meme's momentum score over the last 7 daily snapshots ({e(span)}).</p>
 <h2 id="risers">Biggest risers this week</h2>
-{block(up, "No tracked meme's score rose across this window.")}
+{block(up, "No meme with a score on both ends of this window rose.")}
 <h2 id="fallers">Biggest fallers this week</h2>
-{block(down, "No tracked meme's score fell across this window.")}
+{block(down, "No meme with a score on both ends of this window fell.")}
+<details class="fold" id="method"><summary>How this works</summary><div class="foldbody"><p>{e(METHOD)}</p></div></details>
 <h2 id="tracked">Every tracked meme</h2>
 <ul class="life">{"".join(_life_item(sl, base) for sl in all_sl)}</ul>
 </main>

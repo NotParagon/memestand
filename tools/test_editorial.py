@@ -552,9 +552,14 @@ def test_built_pages_match_the_rules():
     assert 'class="mark"' in fancy and "favicon.svg" in fancy
     index = (ROOT / "meme-index" / "index.html").read_text()
     assert "Which memes are rising, peaking, and fading" in index
-    assert 'id="method"' in index
+    assert "Status comes from each meme's momentum score over the last 7 daily snapshots" in index
+    assert '<details class="fold" id="method"><summary>How this works</summary>' in index
+    assert "Missing at the start means the meme entered" not in index
+    assert index.index("<h1") < index.index("last 7 daily snapshots") < index.index('id="risers"')
+    assert index.index('id="fallers"') < index.index('id="method"') < index.index('id="tracked"')
     assert "Biggest risers this week" in index and "Biggest fallers this week" in index
     assert "<svg" in index and "frame-ancestors" not in index
+    assert "<script" not in index.split('id="method"', 1)[1].split("</details>", 1)[0]
     assert 'href="../meme/' in index
     widget = (ROOT / "embed" / "top5.html").read_text()
     guide = (ROOT / "embed" / "index.html").read_text()
