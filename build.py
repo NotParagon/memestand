@@ -33,12 +33,13 @@ Takedowns: items matching data/blocklist.json are replaced by a removal notice o
 included), scrubbed from data/archive/*.json, and their local thumbnails deleted (see tools/legal.py).
 Blocked memes also lose their meme page and their entry in data/meme_pages.json.
 """
-import json, html, datetime, pathlib, re, shutil, sys
+import json, html, datetime, pathlib, re, shutil, sys, hashlib, base64
 from zoneinfo import ZoneInfo
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent / "tools"))
 from legal import load_blocklist, blocked_by, exclusion_reason
 from rank_history import daily_ranks, history_notes, meme_identity
 from post_cards import file_for as post_card_file, displayed_as_post_card
+from safe_url import safe_url
 
 SITE = "https://memestand.com"
 NAME = "MemeStand"
@@ -102,24 +103,26 @@ ACRONYMS = {"PC", "PC'S", "RAM", "AI", "NNN", "GPU", "TV", "US", "UK", "NBA", "N
 SPECIAL = {"DIMMS": "DIMMs", "MEMES": "Memes", "IPHONE": "iPhone", "YOUTUBE": "YouTube", "TIKTOK": "TikTok", "CHATGPT": "ChatGPT", "MRBEAST": "MrBeast"}
 SMALL = {"a", "an", "and", "as", "at", "but", "by", "for", "in", "of", "on", "or", "the", "to", "vs", "with", "is"}
 
+# Hashed into the Content-Security-Policy. Keep this the exact script tag upd_html() emits.
+UPD_SCRIPT = (
+    "<script>(function(){var t=document.getElementById('upd-time');if(!t)return;"
+    "var iso=t.getAttribute('datetime');if(!iso)return;var d=new Date(iso);if(isNaN(d))return;"
+    "function plural(n,u){return n+' '+u+(n===1?'':'S');}"
+    "function tick(){var s=Math.max(0,Math.floor((Date.now()-d.getTime())/1000));"
+    "var m=Math.floor(s/60),h=Math.floor(m/60),dy=Math.floor(h/24);"
+    "t.textContent=dy>=1?plural(dy,'DAY')+' AGO':h>=1?plural(h,'HOUR')+' AGO':"
+    "m>=1?plural(m,'MIN')+' AGO':'JUST NOW';}"
+    "tick();setInterval(tick,30000);})();</script>"
+)
+
 def upd_html():
     """Drudge-style UPDATED line: absolute stamp in <time datetime>, plus a tiny first-party
     script that rewrites the visible text to a relative 'X MIN/HOURS/DAYS AGO' in the visitor's
     browser. Falls back to the absolute PT stamp if JS is off."""
     absolute = NOW.strftime("%a %b %-d, %Y %-I:%M %p PT").upper()
-    script = (
-        "<script>(function(){var t=document.getElementById('upd-time');if(!t)return;"
-        "var iso=t.getAttribute('datetime');if(!iso)return;var d=new Date(iso);if(isNaN(d))return;"
-        "function plural(n,u){return n+' '+u+(n===1?'':'S');}"
-        "function tick(){var s=Math.max(0,Math.floor((Date.now()-d.getTime())/1000));"
-        "var m=Math.floor(s/60),h=Math.floor(m/60),dy=Math.floor(h/24);"
-        "t.textContent=dy>=1?plural(dy,'DAY')+' AGO':h>=1?plural(h,'HOUR')+' AGO':"
-        "m>=1?plural(m,'MIN')+' AGO':'JUST NOW';}"
-        "tick();setInterval(tick,30000);})();</script>"
-    )
     return (
         (f'<div class="upd">UPDATED <time id="upd-time" datetime="{ISO}">{absolute}</time></div>' + chr(10))
-        + script
+        + UPD_SCRIPT
     )
 
 
@@ -356,15 +359,62 @@ CSS = """
 """
 
 # ---------------------------------------------------------------- page chrome
+_SCRIPT_TAG = re.compile(r"<script\b([^>]*)>(.*?)</script>", re.I | re.S)
+_JS_TYPES = {"text/javascript", "application/javascript", "text/ecmascript", "application/ecmascript", "module"}
+
+def executable_inline_bodies(html):
+    """Bodies of inline classic/module scripts. External scripts and JSON-LD are skipped.
+    ld+json is not executed, so it is not hashed into script-src."""
+    bodies = []
+    for attrs, body in _SCRIPT_TAG.findall(html or ""):
+        if re.search(r"\bsrc\s*=", attrs, re.I):
+            continue
+        kind = re.search(r"\btype\s*=\s*['\"]?([^'\"\s>]+)", attrs, re.I)
+        if kind and kind.group(1).lower() not in _JS_TYPES:
+            continue
+        bodies.append(body)
+    return bodies
+
+def script_hash(body):
+    digest = hashlib.sha256(body.encode("utf-8")).digest()
+    return "sha256-" + base64.b64encode(digest).decode("ascii")
+
+def content_security_policy():
+    """CSP for the meta tag. Hashes come from the inline scripts this file actually emits.
+    frame-ancestors is not honored in a meta policy, so it is left out.
+    'unsafe-inline' is required for the <style> block and for the hotlink aspect-ratio style attribute."""
+    hashes = []
+    for chunk in (THEME_HEAD, THEME_TOGGLE, UPD_SCRIPT):
+        for body in executable_inline_bodies(chunk):
+            token = script_hash(body)
+            if token not in hashes:
+                hashes.append(token)
+    script = " ".join(["'self'", "https://static.cloudflareinsights.com", *(f"'{h}'" for h in hashes)])
+    return (
+        "default-src 'self'; "
+        f"script-src {script}; "
+        "connect-src 'self' https://cloudflareinsights.com; "
+        "img-src 'self' https: data:; "
+        "media-src 'self' https:; "
+        "style-src 'self' 'unsafe-inline'; "
+        "font-src 'self' https: data:; "
+        "object-src 'none'; "
+        "base-uri 'self'; "
+        "form-action 'self'"
+    )
+
 def head(*, title, desc, path, base, og_img=None, og_alt=None, og_type="website", ld=(), modified=None):
     url = f"{SITE}/{path}"
     og_img = og_img or f"{SITE}/og-default.png"
     og_alt = og_alt or "MemeStand: top 10 memes today, this week and this month"
     lds = "\n".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>' for x in ld)
     mod = f'\n<meta property="article:modified_time" content="{e(modified)}">' if modified and og_type == "article" else ""
+    csp = content_security_policy()
     return f'''<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="{csp}">
 {THEME_HEAD}
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
@@ -443,19 +493,29 @@ def text_face(m, base, cls="card"):
     inner = e(joke_text(m))
     h = meme_href(m, base)
     if h: return f'<a class="{cls}" href="{e(h)}">{inner}</a>'
-    return f'<a class="{cls}" href="{e(outbound(m))}" target="_blank" rel="noopener">{inner}</a>'
+    ok = safe_url(outbound(m), context="text card")
+    if not ok:
+        return f'<a class="{cls}" href="#">{inner}</a>'
+    return f'<a class="{cls}" href="{e(ok)}" target="_blank" rel="noopener">{inner}</a>'
 
 def thumb(m, base, label, cls="thumb", eager=False):
     if m.get("removed"): return ""
-    src = img_src(m)
-    if not src: return ""
-    ext = src.startswith("http")
-    src = src if ext else base + src
+    raw = img_src(m)
+    if not raw: return ""
+    ok_src = safe_url(raw, context="image")
+    if not ok_src: return ""
+    ext = ok_src.lower().startswith("https://")
+    src = ok_src if ext else base + ok_src
     load = 'fetchpriority="high"' if eager else 'loading="lazy"'
     ref = ' referrerpolicy="no-referrer"' if ext else ""
-    wh = wh_attrs(img_src(m))   # explicit size (or a fixed 4:3 box for hotlinks) reserves space: no layout shift
+    wh = wh_attrs(raw)   # explicit size (or a fixed 4:3 box for hotlinks) reserves space: no layout shift
     kind = " postcard" if uses_post_card(m) else ""
-    return f'<a href="{e(outbound(m))}" target="_blank" rel="noopener"><img class="{cls}{kind}" src="{e(src)}" alt="{e(alt(m, label))}"{wh} {load}{ref}></a>'
+    href = safe_url(outbound(m), context="thumbnail")
+    if href:
+        open_a = f'<a href="{e(href)}" target="_blank" rel="noopener">'
+    else:
+        open_a = '<a href="#">'
+    return f'{open_a}<img class="{cls}{kind}" src="{e(src)}" alt="{e(alt(m, label))}"{wh} {load}{ref}></a>'
 
 def load_candidate_rows():
     """Evidence counts and the post text stored with each candidate. Explainer prose is not loaded.
@@ -569,7 +629,7 @@ def primary_link(m, page=None, ev=None):
 
 def outbound(m):
     link = primary_link(m)
-    return link["url"] or m.get("source_url") or ""
+    return safe_url(link["url"] or m.get("source_url") or "", context="outbound")
 
 def compact_count(n):
     n = int(n)
@@ -813,8 +873,11 @@ def source_entries(m, live_evidence):
 def link_row(entries, short):
     parts = []
     for url, name in entries:
+        ok = safe_url(url, context="source link")
+        if not ok:
+            continue
         label = short_source_label(name) if short else name
-        parts.append(f'<a class="src" href="{e(url)}" target="_blank" rel="noopener">{e(label)}</a>')
+        parts.append(f'<a class="src" href="{e(ok)}" target="_blank" rel="noopener">{e(label)}</a>')
     return "".join(parts)
 
 def _url_key(url):
@@ -846,7 +909,7 @@ def credit(m):
         c = c[:1].upper() + c[1:]
     card = " Shown as an attributed post card of that post, not a screenshot." if uses_post_card(m) else ""
     link = primary_link(m)
-    href = link["url"] or m.get("source_url") or ""
+    href = safe_url(link["url"] or m.get("source_url") or "", context="credit")
     go = (f'\n  <p class="go"><a href="{e(href)}" target="_blank" rel="noopener">{e(link["label"])}</a></p>'
           if href else "")
     return (f'<p class="credit"><span class="who">{e(c)}.{card}</span> '
@@ -886,7 +949,10 @@ def hl_link(m, base):
     h = meme_href(m, base)
     title = display_title(m.get("title"))
     if h: return f'<a href="{e(h)}">{e(title)}</a>'
-    return f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(title)}</a>'
+    ok = safe_url(m.get("source_url") or "", context="headline")
+    if not ok:
+        return f'<a href="#">{e(title)}</a>'
+    return f'<a href="{e(ok)}" target="_blank" rel="noopener">{e(title)}</a>'
 
 def history_html(m, day, live):
     """Subtle daily-list note. Empty for weekly/monthly, removed rows, and thin history."""
@@ -1312,9 +1378,13 @@ def build_meme_page(sl):
     means = "".join(f"<p>{e(x)}</p>" for x in paras(info["explainer"])) or (
         "<p>MemeStand hasn't written an explanation of this meme yet. It appeared in our rankings under the headline "
         f"&ldquo;{e(tc(m['title']))}&rdquo;; see the original post below.</p>")
+    origin_src = safe_url(m.get("source_url") or "", context="origin")
+    origin_label = e(m.get("source_name") or "original post")
+    origin_link = (f'<a href="{e(origin_src)}" target="_blank" rel="noopener">{origin_label}</a>'
+                   if origin_src else origin_label)
     origin = "".join(f"<p>{e(x)}</p>" for x in paras(info["origin"])) or (
         '<p>MemeStand has not confirmed where this meme started. The post we ranked: '
-        f'<a href="{e(m["source_url"])}" target="_blank" rel="noopener">{e(m.get("source_name") or "original post")}</a>'
+        f'{origin_link}'
         f'{" (" + e(m["credit"]) + ")" if m.get("credit") else ""}.</p>')
     unconf = ('<p class="note">The original creator of this meme hasn\u2019t been confirmed. This section states only what the '
               'linked sources show.</p>') if info["origin"] and info["origin_confirmed"] is False else ""
@@ -1342,7 +1412,8 @@ def build_meme_page(sl):
         stat_bits.append(f"Latest evidence on file: {e(evidence)}")
     srcs, seen_u = [], set()
     def add_src(nm, u):
-        if u and u not in seen_u: seen_u.add(u); srcs.append((nm, u))
+        ok = safe_url(u, context="meme source") if u else ""
+        if ok and ok not in seen_u: seen_u.add(ok); srcs.append((nm, ok))
     role = primary_link(m)
     if role["kind"] == "original":
         add_src("Original post", role["url"])
@@ -1831,11 +1902,24 @@ def build_feed(snaps):
         dd, dt = datetime.date.fromisoformat(day), parse_dt(d)
         t = d["daily"][0]
         u = f"{SITE}/archive/{day}.html"
-        lis = "".join(f"<li>{e(m['title'])}</li>" if m.get("removed") else
-                      f"<li>{e(m['title'])} (<a href=\"{e(m['source_url'])}\">{e(m['source_name'])}</a>; credit: {e(m.get('credit') or m['source_name'])})</li>" for m in d["daily"])
+        def feed_li(m):
+            if m.get("removed"):
+                return f"<li>{e(m['title'])}</li>"
+            ok = safe_url(m.get("source_url") or "", context="feed")
+            credit = e(m.get("credit") or m["source_name"])
+            if not ok:
+                return f"<li>{e(m['title'])} ({e(m['source_name'])}; credit: {credit})</li>"
+            return f"<li>{e(m['title'])} (<a href=\"{e(ok)}\">{e(m['source_name'])}</a>; credit: {credit})</li>"
+        lis = "".join(feed_li(m) for m in d["daily"])
         img = None if t.get("removed") else abs_img(t)
+        if img and safe_url(img, context="feed image") != img:
+            img = None
         imgh = f'<p><img src="{e(img)}" alt="{e(alt(t, "today"))}"{wh_attrs(img_src(t)) if img_dims(img_src(t)) else ""}></p>' if img else ""
-        first = e(t['title']) if t.get("removed") else f"<a href=\"{e(t['source_url'])}\">{e(t['title'])}</a>"
+        if t.get("removed"):
+            first = e(t["title"])
+        else:
+            ok = safe_url(t.get("source_url") or "", context="feed lead")
+            first = f"<a href=\"{e(ok)}\">{e(t['title'])}</a>" if ok else e(t["title"])
         content = (f"{imgh}<p>#1 meme of {fmt_long(dd)}: {first}</p><p>Top 10 memes today:</p><ol>{lis}</ol>"
                    f"<p>Memes &copy; their respective owners; MemeStand is not affiliated with X, TikTok, Instagram, Reddit, YouTube or Know Your Meme.</p>")
         entries.append(f'''<entry>

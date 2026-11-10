@@ -31,6 +31,7 @@ from zoneinfo import ZoneInfo
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from legal import load_blocklist, blocked_by, exclusion_reason, default_credit
 from post_cards import local_image as post_card_image
+from safe_url import safe_url
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA, IMG = ROOT / "data", ROOT / "images"
@@ -111,9 +112,33 @@ def normalize_images():
             with Image.open(f) as im: save_thumb(im, f)
             print(f"  normalized {f.name}")
 
-def fetch_image(c):
-    url = c.get("image_url")
-    if not url: return None
+def accepted_url(url, field, cid):
+    """URL safe to store in memes.json. Anything else is dropped before it is written."""
+    if not isinstance(url, str) or not url:
+        return ""
+    return safe_url(url, context=f"{field} for {cid}")
+
+def accepted_also(items, cid):
+    """Drop also-links whose url is not on the allowlist. Other fields are unchanged."""
+    kept = []
+    for a in items or []:
+        if not isinstance(a, dict):
+            continue
+        raw = a.get("url")
+        if isinstance(raw, str) and raw:
+            ok = accepted_url(raw, "also.url", cid)
+            if not ok:
+                continue
+            if ok != raw:
+                a = {**a, "url": ok}
+        kept.append(a)
+    return kept
+
+def fetch_image(c, url=None):
+    if url is None:
+        url = c.get("image_url")
+    if not isinstance(url, str) or not url or safe_url(url) != url:
+        return None
     out = IMG / f"{c['id']}.jpg"
     if out.exists() and out.stat().st_size > 0: return f"images/{out.name}"
     try:
@@ -162,17 +187,28 @@ def main():
         rows = []
         for i, c in enumerate(pool, 1):
             pol = c.get("image_policy", "local")
-            local = None if (no_img or pol != "local") else fetch_image(c)
-            ext = c.get("image_url") if pol == "hotlink" else None
+            raw_img = c.get("image_url")
+            img_url = accepted_url(raw_img, "image_url", c["id"]) if isinstance(raw_img, str) else ""
+            local = None if (no_img or pol != "local") else fetch_image(c, img_url)
+            ext = img_url if pol == "hotlink" and img_url else None
             # image_policy none still skips third-party photos. A mapped post card fills in only when there is no photo.
             local = post_card_image(c, local, ext)
             rows.append({"rank": i, "id": c["id"], "title": c["title"], "image": local, "image_url": ext,
                          **({"image_kind": "post_card"} if local and local.startswith("images/post-cards/") else {}),
-                         "card_text": c.get("card_text"), "source_url": c["source_url"], "source_name": c["source_name"],
+                         "card_text": c.get("card_text"), "source_url": accepted_url(c["source_url"], "source_url", c["id"]),
+                         "source_name": c["source_name"],
                          "credit": default_credit(c, authors),
-                         "also": c.get("also") or [], "first_seen": c["first_seen"], "score": c["score"], "sources": c["sources"], "notes": c.get("notes", "")})
+                         "also": accepted_also(c.get("also") or [], c["id"]),
+                         "first_seen": c["first_seen"], "score": c["score"], "sources": c["sources"], "notes": c.get("notes", "")})
             for k in ("name", "explainer", "origin", "kym_url"):   # optional meme-page fields (see UPDATE.md "Meme pages")
-                if c.get(k): rows[-1][k] = c[k]
+                if not c.get(k):
+                    continue
+                if k == "kym_url":
+                    ok = accepted_url(c[k], "kym_url", c["id"])
+                    if ok:
+                        rows[-1][k] = ok
+                    continue
+                rows[-1][k] = c[k]
         out[p] = rows
         print(p); [print(f"  {r['rank']:>2}. {r['score']:5.1f}  {r['title'][:70]}  [{r['source_name']}]") for r in rows]
     (DATA / "memes.json").write_text(json.dumps(out, indent=2, ensure_ascii=False))
