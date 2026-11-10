@@ -200,8 +200,21 @@
   .life .who{font-size:17px} .embed-brand{font-size:18px;letter-spacing:1px}
   .prose li{margin-bottom:10px} .prose li a{display:inline-block;padding:10px 0}
  }
+ /* Phone: the 44px line boxes above wrap these four links into tall rows with a dangling pipe.
+    Same labels, packed as a two-column block. Tablet and desktop keep the single row. */
+ @media(max-width:640px){
+  .mast{padding-bottom:4px}
+  .mast .periods{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;justify-items:center;max-width:23rem;margin:2px auto 0;line-height:1.25}
+  .mast .periods .sep{display:none}
+  .mast .periods a{display:flex;align-items:center;justify-content:center;width:100%;min-height:0;margin:0;padding:6px 4px;line-height:1.25;text-align:center}
+  .mast .periods a:nth-of-type(1){grid-area:1/1} .mast .periods a:nth-of-type(2){grid-area:1/3}
+  .mast .periods a:nth-of-type(3){grid-area:2/1} .mast .periods a:nth-of-type(4){grid-area:2/3}
+  .mast .periods::before,.mast .periods::after{content:"|";color:var(--fg);grid-column:2;line-height:1}
+  .mast .periods::before{grid-row:1} .mast .periods::after{grid-row:2}
+  .intro{margin-top:8px} .upd{margin:5px 0 0} .top{margin-top:10px}
+ }
 </style></head><body><a class="skip" href="#content">Skip to content</a>
-<header class="mast"><span class="logo"><a href="../../"><img class="mark" src="../../favicon.svg" alt="" width="64" height="64"><span class="word">MEMESTAND</span></a></span><span class="tag">MEME EXPLAINED -- MEANING AND ORIGIN</span><nav class="periods" aria-label="Rankings"><a href="../../top-memes-today/">Top Memes Today</a> | <a href="../../trending-memes-this-week/">Trending This Week</a> | <a href="../../best-memes-this-month/">Best of the Month</a> | <a href="../../meme-index/">Meme Index</a></nav><button class="tt" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"></button><script>(function(){var b=document.querySelector('.tt'),r=document.documentElement;if(!b)return;b.addEventListener('click',function(){var c=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var n=c==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}document.querySelectorAll('meta[name=theme-color]').forEach(function(m){m.content=n==='dark'?'#121212':'#ffffff'});});})();</script></header><div id="content"></div>
+<header class="mast"><span class="logo"><a href="../../"><img class="mark" src="../../favicon.svg" alt="" width="64" height="64"><span class="word">MEMESTAND</span></a></span><span class="tag">MEME EXPLAINED -- MEANING AND ORIGIN</span><nav class="periods" aria-label="Rankings"><a href="../../top-memes-today/">Top Memes Today</a><span class="sep" aria-hidden="true"> | </span><a href="../../trending-memes-this-week/">Trending This Week</a><span class="sep" aria-hidden="true"> | </span><a href="../../best-memes-this-month/">Best of the Month</a><span class="sep" aria-hidden="true"> | </span><a href="../../meme-index/">Meme Index</a></nav><button class="tt" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"></button><script>(function(){var b=document.querySelector('.tt'),r=document.documentElement;if(!b)return;b.addEventListener('click',function(){var c=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var n=c==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}document.querySelectorAll('meta[name=theme-color]').forEach(function(m){m.content=n==='dark'?'#121212':'#ffffff'});});})();</script></header><div id="content"></div>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="../../">MemeStand</a> &rsaquo; <a href="../../memes/">Memes A&ndash;Z</a> &rsaquo; <span aria-current="page">Scientists Reveal the Hi</span></nav>
 <main class="prose explainer">
 <article>
