@@ -76,6 +76,16 @@
       "source_url": "https://x.com/sbxloch/status/2118821023151706276",
       "source_asset": "memestand-video/cache/2026-11-09/newton-fourth-law-card.jpg",
       "prepared": "Self-rendered attributed post card made Nov 9 2026 from the public post read via the X API (text, handle, display name, avatar); same content as the owner-approved social card social/2026-11-07/memestand-trending-now-newton-fourth-law.jpg, without the MemeStand header. Not a screenshot of X."
+    },
+    "spongebob-is-friend-with-patrick": {
+      "ids": ["spongebob-patrick-package-deal"],
+      "file": "images/post-cards/spongebob-is-friend-with-patrick.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "Love him or hate him, SpongeBob is friend with Patrick so if you wanna watch the show he’s gonna be there. sorry.",
+      "source_url": "https://x.com/Dayscd/status/2119910679402418346",
+      "source_asset": "memestand-video/cache/2026-11-10/spongebob-patrick-package-deal-card.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 10 2026 with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, avatar). No MemeStand header. Not a screenshot of X."
     }
   }
 }
