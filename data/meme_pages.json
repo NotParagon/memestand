@@ -917,6 +917,44 @@
       "how_to_use": [],
       "checked": "2026-11-07T22:51:54-08:00"
     },
+    "jensen-huang-spy": {
+      "name": "Jensen Huang Spy",
+      "ids": [
+        "jensen-huang-spy"
+      ],
+      "status": "short",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xrqqsg/this_is_controversy_manifest/",
+      "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy",
+      "explainer": "Jensen Huang spy memes joke about reports that NVIDIA's CEO was close to a businesswoman whom American intelligence agencies allegedly tied to Chinese spying, after he acknowledged infidelity in a November 2026 statement, per Know Your Meme. The ranked image pastes Huang's face onto the man in the old \"Succulent Chinese Meal\" arrest clip and swaps the line to \"enjoying a succulent chinese spy?\". Other posts play on phrases like \"Chinese models\" and honeypot jokes.",
+      "origin": "Per Know Your Meme, the New York Times reported the espionage allegations on October 29, 2026, Huang acknowledged being unfaithful to his wife in a November 8 statement, and memes about it spread from there; KYM's entry went up on November 9. The \"succulent chinese spy\" edit shown here was posted by u/REAL__NOWHEREMAN on r/memes on November 9, 2026, under the title \"this is controversy manifest\". On X, @timo_rf's \"JENSEN! THATS NOT WHAT WE MEANT BY CHINESE MODELS!!!!!!!\" had about 2.65 million views per X's public counts on November 10. The arrest clip it remixes is the \"Democracy Manifest\" video filmed in Sydney, Australia, per Know Your Meme. Who made the first Jensen Huang spy meme hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "sources": [
+        {
+          "name": "Know Your Meme: Nvidia CEO Jensen Huang Chinese Spy Cheating Controversy",
+          "url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
+        },
+        {
+          "name": "u/REAL__NOWHEREMAN on r/memes",
+          "url": "https://www.reddit.com/r/memes/comments/1xrqqsg/this_is_controversy_manifest/"
+        },
+        {
+          "name": "@timo_rf on X",
+          "url": "https://x.com/timo_rf/status/2119604402164256843"
+        },
+        {
+          "name": "Know Your Meme: Democracy Manifest / Succulent Chinese Meal",
+          "url": "https://knowyourmeme.com/memes/democracy-manifest-a-succulent-chinese-meal"
+        },
+        {
+          "name": "X News: Nvidia CEO Jensen Huang Admits Affair Amid Espionage Allegations",
+          "url": "https://x.com/i/trending/2119633989254484448"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-10",
+      "checked": "2026-11-10T13:20:00-08:00"
+    },
     "jiren-dancing": {
       "name": "Jiren Dancing (I'm So in Love With You)",
       "ids": [
