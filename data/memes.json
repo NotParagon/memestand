@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T12:11-08:00",
+  "updated": "2026-11-11T13:16-08:00",
   "daily": [
     {
       "rank": 1,
@@ -82,6 +82,42 @@
     },
     {
       "rank": 3,
+      "id": "sleepy-office-monkey",
+      "title": "'LIFE LATELY': SLEEPY MONKEY IN A SHIRT AND TIE BECOMES X'S 9-TO-5 EXHAUSTION GIF",
+      "image": "images/sleepy-office-monkey.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/AyoShinobi/status/2120194548659810454",
+      "source_name": "X / @AyoShinobi",
+      "credit": "posted by @AyoShinobi on X",
+      "also": [
+        {
+          "name": "X / @AyoShinobi (14.4M views)",
+          "url": "https://x.com/AyoShinobi/status/2120194548659810454"
+        },
+        {
+          "name": "X / @2froshtoo (same GIF, 'Me right now at office!!')",
+          "url": "https://x.com/2froshtoo/status/2120452664618082401"
+        },
+        {
+          "name": "X / @Boy_lloner01 (same GIF, 'How i feel this morning')",
+          "url": "https://x.com/Boy_lloner01/status/2120386106621313285"
+        },
+        {
+          "name": "X News (Sleepy Monkey Memes Capture Morning Fatigue and Office Grind)",
+          "url": "https://x.com/i/trending/2120454237406822526"
+        }
+      ],
+      "first_seen": "2026-11-10",
+      "score": 78.3,
+      "sources": [
+        "X"
+      ],
+      "notes": "Looping GIF of a drowsy young monkey in a jacket, shirt and tie slumped in a cafe chair behind a cup of black coffee. @AyoShinobi posted it Nov 10 16:39 UTC captioned 'life lately' (X API Nov 11 6AM PT: 14,352,359 views / 96,278 likes / 963 quotes). Others reposted the same GIF with their own captions about work-morning tiredness (@2froshtoo 'Me right now at office!!', @Boy_lloner01 'How i feel this morning', @adheblush coffee caption), alongside similar tired-monkey commute clips. X News stories 'Sleepy Monkey Memes Capture Morning Fatigue and Office Grind' and 'Daylight Saving Time Shift Leaves Many Exhausted and Posting Memes' (Nov 11) describe the clips as AI-generated. Original clip source not confirmed.",
+      "name": "Sleepy Office Monkey"
+    },
+    {
+      "rank": 4,
       "id": "get-a-load-netero",
       "title": "'GET A LOAD OF THIS GUY': NETERO'S HUNTER X HUNTER POINT REVIVES THE HAND-GESTURE MEME",
       "image": "images/get-a-load-netero.jpg",
@@ -117,42 +153,6 @@
       "notes": "Nov 8 2026 @buhlesrevenge: 'that “get a load of this guy” hand gesture is easily one of the top 2 hand gestures of all time' (X API Nov 10 6AM PT: 2,778,504 views / 118,399 likes, 279 quotes). Quote replies post their own pointing examples; the biggest is @RogeeRoger's Hunter x Hunter clip of Chairman Netero pointing Gon toward the enemy, 'Greatest \"get a load of this guy\" of all time' (864,237 views / 46,313 likes); other quotes post wrestling and sports examples. Two X News stories Nov 9-10. KYM entry 'Get a Load of This Guy' (164,111 views) documents the older phrase and pointing-reaction format. X recent counts for the phrase: 78 posts Nov 8 UTC, 99 Nov 9, 50 Nov 10 through 6 AM PT.",
       "name": "Get a Load of This Guy",
       "kym_url": "https://knowyourmeme.com/memes/get-a-load-of-this-guy"
-    },
-    {
-      "rank": 4,
-      "id": "sleepy-office-monkey",
-      "title": "'LIFE LATELY': SLEEPY MONKEY IN A SHIRT AND TIE BECOMES X'S 9-TO-5 EXHAUSTION GIF",
-      "image": "images/sleepy-office-monkey.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/AyoShinobi/status/2120194548659810454",
-      "source_name": "X / @AyoShinobi",
-      "credit": "posted by @AyoShinobi on X",
-      "also": [
-        {
-          "name": "X / @AyoShinobi (14.4M views)",
-          "url": "https://x.com/AyoShinobi/status/2120194548659810454"
-        },
-        {
-          "name": "X / @2froshtoo (same GIF, 'Me right now at office!!')",
-          "url": "https://x.com/2froshtoo/status/2120452664618082401"
-        },
-        {
-          "name": "X / @Boy_lloner01 (same GIF, 'How i feel this morning')",
-          "url": "https://x.com/Boy_lloner01/status/2120386106621313285"
-        },
-        {
-          "name": "X News (Sleepy Monkey Memes Capture Morning Fatigue and Office Grind)",
-          "url": "https://x.com/i/trending/2120454237406822526"
-        }
-      ],
-      "first_seen": "2026-11-10",
-      "score": 78.1,
-      "sources": [
-        "X"
-      ],
-      "notes": "Looping GIF of a drowsy young monkey in a jacket, shirt and tie slumped in a cafe chair behind a cup of black coffee. @AyoShinobi posted it Nov 10 16:39 UTC captioned 'life lately' (X API Nov 11 6AM PT: 14,352,359 views / 96,278 likes / 963 quotes). Others reposted the same GIF with their own captions about work-morning tiredness (@2froshtoo 'Me right now at office!!', @Boy_lloner01 'How i feel this morning', @adheblush coffee caption), alongside similar tired-monkey commute clips. X News stories 'Sleepy Monkey Memes Capture Morning Fatigue and Office Grind' and 'Daylight Saving Time Shift Leaves Many Exhausted and Posting Memes' (Nov 11) describe the clips as AI-generated. Original clip source not confirmed.",
-      "name": "Sleepy Office Monkey"
     },
     {
       "rank": 5,
@@ -223,7 +223,7 @@
         }
       ],
       "first_seen": "2026-11-10",
-      "score": 67.7,
+      "score": 67.8,
       "sources": [
         "X"
       ],
@@ -292,7 +292,7 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 63.1,
+      "score": 63.2,
       "sources": [
         "X"
       ],
@@ -671,6 +671,42 @@
     },
     {
       "rank": 9,
+      "id": "sleepy-office-monkey",
+      "title": "'LIFE LATELY': SLEEPY MONKEY IN A SHIRT AND TIE BECOMES X'S 9-TO-5 EXHAUSTION GIF",
+      "image": "images/sleepy-office-monkey.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/AyoShinobi/status/2120194548659810454",
+      "source_name": "X / @AyoShinobi",
+      "credit": "posted by @AyoShinobi on X",
+      "also": [
+        {
+          "name": "X / @AyoShinobi (14.4M views)",
+          "url": "https://x.com/AyoShinobi/status/2120194548659810454"
+        },
+        {
+          "name": "X / @2froshtoo (same GIF, 'Me right now at office!!')",
+          "url": "https://x.com/2froshtoo/status/2120452664618082401"
+        },
+        {
+          "name": "X / @Boy_lloner01 (same GIF, 'How i feel this morning')",
+          "url": "https://x.com/Boy_lloner01/status/2120386106621313285"
+        },
+        {
+          "name": "X News (Sleepy Monkey Memes Capture Morning Fatigue and Office Grind)",
+          "url": "https://x.com/i/trending/2120454237406822526"
+        }
+      ],
+      "first_seen": "2026-11-10",
+      "score": 78.3,
+      "sources": [
+        "X"
+      ],
+      "notes": "Looping GIF of a drowsy young monkey in a jacket, shirt and tie slumped in a cafe chair behind a cup of black coffee. @AyoShinobi posted it Nov 10 16:39 UTC captioned 'life lately' (X API Nov 11 6AM PT: 14,352,359 views / 96,278 likes / 963 quotes). Others reposted the same GIF with their own captions about work-morning tiredness (@2froshtoo 'Me right now at office!!', @Boy_lloner01 'How i feel this morning', @adheblush coffee caption), alongside similar tired-monkey commute clips. X News stories 'Sleepy Monkey Memes Capture Morning Fatigue and Office Grind' and 'Daylight Saving Time Shift Leaves Many Exhausted and Posting Memes' (Nov 11) describe the clips as AI-generated. Original clip source not confirmed.",
+      "name": "Sleepy Office Monkey"
+    },
+    {
+      "rank": 10,
       "id": "get-a-load-netero",
       "title": "'GET A LOAD OF THIS GUY': NETERO'S HUNTER X HUNTER POINT REVIVES THE HAND-GESTURE MEME",
       "image": "images/get-a-load-netero.jpg",
@@ -706,42 +742,6 @@
       "notes": "Nov 8 2026 @buhlesrevenge: 'that “get a load of this guy” hand gesture is easily one of the top 2 hand gestures of all time' (X API Nov 10 6AM PT: 2,778,504 views / 118,399 likes, 279 quotes). Quote replies post their own pointing examples; the biggest is @RogeeRoger's Hunter x Hunter clip of Chairman Netero pointing Gon toward the enemy, 'Greatest \"get a load of this guy\" of all time' (864,237 views / 46,313 likes); other quotes post wrestling and sports examples. Two X News stories Nov 9-10. KYM entry 'Get a Load of This Guy' (164,111 views) documents the older phrase and pointing-reaction format. X recent counts for the phrase: 78 posts Nov 8 UTC, 99 Nov 9, 50 Nov 10 through 6 AM PT.",
       "name": "Get a Load of This Guy",
       "kym_url": "https://knowyourmeme.com/memes/get-a-load-of-this-guy"
-    },
-    {
-      "rank": 10,
-      "id": "sleepy-office-monkey",
-      "title": "'LIFE LATELY': SLEEPY MONKEY IN A SHIRT AND TIE BECOMES X'S 9-TO-5 EXHAUSTION GIF",
-      "image": "images/sleepy-office-monkey.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/AyoShinobi/status/2120194548659810454",
-      "source_name": "X / @AyoShinobi",
-      "credit": "posted by @AyoShinobi on X",
-      "also": [
-        {
-          "name": "X / @AyoShinobi (14.4M views)",
-          "url": "https://x.com/AyoShinobi/status/2120194548659810454"
-        },
-        {
-          "name": "X / @2froshtoo (same GIF, 'Me right now at office!!')",
-          "url": "https://x.com/2froshtoo/status/2120452664618082401"
-        },
-        {
-          "name": "X / @Boy_lloner01 (same GIF, 'How i feel this morning')",
-          "url": "https://x.com/Boy_lloner01/status/2120386106621313285"
-        },
-        {
-          "name": "X News (Sleepy Monkey Memes Capture Morning Fatigue and Office Grind)",
-          "url": "https://x.com/i/trending/2120454237406822526"
-        }
-      ],
-      "first_seen": "2026-11-10",
-      "score": 78.1,
-      "sources": [
-        "X"
-      ],
-      "notes": "Looping GIF of a drowsy young monkey in a jacket, shirt and tie slumped in a cafe chair behind a cup of black coffee. @AyoShinobi posted it Nov 10 16:39 UTC captioned 'life lately' (X API Nov 11 6AM PT: 14,352,359 views / 96,278 likes / 963 quotes). Others reposted the same GIF with their own captions about work-morning tiredness (@2froshtoo 'Me right now at office!!', @Boy_lloner01 'How i feel this morning', @adheblush coffee caption), alongside similar tired-monkey commute clips. X News stories 'Sleepy Monkey Memes Capture Morning Fatigue and Office Grind' and 'Daylight Saving Time Shift Leaves Many Exhausted and Posting Memes' (Nov 11) describe the clips as AI-generated. Original clip source not confirmed.",
-      "name": "Sleepy Office Monkey"
     }
   ],
   "monthly": [
