@@ -210,11 +210,18 @@ THEME_HEAD = ('<meta name="color-scheme" content="light dark">'
     "<script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);"
     "document.querySelectorAll('meta[name=theme-color]').forEach(function(m){m.content=t==='dark'?'#121212':'#ffffff'});}}catch(e){}</script>")
 # Theme toggle: fixed 34px button, absolutely positioned in the masthead (no layout shift); choice saved in localStorage.
+# The same script puts the logo back under the visible viewport if iOS settles a pull-down short of the top.
 THEME_TOGGLE = ('<button class="tt" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"></button>'
-    "<script>(function(){var b=document.querySelector('.tt'),r=document.documentElement;if(!b)return;"
+    "<script>(function(){var b=document.querySelector('.tt'),r=document.documentElement;if(b){"
     "b.addEventListener('click',function(){var c=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');"
     "var n=c==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}"
-    "document.querySelectorAll('meta[name=theme-color]').forEach(function(m){m.content=n==='dark'?'#121212':'#ffffff'});});})();</script>")
+    "document.querySelectorAll('meta[name=theme-color]').forEach(function(m){m.content=n==='dark'?'#121212':'#ffffff'});});}"
+    "var pulled=false;function lift(){if(!pulled)return;pulled=false;var logo=document.querySelector('.mast .logo');if(!logo)return;"
+    "var top=logo.getBoundingClientRect().top;if(!(top<-0.5&&top>-160&&window.scrollY<160))return;var y=window.scrollY;window.scrollBy(0,top);"
+    "requestAnimationFrame(function(){var now=logo.getBoundingClientRect().top;if(now<-0.5&&Math.abs(window.scrollY-y)<1){r.style.setProperty('--mast-lift',Math.ceil(-now)+'px');}});} "
+    "addEventListener('touchmove',function(){if(window.scrollY<=0)pulled=true;},{passive:true});"
+    "addEventListener('touchend',function(){setTimeout(lift,400);},{passive:true});"
+    "addEventListener('scrollend',lift);addEventListener('pageshow',function(){pulled=true;lift();});})();</script>")
 
 CSS = """
  :root{--bg:#fff;--fg:#000;--fg2:#222;--muted:#444;--line:#bbb;--hair:#e0e0e0;--rule:#000;--card:#fff;--thumb:#f3f3f3;--bar:#000;--barfg:#fff;--red:#c00;--redbg:#c00;--link:#00c;--green:#080;--read:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Liberation Serif","Noto Serif","Times New Roman",serif;color-scheme:light}
@@ -227,6 +234,7 @@ CSS = """
  *,*::before,*::after{box-sizing:border-box}
  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  body{background:var(--bg);color:var(--fg);font-family:"Courier New",Courier,monospace;margin:0 auto;max-width:1180px;padding:10px 16px 40px;overflow-wrap:break-word}
+ body{padding-top:calc(10px + var(--mast-lift, 0px))}
  img{max-width:100%;height:auto}
  a{color:var(--fg);text-decoration:none} a:hover{text-decoration:underline}
  .mast{position:relative;text-align:center;border-bottom:3px double var(--rule);padding-bottom:8px}
@@ -281,7 +289,8 @@ CSS = """
  .mv{display:flex;flex-wrap:wrap;column-gap:10px;row-gap:2px;align-items:baseline;margin:4px 0 0;font-size:11px;line-height:1.35;letter-spacing:.02em;color:var(--muted)}
  .mv span{white-space:nowrap} .mv-up{color:var(--green)} .mv-down{color:var(--red)} .mv-new,.mv-first{color:var(--fg2)}
  .credit{font-size:11px;margin-top:4px;color:var(--muted)} .credit a{color:var(--link);text-decoration:underline}
- .skip{position:absolute;left:-9999px;top:0} .skip:focus{left:8px;top:8px;background:var(--card);color:var(--link);padding:6px;border:2px solid var(--link);z-index:9}
+ .skip{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+ .skip:focus{left:8px;top:8px;width:auto;height:auto;margin:0;overflow:visible;clip:auto;background:var(--card);color:var(--link);padding:6px;border:2px solid var(--link);z-index:9}
  a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
  .why{font-size:12px;margin-top:6px;color:var(--fg2)}
  .more{text-align:center;font-size:12px;margin:14px 0 0} .more a{color:var(--link)}
@@ -351,6 +360,7 @@ CSS = """
  footer{border-top:3px double var(--rule);margin-top:28px;padding-top:10px;font-size:11px;text-align:center;color:var(--muted)}
  @media(max-width:860px){
   body{padding:8px 14px 32px}
+  body{padding-top:calc(8px + var(--mast-lift, 0px))}
   .mast .logo{font-size:32px;letter-spacing:1px} .mast .logo a{gap:6px} .mast .tag{font-size:12px;letter-spacing:1px}
   .intro{font-size:13px;line-height:1.4}
   .top{margin:14px auto 26px;padding-bottom:20px}
