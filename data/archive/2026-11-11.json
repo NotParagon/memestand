@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T08:13+00:00",
+  "updated": "2026-11-11T01:15-08:00",
   "daily": [
     {
       "rank": 1,
@@ -38,7 +38,7 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 80.7,
+      "score": 80.3,
       "sources": [
         "X",
         "Reddit",
@@ -514,6 +514,34 @@
     },
     {
       "rank": 5,
+      "id": "culkin-thousand-yard",
+      "title": "MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
+      "image": "images/culkin-thousand-yard.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/DiscussingFilm/status/2116776966141415441",
+      "source_name": "X / @DiscussingFilm",
+      "credit": "posted by @DiscussingFilm on X",
+      "also": [
+        {
+          "name": "Know Your Meme",
+          "url": "https://knowyourmeme.com/memes/thousand-yard-stare"
+        },
+        {
+          "name": "X / @DiscussingFilm (17.1M views)",
+          "url": "https://x.com/DiscussingFilm/status/2116776966141415441"
+        }
+      ],
+      "first_seen": "2026-11-01",
+      "score": 80.3,
+      "sources": [
+        "X",
+        "Know Your Meme"
+      ],
+      "notes": "17.01M views / 351.3K likes on @DiscussingFilm (X API, Nov 6 6AM PT). Aged out of daily; still weekly/monthly."
+    },
+    {
+      "rank": 6,
       "id": "jensen-huang-spy",
       "title": "'ENJOYING A SUCCULENT CHINESE SPY?': MEMES ABOUT NVIDIA CEO JENSEN HUANG'S REPORTED SPY-AFFAIR STORY REMIX THE 'SUCCULENT CHINESE MEAL' CLIP",
       "image": "images/jensen-huang-spy.jpg",
@@ -549,7 +577,7 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 80.7,
+      "score": 80.3,
       "sources": [
         "X",
         "Reddit",
@@ -558,34 +586,6 @@
       "notes": "Edited still of the 'Democracy Manifest' / 'Succulent Chinese Meal' arrest clip with Jensen Huang's face on the man being arrested, captioned 'what is the charge? enjoying a succulent chinese spy?', posted by u/REAL__NOWHEREMAN on r/memes Nov 9 2026 (r/memes top-of-week #13 on Nov 10 1 PM PT). Part of a wider wave of memes about the reported affair and espionage allegations, per Know Your Meme (entry published Nov 9 2026): @timo_rf on X 'JENSEN! THATS NOT WHAT WE MEANT BY CHINESE MODELS!!!!!!!' (X API Nov 10 1 PM PT: 2,651,353 views / 122,527 likes), @SoveyX AI video 'Huang met Huang' (Nov 10, 902,892 views), and more r/memes and r/dankmemes posts on Nov 9-10. Owner-approved for the site Nov 10 2026 (Roger). The separate X 'I am NOT a Chinese spy' selfie trend is excluded and not part of this entry. On Nov 10 6 PM PT, Jensen spy memes held r/memes top-of-day #1 ('Everyone but me..', u/Average-Lemon) and #3 ('Billionaires got no chill', u/SAM_AIVEN). At 10 PM PT Nov 10, u/tropicbrownthunder's 'Chinese models vs Chinese Models' was r/memes top-of-day #5.",
       "name": "Jensen Huang Spy",
       "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
-    },
-    {
-      "rank": 6,
-      "id": "culkin-thousand-yard",
-      "title": "MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
-      "image": "images/culkin-thousand-yard.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-      "source_name": "X / @DiscussingFilm",
-      "credit": "posted by @DiscussingFilm on X",
-      "also": [
-        {
-          "name": "Know Your Meme",
-          "url": "https://knowyourmeme.com/memes/thousand-yard-stare"
-        },
-        {
-          "name": "X / @DiscussingFilm (17.1M views)",
-          "url": "https://x.com/DiscussingFilm/status/2116776966141415441"
-        }
-      ],
-      "first_seen": "2026-11-01",
-      "score": 80.3,
-      "sources": [
-        "X",
-        "Know Your Meme"
-      ],
-      "notes": "17.01M views / 351.3K likes on @DiscussingFilm (X API, Nov 6 6AM PT). Aged out of daily; still weekly/monthly."
     },
     {
       "rank": 7,
@@ -939,6 +939,34 @@
     },
     {
       "rank": 7,
+      "id": "culkin-thousand-yard",
+      "title": "MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
+      "image": "images/culkin-thousand-yard.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/DiscussingFilm/status/2116776966141415441",
+      "source_name": "X / @DiscussingFilm",
+      "credit": "posted by @DiscussingFilm on X",
+      "also": [
+        {
+          "name": "Know Your Meme",
+          "url": "https://knowyourmeme.com/memes/thousand-yard-stare"
+        },
+        {
+          "name": "X / @DiscussingFilm (17.1M views)",
+          "url": "https://x.com/DiscussingFilm/status/2116776966141415441"
+        }
+      ],
+      "first_seen": "2026-11-01",
+      "score": 80.3,
+      "sources": [
+        "X",
+        "Know Your Meme"
+      ],
+      "notes": "17.01M views / 351.3K likes on @DiscussingFilm (X API, Nov 6 6AM PT). Aged out of daily; still weekly/monthly."
+    },
+    {
+      "rank": 8,
       "id": "jensen-huang-spy",
       "title": "'ENJOYING A SUCCULENT CHINESE SPY?': MEMES ABOUT NVIDIA CEO JENSEN HUANG'S REPORTED SPY-AFFAIR STORY REMIX THE 'SUCCULENT CHINESE MEAL' CLIP",
       "image": "images/jensen-huang-spy.jpg",
@@ -974,7 +1002,7 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 80.7,
+      "score": 80.3,
       "sources": [
         "X",
         "Reddit",
@@ -983,34 +1011,6 @@
       "notes": "Edited still of the 'Democracy Manifest' / 'Succulent Chinese Meal' arrest clip with Jensen Huang's face on the man being arrested, captioned 'what is the charge? enjoying a succulent chinese spy?', posted by u/REAL__NOWHEREMAN on r/memes Nov 9 2026 (r/memes top-of-week #13 on Nov 10 1 PM PT). Part of a wider wave of memes about the reported affair and espionage allegations, per Know Your Meme (entry published Nov 9 2026): @timo_rf on X 'JENSEN! THATS NOT WHAT WE MEANT BY CHINESE MODELS!!!!!!!' (X API Nov 10 1 PM PT: 2,651,353 views / 122,527 likes), @SoveyX AI video 'Huang met Huang' (Nov 10, 902,892 views), and more r/memes and r/dankmemes posts on Nov 9-10. Owner-approved for the site Nov 10 2026 (Roger). The separate X 'I am NOT a Chinese spy' selfie trend is excluded and not part of this entry. On Nov 10 6 PM PT, Jensen spy memes held r/memes top-of-day #1 ('Everyone but me..', u/Average-Lemon) and #3 ('Billionaires got no chill', u/SAM_AIVEN). At 10 PM PT Nov 10, u/tropicbrownthunder's 'Chinese models vs Chinese Models' was r/memes top-of-day #5.",
       "name": "Jensen Huang Spy",
       "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
-    },
-    {
-      "rank": 8,
-      "id": "culkin-thousand-yard",
-      "title": "MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
-      "image": "images/culkin-thousand-yard.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/DiscussingFilm/status/2116776966141415441",
-      "source_name": "X / @DiscussingFilm",
-      "credit": "posted by @DiscussingFilm on X",
-      "also": [
-        {
-          "name": "Know Your Meme",
-          "url": "https://knowyourmeme.com/memes/thousand-yard-stare"
-        },
-        {
-          "name": "X / @DiscussingFilm (17.1M views)",
-          "url": "https://x.com/DiscussingFilm/status/2116776966141415441"
-        }
-      ],
-      "first_seen": "2026-11-01",
-      "score": 80.3,
-      "sources": [
-        "X",
-        "Know Your Meme"
-      ],
-      "notes": "17.01M views / 351.3K likes on @DiscussingFilm (X API, Nov 6 6AM PT). Aged out of daily; still weekly/monthly."
     },
     {
       "rank": 9,
