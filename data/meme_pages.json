@@ -1774,6 +1774,36 @@
       "how_to_use": [],
       "checked": "2026-11-07T22:51:54-08:00"
     },
+    "sleepy-office-monkey": {
+      "name": "Sleepy Office Monkey",
+      "ids": [
+        "sleepy-office-monkey"
+      ],
+      "status": "short",
+      "explainer": "A looping GIF shows a drowsy young monkey dressed in a jacket, shirt and tie, slumped in a cafe chair and barely keeping its eyes open behind a cup of black coffee. People post it as a reaction for being worn out by work, early mornings or the week in general, usually with a short caption like \"life lately\" or \"me at the office\".",
+      "origin": "The biggest post found is by @AyoShinobi on X on November 10, 2026, captioned \"life lately\"; it had about 14.4 million views per X's public counts on November 11. Other accounts reposted the same GIF with their own captions about tired work mornings, and X News ran stories on November 11 grouping it with similar tired-monkey clips, which it describes as AI-generated. Where the clip was first made or posted hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/AyoShinobi/status/2120194548659810454",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@AyoShinobi on X",
+          "url": "https://x.com/AyoShinobi/status/2120194548659810454"
+        },
+        {
+          "name": "@2froshtoo on X (same GIF)",
+          "url": "https://x.com/2froshtoo/status/2120452664618082401"
+        },
+        {
+          "name": "X News: Sleepy Monkey Memes Capture Morning Fatigue and Office Grind",
+          "url": "https://x.com/i/trending/2120454237406822526"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-11",
+      "checked": "2026-11-11T06:16:00-08:00"
+    },
     "snow-leopard-paws-at-you": {
       "name": "Snow Leopard Paws at You",
       "ids": [
