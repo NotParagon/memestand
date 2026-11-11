@@ -2506,8 +2506,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/accekid/status/2119342124143448127",
-          "views": 14177335,
-          "likes": 125440,
+          "views": 14267636,
+          "likes": 125692,
           "checked": "2026-11-11",
           "via": "X API"
         }
@@ -2549,7 +2549,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/loomie_my/status/2119273290099532286",
-          "views": 322300,
+          "views": 322330,
           "likes": 26792,
           "checked": "2026-11-11",
           "via": "X API"
@@ -2661,8 +2661,8 @@
         "kym_views": 164111,
         "x": {
           "url": "https://x.com/buhlesrevenge/status/2119508047769010598",
-          "views": 3297825,
-          "likes": 127066,
+          "views": 3302948,
+          "likes": 127078,
           "checked": "2026-11-11",
           "via": "X API"
         }
@@ -2705,8 +2705,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/MILLY17h/status/2119703455568646224",
-          "views": 1441253,
-          "likes": 38829,
+          "views": 1442522,
+          "likes": 38834,
           "checked": "2026-11-11",
           "via": "X API"
         }
@@ -2753,8 +2753,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/olajiire101/status/2119863866217886004",
-          "views": 584500,
-          "likes": 19711,
+          "views": 584857,
+          "likes": 19715,
           "checked": "2026-11-11",
           "via": "X API"
         }
@@ -2803,8 +2803,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Dayscd/status/2119910679402418346",
-          "views": 654119,
-          "likes": 30539,
+          "views": 656271,
+          "likes": 30592,
           "checked": "2026-11-11",
           "via": "X API"
         }
@@ -2852,7 +2852,7 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/killmyaffairs/status/2119897983047135307",
-          "views": 5380,
+          "views": 5406,
           "likes": 137,
           "checked": "2026-11-11",
           "via": "X API"
@@ -2913,14 +2913,14 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/timo_rf/status/2119604402164256843",
-          "views": 2671872,
-          "likes": 122753,
+          "views": 2672317,
+          "likes": 122754,
           "checked": "2026-11-11",
           "via": "X API"
         },
         "reddit": {
           "sub": "dankmemes",
-          "rank": 7
+          "rank": 6
         }
       },
       "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy",
@@ -2963,8 +2963,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/miensha00/status/2119869530327732250",
-          "views": 43768920,
-          "likes": 559062,
+          "views": 43807506,
+          "likes": 559078,
           "checked": "2026-11-11",
           "via": "X API"
         }
@@ -3012,8 +3012,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/ItsPzuh/status/2120044461447065802",
-          "views": 1915850,
-          "likes": 8101,
+          "views": 1934984,
+          "likes": 8117,
           "checked": "2026-11-11",
           "via": "X API"
         }
@@ -3021,6 +3021,51 @@
       "notes": "Three-second clip of President Trump turning his head sharply at a White House podium. @ItsPzuh posted it Nov 10 06:42 UTC captioned 'this trump clip is frying me' (X API Nov 10 5PM PT: 637,495 views / 3,385 likes / 2,075 bookmarks). Others quote it with their own relatable captions (e.g. @SnackBioTech about being told to leave a family gathering early) or repost it (@PapiTrumpo 32,303 views). X News story 'Trump's Sharp Side Glance Becomes Go-To Meme Template' (Nov 10). Who first clipped the moment is not confirmed. A second X News story, 'Trump's Head Turn from Briefing Room Prank Becomes Meme Favorite', ran Nov 10-11.",
       "headline_reviewed": true,
       "credit": "posted by @ItsPzuh on X"
+    },
+    {
+      "id": "marcus-freeman-side-eye",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "name": "Marcus Freeman Side Eye",
+      "title": "'WHAT DID THE REF SAY?': NOTRE DAME COACH MARCUS FREEMAN'S SIDE EYE BECOMES A REACTION MEME",
+      "source_url": "https://x.com/3xOptionShow/status/2119269592732160330",
+      "source_name": "X / @3xOptionShow",
+      "image_url": "https://pbs.twimg.com/amplify_video_thumb/2119269489657155584/img/Df1xETkpfziaVL9u.jpg",
+      "first_seen": "2026-11-08",
+      "first_seen_basis": "Earliest large post found: @3xOptionShow clip of the NBC broadcast, Nov 8 2026 03:23 UTC (Nov 7 PT, during Notre Dame vs Miami); X News story Nov 11. Who first clipped it is not confirmed.",
+      "also": [
+        {
+          "name": "X / @3xOptionShow (1.4M views)",
+          "url": "https://x.com/3xOptionShow/status/2119269592732160330"
+        },
+        {
+          "name": "X / @DaveCaulfield_ (remix, 347K views)",
+          "url": "https://x.com/DaveCaulfield_/status/2120228869995171970"
+        },
+        {
+          "name": "X News (Marcus Freeman's Side-Eye Becomes Top Reaction Meme After Notre Dame Win)",
+          "url": "https://x.com/i/trending/2120618202480996406"
+        }
+      ],
+      "ev": {
+        "platforms": [
+          "X"
+        ],
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/3xOptionShow/status/2119269592732160330",
+          "views": 1410387,
+          "likes": 1147,
+          "checked": "2026-11-11",
+          "via": "X API"
+        }
+      },
+      "notes": "Notre Dame head coach Marcus Freeman gives a long skeptical side-eye while listening to an official review in the second quarter of Notre Dame's Nov 7 2026 win over Miami (NBC broadcast). @3xOptionShow posted the clip Nov 8 03:23 UTC asking what the ref said (X API Nov 11 2PM PT: 1,410,387 views / 1,147 likes). People reuse it as a reaction with their own captions, e.g. @DaveCaulfield_ 'When people tell you to stop sharing the Marcus Freeman side eye clip...' (346,975 views / 9,088 likes). X News story 'Marcus Freeman's Side-Eye Becomes Top Reaction Meme After Notre Dame Win' (Nov 11). Nov 11: Freeman said on Notre Dame radio the look meant 'you're trippin' (@CathVSConf, @PeteSampson_). Who first clipped it is not confirmed.",
+      "headline_reviewed": true,
+      "credit": "posted by @3xOptionShow on X"
     },
     {
       "id": "sleepy-office-monkey",
@@ -3038,7 +3083,7 @@
       "first_seen_basis": "Largest post found: @AyoShinobi GIF Nov 10 2026 16:39 UTC ('life lately'); X News stories Nov 11. Original clip creator not found.",
       "also": [
         {
-          "name": "X / @AyoShinobi (14.4M views)",
+          "name": "X / @AyoShinobi (22.0M views)",
           "url": "https://x.com/AyoShinobi/status/2120194548659810454"
         },
         {
@@ -3061,8 +3106,8 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/AyoShinobi/status/2120194548659810454",
-          "views": 21136673,
-          "likes": 111541,
+          "views": 21968714,
+          "likes": 112925,
           "checked": "2026-11-11",
           "via": "X API"
         }

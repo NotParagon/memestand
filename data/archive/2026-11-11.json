@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T13:16-08:00",
+  "updated": "2026-11-11T14:20-08:00",
   "daily": [
     {
       "rank": 1,
@@ -38,7 +38,7 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 80.1,
+      "score": 80.3,
       "sources": [
         "X",
         "Reddit",
@@ -92,7 +92,7 @@
       "credit": "posted by @AyoShinobi on X",
       "also": [
         {
-          "name": "X / @AyoShinobi (14.4M views)",
+          "name": "X / @AyoShinobi (22.0M views)",
           "url": "https://x.com/AyoShinobi/status/2120194548659810454"
         },
         {
@@ -109,7 +109,7 @@
         }
       ],
       "first_seen": "2026-11-10",
-      "score": 78.3,
+      "score": 78.4,
       "sources": [
         "X"
       ],
@@ -223,7 +223,7 @@
         }
       ],
       "first_seen": "2026-11-10",
-      "score": 67.8,
+      "score": 67.9,
       "sources": [
         "X"
       ],
@@ -264,6 +264,38 @@
     },
     {
       "rank": 8,
+      "id": "marcus-freeman-side-eye",
+      "title": "'WHAT DID THE REF SAY?': NOTRE DAME COACH MARCUS FREEMAN'S SIDE EYE BECOMES A REACTION MEME",
+      "image": "images/marcus-freeman-side-eye.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/3xOptionShow/status/2119269592732160330",
+      "source_name": "X / @3xOptionShow",
+      "credit": "posted by @3xOptionShow on X",
+      "also": [
+        {
+          "name": "X / @3xOptionShow (1.4M views)",
+          "url": "https://x.com/3xOptionShow/status/2119269592732160330"
+        },
+        {
+          "name": "X / @DaveCaulfield_ (remix, 347K views)",
+          "url": "https://x.com/DaveCaulfield_/status/2120228869995171970"
+        },
+        {
+          "name": "X News (Marcus Freeman's Side-Eye Becomes Top Reaction Meme After Notre Dame Win)",
+          "url": "https://x.com/i/trending/2120618202480996406"
+        }
+      ],
+      "first_seen": "2026-11-08",
+      "score": 66.5,
+      "sources": [
+        "X"
+      ],
+      "notes": "Notre Dame head coach Marcus Freeman gives a long skeptical side-eye while listening to an official review in the second quarter of Notre Dame's Nov 7 2026 win over Miami (NBC broadcast). @3xOptionShow posted the clip Nov 8 03:23 UTC asking what the ref said (X API Nov 11 2PM PT: 1,410,387 views / 1,147 likes). People reuse it as a reaction with their own captions, e.g. @DaveCaulfield_ 'When people tell you to stop sharing the Marcus Freeman side eye clip...' (346,975 views / 9,088 likes). X News story 'Marcus Freeman's Side-Eye Becomes Top Reaction Meme After Notre Dame Win' (Nov 11). Nov 11: Freeman said on Notre Dame radio the look meant 'you're trippin' (@CathVSConf, @PeteSampson_). Who first clipped it is not confirmed.",
+      "name": "Marcus Freeman Side Eye"
+    },
+    {
+      "rank": 9,
       "id": "spongebob-patrick-package-deal",
       "title": "'LOVE HIM OR HATE HIM, SPONGEBOB IS FRIEND WITH PATRICK': FANS REWRITE THE PACKAGE-DEAL POST FOR THEIR OWN SHOWS",
       "image": "images/post-cards/spongebob-is-friend-with-patrick.jpg",
@@ -300,7 +332,7 @@
       "name": "SpongeBob Is Friend With Patrick"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "harmattan-bath-dog",
       "title": "'ME DURING HARMATTAN': GIF OF A DOG DODGING THE SHOWER BECOMES NIGERIAN X'S COLD-BATH JOKE",
       "image": "images/harmattan-bath-dog.jpg",
@@ -334,35 +366,6 @@
       ],
       "notes": "Looping GIF of a light-colored dog standing on its hind legs in a tiled bathroom, holding a red bowl and edging away from the shower, with a crying emoji overlay. @olajiire101 uploaded it Nov 9 18:45 UTC captioned only with crying emojis (X API Nov 10 12PM PT: 482,633 views / 16,703 likes / 304 quotes). From Nov 9-10 many separate accounts reposted the same GIF with their own captions about bathing in cold harmattan weather ('Me during harmattan', 'How boys bath during harmattan season'), and X News ran a story on it Nov 10. Where the clip was first filmed or posted is not confirmed.",
       "name": "Harmattan Bath Dog"
-    },
-    {
-      "rank": 10,
-      "id": "lily-name-joke",
-      "title": "'MOM, WHY IS MY SISTER NAMED LILY?': THE NAME JOKE WITH A SWAPPED-IN NON-SEQUITUR PUNCHLINE",
-      "image": "images/post-cards/why-is-my-sister-named-lily.jpg",
-      "image_url": null,
-      "image_kind": "post_card",
-      "card_text": "Mom why is my sister named lily\n\nBecause your mother likes lilies \n\nOh thanks mom\n\nNo problem nasi kandar kuah banjir",
-      "source_url": "https://x.com/loomie_my/status/2119273290099532286",
-      "source_name": "X / @loomie_my",
-      "credit": "posted by @loomie_my on X",
-      "also": [
-        {
-          "name": "X / @loomie_my (289K views)",
-          "url": "https://x.com/loomie_my/status/2119273290099532286"
-        },
-        {
-          "name": "X News (name joke template)",
-          "url": "https://x.com/i/trending/2119481828465610763"
-        }
-      ],
-      "first_seen": "2026-11-08",
-      "score": 60.1,
-      "sources": [
-        "X"
-      ],
-      "notes": "Text joke posted by @loomie_my on X Nov 8 2026 03:38 UTC ending on 'nasi kandar kuah banjir'. X API Nov 9 6AM PT: 289K views / 24.6K likes. X recent counts: ~2,670 posts with 'sister named lily' Nov 8-9 vs ~0 before, most swapping in their own last line (foods, drinks, fandoms), many quoting @loomie_my. X News story calls it a classic template resurfacing; template origin not confirmed. Window check Nov 9 10:15 AM PT (X recent counts, 'sister named lily'): 0 posts before Nov 8 UTC, 1,580 Nov 8 UTC, 1,245 Nov 9 UTC through 10:14 AM PT. Nov 10 6AM PT: X recent counts for 'sister named lily' 55 posts Nov 9 UTC (fading). Nov 10: @kerlipcahaya variation post no longer available on X; dropped from links.",
-      "name": "Why Is My Sister Named Lily"
     }
   ],
   "weekly": [
@@ -589,7 +592,7 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 80.1,
+      "score": 80.3,
       "sources": [
         "X",
         "Reddit",
@@ -681,7 +684,7 @@
       "credit": "posted by @AyoShinobi on X",
       "also": [
         {
-          "name": "X / @AyoShinobi (14.4M views)",
+          "name": "X / @AyoShinobi (22.0M views)",
           "url": "https://x.com/AyoShinobi/status/2120194548659810454"
         },
         {
@@ -698,7 +701,7 @@
         }
       ],
       "first_seen": "2026-11-10",
-      "score": 78.3,
+      "score": 78.4,
       "sources": [
         "X"
       ],
@@ -1013,7 +1016,7 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 80.1,
+      "score": 80.3,
       "sources": [
         "X",
         "Reddit",
