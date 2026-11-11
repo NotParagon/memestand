@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T14:20-08:00",
+  "updated": "2026-11-11T15:18-08:00",
   "daily": [
     {
       "rank": 1,
@@ -109,7 +109,7 @@
         }
       ],
       "first_seen": "2026-11-10",
-      "score": 78.4,
+      "score": 78.5,
       "sources": [
         "X"
       ],
@@ -187,7 +187,7 @@
         }
       ],
       "first_seen": "2026-11-08",
-      "score": 76.5,
+      "score": 76.6,
       "sources": [
         "X"
       ],
@@ -232,6 +232,38 @@
     },
     {
       "rank": 7,
+      "id": "marcus-freeman-side-eye",
+      "title": "'WHAT DID THE REF SAY?': NOTRE DAME COACH MARCUS FREEMAN'S SIDE EYE BECOMES A REACTION MEME",
+      "image": "images/marcus-freeman-side-eye.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/3xOptionShow/status/2119269592732160330",
+      "source_name": "X / @3xOptionShow",
+      "credit": "posted by @3xOptionShow on X",
+      "also": [
+        {
+          "name": "X / @3xOptionShow (1.4M views)",
+          "url": "https://x.com/3xOptionShow/status/2119269592732160330"
+        },
+        {
+          "name": "X / @DaveCaulfield_ (remix, 347K views)",
+          "url": "https://x.com/DaveCaulfield_/status/2120228869995171970"
+        },
+        {
+          "name": "X News (Marcus Freeman's Side-Eye Becomes Top Reaction Meme After Notre Dame Win)",
+          "url": "https://x.com/i/trending/2120618202480996406"
+        }
+      ],
+      "first_seen": "2026-11-08",
+      "score": 66.7,
+      "sources": [
+        "X"
+      ],
+      "notes": "Notre Dame head coach Marcus Freeman gives a long skeptical side-eye while listening to an official review in the second quarter of Notre Dame's Nov 7 2026 win over Miami (NBC broadcast). @3xOptionShow posted the clip Nov 8 03:23 UTC asking what the ref said (X API Nov 11 2PM PT: 1,410,387 views / 1,147 likes). People reuse it as a reaction with their own captions, e.g. @DaveCaulfield_ 'When people tell you to stop sharing the Marcus Freeman side eye clip...' (346,975 views / 9,088 likes). X News story 'Marcus Freeman's Side-Eye Becomes Top Reaction Meme After Notre Dame Win' (Nov 11). Nov 11: Freeman said on Notre Dame radio the look meant 'you're trippin' (@CathVSConf, @PeteSampson_). Who first clipped it is not confirmed.",
+      "name": "Marcus Freeman Side Eye"
+    },
+    {
+      "rank": 8,
       "id": "monkey-wok-gif",
       "title": "'WEREY NO BELIEVE HIM EYES': SHOCKED COOKING-MONKEY GIF BECOMES X'S NEW REACTION STICKER",
       "image": "images/monkey-wok-gif.jpg",
@@ -261,38 +293,6 @@
       ],
       "notes": "Looping clip of a white-faced capuchin in a rustic kitchen recoiling from a bubbling wok, shielding its face with a plate, then stirring. @MILLY17h posted it Nov 9 08:07 UTC captioned 'Werey no believe him eyes😂' (X API Nov 10 6AM PT: 1,282,332 views / 36,928 likes / 929 quotes). Reposted as a reaction with new captions by others (@oku_yungx 'I love this gif' 509,890 views; @yxyiagain 220,375 views) and many Nov 10 posts asking for it as a WhatsApp/Snapchat sticker. X News stories 'Monkey Stirring Wok GIF Delights with Kitchen Chaos Humor' and 'Viral GIF of Monkey's Shocking Reaction Spreads Across X' (Nov 10). Original clip source and whether it is real or AI-generated are not confirmed.",
       "name": "Shocked Cooking Monkey"
-    },
-    {
-      "rank": 8,
-      "id": "marcus-freeman-side-eye",
-      "title": "'WHAT DID THE REF SAY?': NOTRE DAME COACH MARCUS FREEMAN'S SIDE EYE BECOMES A REACTION MEME",
-      "image": "images/marcus-freeman-side-eye.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/3xOptionShow/status/2119269592732160330",
-      "source_name": "X / @3xOptionShow",
-      "credit": "posted by @3xOptionShow on X",
-      "also": [
-        {
-          "name": "X / @3xOptionShow (1.4M views)",
-          "url": "https://x.com/3xOptionShow/status/2119269592732160330"
-        },
-        {
-          "name": "X / @DaveCaulfield_ (remix, 347K views)",
-          "url": "https://x.com/DaveCaulfield_/status/2120228869995171970"
-        },
-        {
-          "name": "X News (Marcus Freeman's Side-Eye Becomes Top Reaction Meme After Notre Dame Win)",
-          "url": "https://x.com/i/trending/2120618202480996406"
-        }
-      ],
-      "first_seen": "2026-11-08",
-      "score": 66.5,
-      "sources": [
-        "X"
-      ],
-      "notes": "Notre Dame head coach Marcus Freeman gives a long skeptical side-eye while listening to an official review in the second quarter of Notre Dame's Nov 7 2026 win over Miami (NBC broadcast). @3xOptionShow posted the clip Nov 8 03:23 UTC asking what the ref said (X API Nov 11 2PM PT: 1,410,387 views / 1,147 likes). People reuse it as a reaction with their own captions, e.g. @DaveCaulfield_ 'When people tell you to stop sharing the Marcus Freeman side eye clip...' (346,975 views / 9,088 likes). X News story 'Marcus Freeman's Side-Eye Becomes Top Reaction Meme After Notre Dame Win' (Nov 11). Nov 11: Freeman said on Notre Dame radio the look meant 'you're trippin' (@CathVSConf, @PeteSampson_). Who first clipped it is not confirmed.",
-      "name": "Marcus Freeman Side Eye"
     },
     {
       "rank": 9,
@@ -701,7 +701,7 @@
         }
       ],
       "first_seen": "2026-11-10",
-      "score": 78.4,
+      "score": 78.5,
       "sources": [
         "X"
       ],
