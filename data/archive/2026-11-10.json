@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T16:22-08:00",
+  "updated": "2026-11-10T17:15-08:00",
   "daily": [
     {
       "rank": 1,
@@ -35,49 +35,6 @@
     },
     {
       "rank": 2,
-      "id": "jensen-huang-spy",
-      "title": "'ENJOYING A SUCCULENT CHINESE SPY?': MEMES ABOUT NVIDIA CEO JENSEN HUANG'S REPORTED SPY-AFFAIR STORY REMIX THE 'SUCCULENT CHINESE MEAL' CLIP",
-      "image": "images/jensen-huang-spy.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://www.reddit.com/r/memes/comments/1xrqqsg/this_is_controversy_manifest/",
-      "source_name": "Reddit / r/memes",
-      "credit": "posted by u/REAL__NOWHEREMAN on r/memes",
-      "also": [
-        {
-          "name": "X / @timo_rf (2.65M views)",
-          "url": "https://x.com/timo_rf/status/2119604402164256843"
-        },
-        {
-          "name": "X / @SoveyX AI video 'Huang met Huang' (903K views)",
-          "url": "https://x.com/SoveyX/status/2120206175341887850"
-        },
-        {
-          "name": "Reddit / r/memes 'Jensen just need to learn some gun-slinging'",
-          "url": "https://www.reddit.com/r/memes/comments/1xsarhm/jensen_just_need_to_learn_some_gunslinging/"
-        },
-        {
-          "name": "X News (Jensen Huang affair admission amid espionage allegations)",
-          "url": "https://x.com/i/trending/2119633989254484448"
-        },
-        {
-          "name": "Know Your Meme: Nvidia CEO Jensen Huang Chinese Spy Cheating Controversy",
-          "url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
-        }
-      ],
-      "first_seen": "2026-11-09",
-      "score": 78.2,
-      "sources": [
-        "X",
-        "Reddit",
-        "Know Your Meme"
-      ],
-      "notes": "Edited still of the 'Democracy Manifest' / 'Succulent Chinese Meal' arrest clip with Jensen Huang's face on the man being arrested, captioned 'what is the charge? enjoying a succulent chinese spy?', posted by u/REAL__NOWHEREMAN on r/memes Nov 9 2026 (r/memes top-of-week #13 on Nov 10 1 PM PT). Part of a wider wave of memes about the reported affair and espionage allegations, per Know Your Meme (entry published Nov 9 2026): @timo_rf on X 'JENSEN! THATS NOT WHAT WE MEANT BY CHINESE MODELS!!!!!!!' (X API Nov 10 1 PM PT: 2,651,353 views / 122,527 likes), @SoveyX AI video 'Huang met Huang' (Nov 10, 902,892 views), and more r/memes and r/dankmemes posts on Nov 9-10. Owner-approved for the site Nov 10 2026 (Roger). The separate X 'I am NOT a Chinese spy' selfie trend is excluded and not part of this entry.",
-      "name": "Jensen Huang Spy",
-      "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
-    },
-    {
-      "rank": 3,
       "id": "get-a-load-netero",
       "title": "'GET A LOAD OF THIS GUY': NETERO'S HUNTER X HUNTER POINT REVIVES THE HAND-GESTURE MEME",
       "image": "images/get-a-load-netero.jpg",
@@ -113,6 +70,49 @@
       "notes": "Nov 8 2026 @buhlesrevenge: 'that “get a load of this guy” hand gesture is easily one of the top 2 hand gestures of all time' (X API Nov 10 6AM PT: 2,778,504 views / 118,399 likes, 279 quotes). Quote replies post their own pointing examples; the biggest is @RogeeRoger's Hunter x Hunter clip of Chairman Netero pointing Gon toward the enemy, 'Greatest \"get a load of this guy\" of all time' (864,237 views / 46,313 likes); other quotes post wrestling and sports examples. Two X News stories Nov 9-10. KYM entry 'Get a Load of This Guy' (164,111 views) documents the older phrase and pointing-reaction format. X recent counts for the phrase: 78 posts Nov 8 UTC, 99 Nov 9, 50 Nov 10 through 6 AM PT.",
       "name": "Get a Load of This Guy",
       "kym_url": "https://knowyourmeme.com/memes/get-a-load-of-this-guy"
+    },
+    {
+      "rank": 3,
+      "id": "jensen-huang-spy",
+      "title": "'ENJOYING A SUCCULENT CHINESE SPY?': MEMES ABOUT NVIDIA CEO JENSEN HUANG'S REPORTED SPY-AFFAIR STORY REMIX THE 'SUCCULENT CHINESE MEAL' CLIP",
+      "image": "images/jensen-huang-spy.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/memes/comments/1xrqqsg/this_is_controversy_manifest/",
+      "source_name": "Reddit / r/memes",
+      "credit": "posted by u/REAL__NOWHEREMAN on r/memes",
+      "also": [
+        {
+          "name": "X / @timo_rf (2.65M views)",
+          "url": "https://x.com/timo_rf/status/2119604402164256843"
+        },
+        {
+          "name": "X / @SoveyX AI video 'Huang met Huang' (903K views)",
+          "url": "https://x.com/SoveyX/status/2120206175341887850"
+        },
+        {
+          "name": "Reddit / r/memes 'Jensen just need to learn some gun-slinging'",
+          "url": "https://www.reddit.com/r/memes/comments/1xsarhm/jensen_just_need_to_learn_some_gunslinging/"
+        },
+        {
+          "name": "X News (Jensen Huang affair admission amid espionage allegations)",
+          "url": "https://x.com/i/trending/2119633989254484448"
+        },
+        {
+          "name": "Know Your Meme: Nvidia CEO Jensen Huang Chinese Spy Cheating Controversy",
+          "url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
+        }
+      ],
+      "first_seen": "2026-11-09",
+      "score": 77.8,
+      "sources": [
+        "X",
+        "Reddit",
+        "Know Your Meme"
+      ],
+      "notes": "Edited still of the 'Democracy Manifest' / 'Succulent Chinese Meal' arrest clip with Jensen Huang's face on the man being arrested, captioned 'what is the charge? enjoying a succulent chinese spy?', posted by u/REAL__NOWHEREMAN on r/memes Nov 9 2026 (r/memes top-of-week #13 on Nov 10 1 PM PT). Part of a wider wave of memes about the reported affair and espionage allegations, per Know Your Meme (entry published Nov 9 2026): @timo_rf on X 'JENSEN! THATS NOT WHAT WE MEANT BY CHINESE MODELS!!!!!!!' (X API Nov 10 1 PM PT: 2,651,353 views / 122,527 likes), @SoveyX AI video 'Huang met Huang' (Nov 10, 902,892 views), and more r/memes and r/dankmemes posts on Nov 9-10. Owner-approved for the site Nov 10 2026 (Roger). The separate X 'I am NOT a Chinese spy' selfie trend is excluded and not part of this entry.",
+      "name": "Jensen Huang Spy",
+      "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
     },
     {
       "rank": 4,
@@ -281,6 +281,38 @@
     },
     {
       "rank": 9,
+      "id": "trump-side-glance",
+      "title": "'THIS TRUMP CLIP IS FRYING ME': TRUMP'S SHARP SIDE GLANCE AT THE PODIUM BECOMES A REACTION TEMPLATE",
+      "image": "images/trump-side-glance.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/ItsPzuh/status/2120044461447065802",
+      "source_name": "X / @ItsPzuh",
+      "credit": "posted by @ItsPzuh on X",
+      "also": [
+        {
+          "name": "X / @ItsPzuh (637K views)",
+          "url": "https://x.com/ItsPzuh/status/2120044461447065802"
+        },
+        {
+          "name": "X / @SnackBioTech (quote with new caption)",
+          "url": "https://x.com/SnackBioTech/status/2120246548290551943"
+        },
+        {
+          "name": "X News (Trump side glance meme template)",
+          "url": "https://x.com/i/trending/2120310408347337140"
+        }
+      ],
+      "first_seen": "2026-11-10",
+      "score": 63.0,
+      "sources": [
+        "X"
+      ],
+      "notes": "Three-second clip of President Trump turning his head sharply at a White House podium. @ItsPzuh posted it Nov 10 06:42 UTC captioned 'this trump clip is frying me' (X API Nov 10 5PM PT: 637,495 views / 3,385 likes / 2,075 bookmarks). Others quote it with their own relatable captions (e.g. @SnackBioTech about being told to leave a family gathering early) or repost it (@PapiTrumpo 32,303 views). X News story 'Trump's Sharp Side Glance Becomes Go-To Meme Template' (Nov 10). Who first clipped the moment is not confirmed.",
+      "name": "Trump Side Glance"
+    },
+    {
+      "rank": 10,
       "id": "spongebob-patrick-package-deal",
       "title": "'LOVE HIM OR HATE HIM, SPONGEBOB IS FRIEND WITH PATRICK': FANS REWRITE THE PACKAGE-DEAL POST FOR THEIR OWN SHOWS",
       "image": "images/post-cards/spongebob-is-friend-with-patrick.jpg",
@@ -315,42 +347,6 @@
       ],
       "notes": "Text post by @Dayscd Nov 9 2026 (X API Nov 10 6AM PT: 353,421 views / 21,526 likes / 191 quotes). Quote posts swap in their own duos: @jackiespurnell 'love her or hate her, jackie is friend with shauna...' (Yellowjackets), @clionemi 'this but pomni and jax'. X recent counts for 'love him or hate him' + 'gonna be there': 1 Nov 9 UTC, 11 Nov 10 through 6 AM PT. X News story Nov 10.",
       "name": "SpongeBob Is Friend With Patrick"
-    },
-    {
-      "rank": 10,
-      "id": "harmattan-bath-dog",
-      "title": "'ME DURING HARMATTAN': GIF OF A DOG DODGING THE SHOWER BECOMES NIGERIAN X'S COLD-BATH JOKE",
-      "image": "images/harmattan-bath-dog.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/olajiire101/status/2119863866217886004",
-      "source_name": "X / @olajiire101",
-      "credit": "posted by @olajiire101 on X",
-      "also": [
-        {
-          "name": "X / @olajiire101 (482K views)",
-          "url": "https://x.com/olajiire101/status/2119863866217886004"
-        },
-        {
-          "name": "X / @OGSTANLEY05 (same GIF, harmattan caption)",
-          "url": "https://x.com/OGSTANLEY05/status/2120141731882479691"
-        },
-        {
-          "name": "X / @Asirifi_ofc (same GIF, harmattan caption)",
-          "url": "https://x.com/Asirifi_ofc/status/2120101379670978680"
-        },
-        {
-          "name": "X News (dog GIF harmattan bathing)",
-          "url": "https://x.com/i/trending/2120150741058830492"
-        }
-      ],
-      "first_seen": "2026-11-09",
-      "score": 62.2,
-      "sources": [
-        "X"
-      ],
-      "notes": "Looping GIF of a light-colored dog standing on its hind legs in a tiled bathroom, holding a red bowl and edging away from the shower, with a crying emoji overlay. @olajiire101 uploaded it Nov 9 18:45 UTC captioned only with crying emojis (X API Nov 10 12PM PT: 482,633 views / 16,703 likes / 304 quotes). From Nov 9-10 many separate accounts reposted the same GIF with their own captions about bathing in cold harmattan weather ('Me during harmattan', 'How boys bath during harmattan season'), and X News ran a story on it Nov 10. Where the clip was first filmed or posted is not confirmed.",
-      "name": "Harmattan Bath Dog"
     }
   ],
   "weekly": [
@@ -612,49 +608,6 @@
     },
     {
       "rank": 8,
-      "id": "jensen-huang-spy",
-      "title": "'ENJOYING A SUCCULENT CHINESE SPY?': MEMES ABOUT NVIDIA CEO JENSEN HUANG'S REPORTED SPY-AFFAIR STORY REMIX THE 'SUCCULENT CHINESE MEAL' CLIP",
-      "image": "images/jensen-huang-spy.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://www.reddit.com/r/memes/comments/1xrqqsg/this_is_controversy_manifest/",
-      "source_name": "Reddit / r/memes",
-      "credit": "posted by u/REAL__NOWHEREMAN on r/memes",
-      "also": [
-        {
-          "name": "X / @timo_rf (2.65M views)",
-          "url": "https://x.com/timo_rf/status/2119604402164256843"
-        },
-        {
-          "name": "X / @SoveyX AI video 'Huang met Huang' (903K views)",
-          "url": "https://x.com/SoveyX/status/2120206175341887850"
-        },
-        {
-          "name": "Reddit / r/memes 'Jensen just need to learn some gun-slinging'",
-          "url": "https://www.reddit.com/r/memes/comments/1xsarhm/jensen_just_need_to_learn_some_gunslinging/"
-        },
-        {
-          "name": "X News (Jensen Huang affair admission amid espionage allegations)",
-          "url": "https://x.com/i/trending/2119633989254484448"
-        },
-        {
-          "name": "Know Your Meme: Nvidia CEO Jensen Huang Chinese Spy Cheating Controversy",
-          "url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
-        }
-      ],
-      "first_seen": "2026-11-09",
-      "score": 78.2,
-      "sources": [
-        "X",
-        "Reddit",
-        "Know Your Meme"
-      ],
-      "notes": "Edited still of the 'Democracy Manifest' / 'Succulent Chinese Meal' arrest clip with Jensen Huang's face on the man being arrested, captioned 'what is the charge? enjoying a succulent chinese spy?', posted by u/REAL__NOWHEREMAN on r/memes Nov 9 2026 (r/memes top-of-week #13 on Nov 10 1 PM PT). Part of a wider wave of memes about the reported affair and espionage allegations, per Know Your Meme (entry published Nov 9 2026): @timo_rf on X 'JENSEN! THATS NOT WHAT WE MEANT BY CHINESE MODELS!!!!!!!' (X API Nov 10 1 PM PT: 2,651,353 views / 122,527 likes), @SoveyX AI video 'Huang met Huang' (Nov 10, 902,892 views), and more r/memes and r/dankmemes posts on Nov 9-10. Owner-approved for the site Nov 10 2026 (Roger). The separate X 'I am NOT a Chinese spy' selfie trend is excluded and not part of this entry.",
-      "name": "Jensen Huang Spy",
-      "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
-    },
-    {
-      "rank": 9,
       "id": "get-a-load-netero",
       "title": "'GET A LOAD OF THIS GUY': NETERO'S HUNTER X HUNTER POINT REVIVES THE HAND-GESTURE MEME",
       "image": "images/get-a-load-netero.jpg",
@@ -690,6 +643,49 @@
       "notes": "Nov 8 2026 @buhlesrevenge: 'that “get a load of this guy” hand gesture is easily one of the top 2 hand gestures of all time' (X API Nov 10 6AM PT: 2,778,504 views / 118,399 likes, 279 quotes). Quote replies post their own pointing examples; the biggest is @RogeeRoger's Hunter x Hunter clip of Chairman Netero pointing Gon toward the enemy, 'Greatest \"get a load of this guy\" of all time' (864,237 views / 46,313 likes); other quotes post wrestling and sports examples. Two X News stories Nov 9-10. KYM entry 'Get a Load of This Guy' (164,111 views) documents the older phrase and pointing-reaction format. X recent counts for the phrase: 78 posts Nov 8 UTC, 99 Nov 9, 50 Nov 10 through 6 AM PT.",
       "name": "Get a Load of This Guy",
       "kym_url": "https://knowyourmeme.com/memes/get-a-load-of-this-guy"
+    },
+    {
+      "rank": 9,
+      "id": "jensen-huang-spy",
+      "title": "'ENJOYING A SUCCULENT CHINESE SPY?': MEMES ABOUT NVIDIA CEO JENSEN HUANG'S REPORTED SPY-AFFAIR STORY REMIX THE 'SUCCULENT CHINESE MEAL' CLIP",
+      "image": "images/jensen-huang-spy.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://www.reddit.com/r/memes/comments/1xrqqsg/this_is_controversy_manifest/",
+      "source_name": "Reddit / r/memes",
+      "credit": "posted by u/REAL__NOWHEREMAN on r/memes",
+      "also": [
+        {
+          "name": "X / @timo_rf (2.65M views)",
+          "url": "https://x.com/timo_rf/status/2119604402164256843"
+        },
+        {
+          "name": "X / @SoveyX AI video 'Huang met Huang' (903K views)",
+          "url": "https://x.com/SoveyX/status/2120206175341887850"
+        },
+        {
+          "name": "Reddit / r/memes 'Jensen just need to learn some gun-slinging'",
+          "url": "https://www.reddit.com/r/memes/comments/1xsarhm/jensen_just_need_to_learn_some_gunslinging/"
+        },
+        {
+          "name": "X News (Jensen Huang affair admission amid espionage allegations)",
+          "url": "https://x.com/i/trending/2119633989254484448"
+        },
+        {
+          "name": "Know Your Meme: Nvidia CEO Jensen Huang Chinese Spy Cheating Controversy",
+          "url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
+        }
+      ],
+      "first_seen": "2026-11-09",
+      "score": 77.8,
+      "sources": [
+        "X",
+        "Reddit",
+        "Know Your Meme"
+      ],
+      "notes": "Edited still of the 'Democracy Manifest' / 'Succulent Chinese Meal' arrest clip with Jensen Huang's face on the man being arrested, captioned 'what is the charge? enjoying a succulent chinese spy?', posted by u/REAL__NOWHEREMAN on r/memes Nov 9 2026 (r/memes top-of-week #13 on Nov 10 1 PM PT). Part of a wider wave of memes about the reported affair and espionage allegations, per Know Your Meme (entry published Nov 9 2026): @timo_rf on X 'JENSEN! THATS NOT WHAT WE MEANT BY CHINESE MODELS!!!!!!!' (X API Nov 10 1 PM PT: 2,651,353 views / 122,527 likes), @SoveyX AI video 'Huang met Huang' (Nov 10, 902,892 views), and more r/memes and r/dankmemes posts on Nov 9-10. Owner-approved for the site Nov 10 2026 (Roger). The separate X 'I am NOT a Chinese spy' selfie trend is excluded and not part of this entry.",
+      "name": "Jensen Huang Spy",
+      "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
     },
     {
       "rank": 10,

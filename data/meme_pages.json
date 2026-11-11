@@ -1931,6 +1931,36 @@
       "written": "2026-11-04",
       "checked": "2026-11-07T22:51:54-08:00"
     },
+    "trump-side-glance": {
+      "name": "Trump Side Glance",
+      "ids": [
+        "trump-side-glance"
+      ],
+      "status": "short",
+      "explainer": "A roughly three-second clip shows President Trump at the White House briefing-room podium turning his head sharply to one side mid-sentence. People post it as a reaction for an abrupt exit or a quick change of plans, adding captions about everyday situations such as being told it's time to leave a family gathering.",
+      "origin": "The biggest post found is by @ItsPzuh on X on November 10, 2026, captioned \"this trump clip is frying me\"; it had about 637,000 views per X's public counts that evening. Other accounts quoted or reposted the clip with their own captions, and an X News story on November 10 described it becoming a go-to meme template. X News places the moment at a White House briefing-room appearance on November 9, 2026. Who first clipped and posted it hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/ItsPzuh/status/2120044461447065802",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@ItsPzuh on X",
+          "url": "https://x.com/ItsPzuh/status/2120044461447065802"
+        },
+        {
+          "name": "@SnackBioTech on X (quote with new caption)",
+          "url": "https://x.com/SnackBioTech/status/2120246548290551943"
+        },
+        {
+          "name": "X News: Trump's Sharp Side Glance Becomes Go-To Meme Template",
+          "url": "https://x.com/i/trending/2120310408347337140"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-10",
+      "checked": "2026-11-10T17:22:00-08:00"
+    },
     "twitch-vs-chatgpt": {
       "name": "Twitch Chat vs ChatGPT Two Paths",
       "ids": [
