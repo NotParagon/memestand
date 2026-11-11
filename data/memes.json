@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T15:13-08:00",
+  "updated": "2026-11-10T16:22-08:00",
   "daily": [
     {
       "rank": 1,
@@ -66,7 +66,7 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 79.0,
+      "score": 78.2,
       "sources": [
         "X",
         "Reddit",
@@ -105,7 +105,7 @@
         }
       ],
       "first_seen": "2026-11-08",
-      "score": 77.9,
+      "score": 78.0,
       "sources": [
         "X",
         "Know Your Meme"
@@ -147,7 +147,7 @@
         }
       ],
       "first_seen": "2026-11-08",
-      "score": 75.8,
+      "score": 75.9,
       "sources": [
         "X"
       ],
@@ -241,7 +241,7 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 66.4,
+      "score": 66.5,
       "sources": [
         "X"
       ],
@@ -309,7 +309,7 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 62.3,
+      "score": 62.4,
       "sources": [
         "X"
       ],
@@ -643,7 +643,7 @@
         }
       ],
       "first_seen": "2026-11-09",
-      "score": 79.0,
+      "score": 78.2,
       "sources": [
         "X",
         "Reddit",
@@ -682,7 +682,7 @@
         }
       ],
       "first_seen": "2026-11-08",
-      "score": 77.9,
+      "score": 78.0,
       "sources": [
         "X",
         "Know Your Meme"
@@ -1033,46 +1033,28 @@
     },
     {
       "rank": 10,
-      "id": "jensen-huang-spy",
-      "title": "'ENJOYING A SUCCULENT CHINESE SPY?': MEMES ABOUT NVIDIA CEO JENSEN HUANG'S REPORTED SPY-AFFAIR STORY REMIX THE 'SUCCULENT CHINESE MEAL' CLIP",
-      "image": "images/jensen-huang-spy.jpg",
+      "id": "tip-toein",
+      "title": "AI RUMPELSTILTSKIN 'TIP TOEIN' IN MY JORDANS'",
+      "image": "images/tip-toein.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://www.reddit.com/r/memes/comments/1xrqqsg/this_is_controversy_manifest/",
-      "source_name": "Reddit / r/memes",
-      "credit": "posted by u/REAL__NOWHEREMAN on r/memes",
+      "source_url": "https://knowyourmeme.com/memes/ai-rumpelstiltskin-tip-toein-in-my-jordans",
+      "source_name": "Know Your Meme",
+      "credit": "posted by @6aimbot9 on TikTok",
       "also": [
         {
-          "name": "X / @timo_rf (2.65M views)",
-          "url": "https://x.com/timo_rf/status/2119604402164256843"
-        },
-        {
-          "name": "X / @SoveyX AI video 'Huang met Huang' (903K views)",
-          "url": "https://x.com/SoveyX/status/2120206175341887850"
-        },
-        {
-          "name": "Reddit / r/memes 'Jensen just need to learn some gun-slinging'",
-          "url": "https://www.reddit.com/r/memes/comments/1xsarhm/jensen_just_need_to_learn_some_gunslinging/"
-        },
-        {
-          "name": "X News (Jensen Huang affair admission amid espionage allegations)",
-          "url": "https://x.com/i/trending/2119633989254484448"
-        },
-        {
-          "name": "Know Your Meme: Nvidia CEO Jensen Huang Chinese Spy Cheating Controversy",
-          "url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
+          "name": "TikTok / @pfuzzypiffdoozy (6.1M views)",
+          "url": "https://www.tiktok.com/@pfuzzypiffdoozy/video/7692746647612312862"
         }
       ],
-      "first_seen": "2026-11-09",
-      "score": 79.0,
+      "first_seen": "2026-10-06",
+      "score": 78.9,
       "sources": [
         "X",
-        "Reddit",
+        "TikTok",
         "Know Your Meme"
       ],
-      "notes": "Edited still of the 'Democracy Manifest' / 'Succulent Chinese Meal' arrest clip with Jensen Huang's face on the man being arrested, captioned 'what is the charge? enjoying a succulent chinese spy?', posted by u/REAL__NOWHEREMAN on r/memes Nov 9 2026 (r/memes top-of-week #13 on Nov 10 1 PM PT). Part of a wider wave of memes about the reported affair and espionage allegations, per Know Your Meme (entry published Nov 9 2026): @timo_rf on X 'JENSEN! THATS NOT WHAT WE MEANT BY CHINESE MODELS!!!!!!!' (X API Nov 10 1 PM PT: 2,651,353 views / 122,527 likes), @SoveyX AI video 'Huang met Huang' (Nov 10, 902,892 views), and more r/memes and r/dankmemes posts on Nov 9-10. Owner-approved for the site Nov 10 2026 (Roger). The separate X 'I am NOT a Chinese spy' selfie trend is excluded and not part of this entry.",
-      "name": "Jensen Huang Spy",
-      "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy"
+      "notes": "KYM cites 9.8M views; 65,864 KYM page views; October Meme of the Month nominee (mentioned in results editorial). Nov 4 reads (10am PT): largest TikTok read directly @pfuzzypiffdoozy 6.1M views."
     }
   ]
 }
