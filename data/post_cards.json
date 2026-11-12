@@ -86,6 +86,16 @@
       "source_url": "https://x.com/Dayscd/status/2119910679402418346",
       "source_asset": "memestand-video/cache/2026-11-10/spongebob-patrick-package-deal-card.jpg",
       "prepared": "Self-rendered attributed post card made Nov 10 2026 with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, avatar). No MemeStand header. Not a screenshot of X."
+    },
+    "dont-flirt-with-me": {
+      "ids": ["dont-flirt-with-me"],
+      "file": "images/post-cards/dont-flirt-with-me.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "Don't flirt with me I'll message you constantly and take up all your free time",
+      "source_url": "https://x.com/o7Saya/status/2120228473864073713",
+      "source_asset": "memestand-video/cache/2026-11-12/dont-flirt-with-me-card.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 12 2026 (6 AM PT refresh) with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, avatar; the star emoji in the display name is left out because the card font cannot draw it). No MemeStand header. Not a screenshot of X."
     }
   }
 }
