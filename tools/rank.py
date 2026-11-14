@@ -3,6 +3,10 @@
 
 Usage:  python3 tools/rank.py [--no-images]
 
+The "updated" field is the current America/Los_Angeles time from tools/stamp.py
+(a timezone-aware UTC now converted to that zone, not the machine's local
+clock and not a hard-coded -08:00 offset).
+
 Scoring rubric (cross-platform virality evidence, documented in UPDATE.md "Ranking method"):
   Six sources: X, TikTok, Instagram, Reddit (r/memes, r/dankmemes), YouTube, Know Your Meme.
   1. Per-source reach score, each on its own scale so one platform's huge raw counts don't dominate
@@ -26,12 +30,12 @@ Legal rules (tools/legal.py, UPDATE.md "Legal rules"):
   - per-candidate "image_policy": "local" (default: small local thumbnail), "hotlink" (show image_url from
     the source's own CDN, no local copy), or "none" (text card that links to the source).
 """
-import json, math, sys, pathlib, subprocess, io, datetime
-from zoneinfo import ZoneInfo
+import json, math, sys, pathlib, subprocess, io
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from legal import load_blocklist, blocked_by, exclusion_reason, default_credit
 from post_cards import local_image as post_card_image
 from safe_url import safe_url
+from stamp import format_stamp
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA, IMG = ROOT / "data", ROOT / "images"
@@ -181,7 +185,7 @@ def main():
     authors = reddit_authors()
     for c in cands: c["score"] = score(c["ev"]); c["sources"] = sources(c["ev"])
     if not no_img: normalize_images()
-    out = {"updated": datetime.datetime.now(ZoneInfo("America/Los_Angeles")).isoformat(timespec="minutes")}
+    out = {"updated": format_stamp()}
     for p in PERIODS:
         pool = sorted([c for c in cands if p in c.get("periods", [])], key=lambda c: -c["score"])[:10]
         rows = []

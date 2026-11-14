@@ -43,6 +43,7 @@ memestand/
   tools/fetch_youtube.py     YouTube search (sorted by views) + watch-page view counts into raw/youtube*.json
   tools/fetch_social.py      public TikTok / Instagram (/ YouTube) post counts into raw/social.json; --kym SLUG reads every post a KYM entry embeds
   tools/rank.py              scores candidates, picks the top 10 per period, downloads thumbnails
+  tools/stamp.py             sets data/memes.json "updated" to the real America/Los_Angeles time (light hourly runs)
   tools/rank_history.py      daily top-10 notes (New today, First time, movement, days at #1) from archive files + meme slug
   raw/                       scratch research data (Reddit RSS, KYM metadata); not deployed
   preview.png                screenshot of the current build
@@ -66,6 +67,17 @@ through the day. Agents (or a human) should run this checklist at about:
 
 Each run should finish within ~15 minutes of the hour above when practical. The header "Updated … ago" stamp
 comes from the build timestamp in the visitor's browser (see build.py).
+
+### Light hourly stamp (`python3 tools/stamp.py`)
+
+A light hour does not re-rank. It still moves `data/memes.json` `"updated"` so the header "Updated … ago" line and today's archive stay current, then rebuilds. Do not type that time by hand, and do not glue a hard-coded `-08:00` onto the UTC wall clock (`date` in a container with `TZ=UTC` does this). That records a Pacific offset on the UTC clock, so 3:13 AM PT is stored as `11:13-08:00`. The stamp is then hours in the future, and the 4 AM and 5 AM runs will not overwrite today's archive, because a newer real time looks older.
+
+```bash
+python3 tools/stamp.py    # sets "updated" to the current America/Los_Angeles time
+python3 build.py          # rebuilds the site and today's archive snapshot
+```
+
+`tools/stamp.py` and `tools/rank.py` both take a timezone-aware UTC now and convert it with `America/Los_Angeles` (PST `-08:00` or PDT `-07:00`, whichever is in effect). `build.py` checks `"updated"` before it picks the archive day. If the value does not parse as a timezone-aware timestamp, or it is more than 10 minutes ahead of the real current time, the build replaces it with the real Pacific time, prints a `! WARNING`, and writes that value back to `data/memes.json`. Today's `data/archive/YYYY-MM-DD.json` keeps updating through that Pacific day whenever the corrected stamp is later (a future stamp already on today's file does not block this). The next Pacific day leaves the file locked. A full re-rank (`python3 tools/rank.py`) sets the same stamp itself; do not also hand-edit it.
 
 ### Social posts (not in this repo)
 
@@ -149,6 +161,7 @@ The noon and 6 PM countdown clips are not part of this routine. Leaving the no-j
    google-chrome --headless=new --no-sandbox --hide-scrollbars --window-size=1280,2600 \
        --screenshot=preview.png "file://$PWD/index.html"
    ```
+   - A light hour that skips `rank.py` still runs `python3 tools/stamp.py` before `python3 build.py`. Do not edit `"updated"` by hand. `rank.py` already sets the same Pacific stamp, so a full re-rank does not also run `stamp.py`.
    - To refresh a changed thumbnail, delete `images/<id>.jpg` first. `rank.py` only downloads missing images.
    - Daily history notes (New today, First time, movement since yesterday, N days at #1) are written by this build from `data/archive/`. Do not type them into the HTML.
    - Never delete old `images/*.jpg`, `archive/*.html` or `data/archive/*.json`: past archive pages still use them.
@@ -265,7 +278,7 @@ Content note: thumbnails are small, attributed, and link back to the original po
 Every `python3 build.py` regenerates all of this from `data/memes.json`, so no manual SEO step is needed each day:
 
 - **Home links:** the logo, footer Home, and breadcrumb back to the site root use the directory URL (`./` or `../`), not `index.html`. Canonical remains `https://memestand.com/`. No redirect is added.
-- **Evidence dates:** live "Why it ranks" text is built from `candidates.json` `ev` (each platform's count and its own `checked` date). The header Updated time is `memes.json` `updated`, the page build. Archive HTML keeps the snapshot's link labels and does not reprint later counts. A rebuild does not overwrite today's `data/archive/YYYY-MM-DD.json` unless `memes.json` `updated` is newer than that file.
+- **Evidence dates:** live "Why it ranks" text is built from `candidates.json` `ev` (each platform's count and its own `checked` date). The header Updated time is `memes.json` `updated`, the page build, always an America/Los_Angeles instant (`python3 tools/stamp.py` or `tools/rank.py`; never a hand-written offset). Archive HTML keeps the snapshot's link labels and does not reprint later counts. A rebuild does not overwrite today's `data/archive/YYYY-MM-DD.json` unless `memes.json` `updated` is newer than that file. If `updated` is not a timezone-aware timestamp, or it is more than 10 minutes in the future, `build.py` replaces it with the real Pacific time and warns; the archive day is that corrected Pacific date, and it keeps accepting updates until the next Pacific day.
 - **Head tags** on every page: keyword title, meta description naming today's #1, canonical `https://memestand.com/...`,
   Open Graph + Twitter `summary_large_image` (og:image = today's #1 local thumbnail as an absolute URL, or `og-default.png`
   when #1 is a text card), favicon links, Atom feed link, `lang="en"`.
@@ -332,7 +345,7 @@ The page shows the thumbnail and the existing credit, then only the sections the
   "sources": [{"name": "The Verge: ...", "url": "..."}],   // every source the text relies on (the ranked post is added automatically)
   "related": ["other-slug"],            // optional, same meme family only. build.py does not add co-ranked memes.
   "written": "YYYY-MM-DD",
-  "checked": "2026-11-03T23:50:00-08:00",  // when the text was written or last reviewed (PT, real time); this is dateModified + sitemap lastmod when set
+  "checked": "2026-11-03T23:50:00-08:00",  // when the text was written or last reviewed (Pacific, real time; offset from the zone, not a fixed -08:00); this is dateModified + sitemap lastmod when set
   "seo_title": "Optional full document title",  // omit to use the generated title. Do not add a second brand suffix.
   "meta_description": "Optional meta description"  // omit to use the generated description
 }
@@ -357,7 +370,7 @@ The page shows the thumbnail and the existing credit, then only the sections the
   - No unverified claims about real people. Frame allegations as allegations attributed to their source ("per KYM"). Don't name private
     people or people only connected to an allegation. Quote real people only from the primary source.
   - Don't publish Roger's full name or address, and don't use the Drudge name.
-- `FAQPage` JSON-LD (inside the page's single `@graph`) is added when the page has at least one of those H2 sections. Its question names are the visible H2s, in the same order, and each answer is the section's text. A section that was omitted is not in the FAQ. Article JSON-LD is on every meme page.
+- `FAQPage` JSON-LD (inside the page's single `@graph`) is added when the page has at least one of those H2 sections. Its question names are the visible H2s, in the same order, and each answer is the section's text. A section that was omitted is not in the FAQ. Article JSON-LD is on every meme page. `datePublished` is the start of the Pacific day the meme was first ranked (`written`, or the earliest archive day). It does not follow the hourly build clock. `dateModified` is `checked` when that field is set. `datePublished` is never later than `dateModified`.
 - Blocked memes (`data/blocklist.json`) get no page: build.py drops their store entry and deletes `meme/<slug>/`. Archive pages are never deleted.
 - og:image on meme pages follows `OG_USE_MEME_THUMB` (currently off, so `og-default.png`).
 
@@ -385,7 +398,7 @@ Not legal advice. These rules keep the site's copyright, defamation and content 
 - Label jokes as jokes: `X USERS JOKE THAT KEN PAXTON 'EATS SALSA...'`, `ELON MUSK JOKES ABOUT...`.
 - rank.py **excludes** a candidate whose title or card text uses an allegation word without an attribution word (per / alleged / accused /
   memes about / jokes / reportedly...). Set `"headline_reviewed": true` only after you have checked the wording against these rules.
-- Notes ("Why it ranks") follow the same rules. On live pages the visible line is generated from `ev`, so update `ev.checked` when you re-read a count. Do not put a newer number in `also[].name` or `notes` unless that same number and date are in `ev`. Do not change `memes.json` `updated` just to look fresher.
+- Notes ("Why it ranks") follow the same rules. On live pages the visible line is generated from `ev`, so update `ev.checked` when you re-read a count. Do not put a newer number in `also[].name` or `notes` unless that same number and date are in `ev`. Do not hand-edit `memes.json` `updated` to look fresher. A light hourly run that needs a new stamp runs `python3 tools/stamp.py`, which writes the real Pacific time.
 
 **3. Content exclusions** (also published on /about.html#policy)
 - Add `"flags": [...]` to a candidate to exclude it: `nsfw`, `sexual`, `hate`, `demeaning` (mocks race, ethnicity, national origin,
