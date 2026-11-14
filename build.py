@@ -25,8 +25,12 @@ data/meme_pages.json is the persistent explainer store keyed by slug: text is wr
 see UPDATE.md "Meme pages") and reused forever. The build adds a stub entry for any new meme id and never rewrites text.
 
 Each run snapshots data/memes.json to data/archive/<PT date>.json (overwriting only today's
-snapshot), and never deletes older snapshots or archive pages, so past days survive rebuilds.
-The build is deterministic: re-running with the same data produces identical files.
+snapshot, and only when the new "updated" time is later), and never deletes older snapshots
+or archive pages, so past days survive rebuilds. "updated" is interpreted in
+America/Los_Angeles. A value that does not parse, or that is more than 10 minutes ahead
+of the real current time, is replaced with that time before the archive day is chosen,
+so a future stamp cannot freeze the Pacific day. The build is deterministic: re-running
+with the same data produces identical files.
 
 Daily top-10 rows can show a short history note (New today, First time, rank movement since
 yesterday, N days at #1). tools/rank_history.py derives that only from archived daily lists
@@ -40,10 +44,11 @@ import json, html, datetime, pathlib, re, shutil, sys, hashlib, base64
 from zoneinfo import ZoneInfo
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent / "tools"))
 from legal import load_blocklist, blocked_by, exclusion_reason
-from rank_history import daily_ranks, history_notes, meme_identity
+from rank_history import daily_ranks, history_notes, meme_identity, pacific_day
 from post_cards import file_for as post_card_file, displayed_as_post_card
 from safe_url import safe_url
 import momentum
+import stamp
 
 SITE = "https://memestand.com"
 NAME = "MemeStand"
@@ -94,11 +99,40 @@ def contact_html(kind="legal"):
             'we will ask for anything else privately)')
 
 def parse_dt(d):
-    try: return datetime.datetime.fromisoformat(d["updated"]).astimezone(PT)
-    except Exception: return datetime.datetime.now(PT).replace(second=0, microsecond=0)
+    """Aware Pacific time of a document's "updated" field, or the real Pacific now."""
+    try:
+        return stamp.parse_stamp(d["updated"])
+    except Exception:
+        return stamp.pacific_now().replace(second=0, microsecond=0)
 
-NOW = parse_dt(data)
-TODAY = NOW.date().isoformat()
+def apply_updated_guard(doc, now=None, persist_path=None):
+    """Replace a future or unparseable "updated" with the real Pacific time.
+
+    More than 10 minutes ahead of `now` counts as future. The replacement is
+    printed as a warning. When persist_path is set, that file's updated field
+    is rewritten in place and the rest of the file is left unchanged.
+    """
+    raw = doc.get("updated") if isinstance(doc, dict) else None
+    dt, reason = stamp.resolve_stamp(raw, now)
+    if not reason:
+        return dt
+    fresh = stamp.format_stamp(dt)
+    print(f"! WARNING: data updated {raw!r} {reason}; replaced with {fresh}")
+    doc["updated"] = fresh
+    if persist_path is not None:
+        stamp.set_updated(persist_path, fresh)
+    return stamp.parse_stamp(fresh)
+
+def archive_day_for(when):
+    """Pacific calendar day an aware timestamp belongs to.
+
+    snapshots() writes only data/archive/<that day>.json. The previous Pacific
+    day is a different file, so it stays locked.
+    """
+    return pacific_day(when).isoformat()
+
+NOW = apply_updated_guard(data, persist_path=ROOT / "data" / "memes.json")
+TODAY = archive_day_for(NOW)
 ISO = NOW.isoformat(timespec="seconds")
 fmt_long = lambda d: d.strftime("%B %-d, %Y")          # November 1, 2026
 fmt_short = lambda d: d.strftime("%b %-d, %Y")         # Nov 1, 2026
@@ -1167,6 +1201,7 @@ STORE_DOC = ("Persistent per-meme explainer store for the /meme/<slug>/ pages, k
              "An entry with a written date stays too, so a meme that has ranked keeps its page after it drops, even before the explainer is filled in. "
              "An entry with no text and no written date does not get a page. "
              "Sitemap lastmod and dateModified use checked when it is set. "
+             "datePublished is the start of the first-seen Pacific day (the written date, or the earliest archive day) and is never later than dateModified. "
              "Know Your Meme is an explainer, not the original post.")
 SLUG, PAGES = {}, {}          # candidate id -> slug ; slug -> page info
 MOMENTUM = {}                 # slug -> {series, status, delta, window} from archive scores
@@ -1261,6 +1296,45 @@ def written_stamp(day):
         d = NOW.date()
     return datetime.datetime(d.year, d.month, d.day, 12, 0, tzinfo=PT)
 
+def first_seen_day(*values):
+    """Earliest Pacific calendar day among dates, datetimes, or YYYY-MM-DD strings."""
+    found = []
+    for value in values:
+        if isinstance(value, datetime.datetime):
+            if value.tzinfo is None:
+                continue
+            found.append(value.astimezone(PT).date())
+            continue
+        if isinstance(value, datetime.date):
+            found.append(value)
+            continue
+        if not value:
+            continue
+        try:
+            found.append(datetime.date.fromisoformat(str(value)[:10]))
+        except (TypeError, ValueError):
+            continue
+    if not found:
+        return NOW.date()
+    return min(found)
+
+def publication_times(first_day, checked, fallback):
+    """Stable datePublished and a dateModified that is never earlier than it.
+
+    The first-seen day (the meme page's written date, or the earliest archive
+    day) does not move when today's snapshot is rebuilt. The archive file's
+    "updated" field does: it is the latest build clock, so using it as
+    datePublished makes the field jump on every build and land after a morning
+    review. Published time is the start of that Pacific day. If a review time
+    is earlier still, published is pulled back to dateModified.
+    """
+    day = first_seen_day(first_day)
+    modified = content_stamp(checked, fallback)
+    published = datetime.datetime(day.year, day.month, day.day, 0, 0, tzinfo=PT)
+    if published > modified:
+        published = modified
+    return published, modified
+
 def has_written_explainer(ent):
     """Real explainer copy. A null stub is not a page we should invent."""
     return bool(str((ent or {}).get("explainer") or "").strip() or str((ent or {}).get("origin") or "").strip())
@@ -1291,8 +1365,7 @@ def page_from_store(sl, ent):
     """Page record for a written explainer that is absent from every ranking snapshot."""
     m = display_row(sl, ent)
     full = ent.get("status") == "full" and bool(ent.get("explainer")) and bool(ent.get("origin"))
-    published = written_stamp(ent.get("written"))
-    modified = content_stamp(ent.get("checked"), published)
+    published, modified = publication_times(ent.get("written"), ent.get("checked"), written_stamp(ent.get("written")))
     return {"slug": sl, "name": ent.get("name") or sl, "explainer": ent.get("explainer"), "origin": ent.get("origin"),
             "status": "full" if full else "short", "kym_url": ent.get("kym_url"),
             "origin_confirmed": ent.get("origin_confirmed"), "how_to_use": ent.get("how_to_use") or [],
@@ -1382,7 +1455,8 @@ def meme_registry(snaps):
         for day, p, m in rows:
             if p not in best or m["rank"] < best[p][0]: best[p] = (m["rank"], day)
         full = ent.get("status") == "full" and bool(ent.get("explainer")) and bool(ent.get("origin"))
-        modified = content_stamp(ent.get("checked"), parse_dt(snapd[days[-1]]))
+        published, modified = publication_times(
+            first_seen_day(ent.get("written"), days[0]), ent.get("checked"), parse_dt(snapd[days[-1]]))
         PAGES[sl] = {"slug": sl, "name": ent["name"], "explainer": ent.get("explainer"), "origin": ent.get("origin"),
                      "status": "full" if full else "short", "kym_url": ent.get("kym_url"),
                      "origin_confirmed": ent.get("origin_confirmed"), "how_to_use": ent.get("how_to_use") or [],
@@ -1391,7 +1465,7 @@ def meme_registry(snaps):
                      "original_url": ent.get("original_url"), "written": ent.get("written"),
                      "seo_title": ent.get("seo_title") or "", "meta_description": ent.get("meta_description") or "",
                      "days": days, "best": best, "latest": latest, "rows": rows,
-                     "published": parse_dt(snapd[days[0]]).isoformat(timespec="seconds"),
+                     "published": published.isoformat(timespec="seconds"),
                      "modified": modified.isoformat(timespec="seconds"),
                      "blurb": first_sentence(ent.get("explainer")) or f"Ranked by MemeStand: {tc(latest['title'])}."}
     retain_written_pages(ents)
@@ -1943,16 +2017,31 @@ def build_period(p):
 ''' + footer(base)
     write(f"{info['slug']}/index.html", page)
 
-def snapshot_replaces(existing, incoming):
+def snapshot_replaces(existing, incoming, now=None):
     """True only when incoming memes.json is a newer evidence refresh.
+
     An equal or older updated stamp must not replace frozen ranks, notes, or counts.
-    Takedown scrub does not use this decision: it edits matching rows in place."""
+    A stamp more than 10 minutes ahead of real Pacific now, or one that does not
+    parse as a timezone-aware time, does not freeze the day: today's file still
+    accepts a real update. Takedown scrub does not use this decision: it edits
+    matching rows in place. Only the Pacific day of the corrected stamp is a
+    write target (see snapshots); a previous day stays locked.
+    """
+    now_pt = stamp.pacific_now(now).replace(second=0, microsecond=0)
     try:
-        return parse_dt(incoming) > parse_dt(existing)
-    except Exception:
+        old = stamp.parse_stamp(existing.get("updated"))
+    except (TypeError, ValueError, AttributeError):
         return True
+    try:
+        new = stamp.parse_stamp(incoming.get("updated"))
+    except (TypeError, ValueError, AttributeError):
+        return True
+    if old - now_pt > stamp.FUTURE_SLACK:
+        return True
+    return new > old
 
 def snapshots():
+    """Write today's Pacific archive only. Older data/archive/YYYY-MM-DD.json files stay locked."""
     ARCH_DATA.mkdir(parents=True, exist_ok=True)
     snap = ARCH_DATA / f"{TODAY}.json"
     txt = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
