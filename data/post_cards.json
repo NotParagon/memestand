@@ -96,6 +96,16 @@
       "source_url": "https://x.com/o7Saya/status/2120228473864073713",
       "source_asset": "memestand-video/cache/2026-11-12/dont-flirt-with-me-card.jpg",
       "prepared": "Self-rendered attributed post card made Nov 12 2026 (6 AM PT refresh) with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, avatar; the star emoji in the display name is left out because the card font cannot draw it). No MemeStand header. Not a screenshot of X."
+    },
+    "needed-a-kiss-today": {
+      "ids": ["needed-a-kiss-drugs"],
+      "file": "images/post-cards/needed-a-kiss-today.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "needed a kiss today but it’s okay i’ll do drugs",
+      "source_url": "https://x.com/ayovxid/status/2121181394680385735",
+      "source_asset": "memestand-video/cache/2026-11-14/needed-a-kiss-card.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 14 2026 (6 AM PT refresh) with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, avatar). No MemeStand header. Not a screenshot of X."
     }
   }
 }

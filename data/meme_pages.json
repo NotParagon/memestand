@@ -1004,6 +1004,36 @@
       "written": "2026-11-10",
       "checked": "2026-11-10T06:14:46-08:00"
     },
+    "i-got-so-mad": {
+      "name": "I Got So Mad",
+      "ids": [
+        "i-got-so-mad"
+      ],
+      "status": "short",
+      "explainer": "A TikTok comment format where people brag about an impossible or ridiculous act of anger that starts with \"I got so mad I...\", such as cracking a window by throwing a fly. Creators collect the wildest ones into slideshows and compilations, usually paired with shocked reaction images.",
+      "origin": "Per Know Your Meme, the earliest known example is an October 31, 2026 TikTok slideshow by elisha67865 built around a comment claiming the writer got so mad they threw a fly hard enough to crack a window; that post can no longer be viewed. Other users added their own versions in the comments, and compilations followed in November, including a November 8 slideshow by @foolybob with about 7.1 million views per TikTok's public counts. A YouTube video about the trend by RICHLEV passed 180,000 views within a day of upload. The original creator hasn't been confirmed beyond Know Your Meme's earliest known example.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://knowyourmeme.com/memes/i-got-so-mad-trend-meme",
+      "kym_url": "https://knowyourmeme.com/memes/i-got-so-mad-trend-meme",
+      "sources": [
+        {
+          "name": "Know Your Meme: I Got So Mad Trend / Meme",
+          "url": "https://knowyourmeme.com/memes/i-got-so-mad-trend-meme"
+        },
+        {
+          "name": "@foolybob on TikTok",
+          "url": "https://www.tiktok.com/@foolybob/video/7705814343073467656"
+        },
+        {
+          "name": "RICHLEV on YouTube: I Got So Mad Trend GOT WORSE",
+          "url": "https://www.youtube.com/watch?v=pTaVyxv9VAc"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-14",
+      "checked": "2026-11-14T06:25:00-08:00"
+    },
     "im-so-sorry-trend": {
       "name": "I'm So Sorry Trend",
       "ids": [
@@ -1361,6 +1391,40 @@
       "written": "2026-11-04",
       "checked": "2026-11-07T22:51:54-08:00"
     },
+    "microsoft-364": {
+      "name": "Microsoft 364",
+      "ids": [
+        "microsoft-364"
+      ],
+      "status": "short",
+      "explainer": "A joke name for Microsoft 365 during its long outage: because the service was down for about a day, people said it should be called \"Microsoft 364.\" It shows up as a plain one-liner, as an edited Microsoft logo with the 5 swapped for a 4, and in office-worker jokes about getting the day off from Outlook and Teams.",
+      "origin": "Per Know Your Meme, Microsoft 365 services including Outlook, Teams and Copilot went down for roughly a day starting November 12, 2026, and users on several platforms started calling it \"Microsoft 364.\" On X, @geerlingguy posted \"Microsoft364\" that evening (more than 3.4 million views per X's public counts) and @coddevz shared an edited logo. X's public post counts for the phrase went from 328 on November 12 to about 4,400 on November 13, outage jokes topped r/memes and r/dankmemes, and Know Your Meme cites TikTok outage videos with millions of views. Who first used the phrase hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/coddevz/status/2120998394621755628",
+      "kym_url": "https://knowyourmeme.com/memes/microsoft-364",
+      "sources": [
+        {
+          "name": "Know Your Meme: Microsoft 364",
+          "url": "https://knowyourmeme.com/memes/microsoft-364"
+        },
+        {
+          "name": "@geerlingguy on X",
+          "url": "https://x.com/geerlingguy/status/2120996546049368319"
+        },
+        {
+          "name": "@coddevz on X (edited logo)",
+          "url": "https://x.com/coddevz/status/2120998394621755628"
+        },
+        {
+          "name": "Reddit r/memes: 15 hours and counting",
+          "url": "https://www.reddit.com/r/memes/comments/1xv4i0w/15_hours_and_counting/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-14",
+      "checked": "2026-11-14T06:25:00-08:00"
+    },
     "mini-producer": {
       "name": "Mini Producer",
       "ids": [
@@ -1412,6 +1476,38 @@
       "origin_confirmed": false,
       "how_to_use": [],
       "checked": "2026-11-07T22:51:54-08:00"
+    },
+    "needed-a-kiss-today": {
+      "name": "Needed a Kiss Today",
+      "ids": [
+        "needed-a-kiss-drugs"
+      ],
+      "status": "short",
+      "explainer": "A fill-in-the-blank text joke: \"needed a kiss today but it's okay\" followed by whatever someone will settle for instead. The original ends with \"i'll do drugs\"; people repeat it word for word or swap in their own fallback, like a beer, weed, spaghetti or just going to sleep, as a deadpan way to joke about being lonely.",
+      "origin": "The wording that took off is a text post by @ayovxid on X on November 13, 2026, which passed 3 million views and about 140,000 likes within a day per X's public counts. X's public post counts for the phrase jumped from about 30 on November 12 to about 11,000 on November 13 as accounts reposted the line or changed the ending, and an X News story covered the wave the same day. Similar wording appeared on X before this post, so who first used the phrase hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [
+        "needed a kiss today but it’s okay i’ll do drugs"
+      ],
+      "source_url": "https://x.com/ayovxid/status/2121181394680385735",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@ayovxid on X",
+          "url": "https://x.com/ayovxid/status/2121181394680385735"
+        },
+        {
+          "name": "X News: Needed a Kiss, Chose Drugs: X's Relatable Meme Wave",
+          "url": "https://x.com/i/trending/2121303497404752116"
+        },
+        {
+          "name": "@phlavahxtra on X (variation)",
+          "url": "https://x.com/phlavahxtra/status/2121419424255086599"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-14",
+      "checked": "2026-11-14T06:25:00-08:00"
     },
     "newton-fourth-law": {
       "name": "Newton's Fourth Law of Motion",
