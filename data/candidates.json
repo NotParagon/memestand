@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-14",
+  "as_of": "2026-11-15",
   "candidates": [
     {
       "id": "affleck-i-voted-smoking",
@@ -166,7 +166,7 @@
         },
         "kym_editorial": true
       },
-      "notes": "KYM 15,146 views (Nov 6). TikTok @tr0v0n 1.4M views still the cited large post.",
+      "notes": "KYM 15,146 views (Nov 6). TikTok @tr0v0n 1.4M views still the cited large post. Nov 15 6AM PT: X recent counts for 'code rot'/'code rotted' about 250-370 posts a day Nov 8-14 UTC (314 on Nov 14); still active this week.",
       "headline_reviewed": true,
       "kym_url": "https://knowyourmeme.com/memes/code-rot-filter-yep-its-code-rotted-indeed",
       "credit": "posted by @tr0v0n on TikTok"
@@ -385,7 +385,6 @@
     {
       "id": "culkin-thousand-yard",
       "periods": [
-        "weekly",
         "monthly"
       ],
       "title": "MACAULAY CULKIN GOES AS THE 'THOUSAND-YARD STARE' MEME FOR HALLOWEEN",
@@ -420,7 +419,7 @@
           "via": "X API"
         }
       },
-      "notes": "17.01M views / 351.3K likes on @DiscussingFilm (X API, Nov 6 6AM PT). Aged out of daily; still weekly/monthly.",
+      "notes": "17.01M views / 351.3K likes on @DiscussingFilm (X API, Nov 6 6AM PT). Aged out of daily; still weekly/monthly. Nov 15 6AM PT: X recent counts for Culkin with 'thousand yard' 6 posts in the 7 days to Nov 15; inactive this week, so it leaves the weekly list (stays monthly).",
       "credit": "posted by @DiscussingFilm on X"
     },
     {
@@ -716,7 +715,7 @@
           "via": "YouTube video page"
         }
       },
-      "notes": "H3 cheating-allegation meme factory still on KYM Top Entries This Month (Nov 4); event page ~17,341 views. Keep attribution framing. Nov 4 reads (10am PT): TikTok @gmcnews 592K views; Instagram @kleinhila 319K likes; YouTube 'Victim card De-Klein'd' 359K views.",
+      "notes": "H3 cheating-allegation meme factory still on KYM Top Entries This Month (Nov 4); event page ~17,341 views. Keep attribution framing. Nov 4 reads (10am PT): TikTok @gmcnews 592K views; Instagram @kleinhila 319K likes; YouTube 'Victim card De-Klein'd' 359K views. Nov 15 6AM PT: X recent counts for 'ethan klein'/h3h3 about 250-460 posts a day Nov 8-14 UTC (299 on Nov 14); still active this week.",
       "first_seen_basis": "KYM entry published date",
       "headline_reviewed": true,
       "credit": "posted by @kleinhila on Instagram"
@@ -2505,9 +2504,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/accekid/status/2119342124143448127",
-          "views": 15503904,
-          "likes": 128870,
-          "checked": "2026-11-14",
+          "views": 15692384,
+          "likes": 129192,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
@@ -2547,9 +2546,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/loomie_my/status/2119273290099532286",
-          "views": 324270,
-          "likes": 26798,
-          "checked": "2026-11-13",
+          "views": 325792,
+          "likes": 26797,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
@@ -2658,9 +2657,9 @@
         "kym_views": 164111,
         "x": {
           "url": "https://x.com/buhlesrevenge/status/2119508047769010598",
-          "views": 3333377,
-          "likes": 127183,
-          "checked": "2026-11-13",
+          "views": 3340471,
+          "likes": 127165,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
@@ -2701,9 +2700,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/MILLY17h/status/2119703455568646224",
-          "views": 1455095,
-          "likes": 38846,
-          "checked": "2026-11-13",
+          "views": 1466887,
+          "likes": 38849,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
@@ -2748,9 +2747,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/olajiire101/status/2119863866217886004",
-          "views": 591262,
-          "likes": 19704,
-          "checked": "2026-11-13",
+          "views": 594863,
+          "likes": 19694,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
@@ -2797,9 +2796,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/Dayscd/status/2119910679402418346",
-          "views": 695912,
-          "likes": 31312,
-          "checked": "2026-11-13",
+          "views": 702675,
+          "likes": 31375,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
@@ -2845,9 +2844,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/killmyaffairs/status/2119897983047135307",
-          "views": 5938,
+          "views": 6038,
           "likes": 137,
-          "checked": "2026-11-14",
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
@@ -2923,9 +2922,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/timo_rf/status/2119604402164256843",
-          "views": 2688850,
-          "likes": 122789,
-          "checked": "2026-11-14",
+          "views": 2691277,
+          "likes": 122769,
+          "checked": "2026-11-15",
           "via": "X API"
         },
         "reddit": {
@@ -2943,7 +2942,7 @@
         }
       },
       "kym_url": "https://knowyourmeme.com/memes/events/nvidia-ceo-jensen-huang-chinese-spy-cheating-controversy",
-      "notes": "Edited still of the 'Democracy Manifest' / 'Succulent Chinese Meal' arrest clip with Jensen Huang's face on the man being arrested, captioned 'what is the charge? enjoying a succulent chinese spy?', posted by u/REAL__NOWHEREMAN on r/memes Nov 9 2026 (r/memes top-of-week #13 on Nov 10 1 PM PT). Part of a wider wave of memes about the reported affair and espionage allegations, per Know Your Meme (entry published Nov 9 2026): @timo_rf on X 'JENSEN! THATS NOT WHAT WE MEANT BY CHINESE MODELS!!!!!!!' (X API Nov 10 1 PM PT: 2,651,353 views / 122,527 likes), @SoveyX AI video 'Huang met Huang' (Nov 10, 902,892 views), and more r/memes and r/dankmemes posts on Nov 9-10. Owner-approved for the site Nov 10 2026 (Roger). The separate X 'I am NOT a Chinese spy' selfie trend is excluded and not part of this entry. On Nov 10 6 PM PT, Jensen spy memes held r/memes top-of-day #1 ('Everyone but me..', u/Average-Lemon) and #3 ('Billionaires got no chill', u/SAM_AIVEN). At 10 PM PT Nov 10, u/tropicbrownthunder's 'Chinese models vs Chinese Models' was r/memes top-of-day #5. At 9 AM PT Nov 11, 'Chinese models vs Chinese Models' had left the r/memes top-of-day feed; the best Jensen-story post on the day feeds was u/mrmaftah's 'Jensen's wife is carrying the entire US economy' at r/dankmemes top-of-day #11 (u/taraliman's 'Jensen in his Clinton era....' at #13). At 10 AM PT Nov 11, u/mrmaftah's post was r/dankmemes top-of-day #7 and u/taraliman's at #14; no Jensen-story post was on the r/memes top-of-day feed. Nov 12 6AM PT: still spreading; r/dankmemes top-of-day #2 ('Jensen's wife is carrying the entire US economy') plus about a dozen more Jensen posts in the r/dankmemes and r/memes day feeds (r/memes #3); Babylon Bee video 'Is your girlfriend a Chinese spy?' (209,181 views) and X News story 'Babylon Bee Meme Spots Chinese Spy Girlfriend Signs' (Nov 12) tie back to it. Nov 13 6AM PT: Jensen-story memes held r/memes top-of-day #1 (u/JhilmilKarta 'Atleast she got the money'), #2, #4, #6 and #7 plus about ten r/dankmemes day-feed posts (several are sexual and are not shown). The 'third affair' joke (investors saying they will wait for a 'third affair' before buying the NVIDIA dip) is counted here as part of the same wave: X recent counts for 'third affair' / '3rd affair' went from 157 posts (Nov 11 UTC) to 11,187 (Nov 12 UTC) and 8,272 on Nov 13 through about 14:20 UTC; 'A third affair?' posts by different users on r/memes (#16) and r/dankmemes (#11). X News stories Nov 13 ('AI Memes Turn Nvidia CEO Scandal into Global Satire', 'NVIDIA Investors Joke About Waiting for CEO's Third Affair Before Buying Dip'). YouTube: FING Extra 'CHEATING WALE MEMES ft. NVIDIA CEO' (57,887 views, Nov 12 PT). KYM entry page views 13,733 (Nov 13). Claims inside individual posts are not verified by MemeStand. Nov 14 6AM PT: X recent counts for 'chinese spy' with Jensen/Nvidia/Huang 40,590 (Nov 12 UTC), 35,425 (Nov 13), 6,188 Nov 14 through 14:11 UTC; r/memes top-of-day #7 'Jensen Huang ain't stopping' and #11 'Huang too many', r/dankmemes top-of-day #6 'How many affairs can one person have'; X News story on AI Office-parody videos of Huang (Nov 13); @timo_rf 2,688,850 views (X API Nov 14).",
+      "notes": "Edited still of the 'Democracy Manifest' / 'Succulent Chinese Meal' arrest clip with Jensen Huang's face on the man being arrested, captioned 'what is the charge? enjoying a succulent chinese spy?', posted by u/REAL__NOWHEREMAN on r/memes Nov 9 2026 (r/memes top-of-week #13 on Nov 10 1 PM PT). Part of a wider wave of memes about the reported affair and espionage allegations, per Know Your Meme (entry published Nov 9 2026): @timo_rf on X 'JENSEN! THATS NOT WHAT WE MEANT BY CHINESE MODELS!!!!!!!' (X API Nov 10 1 PM PT: 2,651,353 views / 122,527 likes), @SoveyX AI video 'Huang met Huang' (Nov 10, 902,892 views), and more r/memes and r/dankmemes posts on Nov 9-10. Owner-approved for the site Nov 10 2026 (Roger). The separate X 'I am NOT a Chinese spy' selfie trend is excluded and not part of this entry. On Nov 10 6 PM PT, Jensen spy memes held r/memes top-of-day #1 ('Everyone but me..', u/Average-Lemon) and #3 ('Billionaires got no chill', u/SAM_AIVEN). At 10 PM PT Nov 10, u/tropicbrownthunder's 'Chinese models vs Chinese Models' was r/memes top-of-day #5. At 9 AM PT Nov 11, 'Chinese models vs Chinese Models' had left the r/memes top-of-day feed; the best Jensen-story post on the day feeds was u/mrmaftah's 'Jensen's wife is carrying the entire US economy' at r/dankmemes top-of-day #11 (u/taraliman's 'Jensen in his Clinton era....' at #13). At 10 AM PT Nov 11, u/mrmaftah's post was r/dankmemes top-of-day #7 and u/taraliman's at #14; no Jensen-story post was on the r/memes top-of-day feed. Nov 12 6AM PT: still spreading; r/dankmemes top-of-day #2 ('Jensen's wife is carrying the entire US economy') plus about a dozen more Jensen posts in the r/dankmemes and r/memes day feeds (r/memes #3); Babylon Bee video 'Is your girlfriend a Chinese spy?' (209,181 views) and X News story 'Babylon Bee Meme Spots Chinese Spy Girlfriend Signs' (Nov 12) tie back to it. Nov 13 6AM PT: Jensen-story memes held r/memes top-of-day #1 (u/JhilmilKarta 'Atleast she got the money'), #2, #4, #6 and #7 plus about ten r/dankmemes day-feed posts (several are sexual and are not shown). The 'third affair' joke (investors saying they will wait for a 'third affair' before buying the NVIDIA dip) is counted here as part of the same wave: X recent counts for 'third affair' / '3rd affair' went from 157 posts (Nov 11 UTC) to 11,187 (Nov 12 UTC) and 8,272 on Nov 13 through about 14:20 UTC; 'A third affair?' posts by different users on r/memes (#16) and r/dankmemes (#11). X News stories Nov 13 ('AI Memes Turn Nvidia CEO Scandal into Global Satire', 'NVIDIA Investors Joke About Waiting for CEO's Third Affair Before Buying Dip'). YouTube: FING Extra 'CHEATING WALE MEMES ft. NVIDIA CEO' (57,887 views, Nov 12 PT). KYM entry page views 13,733 (Nov 13). Claims inside individual posts are not verified by MemeStand. Nov 14 6AM PT: X recent counts for 'chinese spy' with Jensen/Nvidia/Huang 40,590 (Nov 12 UTC), 35,425 (Nov 13), 6,188 Nov 14 through 14:11 UTC; r/memes top-of-day #7 'Jensen Huang ain't stopping' and #11 'Huang too many', r/dankmemes top-of-day #6 'How many affairs can one person have'; X News story on AI Office-parody videos of Huang (Nov 13); @timo_rf 2,688,850 views (X API Nov 14). Nov 15 6AM PT: X recent counts for 'chinese spy' with Jensen/Nvidia/succulent 6,701 (Nov 12 UTC), 4,142 (Nov 13), 1,811 (Nov 14), 524 Nov 15 through 14:00 UTC; r/memes top-of-day #7 'NVIDIA: The real meaning of parallel processing' (Nov 14 feed); @timo_rf 2,691,277 views (X API Nov 15).",
       "headline_reviewed": true,
       "credit": "posted by u/REAL__NOWHEREMAN on r/memes"
     },
@@ -2986,13 +2985,13 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/miensha00/status/2119869530327732250",
-          "views": 44272622,
-          "likes": 558860,
-          "checked": "2026-11-14",
+          "views": 44346592,
+          "likes": 558768,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
-      "notes": "Short looping GIF of an orange-and-white cat standing on its hind legs on a wet night-time street, swinging its front paws like it is boxing. @miensha00 posted it Nov 9 19:07 UTC with a Spanish caption saying they had learned to make GIF stickers from a TikTok tutorial (X API Nov 10 3PM PT: 36,288,453 views / 550,644 likes / 1,187 quotes). On Nov 10 the same GIF spread across X in many languages as people realized they could copy a GIF from a post and reuse it (@srdelaSandia reposted it, 1,390,342 views), with separate accounts posting their own 'I didn't know you could copy GIFs' captions, how-to replies, complaint posts and an 'anti copy gif cat' parody. X News story 'Orange Cat GIF Becomes WhatsApp Sticker Favorite' (Nov 10). Where the clip was first filmed or posted is not confirmed. Nov 13 6AM PT: X recent counts for 'copy the gif' / 'copy gif(s)' were 11,570 posts (Nov 10 UTC), 75,739 (Nov 11), 9,645 (Nov 12) and 569 on Nov 13 through about 14:20 UTC, so the wave is fading; @miensha00 44,183,537 views / 558,925 likes (X API Nov 13). Nov 14 6AM PT: X recent counts 75,739 (Nov 11 UTC), 9,634 (Nov 12), 760 (Nov 13), 127 Nov 14 through 14:15 UTC; kept on the daily list only because fewer than 10 memes qualify within 36 hours.",
+      "notes": "Short looping GIF of an orange-and-white cat standing on its hind legs on a wet night-time street, swinging its front paws like it is boxing. @miensha00 posted it Nov 9 19:07 UTC with a Spanish caption saying they had learned to make GIF stickers from a TikTok tutorial (X API Nov 10 3PM PT: 36,288,453 views / 550,644 likes / 1,187 quotes). On Nov 10 the same GIF spread across X in many languages as people realized they could copy a GIF from a post and reuse it (@srdelaSandia reposted it, 1,390,342 views), with separate accounts posting their own 'I didn't know you could copy GIFs' captions, how-to replies, complaint posts and an 'anti copy gif cat' parody. X News story 'Orange Cat GIF Becomes WhatsApp Sticker Favorite' (Nov 10). Where the clip was first filmed or posted is not confirmed. Nov 13 6AM PT: X recent counts for 'copy the gif' / 'copy gif(s)' were 11,570 posts (Nov 10 UTC), 75,739 (Nov 11), 9,645 (Nov 12) and 569 on Nov 13 through about 14:20 UTC, so the wave is fading; @miensha00 44,183,537 views / 558,925 likes (X API Nov 13). Nov 14 6AM PT: X recent counts 75,739 (Nov 11 UTC), 9,634 (Nov 12), 760 (Nov 13), 127 Nov 14 through 14:15 UTC; kept on the daily list only because fewer than 10 memes qualify within 36 hours. Nov 15 6AM PT: X recent counts for 'copy the gif'/'copy gif(s)' 325 (Nov 12 UTC), 74 (Nov 13), 42 (Nov 14), 27 Nov 15 through 14:00 UTC; @miensha00 44,346,592 views (X API Nov 15).",
       "headline_reviewed": true,
       "credit": "posted by @miensha00 on X"
     },
@@ -3035,9 +3034,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/ItsPzuh/status/2120044461447065802",
-          "views": 2097968,
-          "likes": 8217,
-          "checked": "2026-11-14",
+          "views": 2133440,
+          "likes": 8224,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
@@ -3087,9 +3086,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/MKBHD/status/2120336655773241781",
-          "views": 1998256,
-          "likes": 77468,
-          "checked": "2026-11-14",
+          "views": 2012598,
+          "likes": 77581,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
@@ -3136,9 +3135,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/AyoShinobi/status/2120194548659810454",
-          "views": 23099125,
-          "likes": 114802,
-          "checked": "2026-11-14",
+          "views": 23121171,
+          "likes": 114800,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
@@ -3193,9 +3192,9 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/oluwayeml/status/2120394283538899167",
-          "views": 8137803,
-          "likes": 26019,
-          "checked": "2026-11-14",
+          "views": 8179490,
+          "likes": 25999,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
@@ -3205,7 +3204,6 @@
     {
       "id": "come-visit-me-sick-stork",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -3241,13 +3239,13 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/_papawere/status/2120456431228850359",
-          "views": 833611,
-          "likes": 21177,
-          "checked": "2026-11-14",
+          "views": 835316,
+          "likes": 21164,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
-      "notes": "Video of a large stork (X News says a marabou stork) lying on its back in shallow water with wings spread and legs up, as if collapsed. @_papawere (PRINCIPAL, Uganda) posted it Nov 11 09:59 UTC captioned 'Come and visit me I am sick' (X API Nov 12 6AM PT: 820,427 views / 21,123 likes / 375 quotes). Other accounts reposted the same video with their own captions (@KomugishaPeace 'This bird must be male', @VideosVuvu 'Come see me, i am dying', @ntaaribi 'the best trick ever'), joking it is faking illness for attention. X News story 'Bird Plays Dead in Water, Draws Meme Crowds' (Nov 11). Who filmed it is not confirmed. Nov 14 6AM PT: X recent counts for the caption with stork/bird 3,888 (Nov 11 UTC), 357 (Nov 12), 207 (Nov 13); @_papawere 833,611 views (X API Nov 14).",
+      "notes": "Video of a large stork (X News says a marabou stork) lying on its back in shallow water with wings spread and legs up, as if collapsed. @_papawere (PRINCIPAL, Uganda) posted it Nov 11 09:59 UTC captioned 'Come and visit me I am sick' (X API Nov 12 6AM PT: 820,427 views / 21,123 likes / 375 quotes). Other accounts reposted the same video with their own captions (@KomugishaPeace 'This bird must be male', @VideosVuvu 'Come see me, i am dying', @ntaaribi 'the best trick ever'), joking it is faking illness for attention. X News story 'Bird Plays Dead in Water, Draws Meme Crowds' (Nov 11). Who filmed it is not confirmed. Nov 14 6AM PT: X recent counts for the caption with stork/bird 3,888 (Nov 11 UTC), 357 (Nov 12), 207 (Nov 13); @_papawere 833,611 views (X API Nov 14). Nov 15 6AM PT: X recent counts for 'visit me i am sick'/'come see me i am dying' 21 (Nov 12 UTC), 1 (Nov 13), 2 (Nov 14), 12 Nov 15 through 14:00 UTC; wave has faded, so it leaves the daily list (stays weekly/monthly).",
       "credit": "posted by @_papawere on X"
     },
     {
@@ -3302,13 +3300,13 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/o7Saya/status/2120228473864073713",
-          "views": 60869,
-          "likes": 1500,
-          "checked": "2026-11-14",
+          "views": 61654,
+          "likes": 1504,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
-      "notes": "Quote-chain phrasal template: 'Don't flirt with me' followed by an over-the-top reason (clingy, constant messages, Godzilla marathons, 'I'm gay'). @o7Saya Nov 10 18:53 UTC 'Don't flirt with me I'll message you constantly and take up all your free time' (X API Nov 12: 49,852 views / 1,455 likes / 46 quotes), quoting @DandereEve Nov 10 08:08 UTC (28,567 views / 27 quotes), which quotes a Nov 15 2023 post by @KamaLeyonVT, which quotes a Nov 14 2023 post by @RainovaVT ('Don't flirt with me / I'm a little delulu', 31,075 views). Many VTuber accounts added their own versions Nov 11-12; X recent counts for the phrase roughly doubled day over day. X News story 'Don't Flirt With Me Meme Trend Takes Off' (Nov 12). Some variations are sexual; only the clean @o7Saya post is shown. Who first used the phrase is not confirmed. Nov 13 6AM PT: X recent counts 947 (Nov 11 UTC), 1,088 (Nov 12), 559 Nov 13 through about 14:20 UTC; second X News story 'Don't Flirt With Me Posts Share Witty Boundaries' (Nov 13). @o7Saya 60,213 views / 1,501 likes (X API Nov 13). Nov 14 6AM PT: X recent counts 1,085 (Nov 12 UTC), 764 (Nov 13), 214 Nov 14 through 14:11 UTC; third X News story 'Don't Flirt With Me Trend Shares Comedic Warnings' (updated Nov 14); new variations from @ShioriTamayomi, @Cloveronia, @yorkichuuvt. @o7Saya 60,869 views (X API Nov 14).",
+      "notes": "Quote-chain phrasal template: 'Don't flirt with me' followed by an over-the-top reason (clingy, constant messages, Godzilla marathons, 'I'm gay'). @o7Saya Nov 10 18:53 UTC 'Don't flirt with me I'll message you constantly and take up all your free time' (X API Nov 12: 49,852 views / 1,455 likes / 46 quotes), quoting @DandereEve Nov 10 08:08 UTC (28,567 views / 27 quotes), which quotes a Nov 15 2023 post by @KamaLeyonVT, which quotes a Nov 14 2023 post by @RainovaVT ('Don't flirt with me / I'm a little delulu', 31,075 views). Many VTuber accounts added their own versions Nov 11-12; X recent counts for the phrase roughly doubled day over day. X News story 'Don't Flirt With Me Meme Trend Takes Off' (Nov 12). Some variations are sexual; only the clean @o7Saya post is shown. Who first used the phrase is not confirmed. Nov 13 6AM PT: X recent counts 947 (Nov 11 UTC), 1,088 (Nov 12), 559 Nov 13 through about 14:20 UTC; second X News story 'Don't Flirt With Me Posts Share Witty Boundaries' (Nov 13). @o7Saya 60,213 views / 1,501 likes (X API Nov 13). Nov 14 6AM PT: X recent counts 1,085 (Nov 12 UTC), 764 (Nov 13), 214 Nov 14 through 14:11 UTC; third X News story 'Don't Flirt With Me Trend Shares Comedic Warnings' (updated Nov 14); new variations from @ShioriTamayomi, @Cloveronia, @yorkichuuvt. @o7Saya 60,869 views (X API Nov 14). Nov 15 6AM PT: X recent counts 567 (Nov 12 UTC), 267 (Nov 13), 176 (Nov 14), 39 Nov 15 through 14:00 UTC; @o7Saya 61,654 views (X API Nov 15).",
       "credit": "posted by @o7Saya on X"
     },
     {
@@ -3424,13 +3422,13 @@
         "x_news": true,
         "x": {
           "url": "https://x.com/ayovxid/status/2121181394680385735",
-          "views": 3010433,
-          "likes": 139999,
-          "checked": "2026-11-14",
+          "views": 4030000,
+          "likes": 188201,
+          "checked": "2026-11-15",
           "via": "X API"
         }
       },
-      "notes": "Text post by @ayovxid (ayo) Nov 13 2026 10:00 UTC: 'needed a kiss today but it’s okay i’ll do drugs' (X API Nov 14 6AM PT: 3,010,433 views / 139,999 likes / 1,218 quotes). Thousands of accounts reposted the line word for word or swapped the ending (alcohol, weed, a beer, spaghetti, sleep). X recent counts for the phrase: 30 posts (Nov 12 UTC), 10,971 (Nov 13), 8,375 Nov 14 through 14:11 UTC. X News story 'Needed a Kiss, Chose Drugs: X's Relatable Meme Wave' (Nov 13). Shown as an attributed post card of the original post. @ayovxid's post is the earliest found with this wording.",
+      "notes": "Text post by @ayovxid (ayo) Nov 13 2026 10:00 UTC: 'needed a kiss today but it’s okay i’ll do drugs' (X API Nov 14 6AM PT: 3,010,433 views / 139,999 likes / 1,218 quotes). Thousands of accounts reposted the line word for word or swapped the ending (alcohol, weed, a beer, spaghetti, sleep). X recent counts for the phrase: 30 posts (Nov 12 UTC), 10,971 (Nov 13), 8,375 Nov 14 through 14:11 UTC. X News story 'Needed a Kiss, Chose Drugs: X's Relatable Meme Wave' (Nov 13). Shown as an attributed post card of the original post. @ayovxid's post is the earliest found with this wording. Nov 15 6AM PT: @ayovxid 4,030,000 views / 188,201 likes (X API Nov 15).",
       "credit": "posted by @ayovxid on X",
       "headline_reviewed": true
     },
@@ -3494,9 +3492,9 @@
         "kym_views": 831,
         "x": {
           "url": "https://x.com/geerlingguy/status/2120996546049368319",
-          "views": 3419006,
-          "likes": 85905,
-          "checked": "2026-11-14",
+          "views": 3487805,
+          "likes": 86334,
+          "checked": "2026-11-15",
           "via": "X API"
         },
         "tiktok": {
@@ -3515,7 +3513,7 @@
         }
       },
       "kym_url": "https://knowyourmeme.com/memes/microsoft-364",
-      "notes": "Per KYM, Microsoft 365 (Outlook, Teams, Copilot) had a long outage starting Nov 12 2026 and users began calling it 'Microsoft 364', joking the suite lost a day, and shared edited logos with the 5 changed to a 4. @coddevz posted the edited 'Microsoft 364' logo Nov 12 21:53 UTC (18,243 views); @geerlingguy posted 'Microsoft364' Nov 12 21:45 UTC (X API Nov 14: 3,419,006 views / 85,905 likes). Outage jokes on TikTok cited by KYM: @alfonsofoster_ 4.5M views, @caro.sidequest 3.4M, @whitleylawfirm 2.3M (TikTok pages, Nov 14). X recent counts for 'microsoft 364' 328 (Nov 12 UTC), 4,422 (Nov 13), 377 Nov 14 through 14:12 UTC. Reddit: r/memes top-of-day #1 '15 hours and counting' and #6 'Microsoft vibes right now', r/dankmemes top-of-day #1 'I f-ing hate cloud saas' and #10 'Gonna be MS 360 at the current rate'. X News story ties the outage jokes to the Nov 13 FAA ground stop (Microsoft denied a link, per X News). Who first said 'Microsoft 364' is not confirmed.",
+      "notes": "Per KYM, Microsoft 365 (Outlook, Teams, Copilot) had a long outage starting Nov 12 2026 and users began calling it 'Microsoft 364', joking the suite lost a day, and shared edited logos with the 5 changed to a 4. @coddevz posted the edited 'Microsoft 364' logo Nov 12 21:53 UTC (18,243 views); @geerlingguy posted 'Microsoft364' Nov 12 21:45 UTC (X API Nov 14: 3,419,006 views / 85,905 likes). Outage jokes on TikTok cited by KYM: @alfonsofoster_ 4.5M views, @caro.sidequest 3.4M, @whitleylawfirm 2.3M (TikTok pages, Nov 14). X recent counts for 'microsoft 364' 328 (Nov 12 UTC), 4,422 (Nov 13), 377 Nov 14 through 14:12 UTC. Reddit: r/memes top-of-day #1 '15 hours and counting' and #6 'Microsoft vibes right now', r/dankmemes top-of-day #1 'I f-ing hate cloud saas' and #10 'Gonna be MS 360 at the current rate'. X News story ties the outage jokes to the Nov 13 FAA ground stop (Microsoft denied a link, per X News). Who first said 'Microsoft 364' is not confirmed. Nov 15 6AM PT: X recent counts for 'microsoft 364'/'microsoft364' 261 (Nov 12 UTC), 2,815 (Nov 13), 274 (Nov 14), 40 Nov 15 through 14:00 UTC; @geerlingguy 3,487,805 views (X API Nov 15).",
       "credit": "posted by @coddevz on X"
     },
     {
@@ -3581,8 +3579,69 @@
         }
       },
       "kym_url": "https://knowyourmeme.com/memes/i-got-so-mad-trend-meme",
-      "notes": "Per KYM (entry published Nov 13 2026): TikTok users post absurd 'I got so mad I...' brags of impossible strength or petty revenge, often as comment slideshows with reaction images; earliest known example is an Oct 31 2026 TikTok slideshow by elisha67865 (no longer readable). Compilations: @foolybob part 2 Nov 8 (7.1M views / 1.1M likes, TikTok page Nov 14), @kfc5.5 Nov 5 (3.1M views), @sensei.klx Nov 11 (1.5M views, #igotsomad). YouTube 'I Got So Mad Trend GOT WORSE' by RICHLEV (188,997 views about 13 hours after upload, Nov 14). Little activity on X (about 10-20 posts a day for the phrase).",
+      "notes": "Per KYM (entry published Nov 13 2026): TikTok users post absurd 'I got so mad I...' brags of impossible strength or petty revenge, often as comment slideshows with reaction images; earliest known example is an Oct 31 2026 TikTok slideshow by elisha67865 (no longer readable). Compilations: @foolybob part 2 Nov 8 (7.1M views / 1.1M likes, TikTok page Nov 14), @kfc5.5 Nov 5 (3.1M views), @sensei.klx Nov 11 (1.5M views, #igotsomad). YouTube 'I Got So Mad Trend GOT WORSE' by RICHLEV (188,997 views about 13 hours after upload, Nov 14). Little activity on X (about 10-20 posts a day for the phrase). Nov 15 6AM PT: X recent counts for 'i got so mad' about 30-40 posts a day (31 on Nov 14 UTC, 31 Nov 15 through 14:00 UTC).",
       "credit": "trend first posted by elisha67865 on TikTok, per KYM (post no longer available)"
+    },
+    {
+      "id": "jester-liking-a-girl",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "name": "Liking a Girl More Than She Likes You",
+      "title": "'LIKING A GIRL MORE THAN SHE LIKES YOU': THE JESTER DANCING FOR A BORED QUEEN GIF BECOMES X'S ONE-SIDED-CRUSH MEME",
+      "source_url": "https://x.com/2real_melo/status/2121649927705010561",
+      "source_name": "X / @2real_melo",
+      "image_url": "https://pbs.twimg.com/tweet_video_thumb/HXGdWm1WwAA4iwU.jpg",
+      "first_seen": "2026-11-14",
+      "first_seen_basis": "Largest post found for this caption: @2real_melo Nov 14 2026 17:02 UTC (jester GIF). The jester GIF itself is an older template (KYM entry published Dec 2025; earliest notable meme Aug 13 2025 per KYM). Who first paired this caption with the GIF is not confirmed.",
+      "also": [
+        {
+          "name": "X / @2real_melo (1.3M views)",
+          "url": "https://x.com/2real_melo/status/2121649927705010561"
+        },
+        {
+          "name": "X / @Tsukkinew (Portuguese quote-post, 132K views)",
+          "url": "https://x.com/Tsukkinew/status/2121744898055410131"
+        },
+        {
+          "name": "X / @Mavi084 ('And I'll do it again...', own GIF)",
+          "url": "https://x.com/Mavi084/status/2121683736378892629"
+        },
+        {
+          "name": "X / @chipkaliihuu ('liking a guy more than he likes you')",
+          "url": "https://x.com/chipkaliihuu/status/2121860934108959067"
+        },
+        {
+          "name": "X News (Clown Makeup GIFs Capture One-Sided Crush Heartache)",
+          "url": "https://x.com/i/trending/2121825066178560107"
+        },
+        {
+          "name": "Know Your Meme: Jester Dancing for Queen GIF",
+          "url": "https://knowyourmeme.com/memes/jester-dancing-for-queen-gif"
+        }
+      ],
+      "ev": {
+        "platforms": [
+          "X",
+          "Know Your Meme"
+        ],
+        "kym": true,
+        "kym_views": 24898,
+        "x_news": true,
+        "x": {
+          "url": "https://x.com/2real_melo/status/2121649927705010561",
+          "views": 1300230,
+          "likes": 86436,
+          "checked": "2026-11-15",
+          "via": "X API"
+        }
+      },
+      "kym_url": "https://knowyourmeme.com/memes/jester-dancing-for-queen-gif",
+      "notes": "@2real_melo posted the GIF of a 3D-animated jester dancing for a bored queen on Nov 14 2026 17:02 UTC captioned 'liking a girl more than she likes you' (X API Nov 15 6AM PT: 1,300,230 views / 86,436 likes). Others reused the caption with their own GIFs or flipped it ('liking a guy more than he likes you', 'Liking someone more than they like you'), and @Tsukkinew quote-posted it with a Portuguese caption (132,295 views). X News story 'Clown Makeup GIFs Capture One-Sided Crush Heartache' (Nov 15). Per KYM, the jester GIF is 3D clipart by Animation Factory and has been a caption template since 2025 (KYM page views 24,898, Nov 15). Who first paired this caption with the GIF is not confirmed.",
+      "credit": "posted by @2real_melo on X",
+      "headline_reviewed": true
     }
   ]
 }
