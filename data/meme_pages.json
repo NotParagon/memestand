@@ -27,6 +27,44 @@
       "written": "2026-11-05",
       "checked": "2026-11-07T22:51:54-08:00"
     },
+    "after-work-time-to-relax": {
+      "name": "After Work, Time to Relax",
+      "ids": [
+        "after-work-time-to-relax"
+      ],
+      "status": "short",
+      "explainer": "A photo of a worn kitchen table with bread, butter, cold cuts, a mug and an old TV glowing in the corner, captioned \"After work, time to relax\", became a template for showing what an ordinary evening looks like where you live. People post their own country, city or state \"version\" with the same caption, from a Canadian take with poutine and hockey on TV to Philadelphia and Singapore editions. The joke is part nostalgia, part friendly national stereotype.",
+      "origin": "X user @KuraginAnatol posted the photo on November 13, 2026 with the Polish caption \"Po robocie, czas na relaks\" (\"After work, time to relax\"). By November 16 it had about 15.8 million views per X's public counts, and replies called it the most Slavic image ever.\n\nFrom November 14 and 15, users began quote-posting it with their own versions using the same caption, including an Argentine version (about 1.8 million views), a Chinese version (about 629,000), a Philadelphia edition (about 354,000), a Canadian version (about 204,000) and a Singapore version, plus many French, Dutch, Moroccan, Greek and US-state takes. Some of the remakes are AI-generated images. An X News story on November 15 described the wave. Whether the photo first appeared somewhere before @KuraginAnatol's post hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/KuraginAnatol/status/2121284442056798569",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@KuraginAnatol on X",
+          "url": "https://x.com/KuraginAnatol/status/2121284442056798569"
+        },
+        {
+          "name": "@kasen728 on X (Chinese version)",
+          "url": "https://x.com/kasen728/status/2121913869904093552"
+        },
+        {
+          "name": "@eakinsovaltine on X (Philadelphia edition)",
+          "url": "https://x.com/eakinsovaltine/status/2122042291930214844"
+        },
+        {
+          "name": "@ezgicodes on X (Canadian version)",
+          "url": "https://x.com/ezgicodes/status/2121990626501890374"
+        },
+        {
+          "name": "X News: Polish Kitchen Table Photo Sparks Global After-Work Relaxation Shares",
+          "url": "https://x.com/i/trending/2121751100214624297"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-16",
+      "checked": "2026-11-16T06:00:00-08:00"
+    },
     "ai-artists-hoverboard": {
       "name": "AI Artists Hoverboard",
       "ids": [
@@ -450,6 +488,40 @@
       "related": [],
       "written": "2026-11-04",
       "checked": "2026-11-07T22:51:54-08:00"
+    },
+    "broke-cat-wallet-gif": {
+      "name": "Broke Cat Wallet GIF",
+      "ids": [
+        "broke-cat-wallet-gif"
+      ],
+      "status": "short",
+      "explainer": "A GIF of a tabby cat with cartoon yellow gloved hands holding out an empty black wallet, looking up as if asking for money. People post it to say they are broke: after paying bills, after festival spending, or after a bad day in crypto. It is also sent as a joking way to ask a parent or partner for cash.",
+      "origin": "The biggest post found is a November 14, 2026 X post of the GIF by @catincrisis__, which had about 14.5 million views and 404,000 likes per X's public counts on November 16. Over the next day users reposted the GIF with their own captions, such as \"Broke and mad about it\" and jokes about the end of festival season, and two X News stories on November 15 described it as a reaction to empty wallets. Who first made the edited GIF hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/catincrisis__/status/2121548192168780224",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@catincrisis__ on X",
+          "url": "https://x.com/catincrisis__/status/2121548192168780224"
+        },
+        {
+          "name": "@TheSignalX_ on X",
+          "url": "https://x.com/TheSignalX_/status/2121857955012448508"
+        },
+        {
+          "name": "X News: Begging Tabby Cat Meme Captures Post-Festival Broke Blues",
+          "url": "https://x.com/i/trending/2121981413138296952"
+        },
+        {
+          "name": "X News: Grumpy Tabby Cat Meme Captures Empty Wallet Blues",
+          "url": "https://x.com/i/trending/2121706548854407424"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-16",
+      "checked": "2026-11-16T06:00:00-08:00"
     },
     "bunker-bulking": {
       "name": "Bunker Bulking",
