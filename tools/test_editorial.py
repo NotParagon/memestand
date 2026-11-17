@@ -138,6 +138,18 @@ def test_store_captions_match_a_direct_post_record():
             "https://x.com/2THUQQ/status/2118617523708965188",
         ),
         (
+            "dont-flirt-with-me",
+            "Don't flirt with me I'll message you constantly and take up all your free time",
+            "card_text",
+            "https://x.com/o7Saya/status/2120228473864073713",
+        ),
+        (
+            "needed-a-kiss-today",
+            "needed a kiss today but it’s okay i’ll do drugs",
+            "card_text",
+            "https://x.com/ayovxid/status/2121181394680385735",
+        ),
+        (
             "spongebob-is-friend-with-patrick",
             "Love him or hate him, SpongeBob is friend with Patrick so if you wanna watch the show he’s gonna be there. sorry.",
             "card_text",
@@ -428,20 +440,25 @@ def test_built_pages_match_the_rules():
     nov7 = (ROOT / "archive" / "2026-11-07.html").read_text()
     snap = (ROOT / "data" / "archive" / "2026-11-07.json").read_text()
 
-    originals = _hrefs(today, "View original")
-    assert originals, "expected at least one View original link"
-    assert all("knowyourmeme.com" not in u for u in originals)
+    # Live lists fold the outbound button into the via-line. The labeled button stays on explainers and archives.
+    assert "View original" not in today
+    assert "View credited post" not in today
+    assert 'class="rights"' not in today
+    assert "<summary>Sources &amp; details</summary>" not in today
+    assert 'class="dek"' not in today
+    assert 'class="zone zone-src"' not in today
+    assert 'class="zone zone-more"' not in today
+    assert 'class="zone zone-lead"' in today and 'class="zone zone-by"' in today
+    assert today.count("shown in small form for ranking and commentary") == 1
     # Fancy Cafe left the daily list and stays on the weekly list. Do not put it back on daily.
     week = (ROOT / "trending-memes-this-week" / "index.html").read_text()
-    assert TIKTOK in _hrefs(week, "View original")
+    assert TIKTOK in week
+    assert ">@leehoustonx</a> on TikTok" in week
+    assert "View original" not in week
     sentence = build.evidence_sentence(build.EVIDENCE["fancy-cafe"])
-    assert "Know Your Meme explainer" in week
-    assert "<summary>Sources &amp; details</summary>" in today
-    assert 'class="zone zone-lead"' in today and 'class="zone zone-hist"' in today
-    assert 'class="zone zone-by"' in today and 'class="zone zone-src"' in today
-    assert 'class="zone zone-more"' in today
-    assert sentence in week and "11.1M" not in week
-    assert "AI-generated video" in week
+    assert "Know Your Meme explainer" not in week
+    assert sentence not in week and "11.1M" not in week
+    assert "AI-generated video" not in week
     assert "AI-generated video" not in today
     # The page stamp is the memes.json build time, not an evidence observation.
     assert f'datetime="{build.ISO}"' in today
@@ -742,8 +759,8 @@ def test_hanging_rank_replaces_the_filled_badge():
         assert text.count('class="sr-only">Rank ') == len(marks)
         assert "grid-template-columns:3.15rem" in text
         assert "font-size:2.55rem" in text
-        if 'class="top"' in text:
-            top = text.split('class="top"', 1)[1].split("<main", 1)[0]
+        if 'class="top' in text:
+            top = text.split('class="top', 1)[1].split("<main", 1)[0]
             assert 'class="rk"' not in top, path
             if "<img" in top and 'class="hl' in top:
                 assert top.index("<img") < top.index('class="hl'), path
@@ -751,9 +768,14 @@ def test_hanging_rank_replaces_the_filled_badge():
     lead, _, _lists = home.partition("<main")
     assert 'class="rk"' not in lead
     # The lead story has no hanging rank and stays image-first.
-    top = lead.split('class="top"', 1)[1]
+    top = lead.split('class="top', 1)[1]
     assert 'class="rk"' not in top
-    assert top.index("<img") < top.index('class="hl') < top.index('class="dek"')
+    # Image, then the small label and headline, then one credit line. No blurb.
+    assert top.index("<img") < top.index('class="hl') < top.index("TODAY'S LEAD MEME")
+    assert top.index("TODAY'S LEAD MEME") < top.index('class="credit"')
+    assert 'class="dek"' not in top
+    assert "Sources &amp; details" not in top
+    assert 'class="rights"' not in top
     for path in pages:
         _assert_ranked_cards(path.read_text(), path)
     week = (ROOT / "trending-memes-this-week" / "index.html").read_text()
@@ -764,6 +786,113 @@ def test_hanging_rank_replaces_the_filled_badge():
     _assert_ranked_cards(nov5_text, ROOT / "archive" / "2026-11-05.html")
     today = (ROOT / "top-memes-today" / "index.html").read_text()
     assert "postcard" in today and 'aria-hidden="true">6</span>' in today
+
+
+def test_via_credit_is_one_linked_line():
+    reddit = "https://www.reddit.com/r/dankmemes/comments/1xxx32i/imagine_campaigning_for_half_a_decade_just_to/"
+    line = build.via_credit({
+        "id": "robert-pattinson-james-bond",
+        "credit": "posted by u/RealHarambae on r/dankmemes",
+        "source_url": reddit,
+        "source_name": "Reddit",
+    })
+    assert line.startswith('<p class="credit">via ')
+    assert f'<a href="{reddit}" target="_blank" rel="noopener">u/RealHarambae</a> on Reddit' in line
+    assert "View credited post" not in line
+    assert " on Reddit" in line
+    assert "on r/" not in line
+    assert "©" not in line
+    xline = build.via_credit({
+        "id": "x",
+        "credit": "posted by @coddevz on X",
+        "source_url": XPOST,
+    })
+    assert f'<a href="{XPOST}" target="_blank" rel="noopener">@coddevz</a> on X' in xline
+    bare = build.via_credit({
+        "id": "trend",
+        "credit": "trend first posted by elisha67865 on TikTok, per KYM (post no longer available)",
+        "source_url": KYM,
+    })
+    assert ">elisha67865</a> on TikTok" in bare
+    assert KYM in bare
+    kym = build.via_credit({
+        "id": "kym",
+        "credit": "image via Know Your Meme; original creators as documented there",
+        "source_url": KYM,
+    })
+    assert ">Know Your Meme</a>" in kym
+    assert "via via" not in kym
+    anon = build.via_credit({
+        "id": "anon",
+        "credit": "posted by a Reddit user on r/memes",
+        "source_url": "https://www.reddit.com/r/memes/comments/abc/title/",
+    })
+    assert ">Reddit</a>" in anon
+    assert ">a</a>" not in anon
+
+
+def test_plain_lists_keep_sources_on_the_explainer():
+    """Every live list card is rank, image, title, and one credit. The removed bands stay on /meme/<slug>/."""
+    import json
+    pages = [
+        ROOT / "index.html",
+        ROOT / "top-memes-today" / "index.html",
+        ROOT / "trending-memes-this-week" / "index.html",
+        ROOT / "best-memes-this-month" / "index.html",
+    ]
+    doc = json.loads((ROOT / "data" / "memes.json").read_text())
+    store = json.loads((ROOT / "data" / "meme_pages.json").read_text())["memes"]
+    id_to_slug = {i: sl for sl, ent in store.items() for i in ent.get("ids") or []}
+    seen = set()
+    for path in pages:
+        text = path.read_text()
+        assert 'class="plain"' in text, path
+        assert "View original" not in text, path
+        assert "View credited post" not in text, path
+        assert 'class="rights"' not in text, path
+        assert 'class="dek"' not in text, path
+        assert "Sources &amp; details" not in text, path
+        assert 'class="zone zone-src"' not in text, path
+        assert text.count("shown in small form for ranking and commentary") == 1, path
+        assert 'href="top-memes-today/"' in text or 'href="../top-memes-today/"' in text
+        assert "Trending This Week" in text and "Best of the Month" in text and "Meme Index" in text
+        assert 'class="intro"' in text and 'class="upd"' in text
+        for li in re.findall(r"<li\b[^>]*>(.*?)</li>", text, re.S):
+            if 'class="rk"' not in li:
+                continue
+            assert 'class="credit"' in li, path
+            assert "via " in li, path
+            assert 'class="rights"' not in li
+            if "<img" in li:
+                assert li.index('class="rk"') < li.index('class="hl') < li.index("<img"), path
+                img_href = re.search(r'<a href="([^"]+)"[^>]*>\s*<img', li)
+                title_href = re.search(r'<h3 class="hl[^"]*">.*?<a href="([^"]+)"', li, re.S)
+                assert img_href and title_href and img_href.group(1) == title_href.group(1), path
+                assert "meme/" in img_href.group(1) and not img_href.group(1).startswith("http"), path
+            credit = re.search(r'<p class="credit">(.*?)</p>', li, re.S)
+            assert credit and "<a " in credit.group(1), path
+    for period in ("daily", "weekly", "monthly"):
+        for m in doc[period]:
+            if m.get("removed") or not m.get("id"):
+                continue
+            sl = id_to_slug[m["id"]]
+            if sl in seen:
+                continue
+            seen.add(sl)
+            page = (ROOT / "meme" / sl / "index.html").read_text()
+            assert 'class="rights"' in page, sl
+            assert "shown in small form for ranking and commentary" in page, sl
+            assert "<summary>Sources &amp; details</summary>" in page, sl
+            explainer = (store[sl].get("explainer") or "").strip()
+            if explainer:
+                assert "<h2>What it means</h2>" in page, sl
+                first = build.first_sentence(explainer, 80)
+                assert build.e(first[:40]) in page, (sl, first[:40])
+    # Dated reports keep the bands the live lists dropped.
+    nov5 = (ROOT / "archive" / "2026-11-05.html").read_text()
+    assert "<summary>Sources &amp; details</summary>" in nov5
+    assert 'class="rights"' in nov5
+    assert TIKTOK in _hrefs(nov5, "View original")
 
 
 def test_daily_top10_pages_are_permanent():

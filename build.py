@@ -3,7 +3,7 @@
 
 Writes (all generated, don't hand-edit):
   index.html                          homepage: lead story (rotates daily, see UPDATE.md "Lead headline") + daily and monthly columns
-  top-memes-today/index.html          single-list pages with evidence notes
+  top-memes-today/index.html          single-list pages: rank, picture, title, one credit line
   trending-memes-this-week/index.html
   best-memes-this-month/index.html
   archive/YYYY-MM-DD.html             one "Daily Meme Report" per day (rendered from data/archive/*.json)
@@ -32,9 +32,10 @@ of the real current time, is replaced with that time before the archive day is c
 so a future stamp cannot freeze the Pacific day. The build is deterministic: re-running
 with the same data produces identical files.
 
-Daily top-10 rows can show a short history note (New today, First time, rank movement since
-yesterday, N days at #1). tools/rank_history.py derives that only from archived daily lists
-and the meme-page slug. Weekly and monthly lists, the lead headline, and the score are unchanged.
+Dated archive pages still show a short daily history note (New today, First time, rank movement
+since the day before, N days at #1). tools/rank_history.py derives that only from archived daily
+lists and the meme-page slug. Live ranking pages omit the note. Weekly and monthly lists, the lead
+headline, and the score are unchanged.
 
 Takedowns: items matching data/blocklist.json are replaced by a removal notice on every page (archives
 included), scrubbed from data/archive/*.json, and their local thumbnails deleted (see tools/legal.py).
@@ -290,9 +291,11 @@ CSS = """
  .top .kick{display:block;font-size:13px;letter-spacing:2px;color:var(--red);margin-bottom:4px}
  .top .meta{margin-top:6px}
  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:10px}
- .grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .grid.two{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:56px}
  .grid .col{padding:0 20px;min-width:0} .grid .col:first-child{padding-left:0} .grid .col:last-child{padding-right:0}
+ .grid.two .col,.grid.two .col:first-child,.grid.two .col:last-child{padding-left:0;padding-right:0}
  .grid .col+.col{border-left:2px solid var(--rule)}
+ .grid.two .col+.col{border-left:0}
  .one{max-width:640px;margin:10px auto 0}
  .col{margin-bottom:10px}
  .col>h2{position:sticky;top:0;z-index:5;margin:0 0 16px;padding:11px 12px;background:var(--bar);color:var(--barfg);font-size:18px;line-height:1.2;
@@ -362,6 +365,10 @@ CSS = """
  .top .copy .meta{justify-content:center}
  .top .copy .fold summary{margin-left:auto;margin-right:auto}
  .top .kick{font-family:"Courier New",Courier,monospace}
+ .top.plain{border-bottom:0;padding-bottom:4px;margin-bottom:40px}
+ .col li.plain{margin:0 0 44px;padding:0;border:0;box-shadow:none;background:transparent}
+ .plain .copy .zone+.zone{margin-top:16px;padding-top:0;border-top:0}
+ .plain .credit{margin-top:0}
  .explainer{font-family:var(--read);font-size:18px;line-height:1.65}
  .explainer h1,.explainer h2,.explainer h3,.explainer p,.explainer li{font-family:var(--read)}
  .explainer h1{font-size:1.75rem;line-height:1.28;font-weight:650}
@@ -405,6 +412,8 @@ CSS = """
   .grid{display:block;margin-top:0}
   .grid .col,.grid .col:first-child,.grid .col:last-child{padding:0}
   .grid .col+.col{border-left:0;margin-top:40px;padding-top:14px;border-top:3px double var(--rule)}
+  .grid.two .col+.col{border-top:0;margin-top:32px;padding-top:0}
+  .col li.plain{margin:0 0 36px;padding:0}
   .col>h2{font-size:18px;padding:13px 10px;margin:0 0 16px} .col>h2 a{margin:-13px -10px;padding:13px 10px}
   footer p a,.prose p a,.prose .note a{padding:16px 0}
   .prose a{overflow-wrap:anywhere}
@@ -570,8 +579,8 @@ def footer(base):
 <nav class="foot" aria-label="Legal">{nav2}</nav>
 <p>Ranked by cross-platform virality: X engagement and trending stories, TikTok and Instagram post counts, Reddit top feeds, YouTube views and Know Your Meme.
 Headlines describe memes and online reactions, not verified facts about the people in them.</p>
-<p>All memes and images are &copy; their respective owners and are shown as small, credited thumbnails that link to the original source,
-for ranking and commentary. MemeStand is independent and is not affiliated with, endorsed by or sponsored by X, TikTok, Instagram, Reddit, YouTube or Know Your Meme;
+<p>Memes and images are &copy; their respective owners and are shown in small form for ranking and commentary. Each credit links to the original post.
+MemeStand is independent and is not affiliated with, endorsed by or sponsored by X, TikTok, Instagram, Reddit, YouTube or Know Your Meme;
 their names are used only to identify sources. Rights holders: see <a href="{base}dmca.html">DMCA / Takedowns</a>.</p>
 <p>&copy; {copyright_years()} MemeStand. Site design, rankings and compilation only; memes &copy; their respective owners.</p></footer>
 {CF_ANALYTICS}
@@ -599,7 +608,7 @@ def text_face(m, base, cls="card"):
         return f'<a class="{cls}" href="#">{inner}</a>'
     return f'<a class="{cls}" href="{e(ok)}" target="_blank" rel="noopener">{inner}</a>'
 
-def thumb(m, base, label, cls="thumb", eager=False):
+def thumb(m, base, label, cls="thumb", eager=False, dest=None):
     if m.get("removed"): return ""
     raw = img_src(m)
     if not raw: return ""
@@ -611,11 +620,14 @@ def thumb(m, base, label, cls="thumb", eager=False):
     ref = ' referrerpolicy="no-referrer"' if ext else ""
     wh = wh_attrs(raw)   # explicit size (or a fixed 4:3 box for hotlinks) reserves space: no layout shift
     kind = " postcard" if uses_post_card(m) else ""
-    href = safe_url(outbound(m), context="thumbnail")
-    if href:
-        open_a = f'<a href="{e(href)}" target="_blank" rel="noopener">'
+    if dest:
+        open_a = f'<a href="{e(dest)}">'
     else:
-        open_a = '<a href="#">'
+        href = safe_url(outbound(m), context="thumbnail")
+        if href:
+            open_a = f'<a href="{e(href)}" target="_blank" rel="noopener">'
+        else:
+            open_a = '<a href="#">'
     return f'{open_a}<img class="{cls}{kind}" src="{e(src)}" alt="{e(alt(m, label))}"{wh} {load}{ref}></a>'
 
 def load_candidate_rows():
@@ -1021,6 +1033,81 @@ def credit(m):
     return (f'<p class="credit"><span class="who">{e(c)}.{card}</span> '
             f'<span class="rights">&copy; its owner; shown in small form for ranking and commentary.</span></p>{go}')
 
+_STOP_WHO = {"a", "an", "the", "image", "unknown", "someone", "user"}
+_BY_HANDLE = re.compile(
+    r"\bby\s+(?P<who>u/[A-Za-z0-9_-]+|@[A-Za-z0-9._]+)"
+    r"(?:\s+on\s+(?P<where>r/[A-Za-z0-9_]+|Know Your Meme|TikTok|Instagram|YouTube|Reddit|Twitter|X))?",
+    re.I)
+_BY_BARE = re.compile(
+    r"\bby\s+(?P<who>[A-Za-z0-9][A-Za-z0-9._-]{1,40})\s+on\s+"
+    r"(?P<where>r/[A-Za-z0-9_]+|TikTok|Instagram|YouTube|Reddit|Twitter|X)\b",
+    re.I)
+_PLATFORM_WORD = re.compile(
+    r"\b(r/[A-Za-z0-9_]+|Know Your Meme|TikTok|Instagram|YouTube|Reddit|Twitter|X)\b",
+    re.I)
+
+def platform_name(where):
+    """Short platform name for the one-line list credit. Subreddits all read as Reddit."""
+    if not where:
+        return ""
+    low = where.strip().rstrip(".").lower()
+    if low.startswith("r/") or low == "reddit":
+        return "Reddit"
+    if low in ("x", "twitter"):
+        return "X"
+    if low == "tiktok":
+        return "TikTok"
+    if low == "instagram":
+        return "Instagram"
+    if low == "youtube":
+        return "YouTube"
+    if "know your meme" in low or low == "kym":
+        return "Know Your Meme"
+    return where.strip().rstrip(".")
+
+def via_parts(credit):
+    """Handle and platform pulled out of the stored credit sentence. The sentence itself is not rewritten in data."""
+    text = credit or ""
+    found = _BY_HANDLE.search(text) or _BY_BARE.search(text)
+    who = where = None
+    if found:
+        who = found.group("who")
+        if who.lower() in _STOP_WHO:
+            who = None
+        where = platform_name(found.group("where"))
+    if not where:
+        plat = _PLATFORM_WORD.search(text)
+        if plat:
+            where = platform_name(plat.group(1))
+    if not where and re.search(r"know your meme", text, re.I):
+        where = "Know Your Meme"
+    return who, where
+
+def via_credit(m):
+    """One list-page line: via <handle> on <Platform>. The handle links to the credited post."""
+    raw = (m.get("credit") or "").strip()
+    link = primary_link(m)
+    href = safe_url(link["url"] or m.get("source_url") or "", context="credit")
+    who, where = via_parts(raw)
+
+    def linked(label):
+        if href:
+            return f'<a href="{e(href)}" target="_blank" rel="noopener">{e(label)}</a>'
+        return e(label)
+
+    if who and where:
+        body = f'via {linked(who)} on {e(where)}'
+    elif who:
+        body = f'via {linked(who)}'
+    elif where:
+        body = f'via {linked(where)}'
+    else:
+        fallback = raw.rstrip(".") or (m.get("source_name") or "the source")
+        if fallback.lower().startswith("via "):
+            fallback = fallback[4:].strip()
+        body = f'via {linked(fallback)}' if fallback else "via the source"
+    return f'<p class="credit">{body}</p>'
+
 def details_block(m, live_evidence):
     """Counts, observation dates, and full source labels. Closed until the reader asks."""
     entries = source_entries(m, live_evidence)
@@ -1084,13 +1171,15 @@ def hanging_rank(rank):
 def rank_for_reader(rank):
     return f'<span class="sr-only">Rank {rank_digits(rank)}. </span>'
 
-def item(m, base, label, notes=False, hist="", live_evidence=False):
+def item(m, base, label, notes=False, hist="", live_evidence=False, plain=False):
     del notes  # checked figures live in Sources & details; this flag no longer adds a second line
+    klass = ' class="plain"' if plain else ""
     if m.get("removed"):
-        return (f'<li><div class="copy"><div class="zone zone-lead">{hanging_rank(m["rank"])}'
+        return (f'<li{klass}><div class="copy"><div class="zone zone-lead">{hanging_rank(m["rank"])}'
                 f'<div class="lead-copy"><h3 class="hl">{rank_for_reader(m["rank"])}{e(REMOVED)}</h3></div></div>'
                 f'<div class="meta"><a class="src" href="{base}dmca.html">Takedown policy</a></div></div></li>')
-    pic = thumb(m, base, label)
+    page = meme_href(m, base) if plain else None
+    pic = thumb(m, base, label, dest=page)
     heard = rank_for_reader(m["rank"])
     if pic:
         # The picture is the meme. The full headline stays in the link for search and screen readers, clamped on screen.
@@ -1098,48 +1187,62 @@ def item(m, base, label, notes=False, hist="", live_evidence=False):
     else:
         # A text post has no photo. Show its words once, not again as a second headline.
         head = f'<h3 class="hl textmeme">{heard}{text_face(m, base)}</h3>'
-    dek = ""
-    if live_evidence:
-        text = card_dek(m)
-        if text:
-            dek = f'\n  <p class="dek">{e(text)}</p>'
-    others = link_row(other_source_entries(m, live_evidence), short=True)
-    fold = details_block(m, live_evidence)
+    if plain:
+        # Live lists: rank, picture, title, one credit. Description, other links, and sources stay on the explainer.
+        dek, hist, others, fold = "", "", "", ""
+        credit_html = via_credit(m)
+    else:
+        dek = ""
+        if live_evidence:
+            text = card_dek(m)
+            if text:
+                dek = f'\n  <p class="dek">{e(text)}</p>'
+        others = link_row(other_source_entries(m, live_evidence), short=True)
+        fold = details_block(m, live_evidence)
+        credit_html = credit(m)
     # A picture splits the card: hanging rank and headline above it, blurb and bands below.
     # Text-only and removed rows pass no picture, so the rank stays with the headline.
-    body = caption_zones(head, dek, hist, credit(m), others, fold, rank=hanging_rank(m["rank"]), media=pic)
-    return f'''<li>
+    body = caption_zones(head, dek, hist, credit_html, others, fold, rank=hanging_rank(m["rank"]), media=pic)
+    return f'''<li{klass}>
   <div class="copy">
   {body}
   </div>
 </li>'''
 
-def column(d, p, base, link=True, notes=False, day=None, live=False, live_evidence=False):
+def column(d, p, base, link=True, notes=False, day=None, live=False, live_evidence=False, plain=False):
     info = PERIODS[p]
     h = f'<a href="{base}{info["slug"]}/">{info["h2"]}</a>' if link else info["h2"]
     lis = []
     for m in d[p]:
-        hist = history_html(m, day, live) if p == "daily" else ""
-        lis.append(item(m, base, info["word"], notes, hist, live_evidence=live_evidence))
+        # Movement notes stay on the dated archive report. Live lists stay to rank, picture, title, credit.
+        hist = "" if plain else (history_html(m, day, live) if p == "daily" else "")
+        lis.append(item(m, base, info["word"], notes, hist, live_evidence=live_evidence, plain=plain))
     return f'<section class="col" id="{p}"><h2>{h}</h2><ul>{"".join(lis)}</ul></section>'
 
-def top_story(d, base, kicker="TODAY'S LEAD MEME", day=None, live_evidence=False):
+def top_story(d, base, kicker="TODAY'S LEAD MEME", day=None, live_evidence=False, plain=False):
     t = lead_of(d, day or TODAY)
     if t.get("removed"): return ""
-    pic = thumb(t, base, "today", "topimg", eager=True)
+    page = meme_href(t, base) if plain else None
+    pic = thumb(t, base, "today", "topimg", eager=True, dest=page)
     if pic:
         head = f'<h2 class="hl clip"><span class="kick">{kicker}</span>{hl_link(t, base)}</h2>'
     else:
         head = f'<h2 class="hl textmeme"><span class="kick">{kicker}</span>{text_face(m=t, base=base, cls="card topimg")}</h2>'
-    dek = ""
-    if live_evidence:
-        text = card_dek(t)
-        if text:
-            dek = f'\n  <p class="dek">{e(text)}</p>'
-    others = link_row(other_source_entries(t, live_evidence), short=True)
-    fold = details_block(t, live_evidence)
-    body = caption_zones(head, dek, "", credit(t), others, fold)
-    return f'''<div class="top">
+    if plain:
+        dek, others, fold = "", "", ""
+        credit_html = via_credit(t)
+    else:
+        dek = ""
+        if live_evidence:
+            text = card_dek(t)
+            if text:
+                dek = f'\n  <p class="dek">{e(text)}</p>'
+        others = link_row(other_source_entries(t, live_evidence), short=True)
+        fold = details_block(t, live_evidence)
+        credit_html = credit(t)
+    body = caption_zones(head, dek, "", credit_html, others, fold)
+    klass = "top plain" if plain else "top"
+    return f'''<div class="{klass}">
   {pic}
   <div class="copy">
   {body}
@@ -1976,10 +2079,10 @@ def build_home():
 {mast("", "THE TOP MEMES TODAY &amp; THIS MONTH -- RANKED BY VIRALITY")}
 <p class="intro">{e(INTRO)}</p>
 {upd_html()}
-{top_story(d, "", live_evidence=True)}
+{top_story(d, "", live_evidence=True, plain=True)}
 <main class="grid two">
-  {column(d, "daily", "", day=TODAY, live=True, live_evidence=True)}
-  {column(d, "monthly", "", live_evidence=True)}
+  {column(d, "daily", "", day=TODAY, live=True, live_evidence=True, plain=True)}
+  {column(d, "monthly", "", live_evidence=True, plain=True)}
 </main>
 <p class="more"><a href="archive/{TODAY}.html">Today's daily meme report ({fmt_long(NOW)})</a> | <a href="archive/">Past daily meme reports</a></p>
 ''' + footer("")
@@ -2012,7 +2115,7 @@ def build_period(p):
 {mast(base, h1)}
 <p class="intro">{INTRO}</p>
 {upd_html()}
-<main class="one">{column(d, p, base, link=False, notes=True, day=TODAY if p == "daily" else None, live=True, live_evidence=True)}</main>
+<main class="one">{column(d, p, base, link=False, notes=True, day=TODAY if p == "daily" else None, live=True, live_evidence=True, plain=True)}</main>
 <p class="pager">{others} | <a href="../archive/">Daily Meme Report Archive</a></p>
 ''' + footer(base)
     write(f"{info['slug']}/index.html", page)
@@ -2155,14 +2258,14 @@ their numbers come from public post pages we open (usually posts that Know Your 
 Meme reports; we don't see the whole platform, so their coverage is partial.</p>
 <p>Windows: <b>today</b> = took off in the last ~36 hours; <b>this week</b> = active in the last 7 days; <b>this month</b> = active in the last 30 days.
 Engagement numbers come from the platforms' public pages and APIs and from Know Your Meme as they stood when we checked them; they can change or be wrong.
-On a live list, Sources &amp; details repeats those checked figures and the date of each check. That date is not the page's Updated time.</p>
-<p>On the daily top 10, a short note under the headline is computed from earlier daily archive files and the meme's stable page: <b>New today</b> means it is on today's list and was not on yesterday's; <b>First time</b> is added only when no earlier daily archive contains it and the archive has no missing day; <b>Up</b>, <b>Down</b>, or <b>Unchanged since yesterday</b> is the rank change; <b>N days at #1</b> counts a consecutive run of at least two Pacific days. An hourly refresh does not add a day. If a day's archive is missing, that note is left off. The weekly and monthly lists do not show these notes.</p>
+The live lists show a rank, the picture, the title, and one credit line. The description, the other source links, and those checked figures (with the date of each check) are on each meme's explainer, under Sources &amp; details. That date is not the page's Updated time. A dated archive page keeps the counts recorded that day.</p>
+<p>Each dated daily meme report shows a short note under the headline, computed from earlier daily archive files and the meme's stable page: <b>New today</b> means it is on that day's list and was not on the day before; <b>First time</b> is added only when no earlier daily archive contains it and the archive has no missing day; <b>Up</b>, <b>Down</b>, or <b>Unchanged since yesterday</b> is the rank change; <b>N days at #1</b> counts a consecutive run of at least two Pacific days. An hourly refresh does not add a day. If a day's archive is missing, that note is left off. The live ranking pages leave the note off. The weekly and monthly lists do not show these notes.</p>
 
 <h2 id="policy">Content and editorial policy</h2>
 <ul>
 <li><b>What we pick:</b> memes with public, checkable evidence of spread. We never invent memes, numbers, links, or punchlines. A caption on an explainer is a quotation from the source, or it is left off.</li>
-<li><b>Credit:</b> every item names who posted it when that is known. &ldquo;View original&rdquo; is used only when the meme page's origin is explicitly confirmed. Otherwise a direct post is &ldquo;View credited post&rdquo;. An unresearched page is not labeled the original. Know Your Meme is an explainer, not the original. Thumbnails are small (400&nbsp;px max, metadata stripped) and link to that same post.</li>
-<li><b>Counts and dates:</b> on the live lists, each platform's views or likes are the figure stored for that check, with that check's date, under Sources &amp; details. The &ldquo;Updated&rdquo; line is only when the page was built. A dated archive page keeps the counts recorded that day. We do not write a new observation time just to look current.</li>
+<li><b>Credit:</b> every live list item names who posted it in one line, &ldquo;via &lt;handle&gt; on &lt;platform&gt;&rdquo;, and that handle links to the credited post. The picture and the title link to the meme's explainer. On the explainer and on a dated archive page, &ldquo;View original&rdquo; is used only when the origin is explicitly confirmed. Otherwise a direct post is &ldquo;View credited post&rdquo;. An unresearched page is not labeled the original. Know Your Meme is an explainer, not the original. Thumbnails are small (400&nbsp;px max, metadata stripped). The description, the other posts, and the per-item fair-use note stay on the explainer. The footer carries one site-wide fair-use note.</li>
+<li><b>Counts and dates:</b> each platform's views or likes are the figure stored for that check, with that check's date, on the meme's explainer under Sources &amp; details. The &ldquo;Updated&rdquo; line is only when the page was built. A dated archive page keeps the counts recorded that day. We do not write a new observation time just to look current.</li>
 <li><b>Headlines:</b> headlines describe the meme and how people are reacting to it. They are not MemeStand's statements of fact about anyone. When a meme is about an allegation or controversy involving a real person, the headline says so and names the source (for example, &ldquo;per KYM&rdquo;); we don't repeat unverified claims as fact. Jokes and parody are labeled as jokes.</li>
 <li><b>What we leave out:</b> sexually explicit or nude content; hate speech and memes that demean people for race, ethnicity, national origin, religion, sex, sexual orientation, gender identity or disability; content that sexualizes, targets or identifies minors; graphic violence or gore; self-harm; harassment or doxxing of private individuals; and anything a rights holder asks us to remove. When in doubt, we leave it out.</li>
 <li><b>Corrections and removals:</b> if a headline is wrong or unfair, or you want your content removed, {contact_html()}. Copyright notices follow our <a href="dmca.html">DMCA policy</a>.</li>
@@ -2180,7 +2283,7 @@ def build_dmca():
              if LEGAL["dmca_agent_registered"] else "")
     body = f"""<p><i>Effective {LEGAL["effective"]}.</i></p>
 <p>MemeStand respects the rights of creators. The memes and images on this site belong to their owners. We show small, credited
-thumbnails that link to the original source so readers can see what is trending and go to the original. If you own something on
+thumbnails for ranking and commentary, and the credit links to the original post. Each meme's explainer page lists the sources. If you own something on
 MemeStand and want it removed, tell us and we will take it down. You don't need a formal notice for that; a simple request is
 enough. For a formal notice under the Digital Millennium Copyright Act (DMCA), follow the steps below.</p>
 
@@ -2438,7 +2541,7 @@ def build_llms():
                          for m in data[p])
     write("llms.txt", f"""# MemeStand
 
-> MemeStand (https://memestand.com) is an independent, headline-style daily meme report. The lists are the top 10 memes today, trending memes this week, and the best memes of the month (last 30 days). Ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated hourly, 6 AM to 9 PM Pacific Time. Every listed meme links to its original source.
+> MemeStand (https://memestand.com) is an independent, headline-style daily meme report. The lists are the top 10 memes today, trending memes this week, and the best memes of the month (last 30 days). Ranked by a cross-platform virality score built from X (Twitter) engagement and trending stories, TikTok post views, Instagram post likes, Reddit top feeds (r/memes, r/dankmemes), YouTube video views and Know Your Meme. Updated hourly, 6 AM to 9 PM Pacific Time. On the live lists the credit line links to the original post. The explainer page keeps the description and the other sources.
 
 Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 
@@ -2475,12 +2578,12 @@ Last updated: {NOW.strftime("%Y-%m-%d %H:%M")} PT ({ISO})
 
 ## Notes for AI assistants
 
-- On the daily top 10, New today, First time, Up/Down/Unchanged since yesterday, and "N days at #1" come only from archived daily rankings and the meme's stable page identity. A missing archive day leaves the note off. Hourly refreshes do not add a day. Weekly and monthly lists do not carry these notes.
+- On each dated daily meme report, New today, First time, Up/Down/Unchanged since yesterday, and "N days at #1" come only from archived daily rankings and the meme's stable page identity. A missing archive day leaves the note off. Hourly refreshes do not add a day. The live ranking pages omit that note. Weekly and monthly lists do not carry these notes.
 - Cite MemeStand as "MemeStand (memestand.com) daily meme report" and link the dated archive page for a specific day.
 - Rankings change daily; the archive pages are permanent snapshots (items removed after a takedown request are marked as removed).
 - Headlines describe memes and online reactions; they are not MemeStand's statements of fact about the people involved. Where a headline mentions a claim about a person, it is attributed to its source.
 - Meme explainer pages state only what the ranked source post, the linked creator posts, or Know Your Meme document. Know Your Meme is an explainer. "View original" is used only when origin_confirmed is true. Captions must match a stored post text (card_text or post-card quote) tied to a direct post URL. Wording in the explainer is not a source. A "short" page means little verified information exists, not that anything was guessed.
-- Live "Sources & details" counts come from each platform's checked evidence and carry that observation date. The Updated stamp is the page build time. Archive pages keep the counts stored for that day.
+- Live ranking pages show a rank, the picture, the title, and one "via <handle> on <Platform>" credit. The description, other source links, view counts, and the per-item fair-use note are on the meme's explainer page. Those counts come from each platform's checked evidence and carry that observation date. The Updated stamp is the page build time. Archive pages keep the counts stored for that day.
 - The memes themselves belong to their creators and owners. MemeStand is independent and not affiliated with, endorsed by or sponsored by X, TikTok, Instagram, Reddit, YouTube, Know Your Meme or any person or brand mentioned.
 """)
 

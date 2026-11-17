@@ -58,9 +58,11 @@
  .top .kick{display:block;font-size:13px;letter-spacing:2px;color:var(--red);margin-bottom:4px}
  .top .meta{margin-top:6px}
  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:10px}
- .grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .grid.two{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:56px}
  .grid .col{padding:0 20px;min-width:0} .grid .col:first-child{padding-left:0} .grid .col:last-child{padding-right:0}
+ .grid.two .col,.grid.two .col:first-child,.grid.two .col:last-child{padding-left:0;padding-right:0}
  .grid .col+.col{border-left:2px solid var(--rule)}
+ .grid.two .col+.col{border-left:0}
  .one{max-width:640px;margin:10px auto 0}
  .col{margin-bottom:10px}
  .col>h2{position:sticky;top:0;z-index:5;margin:0 0 16px;padding:11px 12px;background:var(--bar);color:var(--barfg);font-size:18px;line-height:1.2;
@@ -130,6 +132,10 @@
  .top .copy .meta{justify-content:center}
  .top .copy .fold summary{margin-left:auto;margin-right:auto}
  .top .kick{font-family:"Courier New",Courier,monospace}
+ .top.plain{border-bottom:0;padding-bottom:4px;margin-bottom:40px}
+ .col li.plain{margin:0 0 44px;padding:0;border:0;box-shadow:none;background:transparent}
+ .plain .copy .zone+.zone{margin-top:16px;padding-top:0;border-top:0}
+ .plain .credit{margin-top:0}
  .explainer{font-family:var(--read);font-size:18px;line-height:1.65}
  .explainer h1,.explainer h2,.explainer h3,.explainer p,.explainer li{font-family:var(--read)}
  .explainer h1{font-size:1.75rem;line-height:1.28;font-weight:650}
@@ -173,6 +179,8 @@
   .grid{display:block;margin-top:0}
   .grid .col,.grid .col:first-child,.grid .col:last-child{padding:0}
   .grid .col+.col{border-left:0;margin-top:40px;padding-top:14px;border-top:3px double var(--rule)}
+  .grid.two .col+.col{border-top:0;margin-top:32px;padding-top:0}
+  .col li.plain{margin:0 0 36px;padding:0}
   .col>h2{font-size:18px;padding:13px 10px;margin:0 0 16px} .col>h2 a{margin:-13px -10px;padding:13px 10px}
   footer p a,.prose p a,.prose .note a{padding:16px 0}
   .prose a{overflow-wrap:anywhere}
@@ -244,14 +252,14 @@ their numbers come from public post pages we open (usually posts that Know Your 
 Meme reports; we don't see the whole platform, so their coverage is partial.</p>
 <p>Windows: <b>today</b> = took off in the last ~36 hours; <b>this week</b> = active in the last 7 days; <b>this month</b> = active in the last 30 days.
 Engagement numbers come from the platforms' public pages and APIs and from Know Your Meme as they stood when we checked them; they can change or be wrong.
-On a live list, Sources &amp; details repeats those checked figures and the date of each check. That date is not the page's Updated time.</p>
-<p>On the daily top 10, a short note under the headline is computed from earlier daily archive files and the meme's stable page: <b>New today</b> means it is on today's list and was not on yesterday's; <b>First time</b> is added only when no earlier daily archive contains it and the archive has no missing day; <b>Up</b>, <b>Down</b>, or <b>Unchanged since yesterday</b> is the rank change; <b>N days at #1</b> counts a consecutive run of at least two Pacific days. An hourly refresh does not add a day. If a day's archive is missing, that note is left off. The weekly and monthly lists do not show these notes.</p>
+The live lists show a rank, the picture, the title, and one credit line. The description, the other source links, and those checked figures (with the date of each check) are on each meme's explainer, under Sources &amp; details. That date is not the page's Updated time. A dated archive page keeps the counts recorded that day.</p>
+<p>Each dated daily meme report shows a short note under the headline, computed from earlier daily archive files and the meme's stable page: <b>New today</b> means it is on that day's list and was not on the day before; <b>First time</b> is added only when no earlier daily archive contains it and the archive has no missing day; <b>Up</b>, <b>Down</b>, or <b>Unchanged since yesterday</b> is the rank change; <b>N days at #1</b> counts a consecutive run of at least two Pacific days. An hourly refresh does not add a day. If a day's archive is missing, that note is left off. The live ranking pages leave the note off. The weekly and monthly lists do not show these notes.</p>
 
 <h2 id="policy">Content and editorial policy</h2>
 <ul>
 <li><b>What we pick:</b> memes with public, checkable evidence of spread. We never invent memes, numbers, links, or punchlines. A caption on an explainer is a quotation from the source, or it is left off.</li>
-<li><b>Credit:</b> every item names who posted it when that is known. &ldquo;View original&rdquo; is used only when the meme page's origin is explicitly confirmed. Otherwise a direct post is &ldquo;View credited post&rdquo;. An unresearched page is not labeled the original. Know Your Meme is an explainer, not the original. Thumbnails are small (400&nbsp;px max, metadata stripped) and link to that same post.</li>
-<li><b>Counts and dates:</b> on the live lists, each platform's views or likes are the figure stored for that check, with that check's date, under Sources &amp; details. The &ldquo;Updated&rdquo; line is only when the page was built. A dated archive page keeps the counts recorded that day. We do not write a new observation time just to look current.</li>
+<li><b>Credit:</b> every live list item names who posted it in one line, &ldquo;via &lt;handle&gt; on &lt;platform&gt;&rdquo;, and that handle links to the credited post. The picture and the title link to the meme's explainer. On the explainer and on a dated archive page, &ldquo;View original&rdquo; is used only when the origin is explicitly confirmed. Otherwise a direct post is &ldquo;View credited post&rdquo;. An unresearched page is not labeled the original. Know Your Meme is an explainer, not the original. Thumbnails are small (400&nbsp;px max, metadata stripped). The description, the other posts, and the per-item fair-use note stay on the explainer. The footer carries one site-wide fair-use note.</li>
+<li><b>Counts and dates:</b> each platform's views or likes are the figure stored for that check, with that check's date, on the meme's explainer under Sources &amp; details. The &ldquo;Updated&rdquo; line is only when the page was built. A dated archive page keeps the counts recorded that day. We do not write a new observation time just to look current.</li>
 <li><b>Headlines:</b> headlines describe the meme and how people are reacting to it. They are not MemeStand's statements of fact about anyone. When a meme is about an allegation or controversy involving a real person, the headline says so and names the source (for example, &ldquo;per KYM&rdquo;); we don't repeat unverified claims as fact. Jokes and parody are labeled as jokes.</li>
 <li><b>What we leave out:</b> sexually explicit or nude content; hate speech and memes that demean people for race, ethnicity, national origin, religion, sex, sexual orientation, gender identity or disability; content that sexualizes, targets or identifies minors; graphic violence or gore; self-harm; harassment or doxxing of private individuals; and anything a rights holder asks us to remove. When in doubt, we leave it out.</li>
 <li><b>Corrections and removals:</b> if a headline is wrong or unfair, or you want your content removed, email <a href="mailto:hello@memestand.com">hello@memestand.com</a>. Copyright notices follow our <a href="dmca.html">DMCA policy</a>.</li>
@@ -264,8 +272,8 @@ On a live list, Sources &amp; details repeats those checked figures and the date
 <nav class="foot" aria-label="Legal"><a href="about.html">About &amp; Content Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="privacy.html">Privacy</a> | <a href="dmca.html">DMCA / Takedowns</a></nav>
 <p>Ranked by cross-platform virality: X engagement and trending stories, TikTok and Instagram post counts, Reddit top feeds, YouTube views and Know Your Meme.
 Headlines describe memes and online reactions, not verified facts about the people in them.</p>
-<p>All memes and images are &copy; their respective owners and are shown as small, credited thumbnails that link to the original source,
-for ranking and commentary. MemeStand is independent and is not affiliated with, endorsed by or sponsored by X, TikTok, Instagram, Reddit, YouTube or Know Your Meme;
+<p>Memes and images are &copy; their respective owners and are shown in small form for ranking and commentary. Each credit links to the original post.
+MemeStand is independent and is not affiliated with, endorsed by or sponsored by X, TikTok, Instagram, Reddit, YouTube or Know Your Meme;
 their names are used only to identify sources. Rights holders: see <a href="dmca.html">DMCA / Takedowns</a>.</p>
 <p>&copy; 2026 MemeStand. Site design, rankings and compilation only; memes &copy; their respective owners.</p></footer>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7fe3f90e5dc444b9a67ecfce9aed6c1e"}'></script><!-- End Cloudflare Web Analytics -->
