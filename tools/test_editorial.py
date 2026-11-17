@@ -765,15 +765,29 @@ def test_hanging_rank_replaces_the_filled_badge():
             if "<img" in top and 'class="hl' in top:
                 assert top.index("<img") < top.index('class="hl'), path
     home = (ROOT / "index.html").read_text()
-    # The homepage has no lead block. The Updated stamp is followed by the ranked lists.
-    assert "TODAY'S LEAD MEME" not in home
-    body = home.split("<body", 1)[1]
-    assert 'class="top' not in body
-    assert body.index('class="upd"') < body.index("<main") < body.index('class="rk"')
-    between = body.split('class="upd"', 1)[1].split("<main", 1)[0]
-    assert "<img" not in between and "<h2" not in between and "via " not in between
+    lead, _, _lists = home.partition("<main")
+    assert 'class="rk"' not in lead
+    # Image, then the small label and headline, then one credit line. No blurb or source chips.
+    top = lead.split('class="top', 1)[1]
+    assert 'class="rk"' not in top
+    assert top.index("<img") < top.index('class="hl') < top.index("TODAY'S LEAD MEME")
+    assert top.index("TODAY'S LEAD MEME") < top.index('class="credit"')
+    assert 'class="dek"' not in top
+    assert "Sources &amp; details" not in top
+    assert 'class="rights"' not in top
+    assert 'class="zone zone-src"' not in top
+    assert "View credited post" not in top and "View original" not in top
+    import json as _json
+    lead_slug = _json.loads((ROOT / "data" / "lead_history.json").read_text())["leads"][build.TODAY]
+    img_href = re.search(r'<a href="([^"]+)"[^>]*>\s*<img', top)
+    title_href = re.search(r'<h2 class="hl[^"]*">.*?<a href="([^"]+)"', top, re.S)
+    assert img_href and title_href and img_href.group(1) == title_href.group(1)
+    assert img_href.group(1) == f"meme/{lead_slug}/"
+    credit = re.search(r'<p class="credit">(.*?)</p>', top, re.S)
+    assert credit and credit.group(1).startswith("via ") and credit.group(1).count("<a ") == 1
+    assert " on " in credit.group(1)
     assert "Today&#x27;s #1" in home or "Today's #1" in home
-    # Archive reports still render that day's lead. The homepage change does not remove it.
+    # Archive reports still render that day's lead.
     archived = (ROOT / "archive" / "2026-11-09.html").read_text().split("<body", 1)[1]
     assert "LEAD MEME OF" in archived and 'class="top' in archived
     for path in pages:

@@ -22,7 +22,7 @@ memestand/
     Homepage, footer, and the period switcher show Today and This Month only.
     /trending-memes-this-week/ is still generated every build. Do not delete it or redirect it.
     A real local or hotlinked image is the meme on the page. A post with no image stays a single text card of its own words, unless data/post_cards.json lists an owner-approved post card for that slug. Do not draw a fake screenshot. The headline is not repeated under the picture or the text card.
-    Live list pages (the homepage, /top-memes-today/, /trending-memes-this-week/, and /best-memes-this-month/) are a short card only. The homepage does not render a lead block: after the header, intro, and Updated stamp it goes straight into the Top 10 lists. Today's #1 is the first card of Top 10 Memes Today. A ranked card keeps the hanging red rank and the title-case headline above the picture (a quotation that is already mixed case is not recased), then the picture, then one credit line "via <handle> on <Platform>" whose handle links to the credited post. The title and the picture link to /meme/<slug>/. Do not put the explainer sentence, the per-card "© its owner" line, a separate "View credited post" or "View original" button, the other source chips, or "Sources & details" on those lists. A text-only card and a removed row keep the rank and headline together and do not leave an empty image gap.
+    Live list pages (the homepage, /top-memes-today/, /trending-memes-this-week/, and /best-memes-this-month/) are a short card only. The homepage lead, above the lists, is image-first and uncropped: a small "TODAY'S LEAD MEME" label, the headline, then one credit line "via <handle> on <Platform>" whose handle links to the credited post. The picture and the headline link to /meme/<slug>/. Do not put a description, source chips, a fair-use line, or rank notes on that lead. A ranked card keeps the hanging red rank and the title-case headline above the picture (a quotation that is already mixed case is not recased), then the picture, then that same one-line credit. The title and the picture link to /meme/<slug>/. Do not put the explainer sentence, the per-card "© its owner" line, a separate "View credited post" or "View original" button, the other source chips, or "Sources & details" on those lists. A text-only card and a removed row keep the rank and headline together and do not leave an empty image gap. The lead has no hanging rank. build.py renders this lead on every run from data/lead_history.json.
     Dated archive pages still render the full bands: the credit with the fair-use line, the other source links, and "Sources & details" with that day's counts. Daily rank-movement notes stay on that archive report, not on the live lists. "View original", "View credited post", and "Know Your Meme explainer" keep those exact labels on the explainer page and on archive pages. The explainer page keeps the description, the other source links, Sources & details, and the per-item fair-use note. The footer carries one short site-wide fair-use note. Do not move the AI-generated disclosure or the unconfirmed-creator note into that disclosure.
   archive/YYYY-MM-DD.html    generated "Daily Meme Report" for each day; archive/index.html lists them
   about.html                 generated about + ranking-method page
@@ -210,11 +210,11 @@ The noon and 6 PM countdown clips are not part of this routine. Leaving the no-j
 - Cross-platform presence is rewarded twice: a share of the 2nd/3rd platform's reach, and +3 per extra source.
 - Ties keep candidate order.
 - A meme may appear in more than one list. Big ones usually do.
-- The lead headline is still chosen by the "Lead headline" rule below, not always the daily #1. The homepage does not render it. Each dated archive page does.
+- The lead headline is chosen by the "Lead headline" rule below, not always the daily #1. The homepage renders that lead above the lists. Each dated archive page does too.
 
 ### Lead headline (rotates daily; no repeats within 7 days)
 
-`build.py` still picks a lead every day (`choose_leads()` / `pick_lead()`) and stores it in `data/lead_history.json`. The homepage does not render that block. Each `archive/<date>.html` still shows it, and it must be a different meme every day. The daily, weekly and monthly top-10 lists stay ranked exactly as rank.py made them.
+The big top story on the homepage (and on each `archive/<date>.html`) must be a different meme every day. `build.py` picks it automatically (`choose_leads()` / `pick_lead()`) and stores it in `data/lead_history.json`. Every build renders that lead on the homepage: the picture, the headline, and one "via <handle> on <Platform>" credit. The daily, weekly and monthly top-10 lists stay ranked exactly as rank.py made them.
 
 1. Candidates are today's daily top-10 in rank order, minus anything blocklisted, removed, or failing the legal rules
    (`tools/legal.py` `exclusion_reason`: flags, hard terms, minor check, unattributed allegations).
@@ -228,7 +228,7 @@ The noon and 6 PM countdown clips are not part of this routine. Leaving the no-j
 - The pick is deterministic for a given day: today's entry is recomputed only from earlier days, so a second `python3 build.py`
   gives no diff. build.py prints `lead <date>: <slug> (<reason>)`; check it before pushing.
 - Don't hand-pick or hand-edit the lead. If the chosen lead needs a headline fix, fix the candidate in `data/candidates.json`
-  and rerun rank.py + build.py. The homepage has no lead kicker. Archive pages still use "LEAD MEME OF <date>", since the lead may not be #1. Do not stop writing `data/lead_history.json`.
+  and rerun rank.py + build.py. The homepage kicker reads "TODAY'S LEAD MEME" (archives: "LEAD MEME OF <date>"), since the lead may not be #1. Do not stop writing `data/lead_history.json`, and do not stop rendering the homepage lead.
 
 ### Daily rank labels (daily top 10 only)
 
