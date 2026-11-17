@@ -2,7 +2,7 @@
 """Render the whole static site from data/memes.json (plain, headline-style news page).   Usage: python3 build.py
 
 Writes (all generated, don't hand-edit):
-  index.html                          homepage: lead story (rotates daily, see UPDATE.md "Lead headline") + daily and monthly columns
+  index.html                          homepage: daily and monthly columns (no lead block; lead history still recorded)
   top-memes-today/index.html          single-list pages: rank, picture, title, one credit line
   trending-memes-this-week/index.html
   best-memes-this-month/index.html
@@ -2079,7 +2079,6 @@ def build_home():
 {mast("", "THE TOP MEMES TODAY &amp; THIS MONTH -- RANKED BY VIRALITY")}
 <p class="intro">{e(INTRO)}</p>
 {upd_html()}
-{top_story(d, "", live_evidence=True, plain=True)}
 <main class="grid two">
   {column(d, "daily", "", day=TODAY, live=True, live_evidence=True, plain=True)}
   {column(d, "monthly", "", live_evidence=True, plain=True)}

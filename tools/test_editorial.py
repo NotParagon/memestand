@@ -765,17 +765,17 @@ def test_hanging_rank_replaces_the_filled_badge():
             if "<img" in top and 'class="hl' in top:
                 assert top.index("<img") < top.index('class="hl'), path
     home = (ROOT / "index.html").read_text()
-    lead, _, _lists = home.partition("<main")
-    assert 'class="rk"' not in lead
-    # The lead story has no hanging rank and stays image-first.
-    top = lead.split('class="top', 1)[1]
-    assert 'class="rk"' not in top
-    # Image, then the small label and headline, then one credit line. No blurb.
-    assert top.index("<img") < top.index('class="hl') < top.index("TODAY'S LEAD MEME")
-    assert top.index("TODAY'S LEAD MEME") < top.index('class="credit"')
-    assert 'class="dek"' not in top
-    assert "Sources &amp; details" not in top
-    assert 'class="rights"' not in top
+    # The homepage has no lead block. The Updated stamp is followed by the ranked lists.
+    assert "TODAY'S LEAD MEME" not in home
+    body = home.split("<body", 1)[1]
+    assert 'class="top' not in body
+    assert body.index('class="upd"') < body.index("<main") < body.index('class="rk"')
+    between = body.split('class="upd"', 1)[1].split("<main", 1)[0]
+    assert "<img" not in between and "<h2" not in between and "via " not in between
+    assert "Today&#x27;s #1" in home or "Today's #1" in home
+    # Archive reports still render that day's lead. The homepage change does not remove it.
+    archived = (ROOT / "archive" / "2026-11-09.html").read_text().split("<body", 1)[1]
+    assert "LEAD MEME OF" in archived and 'class="top' in archived
     for path in pages:
         _assert_ranked_cards(path.read_text(), path)
     week = (ROOT / "trending-memes-this-week" / "index.html").read_text()
