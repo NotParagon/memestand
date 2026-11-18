@@ -772,6 +772,28 @@
       "written": "2026-11-05",
       "checked": "2026-11-09T14:17:26-08:00"
     },
+    "cyber-attack-faulty-router": {
+      "name": "It Was Just a Faulty Router",
+      "ids": [
+        "cyber-attack-faulty-router"
+      ],
+      "status": "short",
+      "explainer": "A two-line shop-counter meme using a sitcom still: one man insists 'This is a cyber attack on the USA', the other answers 'It was just a faulty router'. It pokes fun at how quickly a run of outages turns into hacking theories.",
+      "origin": "Posted by u/TheChainsawVigilante on r/memes on November 16, 2026 (evening, PT), titled \"First Microsoft, then the groundstop, now the banks...\", after a week of service outages. It was #23 on r/memes' top-of-day feed on the morning of November 17. An earlier source hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://www.reddit.com/r/memes/comments/1xy72oy/first_microsoft_then_the_groundstop_now_the_banks/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "u/TheChainsawVigilante on r/memes",
+          "url": "https://www.reddit.com/r/memes/comments/1xy72oy/first_microsoft_then_the_groundstop_now_the_banks/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-18",
+      "checked": "2026-11-18T01:04:00-08:00"
+    },
     "dad-typing-thumbs-up": {
       "name": "Dad Typing... Thumbs Up",
       "ids": [
@@ -961,6 +983,28 @@
       "checked": "2026-11-07T22:51:54-08:00",
       "original_url": "https://www.tiktok.com/@leehoustonx/video/7703227788160961806"
     },
+    "fifteen-bucks-little-man": {
+      "name": "Fifteen Bucks, Little Man",
+      "ids": [
+        "fifteen-bucks-little-man"
+      ],
+      "status": "short",
+      "explainer": "A reaction meme for any bill that comes to exactly $15.00: a film still of a man jabbing his finger at his palm, with the subtitle line demanding 'fifteen bucks, little man' be put in his hand. It's used whenever a price lands on that number.",
+      "origin": "Posted by u/FakePoloManchurian on r/me_irl on November 16, 2026 (night, PT). It was #12 on r/me_irl's top-of-day feed on the morning of November 17. The still and its line come from a film; the specific caption's earliest source hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://www.reddit.com/r/me_irl/comments/1xyc4k3/me_irl/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "u/FakePoloManchurian on r/me_irl",
+          "url": "https://www.reddit.com/r/me_irl/comments/1xyc4k3/me_irl/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-18",
+      "checked": "2026-11-18T01:04:00-08:00"
+    },
     "frutiger-aero-yams": {
       "name": "Frutiger Aero Yams",
       "ids": [
@@ -1032,6 +1076,28 @@
       "related": [],
       "written": "2026-11-10",
       "checked": "2026-11-10T06:14:46-08:00"
+    },
+    "gus-fring-ai-assistants-not-same": {
+      "name": "Gus Fring: First AI Assistants, We're Not the Same",
+      "ids": [
+        "gus-fring-ai-assistants-not-same"
+      ],
+      "status": "short",
+      "explainer": "A 'We're not the same' meme with Gus Fring from Breaking Bad: 'your first AI assistants' are today's chatbot apps, while 'my first AI assistants' were Clippy and BonziBuddy. It's a nostalgia flex for people who grew up with the old desktop helpers.",
+      "origin": "Posted by u/yukiohana on r/memes on November 16, 2026 (morning, PT), titled \"not the same\". It was #15 on r/memes' top-of-day feed on the morning of November 17. The Gus Fring 'We're not the same' template is older; this caption's earliest source hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://www.reddit.com/r/memes/comments/1xxtbxc/not_the_same/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "u/yukiohana on r/memes",
+          "url": "https://www.reddit.com/r/memes/comments/1xxtbxc/not_the_same/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-18",
+      "checked": "2026-11-18T01:04:00-08:00"
     },
     "gym-cancel-holmes": {
       "name": "Gym Cancel / Elizabeth Holmes",
@@ -1406,6 +1472,28 @@
       "how_to_use": [],
       "checked": "2026-11-07T22:51:54-08:00"
     },
+    "kermit-act-natural-store": {
+      "name": "Kermit: Act Natural, You've Done Nothing Wrong",
+      "ids": [
+        "kermit-act-natural-store"
+      ],
+      "status": "short",
+      "explainer": "Kermit the Frog stands in a supermarket aisle with the caption 'Act natural, you've done nothing wrong', under the setup 'When you leave the store without buying anything'. It's about the irrational guilt of walking out past the registers empty-handed.",
+      "origin": "Posted by u/Accomplished-Bug4687 on r/me_irl on November 16, 2026 (morning, PT). It was #13 on r/me_irl's top-of-day feed on the morning of November 17. An earlier source hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://www.reddit.com/r/me_irl/comments/1xxxv0a/me_irl/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "u/Accomplished-Bug4687 on r/me_irl",
+          "url": "https://www.reddit.com/r/me_irl/comments/1xxxv0a/me_irl/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-18",
+      "checked": "2026-11-18T01:04:00-08:00"
+    },
     "liking-a-girl-more-than-she-likes-you": {
       "name": "Liking a Girl More Than She Likes You",
       "ids": [
@@ -1773,6 +1861,28 @@
       "written": "2026-11-17",
       "checked": "2026-11-17T08:30:00-08:00"
     },
+    "new-zealand-gta-6-world-map": {
+      "name": "New Zealand: World Map vs GTA 6 Release",
+      "ids": [
+        "new-zealand-gta-6-world-map"
+      ],
+      "status": "short",
+      "explainer": "A two-panel Bart Simpson meme: New Zealand is the country people leave off world maps, but when everyone talks about the GTA 6 release, New Zealand is suddenly watched closely. The joke is that its time zone gets midnight releases first, so it becomes the place everyone checks.",
+      "origin": "Posted by u/pastroc on r/dankmemes on November 17, 2026 (early morning, PT), titled \"Suddenly New Zealand matters!\". It was #18 on r/dankmemes' top-of-day feed on the morning of November 17. An earlier source hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xyjo58/suddenly_new_zealand_matters/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "u/pastroc on r/dankmemes",
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xyjo58/suddenly_new_zealand_matters/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-18",
+      "checked": "2026-11-18T01:04:00-08:00"
+    },
     "newton-fourth-law": {
       "name": "Newton's Fourth Law of Motion",
       "meta_description": "\"If Newton saw the way I be moving these days he'd add a fourth law of motion.\" What the Newton's Fourth Law meme means, and where that line came from.",
@@ -1825,6 +1935,28 @@
       "origin_confirmed": false,
       "how_to_use": [],
       "checked": "2026-11-03T23:51:43-08:00"
+    },
+    "no-crime-8am-6pm": {
+      "name": "No Crime 8am-6pm",
+      "ids": [
+        "no-crime-8am-6pm"
+      ],
+      "status": "short",
+      "explainer": "A two-panel meme: a real street sign that reads 'No crime 8am-6pm', then Tom from Tom and Jerry tiptoeing out a door labeled 'Criminals at 6:01pm'. The joke takes the oddly specific sign literally, as if crime simply waits until the posted hours end.",
+      "origin": "Posted by u/Ok_Dare6608 on r/me_irl on November 16, 2026 (evening, PT). It was #10 on r/me_irl's top-of-day feed on the morning of November 17. An earlier source hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://www.reddit.com/r/me_irl/comments/1xy9i8u/me_irl/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "u/Ok_Dare6608 on r/me_irl",
+          "url": "https://www.reddit.com/r/me_irl/comments/1xy9i8u/me_irl/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-18",
+      "checked": "2026-11-18T01:04:00-08:00"
     },
     "no-money-bald": {
       "name": "No Money Bald Distress Clip",
@@ -1915,6 +2047,40 @@
       "related": [],
       "written": "2026-11-04",
       "checked": "2026-11-07T22:51:54-08:00"
+    },
+    "office-pizza-party-one-sliver": {
+      "name": "Office Pizza Party, One Sliver Per Plate",
+      "ids": [
+        "office-pizza-party-one-sliver"
+      ],
+      "status": "short",
+      "explainer": "A picture of an office pizza party where every paper plate holds one paper-thin sliver of pepperoni pizza, next to bottles of off-brand soda, captioned like a boss thanking the team for its hard work. The joke is the token workplace reward that costs almost nothing, and people reuse the image for school pizza parties and other underwhelming 'treats'. X's trending summary describes the picture as AI-generated.",
+      "origin": "Posted on X by @SledgeDev (Barrett) on November 17, 2026 (morning, PT) with the caption \"thanks for all your hard work team. you earned it\". By early November 18 it had about 3 million views and 140,000 likes per X's public counts, and X News ran two stories about it and the school-pizza-party replies. Other accounts reposted the same image with new captions, such as \"Teachers: we're gonna have a pizza party!\". An earlier source for the image hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/SledgeDev/status/2122738102255169616",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@SledgeDev on X",
+          "url": "https://x.com/SledgeDev/status/2122738102255169616"
+        },
+        {
+          "name": "X News: AI image of stingy office pizza party",
+          "url": "https://x.com/i/trending/2122781181582491956"
+        },
+        {
+          "name": "X News: workplace pizza post revives school party memories",
+          "url": "https://x.com/i/trending/2122942465498022173"
+        },
+        {
+          "name": "@DarkSkinPrue on X (same image, teacher caption)",
+          "url": "https://x.com/DarkSkinPrue/status/2122838861323673792"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-18",
+      "checked": "2026-11-18T01:04:00-08:00"
     },
     "people-my-age-pregnancy-tests": {
       "name": "People My Age Pregnancy Tests",
@@ -2371,6 +2537,28 @@
       "how_to_use": [],
       "checked": "2026-11-07T22:51:54-08:00"
     },
+    "social-battery-twenty-minutes": {
+      "name": "Should've Stayed Home 20 Minutes In",
+      "ids": [
+        "social-battery-twenty-minutes"
+      ],
+      "status": "short",
+      "explainer": "A two-part image meme about a social battery running out: a cheerful group photo from a night out, then a close zoom on one person in it looking completely done. The caption is about trying to meet new people and realizing 20 minutes in that you should have stayed home.",
+      "origin": "Posted by u/AfterMidnight_00 on r/memes on November 16, 2026 (afternoon, PT), titled \"Social battery instantly dropped to zero, my bed is calling my name\". It was #10 on r/memes' top-of-day feed on the morning of November 17. An earlier source hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://www.reddit.com/r/memes/comments/1xy40j2/social_battery_instantly_dropped_to_zero_my_bed/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "u/AfterMidnight_00 on r/memes",
+          "url": "https://www.reddit.com/r/memes/comments/1xy40j2/social_battery_instantly_dropped_to_zero_my_bed/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-18",
+      "checked": "2026-11-18T01:04:00-08:00"
+    },
     "spongebob-is-friend-with-patrick": {
       "name": "SpongeBob Is Friend With Patrick",
       "ids": [
@@ -2407,6 +2595,36 @@
       "written": "2026-11-10",
       "checked": "2026-11-10T06:14:46-08:00",
       "original_url": "https://x.com/Dayscd/status/2119910679402418346"
+    },
+    "stork-culprit-behind-everything": {
+      "name": "Stork on a Utility Pole: The Culprit Behind Everything",
+      "ids": [
+        "stork-culprit-behind-everything"
+      ],
+      "status": "short",
+      "explainer": "A short video of a stork standing on top of a utility pole with its wings spread wide, posed like a villain surveying its domain. The caption jokes that this bird is secretly responsible for everything going wrong right now, and people reply with their own blame lines, 'aura farming' jokes and edits that turn the bird into a wizard or a gladiator.",
+      "origin": "The 13-second clip was posted on X by @sciencegirl on November 17, 2026 (7:30 AM PT) as \"aura farming to the max\", and about an hour and a half later by @KarluskaP with the caption \"I believe this is the culprit behind everything happening right now\". That caption post passed 590,000 views per X's public counts and was copied word for word by many accounts; X News covered the bird as an Asian openbill stork turned meme. Who filmed the video hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/KarluskaP/status/2122735164518187174",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@KarluskaP on X",
+          "url": "https://x.com/KarluskaP/status/2122735164518187174"
+        },
+        {
+          "name": "@sciencegirl on X",
+          "url": "https://x.com/sciencegirl/status/2122714038488780929"
+        },
+        {
+          "name": "X News: Asian openbill stork becomes meme star",
+          "url": "https://x.com/i/trending/2122961325328421275"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-18",
+      "checked": "2026-11-18T01:04:00-08:00"
     },
     "telegram-microsoft": {
       "name": "Telegram's Bill Gates / Microsoft Joke",
@@ -2631,6 +2849,28 @@
       "related": [],
       "written": "2026-11-12",
       "checked": "2026-11-12T06:25:00-08:00"
+    },
+    "volturi-peaceful-life-no-news": {
+      "name": "A Very Peaceful Life, I Imagine (Volturi)",
+      "ids": [
+        "volturi-peaceful-life-no-news"
+      ],
+      "status": "short",
+      "explainer": "A reaction meme: the caption describes people who never read the news or follow what's trending, and the picture is the three Volturi leaders from the Twilight films, looking serene and superior. The post's title, 'A very peaceful life, I imagine', sums up the joke: envy of people who are blissfully unaware.",
+      "origin": "Posted by u/MahmoudAO on r/memes on November 16, 2026 (morning, PT). It was #7 on r/memes' top-of-day feed on the morning of November 17. An earlier source hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://www.reddit.com/r/memes/comments/1xxygxb/a_very_peaceful_life_i_imagine/",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "u/MahmoudAO on r/memes",
+          "url": "https://www.reddit.com/r/memes/comments/1xxygxb/a_very_peaceful_life_i_imagine/"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-18",
+      "checked": "2026-11-18T01:04:00-08:00"
     },
     "wassup-in-a-minute": {
       "name": "Wassup In a Minute Wassup",

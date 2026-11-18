@@ -1,10 +1,325 @@
 {
-  "as_of": "2026-11-17",
+  "as_of": "2026-11-18",
   "candidates": [
+    {
+      "id": "office-pizza-party-one-sliver",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "title": "'THANKS FOR ALL YOUR HARD WORK TEAM. YOU EARNED IT': THE OFFICE PIZZA PARTY WITH ONE SLIVER PER PLATE",
+      "source_url": "https://x.com/SledgeDev/status/2122738102255169616",
+      "source_name": "X @SledgeDev",
+      "image_url": "https://pbs.twimg.com/media/HXV63_EacAAFR_j.jpg",
+      "first_seen": "2026-11-17",
+      "also": [
+        {
+          "name": "X News: AI image of stingy office pizza party",
+          "url": "https://x.com/i/trending/2122781181582491956"
+        },
+        {
+          "name": "X News: workplace pizza post revives school party memories",
+          "url": "https://x.com/i/trending/2122942465498022173"
+        },
+        {
+          "name": "X / @DarkSkinPrue: 'Teachers: we're gonna have a pizza party!' (same image reused)",
+          "url": "https://x.com/DarkSkinPrue/status/2122838861323673792"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/SledgeDev/status/2122738102255169616",
+          "views": 3000233,
+          "likes": 139730,
+          "checked": "2026-11-18",
+          "via": "X API (read ~1 AM PT Nov 18)"
+        },
+        "x_news": true,
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): posted Nov 17 9:06 AM PT by @SledgeDev (Barrett); 3.0M views / 139.7K likes per X's public counts at ~1 AM PT Nov 18. Two X News stories (2122781181582491956, 2122942465498022173) describe the image as AI-generated and track the copies and school-pizza-party replies; the same image is reposted with new captions (e.g. @DarkSkinPrue 'Teachers: we're gonna have a pizza party!').",
+      "headline_reviewed": true,
+      "first_seen_basis": "X post by @SledgeDev, 2026-11-17T17:06:16Z",
+      "credit": "posted by @SledgeDev on X"
+    },
+    {
+      "id": "stork-culprit-behind-everything",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "title": "'I BELIEVE THIS IS THE CULPRIT BEHIND EVERYTHING HAPPENING RIGHT NOW': THE WING-SPREADING STORK ON A UTILITY POLE",
+      "source_url": "https://x.com/KarluskaP/status/2122735164518187174",
+      "source_name": "X @KarluskaP",
+      "image_url": "https://pbs.twimg.com/amplify_video_thumb/2122735147682304000/img/EjkxVA1_p0oaeoi7.jpg",
+      "first_seen": "2026-11-17",
+      "also": [
+        {
+          "name": "X News: Asian openbill stork becomes meme star",
+          "url": "https://x.com/i/trending/2122961325328421275"
+        },
+        {
+          "name": "X / @sciencegirl: 'aura farming to the max' (508K views)",
+          "url": "https://x.com/sciencegirl/status/2122714038488780929"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/KarluskaP/status/2122735164518187174",
+          "views": 598134,
+          "likes": 27717,
+          "checked": "2026-11-18",
+          "via": "X API (read ~1 AM PT Nov 18)"
+        },
+        "x_news": true,
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): @KarluskaP's caption on the 13-second stork clip (Nov 17 8:54 AM PT) has 598K views / 27.7K likes per X's public counts; the caption is copied word-for-word by many accounts (e.g. @InterestingSci1, @insight_alchemy, @Isabel_10_8) and X News 2122961325328421275 tracks the wizard/gladiator edits and 'aura farming' jokes. @sciencegirl posted the same clip earlier (7:30 AM PT, 'aura farming to the max', 508K views). Who filmed the clip is not documented. Thumbnail is a still frame from the credited video (the platform preview frame shows only the empty pole). Wildlife footage, not TV/film.",
+      "headline_reviewed": true,
+      "first_seen_basis": "X post by @KarluskaP, 2026-11-17T16:54:36Z (same clip posted by @sciencegirl at 15:30:39Z)",
+      "credit": "posted by @KarluskaP on X"
+    },
+    {
+      "id": "volturi-peaceful-life-no-news",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "title": "PEOPLE WHO DON'T READ THE NEWS AND ARE NEVER INTERESTED IN WHAT'S TRENDING: 'A VERY PEACEFUL LIFE, I IMAGINE'",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xxygxb/a_very_peaceful_life_i_imagine/",
+      "source_name": "Reddit r/memes /u/MahmoudAO",
+      "image_url": "https://i.redd.it/oz7ydnt1z02i1.jpeg",
+      "first_seen": "2026-11-16",
+      "also": [],
+      "ev": {
+        "reddit": {
+          "sub": "memes",
+          "rank": 7,
+          "url": "https://www.reddit.com/r/memes/comments/1xxygxb/a_very_peaceful_life_i_imagine/",
+          "checked": "2026-11-17"
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): r/memes top-of-day #7 (Reddit top-of-day RSS read 2026-11-17 ~6:55 AM PT; Reddit RSS returned 404/429 on the Nov 18 ~1 AM PT run, so this is the latest verified read). Twilight film still (the Volturi), a still, not footage; safety-checked this run.",
+      "headline_reviewed": true,
+      "first_seen_basis": "Reddit post by u/MahmoudAO on r/memes, 2026-11-16T19:21:35+00:00",
+      "credit": "posted by u/MahmoudAO on r/memes"
+    },
+    {
+      "id": "social-battery-twenty-minutes",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "title": "WHEN YOU TRY TO GO OUT WITH NEW PEOPLE BUT REALIZE 20 MINUTES IN YOU SHOULD'VE STAYED HOME",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xy40j2/social_battery_instantly_dropped_to_zero_my_bed/",
+      "source_name": "Reddit r/memes /u/AfterMidnight_00",
+      "image_url": "https://i.redd.it/kpisyj4h122i1.jpeg",
+      "first_seen": "2026-11-16",
+      "also": [],
+      "ev": {
+        "reddit": {
+          "sub": "memes",
+          "rank": 10,
+          "url": "https://www.reddit.com/r/memes/comments/1xy40j2/social_battery_instantly_dropped_to_zero_my_bed/",
+          "checked": "2026-11-17"
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): r/memes top-of-day #10 (Reddit top-of-day RSS read 2026-11-17 ~6:55 AM PT; Reddit RSS returned 404/429 on the Nov 18 ~1 AM PT run, so this is the latest verified read). Event photo of public-figure singers, then a zoom on one unimpressed face; safety-checked this run.",
+      "headline_reviewed": true,
+      "first_seen_basis": "Reddit post by u/AfterMidnight_00 on r/memes, 2026-11-16T22:56:56+00:00",
+      "credit": "posted by u/AfterMidnight_00 on r/memes"
+    },
+    {
+      "id": "no-crime-8am-6pm",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "title": "'NO CRIME 8AM-6PM' SIGN VS 'CRIMINALS AT 6:01PM': TOM TIPTOEING OUT THE DOOR",
+      "source_url": "https://www.reddit.com/r/me_irl/comments/1xy9i8u/me_irl/",
+      "source_name": "Reddit r/me_irl /u/Ok_Dare6608",
+      "image_url": "https://i.redd.it/jz6agcbea32i1.jpeg",
+      "first_seen": "2026-11-17",
+      "also": [],
+      "ev": {
+        "reddit": {
+          "sub": "me_irl",
+          "rank": 10,
+          "url": "https://www.reddit.com/r/me_irl/comments/1xy9i8u/me_irl/",
+          "checked": "2026-11-17"
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): r/me_irl top-of-day #10 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT; Reddit RSS returned 404/429 on the Nov 18 ~1 AM PT run, so this is the latest verified read). safety-prescreened in the Nov 17 daily pool; original media from memestand-video/pool-media. Cartoon slapstick only.",
+      "headline_reviewed": true,
+      "first_seen_basis": "Reddit post by u/Ok_Dare6608 on r/me_irl, 2026-11-17T03:08:43+00:00",
+      "credit": "posted by u/Ok_Dare6608 on r/me_irl"
+    },
+    {
+      "id": "fifteen-bucks-little-man",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "title": "ME ANY TIME THE TOTAL IS $15.00: 'FIFTEEN BUCKS, LITTLE MAN'",
+      "source_url": "https://www.reddit.com/r/me_irl/comments/1xyc4k3/me_irl/",
+      "source_name": "Reddit r/me_irl /u/FakePoloManchurian",
+      "image_url": "https://i.redd.it/zjumm0zsy32i1.jpeg",
+      "first_seen": "2026-11-17",
+      "also": [],
+      "ev": {
+        "reddit": {
+          "sub": "me_irl",
+          "rank": 12,
+          "url": "https://www.reddit.com/r/me_irl/comments/1xyc4k3/me_irl/",
+          "checked": "2026-11-17"
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): r/me_irl top-of-day #12 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT; Reddit RSS returned 404/429 on the Nov 18 ~1 AM PT run, so this is the latest verified read). safety-prescreened in the Nov 17 daily pool; original media from memestand-video/pool-media. Film still with its subtitle line (mild profanity in the image).",
+      "headline_reviewed": true,
+      "first_seen_basis": "Reddit post by u/FakePoloManchurian on r/me_irl, 2026-11-17T05:25:37+00:00",
+      "credit": "posted by u/FakePoloManchurian on r/me_irl"
+    },
+    {
+      "id": "gus-fring-ai-assistants-not-same",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "title": "YOUR FIRST AI ASSISTANTS (CHATGPT, GEMINI, COPILOT, CLAUDE) VS MINE (CLIPPY, BONZIBUDDY): 'WE'RE NOT THE SAME'",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xxtbxc/not_the_same/",
+      "source_name": "Reddit r/memes /u/yukiohana",
+      "image_url": "https://i.redd.it/l1cew8ku002i1.jpeg",
+      "first_seen": "2026-11-16",
+      "also": [],
+      "ev": {
+        "reddit": {
+          "sub": "memes",
+          "rank": 15,
+          "url": "https://www.reddit.com/r/memes/comments/1xxtbxc/not_the_same/",
+          "checked": "2026-11-17"
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): r/memes top-of-day #15 (Reddit top-of-day RSS read 2026-11-17 ~6:55 AM PT; Reddit RSS returned 404/429 on the Nov 18 ~1 AM PT run, so this is the latest verified read). safety-prescreened in the Nov 17 daily pool; original media from memestand-video/pool-media.",
+      "headline_reviewed": true,
+      "first_seen_basis": "Reddit post by u/yukiohana on r/memes, 2026-11-16T16:10:03+00:00",
+      "credit": "posted by u/yukiohana on r/memes"
+    },
+    {
+      "id": "kermit-act-natural-store",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "title": "WHEN YOU LEAVE THE STORE WITHOUT BUYING ANYTHING: KERMIT, 'ACT NATURAL, YOU'VE DONE NOTHING WRONG'",
+      "source_url": "https://www.reddit.com/r/me_irl/comments/1xxxv0a/me_irl/",
+      "source_name": "Reddit r/me_irl /u/Accomplished-Bug4687",
+      "image_url": "https://i.redd.it/xljj3tsyu02i1.jpeg",
+      "first_seen": "2026-11-16",
+      "also": [],
+      "ev": {
+        "reddit": {
+          "sub": "me_irl",
+          "rank": 13,
+          "url": "https://www.reddit.com/r/me_irl/comments/1xxxv0a/me_irl/",
+          "checked": "2026-11-17"
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): r/me_irl top-of-day #13 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT; Reddit RSS returned 404/429 on the Nov 18 ~1 AM PT run, so this is the latest verified read). safety-prescreened in the Nov 17 daily pool; original media from memestand-video/pool-media.",
+      "headline_reviewed": true,
+      "first_seen_basis": "Reddit post by u/Accomplished-Bug4687 on r/me_irl, 2026-11-16T18:58:41+00:00",
+      "credit": "posted by u/Accomplished-Bug4687 on r/me_irl"
+    },
+    {
+      "id": "new-zealand-gta-6-world-map",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "title": "NEW ZEALAND WHEN PEOPLE MAKE A WORLD MAP VS WHEN THEY DISCUSS GTA 6'S RELEASE",
+      "source_url": "https://www.reddit.com/r/dankmemes/comments/1xyjo58/suddenly_new_zealand_matters/",
+      "source_name": "Reddit r/dankmemes /u/pastroc",
+      "image_url": "https://i.redd.it/js0o8gqk662i1.jpeg",
+      "first_seen": "2026-11-17",
+      "also": [],
+      "ev": {
+        "reddit": {
+          "sub": "dankmemes",
+          "rank": 18,
+          "url": "https://www.reddit.com/r/dankmemes/comments/1xyjo58/suddenly_new_zealand_matters/",
+          "checked": "2026-11-17"
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): r/dankmemes top-of-day #18 (Reddit top-of-day RSS read 2026-11-17 ~6:55 AM PT; Reddit RSS returned 404/429 on the Nov 18 ~1 AM PT run, so this is the latest verified read). Simpsons cartoon stills; safety-checked this run.",
+      "headline_reviewed": true,
+      "first_seen_basis": "Reddit post by u/pastroc on r/dankmemes, 2026-11-17T12:52:39+00:00",
+      "credit": "posted by u/pastroc on r/dankmemes"
+    },
+    {
+      "id": "cyber-attack-faulty-router",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "title": "'THIS IS A CYBER ATTACK ON THE USA' / 'IT WAS JUST A FAULTY ROUTER': THE OUTAGE-WEEK SHOP COUNTER JOKE",
+      "source_url": "https://www.reddit.com/r/memes/comments/1xy72oy/first_microsoft_then_the_groundstop_now_the_banks/",
+      "source_name": "Reddit r/memes /u/TheChainsawVigilante",
+      "image_url": "https://i.redd.it/ch6c5d1kp22i1.jpeg",
+      "first_seen": "2026-11-17",
+      "also": [],
+      "ev": {
+        "reddit": {
+          "sub": "memes",
+          "rank": 23,
+          "url": "https://www.reddit.com/r/memes/comments/1xy72oy/first_microsoft_then_the_groundstop_now_the_banks/",
+          "checked": "2026-11-17"
+        },
+        "platforms": [
+          "Reddit"
+        ]
+      },
+      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): r/memes top-of-day #23 (Reddit top-of-day RSS read 2026-11-17 ~6:55 AM PT; Reddit RSS returned 404/429 on the Nov 18 ~1 AM PT run, so this is the latest verified read). safety-prescreened in the Nov 17 daily pool; original media from memestand-video/pool-media. Sitcom still, not footage.",
+      "headline_reviewed": true,
+      "first_seen_basis": "Reddit post by u/TheChainsawVigilante on r/memes, 2026-11-17T01:11:54+00:00",
+      "credit": "posted by u/TheChainsawVigilante on r/memes"
+    },
     {
       "id": "dad-typing-thumbs-up",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -25,7 +340,7 @@
           "Reddit"
         ]
       },
-      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/me_irl top-of-day #9 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media.",
+      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/me_irl top-of-day #9 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media. Nov 18 ~1 AM PT: off daily (on the Nov 17 daily top 10; no-repeat rule), kept on weekly/monthly.",
       "headline_reviewed": true,
       "first_seen_basis": "Reddit post by u/Used-Detective2661 on r/me_irl, 2026-11-16T20:27:20+00:00",
       "credit": "posted by u/Used-Detective2661 on r/me_irl"
@@ -33,7 +348,6 @@
     {
       "id": "truman-post-office-line",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -54,7 +368,7 @@
           "Reddit"
         ]
       },
-      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/me_irl top-of-day #7 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media.",
+      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/me_irl top-of-day #7 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media. Nov 18 ~1 AM PT: off daily (on the Nov 17 daily top 10; no-repeat rule), kept on weekly/monthly.",
       "headline_reviewed": true,
       "first_seen_basis": "Reddit post by u/Fearless-Camera-8975 on r/me_irl, 2026-11-16T18:42:09+00:00",
       "credit": "posted by u/Fearless-Camera-8975 on r/me_irl"
@@ -62,7 +376,6 @@
     {
       "id": "coffee-tea-in-your-30s-gerd",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -83,7 +396,7 @@
           "Reddit"
         ]
       },
-      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/memes top-of-day #8 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media.",
+      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/memes top-of-day #8 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media. Nov 18 ~1 AM PT: off daily (on the Nov 17 daily top 10; no-repeat rule), kept on weekly/monthly.",
       "headline_reviewed": true,
       "first_seen_basis": "Reddit post by u/Waitingforlunch on r/memes, 2026-11-16T19:59:45+00:00",
       "credit": "posted by u/Waitingforlunch on r/memes"
@@ -91,7 +404,6 @@
     {
       "id": "compliment-vs-criticism-core-memory",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -112,7 +424,7 @@
           "Reddit"
         ]
       },
-      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/2meirl4meirl top-of-day #6 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media.",
+      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/2meirl4meirl top-of-day #6 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media. Nov 18 ~1 AM PT: off daily (on the Nov 17 daily top 10; no-repeat rule), kept on weekly/monthly.",
       "headline_reviewed": true,
       "first_seen_basis": "Reddit post by u/Notmyrealname5282 on r/2meirl4meirl, 2026-11-17T08:54:11+00:00",
       "credit": "posted by u/Notmyrealname5282 on r/2meirl4meirl"
@@ -120,7 +432,6 @@
     {
       "id": "fan-without-the-fanbase",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -141,7 +452,7 @@
           "Reddit"
         ]
       },
-      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/me_irl top-of-day #6 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media. Cartoon character only; no real child shown.",
+      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/me_irl top-of-day #6 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media. Cartoon character only; no real child shown. Nov 18 ~1 AM PT: off daily (on the Nov 17 daily top 10; no-repeat rule), kept on weekly/monthly.",
       "headline_reviewed": true,
       "first_seen_basis": "Reddit post by u/flynxd on r/me_irl, 2026-11-17T03:14:28+00:00",
       "credit": "posted by u/flynxd on r/me_irl",
@@ -150,7 +461,6 @@
     {
       "id": "back-then-today-nail-clipper",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -171,7 +481,7 @@
           "Reddit"
         ]
       },
-      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/me_irl top-of-day #5 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media.",
+      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/me_irl top-of-day #5 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media. Nov 18 ~1 AM PT: off daily (on the Nov 17 daily top 10; no-repeat rule), kept on weekly/monthly.",
       "headline_reviewed": true,
       "first_seen_basis": "Reddit post by u/gigagaming1256 on r/me_irl, 2026-11-17T06:34:09+00:00",
       "credit": "posted by u/gigagaming1256 on r/me_irl"
@@ -179,7 +489,6 @@
     {
       "id": "camera-roll-phone-advert",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -200,7 +509,7 @@
           "Reddit"
         ]
       },
-      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/memes top-of-day #4 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media.",
+      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/memes top-of-day #4 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media. Nov 18 ~1 AM PT: off daily (on the Nov 17 daily top 10; no-repeat rule), kept on weekly/monthly.",
       "headline_reviewed": true,
       "first_seen_basis": "Reddit post by u/drunkstoned94 on r/memes, 2026-11-17T04:18:06+00:00",
       "credit": "posted by u/drunkstoned94 on r/memes"
@@ -208,7 +517,6 @@
     {
       "id": "thanksgiving-bluetooth-10am-beer",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -229,7 +537,7 @@
           "Reddit"
         ]
       },
-      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/2meirl4meirl top-of-day #2 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media.",
+      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/2meirl4meirl top-of-day #2 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media. Nov 18 ~1 AM PT: off daily (on the Nov 17 daily top 10; no-repeat rule), kept on weekly/monthly.",
       "headline_reviewed": true,
       "first_seen_basis": "Reddit post by u/Forsaken_Put8204 on r/2meirl4meirl, 2026-11-16T18:08:28+00:00",
       "credit": "posted by u/Forsaken_Put8204 on r/2meirl4meirl"
@@ -237,7 +545,6 @@
     {
       "id": "never-opened-work-email-phishing",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -258,7 +565,7 @@
           "Reddit"
         ]
       },
-      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/memes top-of-day #2 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media.",
+      "notes": "Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/memes top-of-day #2 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media. Nov 18 ~1 AM PT: off daily (on the Nov 17 daily top 10; no-repeat rule), kept on weekly/monthly.",
       "headline_reviewed": true,
       "first_seen_basis": "Reddit post by u/Brendanlendan on r/memes, 2026-11-16T14:59:22+00:00",
       "credit": "posted by u/Brendanlendan on r/memes"
@@ -266,7 +573,6 @@
     {
       "id": "robert-pattinson-james-bond",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -321,7 +627,7 @@
         },
         "x_news": true
       },
-      "notes": "Grouped cluster: after Amazon MGM named Robert Pattinson the next James Bond on Nov 16, 2026, 10+ independent Pattinson-Bond remixes by different users hit the r/memes, r/dankmemes and r/me_irl top-of-day feeds (Twilight 'Bond. James Bond.', 'Somebody get these BEGGARS out', Godzilla, Squidward audition, 'older than James Bond') plus X riffs and X News stories. Credited post is the top-scoring one: u/RealHarambae's r/dankmemes #1 (still #1 at 8:25 AM PT Nov 17). The crude 'Pattinson in your ...' X variants are hard-no and not included. Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/dankmemes top-of-day #1 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media.",
+      "notes": "Grouped cluster: after Amazon MGM named Robert Pattinson the next James Bond on Nov 16, 2026, 10+ independent Pattinson-Bond remixes by different users hit the r/memes, r/dankmemes and r/me_irl top-of-day feeds (Twilight 'Bond. James Bond.', 'Somebody get these BEGGARS out', Godzilla, Squidward audition, 'older than James Bond') plus X riffs and X News stories. Credited post is the top-scoring one: u/RealHarambae's r/dankmemes #1 (still #1 at 8:25 AM PT Nov 17). The crude 'Pattinson in your ...' X variants are hard-no and not included. Nov 17 8:30 AM PT daily rebuild (no repeats from Nov 16): r/dankmemes top-of-day #1 (Reddit top-of-day RSS read 2026-11-17 ~5:15 AM PT); safety-prescreened in the 5 AM daily pool; original media from memestand-video/pool-media. Nov 18 ~1 AM PT: off daily (on the Nov 17 daily top 10; no-repeat rule), kept on weekly/monthly.",
       "headline_reviewed": true,
       "first_seen_basis": "Reddit post by u/RealHarambae on r/dankmemes, 2026-11-16T18:29:31+00:00",
       "credit": "posted by u/RealHarambae on r/dankmemes"
