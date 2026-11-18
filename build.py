@@ -223,9 +223,23 @@ def img_dims(src):
             _DIMS[src] = None
     return _DIMS[src]
 
-def wh_attrs(src):
+def img_ratio(src):
+    """Pixel size used to reserve the image box. Hotlinks and missing files get a fixed 4:3 box."""
     d = img_dims(src)
-    return f' width="{d[0]}" height="{d[1]}"' if d else ' width="400" height="300" style="aspect-ratio:4/3;object-fit:contain"'
+    return d if d else (400, 300)
+
+def wh_attrs(src):
+    """width/height attributes plus an explicit aspect-ratio style. The ratio stays even when
+    CSS later sets width:100% and a max-height, so the clamped box is reserved before the file loads."""
+    w, h = img_ratio(src)
+    extra = "" if img_dims(src) else ";object-fit:contain"
+    return f' width="{w}" height="{h}" style="aspect-ratio:{w}/{h}{extra}"'
+
+def shot_attrs(src, postcard=False):
+    """Class and CSS variables on the wrapping <a> so the reserved box can honor max-height."""
+    w, h = img_ratio(src)
+    kind = "shot postcard" if postcard else "shot"
+    return f'class="{kind}" style="--w:{w};--h:{h};aspect-ratio:{w}/{h}"'
 def abs_img(m):
     s = img_src(m)
     if not s: return None
@@ -274,16 +288,18 @@ CSS = """
  a{color:var(--fg);text-decoration:none} a:hover{text-decoration:underline}
  .mast{position:relative;text-align:center;border-bottom:3px double var(--rule);padding-bottom:8px}
  .mast h1{margin:0;font-weight:normal;font-size:inherit}
- .mast .logo{display:block;font-size:52px;letter-spacing:3px;margin-top:6px}
+ .mast .logo{display:block;font-size:52px;letter-spacing:3px;margin-top:6px;line-height:1}
  .mast .logo a{display:inline-flex;align-items:center;justify-content:center;gap:10px;color:var(--fg);text-decoration:none}
  .mast .logo .mark{width:.78em;height:.78em;flex:none;display:block}
  .mast .word{border-bottom:3px solid var(--redbg);line-height:.9}
- .mast .tag{display:block;font-size:13px;letter-spacing:2px;font-weight:normal}
+ .mast .tag{display:block;font-size:13px;letter-spacing:2px;font-weight:normal;line-height:1.35}
  .mast .periods{margin:8px 0 0;font-size:12px;letter-spacing:0} .mast .periods a{color:var(--link);margin:0 6px;text-decoration:underline}
  .intro{text-align:center;font-size:12px;margin:6px auto 0;max-width:820px;color:var(--muted)} .intro a{color:var(--link);text-decoration:underline}
  .upd{text-align:center;font-size:12px;margin:6px 0 2px}
  .top{text-align:center;margin:18px auto 30px;max-width:900px;padding-bottom:22px;border-bottom:3px double var(--rule)}
- .top img{box-sizing:content-box;max-width:calc(100% - 2px);max-height:520px;border:1px solid var(--rule);object-fit:contain}
+ .top a.shot{--lead-max:520px;display:block;box-sizing:content-box;width:min(calc(100% - 2px),calc(var(--w)*1px),calc(var(--w)/var(--h)*var(--lead-max)));max-height:var(--lead-max);aspect-ratio:var(--w)/var(--h);margin:0 auto;border:1px solid var(--rule);background:var(--card);overflow:hidden}
+ .top a.shot.postcard{--lead-max:640px;width:100%;max-width:100%;box-sizing:border-box;background:var(--card)}
+ .top a.shot>img,.top img{box-sizing:border-box;display:block;width:100%;height:100%;max-width:none;max-height:none;border:0;object-fit:contain;margin:0}
  .top .card{min-height:240px;font-size:28px}
  .top h2{margin:10px 0 0;text-decoration:none}
  .top .hl a{color:var(--red);font-size:26px;font-weight:650;line-height:1.3}
@@ -306,10 +322,10 @@ CSS = """
  h3{margin:0;font-size:inherit}
  ul{list-style:none;padding:0;margin:0}
  li{margin:0 0 22px;padding:12px;border:1px solid var(--line);border-top:3px solid var(--rule);background:var(--card);box-shadow:0 2px 4px rgba(0,0,0,.10)}
- .thumb{display:block;width:100%;max-height:260px;object-fit:contain;background:var(--thumb);border:1px solid var(--line);margin-bottom:10px}
- .thumb.postcard{width:100%;height:auto;max-height:none;object-fit:contain;background:var(--card)}
- .top img.postcard{width:100%;height:auto;max-height:640px;object-fit:contain;background:var(--card)}
- .one .thumb{max-height:420px}
+ a.shot{display:block;width:100%;max-height:260px;aspect-ratio:var(--w)/var(--h);background:var(--thumb);border:1px solid var(--line);margin-bottom:10px;overflow:hidden}
+ a.shot>img,.thumb{display:block;width:100%;height:100%;max-height:none;object-fit:contain;background:transparent;border:0;margin:0}
+ a.shot.postcard,.thumb.postcard{max-height:none;background:var(--card)}
+ .one a.shot,.one .thumb{max-height:420px}
  .card{display:flex;align-items:center;justify-content:center;text-align:center;min-height:120px;padding:14px;border:2px solid var(--rule);font-weight:bold;font-size:17px;background:var(--card)}
  .hl{font-size:18px;font-weight:650;line-height:1.35}
  .textmeme{text-transform:none}
@@ -335,7 +351,7 @@ CSS = """
  .prose{max-width:760px;margin:16px auto;font-size:14px;line-height:1.5} .prose a{color:var(--link);text-decoration:underline} .prose h2{text-align:left;text-decoration:none;margin-top:28px;padding:7px 10px;background:var(--bar);color:var(--barfg);font-size:17px;letter-spacing:1px} .prose li{border:0;margin:0 0 6px;padding:0;list-style:disc;box-shadow:none;background:none} .prose ul,.prose ol{padding-left:22px} .prose td,.prose th{border:1px solid var(--line);padding:3px 6px;font-size:12px} .prose table{border-collapse:collapse;max-width:100%}
  nav.foot{margin-bottom:6px;font-size:12px} nav.foot a{color:var(--link);margin:0 6px;text-decoration:underline} footer p{margin:6px auto;max-width:860px}
  .crumbs{font-size:12px;margin:10px auto 0;max-width:760px} .crumbs a{color:var(--link);text-decoration:underline}
- .prose h1{font-size:24px;line-height:1.25;margin:10px 0 12px} .prose h3{margin:14px 0 6px} .prose .thumb{max-height:420px;max-width:400px} .prose .thumb.postcard{max-width:520px;max-height:none} .prose .card{max-width:400px}
+ .prose h1{font-size:24px;line-height:1.25;margin:10px 0 12px} .prose h3{margin:14px 0 6px} .prose a.shot,.prose .thumb{max-height:420px;max-width:400px} .prose a.shot.postcard,.prose .thumb.postcard{max-width:520px;max-height:none} .prose .card{max-width:400px}
  .copy{font-family:var(--read);min-width:0;color:var(--fg)}
  .copy .hl,.copy .dek,.copy .credit,.copy .meta,.copy .go,.copy .fold{font-family:var(--read)}
  .copy .hl a{color:var(--fg);overflow-wrap:break-word}
@@ -405,7 +421,8 @@ CSS = """
   .mast .logo{font-size:32px;letter-spacing:1px} .mast .logo a{gap:6px} .mast .tag{font-size:12px;letter-spacing:1px}
   .intro{font-size:13px;line-height:1.4}
   .top{margin:14px auto 26px;padding-bottom:20px}
-  .top img{max-height:60vh}
+  .top a.shot,.top img{--lead-max:60vh;max-height:60vh}
+  .top a.shot.postcard,.top img.postcard{--lead-max:640px;max-height:640px}
   .top .card{min-height:0;font-size:20px;padding:18px 14px}
   .top .hl a{font-size:24px;line-height:1.3}
   .top .textmeme .card{font-size:22px;min-height:0}
@@ -418,7 +435,8 @@ CSS = """
   footer p a,.prose p a,.prose .note a{padding:16px 0}
   .prose a{overflow-wrap:anywhere}
   li{margin:0 0 26px;padding:12px}
-  .thumb,.one .thumb{max-height:380px}
+  a.shot,.one a.shot,.thumb,.one .thumb{max-height:380px}
+  a.shot.postcard,.thumb.postcard,.one a.shot.postcard,.one .thumb.postcard{max-height:none}
   .card{font-size:17px}
   .hl,.copy .hl{font-size:19px;line-height:1.35}
   .dek{font-size:17px}
@@ -438,7 +456,7 @@ CSS = """
   .top .copy .meta{align-items:center}
   .pager a,.more a,.crumbs a,.az a,nav.foot a,.mast .periods a{display:inline-block;min-height:44px;line-height:44px;padding:0 4px}
   nav.foot{font-size:13px;line-height:1.2} footer{font-size:12px}
-  .prose{font-size:16px} .explainer{font-size:18px} .prose h1{font-size:22px} .prose .thumb,.prose .card{max-width:100%}
+  .prose{font-size:16px} .explainer{font-size:18px} .prose h1{font-size:22px} .prose a.shot,.prose .thumb,.prose .card{max-width:100%}
   .life li{grid-template-columns:4.6rem minmax(0,1fr);column-gap:.65rem}
   .life .who{font-size:17px} .embed-brand{font-size:18px;letter-spacing:1px}
   .prose li{margin-bottom:10px} .prose li a{display:inline-block;padding:10px 0}
@@ -620,14 +638,15 @@ def thumb(m, base, label, cls="thumb", eager=False, dest=None):
     ref = ' referrerpolicy="no-referrer"' if ext else ""
     wh = wh_attrs(raw)   # explicit size (or a fixed 4:3 box for hotlinks) reserves space: no layout shift
     kind = " postcard" if uses_post_card(m) else ""
+    shot = shot_attrs(raw, uses_post_card(m))
     if dest:
-        open_a = f'<a href="{e(dest)}">'
+        open_a = f'<a href="{e(dest)}" {shot}>'
     else:
         href = safe_url(outbound(m), context="thumbnail")
         if href:
-            open_a = f'<a href="{e(href)}" target="_blank" rel="noopener">'
+            open_a = f'<a href="{e(href)}" {shot} target="_blank" rel="noopener">'
         else:
-            open_a = '<a href="#">'
+            open_a = f'<a href="#" {shot}>'
     return f'{open_a}<img class="{cls}{kind}" src="{e(src)}" alt="{e(alt(m, label))}"{wh} {load}{ref}></a>'
 
 def load_candidate_rows():

@@ -2,7 +2,7 @@
 
 Static site. Plain HTML/CSS; JavaScript is the Cloudflare Web Analytics beacon plus a tiny first-party inline script that shows a relative "Updated … ago" stamp (see build.py). Everything is generated from JSON.
 
-> **No layout shift:** every `<img>` must always have explicit `width`/`height` (build.py's `wh_attrs()` reads them from the file with PIL) or a CSS `aspect-ratio` box, so space is reserved before it loads (CLS).
+> **No layout shift:** every `<img>` must always have explicit `width`/`height` (build.py's `wh_attrs()` reads them from the file with PIL) and a CSS `aspect-ratio` (the wrapping `a.shot` also gets `--w`/`--h` and the same ratio). That reserved box must honor the `max-height` cap from the first paint, so a wide `width:100%` thumb cannot overshoot and then snap down when the file loads (CLS).
 
 > **Theming (light/dark):** all colors in build.py's `CSS` are CSS custom properties (`--bg`, `--fg`, `--red`, `--link`...) defined in `:root`, with dark values via `prefers-color-scheme` and `[data-theme=dark|light]` overrides. Use the variables for any new color, never hex literals. The header toggle (`THEME_TOGGLE`, fixed 34px, absolutely positioned) saves the choice in localStorage; `THEME_HEAD` applies it before paint.
 

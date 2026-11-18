@@ -931,6 +931,33 @@ def test_daily_top10_pages_are_permanent():
         assert "meaning and origin" in page
 
 
+def test_image_boxes_reserve_aspect_ratio():
+    """Lead, list, and explainer pictures reserve their real ratio, including the max-height cap."""
+    css = build.CSS
+    assert "a.shot{" in css
+    assert "aspect-ratio:var(--w)/var(--h)" in css
+    assert ".one a.shot,.one .thumb{max-height:420px}" in css
+    assert "li .zone-lead>a .thumb{margin:0}" in css
+    attrs = build.wh_attrs("images/seatbelt-dog.jpg")
+    assert 'width="' in attrs and 'height="' in attrs
+    assert "aspect-ratio:" in attrs
+    w, h = build.img_dims("images/seatbelt-dog.jpg")
+    assert f'width="{w}"' in attrs and f'height="{h}"' in attrs
+    assert f"aspect-ratio:{w}/{h}" in attrs
+    html = build.thumb({
+        "rank": 1, "id": "seatbelt-dog", "title": "Seatbelt Dog",
+        "image": "images/seatbelt-dog.jpg",
+        "source_url": "https://x.com/acervodoguinhos/status/1",
+        "source_name": "X",
+    }, "../", "today", dest="meme/seatbelt-dog/")
+    assert 'class="shot"' in html
+    assert f"--w:{w}" in html and f"--h:{h}" in html
+    assert 'class="thumb"' in html
+    hot = build.wh_attrs("https://cdn.example/a.jpg")
+    assert 'width="400"' in hot and 'height="300"' in hot
+    assert "aspect-ratio:400/300" in hot
+
+
 def test_search_console_file_is_exact_and_restored_by_build():
     path = ROOT / "google327e53c932d0bf40.html"
     path.write_bytes(b"<html>wrapped</html>\n")
