@@ -116,6 +116,16 @@
       "source_url": "https://x.com/ayovxid/status/2121181394680385735",
       "source_asset": "memestand-video/cache/2026-11-14/needed-a-kiss-card.jpg",
       "prepared": "Self-rendered attributed post card made Nov 14 2026 (6 AM PT refresh) with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, avatar). No MemeStand header. Not a screenshot of X."
+    },
+    "thanksgiving-mac-and-cheese-decoration-committee": {
+      "ids": ["thanksgiving-mac-and-cheese-decoration-committee"],
+      "file": "images/post-cards/thanksgiving-mac-and-cheese-decoration-committee.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "Y’all…why did my mama call me and ask me what I’m making for Thanksgiving; I said “imma try to do mac and cheese”. She said “I heard that’s why I called….Im redirecting you to the decoration committee. You just make sure everything looks pretty.”",
+      "source_url": "https://x.com/thevivianbanks/status/2123235076427444493",
+      "source_asset": "memestand-video/cache/2026-11-19/thanksgiving-mac-and-cheese-decoration-committee-card.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 19 2026 (7 AM-slot main refresh) with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, avatar; the sparkle emoji in the display name is left out because the card font cannot draw it). The post's TV-still reaction image is not reproduced. No MemeStand header. Not a screenshot of X."
     }
   }
 }

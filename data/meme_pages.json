@@ -115,6 +115,33 @@
       "how_to_use": [],
       "checked": "2026-11-07T22:51:54-08:00"
     },
+    "ai-cd-spines-top-10-albums": {
+      "name": "AI CD Spines",
+      "ids": [
+        "ai-cd-spines-top-10-albums"
+      ],
+      "status": "full",
+      "explainer": "A free web tool turns your top albums, songs, movies, books or shows of 2026 into a picture of CD, tape, vinyl or DVD spines on a shelf. The timeline filled up with people's spine shelves, and a second wave of posts joked about how many self-described AI skeptics were happily posting them.",
+      "origin": "@taylor_ shared the tool on X on November 17, 2026 (5:00 PM PT) with a screen recording; the post passed 2.8 million views per X's public counts by November 19. Users then posted their own shelves and reaction jokes, and X News covered the trend.",
+      "origin_confirmed": true,
+      "how_to_use": [],
+      "source_url": "https://x.com/taylor_/status/2122857319662854469",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@taylor_ on X",
+          "url": "https://x.com/taylor_/status/2122857319662854469"
+        },
+        {
+          "name": "X News: Tool Turns Album Lists into CD Spine Images",
+          "url": "https://x.com/i/trending/2122914634768560582"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-19",
+      "checked": "2026-11-19T07:05:00-08:00",
+      "original_url": "https://x.com/taylor_/status/2122857319662854469"
+    },
     "ai-rumpelstiltskin-tip-toein-in-my-jordans": {
       "name": "AI Rumpelstiltskin Tip Toein' in My Jordans",
       "ids": [
@@ -898,6 +925,32 @@
       "written": "2026-11-17",
       "checked": "2026-11-17T08:30:00-08:00"
     },
+    "dancing-rats-gif": {
+      "name": "Dancing Rats GIF",
+      "ids": [
+        "dancing-rats-gif"
+      ],
+      "status": "short",
+      "explainer": "A short GIF of three rats standing up and grabbing at each other in a storeroom, which looks like a clumsy dance or scuffle. People use it as a reply reaction in chats and on X, part of a wider wave of animal GIFs shared as WhatsApp-style stickers.",
+      "origin": "@Zla_thyno posted the GIF on X on November 18, 2026 (12:14 AM PT); it passed 11 million views per X's public counts by the morning of November 19, and others reused it as a reply GIF. Who made the GIF hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/Zla_thyno/status/2122966627129909757",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@Zla_thyno on X",
+          "url": "https://x.com/Zla_thyno/status/2122966627129909757"
+        },
+        {
+          "name": "X News: Hilarious Animal GIFs Become WhatsApp Sticker Favorites",
+          "url": "https://x.com/i/trending/2122725445946777873"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-19",
+      "checked": "2026-11-19T07:05:00-08:00"
+    },
     "dont-flirt-with-me": {
       "name": "Don't Flirt With Me",
       "ids": [
@@ -1011,6 +1064,33 @@
       "origin_confirmed": true,
       "how_to_use": [],
       "checked": "2026-11-03T23:51:43-08:00"
+    },
+    "every-office-on-gta-6-day": {
+      "name": "Every Office on GTA 6 Day",
+      "ids": [
+        "every-office-on-gta-6-day"
+      ],
+      "status": "full",
+      "explainer": "An AI-made cartoon in which a boss arrives to an empty office because every employee called in 'sick' on GTA VI's release day, then ends up doing the same. It is one of many launch-day jokes about people skipping work to play the game.",
+      "origin": "@DrClownPhD posted the cartoon on X on November 18, 2026 (3:13 PM PT), with his own watermark; it passed 200,000 views per X's public counts by the morning of November 19. Similar 'nobody is coming to work' jokes spread across X, and Mashable rounded up the fake-sick-leave memes.",
+      "origin_confirmed": true,
+      "how_to_use": [],
+      "source_url": "https://x.com/DrClownPhD/status/2123192872572772472",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@DrClownPhD on X",
+          "url": "https://x.com/DrClownPhD/status/2123192872572772472"
+        },
+        {
+          "name": "Mashable India: GTA 6 memes flood X",
+          "url": "https://in.mashable.com/tech/116331/hilarious-gta-6-memes-flood-x-as-few-fake-sick-leave-for-play-here-are-the-best-ones"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-19",
+      "checked": "2026-11-19T07:05:00-08:00",
+      "original_url": "https://x.com/DrClownPhD/status/2123192872572772472"
     },
     "fan-without-the-fanbase": {
       "name": "Being a Fan Without the Fanbase",
@@ -1266,6 +1346,36 @@
       "related": [],
       "written": "2026-11-18",
       "checked": "2026-11-18T07:20:00-08:00"
+    },
+    "gta-5-vs-gta-6-me": {
+      "name": "GTA 5 vs GTA 6 Me",
+      "ids": [
+        "gta-5-vs-gta-6-me"
+      ],
+      "status": "short",
+      "explainer": "For the GTA VI launch, people post an old photo of themselves from around GTA V's 2013 release next to a recent one, captioned 'GTA 5 vs GTA 6 me'. The joke is that the wait between the two games was long enough to see someone grow up.",
+      "origin": "Several accounts used the caption on November 18, 2026, the day before GTA VI's release. MrBeast's version, two photos of himself posted that morning (9:13 AM PT), was the biggest, passing 2.7 million views per X's public counts. X News and Mashable rounded up the trend. The first person to use the caption hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/MrBeast/status/2123102254031135211",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@MrBeast on X",
+          "url": "https://x.com/MrBeast/status/2123102254031135211"
+        },
+        {
+          "name": "X News: GTA VI Launch Sparks Then-vs-Now Graphics Comparisons",
+          "url": "https://x.com/i/trending/2123163237252219029"
+        },
+        {
+          "name": "Mashable India: GTA 6 memes flood X",
+          "url": "https://in.mashable.com/tech/116331/hilarious-gta-6-memes-flood-x-as-few-fake-sick-leave-for-play-here-are-the-best-ones"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-19",
+      "checked": "2026-11-19T07:05:00-08:00"
     },
     "gta-san-andreas-life-without-girlfriend": {
       "name": "Life Without a Girlfriend (GTA San Andreas)",
@@ -1685,6 +1795,32 @@
       "written": "2026-11-05",
       "checked": "2026-11-07T22:51:54-08:00"
     },
+    "kangaroo-dad-jacked": {
+      "name": "Kangaroo Dad Jacked",
+      "ids": [
+        "kangaroo-dad-jacked"
+      ],
+      "status": "short",
+      "explainer": "A wildlife clip that starts with a kangaroo mother and her clumsy joey, then reveals the father: a very muscular male kangaroo. The joke is the reveal itself, and people quote it with variations of 'THE DAD???' as the punchline.",
+      "origin": "@Axaxia88 posted the clip on X on November 18, 2026 (12:30 PM PT); it passed 28 million views per X's public counts by the morning of November 19, and quote reactions and an X News story followed. Who filmed it hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/Axaxia88/status/2123151760839872699",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@Axaxia88 on X",
+          "url": "https://x.com/Axaxia88/status/2123151760839872699"
+        },
+        {
+          "name": "X News: Kangaroo Dad's Muscular Reveal Delights Video Viewers",
+          "url": "https://x.com/i/trending/2123215151604158868"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-19",
+      "checked": "2026-11-19T07:05:00-08:00"
+    },
     "ken-paxton-salsa-made-in-new-york-city": {
       "name": "Ken Paxton Eats Salsa Made in New York City",
       "ids": [
@@ -2024,6 +2160,32 @@
       "related": [],
       "written": "2026-11-04",
       "checked": "2026-11-07T22:51:54-08:00"
+    },
+    "mens-day-world-toilet-day": {
+      "name": "International Men's Day and World Toilet Day",
+      "ids": [
+        "mens-day-world-toilet-day"
+      ],
+      "status": "short",
+      "explainer": "November 19 is both International Men's Day and World Toilet Day, and people on X joke about the two sharing a date. Posts pair the two observances' date cards or logos and add a one-line punchline.",
+      "origin": "The jokes appeared across X on November 18-19, 2026, and X News covered the shared date. The post credited here is @AaryanPrateekX's pair of date cards (November 18, 8:59 PM PT); it is a small post, and the first person to make the joke hasn't been confirmed.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/AaryanPrateekX/status/2123280009930695088",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@AaryanPrateekX on X",
+          "url": "https://x.com/AaryanPrateekX/status/2123280009930695088"
+        },
+        {
+          "name": "X News: International Men's Day Shares Date with World Toilet Day",
+          "url": "https://x.com/i/trending/2123381404671320273"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-19",
+      "checked": "2026-11-19T07:05:00-08:00"
     },
     "microsoft-364": {
       "name": "Microsoft 364",
@@ -3042,6 +3204,33 @@
       "related": [],
       "written": "2026-11-17",
       "checked": "2026-11-17T08:30:00-08:00"
+    },
+    "thanksgiving-mac-and-cheese-decoration-committee": {
+      "name": "Redirected to the Decoration Committee",
+      "ids": [
+        "thanksgiving-mac-and-cheese-decoration-committee"
+      ],
+      "status": "full",
+      "explainer": "A Thanksgiving story post: someone tells their mom they plan to make mac and cheese, and she calls to reassign them to decorations instead. The joke is a polite way of saying your cooking isn't trusted with a key holiday dish, and replies share their own family kitchen demotions.",
+      "origin": "@thevivianbanks posted it on X on November 18, 2026 (6:01 PM PT); it passed 230,000 views per X's public counts by the morning of November 19, with quote riffs and an X News story.",
+      "origin_confirmed": true,
+      "how_to_use": [],
+      "source_url": "https://x.com/thevivianbanks/status/2123235076427444493",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@thevivianbanks on X",
+          "url": "https://x.com/thevivianbanks/status/2123235076427444493"
+        },
+        {
+          "name": "X News: Mom Redirects Daughter from Mac and Cheese to Thanksgiving Decorations",
+          "url": "https://x.com/i/trending/2123332264616505482"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-19",
+      "checked": "2026-11-19T07:05:00-08:00",
+      "original_url": "https://x.com/thevivianbanks/status/2123235076427444493"
     },
     "the-myth-of-consensual-pc-building": {
       "name": "The Myth of Consensual PC Building",
