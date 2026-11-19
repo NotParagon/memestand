@@ -1,6 +1,16 @@
 {
   "note": "Add a card by saving the unlabeled square (avatar, handle, full post, no MemeStand header) as images/post-cards/<slug>.jpg and adding an entry here. Do not put these files in images/<id>.jpg: that folder is the 400px photo-thumbnail store and rank.py will shrink it. image_policy none still blocks unlisted third-party photos. A listed card is shown only when the meme has no photo of its own.",
   "cards": {
+    "indonesian-coffee-chain-names": {
+      "ids": ["indonesian-coffee-chain-names"],
+      "file": "images/post-cards/indonesian-coffee-chain-names.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "i fucking hate Indonesian coffee chain names bro yeah lemme get a cup of Memories of my Ex hold the sugar",
+      "source_url": "https://x.com/punishedudon/status/2122933901769482627",
+      "source_asset": "memestand-video/cache/2026-11-19/indonesian-coffee-chain-names-card.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 19 2026 (~12:10 AM PT daily rebuild) with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, avatar; the emoji in the display name is left out because the card font cannot draw it). No MemeStand header. Not a screenshot of X."
+    },
     "regretamine": {
       "ids": ["regretamine"],
       "file": "images/post-cards/regretamine.jpg",
