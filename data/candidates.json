@@ -83,10 +83,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/iivvei_/status/2122993821856505964",
-          "views": 3012822,
-          "likes": 146673,
+          "views": 3150579,
+          "likes": 147101,
           "checked": "2026-11-20",
-          "via": "X API (read ~12:53 AM PT Nov 20)"
+          "via": "X API (read ~7:05 AM PT Nov 20)"
         },
         "platforms": [
           "X"
@@ -128,10 +128,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/ashleeey665__/status/2123102749172863418",
-          "views": 2856387,
-          "likes": 170613,
+          "views": 2974526,
+          "likes": 172833,
           "checked": "2026-11-20",
-          "via": "X API (read ~12:53 AM PT Nov 20)"
+          "via": "X API (read ~7:05 AM PT Nov 20)"
         },
         "platforms": [
           "X"
@@ -175,10 +175,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/ciwilkie/status/2123350498116087999",
-          "views": 1456981,
-          "likes": 92550,
+          "views": 1486941,
+          "likes": 93658,
           "checked": "2026-11-20",
-          "via": "X API (read ~12:53 AM PT Nov 20)"
+          "via": "X API (read ~7:05 AM PT Nov 20)"
         },
         "platforms": [
           "X"
@@ -220,10 +220,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/OsweltOrtiz/status/2123331021743821137",
-          "views": 1155122,
-          "likes": 77851,
+          "views": 1257786,
+          "likes": 83090,
           "checked": "2026-11-20",
-          "via": "X API (read ~12:53 AM PT Nov 20)"
+          "via": "X API (read ~7:05 AM PT Nov 20)"
         },
         "platforms": [
           "X"
@@ -267,10 +267,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/BobGolen/status/2123111348447879454",
-          "views": 824717,
-          "likes": 49925,
+          "views": 871997,
+          "likes": 52700,
           "checked": "2026-11-20",
-          "via": "X API (read ~12:53 AM PT Nov 20)"
+          "via": "X API (read ~7:05 AM PT Nov 20)"
         },
         "platforms": [
           "X"
@@ -312,10 +312,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/AgwuGallant/status/2123453106427945308",
-          "views": 524626,
-          "likes": 16545,
+          "views": 767949,
+          "likes": 22993,
           "checked": "2026-11-20",
-          "via": "X API (read ~12:53 AM PT Nov 20)"
+          "via": "X API (read ~7:05 AM PT Nov 20)"
         },
         "platforms": [
           "X"
@@ -702,10 +702,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/layiwasabi/status/2122759899440468434",
-          "views": 2110079,
-          "likes": 39195,
+          "views": 2113449,
+          "likes": 39257,
           "checked": "2026-11-20",
-          "via": "X API (read ~12:53 AM PT Nov 20)"
+          "via": "X API (read ~7:05 AM PT Nov 20)"
         },
         "x_news": true,
         "platforms": [
@@ -746,10 +746,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/Ephraim_Snr/status/2122524981397479435",
-          "views": 1099353,
-          "likes": 37440,
+          "views": 1101373,
+          "likes": 37434,
           "checked": "2026-11-20",
-          "via": "X API (read ~12:53 AM PT Nov 20)"
+          "via": "X API (read ~7:05 AM PT Nov 20)"
         },
         "x_news": true,
         "platforms": [
@@ -977,10 +977,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/SledgeDev/status/2122738102255169616",
-          "views": 5966513,
-          "likes": 250951,
+          "views": 5978032,
+          "likes": 250996,
           "checked": "2026-11-20",
-          "via": "X API (read ~12:53 AM PT Nov 20)"
+          "via": "X API (read ~7:05 AM PT Nov 20)"
         },
         "x_news": true,
         "platforms": [
@@ -5598,6 +5598,57 @@
         "weekly",
         "monthly"
       ]
+    },
+    {
+      "id": "coffin-lid-every-day-a-fresh-start",
+      "name": "Every Day Is a Fresh Start (Unless It's a Coffin Lid)",
+      "title": "'AS LONG AS THE DOOR THAT CLOSES ISN'T THE LID OF A COFFIN, EVERY DAY IS A FRESH START': A BRAZILIAN REPLY EVERYONE IS REPOSTING IN THEIR OWN WORDS",
+      "card_text": "Camarada, enquanto a porta que fechar não for a do caixão, todo dia é um recomeço.",
+      "source_url": "https://x.com/Rafaelsmnzl/status/2122746145105437121",
+      "source_name": "X @Rafaelsmnzl",
+      "image_url": null,
+      "image_policy": "none",
+      "first_seen": "2026-11-17",
+      "also": [
+        {
+          "name": "X News: Every Day a Fresh Start, Unless It's a Coffin Lid",
+          "url": "https://x.com/i/trending/2123684438622060702"
+        },
+        {
+          "name": "X / @Ib_ra_himm (English copy)",
+          "url": "https://x.com/Ib_ra_himm/status/2123652977265156456"
+        },
+        {
+          "name": "X / @Tobzzy212 (copy)",
+          "url": "https://x.com/Tobzzy212/status/2123662597094580449"
+        },
+        {
+          "name": "X / @Um__Dickson (copy)",
+          "url": "https://x.com/Um__Dickson/status/2123683353979195626"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/Rafaelsmnzl/status/2122746145105437121",
+          "views": 2056498,
+          "likes": 77358,
+          "checked": "2026-11-20",
+          "via": "X API (read ~7:05 AM PT Nov 20)"
+        },
+        "platforms": [
+          "X"
+        ],
+        "x_news": true
+      },
+      "notes": "Nov 20 7 AM-slot main discovery: Portuguese reply by Rafael Manzoli (@Rafaelsmnzl) posted Nov 17 9:38 AM PT; 2.06M views / 77.4K likes / 1,609 quotes per X's public counts at ~7:05 AM PT Nov 20. Fresh wave Nov 20: X News story 2123684438622060702 and English copy-paste versions (@Ib_ra_himm, @Tobzzy212, @Um__Dickson). Text-only: shown as a self-rendered attributed post card (from the 5 AM fresh-pool build). Motivational line, no people mocked.",
+      "first_seen_basis": "X post by @Rafaelsmnzl, 2026-11-17T17:38Z",
+      "credit": "posted by @Rafaelsmnzl on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
     }
   ]
 }

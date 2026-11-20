@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T05:55-08:00",
+  "updated": "2026-11-20T07:02-08:00",
   "daily": [
     {
       "rank": 1,
@@ -98,7 +98,7 @@
         }
       ],
       "first_seen": "2026-11-18",
-      "score": 69.8,
+      "score": 70.0,
       "sources": [
         "X"
       ],
@@ -130,7 +130,7 @@
         }
       ],
       "first_seen": "2026-11-18",
-      "score": 69.6,
+      "score": 69.7,
       "sources": [
         "X"
       ],
@@ -170,6 +170,43 @@
     },
     {
       "rank": 6,
+      "id": "coffin-lid-every-day-a-fresh-start",
+      "title": "'AS LONG AS THE DOOR THAT CLOSES ISN'T THE LID OF A COFFIN, EVERY DAY IS A FRESH START': A BRAZILIAN REPLY EVERYONE IS REPOSTING IN THEIR OWN WORDS",
+      "image": "images/post-cards/coffin-lid-every-day-a-fresh-start.jpg",
+      "image_url": null,
+      "image_kind": "post_card",
+      "card_text": "Camarada, enquanto a porta que fechar não for a do caixão, todo dia é um recomeço.",
+      "source_url": "https://x.com/Rafaelsmnzl/status/2122746145105437121",
+      "source_name": "X @Rafaelsmnzl",
+      "credit": "posted by @Rafaelsmnzl on X",
+      "also": [
+        {
+          "name": "X News: Every Day a Fresh Start, Unless It's a Coffin Lid",
+          "url": "https://x.com/i/trending/2123684438622060702"
+        },
+        {
+          "name": "X / @Ib_ra_himm (English copy)",
+          "url": "https://x.com/Ib_ra_himm/status/2123652977265156456"
+        },
+        {
+          "name": "X / @Tobzzy212 (copy)",
+          "url": "https://x.com/Tobzzy212/status/2123662597094580449"
+        },
+        {
+          "name": "X / @Um__Dickson (copy)",
+          "url": "https://x.com/Um__Dickson/status/2123683353979195626"
+        }
+      ],
+      "first_seen": "2026-11-17",
+      "score": 68.1,
+      "sources": [
+        "X"
+      ],
+      "notes": "Nov 20 7 AM-slot main discovery: Portuguese reply by Rafael Manzoli (@Rafaelsmnzl) posted Nov 17 9:38 AM PT; 2.06M views / 77.4K likes / 1,609 quotes per X's public counts at ~7:05 AM PT Nov 20. Fresh wave Nov 20: X News story 2123684438622060702 and English copy-paste versions (@Ib_ra_himm, @Tobzzy212, @Um__Dickson). Text-only: shown as a self-rendered attributed post card (from the 5 AM fresh-pool build). Motivational line, no people mocked.",
+      "name": "Every Day Is a Fresh Start (Unless It's a Coffin Lid)"
+    },
+    {
+      "rank": 7,
       "id": "dear-microsoft-tomorrow-is-friday",
       "title": "'DEAR MICROSOFT, TOMORROW IS FRIDAY. JUST CONFIRMING, SAME AS LAST WEEK, YES?': OFFICE WORKERS ASK FOR ANOTHER OUTAGE",
       "image": "images/post-cards/dear-microsoft-tomorrow-is-friday.jpg",
@@ -194,7 +231,7 @@
         }
       ],
       "first_seen": "2026-11-19",
-      "score": 66.6,
+      "score": 66.7,
       "sources": [
         "X"
       ],
@@ -202,7 +239,7 @@
       "name": "Dear Microsoft, Tomorrow Is Friday"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "id": "twin-representation-in-media-chart",
       "title": "'TWIN REPRESENTATION IN MEDIA': AN ARTIST'S CHART OF FIVE TWIN TROPES THAT FANS FILL WITH THEIR OWN CHARACTERS",
       "image": "images/twin-representation-in-media-chart.jpg",
@@ -226,7 +263,7 @@
         }
       ],
       "first_seen": "2026-11-19",
-      "score": 65.6,
+      "score": 66.0,
       "sources": [
         "X"
       ],
@@ -234,7 +271,7 @@
       "name": "Twin Representation in Media Chart"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": "last-year-of-being-broke-dog",
       "title": "'MAY THIS BE YOUR LAST YEAR OF BEING BROKE': THE LABRADOR SPLASHING A CUP OF WATER LIKE A BLESSING",
       "image": "images/last-year-of-being-broke-dog.jpg",
@@ -265,7 +302,7 @@
       "notes": "Nov 19 ~12:05 AM PT daily rebuild (no repeats from Nov 18 daily): @Ephraim_Snr's post (Nov 16 6:59 PM PT) has 1.09M views / 37.5K likes per X's public counts at ~12:05 AM PT Nov 19. Copied as a good-luck 'claim it' post by many accounts, with a 'last year of being SINGLE' human remix; X News 2122722794127384586. @Ephraim_Snr is the biggest X post, not the original creator: the earliest X upload found is @blackladiesvibe (Nov 16 6:41 AM PT); who filmed the dog is not documented. No people in frame. Thumbnail is the video's own preview frame. Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): re-read 1.10M views / 37.4K likes per X's public counts; included as a wider-window fill (score order) after the fresher entries."
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "electricity-bill-divine-light",
       "title": "'THEY BILLED ME FOR SUNLIGHT, DIVINE LIGHT, AND THE LIGHT AT THE END OF THE TUNNEL': THE ELECTRICITY BILL ONE-LINER",
       "image": "images/post-cards/electricity-bill-divine-light.jpg",
@@ -290,44 +327,12 @@
         }
       ],
       "first_seen": "2026-11-18",
-      "score": 64.2,
+      "score": 64.4,
       "sources": [
         "X"
       ],
       "notes": "Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): text post by Bob Golen (@BobGolen) Nov 18 9:49 AM PT; 825K views / 49.9K likes per X's public counts at ~12:53 AM PT Nov 20 (584K at ~11:21 AM PT Nov 19). Verbatim copies and add-on riffs Nov 19 (@radeence, @kariroxx, @drkab_1); X News 2123488685241106786. His bio says he posts mainly old jokes, so he is credited for this post, not as the joke's inventor. Text-only: shown as a self-rendered attributed post card.",
       "name": "Electricity Bill for Divine Light"
-    },
-    {
-      "rank": 10,
-      "id": "them-show-me-how-to-fish-today",
-      "title": "'THEM SHOW ME HOW TO FISH TODAY, I NEARLY DIE': THE EAGLE, THE MONKEY AND THE CROCODILE THAT MISSES",
-      "image": "images/them-show-me-how-to-fish-today.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/AgwuGallant/status/2123453106427945308",
-      "source_name": "X @AgwuGallant",
-      "credit": "posted by @AgwuGallant on X",
-      "also": [
-        {
-          "name": "X News: Nigerian Pidgin posts laugh off tense fishing close call",
-          "url": "https://x.com/i/trending/2123541631903109293"
-        },
-        {
-          "name": "X / @KofiRealer (caption copy)",
-          "url": "https://x.com/KofiRealer/status/2123509688939540930"
-        },
-        {
-          "name": "X / @Famousmbt (Pidgin variant)",
-          "url": "https://x.com/Famousmbt/status/2123511399070523646"
-        }
-      ],
-      "first_seen": "2026-11-19",
-      "score": 62.2,
-      "sources": [
-        "X"
-      ],
-      "notes": "Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): 30-second animal clip posted by CHAMPZ (@AgwuGallant) Nov 19 8:27 AM PT; 525K views / 16.5K likes per X's public counts at ~12:53 AM PT Nov 20 (252K at ~3:15 PM PT Nov 19). Word-for-word and Pidgin caption copies within hours (@KofiRealer, @Famousmbt, @offclchimezie, @Peterstakes, @sucreboyy); X News 2123541631903109293. The clip looks AI-generated and its maker is not documented, so @AgwuGallant is credited for the post that spread. No injury shown, no people.",
-      "name": "Them Show Me How to Fish Today"
     }
   ],
   "weekly": [

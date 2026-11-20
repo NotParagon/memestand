@@ -1,6 +1,18 @@
 {
   "note": "Add a card by saving the unlabeled square (avatar, handle, full post, no MemeStand header) as images/post-cards/<slug>.jpg and adding an entry here. Do not put these files in images/<id>.jpg: that folder is the 400px photo-thumbnail store and rank.py will shrink it. image_policy none still blocks unlisted third-party photos. A listed card is shown only when the meme has no photo of its own.",
   "cards": {
+    "coffin-lid-every-day-a-fresh-start": {
+      "ids": [
+        "coffin-lid-every-day-a-fresh-start"
+      ],
+      "file": "images/post-cards/coffin-lid-every-day-a-fresh-start.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "Camarada, enquanto a porta que fechar não for a do caixão, todo dia é um recomeço.",
+      "source_url": "https://x.com/Rafaelsmnzl/status/2122746145105437121",
+      "source_asset": "memestand-video/pool-media/2026-11-20/coffin-lid-every-day-a-fresh-start/original.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 20 2026 (~5 AM PT fresh-pool build) with memestand-video/make_postcard.py from the public post read via the X API (full displayed text, handle, display name, the author's own X avatar; the leading @onavarromagno reply mention is omitted as X displays it). Not a screenshot; text unaltered."
+    },
     "indonesian-coffee-chain-names": {
       "ids": ["indonesian-coffee-chain-names"],
       "file": "images/post-cards/indonesian-coffee-chain-names.jpg",
