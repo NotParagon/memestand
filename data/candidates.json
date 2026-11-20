@@ -1,6 +1,337 @@
 {
-  "as_of": "2026-11-19",
+  "as_of": "2026-11-20",
   "candidates": [
+    {
+      "id": "huss-huss-huss-in-this-town",
+      "name": "Huss Huss Huss / In This Town",
+      "title": "'IN THIS TOWN, EVERYBODY GOES OUT PARTYING EXCEPT ME': THE ROBLOX 'HUSS HUSS HUSS' BASKETBALL CLIP TURNED LIP-DUB SOUND",
+      "source_url": "https://www.tiktok.com/@larpniverse/video/7707635922652630285",
+      "source_name": "TikTok / @larpniverse",
+      "image_url": "https://i.kym-cdn.com/entries/icons/original/000/057/792/husscover.jpg",
+      "first_seen": "2026-11-13",
+      "also": [
+        {
+          "name": "TikTok / @larpniverse (41.1M views)",
+          "url": "https://www.tiktok.com/@larpniverse/video/7707635922652630285"
+        },
+        {
+          "name": "Know Your Meme: Huss Huss Huss / In This Town Everybody Goes Out Partying Except Me",
+          "url": "https://knowyourmeme.com/memes/huss-huss-huss-in-this-town-everybody-goes-out-partying-except-me"
+        },
+        {
+          "name": "TikTok / @djfunkyehh (funk remix)",
+          "url": "https://www.tiktok.com/@djfunkyehh/video/7708300332509449493"
+        },
+        {
+          "name": "TikTok / @the_devonmaid (lip dub)",
+          "url": "https://www.tiktok.com/@the_devonmaid/video/7708927294848371990"
+        }
+      ],
+      "ev": {
+        "tiktok": {
+          "url": "https://www.tiktok.com/@larpniverse/video/7707635922652630285",
+          "views": 41100000,
+          "likes": 6900000,
+          "author": "@larpniverse",
+          "posted": "2026-11-13",
+          "checked": "2026-11-20",
+          "via": "TikTok post page (tools/fetch_social.py, read ~12:55 AM PT Nov 20)"
+        },
+        "kym": true,
+        "kym_views": 2119,
+        "platforms": [
+          "TikTok",
+          "Know Your Meme"
+        ]
+      },
+      "notes": "Nov 20 ~12:55 AM PT daily rebuild (no repeats from Nov 19 daily): Roblox animation posted by its creator, TikToker @larpniverse, Nov 13 ('While they are out partying'); 41.1M views / 6.9M likes per TikTok's public counts at ~12:55 AM PT Nov 20 (37.4M at ~11:16 AM PT Nov 19). The KYM entry (published Nov 19 8:46 AM PT, 2,119 views) documents the lip dubs and remixes Nov 15-16 (@djfunkyehh funk remix 3.6M, @urbaewinnie lip dub 5.6M, @the_devonmaid 3.1M). Thumbnail is KYM's cover still of the Roblox character. Clean audio (pool transcript check). Distinct from the older out-partying entry.",
+      "first_seen_basis": "TikTok post by @larpniverse, 2026-11-13 (per TikTok and KYM)",
+      "credit": "posted by @larpniverse on TikTok",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "arguing-with-someone-as-stubborn-as-you-rams",
+      "name": "Arguing With Someone as Stubborn as You (Rams)",
+      "title": "'WHEN YOU ARGUE WITH SOMEONE AS STUBBORN AS YOU': TWO RAMS BUTTING HEADS BECOME 'FIRSTBORN DAUGHTER AND HER FATHER'",
+      "source_url": "https://x.com/iivvei_/status/2122993821856505964",
+      "source_name": "X @iivvei_",
+      "image_url": "https://pbs.twimg.com/amplify_video_thumb/2122993781494415360/img/w7nE6Zek275riv8t.jpg",
+      "first_seen": "2026-11-18",
+      "also": [
+        {
+          "name": "X News: animal video captures firstborn daughter-father clashes",
+          "url": "https://x.com/i/trending/2123514534207901743"
+        },
+        {
+          "name": "X / @msivyinmisery ('First born daughter & her father', 527K views)",
+          "url": "https://x.com/msivyinmisery/status/2123374967492624483"
+        },
+        {
+          "name": "X / @likaswinn ('Eu e minha mãe')",
+          "url": "https://x.com/likaswinn/status/2123550624977437138"
+        },
+        {
+          "name": "X / @valehsc ('Johan y yo todos los días')",
+          "url": "https://x.com/valehsc/status/2123554054622310778"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/iivvei_/status/2122993821856505964",
+          "views": 3012822,
+          "likes": 146673,
+          "checked": "2026-11-20",
+          "via": "X API (read ~12:53 AM PT Nov 20)"
+        },
+        "platforms": [
+          "X"
+        ],
+        "x_news": true
+      },
+      "notes": "Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): 10-second clip of two rams charging each other, posted by @iivvei_ Nov 18 2:02 AM PT with an Arabic caption ('when you argue with someone as stubborn as you'); 3.01M views / 147K likes per X's public counts at ~12:53 AM PT Nov 20. @msivyinmisery's 'First born daughter & her father' quote (Nov 19 3:16 AM PT) has 527K views / 44.5K likes; more 'me and X' captions in Portuguese, Spanish, French and Arabic Nov 19; X News 2123514534207901743. @iivvei_ posted the viral version; who filmed it is not documented. Animals only, no injury shown.",
+      "first_seen_basis": "X post by @iivvei_, 2026-11-18T10:02:25Z",
+      "credit": "posted by @iivvei_ on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "rage-baited-round-cat",
+      "name": "Rage-Baited Round Cat",
+      "title": "'I FEEL LIKE THIS WHEN I GET RAGE BAITED': THE VERY ROUND TABBY SQUINTING THROUGH HEAD PATS",
+      "source_url": "https://x.com/ashleeey665__/status/2123102749172863418",
+      "source_name": "X @ashleeey665__",
+      "image_url": "https://pbs.twimg.com/amplify_video_thumb/2123102724430372864/img/jb7O6qJlw8GYKJvZ.jpg",
+      "first_seen": "2026-11-18",
+      "also": [
+        {
+          "name": "X News: round cat's squinting annoyance becomes go-to meme",
+          "url": "https://x.com/i/trending/2123535891008254132"
+        },
+        {
+          "name": "X News: 'does this to you' copies",
+          "url": "https://x.com/i/trending/2123384795824803983"
+        },
+        {
+          "name": "X / @Thepetsonly (repost)",
+          "url": "https://x.com/Thepetsonly/status/2123329322412892432"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/ashleeey665__/status/2123102749172863418",
+          "views": 2856387,
+          "likes": 170613,
+          "checked": "2026-11-20",
+          "via": "X API (read ~12:53 AM PT Nov 20)"
+        },
+        "platforms": [
+          "X"
+        ],
+        "x_news": true
+      },
+      "notes": "Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): 20-second clip of a round tabby squinting while a hand pats its head, posted by @ashleeey665__ Nov 18 9:15 AM PT; 2.86M views / 171K likes per X's public counts at ~12:53 AM PT Nov 20 (2.52M at ~3:15 PM PT Nov 19). Two X News stories (2123535891008254132, 2123384795824803983) track people captioning it for daily irritations. @ashleeey665__ posted the viral caption; who filmed the cat is not documented. Different cat from smug-tabby-cat-gif.",
+      "first_seen_basis": "X post by @ashleeey665__, 2026-11-18T17:15:15Z",
+      "credit": "posted by @ashleeey665__ on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "dear-microsoft-tomorrow-is-friday",
+      "name": "Dear Microsoft, Tomorrow Is Friday",
+      "title": "'DEAR MICROSOFT, TOMORROW IS FRIDAY. JUST CONFIRMING, SAME AS LAST WEEK, YES?': OFFICE WORKERS ASK FOR ANOTHER OUTAGE",
+      "card_text": "Dear Microsoft,\n\nTomorrow is Friday. Just confirming, same as last week, yes?\n\nThanks.\n\nAll",
+      "source_url": "https://x.com/ciwilkie/status/2123350498116087999",
+      "source_name": "X @ciwilkie",
+      "image_url": null,
+      "image_policy": "none",
+      "first_seen": "2026-11-19",
+      "also": [
+        {
+          "name": "X News: users jokingly beg Microsoft for Friday outage repeat",
+          "url": "https://x.com/i/trending/2123423799982842313"
+        },
+        {
+          "name": "X / @JamesIrungu43 (copy)",
+          "url": "https://x.com/JamesIrungu43/status/2123456824829788250"
+        },
+        {
+          "name": "X / @Omezuo1 ('...take Teams too')",
+          "url": "https://x.com/Omezuo1/status/2123451985542139953"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/ciwilkie/status/2123350498116087999",
+          "views": 1456981,
+          "likes": 92550,
+          "checked": "2026-11-20",
+          "via": "X API (read ~12:53 AM PT Nov 20)"
+        },
+        "platforms": [
+          "X"
+        ],
+        "x_news": true
+      },
+      "notes": "Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): text post by Dr. Craig Wilkie (@ciwilkie) Nov 19 1:39 AM PT; 1.46M views / 92.6K likes per X's public counts at ~12:53 AM PT Nov 20 (1.03M at ~11:21 AM PT Nov 19). Near-verbatim copies the same day (@JamesIrungu43, @Swapclaude, @LuckyGoliyan, @Omezuo1, @AdarshWritess); X News 2123423799982842313. Text-only: shown as a self-rendered attributed post card. Joke about a company's outage, no people.",
+      "first_seen_basis": "X post by @ciwilkie, 2026-11-19T09:39:43Z",
+      "credit": "posted by @ciwilkie on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "twin-representation-in-media-chart",
+      "name": "Twin Representation in Media Chart",
+      "title": "'TWIN REPRESENTATION IN MEDIA': AN ARTIST'S CHART OF FIVE TWIN TROPES THAT FANS FILL WITH THEIR OWN CHARACTERS",
+      "source_url": "https://x.com/OsweltOrtiz/status/2123331021743821137",
+      "source_name": "X @OsweltOrtiz",
+      "image_url": "https://pbs.twimg.com/media/HXeWO3eWwAAAOGO.png",
+      "first_seen": "2026-11-19",
+      "also": [
+        {
+          "name": "X News: chart of twin tropes in media draws fan stories",
+          "url": "https://x.com/i/trending/2123433295132217397"
+        },
+        {
+          "name": "X / @aminetko1 (redraw with own characters)",
+          "url": "https://x.com/aminetko1/status/2123361569920721114"
+        },
+        {
+          "name": "X / @BroBearValter (reply example)",
+          "url": "https://x.com/BroBearValter/status/2123362961217540325"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/OsweltOrtiz/status/2123331021743821137",
+          "views": 1155122,
+          "likes": 77851,
+          "checked": "2026-11-20",
+          "via": "X API (read ~12:53 AM PT Nov 20)"
+        },
+        "platforms": [
+          "X"
+        ],
+        "x_news": true
+      },
+      "notes": "Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): the artist's own cartoon chart (signed watermark) posted by @OsweltOrtiz Nov 19 12:22 AM PT ('Did i miss something?'); 1.16M views / 77.9K likes per X's public counts at ~12:53 AM PT Nov 20 (691K at ~11:22 AM PT Nov 19). People redraw their own characters into the five categories (@aminetko1, @rimiranyuri, @monokichan); X News 2123433295132217397. Stylized clothed cartoon figures only.",
+      "first_seen_basis": "X post by @OsweltOrtiz, 2026-11-19T08:22:19Z",
+      "credit": "posted by @OsweltOrtiz on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "electricity-bill-divine-light",
+      "name": "Electricity Bill for Divine Light",
+      "title": "'THEY BILLED ME FOR SUNLIGHT, DIVINE LIGHT, AND THE LIGHT AT THE END OF THE TUNNEL': THE ELECTRICITY BILL ONE-LINER",
+      "card_text": "I received my electricity bill.\n\nI think they billed me for sunlight, divine light, and the light at the end of the tunnel.",
+      "source_url": "https://x.com/BobGolen/status/2123111348447879454",
+      "source_name": "X @BobGolen",
+      "image_url": null,
+      "image_policy": "none",
+      "first_seen": "2026-11-18",
+      "also": [
+        {
+          "name": "X News: electricity bill joke resonates in Nigeria's power woes",
+          "url": "https://x.com/i/trending/2123488685241106786"
+        },
+        {
+          "name": "X / @kariroxx ('the light in my eyes too')",
+          "url": "https://x.com/kariroxx/status/2123449435552424173"
+        },
+        {
+          "name": "X / @radeence (copy)",
+          "url": "https://x.com/radeence/status/2123476387097125054"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/BobGolen/status/2123111348447879454",
+          "views": 824717,
+          "likes": 49925,
+          "checked": "2026-11-20",
+          "via": "X API (read ~12:53 AM PT Nov 20)"
+        },
+        "platforms": [
+          "X"
+        ],
+        "x_news": true
+      },
+      "notes": "Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): text post by Bob Golen (@BobGolen) Nov 18 9:49 AM PT; 825K views / 49.9K likes per X's public counts at ~12:53 AM PT Nov 20 (584K at ~11:21 AM PT Nov 19). Verbatim copies and add-on riffs Nov 19 (@radeence, @kariroxx, @drkab_1); X News 2123488685241106786. His bio says he posts mainly old jokes, so he is credited for this post, not as the joke's inventor. Text-only: shown as a self-rendered attributed post card.",
+      "first_seen_basis": "X post by @BobGolen, 2026-11-18T17:49:25Z",
+      "credit": "posted by @BobGolen on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "them-show-me-how-to-fish-today",
+      "name": "Them Show Me How to Fish Today",
+      "title": "'THEM SHOW ME HOW TO FISH TODAY, I NEARLY DIE': THE EAGLE, THE MONKEY AND THE CROCODILE THAT MISSES",
+      "source_url": "https://x.com/AgwuGallant/status/2123453106427945308",
+      "source_name": "X @AgwuGallant",
+      "image_url": "https://pbs.twimg.com/amplify_video_thumb/2123453043609882625/img/qo0e0IKuABRhK-1a.jpg",
+      "first_seen": "2026-11-19",
+      "also": [
+        {
+          "name": "X News: Nigerian Pidgin posts laugh off tense fishing close call",
+          "url": "https://x.com/i/trending/2123541631903109293"
+        },
+        {
+          "name": "X / @KofiRealer (caption copy)",
+          "url": "https://x.com/KofiRealer/status/2123509688939540930"
+        },
+        {
+          "name": "X / @Famousmbt (Pidgin variant)",
+          "url": "https://x.com/Famousmbt/status/2123511399070523646"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/AgwuGallant/status/2123453106427945308",
+          "views": 524626,
+          "likes": 16545,
+          "checked": "2026-11-20",
+          "via": "X API (read ~12:53 AM PT Nov 20)"
+        },
+        "platforms": [
+          "X"
+        ],
+        "x_news": true
+      },
+      "notes": "Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): 30-second animal clip posted by CHAMPZ (@AgwuGallant) Nov 19 8:27 AM PT; 525K views / 16.5K likes per X's public counts at ~12:53 AM PT Nov 20 (252K at ~3:15 PM PT Nov 19). Word-for-word and Pidgin caption copies within hours (@KofiRealer, @Famousmbt, @offclchimezie, @Peterstakes, @sucreboyy); X News 2123541631903109293. The clip looks AI-generated and its maker is not documented, so @AgwuGallant is credited for the post that spread. No injury shown, no people.",
+      "first_seen_basis": "X post by @AgwuGallant, 2026-11-19T16:27:27Z",
+      "credit": "posted by @AgwuGallant on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
     {
       "id": "kangaroo-dad-jacked",
       "name": "Kangaroo Dad Jacked",
@@ -41,7 +372,6 @@
       "first_seen_basis": "X post by @Axaxia88, 2026-11-18T20:30Z",
       "credit": "posted by @Axaxia88 on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ]
@@ -82,7 +412,6 @@
       "first_seen_basis": "X post by @Zla_thyno, 2026-11-18T08:14Z",
       "credit": "posted by @Zla_thyno on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ]
@@ -127,7 +456,6 @@
       "first_seen_basis": "X post by @taylor_, 2026-11-18T01:00Z",
       "credit": "posted by @taylor_ on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ]
@@ -177,7 +505,6 @@
       "first_seen_basis": "X post by @MrBeast, 2026-11-18T17:13Z",
       "credit": "posted by @MrBeast on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ]
@@ -219,7 +546,6 @@
       "first_seen_basis": "X post by @thevivianbanks, 2026-11-19T02:01Z",
       "credit": "posted by @thevivianbanks on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -264,7 +590,6 @@
       "first_seen_basis": "X post by @DrClownPhD, 2026-11-18T23:13Z",
       "credit": "posted by @DrClownPhD on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ]
@@ -309,7 +634,6 @@
       "first_seen_basis": "X post by @AaryanPrateekX, 2026-11-19T04:59Z",
       "credit": "posted by @AaryanPrateekX on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ]
@@ -317,7 +641,6 @@
     {
       "id": "german-guy-names-50-states-map",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -353,6 +676,7 @@
     {
       "id": "layi-wasabi-wife-full-of-ideas",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -378,17 +702,17 @@
       "ev": {
         "x": {
           "url": "https://x.com/layiwasabi/status/2122759899440468434",
-          "views": 2077369,
-          "likes": 38284,
-          "checked": "2026-11-19",
-          "via": "X API (read ~7:05 AM PT Nov 19)"
+          "views": 2110079,
+          "likes": 39195,
+          "checked": "2026-11-20",
+          "via": "X API (read ~12:53 AM PT Nov 20)"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 19 ~12:05 AM PT daily rebuild (no repeats from Nov 18 daily): comedy skit posted by its creator, @layiwasabi (Layi Wasabi), Nov 17 10:32 AM PT; 2.0M views / 36.7K likes / 711 quotes per X's public counts at ~12:05 AM PT Nov 19. X News 2122951852262408274 tracks the quote posts riffing on the skit's lines. Thumbnail is the video's own preview frame. Scripted comedy by a public creator.",
+      "notes": "Nov 19 ~12:05 AM PT daily rebuild (no repeats from Nov 18 daily): comedy skit posted by its creator, @layiwasabi (Layi Wasabi), Nov 17 10:32 AM PT; 2.0M views / 36.7K likes / 711 quotes per X's public counts at ~12:05 AM PT Nov 19. X News 2122951852262408274 tracks the quote posts riffing on the skit's lines. Thumbnail is the video's own preview frame. Scripted comedy by a public creator. Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): re-read 2.11M views / 39.2K likes / 736 quotes per X's public counts.",
       "headline_reviewed": true,
       "first_seen_basis": "X post by @layiwasabi, 2026-11-17T18:32:53Z",
       "credit": "posted by @layiwasabi on X"
@@ -396,6 +720,7 @@
     {
       "id": "last-year-of-being-broke-dog",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -421,17 +746,17 @@
       "ev": {
         "x": {
           "url": "https://x.com/Ephraim_Snr/status/2122524981397479435",
-          "views": 1093533,
-          "likes": 37454,
-          "checked": "2026-11-19",
-          "via": "X API (read ~7:05 AM PT Nov 19)"
+          "views": 1099353,
+          "likes": 37440,
+          "checked": "2026-11-20",
+          "via": "X API (read ~12:53 AM PT Nov 20)"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 19 ~12:05 AM PT daily rebuild (no repeats from Nov 18 daily): @Ephraim_Snr's post (Nov 16 6:59 PM PT) has 1.09M views / 37.5K likes per X's public counts at ~12:05 AM PT Nov 19. Copied as a good-luck 'claim it' post by many accounts, with a 'last year of being SINGLE' human remix; X News 2122722794127384586. @Ephraim_Snr is the biggest X post, not the original creator: the earliest X upload found is @blackladiesvibe (Nov 16 6:41 AM PT); who filmed the dog is not documented. No people in frame. Thumbnail is the video's own preview frame.",
+      "notes": "Nov 19 ~12:05 AM PT daily rebuild (no repeats from Nov 18 daily): @Ephraim_Snr's post (Nov 16 6:59 PM PT) has 1.09M views / 37.5K likes per X's public counts at ~12:05 AM PT Nov 19. Copied as a good-luck 'claim it' post by many accounts, with a 'last year of being SINGLE' human remix; X News 2122722794127384586. @Ephraim_Snr is the biggest X post, not the original creator: the earliest X upload found is @blackladiesvibe (Nov 16 6:41 AM PT); who filmed the dog is not documented. No people in frame. Thumbnail is the video's own preview frame. Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): re-read 1.10M views / 37.4K likes per X's public counts; included as a wider-window fill (score order) after the fresher entries.",
       "headline_reviewed": true,
       "first_seen_basis": "X post by @Ephraim_Snr, 2026-11-17T02:59:24Z (earliest X upload found: @blackladiesvibe, 2026-11-16 6:41 AM PT)",
       "credit": "posted by @Ephraim_Snr on X"
@@ -439,7 +764,6 @@
     {
       "id": "circular-toilet-bench",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -483,7 +807,6 @@
     {
       "id": "indonesian-coffee-chain-names",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -559,17 +882,17 @@
       "ev": {
         "x": {
           "url": "https://x.com/TheCineprism/status/2122650315690291466",
-          "views": 23496,
-          "likes": 3011,
-          "checked": "2026-11-19",
-          "via": "X API (read ~7:05 AM PT Nov 19)"
+          "views": 23686,
+          "likes": 3018,
+          "checked": "2026-11-20",
+          "via": "X API (read ~12:53 AM PT Nov 20)"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 19 ~12:05 AM PT daily rebuild (no repeats from Nov 18 daily): @TheCineprism's 12-still role grid with 'AI won't take your job. He will.' (Nov 17 3:17 AM PT) has 23.3K views / 3.0K likes per X's public counts at ~12:05 AM PT Nov 19. New independent variations kept coming through Nov 18-19 PT (@noorlewisx, @hotandautistic, @isaacmashman), X News 2122513726058512865 and 2123244148438471124. Grid of film/promo stills of a public figure (stills, not footage). Crude variants in this cluster are excluded. Separate from the Nov 17 'Pattinson as Bond' reaction cluster (robert-pattinson-james-bond).",
+      "notes": "Nov 19 ~12:05 AM PT daily rebuild (no repeats from Nov 18 daily): @TheCineprism's 12-still role grid with 'AI won't take your job. He will.' (Nov 17 3:17 AM PT) has 23.3K views / 3.0K likes per X's public counts at ~12:05 AM PT Nov 19. New independent variations kept coming through Nov 18-19 PT (@noorlewisx, @hotandautistic, @isaacmashman), X News 2122513726058512865 and 2123244148438471124. Grid of film/promo stills of a public figure (stills, not footage). Crude variants in this cluster are excluded. Separate from the Nov 17 'Pattinson as Bond' reaction cluster (robert-pattinson-james-bond). Nov 20 ~12:53 AM PT: re-read 23.7K views / 3.0K likes per X's public counts.",
       "headline_reviewed": true,
       "first_seen_basis": "X post by @TheCineprism, 2026-11-17T11:17:26Z",
       "credit": "posted by @TheCineprism on X"
@@ -628,6 +951,7 @@
     {
       "id": "office-pizza-party-one-sliver",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -653,17 +977,17 @@
       "ev": {
         "x": {
           "url": "https://x.com/SledgeDev/status/2122738102255169616",
-          "views": 3962584,
-          "likes": 170958,
-          "checked": "2026-11-18",
-          "via": "X API (read ~7:05 AM PT Nov 18)"
+          "views": 5966513,
+          "likes": 250951,
+          "checked": "2026-11-20",
+          "via": "X API (read ~12:53 AM PT Nov 20)"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): posted Nov 17 9:06 AM PT by @SledgeDev (Barrett); 3.0M views / 139.7K likes per X's public counts at ~1 AM PT Nov 18. Two X News stories (2122781181582491956, 2122942465498022173) describe the image as AI-generated and track the copies and school-pizza-party replies; the same image is reposted with new captions (e.g. @DarkSkinPrue 'Teachers: we're gonna have a pizza party!'). Nov 18 ~7 AM PT main discovery: re-read 3.96M views / 171.0K likes; X News 2122942465498022173 (updated 6:43Z Nov 18) still tracking school-pizza-party replies.",
+      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): posted Nov 17 9:06 AM PT by @SledgeDev (Barrett); 3.0M views / 139.7K likes per X's public counts at ~1 AM PT Nov 18. Two X News stories (2122781181582491956, 2122942465498022173) describe the image as AI-generated and track the copies and school-pizza-party replies; the same image is reposted with new captions (e.g. @DarkSkinPrue 'Teachers: we're gonna have a pizza party!'). Nov 18 ~7 AM PT main discovery: re-read 3.96M views / 171.0K likes; X News 2122942465498022173 (updated 6:43Z Nov 18) still tracking school-pizza-party replies. Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): re-read 5.97M views / 251K likes per X's public counts (up from 3.96M / 171K at ~7 AM PT Nov 18), so it kept spreading through Nov 19.",
       "headline_reviewed": true,
       "first_seen_basis": "X post by @SledgeDev, 2026-11-17T17:06:16Z",
       "credit": "posted by @SledgeDev on X"
@@ -696,17 +1020,17 @@
       "ev": {
         "x": {
           "url": "https://x.com/KarluskaP/status/2122735164518187174",
-          "views": 675696,
-          "likes": 29931,
-          "checked": "2026-11-18",
-          "via": "X API (read ~7:05 AM PT Nov 18)"
+          "views": 775461,
+          "likes": 31818,
+          "checked": "2026-11-20",
+          "via": "X API (read ~12:53 AM PT Nov 20)"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): @KarluskaP's caption on the 13-second stork clip (Nov 17 8:54 AM PT) has 598K views / 27.7K likes per X's public counts; the caption is copied word-for-word by many accounts (e.g. @InterestingSci1, @insight_alchemy, @Isabel_10_8) and X News 2122961325328421275 tracks the wizard/gladiator edits and 'aura farming' jokes. @sciencegirl posted the same clip earlier (7:30 AM PT, 'aura farming to the max', 508K views). Who filmed the clip is not documented. Thumbnail is a still frame from the credited video (the platform preview frame shows only the empty pole). Wildlife footage, not TV/film. Nov 18 ~7 AM PT re-read: 676K views / 29.9K likes; second X News story 2122770231097761861 updated Nov 18 14:33Z.",
+      "notes": "Nov 18 ~1 AM PT daily rebuild (no repeats from Nov 17 daily): @KarluskaP's caption on the 13-second stork clip (Nov 17 8:54 AM PT) has 598K views / 27.7K likes per X's public counts; the caption is copied word-for-word by many accounts (e.g. @InterestingSci1, @insight_alchemy, @Isabel_10_8) and X News 2122961325328421275 tracks the wizard/gladiator edits and 'aura farming' jokes. @sciencegirl posted the same clip earlier (7:30 AM PT, 'aura farming to the max', 508K views). Who filmed the clip is not documented. Thumbnail is a still frame from the credited video (the platform preview frame shows only the empty pole). Wildlife footage, not TV/film. Nov 18 ~7 AM PT re-read: 676K views / 29.9K likes; second X News story 2122770231097761861 updated Nov 18 14:33Z. Nov 20 ~12:53 AM PT: re-read 775K views / 31.8K likes per X's public counts.",
       "headline_reviewed": true,
       "first_seen_basis": "X post by @KarluskaP, 2026-11-17T16:54:36Z (same clip posted by @sciencegirl at 15:30:39Z)",
       "credit": "posted by @KarluskaP on X"

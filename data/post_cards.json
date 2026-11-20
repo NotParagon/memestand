@@ -126,6 +126,26 @@
       "source_url": "https://x.com/thevivianbanks/status/2123235076427444493",
       "source_asset": "memestand-video/cache/2026-11-19/thanksgiving-mac-and-cheese-decoration-committee-card.jpg",
       "prepared": "Self-rendered attributed post card made Nov 19 2026 (7 AM-slot main refresh) with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, avatar; the sparkle emoji in the display name is left out because the card font cannot draw it). The post's TV-still reaction image is not reproduced. No MemeStand header. Not a screenshot of X."
+    },
+    "dear-microsoft-tomorrow-is-friday": {
+      "ids": ["dear-microsoft-tomorrow-is-friday"],
+      "file": "images/post-cards/dear-microsoft-tomorrow-is-friday.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "Dear Microsoft,\n\nTomorrow is Friday. Just confirming, same as last week, yes?\n\nThanks.\n\nAll",
+      "source_url": "https://x.com/ciwilkie/status/2123350498116087999",
+      "source_asset": "memestand-video/pool-media/2026-11-19/dear-microsoft-tomorrow-is-friday/original.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 19 2026 with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, author avatar). Text re-checked against the X API at ~12:53 AM PT Nov 20. No MemeStand header. Not a screenshot of X."
+    },
+    "electricity-bill-divine-light": {
+      "ids": ["electricity-bill-divine-light"],
+      "file": "images/post-cards/electricity-bill-divine-light.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "I received my electricity bill.\n\nI think they billed me for sunlight, divine light, and the light at the end of the tunnel.",
+      "source_url": "https://x.com/BobGolen/status/2123111348447879454",
+      "source_asset": "memestand-video/pool-media/2026-11-19/electricity-bill-divine-light/original.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 19 2026 with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, author avatar). Text re-checked against the X API at ~12:53 AM PT Nov 20. No MemeStand header. Not a screenshot of X."
     }
   }
 }
