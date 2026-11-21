@@ -422,6 +422,36 @@
       "how_to_use": [],
       "checked": "2026-11-07T22:51:54-08:00"
     },
+    "betting-explained-cat-fishing": {
+      "name": "Betting Explained (Cat Fishing)",
+      "ids": [
+        "betting-explained-cat-fishing"
+      ],
+      "status": "short",
+      "explainer": "A short clip of a cat on a pier that catches a fish, lets it go, and tries again, hoping for a bigger one. Posted with the caption 'Betting explained', it jokes that gamblers keep risking a win for a bigger payout. Reposts relabel it 'Gambling explained' or 'Forex trading explained'. The clip appears to be AI-generated.",
+      "origin": "@justinenantale2 (Justine Nantale) posted the clip on X on November 20, 2026 (1:33 PM PT) as 'Betting explained'; it passed 720,000 views by November 21 per X's public counts. Other accounts re-uploaded it the same night with 'Gambling explained' and 'Forex trading' captions, and X News wrote about it. Who made the clip is not documented.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/justinenantale2/status/2123892473990627361",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@justinenantale2 on X",
+          "url": "https://x.com/justinenantale2/status/2123892473990627361"
+        },
+        {
+          "name": "X News: betting-explained cat clip",
+          "url": "https://x.com/i/trending/2124047526374375605"
+        },
+        {
+          "name": "@newto_code_14 on X ('Gambling explained')",
+          "url": "https://x.com/newto_code_14/status/2123991781582798965"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-21",
+      "checked": "2026-11-21T07:10:00-08:00"
+    },
     "bicep-heart-trend": {
       "name": "Bicep Heart Trend",
       "ids": [
@@ -2907,6 +2937,36 @@
       "origin_confirmed": false,
       "how_to_use": [],
       "checked": "2026-11-03T23:51:43-08:00"
+    },
+    "portal-dog-shiba-meets-caterpillar": {
+      "name": "Portal Dog (Shiba Meets a Caterpillar)",
+      "ids": [
+        "portal-dog-shiba-meets-caterpillar"
+      ],
+      "status": "short",
+      "explainer": "A photo of a shiba inu on a leash, frozen mid-walk and staring down at a caterpillar on the sidewalk. Japanese X nicknamed the pose 'Portal Dog' (ポータル犬) and started editing the dog into portal animations, parody drawings and look-alike photos. People post it for any moment of total, wide-eyed fixation.",
+      "origin": "Shiba owner @rantaro0802 (柴犬★蘭) posted the photo on X on November 19, 2026 (5:41 AM PT) with the caption '毛虫に出会った柴犬' ('a shiba who met a caterpillar'). It passed 6.5 million views by November 21 per X's public counts. On November 20-21 other accounts posted remixes, including @koyadeko's animated 'Portal Dog' edit and parody pictures by @wasabiken0429 and @omzm_shark.",
+      "origin_confirmed": true,
+      "how_to_use": [],
+      "source_url": "https://x.com/rantaro0802/status/2123411379659178038",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@rantaro0802 on X",
+          "url": "https://x.com/rantaro0802/status/2123411379659178038"
+        },
+        {
+          "name": "@koyadeko on X ('Portal Dog' edit)",
+          "url": "https://x.com/koyadeko/status/2124050252319916151"
+        },
+        {
+          "name": "@wasabiken0429 on X (parody)",
+          "url": "https://x.com/wasabiken0429/status/2123996092484272467"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-21",
+      "checked": "2026-11-21T07:10:00-08:00"
     },
     "potatoes-walrus": {
       "name": "Potatoes After a Few Days in the Bag",

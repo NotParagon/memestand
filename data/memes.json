@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T05:52-08:00",
+  "updated": "2026-11-21T06:59-08:00",
   "daily": [
     {
       "rank": 1,
@@ -65,6 +65,38 @@
     },
     {
       "rank": 3,
+      "id": "portal-dog-shiba-meets-caterpillar",
+      "title": "'PORTAL DOG': THE SHIBA WHO FROZE MID-WALK STARING AT A CATERPILLAR, NOW JAPANESE X'S FAVORITE EDIT TEMPLATE",
+      "image": "images/portal-dog-shiba-meets-caterpillar.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/rantaro0802/status/2123411379659178038",
+      "source_name": "X @rantaro0802",
+      "credit": "posted by @rantaro0802 on X",
+      "also": [
+        {
+          "name": "X / @koyadeko ('Portal Dog' animated edit)",
+          "url": "https://x.com/koyadeko/status/2124050252319916151"
+        },
+        {
+          "name": "X / @wasabiken0429 (parody)",
+          "url": "https://x.com/wasabiken0429/status/2123996092484272467"
+        },
+        {
+          "name": "X / @omzm_shark (parody)",
+          "url": "https://x.com/omzm_shark/status/2123942489363189854"
+        }
+      ],
+      "first_seen": "2026-11-19",
+      "score": 68.2,
+      "sources": [
+        "X"
+      ],
+      "notes": "Nov 21 7 AM-slot main discovery: photo posted by shiba owner @rantaro0802 (柴犬★蘭) Nov 19 5:41 AM PT, caption '毛虫に出会った柴犬' (a shiba who met a caterpillar); 6.59M views / 76.8K likes / 650 quotes per X's public counts at ~7:00 AM PT Nov 21. Japanese X named the pose 'ポータル犬' (Portal Dog): @koyadeko's animated portal edit Nov 21 (97K views / 6.2K likes), parody drawings/photos by @wasabiken0429 and @omzm_shark Nov 20-21, plus quote-tweet remixes. Owner's own photo of their dog; nothing sexual or mocking.",
+      "name": "Portal Dog (Shiba Meets a Caterpillar)"
+    },
+    {
+      "rank": 4,
       "id": "lucia-will-appreciate-this",
       "title": "'PRISCILLA WILL APPRECIATE THIS': MARK ZUCKERBERG POSTS HIS OWN TAKE ON THE GTA VI 'LUCIA WILL APPRECIATE THIS' MISSION POP-UP EDITS",
       "image": "images/lucia-will-appreciate-this.jpg",
@@ -84,7 +116,7 @@
         }
       ],
       "first_seen": "2026-11-18",
-      "score": 67.7,
+      "score": 68.2,
       "sources": [
         "X",
         "Know Your Meme"
@@ -93,7 +125,7 @@
       "name": "Lucia Will Appreciate This"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "id": "them-show-me-how-to-fish-today",
       "title": "'THEM SHOW ME HOW TO FISH TODAY, I NEARLY DIE': THE EAGLE, THE MONKEY AND THE CROCODILE THAT MISSES",
       "image": "images/them-show-me-how-to-fish-today.jpg",
@@ -125,7 +157,7 @@
       "name": "Them Show Me How to Fish Today"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "id": "cat-in-towel-gif",
       "title": "THE CAT-IN-A-TOWEL GIF: A CAT STANDING UPRIGHT IN A TOWEL, PICKING THROUGH A WARDROBE, BECOMES X'S FAVORITE REACTION LOOP",
       "image": "images/cat-in-towel-gif.jpg",
@@ -149,7 +181,7 @@
         }
       ],
       "first_seen": "2026-11-20",
-      "score": 63.8,
+      "score": 64.1,
       "sources": [
         "X"
       ],
@@ -157,7 +189,39 @@
       "name": "Cat in a Towel GIF"
     },
     {
-      "rank": 6,
+      "rank": 7,
+      "id": "betting-explained-cat-fishing",
+      "title": "'BETTING EXPLAINED': THE CAT WHO KEEPS LETTING HIS CATCH GO HOPING FOR A BIGGER FISH, RELABELED FOR FOREX AND GAMBLING",
+      "image": "images/betting-explained-cat-fishing.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/justinenantale2/status/2123892473990627361",
+      "source_name": "X @justinenantale2",
+      "credit": "posted by @justinenantale2 on X",
+      "also": [
+        {
+          "name": "X News: betting-explained cat clip",
+          "url": "https://x.com/i/trending/2124047526374375605"
+        },
+        {
+          "name": "X / @newto_code_14 ('Gambling explained')",
+          "url": "https://x.com/newto_code_14/status/2123991781582798965"
+        },
+        {
+          "name": "X / @LifelyPhil ('Gambling explained')",
+          "url": "https://x.com/LifelyPhil/status/2124014822035796112"
+        }
+      ],
+      "first_seen": "2026-11-20",
+      "score": 63.6,
+      "sources": [
+        "X"
+      ],
+      "notes": "Nov 21 7 AM-slot main discovery: 24s clip posted by @justinenantale2 (Justine Nantale) Nov 20 1:33 PM PT, 'Betting explained'; 726K views / 13.9K likes / 320 quotes per X's public counts at ~7:00 AM PT Nov 21. Re-uploaded with new labels ('Gambling explained' @newto_code_14, @LifelyPhil, @vonodin420; 'Forex trading well defined' @lawrencekitema; 20+ 'Betting explained' reposts Nov 21 per X search). Two X News stories (2124047526374375605, 2124102141405245850). The clip looks AI-animated and its maker is not documented, so the poster is credited. A cat on a pier, no people, nothing violent.",
+      "name": "Betting Explained (Cat Fishing)"
+    },
+    {
+      "rank": 8,
       "id": "rejected-a-marriage-proposal-today",
       "title": "'REJECTED A MARRIAGE PROPOSAL TODAY': THE RISHTA-REJECTION POST INDIAN X KEEPS REWRITING WITH EVER PICKIER REASONS",
       "image": "images/post-cards/rejected-a-marriage-proposal-today.jpg",
@@ -190,7 +254,7 @@
       "name": "Rejected a Marriage Proposal Today"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "id": "dear-lord-no-go-bad",
       "title": "'DEAR LORD, $300K NO GO BAD': NIGERIAN X QUOTE-CHAINS A PREACHING-STORK GIF WITH EVER BIGGER MONEY PRAYERS",
       "image": "images/dear-lord-no-go-bad.jpg",
@@ -222,7 +286,7 @@
       "name": "Dear Lord, $300k No Go Bad"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "id": "every-office-on-gta-6-day",
       "title": "'EVERY OFFICE ON GTA 6 DAY': THE BOSS FINDS AN EMPTY OFFICE BECAUSE EVERYONE CALLED IN 'SICK' FOR GTA VI",
       "image": "images/every-office-on-gta-6-day.jpg",
@@ -252,63 +316,6 @@
       ],
       "notes": "Nov 19 7 AM-slot main discovery: AI-made cartoon by @DrClownPhD (his own watermark), Nov 18 3:13 PM PT; 200K views / 4.5K likes per X's public counts at ~7:05 AM PT Nov 19. Part of the GTA VI launch-day 'nobody is at work' joke wave (@vidsthatgohard, @ShitpostGate, Mashable's fake-sick-leave roundup). Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): 252K views / 5.4K likes per X's public counts; the GTA VI 'everyone called in sick' wave kept going Nov 19-20.",
       "name": "Every Office on GTA 6 Day"
-    },
-    {
-      "rank": 9,
-      "id": "riemann-hypothesis-do-you-know-what-it-is",
-      "title": "'THE RIEMANN HYPOTHESIS WAS PROVED' / 'DO YOU KNOW WHAT THE IMPLICATIONS ARE?' / 'NO. DO YOU?' / 'NO.': THE DIALOGUE X KEPT REWRITING AFTER A CLAIMED PROOF",
-      "image": "images/post-cards/riemann-hypothesis-do-you-know-what-it-is.jpg",
-      "image_url": null,
-      "image_kind": "post_card",
-      "card_text": "the riemann hypothesis was proved\nwow. that's huge \ndo you know what the implications of this are? \nno. do you? \nno.",
-      "source_url": "https://x.com/nic_carter/status/2123825880044552627",
-      "source_name": "X @nic_carter",
-      "credit": "posted by @nic_carter on X",
-      "also": [
-        {
-          "name": "X / @tekbog (variation)",
-          "url": "https://x.com/tekbog/status/2123816951038513257"
-        },
-        {
-          "name": "X / @JamesonZaballos (early version)",
-          "url": "https://x.com/JamesonZaballos/status/2123804034276487428"
-        }
-      ],
-      "first_seen": "2026-11-20",
-      "score": 49.3,
-      "sources": [
-        "X"
-      ],
-      "notes": "Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): @nic_carter's version (Nov 20 9:08 AM PT) has 84.8K views / 1.6K likes per X's public counts at ~12:58 AM PT Nov 21, the most-viewed found. Within hours of a widely shared claim that the Riemann Hypothesis had been proved, 15+ accounts independently wrote the same 'do you know what this means? / no. do you? / no.' dialogue (earliest found @quantzoid / @JamesonZaballos, Nov 20 morning). Shown as a self-rendered attributed post card of his post text only; the two stock-style portrait photos he attached are not reproduced.",
-      "name": "The Riemann Hypothesis Was Proved (Do You Know What It Means?)"
-    },
-    {
-      "rank": 10,
-      "id": "gta-vi-phone-green-screen-edits",
-      "title": "GTA VI PHONE GREEN SCREEN: EVERYONE DROPS THEIR OWN CHARACTER ONTO JASON'S PHONE FOR A 'LOW CORTISOL DRIVE'",
-      "image": "images/gta-vi-phone-green-screen-edits.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/AGlubbable/status/2123514981253591066",
-      "source_name": "X @AGlubbable",
-      "credit": "posted by @AGlubbable on X",
-      "also": [
-        {
-          "name": "X News: GTA VI Phone Screen Trend Sparks Endless Memes and Edits",
-          "url": "https://x.com/i/trending/2123663905650069595"
-        },
-        {
-          "name": "X / @MurdoinkGS (green-screen template, 4.8M views)",
-          "url": "https://x.com/MurdoinkGS/status/2123239831895503330"
-        }
-      ],
-      "first_seen": "2026-11-19",
-      "score": 44.3,
-      "sources": [
-        "X"
-      ],
-      "notes": "Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): VTuber Glubbable's 'Low Cortisol Driving!' edit (@AGlubbable, Nov 19 12:33 PM PT) has 8.4K views / 853 likes per X's public counts at ~12:58 AM PT Nov 21. It uses @MurdoinkGS's GTA VI phone green-screen template (4.80M views / 78.1K likes / 917 quotes, Nov 18 6:19 PM PT), which hundreds of people quoted with their own characters; X News 2123663905650069595. Scored on the credited edit only, not the template.",
-      "name": "GTA VI Phone Green Screen Edits"
     }
   ],
   "weekly": [
