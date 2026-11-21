@@ -1,6 +1,359 @@
 {
-  "as_of": "2026-11-20",
+  "as_of": "2026-11-21",
   "candidates": [
+    {
+      "id": "pov-youre-the-villain-but",
+      "name": "POV: You're the Villain But...",
+      "title": "'POV: YOU'RE THE VILLAIN BUT THE CHAIR LEANED WAY MORE THAN YOU EXPECTED': THE TIKTOK SKIT FORMAT CREATORS KEEP FINISHING WITH THEIR OWN 'BUT...'",
+      "source_url": "https://www.tiktok.com/@mattfletcher14/video/7706318596535799054",
+      "source_name": "TikTok / @mattfletcher14",
+      "image_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ocOjS5IfWYIULykBIeAZWtAQGeAbLHH2WCXVLQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1795420800&x-signature=n0XszzEt9oF1xWztc7i5gfXk4hc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "first_seen": "2026-11-09",
+      "also": [
+        {
+          "name": "TikTok / @mattfletcher14 (18.1M views)",
+          "url": "https://www.tiktok.com/@mattfletcher14/video/7706318596535799054"
+        },
+        {
+          "name": "X / @Edward_K_So (variation)",
+          "url": "https://x.com/Edward_K_So/status/2123816618803462422"
+        },
+        {
+          "name": "X / @thetr1e (variation)",
+          "url": "https://x.com/thetr1e/status/2123183698334068761"
+        }
+      ],
+      "ev": {
+        "tiktok": {
+          "url": "https://www.tiktok.com/@mattfletcher14/video/7706318596535799054",
+          "views": 18100000,
+          "likes": 4300000,
+          "author": "@mattfletcher14",
+          "posted": "2026-11-09",
+          "checked": "2026-11-21",
+          "via": "TikTok post page (tools/fetch_social.py, read ~12:56 AM PT Nov 21)"
+        },
+        "platforms": [
+          "TikTok",
+          "X"
+        ]
+      },
+      "notes": "Nov 21 ~12:56 AM PT new-day rebuild (no repeats from Nov 20 daily): 6.5s skit posted by TikToker @mattfletcher14 Nov 9; 18.1M views / 4.3M likes per TikTok's public counts at ~12:56 AM PT Nov 21. Biggest example found, not proven first. The 'POV: you're the villain but...' format spread to new creator posts Nov 16-20 and X variations ('but you couldn't afford a swivel chair', 'but you're in a toxic relationship' Nov 20). Creator's own clip; no profanity, nothing mocking.",
+      "first_seen_basis": "TikTok post by @mattfletcher14, 2026-11-09 (TikTok page)",
+      "credit": "posted by @mattfletcher14 on TikTok",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "oh-my-carne-asada-singing-dog",
+      "name": "Oh My Carne Asada (Singing Dog)",
+      "title": "'OH MY CARNE ASADA': THE SINGING-CHIHUAHUA CLIP PEOPLE DROP BEHIND THEIR OWN CAPTIONS ('ME PERFORMING AT CHRISTMAS BECAUSE IT'S THE ONLY GIFT I CAN AFFORD')",
+      "source_url": "https://www.tiktok.com/@dai.zee/video/7706747949786729759",
+      "source_name": "TikTok / @dai.zee",
+      "image_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/ocqrIzhEADEUmAMY43PBfFoj3EVFlIVHR98edD~tplv-tiktokx-origin.image?dr=9636&x-expires=1795420800&x-signature=SD3bUCHZeA2%2BfVSxLY7th0zn2Ic%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "first_seen": "2026-11-11",
+      "also": [
+        {
+          "name": "TikTok / @dai.zee (11.6M views)",
+          "url": "https://www.tiktok.com/@dai.zee/video/7706747949786729759"
+        },
+        {
+          "name": "TikTok / @editscc446 (green-screen template)",
+          "url": "https://www.tiktok.com/@editscc446/video/7706204430080740639"
+        }
+      ],
+      "ev": {
+        "tiktok": {
+          "url": "https://www.tiktok.com/@dai.zee/video/7706747949786729759",
+          "views": 11600000,
+          "likes": 1900000,
+          "author": "@dai.zee",
+          "posted": "2026-11-11",
+          "checked": "2026-11-21",
+          "via": "TikTok post page (tools/fetch_social.py, read ~12:56 AM PT Nov 21)"
+        },
+        "platforms": [
+          "TikTok",
+          "X"
+        ]
+      },
+      "notes": "Nov 21 ~12:56 AM PT new-day rebuild (no repeats from Nov 20 daily): AI lip-synced chihuahua clip captioned 'me preforming at christmas for my family this year cause it's the only gift i can afford', posted by TikToker @dai.zee Nov 11; 11.6M views / 1.9M likes per TikTok's public counts at ~12:56 AM PT Nov 21, the biggest post of the trend found. Green-screen template by @editscc446 (Nov 9) over a song cover English listeners hear as 'oh my carne asada'; new pet-owner and work versions kept appearing through Nov 20, plus X mentions Nov 17-20. AI-generated dog animation; no people.",
+      "first_seen_basis": "TikTok post by @dai.zee, 2026-11-11 (TikTok page); template @editscc446 2026-11-09",
+      "credit": "posted by @dai.zee on TikTok",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "lucia-will-appreciate-this",
+      "name": "Lucia Will Appreciate This",
+      "title": "'PRISCILLA WILL APPRECIATE THIS': MARK ZUCKERBERG POSTS HIS OWN TAKE ON THE GTA VI 'LUCIA WILL APPRECIATE THIS' MISSION POP-UP EDITS",
+      "source_url": "https://x.com/finkd/status/2123829559711650060",
+      "source_name": "X @finkd",
+      "image_url": "https://pbs.twimg.com/media/HXlbsQyXUAAN4gj.jpg",
+      "first_seen": "2026-11-18",
+      "also": [
+        {
+          "name": "Know Your Meme: Lucia Will Appreciate This",
+          "url": "https://knowyourmeme.com/memes/lucia-will-appreciate-this"
+        },
+        {
+          "name": "X / @wormcancer (early edit)",
+          "url": "https://x.com/wormcancer/status/2123055977993761053"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/finkd/status/2123829559711650060",
+          "views": 2940742,
+          "likes": 65368,
+          "checked": "2026-11-21",
+          "via": "X API (read ~12:58 AM PT Nov 21)"
+        },
+        "kym": true,
+        "platforms": [
+          "X",
+          "Know Your Meme"
+        ]
+      },
+      "notes": "Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): Mark Zuckerberg (@finkd) posted a photo of his TV showing an edited GTA VI mission pop-up ('PICK UP GROCERIES / Priscilla will appreciate this') on Nov 20 9:23 AM PT ('Wait which version did I get?'); 2.94M views / 65.4K likes per X's public counts at ~12:58 AM PT Nov 21. The 'Lucia will appreciate this' pop-up edit format took off Nov 18 (@wormcancer and many more) and is documented by Know Your Meme. Credited as the most-viewed post found, not the start of the format; whoever made his edit is not documented.",
+      "first_seen_basis": "Edit format from 2026-11-18 X posts (per KYM); @finkd post 2026-11-20T17:23Z",
+      "credit": "posted by @finkd on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "cat-in-towel-gif",
+      "name": "Cat in a Towel GIF",
+      "title": "THE CAT-IN-A-TOWEL GIF: A CAT STANDING UPRIGHT IN A TOWEL, PICKING THROUGH A WARDROBE, BECOMES X'S FAVORITE REACTION LOOP",
+      "source_url": "https://x.com/GabbanaSZNN/status/2123720724825124993",
+      "source_name": "X @GabbanaSZNN",
+      "image_url": "https://pbs.twimg.com/tweet_video_thumb/HXj4r2OW4AARkFc.jpg",
+      "first_seen": "2026-11-20",
+      "also": [
+        {
+          "name": "X News: Cat in Towel GIFs Bring Absurd Humor to Timelines",
+          "url": "https://x.com/i/trending/2123828730514522622"
+        },
+        {
+          "name": "X News: Towel-Clad Cat GIF Delivers Peak Disappointment Humor",
+          "url": "https://x.com/i/trending/2123897568627396933"
+        },
+        {
+          "name": "X / @engemma8 (reshare)",
+          "url": "https://x.com/engemma8/status/2123812989778448816"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/GabbanaSZNN/status/2123720724825124993",
+          "views": 750795,
+          "likes": 19870,
+          "checked": "2026-11-21",
+          "via": "X API (read ~12:59 AM PT Nov 21)"
+        },
+        "x_news": true,
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 21 ~12:59 AM PT new-day rebuild (no repeats from Nov 20 daily): GIF posted by @GabbanaSZNN Nov 20 2:10 AM PT; 751K views / 19.9K likes / 241 quotes per X's public counts at ~12:59 AM PT Nov 21. Reshared with new captions the same day (@engemma8 111K, @ziecity, @1BigMiah) and covered by two X News stories (2123828730514522622, 2123897568627396933). The clip appears to be AI-generated (cat heads on upright bodies); who made it is not documented, so @GabbanaSZNN is credited as the poster. Frames reviewed: nothing sexual or violent.",
+      "first_seen_basis": "X post by @GabbanaSZNN, 2026-11-20T10:10Z",
+      "credit": "posted by @GabbanaSZNN on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "rejected-a-marriage-proposal-today",
+      "name": "Rejected a Marriage Proposal Today",
+      "title": "'REJECTED A MARRIAGE PROPOSAL TODAY': THE RISHTA-REJECTION POST INDIAN X KEEPS REWRITING WITH EVER PICKIER REASONS",
+      "card_text": "Rejected a marriage proposal today.\n\nThe girl wasn't earning, that's manageable, but she was immature, wasn't willing to adjust with my parents, and wanted us to live separately. Also, she was 5'2 and I don't want my kids to be too short.\n\nMen never marry such girls.",
+      "source_url": "https://x.com/vickypawanist/status/2123371825896079698",
+      "source_name": "X @vickypawanist",
+      "image_url": null,
+      "image_policy": "none",
+      "first_seen": "2026-11-18",
+      "also": [
+        {
+          "name": "X News: Satirical Posts Mock India's Marriage Proposal Quirks",
+          "url": "https://x.com/i/trending/2123357603782685046"
+        },
+        {
+          "name": "X / @TheArshiDiaries (format start)",
+          "url": "https://x.com/TheArshiDiaries/status/2123299946174820765"
+        },
+        {
+          "name": "X / @_Shivkivani (variation)",
+          "url": "https://x.com/_Shivkivani/status/2123676246102192396"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/vickypawanist/status/2123371825896079698",
+          "views": 536148,
+          "likes": 10471,
+          "checked": "2026-11-21",
+          "via": "X API (read ~12:58 AM PT Nov 21)"
+        },
+        "x_news": true,
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): gender-flipped parody posted by @vickypawanist Nov 19 3:04 AM PT; 536K views / 10.5K likes per X's public counts at ~12:58 AM PT Nov 21. Format started by @TheArshiDiaries (Nov 18 10:18 PM PT); dozens of rewrites Nov 19-20 and X News 2123357603782685046. Credited to the most-liked clean parody rather than the origin post, which is being dog-piled in replies. Text-only: shown as a self-rendered attributed post card. Adults only; 'my kids' refers to hypothetical future children.",
+      "first_seen_basis": "X post by @TheArshiDiaries, 2026-11-19T06:18Z (format start)",
+      "credit": "posted by @vickypawanist on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true,
+      "minor_reviewed": true
+    },
+    {
+      "id": "dear-lord-no-go-bad",
+      "name": "Dear Lord, $300k No Go Bad",
+      "title": "'DEAR LORD, $300K NO GO BAD': NIGERIAN X QUOTE-CHAINS A PREACHING-STORK GIF WITH EVER BIGGER MONEY PRAYERS",
+      "source_url": "https://x.com/Blessing_Olivi/status/2123136993127452953",
+      "source_name": "X @Blessing_Olivi",
+      "image_url": "https://pbs.twimg.com/tweet_video_thumb/HXZFWQ6WMAATR2K.jpg",
+      "first_seen": "2026-11-17",
+      "also": [
+        {
+          "name": "X News: Bird GIF Fuels Playful Money Prayers on X",
+          "url": "https://x.com/i/trending/2123189241798701338"
+        },
+        {
+          "name": "X / @ylazy8 (earliest found)",
+          "url": "https://x.com/ylazy8/status/2122961719441891654"
+        },
+        {
+          "name": "X / @KingPhelz (variation)",
+          "url": "https://x.com/KingPhelz/status/2123439158907519075"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/Blessing_Olivi/status/2123136993127452953",
+          "views": 274586,
+          "likes": 9280,
+          "checked": "2026-11-21",
+          "via": "X API (read ~12:58 AM PT Nov 21)"
+        },
+        "x_news": true,
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): @Blessing_Olivi's 'Dear Lord, $300k no go bad' (Nov 18 11:31 AM PT) has 275K views / 9.3K likes / 628 quotes per X's public counts at ~12:58 AM PT Nov 21. Started by @ylazy8 ('Dear lord, $1m no go bad', Nov 17 11:54 PM PT, earliest found); the same stork GIF keeps getting quoted with new amounts (25+ new copies Nov 20) and X News 2123189241798701338. GIF maker unknown. Different clip and joke from stork-culprit-behind-everything.",
+      "first_seen_basis": "X post by @ylazy8, 2026-11-18T07:54Z (earliest found)",
+      "credit": "posted by @Blessing_Olivi on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "riemann-hypothesis-do-you-know-what-it-is",
+      "name": "The Riemann Hypothesis Was Proved (Do You Know What It Means?)",
+      "title": "'THE RIEMANN HYPOTHESIS WAS PROVED' / 'DO YOU KNOW WHAT THE IMPLICATIONS ARE?' / 'NO. DO YOU?' / 'NO.': THE DIALOGUE X KEPT REWRITING AFTER A CLAIMED PROOF",
+      "card_text": "the riemann hypothesis was proved\nwow. that's huge \ndo you know what the implications of this are? \nno. do you? \nno.",
+      "source_url": "https://x.com/nic_carter/status/2123825880044552627",
+      "source_name": "X @nic_carter",
+      "image_url": null,
+      "image_policy": "none",
+      "first_seen": "2026-11-20",
+      "also": [
+        {
+          "name": "X / @tekbog (variation)",
+          "url": "https://x.com/tekbog/status/2123816951038513257"
+        },
+        {
+          "name": "X / @JamesonZaballos (early version)",
+          "url": "https://x.com/JamesonZaballos/status/2123804034276487428"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/nic_carter/status/2123825880044552627",
+          "views": 84807,
+          "likes": 1582,
+          "checked": "2026-11-21",
+          "via": "X API (read ~12:58 AM PT Nov 21)"
+        },
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): @nic_carter's version (Nov 20 9:08 AM PT) has 84.8K views / 1.6K likes per X's public counts at ~12:58 AM PT Nov 21, the most-viewed found. Within hours of a widely shared claim that the Riemann Hypothesis had been proved, 15+ accounts independently wrote the same 'do you know what this means? / no. do you? / no.' dialogue (earliest found @quantzoid / @JamesonZaballos, Nov 20 morning). Shown as a self-rendered attributed post card of his post text only; the two stock-style portrait photos he attached are not reproduced.",
+      "first_seen_basis": "X posts 2026-11-20 (earliest found ~7:29 AM PT); @nic_carter 2026-11-20T17:08Z",
+      "credit": "posted by @nic_carter on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "gta-vi-phone-green-screen-edits",
+      "name": "GTA VI Phone Green Screen Edits",
+      "title": "GTA VI PHONE GREEN SCREEN: EVERYONE DROPS THEIR OWN CHARACTER ONTO JASON'S PHONE FOR A 'LOW CORTISOL DRIVE'",
+      "source_url": "https://x.com/AGlubbable/status/2123514981253591066",
+      "source_name": "X @AGlubbable",
+      "image_url": "https://pbs.twimg.com/amplify_video_thumb/2123514872461656065/img/15QTQlqlKSByUCjy.jpg",
+      "first_seen": "2026-11-19",
+      "also": [
+        {
+          "name": "X News: GTA VI Phone Screen Trend Sparks Endless Memes and Edits",
+          "url": "https://x.com/i/trending/2123663905650069595"
+        },
+        {
+          "name": "X / @MurdoinkGS (green-screen template, 4.8M views)",
+          "url": "https://x.com/MurdoinkGS/status/2123239831895503330"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/AGlubbable/status/2123514981253591066",
+          "views": 8377,
+          "likes": 853,
+          "checked": "2026-11-21",
+          "via": "X API (read ~12:58 AM PT Nov 21)"
+        },
+        "x_news": true,
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): VTuber Glubbable's 'Low Cortisol Driving!' edit (@AGlubbable, Nov 19 12:33 PM PT) has 8.4K views / 853 likes per X's public counts at ~12:58 AM PT Nov 21. It uses @MurdoinkGS's GTA VI phone green-screen template (4.80M views / 78.1K likes / 917 quotes, Nov 18 6:19 PM PT), which hundreds of people quoted with their own characters; X News 2123663905650069595. Scored on the credited edit only, not the template.",
+      "first_seen_basis": "Template by @MurdoinkGS 2026-11-19T02:19Z; edit by @AGlubbable 2026-11-19T20:33Z",
+      "credit": "posted by @AGlubbable on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
     {
       "id": "huss-huss-huss-in-this-town",
       "name": "Huss Huss Huss / In This Town",
@@ -48,7 +401,6 @@
       "first_seen_basis": "TikTok post by @larpniverse, 2026-11-13 (per TikTok and KYM)",
       "credit": "posted by @larpniverse on TikTok",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -97,7 +449,6 @@
       "first_seen_basis": "X post by @iivvei_, 2026-11-18T10:02:25Z",
       "credit": "posted by @iivvei_ on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -142,7 +493,6 @@
       "first_seen_basis": "X post by @ashleeey665__, 2026-11-18T17:15:15Z",
       "credit": "posted by @ashleeey665__ on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -189,7 +539,6 @@
       "first_seen_basis": "X post by @ciwilkie, 2026-11-19T09:39:43Z",
       "credit": "posted by @ciwilkie on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -234,7 +583,6 @@
       "first_seen_basis": "X post by @OsweltOrtiz, 2026-11-19T08:22:19Z",
       "credit": "posted by @OsweltOrtiz on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -281,7 +629,6 @@
       "first_seen_basis": "X post by @BobGolen, 2026-11-18T17:49:25Z",
       "credit": "posted by @BobGolen on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -312,17 +659,17 @@
       "ev": {
         "x": {
           "url": "https://x.com/AgwuGallant/status/2123453106427945308",
-          "views": 767949,
-          "likes": 22993,
-          "checked": "2026-11-20",
-          "via": "X API (read ~7:05 AM PT Nov 20)"
+          "views": 1017775,
+          "likes": 29051,
+          "checked": "2026-11-21",
+          "via": "X API (read ~12:58 AM PT Nov 21)"
         },
         "platforms": [
           "X"
         ],
         "x_news": true
       },
-      "notes": "Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): 30-second animal clip posted by CHAMPZ (@AgwuGallant) Nov 19 8:27 AM PT; 525K views / 16.5K likes per X's public counts at ~12:53 AM PT Nov 20 (252K at ~3:15 PM PT Nov 19). Word-for-word and Pidgin caption copies within hours (@KofiRealer, @Famousmbt, @offclchimezie, @Peterstakes, @sucreboyy); X News 2123541631903109293. The clip looks AI-generated and its maker is not documented, so @AgwuGallant is credited for the post that spread. No injury shown, no people.",
+      "notes": "Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): 30-second animal clip posted by CHAMPZ (@AgwuGallant) Nov 19 8:27 AM PT; 525K views / 16.5K likes per X's public counts at ~12:53 AM PT Nov 20 (252K at ~3:15 PM PT Nov 19). Word-for-word and Pidgin caption copies within hours (@KofiRealer, @Famousmbt, @offclchimezie, @Peterstakes, @sucreboyy); X News 2123541631903109293. The clip looks AI-generated and its maker is not documented, so @AgwuGallant is credited for the post that spread. No injury shown, no people. Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): 1.02M views / 29.1K likes / 392 quotes per X's public counts.",
       "first_seen_basis": "X post by @AgwuGallant, 2026-11-19T16:27:27Z",
       "credit": "posted by @AgwuGallant on X",
       "periods": [
@@ -576,20 +923,21 @@
       "ev": {
         "x": {
           "url": "https://x.com/DrClownPhD/status/2123192872572772472",
-          "views": 200431,
-          "likes": 4502,
-          "checked": "2026-11-19",
-          "via": "X API (read ~7:05 AM PT Nov 19)"
+          "views": 252210,
+          "likes": 5376,
+          "checked": "2026-11-21",
+          "via": "X API (read ~12:58 AM PT Nov 21)"
         },
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 19 7 AM-slot main discovery: AI-made cartoon by @DrClownPhD (his own watermark), Nov 18 3:13 PM PT; 200K views / 4.5K likes per X's public counts at ~7:05 AM PT Nov 19. Part of the GTA VI launch-day 'nobody is at work' joke wave (@vidsthatgohard, @ShitpostGate, Mashable's fake-sick-leave roundup).",
+      "notes": "Nov 19 7 AM-slot main discovery: AI-made cartoon by @DrClownPhD (his own watermark), Nov 18 3:13 PM PT; 200K views / 4.5K likes per X's public counts at ~7:05 AM PT Nov 19. Part of the GTA VI launch-day 'nobody is at work' joke wave (@vidsthatgohard, @ShitpostGate, Mashable's fake-sick-leave roundup). Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): 252K views / 5.4K likes per X's public counts; the GTA VI 'everyone called in sick' wave kept going Nov 19-20.",
       "headline_reviewed": true,
       "first_seen_basis": "X post by @DrClownPhD, 2026-11-18T23:13Z",
       "credit": "posted by @DrClownPhD on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ]
@@ -676,7 +1024,6 @@
     {
       "id": "layi-wasabi-wife-full-of-ideas",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -720,7 +1067,6 @@
     {
       "id": "last-year-of-being-broke-dog",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -951,7 +1297,6 @@
     {
       "id": "office-pizza-party-one-sliver",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -5644,7 +5989,6 @@
       "first_seen_basis": "X post by @Rafaelsmnzl, 2026-11-17T17:38Z",
       "credit": "posted by @Rafaelsmnzl on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],

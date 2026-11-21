@@ -158,6 +158,29 @@
       "source_url": "https://x.com/BobGolen/status/2123111348447879454",
       "source_asset": "memestand-video/pool-media/2026-11-19/electricity-bill-divine-light/original.jpg",
       "prepared": "Self-rendered attributed post card made Nov 19 2026 with memestand-video/make_postcard.py from the public post read via the X API (full text, handle, display name, author avatar). Text re-checked against the X API at ~12:53 AM PT Nov 20. No MemeStand header. Not a screenshot of X."
+    },
+    "rejected-a-marriage-proposal-today": {
+      "ids": [
+        "rejected-a-marriage-proposal-today"
+      ],
+      "file": "images/post-cards/rejected-a-marriage-proposal-today.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "Rejected a marriage proposal today.\n\nThe girl wasn't earning, that's manageable, but she was immature, wasn't willing to adjust with my parents, and wanted us to live separately. Also, she was 5'2 and I don't want my kids to be too short.\n\nMen never marry such girls.",
+      "source_url": "https://x.com/vickypawanist/status/2123371825896079698",
+      "source_asset": "memestand-video/pool-media/2026-11-20/rejected-a-marriage-proposal-today/original.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 20 2026 (fresh-pool build) with memestand-video/make_postcard.py's layout from the public post (full text, handle, display name, the author's own X avatar). Text re-checked against the X API at ~12:58 AM PT Nov 21. No MemeStand header. Not a screenshot of X."
+    },
+    "riemann-hypothesis-do-you-know-what-it-is": {
+      "ids": [
+        "riemann-hypothesis-do-you-know-what-it-is"
+      ],
+      "file": "images/post-cards/riemann-hypothesis-do-you-know-what-it-is.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "the riemann hypothesis was proved\nwow. that's huge \ndo you know what the implications of this are? \nno. do you? \nno.",
+      "source_url": "https://x.com/nic_carter/status/2123825880044552627",
+      "prepared": "Self-rendered attributed post card made Nov 21 2026 (~1 AM PT) with memestand-video/make_postcard.py from the public post read via the X API at ~12:58 AM PT Nov 21 (full text, handle, display name, the author's own X avatar). The two attached portrait photos are not reproduced. No MemeStand header. Not a screenshot of X."
     }
   }
 }
