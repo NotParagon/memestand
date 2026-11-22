@@ -71,12 +71,43 @@ LEGAL = {
 }
 OG_USE_MEME_THUMB = False   # False: social cards use our own og-default.png, never someone else's meme
 COPY_START = 2026
+TAGLINE = "Real memes, picked by people, creators always credited"
+X_PROFILE = "https://x.com/MemeStandHQ"
+TIKTOK_PROFILE = "https://www.tiktok.com/@memestandhq"
 # Cloudflare Web Analytics beacon (cookieless; public site token). Goes just before </body> on EVERY page via footer(). Keep it.
 CF_ANALYTICS = '''<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7fe3f90e5dc444b9a67ecfce9aed6c1e"}'></script><!-- End Cloudflare Web Analytics -->'''
 PRIVACY_UPDATED = "November 4, 2026"   # bump when the privacy policy text changes
 
 BLOCKS = load_blocklist()
 REMOVED = "[REMOVED IN RESPONSE TO A TAKEDOWN REQUEST]"
+
+def load_social_posts():
+    """Our own X/TikTok permalinks, keyed by meme slug. Written by sync_social_links.py."""
+    path = ROOT / "data" / "social-posts.json"
+    if not path.exists():
+        return {}
+    try:
+        doc = json.loads(path.read_text())
+    except Exception:
+        return {}
+    raw = doc.get("posts") if isinstance(doc, dict) and "posts" in doc else doc
+    if not isinstance(raw, dict):
+        return {}
+    out = {}
+    for sl, rec in raw.items():
+        if not isinstance(rec, dict):
+            continue
+        entry = {}
+        for plat in ("x", "tiktok"):
+            v = rec.get(plat)
+            url = v if isinstance(v, str) else (v.get("url") if isinstance(v, dict) else None)
+            if url:
+                entry[plat] = url
+        if entry:
+            out[sl] = entry
+    return out
+
+SOCIAL_POSTS = load_social_posts()
 def scrub(d):
     """Replace blocklisted rows with a removal placeholder (keeps rank numbers stable)."""
     if not BLOCKS: return d
@@ -293,7 +324,10 @@ CSS = """
  .mast .logo .mark{width:.78em;height:.78em;flex:none;display:block}
  .mast .word{border-bottom:3px solid var(--redbg);line-height:.9}
  .mast .tag{display:block;font-size:13px;letter-spacing:2px;font-weight:normal;line-height:1.35}
+ .mast .tagline{display:block;margin:8px auto 0;max-width:22rem;font-size:12px;letter-spacing:0;line-height:1.4;color:var(--muted);font-weight:normal}
  .mast .periods{margin:8px 0 0;font-size:12px;letter-spacing:0} .mast .periods a{color:var(--link);margin:0 6px;text-decoration:underline}
+ .watch{margin:8px 0 0;font-size:14px;color:var(--muted)} .watch a{color:var(--link);text-decoration:underline}
+ nav.follow{margin:0 0 8px}
  .intro{text-align:center;font-size:12px;margin:6px auto 0;max-width:820px;color:var(--muted)} .intro a{color:var(--link);text-decoration:underline}
  .upd{text-align:center;font-size:12px;margin:6px 0 2px}
  .top{text-align:center;margin:18px auto 30px;max-width:900px;padding-bottom:22px;border-bottom:3px double var(--rule)}
@@ -419,6 +453,8 @@ CSS = """
   body{padding:8px 14px 32px}
   body{padding-top:calc(8px + var(--mast-lift, 0px))}
   .mast .logo{font-size:32px;letter-spacing:1px} .mast .logo a{gap:6px} .mast .tag{font-size:12px;letter-spacing:1px}
+  .mast .tagline{font-size:13px;line-height:1.45;max-width:20rem;padding:0 40px}
+  .watch{font-size:16px} .watch a{display:inline-block;min-height:44px;line-height:44px;padding:0 4px}
   .intro{font-size:13px;line-height:1.4}
   .top{margin:14px auto 26px;padding-bottom:20px}
   .top a.shot,.top img{--lead-max:60vh;max-height:60vh}
@@ -575,12 +611,19 @@ def logo_html(base):
 def mast(base, tag, h1=True):
     """Logo stays outside the h1. List pages then expose only the headline as the heading."""
     headline = f'<h1 class="tag">{tag}</h1>' if h1 else f'<span class="tag">{tag}</span>'
-    return f'<header class="mast">{logo_html(base)}{headline}{period_nav(base)}{THEME_TOGGLE}</header><div id="content"></div>'
+    return (f'<header class="mast">{logo_html(base)}'
+            f'<p class="tagline">{e(TAGLINE)}</p>'
+            f'{headline}{period_nav(base)}{THEME_TOGGLE}</header><div id="content"></div>')
 
 INTRO = "Ranked by cross-platform virality on X, TikTok, Instagram, Reddit, YouTube and Know Your Meme."
 
 def copyright_years():
     return f"{COPY_START}" if NOW.year <= COPY_START else f"{COPY_START}&ndash;{NOW.year}"
+
+def follow_nav():
+    return (f'<nav class="foot follow" aria-label="Follow MemeStand">Follow on '
+            f'<a href="{e(X_PROFILE)}" rel="me noopener" target="_blank">X</a> and '
+            f'<a href="{e(TIKTOK_PROFILE)}" rel="me noopener" target="_blank">TikTok</a></nav>')
 
 def footer(base):
     links = [(home_href(base), "Home"), (f"{base}top-memes-today/", "Top Memes Today"),
@@ -593,7 +636,8 @@ def footer(base):
              (f"{base}privacy.html", "Privacy"), (f"{base}dmca.html", "DMCA / Takedowns")]
     nav = " | ".join(f'<a href="{u}">{t}</a>' for u, t in links)
     nav2 = " | ".join(f'<a href="{u}">{t}</a>' for u, t in legal)
-    return f'''<footer><nav class="foot" aria-label="Site">{nav}</nav>
+    return f'''<footer>{follow_nav()}
+<nav class="foot" aria-label="Site">{nav}</nav>
 <nav class="foot" aria-label="Legal">{nav2}</nav>
 <p>Ranked by cross-platform virality: X engagement and trending stories, TikTok and Instagram post counts, Reddit top feeds, YouTube views and Know Your Meme.
 Headlines describe memes and online reactions, not verified facts about the people in them.</p>
@@ -1291,7 +1335,9 @@ def og_for(d, day=None):
 
 # ---------------------------------------------------------------- structured data
 ORG = {"@type": "Organization", "@id": f"{SITE}/#org", "name": NAME, "url": f"{SITE}/",
+       "description": f"{TAGLINE}. {INTRO}",
        "logo": {"@type": "ImageObject", "url": f"{SITE}/apple-touch-icon.png", "width": 180, "height": 180},
+       "sameAs": [X_PROFILE, TIKTOK_PROFILE],
        "publishingPrinciples": f"{SITE}/about.html#policy"}
 WEBSITE = {"@type": "WebSite", "@id": f"{SITE}/#website", "name": NAME, "alternateName": "MemeStand.com", "url": f"{SITE}/",
            "description": INTRO, "inLanguage": "en", "publisher": {"@id": f"{SITE}/#org"}}
@@ -1759,6 +1805,19 @@ def trending_block(info, base):
         return "", ""
     return "".join(html_parts), " ".join(plain_parts)
 
+
+def social_watch_html(sl):
+    """Link to MemeStand's own X/TikTok posts about this meme, when we have a confirmed URL."""
+    rec = SOCIAL_POSTS.get(sl) or {}
+    parts = []
+    if rec.get("x"):
+        parts.append(f'<a href="{e(rec["x"])}" target="_blank" rel="noopener">X</a>')
+    if rec.get("tiktok"):
+        parts.append(f'<a href="{e(rec["tiktok"])}" target="_blank" rel="noopener">TikTok</a>')
+    if not parts:
+        return ""
+    return f'<p class="watch">Watch it on {" / ".join(parts)}</p>'
+
 def build_meme_page(sl):
     info, base = PAGES[sl], "../../"
     url, name, m = f"{SITE}/meme/{sl}/", info["name"], info["latest"]
@@ -1868,6 +1927,7 @@ def build_meme_page(sl):
 <div class="copy">
 <div class="zone zone-by">
 {credit(m)}
+{social_watch_html(sl)}
 </div>
 {src_zone}
 </div>
@@ -2111,7 +2171,7 @@ def build_home():
     d, url = data, f"{SITE}/"
     t1 = tc(d["daily"][0]["title"])
     title = "MemeStand — Daily Meme Report: Today's Top Memes, Ranked by Virality"
-    desc = (f"MemeStand's daily meme report: today's top memes and the best of the month, "
+    desc = (f"{TAGLINE}. MemeStand's daily meme report: today's top memes and the best of the month, "
             f"ranked by virality. Today's #1 ({fmt_short(NOW)}): \"{t1}\".")
     og, og_alt = og_for(d)
     lists = [itemlist(d, p, url, fmt_short(NOW)) for p in MAIN_PERIODS]
