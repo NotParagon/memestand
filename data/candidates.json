@@ -26,10 +26,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/ngnchiikawa/status/2124156927181791413",
-          "views": 17188453,
-          "likes": 463817,
+          "views": 21736124,
+          "likes": 490073,
           "checked": "2026-11-22",
-          "via": "X API (read ~12:55 AM PT Nov 22)"
+          "via": "X API (read ~6:58 AM PT Nov 22)"
         },
         "platforms": [
           "X"
@@ -76,10 +76,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/d_foubert/status/2123715278693417055",
-          "views": 2447736,
-          "likes": 2898,
+          "views": 2500458,
+          "likes": 2957,
           "checked": "2026-11-22",
-          "via": "X API (read ~12:55 AM PT Nov 22)"
+          "via": "X API (read ~6:58 AM PT Nov 22)"
         },
         "x_news": true,
         "platforms": [
@@ -170,10 +170,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/motolkio/status/2124174408491393025",
-          "views": 837415,
-          "likes": 60470,
+          "views": 975098,
+          "likes": 65878,
           "checked": "2026-11-22",
-          "via": "X API (read ~12:55 AM PT Nov 22); screenshot of the Tumblr post shared by @motolkio"
+          "via": "X API (read ~6:58 AM PT Nov 22); screenshot of the Tumblr post shared by @motolkio"
         },
         "x_news": true,
         "platforms": [
@@ -265,10 +265,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/moondustlynx/status/2123966253588992349",
-          "views": 637188,
-          "likes": 16107,
+          "views": 796983,
+          "likes": 16829,
           "checked": "2026-11-22",
-          "via": "X API (read ~12:55 AM PT Nov 22); most-viewed version found (credited earliest found @mikdunno: 128.8K views / 8.1K likes)"
+          "via": "X API (read ~6:58 AM PT Nov 22); most-viewed version found (credited earliest found @mikdunno: 128.8K views / 8.1K likes)"
         },
         "x_news": true,
         "platforms": [
@@ -303,10 +303,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/44t0miwa/status/2123887875125076158",
-          "views": 96775,
-          "likes": 1820,
+          "views": 101782,
+          "likes": 1841,
           "checked": "2026-11-22",
-          "via": "X API (read ~12:55 AM PT Nov 22)"
+          "via": "X API (read ~6:58 AM PT Nov 22)"
         },
         "x_news": true,
         "platforms": [
@@ -698,10 +698,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/nic_carter/status/2123825880044552627",
-          "views": 93560,
-          "likes": 1629,
+          "views": 94431,
+          "likes": 1630,
           "checked": "2026-11-22",
-          "via": "X API (read ~12:55 AM PT Nov 22)"
+          "via": "X API (read ~6:58 AM PT Nov 22)"
         },
         "platforms": [
           "X"
@@ -738,10 +738,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/AGlubbable/status/2123514981253591066",
-          "views": 9185,
+          "views": 9316,
           "likes": 879,
           "checked": "2026-11-22",
-          "via": "X API (read ~12:55 AM PT Nov 22)"
+          "via": "X API (read ~6:58 AM PT Nov 22)"
         },
         "x_news": true,
         "platforms": [
@@ -6187,10 +6187,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/eatsomevoid/status/2123912744197837303",
-          "views": 360868,
-          "likes": 26128,
+          "views": 415156,
+          "likes": 27302,
           "checked": "2026-11-22",
-          "via": "X API (read ~12:55 AM PT Nov 22); best post of the Nov 20-22 student-major wave (credited earliest post @starssvy, Nov 16)"
+          "via": "X API (read ~6:58 AM PT Nov 22); best post of the Nov 20-22 student-major wave (credited earliest post @starssvy, Nov 16)"
         },
         "x_news": true,
         "platforms": [
@@ -6408,6 +6408,102 @@
       "first_seen_basis": "X post by @Rafaelsmnzl, 2026-11-17T17:38Z",
       "credit": "posted by @Rafaelsmnzl on X",
       "periods": [
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "if-tigers-are-so-dangerous-tiger-loaf",
+      "name": "If Tigers Are So Dangerous, Explain This (Tiger Loaf)",
+      "title": "'IF TIGERS ARE SO DANGEROUS, EXPLAIN THIS': A ZOO TIGER IN A PERFECT HOUSECAT LOAF, AND X NOW SLAPS THE LINE ON EVERY BIG CAT CAUGHT LOAFING",
+      "source_url": "https://x.com/hardcatmemes/status/2124255447154889123",
+      "source_name": "X @hardcatmemes",
+      "image_url": "https://pbs.twimg.com/media/HXrfEhMa0AAq7vL.jpg",
+      "first_seen": "2026-11-21",
+      "also": [
+        {
+          "name": "X News: tiger loaf story",
+          "url": "https://x.com/i/trending/2124408684101128321"
+        },
+        {
+          "name": "X / @AnbarBaddie ('i just found out that tigers loaf', 1.67M views)",
+          "url": "https://x.com/AnbarBaddie/status/2124284967966613581"
+        },
+        {
+          "name": "X / @vancology (big cats loafing thread)",
+          "url": "https://x.com/vancology/status/2124367275797139675"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/hardcatmemes/status/2124255447154889123",
+          "views": 7266214,
+          "likes": 408365,
+          "checked": "2026-11-22",
+          "via": "X API (read ~6:58 AM PT Nov 22)"
+        },
+        "x_news": true,
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 22 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:58 AM PT): photo of a zoo tiger lying in a housecat 'loaf' posted by @hardcatmemes Nov 21 1:35 PM PT with 'If tigers are so dangerous, explain this'; 7.27M views / 408K likes / 3.0K quotes. Spread in the last 24h: @AnbarBaddie 'i just found out that tigers loaf' (1.67M views), @vancology quote thread of other big cats loafing (265K views), the caption reused on other animals' photos (@p1halo, @tinyprettykhj, @ggam_nyang_yi); X News stories 2124408684101128321 and 2124297145264296205. The original photographer is undocumented; credit is the poster. Animal only, no people.",
+      "first_seen_basis": "X post by @hardcatmemes, 2026-11-21T21:35Z",
+      "credit": "posted by @hardcatmemes on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "gta-6-profound-intellectual-games-sudoku",
+      "name": "Don't Care About GTA 6, Busy With Profound and Intellectual Games",
+      "title": "'DON'T CARE ABOUT GTA 6 BECAUSE I'M BUSY WITH MORE PROFOUND AND INTELLECTUAL GAMES SUCH AS SUDOKU': THE LAUNCH-WEEK BRAG X KEEPS REFILLING WITH CHESS, COOKING MAMA AND GOOGLE SNAKE",
+      "card_text": "don’t care about gta 6 because i’m busy with more profound and intellectual games such as sudoku",
+      "source_url": "https://x.com/soupsizedocean/status/2123925246411428041",
+      "source_name": "X @soupsizedocean",
+      "image_url": null,
+      "image_policy": "none",
+      "first_seen": "2026-11-20",
+      "also": [
+        {
+          "name": "X News: GTA 6 'intellectual games' story",
+          "url": "https://x.com/i/trending/2124310005319115038"
+        },
+        {
+          "name": "X / @EveryTaye (Cooking Mama version)",
+          "url": "https://x.com/EveryTaye/status/2124236230380679232"
+        },
+        {
+          "name": "X / @momoicore (Google Snake version)",
+          "url": "https://x.com/momoicore/status/2124287224858771817"
+        },
+        {
+          "name": "X / @doctorherssen (chess version)",
+          "url": "https://x.com/doctorherssen/status/2124438096657932656"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/soupsizedocean/status/2123925246411428041",
+          "views": 945967,
+          "likes": 90258,
+          "checked": "2026-11-22",
+          "via": "X API (read ~6:58 AM PT Nov 22)"
+        },
+        "x_news": true,
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 22 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:58 AM PT): text post by xenia (@soupsizedocean) Nov 20 3:43 PM PT; 946K views / 90.3K likes / 1.1K quotes. Verbatim copies swapping the game spread Nov 21-22 (@EveryTaye Cooking Mama, @momoicore Google Snake, @doctorherssen chess, others with Hay Day and Valorant); X News 2124310005319115038. Some replies swap in crude sexual lines; those are not shown or quoted. Shown as a self-rendered attributed post card of her post text.",
+      "first_seen_basis": "X post by @soupsizedocean, 2026-11-20T23:43Z",
+      "credit": "posted by @soupsizedocean on X",
+      "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],

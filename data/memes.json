@@ -1,8 +1,40 @@
 {
-  "updated": "2026-11-22T05:58-08:00",
+  "updated": "2026-11-22T06:58-08:00",
   "daily": [
     {
       "rank": 1,
+      "id": "if-tigers-are-so-dangerous-tiger-loaf",
+      "title": "'IF TIGERS ARE SO DANGEROUS, EXPLAIN THIS': A ZOO TIGER IN A PERFECT HOUSECAT LOAF, AND X NOW SLAPS THE LINE ON EVERY BIG CAT CAUGHT LOAFING",
+      "image": "images/if-tigers-are-so-dangerous-tiger-loaf.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/hardcatmemes/status/2124255447154889123",
+      "source_name": "X @hardcatmemes",
+      "credit": "posted by @hardcatmemes on X",
+      "also": [
+        {
+          "name": "X News: tiger loaf story",
+          "url": "https://x.com/i/trending/2124408684101128321"
+        },
+        {
+          "name": "X / @AnbarBaddie ('i just found out that tigers loaf', 1.67M views)",
+          "url": "https://x.com/AnbarBaddie/status/2124284967966613581"
+        },
+        {
+          "name": "X / @vancology (big cats loafing thread)",
+          "url": "https://x.com/vancology/status/2124367275797139675"
+        }
+      ],
+      "first_seen": "2026-11-21",
+      "score": 73.6,
+      "sources": [
+        "X"
+      ],
+      "notes": "Nov 22 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:58 AM PT): photo of a zoo tiger lying in a housecat 'loaf' posted by @hardcatmemes Nov 21 1:35 PM PT with 'If tigers are so dangerous, explain this'; 7.27M views / 408K likes / 3.0K quotes. Spread in the last 24h: @AnbarBaddie 'i just found out that tigers loaf' (1.67M views), @vancology quote thread of other big cats loafing (265K views), the caption reused on other animals' photos (@p1halo, @tinyprettykhj, @ggam_nyang_yi); X News stories 2124408684101128321 and 2124297145264296205. The original photographer is undocumented; credit is the poster. Animal only, no people.",
+      "name": "If Tigers Are So Dangerous, Explain This (Tiger Loaf)"
+    },
+    {
+      "rank": 2,
       "id": "chiikawa-dogoo-camera-beam",
       "title": "'ドゴォッ' (DOGOOO!): HACHIWARE'S NEW CHIIKAWA CAMERA FIRES A DESTRUCTION BEAM, AND JAPANESE X TURNED THE SOUND EFFECT INTO A CATCHPHRASE",
       "image": "images/chiikawa-dogoo-camera-beam.jpg",
@@ -26,7 +58,7 @@
         }
       ],
       "first_seen": "2026-11-21",
-      "score": 72.4,
+      "score": 73.4,
       "sources": [
         "X"
       ],
@@ -34,7 +66,7 @@
       "name": "Chiikawa 'Dogoo' Camera Beam (ドゴォッ)"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "id": "weak-men-play-gta-vi-strong-men",
       "title": "'WEAK MEN PLAY GTA VI. STRONG MEN: ...': A SELF-IMPROVEMENT LIST X KEEPS REWRITING WITH OWLS, MINECRAFT, GENSHIN AND 'POST ON TWITTER'",
       "image": "images/post-cards/weak-men-play-gta-vi-strong-men.jpg",
@@ -63,7 +95,7 @@
         }
       ],
       "first_seen": "2026-11-20",
-      "score": 68.9,
+      "score": 69.0,
       "sources": [
         "X"
       ],
@@ -71,7 +103,7 @@
       "name": "Weak Men Play GTA VI, Strong Men..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "id": "gta-5-goodbye-ai-farewell",
       "title": "'GTA 5 GOODBYE': AI FAREWELL FILMS WHERE MICHAEL, FRANKLIN AND TREVOR SAY GOODBYE TO THE FAN WHO GREW UP WITH GTA V, REMADE FOR GTA VI LAUNCH WEEK",
       "image": "images/gta-5-goodbye-ai-farewell.jpg",
@@ -104,7 +136,7 @@
       "name": "GTA 5 Goodbye (AI Farewell)"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "id": "my-devoted-but-dangerously-unstable-knight",
       "title": "'MY DEVOTED BUT DANGEROUSLY UNSTABLE KNIGHT WILL BE HEARING ABOUT THIS': THE TUMBLR LINE X IS PASTING ONTO EVERY BROODING FICTIONAL CHARACTER",
       "image": "images/my-devoted-but-dangerously-unstable-knight.jpg",
@@ -128,7 +160,7 @@
         }
       ],
       "first_seen": "2026-11-21",
-      "score": 64.2,
+      "score": 64.9,
       "sources": [
         "X"
       ],
@@ -136,7 +168,44 @@
       "name": "My Devoted but Dangerously Unstable Knight"
     },
     {
-      "rank": 5,
+      "rank": 6,
+      "id": "gta-6-profound-intellectual-games-sudoku",
+      "title": "'DON'T CARE ABOUT GTA 6 BECAUSE I'M BUSY WITH MORE PROFOUND AND INTELLECTUAL GAMES SUCH AS SUDOKU': THE LAUNCH-WEEK BRAG X KEEPS REFILLING WITH CHESS, COOKING MAMA AND GOOGLE SNAKE",
+      "image": "images/post-cards/gta-6-profound-intellectual-games-sudoku.jpg",
+      "image_url": null,
+      "image_kind": "post_card",
+      "card_text": "don’t care about gta 6 because i’m busy with more profound and intellectual games such as sudoku",
+      "source_url": "https://x.com/soupsizedocean/status/2123925246411428041",
+      "source_name": "X @soupsizedocean",
+      "credit": "posted by @soupsizedocean on X",
+      "also": [
+        {
+          "name": "X News: GTA 6 'intellectual games' story",
+          "url": "https://x.com/i/trending/2124310005319115038"
+        },
+        {
+          "name": "X / @EveryTaye (Cooking Mama version)",
+          "url": "https://x.com/EveryTaye/status/2124236230380679232"
+        },
+        {
+          "name": "X / @momoicore (Google Snake version)",
+          "url": "https://x.com/momoicore/status/2124287224858771817"
+        },
+        {
+          "name": "X / @doctorherssen (chess version)",
+          "url": "https://x.com/doctorherssen/status/2124438096657932656"
+        }
+      ],
+      "first_seen": "2026-11-20",
+      "score": 64.8,
+      "sources": [
+        "X"
+      ],
+      "notes": "Nov 22 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:58 AM PT): text post by xenia (@soupsizedocean) Nov 20 3:43 PM PT; 946K views / 90.3K likes / 1.1K quotes. Verbatim copies swapping the game spread Nov 21-22 (@EveryTaye Cooking Mama, @momoicore Google Snake, @doctorherssen chess, others with Hay Day and Valorant); X News 2124310005319115038. Some replies swap in crude sexual lines; those are not shown or quoted. Shown as a self-rendered attributed post card of her post text.",
+      "name": "Don't Care About GTA 6, Busy With Profound and Intellectual Games"
+    },
+    {
+      "rank": 7,
       "id": "amo-meu-curso-i-love-my-course",
       "title": "'AMO MEU CURSO' ('I LOVE MY COURSE'): STUDENTS PAIR THE WIG-AND-TAPE-MEASURE FACEPALM CLIP WITH THE PART OF THEIR MAJOR THEY CAN'T STAND",
       "image": "images/amo-meu-curso-i-love-my-course.jpg",
@@ -164,7 +233,7 @@
         }
       ],
       "first_seen": "2026-11-19",
-      "score": 63.0,
+      "score": 64.0,
       "sources": [
         "X"
       ],
@@ -172,7 +241,7 @@
       "name": "Amo Meu Curso (I Love My Course)"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "id": "tie-cat-chego-vou-embora",
       "title": "'- I'M A ___ STUDENT ... - I LEAVE': THE TABBY CAT IN A SHIRT COLLAR AND TIE GETS A NEW WAVE OF COLLEGE-MAJOR LISTS",
       "image": "images/tie-cat-chego-vou-embora.jpg",
@@ -216,14 +285,14 @@
         }
       ],
       "first_seen": "2026-11-16",
-      "score": 60.6,
+      "score": 61.2,
       "sources": [
         "X"
       ],
       "notes": "Nov 18 ~7 AM PT main discovery: same-day remix cluster. Earliest version found is @starssvy (Nov 16 12:31 PM PT, 1.42M views / 21.5K likes); independent job variations Nov 17 by @u2acid (2.32M / 69.3K, 4.4K quotes), @luvlkoo (526K), @viadobicha (317K), all over the same cat-in-a-tie clip; X News 2122858467555951101. Who filmed the cat clip is not documented. Pet video, no people. Nov 22 ~12:55 AM PT new wave: a 'student major' version started on Spanish-language X with @eatsomevoid (Nov 20 2:53 PM PT, '- soy estudiante de psicología / - veo a alguien mal / - le digo que es culpa de su papá / - me voy'; 360.9K views / 26.1K likes) and spread through quote chains in Spanish, Portuguese and English Nov 21-22: @mayanderex economics (348.6K / 26.1K), @xoooieie sociology (229.3K / 17.5K), @atvsmu architecture, @gugawrkn psychology, @mxrciil accountancy, @cypherrrpartV, all per X's public counts at ~12:55 AM PT Nov 22; X News 2124370458900611302. Daily score uses this wave only."
     },
     {
-      "rank": 7,
+      "rank": 9,
       "id": "babe-see-i-even-made-a-tweet-about-it",
       "title": "'BABE SEE, I EVEN MADE A TWEET ABOUT IT': NIGERIAN X'S REPLY FORMAT FOR THE GUY WHOSE SISTER LEAVES WIGS AND BAGS AT HIS PLACE",
       "image": "images/post-cards/babe-see-i-even-made-a-tweet-about-it.jpg",
@@ -240,7 +309,7 @@
         }
       ],
       "first_seen": "2026-11-20",
-      "score": 54.9,
+      "score": 55.1,
       "sources": [
         "X"
       ],
@@ -248,7 +317,7 @@
       "name": "Babe See, I Even Made a Tweet About It"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "id": "dropped-truck-gta-6",
       "title": "'HOW Y'ALL GONNA SEE ME ROLLING IN GTA 6': AN AI CLIP OF A SLAMMED PICKUP DOING BURNOUTS, NOW REMADE BY TRUCK OWNERS WITH THEIR OWN RIDES",
       "image": "images/dropped-truck-gta-6.jpg",
@@ -278,63 +347,6 @@
       ],
       "notes": "Nov 22 ~12:55 AM PT new-day rebuild: AI-generated 10s clip by TikTok creator @1low_hd, posted Nov 18 ('How yall gonna see me rolling in gta 6'); 372.9K views / 58.5K likes per TikTok's public counts at ~12:55 AM PT Nov 22. Truck owners remade it with their own Tahoes, Rams, Silverados and a Cybertruck Nov 20-21 (@71110b95, @luna.ai.visuals, @kolkmanlaperle, @juliecallahan5374, @charil158, @bridgetlyons1). AI-made; no people visible, no crash. Thumbnail is a still frame from the creator's own TikTok video.",
       "name": "Dropped Truck in GTA 6"
-    },
-    {
-      "rank": 9,
-      "id": "riemann-hypothesis-do-you-know-what-it-is",
-      "title": "'THE RIEMANN HYPOTHESIS WAS PROVED' / 'DO YOU KNOW WHAT THE IMPLICATIONS ARE?' / 'NO. DO YOU?' / 'NO.': THE DIALOGUE X KEPT REWRITING AFTER A CLAIMED PROOF",
-      "image": "images/post-cards/riemann-hypothesis-do-you-know-what-it-is.jpg",
-      "image_url": null,
-      "image_kind": "post_card",
-      "card_text": "the riemann hypothesis was proved\nwow. that's huge \ndo you know what the implications of this are? \nno. do you? \nno.",
-      "source_url": "https://x.com/nic_carter/status/2123825880044552627",
-      "source_name": "X @nic_carter",
-      "credit": "posted by @nic_carter on X",
-      "also": [
-        {
-          "name": "X / @tekbog (variation)",
-          "url": "https://x.com/tekbog/status/2123816951038513257"
-        },
-        {
-          "name": "X / @JamesonZaballos (early version)",
-          "url": "https://x.com/JamesonZaballos/status/2123804034276487428"
-        }
-      ],
-      "first_seen": "2026-11-20",
-      "score": 49.7,
-      "sources": [
-        "X"
-      ],
-      "notes": "Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): @nic_carter's version (Nov 20 9:08 AM PT) has 84.8K views / 1.6K likes per X's public counts at ~12:58 AM PT Nov 21, the most-viewed found. Within hours of a widely shared claim that the Riemann Hypothesis had been proved, 15+ accounts independently wrote the same 'do you know what this means? / no. do you? / no.' dialogue (earliest found @quantzoid / @JamesonZaballos, Nov 20 morning). Shown as a self-rendered attributed post card of his post text only; the two stock-style portrait photos he attached are not reproduced.",
-      "name": "The Riemann Hypothesis Was Proved (Do You Know What It Means?)"
-    },
-    {
-      "rank": 10,
-      "id": "gta-vi-phone-green-screen-edits",
-      "title": "GTA VI PHONE GREEN SCREEN: EVERYONE DROPS THEIR OWN CHARACTER ONTO JASON'S PHONE FOR A 'LOW CORTISOL DRIVE'",
-      "image": "images/gta-vi-phone-green-screen-edits.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/AGlubbable/status/2123514981253591066",
-      "source_name": "X @AGlubbable",
-      "credit": "posted by @AGlubbable on X",
-      "also": [
-        {
-          "name": "X News: GTA VI Phone Screen Trend Sparks Endless Memes and Edits",
-          "url": "https://x.com/i/trending/2123663905650069595"
-        },
-        {
-          "name": "X / @MurdoinkGS (green-screen template, 4.8M views)",
-          "url": "https://x.com/MurdoinkGS/status/2123239831895503330"
-        }
-      ],
-      "first_seen": "2026-11-19",
-      "score": 44.6,
-      "sources": [
-        "X"
-      ],
-      "notes": "Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): VTuber Glubbable's 'Low Cortisol Driving!' edit (@AGlubbable, Nov 19 12:33 PM PT) has 8.4K views / 853 likes per X's public counts at ~12:58 AM PT Nov 21. It uses @MurdoinkGS's GTA VI phone green-screen template (4.80M views / 78.1K likes / 917 quotes, Nov 18 6:19 PM PT), which hundreds of people quoted with their own characters; X News 2123663905650069595. Scored on the credited edit only, not the template.",
-      "name": "GTA VI Phone Green Screen Edits"
     }
   ],
   "weekly": [
