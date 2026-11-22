@@ -1,6 +1,290 @@
 {
-  "as_of": "2026-11-21",
+  "as_of": "2026-11-22",
   "candidates": [
+    {
+      "id": "chiikawa-dogoo-camera-beam",
+      "name": "Chiikawa 'Dogoo' Camera Beam (ドゴォッ)",
+      "title": "'ドゴォッ' (DOGOOO!): HACHIWARE'S NEW CHIIKAWA CAMERA FIRES A DESTRUCTION BEAM, AND JAPANESE X TURNED THE SOUND EFFECT INTO A CATCHPHRASE",
+      "source_url": "https://x.com/ngnchiikawa/status/2124156927181791413",
+      "source_name": "X @ngnchiikawa",
+      "image_url": "https://pbs.twimg.com/media/HXqFdx7aMAAQzUY.jpg",
+      "first_seen": "2026-11-21",
+      "also": [
+        {
+          "name": "X / @ganma8446 ('11/22 is Dogoo Day' drawing)",
+          "url": "https://x.com/ganma8446/status/2124163207988490561"
+        },
+        {
+          "name": "X / @ibuki_0603 (lyric riff)",
+          "url": "https://x.com/ibuki_0603/status/2124170861767004518"
+        },
+        {
+          "name": "X / @ohayoo2018 (catchphrase reuse)",
+          "url": "https://x.com/ohayoo2018/status/2124171139580883083"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/ngnchiikawa/status/2124156927181791413",
+          "views": 17188453,
+          "likes": 463817,
+          "checked": "2026-11-22",
+          "via": "X API (read ~12:55 AM PT Nov 22)"
+        },
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild (no repeats from Nov 21 daily): Chiikawa comic page by its creator Nagano (@ngnchiikawa), posted Nov 21 7:04 AM PT; Hachiware's new camera fires a beam with the sound effect 'ドゴォッ'. 17.19M views / 463.8K likes / 14.6K quotes per X's public counts at ~12:55 AM PT Nov 22. 'ドゴォッ' trended in Japan Nov 21; independent posts reuse it as a punchline (@ganma8446 declared 11/22 'Dogoo Day' with a drawing, @ibuki_0603 put it into the Chiikawa song lyrics, @ohayoo2018 and others). Cartoon characters only; no injury shown.",
+      "first_seen_basis": "X post by @ngnchiikawa, 2026-11-21T15:04Z",
+      "credit": "posted by @ngnchiikawa on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "weak-men-play-gta-vi-strong-men",
+      "name": "Weak Men Play GTA VI, Strong Men...",
+      "title": "'WEAK MEN PLAY GTA VI. STRONG MEN: ...': A SELF-IMPROVEMENT LIST X KEEPS REWRITING WITH OWLS, MINECRAFT, GENSHIN AND 'POST ON TWITTER'",
+      "card_text": "Weak men play GTA VI.\n\nStrong men:\n- Play chess\n- Read history\n- Lift weights\n- Run at dawn\n- Cook proper meals\n- Take responsibility for their families\n- Build businesses\n- Go to bed knowing they accomplished something in the real world",
+      "source_url": "https://x.com/d_foubert/status/2123715278693417055",
+      "source_name": "X @d_foubert",
+      "image_url": null,
+      "image_policy": "none",
+      "first_seen": "2026-11-20",
+      "also": [
+        {
+          "name": "X News: GTA VI Launch Ignites Debates on Gaming and Masculinity",
+          "url": "https://x.com/i/trending/2123844393102917635"
+        },
+        {
+          "name": "X / @TwiceHooted (owl rewrite)",
+          "url": "https://x.com/TwiceHooted/status/2124101857739980927"
+        },
+        {
+          "name": "X / @actualllyandrew (Minecraft rewrite)",
+          "url": "https://x.com/actualllyandrew/status/2123924062090997916"
+        },
+        {
+          "name": "X / @lorrik96 (Genshin rewrite)",
+          "url": "https://x.com/lorrik96/status/2124089003875918096"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/d_foubert/status/2123715278693417055",
+          "views": 2447736,
+          "likes": 2898,
+          "checked": "2026-11-22",
+          "via": "X API (read ~12:55 AM PT Nov 22)"
+        },
+        "x_news": true,
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: text post by Daniel Foubert (@d_foubert), Nov 20 1:49 AM PT; 2.45M views / 2.9K likes / 922 quotes per X's public counts at ~12:55 AM PT Nov 22. People rewrite the list as a copypasta (@TwiceHooted owl version, @AdrianFPascal, @ramzan_a95, @KySquirrel_90, @sarefilia, @actualllyandrew Minecraft, @lorrik96 Genshin) Nov 20-21; X News 2123844393102917635. The joke is the rewrites, not a pile-on on the poster. Shown as a self-rendered attributed post card of his post text.",
+      "first_seen_basis": "X post by @d_foubert, 2026-11-20T09:49Z",
+      "credit": "posted by @d_foubert on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "gta-5-goodbye-ai-farewell",
+      "name": "GTA 5 Goodbye (AI Farewell)",
+      "title": "'GTA 5 GOODBYE': AI FAREWELL FILMS WHERE MICHAEL, FRANKLIN AND TREVOR SAY GOODBYE TO THE FAN WHO GREW UP WITH GTA V, REMADE FOR GTA VI LAUNCH WEEK",
+      "source_url": "https://www.tiktok.com/@uekan2b/video/7707121495671147797",
+      "source_name": "TikTok / @uekan2b",
+      "image_url": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/og5xwgV1BMMiai2EU2YAZBI51IjBXKJAvuAjP~tplv-tiktokx-origin.image?dr=9636&x-expires=1795460400&x-signature=5Ani%2FX8lrvQRvHY8pX6Xroz9eYU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "first_seen": "2026-11-12",
+      "also": [
+        {
+          "name": "TikTok / @uekan2b (6.2M views)",
+          "url": "https://www.tiktok.com/@uekan2b/video/7707121495671147797"
+        },
+        {
+          "name": "TikTok / @lucidvicegta67 (remake)",
+          "url": "https://www.tiktok.com/@lucidvicegta67/video/7708064374967094550"
+        },
+        {
+          "name": "X / @Mila_zeem (version)",
+          "url": "https://x.com/Mila_zeem/status/2123765436269445536"
+        }
+      ],
+      "ev": {
+        "tiktok": {
+          "url": "https://www.tiktok.com/@uekan2b/video/7707121495671147797",
+          "views": 6200000,
+          "likes": 837700,
+          "author": "@uekan2b",
+          "posted": "2026-11-12",
+          "checked": "2026-11-22",
+          "via": "TikTok post page (tools/fetch_social.py, read ~12:55 AM PT Nov 22)"
+        },
+        "platforms": [
+          "TikTok",
+          "X"
+        ]
+      },
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: AI-generated short film by TikTok creator @uekan2b (UEKAN), posted Nov 12, caption '13年間、ありがとう。' (thank you for 13 years); 6.2M views / 837.7K likes per TikTok's public counts at ~12:55 AM PT Nov 22. A boy meets GTA V's Michael, Franklin and Trevor in 2013 and says goodbye as an adult in 2026. Around GTA VI's Nov 19 launch the format surged: CapCut template remakes with people's own faces (@lucidvicegta67, @gta6gamplay, @b3cause1, @hickey4014 on TikTok) and versions on X Nov 20-21 (@Mila_zeem). AI-made; no violence. Minor check (Nov 22): the young character is AI-generated and shown growing up into an adult; no real child is the subject, nothing sensitive. Thumbnail is a still frame from the creator's own TikTok video.",
+      "first_seen_basis": "TikTok post by @uekan2b, 2026-11-12 (TikTok page)",
+      "credit": "posted by @uekan2b on TikTok",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true,
+      "minor_reviewed": true
+    },
+    {
+      "id": "my-devoted-but-dangerously-unstable-knight",
+      "name": "My Devoted but Dangerously Unstable Knight",
+      "title": "'MY DEVOTED BUT DANGEROUSLY UNSTABLE KNIGHT WILL BE HEARING ABOUT THIS': THE TUMBLR LINE X IS PASTING ONTO EVERY BROODING FICTIONAL CHARACTER",
+      "card_text": "my devoted but dangerously unstable knight will be hearing about this",
+      "source_url": "https://www.tumblr.com/trigona-necrophaga/809460150915203072/my-devoted-but-dangerously-unstable-knight-will-be",
+      "source_name": "Tumblr / trigona-necrophaga",
+      "image_url": "https://pbs.twimg.com/media/HXqVXf8WQAAw9xl.jpg",
+      "first_seen": "2026-11-21",
+      "also": [
+        {
+          "name": "X / @motolkio (screenshot that took off on X)",
+          "url": "https://x.com/motolkio/status/2124174408491393025"
+        },
+        {
+          "name": "X News: Unstable Knight Captions Take Over Character Shares",
+          "url": "https://x.com/i/trending/2124266173327880607"
+        },
+        {
+          "name": "X / @NawtsoGolden (edited version)",
+          "url": "https://x.com/NawtsoGolden/status/2124220304784556072"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/motolkio/status/2124174408491393025",
+          "views": 837415,
+          "likes": 60470,
+          "checked": "2026-11-22",
+          "via": "X API (read ~12:55 AM PT Nov 22); screenshot of the Tumblr post shared by @motolkio"
+        },
+        "x_news": true,
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: text post by Tumblr user trigona-necrophaga (Feb 24 2026, 52K notes per the Tumblr page on Nov 21). It took off on X Nov 21 when @motolkio posted a screenshot (8:13 AM PT): 837.4K views / 60.5K likes / 2.1K quotes per X's public counts at ~12:55 AM PT Nov 22. People pair the line with characters (Naruto/Sasuke, Draco, Leon/Claire), edit new avatars behind the text (@NawtsoGolden) and make 'unstable best friend' variants; X News 2124266173327880607. Credited to the Tumblr author; image is the shared screenshot.",
+      "first_seen_basis": "Tumblr post by trigona-necrophaga 2026-02-24; X spread from @motolkio 2026-11-21T16:13Z",
+      "credit": "trigona-necrophaga on Tumblr",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "dropped-truck-gta-6",
+      "name": "Dropped Truck in GTA 6",
+      "title": "'HOW Y'ALL GONNA SEE ME ROLLING IN GTA 6': AN AI CLIP OF A SLAMMED PICKUP DOING BURNOUTS, NOW REMADE BY TRUCK OWNERS WITH THEIR OWN RIDES",
+      "source_url": "https://www.tiktok.com/@1low_hd/video/7709541759117823262",
+      "source_name": "TikTok / @1low_hd",
+      "image_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oEXfqIBIDn5rcCyfAEf3A4Br1FarNVII7tQj79~tplv-tiktokx-origin.image?dr=9636&x-expires=1795460400&x-signature=X7HJasQug5mCiv2s2GGWvlw1RBA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "first_seen": "2026-11-18",
+      "also": [
+        {
+          "name": "TikTok / @1low_hd (372.9K views)",
+          "url": "https://www.tiktok.com/@1low_hd/video/7709541759117823262"
+        },
+        {
+          "name": "TikTok / @kolkmanlaperle (remake)",
+          "url": "https://www.tiktok.com/@kolkmanlaperle/video/7710075687188712717"
+        },
+        {
+          "name": "TikTok / @charil158 (remake)",
+          "url": "https://www.tiktok.com/@charil158/video/7710304831897996574"
+        }
+      ],
+      "ev": {
+        "tiktok": {
+          "url": "https://www.tiktok.com/@1low_hd/video/7709541759117823262",
+          "views": 372900,
+          "likes": 58500,
+          "author": "@1low_hd",
+          "posted": "2026-11-18",
+          "checked": "2026-11-22",
+          "via": "TikTok post page (tools/fetch_social.py, read ~12:55 AM PT Nov 22)"
+        },
+        "platforms": [
+          "TikTok"
+        ]
+      },
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: AI-generated 10s clip by TikTok creator @1low_hd, posted Nov 18 ('How yall gonna see me rolling in gta 6'); 372.9K views / 58.5K likes per TikTok's public counts at ~12:55 AM PT Nov 22. Truck owners remade it with their own Tahoes, Rams, Silverados and a Cybertruck Nov 20-21 (@71110b95, @luna.ai.visuals, @kolkmanlaperle, @juliecallahan5374, @charil158, @bridgetlyons1). AI-made; no people visible, no crash. Thumbnail is a still frame from the creator's own TikTok video.",
+      "first_seen_basis": "TikTok post by @1low_hd, 2026-11-18 (TikTok page)",
+      "credit": "posted by @1low_hd on TikTok",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "amo-meu-curso-i-love-my-course",
+      "name": "Amo Meu Curso (I Love My Course)",
+      "title": "'AMO MEU CURSO' ('I LOVE MY COURSE'): STUDENTS PAIR THE WIG-AND-TAPE-MEASURE FACEPALM CLIP WITH THE PART OF THEIR MAJOR THEY CAN'T STAND",
+      "source_url": "https://x.com/mikdunno/status/2123554422693282201",
+      "source_name": "X @mikdunno",
+      "image_url": "https://pbs.twimg.com/amplify_video_thumb/2122318033188192257/img/UEcPJwzwbEEOXfEU.jpg",
+      "first_seen": "2026-11-19",
+      "also": [
+        {
+          "name": "X / @moondustlynx (design version, 637K views)",
+          "url": "https://x.com/moondustlynx/status/2123966253588992349"
+        },
+        {
+          "name": "X / @lauusl (international-analysis version)",
+          "url": "https://x.com/lauusl/status/2124220992675521001"
+        },
+        {
+          "name": "X / @julpiterverso (50-page reading version)",
+          "url": "https://x.com/julpiterverso/status/2124234627325755822"
+        },
+        {
+          "name": "X News: Students Share 'I Love My Major' Meme Struggles Across Fields",
+          "url": "https://x.com/i/trending/2124380369747083364"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/moondustlynx/status/2123966253588992349",
+          "views": 637188,
+          "likes": 16107,
+          "checked": "2026-11-22",
+          "via": "X API (read ~12:55 AM PT Nov 22); most-viewed version found (credited earliest found @mikdunno: 128.8K views / 8.1K likes)"
+        },
+        "x_news": true,
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: same-day remix chain on Brazilian X. Earliest found is @mikdunno (Nov 19 3:10 PM PT, '\"amo meu curso\" / eu quando chega email de atualização no sigaa'; 128.8K views / 8.1K likes); quote-chain versions Nov 20-22 by @carameloando (260.7K), @moondustlynx (design, 637.2K views / 16.1K likes / 1.2K quotes), @lauusl (344.9K), @julpiterverso (174.2K), @baekarte (98.1K), and English 'i love my major' versions, all per X's public counts at ~12:55 AM PT Nov 22; X News 2124380369747083364. The 6s clip shows a performer in a wig and tape measure facepalming at a phone in a sewing room (a staged skit); who made the clip is not documented.",
+      "first_seen_basis": "X post by @mikdunno, 2026-11-19T23:10Z (earliest found)",
+      "credit": "posted by @mikdunno on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
     {
       "id": "babe-see-i-even-made-a-tweet-about-it",
       "name": "Babe See, I Even Made a Tweet About It",
@@ -19,17 +303,17 @@
       "ev": {
         "x": {
           "url": "https://x.com/44t0miwa/status/2123887875125076158",
-          "views": 57124,
-          "likes": 1133,
-          "checked": "2026-11-21",
-          "via": "X API (read ~7:00 AM PT Nov 21)"
+          "views": 96775,
+          "likes": 1820,
+          "checked": "2026-11-22",
+          "via": "X API (read ~12:55 AM PT Nov 22)"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 21 7 AM-slot main discovery: text post by @44t0miwa Nov 20 1:15 PM PT; 57K views / 1.1K likes / 190 quotes per X's public counts at ~7:00 AM PT Nov 21. Quote replies reuse 'babe see, I even made a tweet about it' (@_gsishere, @nomso_black, @jake_063020, @impeccabledami2, @charlinekhandy); X News 2124086612258943054. Text-only; needs a post card if it ranks.",
+      "notes": "Nov 21 7 AM-slot main discovery: text post by @44t0miwa Nov 20 1:15 PM PT; 57K views / 1.1K likes / 190 quotes per X's public counts at ~7:00 AM PT Nov 21. Quote replies reuse 'babe see, I even made a tweet about it' (@_gsishere, @nomso_black, @jake_063020, @impeccabledami2, @charlinekhandy); X News 2124086612258943054. Text-only; needs a post card if it ranks. Nov 22 refresh: 96.8K views / 1.8K likes / 243 quotes per X's public counts at ~12:55 AM PT Nov 22; shown as a self-rendered attributed post card.",
       "first_seen_basis": "X post by @44t0miwa, 2026-11-20T21:15:04Z",
       "credit": "posted by @44t0miwa on X",
       "periods": [
@@ -37,7 +321,8 @@
         "weekly",
         "monthly"
       ],
-      "headline_reviewed": true
+      "headline_reviewed": true,
+      "card_text": "my sister go just dey liter her belongings for my house lol (wigs, bags, dress) and whatnot \n\nmake person babe no come over de think say nah another girl lol🤣"
     },
     {
       "id": "betting-explained-cat-fishing",
@@ -78,7 +363,6 @@
       "first_seen_basis": "X post by @justinenantale2, 2026-11-20T21:33:20Z",
       "credit": "posted by @justinenantale2 on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -122,7 +406,6 @@
       "first_seen_basis": "X post by @rantaro0802, 2026-11-19T13:41:38Z",
       "credit": "posted by @rantaro0802 on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -169,7 +452,6 @@
       "first_seen_basis": "TikTok post by @mattfletcher14, 2026-11-09 (TikTok page)",
       "credit": "posted by @mattfletcher14 on TikTok",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -212,7 +494,6 @@
       "first_seen_basis": "TikTok post by @dai.zee, 2026-11-11 (TikTok page); template @editscc446 2026-11-09",
       "credit": "posted by @dai.zee on TikTok",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -254,7 +535,6 @@
       "first_seen_basis": "Edit format from 2026-11-18 X posts (per KYM); @finkd post 2026-11-20T17:23Z",
       "credit": "posted by @finkd on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -299,7 +579,6 @@
       "first_seen_basis": "X post by @GabbanaSZNN, 2026-11-20T10:10Z",
       "credit": "posted by @GabbanaSZNN on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -346,7 +625,6 @@
       "first_seen_basis": "X post by @TheArshiDiaries, 2026-11-19T06:18Z (format start)",
       "credit": "posted by @vickypawanist on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -392,7 +670,6 @@
       "first_seen_basis": "X post by @ylazy8, 2026-11-18T07:54Z (earliest found)",
       "credit": "posted by @Blessing_Olivi on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -421,10 +698,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/nic_carter/status/2123825880044552627",
-          "views": 88399,
-          "likes": 1602,
-          "checked": "2026-11-21",
-          "via": "X API (read ~7:00 AM PT Nov 21)"
+          "views": 93560,
+          "likes": 1629,
+          "checked": "2026-11-22",
+          "via": "X API (read ~12:55 AM PT Nov 22)"
         },
         "platforms": [
           "X"
@@ -461,10 +738,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/AGlubbable/status/2123514981253591066",
-          "views": 8633,
-          "likes": 866,
-          "checked": "2026-11-21",
-          "via": "X API (read ~7:00 AM PT Nov 21)"
+          "views": 9185,
+          "likes": 879,
+          "checked": "2026-11-22",
+          "via": "X API (read ~12:55 AM PT Nov 22)"
         },
         "x_news": true,
         "platforms": [
@@ -800,7 +1077,6 @@
       "first_seen_basis": "X post by @AgwuGallant, 2026-11-19T16:27:27Z",
       "credit": "posted by @AgwuGallant on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -1064,7 +1340,6 @@
       "first_seen_basis": "X post by @DrClownPhD, 2026-11-18T23:13Z",
       "credit": "posted by @DrClownPhD on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ]
@@ -5870,12 +6145,28 @@
     },
     {
       "id": "tie-cat-chego-vou-embora",
-      "title": "'- CHEGO ... - VOU EMBORA' ('I ARRIVE ... I LEAVE'): JOB-DAY LISTS OVER THE TABBY CAT IN A SHIRT COLLAR AND TIE",
+      "title": "'- I'M A ___ STUDENT ... - I LEAVE': THE TABBY CAT IN A SHIRT COLLAR AND TIE GETS A NEW WAVE OF COLLEGE-MAJOR LISTS",
       "source_url": "https://x.com/starssvy/status/2122427472788554082",
       "source_name": "X @starssvy",
       "image_url": "https://pbs.twimg.com/amplify_video_thumb/2092036622514581504/img/iz7wFunLVx2ub43t.jpg",
       "first_seen": "2026-11-16",
       "also": [
+        {
+          "name": "X / @eatsomevoid: 'soy estudiante de psicología' version (361K views)",
+          "url": "https://x.com/eatsomevoid/status/2123912744197837303"
+        },
+        {
+          "name": "X / @mayanderex: economics version (349K views)",
+          "url": "https://x.com/mayanderex/status/2124091708094726574"
+        },
+        {
+          "name": "X / @xoooieie: sociology version (229K views)",
+          "url": "https://x.com/xoooieie/status/2124287850183033046"
+        },
+        {
+          "name": "X News: Tie Cat Meme Captures Student Major Stereotypes",
+          "url": "https://x.com/i/trending/2124370458900611302"
+        },
         {
           "name": "X News: Tabby cat in tie captures workday grind in short lists",
           "url": "https://x.com/i/trending/2122858467555951101"
@@ -5895,22 +6186,23 @@
       ],
       "ev": {
         "x": {
-          "url": "https://x.com/u2acid/status/2122708376878542957",
-          "views": 2318421,
-          "likes": 69337,
-          "checked": "2026-11-18",
-          "via": "X API (read ~7:05 AM PT Nov 18); best variation in the cluster (credited earliest post @starssvy: 1.42M views / 21.5K likes)"
+          "url": "https://x.com/eatsomevoid/status/2123912744197837303",
+          "views": 360868,
+          "likes": 26128,
+          "checked": "2026-11-22",
+          "via": "X API (read ~12:55 AM PT Nov 22); best post of the Nov 20-22 student-major wave (credited earliest post @starssvy, Nov 16)"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 18 ~7 AM PT main discovery: same-day remix cluster. Earliest version found is @starssvy (Nov 16 12:31 PM PT, 1.42M views / 21.5K likes); independent job variations Nov 17 by @u2acid (2.32M / 69.3K, 4.4K quotes), @luvlkoo (526K), @viadobicha (317K), all over the same cat-in-a-tie clip; X News 2122858467555951101. Who filmed the cat clip is not documented. Pet video, no people.",
+      "notes": "Nov 18 ~7 AM PT main discovery: same-day remix cluster. Earliest version found is @starssvy (Nov 16 12:31 PM PT, 1.42M views / 21.5K likes); independent job variations Nov 17 by @u2acid (2.32M / 69.3K, 4.4K quotes), @luvlkoo (526K), @viadobicha (317K), all over the same cat-in-a-tie clip; X News 2122858467555951101. Who filmed the cat clip is not documented. Pet video, no people. Nov 22 ~12:55 AM PT new wave: a 'student major' version started on Spanish-language X with @eatsomevoid (Nov 20 2:53 PM PT, '- soy estudiante de psicología / - veo a alguien mal / - le digo que es culpa de su papá / - me voy'; 360.9K views / 26.1K likes) and spread through quote chains in Spanish, Portuguese and English Nov 21-22: @mayanderex economics (348.6K / 26.1K), @xoooieie sociology (229.3K / 17.5K), @atvsmu architecture, @gugawrkn psychology, @mxrciil accountancy, @cypherrrpartV, all per X's public counts at ~12:55 AM PT Nov 22; X News 2124370458900611302. Daily score uses this wave only.",
       "headline_reviewed": true,
       "first_seen_basis": "X post by @starssvy, 2026-11-16T20:31Z",
       "credit": "posted by @starssvy on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ]
