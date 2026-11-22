@@ -29,12 +29,14 @@
     },
     "after-work-time-to-relax": {
       "name": "After Work, Time to Relax",
+      "seo_title": "After Work, Time to Relax Meme (Po Robocie, Czas na Relaks) | MemeStand",
+      "meta_description": "\"After work, time to relax\" (\"Po robocie, czas na relaks\"): the Polish kitchen-table photo people remake as their country's version of an ordinary evening.",
       "ids": [
         "after-work-time-to-relax"
       ],
       "status": "short",
-      "explainer": "A photo of a worn kitchen table with bread, butter, cold cuts, a mug and an old TV glowing in the corner, captioned \"After work, time to relax\", became a template for showing what an ordinary evening looks like where you live. People post their own country, city or state \"version\" with the same caption, from a Canadian take with poutine and hockey on TV to Philadelphia and Singapore editions. The joke is part nostalgia, part friendly national stereotype.",
-      "origin": "X user @KuraginAnatol posted the photo on November 13, 2026 with the Polish caption \"Po robocie, czas na relaks\" (\"After work, time to relax\"). By November 16 it had about 15.8 million views per X's public counts, and replies called it the most Slavic image ever.\n\nFrom November 14 and 15, users began quote-posting it with their own versions using the same caption, including an Argentine version (about 1.8 million views), a Chinese version (about 629,000), a Philadelphia edition (about 354,000), a Canadian version (about 204,000) and a Singapore version, plus many French, Dutch, Moroccan, Greek and US-state takes. Some of the remakes are AI-generated images. An X News story on November 15 described the wave. Whether the photo first appeared somewhere before @KuraginAnatol's post hasn't been confirmed.",
+      "explainer": "A photo of a worn kitchen table with bread, butter, cold cuts, a mug and an old TV glowing in the corner, captioned \"After work, time to relax,\" became a template for showing what an ordinary evening looks like where you live. People quote-post it with their own country, city or state \"version\" of the same idea, often in their own language: an Argentine \"versión argentina,\" a Chinese edition, and Philadelphia, Canadian and Singapore takes, among others. Some of those remakes are AI-generated images. The joke is part nostalgia, part friendly local stereotype.",
+      "origin": "X user @KuraginAnatol posted the photo on November 13, 2026, with the Polish caption \"Po robocie, czas na relaks\" (\"After work, time to relax\"). By November 16 it had about 15.8 million views and 246,000 likes, per X's public counts.\n\nFrom November 14 through 16, users began quote-posting their own versions. Ones on file include an Argentine version by @ivotocco_ (about 1.8 million views on November 16), a Chinese version by @kasen728 (about 629,000), a Philadelphia edition by @eakinsovaltine (about 354,000), a Canadian version by @ezgicodes (about 204,000) and a Singapore version by @BoraBoraBaye (about 49,000), plus many French, Dutch, Moroccan, Greek and US-state takes. An X News story on November 15 described the wave. Whether the photo first appeared somewhere before @KuraginAnatol's post hasn't been confirmed.",
       "origin_confirmed": false,
       "how_to_use": [],
       "source_url": "https://x.com/KuraginAnatol/status/2121284442056798569",
@@ -43,6 +45,10 @@
         {
           "name": "@KuraginAnatol on X",
           "url": "https://x.com/KuraginAnatol/status/2121284442056798569"
+        },
+        {
+          "name": "@ivotocco_ on X (Argentine version)",
+          "url": "https://x.com/ivotocco_/status/2121737937876373990"
         },
         {
           "name": "@kasen728 on X (Chinese version)",
@@ -57,13 +63,17 @@
           "url": "https://x.com/ezgicodes/status/2121990626501890374"
         },
         {
+          "name": "@BoraBoraBaye on X (Singapore version)",
+          "url": "https://x.com/BoraBoraBaye/status/2122217794649690168"
+        },
+        {
           "name": "X News: Polish Kitchen Table Photo Sparks Global After-Work Relaxation Shares",
           "url": "https://x.com/i/trending/2121751100214624297"
         }
       ],
       "related": [],
       "written": "2026-11-16",
-      "checked": "2026-11-16T06:00:00-08:00"
+      "checked": "2026-11-21T17:13:00-08:00"
     },
     "ai-artists-hoverboard": {
       "name": "AI Artists Hoverboard",
@@ -240,17 +250,21 @@
     },
     "altman-ram-chart": {
       "name": "Altman RAM Chart",
+      "seo_title": "Altman RAM Chart Meme Meaning | MemeStand",
+      "meta_description": "A flowchart sends every stick of RAM to Sam Altman: a November 2026 r/memes joke about his remark that DRAM in home PCs is a \"quite terrible\" use of a limited supply.",
       "ids": [
         "altman-ram-chart"
       ],
       "status": "short",
+      "explainer": "A flowchart where every stick of RAM gets routed to Sam Altman, skipping gamers and ordinary PC owners. It mocks the idea that memory is better off in AI data centers than in home computers, after OpenAI CEO Sam Altman's October 29, 2026 podcast remark that DRAM sitting in personal computers is a \"quite terrible\" use of the world's limited supply. The chart is one joke in a wider wave of Altman RAM memes that followed that interview.",
+      "origin": "Posted to r/memes by u/real_dusky on November 2, 2026, under the title \"Sam Altman stuff.\" On the Cheeky Pint podcast episode released October 29, Altman said that, \"from a global allocation perspective,\" it is \"quite terrible to have everybody have a bunch of the world's limited supply of DRAM sitting in their own computer and being used five percent of the time,\" while talking about running AI in data centers versus locally. The Verge reported the quote on October 30. The chart was #5 on r/memes' top-today list on November 3, per MemeStand's stored check that day. MemeStand hasn't confirmed who made the chart.",
+      "origin_confirmed": false,
+      "how_to_use": [],
       "source_url": "https://www.reddit.com/r/memes/comments/1xlybm3/sam_altman_stuff/",
       "kym_url": null,
-      "explainer": "A flowchart where every stick of RAM gets routed to Sam Altman, skipping gamers and ordinary PC owners. It mocks the idea that memory is better off in AI data centers than in home computers, after Sam Altman's October 29, 2026 podcast remark that DRAM sitting in personal computers is a \"quite terrible\" use of the world's limited supply.",
-      "origin": "Posted to r/memes by u/real_dusky on November 2, 2026 under the title \"Sam Altman stuff,\" during the wave of Altman RAM memes that followed his October 29 remark. MemeStand hasn't confirmed who made the chart.",
       "sources": [
         {
-          "name": "Reddit r/memes",
+          "name": "Reddit r/memes: \"Sam Altman stuff\"",
           "url": "https://www.reddit.com/r/memes/comments/1xlybm3/sam_altman_stuff/"
         },
         {
@@ -262,9 +276,7 @@
         "sam-altman-ram"
       ],
       "written": "2026-11-03",
-      "origin_confirmed": false,
-      "how_to_use": [],
-      "checked": "2026-11-07T22:51:54-08:00"
+      "checked": "2026-11-21T17:13:00-08:00"
     },
     "altman-ramesses": {
       "name": "Let the Man Rest / Altman Ramesses",
@@ -630,12 +642,14 @@
     },
     "broke-cat-wallet-gif": {
       "name": "Broke Cat Wallet GIF",
+      "seo_title": "Broke Cat Wallet GIF Meme Meaning | MemeStand",
+      "meta_description": "A tabby cat holds out an empty wallet: the reaction GIF people post when they're broke, and how the November 2026 version spread on X.",
       "ids": [
         "broke-cat-wallet-gif"
       ],
       "status": "short",
-      "explainer": "A GIF of a tabby cat with cartoon yellow gloved hands holding out an empty black wallet, looking up as if asking for money. People post it to say they are broke: after paying bills, after festival spending, or after a bad day in crypto. It is also sent as a joking way to ask a parent or partner for cash.",
-      "origin": "The biggest post found is a November 14, 2026 X post of the GIF by @catincrisis__, which had about 14.5 million views and 404,000 likes per X's public counts on November 16. Over the next day users reposted the GIF with their own captions, such as \"Broke and mad about it\" and jokes about the end of festival season, and two X News stories on November 15 described it as a reaction to empty wallets. Who first made the edited GIF hasn't been confirmed.",
+      "explainer": "A GIF of a tabby cat with cartoon yellow gloved hands holding out an empty black wallet, looking up as if asking for money. People post it as a reaction when they're broke, including after a run of festivals, and sometimes send it as a joke when asking a parent for cash. The lead post that spread the image had no caption; the punchline is the edit itself, and later posts added their own lines around it.",
+      "origin": "The biggest post found is a November 14, 2026 X post of the GIF by @catincrisis__, which had about 14.5 million views and 404,000 likes per X's public counts on November 16. Over the next day, users reposted or quoted the same GIF with their own captions, including \"Broke and mad about it\" from @TheSignalX_, a joke about back-to-back festivals from @itsmanish80, and a note from @efizzy11 about sending it when asking their dad for money. Those reuse posts were much smaller than the lead post. Two X News stories on November 15 described it as a reaction to empty wallets, including after festival spending. Who first made the edited GIF hasn't been confirmed.",
       "origin_confirmed": false,
       "how_to_use": [],
       "source_url": "https://x.com/catincrisis__/status/2121548192168780224",
@@ -650,6 +664,14 @@
           "url": "https://x.com/TheSignalX_/status/2121857955012448508"
         },
         {
+          "name": "@itsmanish80 on X (festival reuse)",
+          "url": "https://x.com/itsmanish80/status/2121971870585221536"
+        },
+        {
+          "name": "@efizzy11 on X (asking dad for money)",
+          "url": "https://x.com/efizzy11/status/2121905764621005250"
+        },
+        {
           "name": "X News: Begging Tabby Cat Meme Captures Post-Festival Broke Blues",
           "url": "https://x.com/i/trending/2121981413138296952"
         },
@@ -660,7 +682,7 @@
       ],
       "related": [],
       "written": "2026-11-16",
-      "checked": "2026-11-16T06:00:00-08:00"
+      "checked": "2026-11-21T17:13:00-08:00"
     },
     "bunker-bulking": {
       "name": "Bunker Bulking",
@@ -2187,12 +2209,14 @@
     },
     "liking-a-girl-more-than-she-likes-you": {
       "name": "Liking a Girl More Than She Likes You",
+      "seo_title": "Liking a Girl More Than She Likes You Meme (Jester GIF) | MemeStand",
+      "meta_description": "\"Liking a girl more than she likes you\": the bored-queen jester GIF people use for a one-sided crush, and where the clip-art template comes from.",
       "ids": [
         "jester-liking-a-girl"
       ],
       "status": "short",
-      "explainer": "An old 3D clip-art GIF shows a court jester dancing his heart out for a queen who looks completely bored. Captioned \"liking a girl more than she likes you\", it became shorthand for a one-sided crush: you put on a whole show, and the other person barely notices. People reuse the line with their own GIFs or flip it to \"liking a guy more than he likes you\".",
-      "origin": "Per Know Your Meme, the jester-and-queen GIF is 3D clip art made by Animation Factory that circulated on forums in the 2010s; its earliest notable meme use was an X post by @AliceClimbers on August 13, 2025, and it has been a caption template since then. The current wave grew from an X post by @2real_melo on November 14, 2026 with the caption \"liking a girl more than she likes you\", which had about 1.3 million views per X's public counts on November 15. Others reposted the line with their own GIFs, flipped it for crushes on guys, or quote-posted it in Portuguese, and an X News story on November 15 described clown and jester GIFs used for one-sided crushes. Who first paired this caption with the GIF hasn't been confirmed.",
+      "explainer": "An old 3D clip-art GIF shows a court jester dancing his heart out for a queen who looks completely bored. Captioned \"liking a girl more than she likes you,\" it became shorthand for a one-sided crush: you put on a whole show, and the other person barely notices. People reuse the line with their own GIFs, or flip it to lines like \"liking a guy more than he likes you.\"",
+      "origin": "Per Know Your Meme, the jester-and-queen GIF is 3D clip art made by Animation Factory that circulated on forums in the 2010s. KYM's earliest notable meme use is an X post by @AliceClimbers on August 13, 2025, and the GIF has been a caption template since then. Know Your Meme published its entry on December 19, 2025.\n\nThe current wave grew from an X post by @2real_melo on November 14, 2026, with the caption \"liking a girl more than she likes you,\" which had about 1.3 million views per X's public counts on November 15. Others reposted the line with their own GIFs, flipped it for crushes on guys (including @chipkaliihuu's \"When u liking a guy more than he likes you\"), or quote-posted it in Portuguese, and an X News story on November 15 described clown and jester GIFs used for one-sided crushes. Who first paired this caption with the GIF hasn't been confirmed.",
       "origin_confirmed": false,
       "how_to_use": [],
       "source_url": "https://x.com/2real_melo/status/2121649927705010561",
@@ -2221,7 +2245,7 @@
       ],
       "related": [],
       "written": "2026-11-15",
-      "checked": "2026-11-15T06:03:00-08:00"
+      "checked": "2026-11-21T17:13:00-08:00"
     },
     "little-cousins-hippo-and-alligator": {
       "name": "Little Cousins (Hippo and Alligator)",
