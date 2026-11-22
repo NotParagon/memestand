@@ -958,6 +958,45 @@ def test_image_boxes_reserve_aspect_ratio():
     assert "aspect-ratio:400/300" in hot
 
 
+def _ld_graph(page):
+    import json
+    raw = re.search(r'<script type="application/ld\+json">(.*?)</script>', page, re.S).group(1)
+    return json.loads(raw)["@graph"]
+
+
+def test_known_creator_only_when_origin_is_confirmed():
+    meme = {"id": "fancy-cafe", "source_url": KYM, "source_name": "Know Your Meme",
+            "credit": "posted by @leehoustonx on TikTok", "also": []}
+    confirmed = {"origin_confirmed": True, "original_url": TIKTOK, "sources": []}
+    assert build.known_creator(meme, confirmed) == {
+        "@type": "Person", "name": "@leehoustonx", "url": TIKTOK}
+    assert build.known_creator(meme, {"origin_confirmed": False, "original_url": TIKTOK, "sources": []}) is None
+    orphan = {"id": "not-a-real-id", "source_url": KYM, "credit": "posted by @leehoustonx on TikTok", "also": []}
+    assert build.known_creator(orphan, {"origin_confirmed": True, "sources": []}) is None
+    assert build.known_creator(dict(meme, credit="image via TikTok"), confirmed) is None
+
+
+def test_jsonld_credits_confirmed_creators_and_about_has_breadcrumbs():
+    fancy = _ld_graph((ROOT / "meme" / "fancy-cafe" / "index.html").read_text())
+    art = next(n for n in fancy if n.get("@type") == "Article")
+    work = art["about"]
+    assert work["@type"] == "CreativeWork"
+    assert work["creator"] == {"@type": "Person", "name": "@leehoustonx", "url": TIKTOK}
+    assert art["author"] == {"@id": "https://memestand.com/#org"}
+    assert art["image"].startswith("https://memestand.com/")
+    assert art["datePublished"]
+    assert art["dateModified"]
+
+    cite = _ld_graph((ROOT / "meme" / "she-only-wants-me-for-my-pakistani-citizenship" / "index.html").read_text())
+    work2 = next(n for n in cite if n.get("@type") == "Article")["about"]
+    assert work2["@type"] == "CreativeWork"
+    assert "creator" not in work2
+
+    about = next(n for n in _ld_graph((ROOT / "about.html").read_text()) if n.get("@type") == "AboutPage")
+    crumbs = [x["name"] for x in about["breadcrumb"]["itemListElement"]]
+    assert crumbs == ["MemeStand", "About"]
+
+
 def test_search_console_file_is_exact_and_restored_by_build():
     path = ROOT / "google327e53c932d0bf40.html"
     path.write_bytes(b"<html>wrapped</html>\n")

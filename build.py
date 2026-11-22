@@ -1102,6 +1102,22 @@ def via_parts(credit):
         where = "Know Your Meme"
     return who, where
 
+def known_creator(m, info):
+    """Schema.org Person for the original creator, only when origin is confirmed and a name is on file."""
+    if not info or info.get("origin_confirmed") is not True:
+        return None
+    role = primary_link(m, page=info)
+    if role.get("kind") != "original":
+        return None
+    who, _where = via_parts(m.get("credit") or "")
+    if not who:
+        return None
+    person = {"@type": "Person", "name": who}
+    href = safe_url(role.get("url") or "", context="creator")
+    if href:
+        person["url"] = href
+    return person
+
 def via_credit(m):
     """One list-page line: via <handle> on <Platform>. The handle links to the credited post."""
     raw = (m.get("credit") or "").strip()
@@ -1820,11 +1836,17 @@ def build_meme_page(sl):
     crumbs = [("MemeStand", f"{SITE}/"), ("Memes A\u2013Z", f"{SITE}/memes/"), (name, url)]
     wp = webpage(url, title, desc, info["modified"], published=info["published"], kind="WebPage", crumbs=crumbs)
     img = abs_img(m) if (m.get("image") or "").startswith("images/") else None
+    work = {"@type": "CreativeWork", "@id": f"{url}#work", "name": phrase}
+    if img:
+        work["image"] = img
+    creator = known_creator(m, info)
+    if creator:
+        work["creator"] = creator
     art = {"@type": "Article", "@id": f"{url}#article", "headline": h1[:110], "description": desc, "inLanguage": "en",
            "mainEntityOfPage": {"@id": url}, "isPartOf": {"@id": f"{SITE}/#website"},
            "author": {"@id": f"{SITE}/#org"}, "publisher": {"@id": f"{SITE}/#org"},
            "datePublished": info["published"], "dateModified": info["modified"],
-           "image": img or f"{SITE}/og-default.png", "about": {"@type": "Thing", "name": phrase},
+           "image": img or f"{SITE}/og-default.png", "about": work,
            "citation": [u for _, u in srcs]}
     nodes = [ORG, WEBSITE, wp, art]
     faq = [(h, plain) for h, _inner, plain in sections if plain]
@@ -2237,9 +2259,10 @@ def build_archive_index(snaps):
 ''' + footer(base)
     write("archive/index.html", page)
 
-def prose_page(path, title, desc, tag, body, kind="WebPage"):
+def prose_page(path, title, desc, tag, body, kind="WebPage", crumb="Page"):
     url = f"{SITE}/{path}"
-    ld = graph(ORG, WEBSITE, webpage(url, title, desc, ISO, kind=kind))
+    crumbs = [("MemeStand", f"{SITE}/"), (crumb, url)]
+    ld = graph(ORG, WEBSITE, webpage(url, title, desc, ISO, kind=kind, crumbs=crumbs))
     page = head(title=title, desc=desc, path=path, base="", ld=[ld]) + f"""
 {mast("", tag)}
 <main class="prose">
@@ -2292,7 +2315,7 @@ The live lists show a rank, the picture, the title, and one credit line. The des
 </ul>
 <h2>Credits and takedowns</h2>
 <p>All memes belong to their creators and owners. See our <a href="dmca.html">DMCA / takedown policy</a>, <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a>.</p>"""
-    prose_page("about.html", title, desc, "ABOUT MEMESTAND -- HOW THE RANKINGS WORK", body, kind="AboutPage")
+    prose_page("about.html", title, desc, "ABOUT MEMESTAND -- HOW THE RANKINGS WORK", body, kind="AboutPage", crumb="About")
 
 def build_dmca():
     title = "DMCA and Takedown Policy | MemeStand"
@@ -2347,7 +2370,7 @@ notices, we stop featuring its content. We will also end access for anyone who r
 
 <h2>Other requests</h2>
 <p>For trademark, privacy, likeness or defamation concerns, or to correct a headline, {contact_html()}. We review every request.</p>"""
-    prose_page("dmca.html", title, desc, "DMCA AND TAKEDOWN POLICY", body)
+    prose_page("dmca.html", title, desc, "DMCA AND TAKEDOWN POLICY", body, crumb="DMCA")
 
 def build_terms():
     title = "Terms of Use | MemeStand"
@@ -2401,7 +2424,7 @@ ANY CLAIM RELATING TO THE SITE IS LIMITED TO US$100. Some jurisdictions don't al
 
 <h2>10. Contact</h2>
 <p>Questions about these terms: {contact_html()}.</p>"""
-    prose_page("terms.html", title, desc, "TERMS OF USE", body)
+    prose_page("terms.html", title, desc, "TERMS OF USE", body, crumb="Terms")
 
 def build_privacy():
     title = "Privacy Policy | MemeStand"
@@ -2452,7 +2475,7 @@ California and other residents can still contact us with privacy questions, and 
 
 <h2>Changes and contact</h2>
 <p>If our practices change (for example, if we add another analytics or third-party service), we will update this page and its effective date first. Questions: {contact_html()}.</p>"""
-    prose_page("privacy.html", title, desc, "PRIVACY POLICY", body)
+    prose_page("privacy.html", title, desc, "PRIVACY POLICY", body, crumb="Privacy")
 
 def build_feed(snaps):
     entries = []

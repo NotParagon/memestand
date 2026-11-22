@@ -286,7 +286,8 @@ Every `python3 build.py` regenerates all of this from `data/memes.json`, so no m
 - **Weekly list**: `/trending-memes-this-week/` is a supported ranking, linked from the header, the footer, the period pager, and one sentence in the homepage intro. Do not describe it as a legacy URL.
   Alt text on every image is "<Title-Case headline> meme - #N today on MemeStand".
 - **JSON-LD** (`@graph`): Organization, WebSite, CollectionPage (dateModified = build time), and an ItemList per top-10 list
-  (ListItem position / name / url / image). Archive pages add datePublished and a BreadcrumbList.
+  (ListItem position / name / url / image). Archive pages add datePublished. BreadcrumbList is included on ranking, archive,
+  A–Z, meme index, meme explainer, embed, about, and legal pages (Home plus the page). Never invent ratings, reviews, or counts.
 - **Pages**: `/top-memes-today/`, `/trending-memes-this-week/`, `/best-memes-this-month/` (with the evidence notes),
   `/archive/YYYY-MM-DD.html` (one per day; same-day rebuilds overwrite only today's), `/archive/`, `/about.html`.
 - **Crawl files**: `sitemap.xml` (lastmod per URL; a meme page uses its `checked` time when that field is set, not the hourly build time), `robots.txt` (allows everyone incl. GPTBot, OAI-SearchBot, PerplexityBot,
@@ -370,7 +371,7 @@ The page shows the thumbnail and the existing credit, then only the sections the
   - No unverified claims about real people. Frame allegations as allegations attributed to their source ("per KYM"). Don't name private
     people or people only connected to an allegation. Quote real people only from the primary source.
   - Don't publish Roger's full name or address, and don't use the Drudge name.
-- `FAQPage` JSON-LD (inside the page's single `@graph`) is added when the page has at least one of those H2 sections. Its question names are the visible H2s, in the same order, and each answer is the section's text. A section that was omitted is not in the FAQ. Article JSON-LD is on every meme page. `datePublished` is the start of the Pacific day the meme was first ranked (`written`, or the earliest archive day). It does not follow the hourly build clock. `dateModified` is `checked` when that field is set. `datePublished` is never later than `dateModified`.
+- `FAQPage` JSON-LD (inside the page's single `@graph`) is added when the page has at least one of those H2 sections. Its question names are the visible H2s, in the same order, and each answer is the section's text. A section that was omitted is not in the FAQ. Article JSON-LD is on every meme page. `datePublished` is the start of the Pacific day the meme was first ranked (`written`, or the earliest archive day). It does not follow the hourly build clock. `dateModified` is `checked` when that field is set. `datePublished` is never later than `dateModified`. Article.author is MemeStand (the explainer’s writer). Article.about is a CreativeWork for the meme; `creator` is set only when `origin_confirmed` is true and the credited original creator is known.
 - Blocked memes (`data/blocklist.json`) get no page: build.py drops their store entry and deletes `meme/<slug>/`. Archive pages are never deleted.
 - og:image on meme pages follows `OG_USE_MEME_THUMB` (currently off, so `og-default.png`).
 
