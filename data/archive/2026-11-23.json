@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T05:57-08:00",
+  "updated": "2026-11-23T06:53-08:00",
   "daily": [
     {
       "rank": 1,
@@ -36,6 +36,38 @@
     },
     {
       "rank": 2,
+      "id": "we-regret-to-inform-you-bobcat",
+      "title": "'WE REGRET TO INFORM YOU' / 'YOU'LL REGRET YOU INFORMED ME': A BOB-HAIRCUT CAT FIRING A CARTOON GUN BECOMES X'S COMEBACK TO EVERY REJECTION LETTER",
+      "image": "images/we-regret-to-inform-you-bobcat.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/levyngrey/status/2124563930156818845",
+      "source_name": "X @levyngrey",
+      "credit": "posted by @levyngrey on X",
+      "also": [
+        {
+          "name": "X News: 'We regret to inform you' cat story",
+          "url": "https://x.com/i/trending/2124779442203738574"
+        },
+        {
+          "name": "X / @ylazy8 (remix)",
+          "url": "https://x.com/ylazy8/status/2124761468570669290"
+        },
+        {
+          "name": "X / @itsjolaa (remix)",
+          "url": "https://x.com/itsjolaa/status/2124773776915136571"
+        }
+      ],
+      "first_seen": "2026-11-22",
+      "score": 69.7,
+      "sources": [
+        "X"
+      ],
+      "notes": "Nov 23 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:52 AM PT): @levyngrey posted a short clip of a CGI cat with a bob haircut firing a cartoon gun (muzzle flash only, no target) Nov 22 10:01 AM PT with \"'We regret to inform you' / You'll regret you informed me\"; 2.98M views / 162K likes / 922 quotes. Copies swapping in other 'sorry' lines spread Nov 22-23 (@ylazy8, @onlyoneXstarr, @itsjolaa, @Ola4089, @Acupoftii___, @Patrickdgenius, @greatguyy_, @Visual_verse1); X News 2124779442203738574. The cat clip's original maker is undocumented (first X upload Nov 20); credit is the caption poster.",
+      "name": "We Regret to Inform You (Bob-Haircut Cat)"
+    },
+    {
+      "rank": 3,
       "id": "poor-cat-innocent-me",
       "title": "'INNOCENT ME': A CHUBBY TUXEDO CAT GETS ITS HEAD BATTED BY HANDS LABELLED 'EVIL SCHOOL', 'EVIL ASSIGNMENTS' AND 'EVIL TEACHERS', AND TIKTOK KEEPS SWAPPING IN NEW VILLAINS",
       "image": "images/poor-cat-innocent-me.jpg",
@@ -68,7 +100,7 @@
       "name": "Poor Cat (Innocent Me)"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "id": "lucia-will-appreciate-this",
       "title": "'PRISCILLA WILL APPRECIATE THIS': MARK ZUCKERBERG POSTS HIS OWN TAKE ON THE GTA VI 'LUCIA WILL APPRECIATE THIS' MISSION POP-UP EDITS",
       "image": "images/lucia-will-appreciate-this.jpg",
@@ -97,7 +129,7 @@
       "name": "Lucia Will Appreciate This"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "id": "oh-my-carne-asada-singing-dog",
       "title": "'OH MY CARNE ASADA': THE SINGING-CHIHUAHUA CLIP PEOPLE DROP BEHIND THEIR OWN CAPTIONS ('ME PERFORMING AT CHRISTMAS BECAUSE IT'S THE ONLY GIFT I CAN AFFORD')",
       "image": "images/oh-my-carne-asada-singing-dog.jpg",
@@ -126,68 +158,36 @@
       "name": "Oh My Carne Asada (Singing Dog)"
     },
     {
-      "rank": 5,
-      "id": "portal-dog-shiba-meets-caterpillar",
-      "title": "'PORTAL DOG': THE SHIBA WHO FROZE MID-WALK STARING AT A CATERPILLAR, NOW JAPANESE X'S FAVORITE EDIT TEMPLATE",
-      "image": "images/portal-dog-shiba-meets-caterpillar.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/rantaro0802/status/2123411379659178038",
-      "source_name": "X @rantaro0802",
-      "credit": "posted by @rantaro0802 on X",
-      "also": [
-        {
-          "name": "X / @koyadeko ('Portal Dog' animated edit)",
-          "url": "https://x.com/koyadeko/status/2124050252319916151"
-        },
-        {
-          "name": "X / @wasabiken0429 (parody)",
-          "url": "https://x.com/wasabiken0429/status/2123996092484272467"
-        },
-        {
-          "name": "X / @omzm_shark (parody)",
-          "url": "https://x.com/omzm_shark/status/2123942489363189854"
-        }
-      ],
-      "first_seen": "2026-11-19",
-      "score": 68.6,
-      "sources": [
-        "X"
-      ],
-      "notes": "Nov 21 7 AM-slot main discovery: photo posted by shiba owner @rantaro0802 (柴犬★蘭) Nov 19 5:41 AM PT, caption '毛虫に出会った柴犬' (a shiba who met a caterpillar); 6.59M views / 76.8K likes / 650 quotes per X's public counts at ~7:00 AM PT Nov 21. Japanese X named the pose 'ポータル犬' (Portal Dog): @koyadeko's animated portal edit Nov 21 (97K views / 6.2K likes), parody drawings/photos by @wasabiken0429 and @omzm_shark Nov 20-21, plus quote-tweet remixes. Owner's own photo of their dog; nothing sexual or mocking.",
-      "name": "Portal Dog (Shiba Meets a Caterpillar)"
-    },
-    {
       "rank": 6,
-      "id": "them-show-me-how-to-fish-today",
-      "title": "'THEM SHOW ME HOW TO FISH TODAY, I NEARLY DIE': THE EAGLE, THE MONKEY AND THE CROCODILE THAT MISSES",
-      "image": "images/them-show-me-how-to-fish-today.jpg",
+      "id": "im-so-hungry-i-could-eat-an-oomf",
+      "title": "'IM SO HUNGRY I COULD EAT AN OOMF': A SUPERMARKET SHELF OF OOMF! PORRIDGE POTS TURNS 'ONE OF MY FOLLOWERS' SLANG INTO X'S NEW SNACK JOKE",
+      "image": "images/im-so-hungry-i-could-eat-an-oomf.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://x.com/AgwuGallant/status/2123453106427945308",
-      "source_name": "X @AgwuGallant",
-      "credit": "posted by @AgwuGallant on X",
+      "source_url": "https://x.com/turbochis/status/2124377976653681044",
+      "source_name": "X @turbochis",
+      "credit": "posted by @turbochis on X",
       "also": [
         {
-          "name": "X News: Nigerian Pidgin posts laugh off tense fishing close call",
-          "url": "https://x.com/i/trending/2123541631903109293"
+          "name": "X News: oomf porridge story",
+          "url": "https://x.com/i/trending/2124776598800937000"
         },
         {
-          "name": "X / @KofiRealer (caption copy)",
-          "url": "https://x.com/KofiRealer/status/2123509688939540930"
+          "name": "X / @bairdswatching (remix)",
+          "url": "https://x.com/bairdswatching/status/2124604950961426870"
         },
         {
-          "name": "X / @Famousmbt (Pidgin variant)",
-          "url": "https://x.com/Famousmbt/status/2123511399070523646"
+          "name": "X / @varavroom (remix)",
+          "url": "https://x.com/varavroom/status/2124704704542450063"
         }
       ],
-      "first_seen": "2026-11-19",
-      "score": 65.2,
+      "first_seen": "2026-11-22",
+      "score": 66.3,
       "sources": [
         "X"
       ],
-      "notes": "Nov 20 ~12:53 AM PT daily rebuild (no repeats from Nov 19 daily): 30-second animal clip posted by CHAMPZ (@AgwuGallant) Nov 19 8:27 AM PT; 525K views / 16.5K likes per X's public counts at ~12:53 AM PT Nov 20 (252K at ~3:15 PM PT Nov 19). Word-for-word and Pidgin caption copies within hours (@KofiRealer, @Famousmbt, @offclchimezie, @Peterstakes, @sucreboyy); X News 2123541631903109293. The clip looks AI-generated and its maker is not documented, so @AgwuGallant is credited for the post that spread. No injury shown, no people. Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): 1.02M views / 29.1K likes / 392 quotes per X's public counts.",
-      "name": "Them Show Me How to Fish Today"
+      "notes": "Nov 23 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:52 AM PT): Chis (@turbochis) posted a photo of Oomf! protein porridge pots on a UK supermarket shelf Nov 21 9:42 PM PT with 'im so hungry i could eat an oomf'; 1.15M views / 134K likes / 924 quotes. 'Oomf' is X slang for 'one of my followers'. Riffs spread Nov 22-23 ('Which oomf should I eat?', 'Found few oomfs': @bairdswatching, @jaderockins, @varavroom, @erubio14580, @LowprofileElite, @Certifiedlvl7, @madfearnit); X News 2124776598800937000. No people shown.",
+      "name": "I'm So Hungry I Could Eat an Oomf"
     },
     {
       "rank": 7,
@@ -223,6 +223,70 @@
     },
     {
       "rank": 8,
+      "id": "megachile-kii",
+      "title": "'MEGACHILE KII': A LAUGHING LEAFCUTTER BEE IN A SEARCH-STYLE 'INSECT' CARD BECOMES X'S NEWEST SLANG PUNCHLINE",
+      "image": "images/megachile-kii.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/xxxtacyLux/status/2124471853284794828",
+      "source_name": "X @xxxtacyLux",
+      "credit": "posted by @xxxtacyLux on X",
+      "also": [
+        {
+          "name": "X News: Megachile story",
+          "url": "https://x.com/i/trending/2124643879530246636"
+        },
+        {
+          "name": "X / @jnksruby_ (remix)",
+          "url": "https://x.com/jnksruby_/status/2124506688862708083"
+        },
+        {
+          "name": "X / @tuna_petal (remix)",
+          "url": "https://x.com/tuna_petal/status/2124525284187685280"
+        }
+      ],
+      "first_seen": "2026-11-22",
+      "score": 62.8,
+      "sources": [
+        "X"
+      ],
+      "notes": "Nov 23 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:52 AM PT): @xxxtacyLux posted an 8-second AI-made clip of a laughing leafcutter bee in a 'Megachile / Insect' card next to an iced coffee Nov 22 3:55 AM PT with 'Megachile kii asf'; 609K views / 8.3K likes. 'Kii' is slang for laughing. The wordplay started in an earlier joke post by @archangelcdj (a made-up celebrity quote, not shown or repeated here). Riffs spread Nov 22-23 ('chile this megachile finna kii', 'ONE KII PLEASE': @jnksruby_, @tuna_petal, @Illitry_, @teddysafterglow, @incoglilbro, @yoonogy); X News 2124643879530246636. No people shown.",
+      "name": "Megachile Kii"
+    },
+    {
+      "rank": 9,
+      "id": "me-and-you-we-eat-sweater",
+      "title": "'ME AND YOU. WE EAT SWEATER': TWO MOTHS NEXT TO A HOLE IN A KNIT SWEATER BECOME X'S NEW WAY TO DESCRIBE A COUPLE OR A SHIP",
+      "image": "images/me-and-you-we-eat-sweater.jpg",
+      "image_url": null,
+      "card_text": null,
+      "source_url": "https://x.com/motheinsect/status/2124555599203770779",
+      "source_name": "X @motheinsect",
+      "credit": "posted by @motheinsect on X",
+      "also": [
+        {
+          "name": "X News: 'we eat sweater' story",
+          "url": "https://x.com/i/trending/2124659843084767524"
+        },
+        {
+          "name": "X / @bewildered_bi (remix)",
+          "url": "https://x.com/bewildered_bi/status/2124666303105655050"
+        },
+        {
+          "name": "X / @canonically47 (remix)",
+          "url": "https://x.com/canonically47/status/2124611669318107221"
+        }
+      ],
+      "first_seen": "2026-11-22",
+      "score": 62.5,
+      "sources": [
+        "X"
+      ],
+      "notes": "Nov 23 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:52 AM PT): moth (@motheinsect) posted a close-up of two moths on a teal knit sweater beside a moth hole Nov 22 9:28 AM PT with 'me and you. we eat sweater'; 505K views / 56.6K likes / 317 quotes. Quoted Nov 22-23 for fictional pairs, couples and friends (@bewildered_bi, @canonically47, @tenka0o4, @missparasight, @Ju2therescue); X News 2124659843084767524. Insects only, no people.",
+      "name": "Me and You. We Eat Sweater"
+    },
+    {
+      "rank": 10,
       "id": "are-you-hungry-i-can-cook",
       "title": "'ARE YOU HUNGRY? I CAN COOK!': THE CAPCUT EDIT THAT PUTS A DEADPAN CAT BEHIND A STOVE WITH A THUMBS-UP FRYING PAN, NOW USED BY 600K+ TEMPLATE REMAKES",
       "image": "images/are-you-hungry-i-can-cook.jpg",
@@ -252,63 +316,6 @@
       ],
       "notes": "Nov 23 ~12:02 AM PT new-day rebuild (no repeats from Nov 22 daily): CapCut edit posted by TikToker @nupi5701 Nov 5 9:37 AM PT; 1.2M views / 95.9K likes / 27.3K shares per TikTok's public counts at ~12:02 AM PT Nov 23. A cut-out tabby cat asks 'Are you hungry?' with an emoji fist holding a frying pan, then bobs behind a cartoon stove. Sound is @itsnalte's original audio; ViralRemix reported the 'are you hungry?' CapCut template (posted Nov 1) at about 617K uses on Nov 21, with remakes by @book1210 and @ar.te23. No people; nothing sensitive.",
       "name": "Are You Hungry? I Can Cook!"
-    },
-    {
-      "rank": 9,
-      "id": "riemann-hypothesis-do-you-know-what-it-is",
-      "title": "'THE RIEMANN HYPOTHESIS WAS PROVED' / 'DO YOU KNOW WHAT THE IMPLICATIONS ARE?' / 'NO. DO YOU?' / 'NO.': THE DIALOGUE X KEPT REWRITING AFTER A CLAIMED PROOF",
-      "image": "images/post-cards/riemann-hypothesis-do-you-know-what-it-is.jpg",
-      "image_url": null,
-      "image_kind": "post_card",
-      "card_text": "the riemann hypothesis was proved\nwow. that's huge \ndo you know what the implications of this are? \nno. do you? \nno.",
-      "source_url": "https://x.com/nic_carter/status/2123825880044552627",
-      "source_name": "X @nic_carter",
-      "credit": "posted by @nic_carter on X",
-      "also": [
-        {
-          "name": "X / @tekbog (variation)",
-          "url": "https://x.com/tekbog/status/2123816951038513257"
-        },
-        {
-          "name": "X / @JamesonZaballos (early version)",
-          "url": "https://x.com/JamesonZaballos/status/2123804034276487428"
-        }
-      ],
-      "first_seen": "2026-11-20",
-      "score": 49.8,
-      "sources": [
-        "X"
-      ],
-      "notes": "Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): @nic_carter's version (Nov 20 9:08 AM PT) has 84.8K views / 1.6K likes per X's public counts at ~12:58 AM PT Nov 21, the most-viewed found. Within hours of a widely shared claim that the Riemann Hypothesis had been proved, 15+ accounts independently wrote the same 'do you know what this means? / no. do you? / no.' dialogue (earliest found @quantzoid / @JamesonZaballos, Nov 20 morning). Shown as a self-rendered attributed post card of his post text only; the two stock-style portrait photos he attached are not reproduced.",
-      "name": "The Riemann Hypothesis Was Proved (Do You Know What It Means?)"
-    },
-    {
-      "rank": 10,
-      "id": "gta-vi-phone-green-screen-edits",
-      "title": "GTA VI PHONE GREEN SCREEN: EVERYONE DROPS THEIR OWN CHARACTER ONTO JASON'S PHONE FOR A 'LOW CORTISOL DRIVE'",
-      "image": "images/gta-vi-phone-green-screen-edits.jpg",
-      "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/AGlubbable/status/2123514981253591066",
-      "source_name": "X @AGlubbable",
-      "credit": "posted by @AGlubbable on X",
-      "also": [
-        {
-          "name": "X News: GTA VI Phone Screen Trend Sparks Endless Memes and Edits",
-          "url": "https://x.com/i/trending/2123663905650069595"
-        },
-        {
-          "name": "X / @MurdoinkGS (green-screen template, 4.8M views)",
-          "url": "https://x.com/MurdoinkGS/status/2123239831895503330"
-        }
-      ],
-      "first_seen": "2026-11-19",
-      "score": 44.8,
-      "sources": [
-        "X"
-      ],
-      "notes": "Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): VTuber Glubbable's 'Low Cortisol Driving!' edit (@AGlubbable, Nov 19 12:33 PM PT) has 8.4K views / 853 likes per X's public counts at ~12:58 AM PT Nov 21. It uses @MurdoinkGS's GTA VI phone green-screen template (4.80M views / 78.1K likes / 917 quotes, Nov 18 6:19 PM PT), which hundreds of people quoted with their own characters; X News 2123663905650069595. Scored on the credited edit only, not the template.",
-      "name": "GTA VI Phone Green Screen Edits"
     }
   ],
   "weekly": [
