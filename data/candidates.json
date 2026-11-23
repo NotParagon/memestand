@@ -1,6 +1,145 @@
 {
-  "as_of": "2026-11-22",
+  "as_of": "2026-11-23",
   "candidates": [
+    {
+      "id": "poor-cat-innocent-me",
+      "name": "Poor Cat (Innocent Me)",
+      "title": "'INNOCENT ME': A CHUBBY TUXEDO CAT GETS ITS HEAD BATTED BY HANDS LABELLED 'EVIL SCHOOL', 'EVIL ASSIGNMENTS' AND 'EVIL TEACHERS', AND TIKTOK KEEPS SWAPPING IN NEW VILLAINS",
+      "source_url": "https://www.tiktok.com/@andre.g638/video/7710088316078607629",
+      "source_name": "TikTok / @andre.g638",
+      "image_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oALZJlNrfAVROenCIhu3PGvFIbfeQjTkRKUAIG~tplv-tiktokx-origin.image?dr=9636&x-expires=1795593600&x-signature=Hvfxf86Q%2FEPqUnWhfcOvluniPco%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "first_seen": "2026-11-19",
+      "also": [
+        {
+          "name": "TikTok / @andre.g638 (14.4M views)",
+          "url": "https://www.tiktok.com/@andre.g638/video/7710088316078607629"
+        },
+        {
+          "name": "TikTok / @notvld_00 (GTA 6 / high prices / PS5 remake)",
+          "url": "https://www.tiktok.com/@notvld_00/video/7710522206962404630"
+        },
+        {
+          "name": "X / @Wintalt ('Poor Cat' template)",
+          "url": "https://x.com/Wintalt/status/2124416516636745833"
+        }
+      ],
+      "ev": {
+        "tiktok": {
+          "url": "https://www.tiktok.com/@andre.g638/video/7710088316078607629",
+          "views": 14400000,
+          "likes": 3900000,
+          "author": "@andre.g638",
+          "posted": "2026-11-19",
+          "checked": "2026-11-23",
+          "via": "TikTok post page (tools/fetch_social.py, read ~12:02 AM PT Nov 23)"
+        },
+        "platforms": [
+          "TikTok",
+          "X"
+        ]
+      },
+      "notes": "Nov 23 ~12:02 AM PT new-day rebuild (no repeats from Nov 22 daily): black-and-white edit posted by TikToker @andre.g638 Nov 19 7:20 PM PT; 14.4M views / 3.9M likes / 862K shares per TikTok's public counts at ~12:02 AM PT Nov 23. Hands labelled 'Evil school', 'Evil assignments' and 'Evil teachers' bat a chubby tuxedo cat's head over the caption 'Innocent me'. His caption says the cat clip is not his and came from 'MAYOREO QIHUO MEXICO' (display name only, no handle verified). Remakes swap in new villains: @notvld_00's 'GTA 6 / High prices / PS5 / Innocent me with a PS4' (Nov 20 11:24 PM PT; 603K views / 113K likes) and X posts calling it the 'Poor Cat' template. No injury shown; Roger approved featuring it Nov 22.",
+      "first_seen_basis": "TikTok post by @andre.g638, 2026-11-20T03:20Z (TikTok page)",
+      "credit": "posted by @andre.g638 on TikTok",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "riding-a-giant-cat-ai",
+      "name": "Riding a Giant Cat (AI)",
+      "title": "RIDING A GIANT CAT: THE AI CLIP OF A SALARYMAN HAILING A CAR-SIZED CALICO, PATTING IT AND RIDING IT HOME, NOW A TIKTOK TEMPLATE PEOPLE REMAKE WITH THEIR OWN PETS",
+      "source_url": "https://www.tiktok.com/@catvloge365/video/7706415152656076054",
+      "source_name": "TikTok / @catvloge365",
+      "image_url": "https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/o0KyRqONqEkAEAF4rC8i4DfiIDBAYkA1kgf78q~tplv-tiktokx-origin.image?dr=9636&x-expires=1795593600&x-signature=N2x0SO%2BvGADmPp8aHWExRZzX7C0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "first_seen": "2026-11-09",
+      "also": [
+        {
+          "name": "TikTok / @catvloge365 (7.1M views)",
+          "url": "https://www.tiktok.com/@catvloge365/video/7706415152656076054"
+        },
+        {
+          "name": "ViralRemix: Riding a Giant Cat",
+          "url": "https://viralremix.org/riding-a-giant-cat"
+        },
+        {
+          "name": "TikTok / @iammon.vietnam (remake)",
+          "url": "https://www.tiktok.com/@iammon.vietnam/video/7709398430157737234"
+        }
+      ],
+      "ev": {
+        "tiktok": {
+          "url": "https://www.tiktok.com/@catvloge365/video/7706415152656076054",
+          "views": 7100000,
+          "likes": 650300,
+          "author": "@catvloge365",
+          "posted": "2026-11-09",
+          "checked": "2026-11-23",
+          "via": "TikTok post page (tools/fetch_social.py, read ~12:02 AM PT Nov 23)"
+        },
+        "platforms": [
+          "TikTok"
+        ]
+      },
+      "notes": "Nov 23 ~12:02 AM PT new-day rebuild (no repeats from Nov 22 daily): AI-generated 12-second clip posted by TikTok account @catvloge365 Nov 9 9:46 PM PT; 7.1M views / 650K likes / 319K shares per TikTok's public counts at ~12:02 AM PT Nov 23. A man in a suit waves down a giant calico cat on a night street, pats it and rides off on its back. ViralRemix's 'Riding a Giant Cat' trend page (on its home chart Nov 22) lists remakes, including @iammon.vietnam and @miona866. AI-made; nothing violent; no real identifiable person.",
+      "first_seen_basis": "TikTok post by @catvloge365, 2026-11-10T05:46Z (TikTok page)",
+      "credit": "posted by @catvloge365 on TikTok",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "are-you-hungry-i-can-cook",
+      "name": "Are You Hungry? I Can Cook!",
+      "title": "'ARE YOU HUNGRY? I CAN COOK!': THE CAPCUT EDIT THAT PUTS A DEADPAN CAT BEHIND A STOVE WITH A THUMBS-UP FRYING PAN, NOW USED BY 600K+ TEMPLATE REMAKES",
+      "source_url": "https://www.tiktok.com/@nupi5701/video/7704742732589272351",
+      "source_name": "TikTok / @nupi5701",
+      "image_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oAIxSVXCfv1QIuWjfjgI8LAqrfA8ETGyXu2gYM~tplv-tiktokx-origin.image?dr=9636&x-expires=1795593600&x-signature=ZWj85L6C%2FFc03WXF8IKPbvkv5AI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "first_seen": "2026-11-05",
+      "also": [
+        {
+          "name": "TikTok / @nupi5701 (1.2M views)",
+          "url": "https://www.tiktok.com/@nupi5701/video/7704742732589272351"
+        },
+        {
+          "name": "ViralRemix: Are You Hungry? I Can Cook",
+          "url": "https://viralremix.org/are-you-hungry-i-can-cook"
+        },
+        {
+          "name": "TikTok / @itsnalte (sound)",
+          "url": "https://www.tiktok.com/@itsnalte/video/7703433068304026888"
+        }
+      ],
+      "ev": {
+        "tiktok": {
+          "url": "https://www.tiktok.com/@nupi5701/video/7704742732589272351",
+          "views": 1200000,
+          "likes": 95900,
+          "author": "@nupi5701",
+          "posted": "2026-11-05",
+          "checked": "2026-11-23",
+          "via": "TikTok post page (tools/fetch_social.py, read ~12:02 AM PT Nov 23)"
+        },
+        "platforms": [
+          "TikTok"
+        ]
+      },
+      "notes": "Nov 23 ~12:02 AM PT new-day rebuild (no repeats from Nov 22 daily): CapCut edit posted by TikToker @nupi5701 Nov 5 9:37 AM PT; 1.2M views / 95.9K likes / 27.3K shares per TikTok's public counts at ~12:02 AM PT Nov 23. A cut-out tabby cat asks 'Are you hungry?' with an emoji fist holding a frying pan, then bobs behind a cartoon stove. Sound is @itsnalte's original audio; ViralRemix reported the 'are you hungry?' CapCut template (posted Nov 1) at about 617K uses on Nov 21, with remakes by @book1210 and @ar.te23. No people; nothing sensitive.",
+      "first_seen_basis": "TikTok post by @nupi5701, 2026-11-05T17:37Z (TikTok page)",
+      "credit": "posted by @nupi5701 on TikTok",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
     {
       "id": "chiikawa-dogoo-camera-beam",
       "name": "Chiikawa 'Dogoo' Camera Beam (ドゴォッ)",
@@ -39,7 +178,6 @@
       "first_seen_basis": "X post by @ngnchiikawa, 2026-11-21T15:04Z",
       "credit": "posted by @ngnchiikawa on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -90,7 +228,6 @@
       "first_seen_basis": "X post by @d_foubert, 2026-11-20T09:49Z",
       "credit": "posted by @d_foubert on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -137,7 +274,6 @@
       "first_seen_basis": "TikTok post by @uekan2b, 2026-11-12 (TikTok page)",
       "credit": "posted by @uekan2b on TikTok",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -184,7 +320,6 @@
       "first_seen_basis": "Tumblr post by trigona-necrophaga 2026-02-24; X spread from @motolkio 2026-11-21T16:13Z",
       "credit": "trigona-necrophaga on Tumblr",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -230,7 +365,6 @@
       "first_seen_basis": "TikTok post by @1low_hd, 2026-11-18 (TikTok page)",
       "credit": "posted by @1low_hd on TikTok",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -279,7 +413,6 @@
       "first_seen_basis": "X post by @mikdunno, 2026-11-19T23:10Z (earliest found)",
       "credit": "posted by @mikdunno on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -317,7 +450,6 @@
       "first_seen_basis": "X post by @44t0miwa, 2026-11-20T21:15:04Z",
       "credit": "posted by @44t0miwa on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -393,10 +525,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/rantaro0802/status/2123411379659178038",
-          "views": 6593460,
-          "likes": 76753,
-          "checked": "2026-11-21",
-          "via": "X API (read ~7:00 AM PT Nov 21)"
+          "views": 7298093,
+          "likes": 80823,
+          "checked": "2026-11-23",
+          "via": "X API (read ~12:02 AM PT Nov 23)"
         },
         "platforms": [
           "X"
@@ -406,6 +538,7 @@
       "first_seen_basis": "X post by @rantaro0802, 2026-11-19T13:41:38Z",
       "credit": "posted by @rantaro0802 on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -436,12 +569,12 @@
       "ev": {
         "tiktok": {
           "url": "https://www.tiktok.com/@mattfletcher14/video/7706318596535799054",
-          "views": 18100000,
+          "views": 19100000,
           "likes": 4300000,
           "author": "@mattfletcher14",
           "posted": "2026-11-09",
-          "checked": "2026-11-21",
-          "via": "TikTok post page (tools/fetch_social.py, read ~12:56 AM PT Nov 21)"
+          "checked": "2026-11-23",
+          "via": "TikTok post page (tools/fetch_social.py, read ~12:02 AM PT Nov 23)"
         },
         "platforms": [
           "TikTok",
@@ -452,6 +585,7 @@
       "first_seen_basis": "TikTok post by @mattfletcher14, 2026-11-09 (TikTok page)",
       "credit": "posted by @mattfletcher14 on TikTok",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -478,12 +612,12 @@
       "ev": {
         "tiktok": {
           "url": "https://www.tiktok.com/@dai.zee/video/7706747949786729759",
-          "views": 11600000,
+          "views": 11900000,
           "likes": 1900000,
           "author": "@dai.zee",
           "posted": "2026-11-11",
-          "checked": "2026-11-21",
-          "via": "TikTok post page (tools/fetch_social.py, read ~12:56 AM PT Nov 21)"
+          "checked": "2026-11-23",
+          "via": "TikTok post page (tools/fetch_social.py, read ~12:02 AM PT Nov 23)"
         },
         "platforms": [
           "TikTok",
@@ -494,6 +628,7 @@
       "first_seen_basis": "TikTok post by @dai.zee, 2026-11-11 (TikTok page); template @editscc446 2026-11-09",
       "credit": "posted by @dai.zee on TikTok",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -520,10 +655,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/finkd/status/2123829559711650060",
-          "views": 3319337,
-          "likes": 71416,
-          "checked": "2026-11-21",
-          "via": "X API (read ~7:00 AM PT Nov 21)"
+          "views": 4020509,
+          "likes": 79876,
+          "checked": "2026-11-23",
+          "via": "X API (read ~12:02 AM PT Nov 23)"
         },
         "kym": true,
         "platforms": [
@@ -535,6 +670,7 @@
       "first_seen_basis": "Edit format from 2026-11-18 X posts (per KYM); @finkd post 2026-11-20T17:23Z",
       "credit": "posted by @finkd on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -565,10 +701,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/GabbanaSZNN/status/2123720724825124993",
-          "views": 814836,
-          "likes": 21999,
-          "checked": "2026-11-21",
-          "via": "X API (read ~7:00 AM PT Nov 21)"
+          "views": 845841,
+          "likes": 22898,
+          "checked": "2026-11-23",
+          "via": "X API (read ~12:02 AM PT Nov 23)"
         },
         "x_news": true,
         "platforms": [
@@ -698,10 +834,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/nic_carter/status/2123825880044552627",
-          "views": 94431,
-          "likes": 1630,
-          "checked": "2026-11-22",
-          "via": "X API (read ~6:58 AM PT Nov 22)"
+          "views": 95614,
+          "likes": 1633,
+          "checked": "2026-11-23",
+          "via": "X API (read ~12:02 AM PT Nov 23)"
         },
         "platforms": [
           "X"
@@ -738,10 +874,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/AGlubbable/status/2123514981253591066",
-          "views": 9316,
-          "likes": 879,
-          "checked": "2026-11-22",
-          "via": "X API (read ~6:58 AM PT Nov 22)"
+          "views": 9594,
+          "likes": 880,
+          "checked": "2026-11-23",
+          "via": "X API (read ~12:02 AM PT Nov 23)"
         },
         "x_news": true,
         "platforms": [
@@ -1063,10 +1199,10 @@
       "ev": {
         "x": {
           "url": "https://x.com/AgwuGallant/status/2123453106427945308",
-          "views": 1033653,
-          "likes": 29364,
-          "checked": "2026-11-21",
-          "via": "X API (read ~7:00 AM PT Nov 21)"
+          "views": 1053101,
+          "likes": 29403,
+          "checked": "2026-11-23",
+          "via": "X API (read ~12:02 AM PT Nov 23)"
         },
         "platforms": [
           "X"
@@ -1077,6 +1213,7 @@
       "first_seen_basis": "X post by @AgwuGallant, 2026-11-19T16:27:27Z",
       "credit": "posted by @AgwuGallant on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -6202,7 +6339,6 @@
       "first_seen_basis": "X post by @starssvy, 2026-11-16T20:31Z",
       "credit": "posted by @starssvy on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ]
@@ -6452,7 +6588,6 @@
       "first_seen_basis": "X post by @hardcatmemes, 2026-11-21T21:35Z",
       "credit": "posted by @hardcatmemes on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -6503,7 +6638,6 @@
       "first_seen_basis": "X post by @soupsizedocean, 2026-11-20T23:43Z",
       "credit": "posted by @soupsizedocean on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
