@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T18:58:16-08:00",
+  "updated": "2026-11-22T19:59:34-08:00",
   "profiles": {
     "x": "https://x.com/MemeStandHQ",
     "tiktok": "https://www.tiktok.com/@memestandhq"
@@ -401,6 +401,11 @@
         "url": "https://x.com/MemeStandHQ/status/2124514585914810655",
         "buffer_post_id": "6b030002024796909259698b",
         "sent_at": "2026-11-22T06:45:23-08:00"
+      },
+      "tiktok": {
+        "url": "https://www.tiktok.com/@memestandhq/video/7711210602131180813",
+        "buffer_post_id": "6b03b933c72676f5e983267a",
+        "sent_at": "2026-11-23T03:56:13.002Z"
       }
     },
     "jensen-huang-spy": {
