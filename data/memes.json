@@ -1,321 +1,345 @@
 {
-  "updated": "2026-11-23T23:57-08:00",
+  "updated": "2026-11-24T01:02-08:00",
   "daily": [
     {
       "rank": 1,
-      "id": "pov-youre-the-villain-but",
-      "title": "'POV: YOU'RE THE VILLAIN BUT THE CHAIR LEANED WAY MORE THAN YOU EXPECTED': THE TIKTOK SKIT FORMAT CREATORS KEEP FINISHING WITH THEIR OWN 'BUT...'",
-      "image": "images/pov-youre-the-villain-but.jpg",
+      "id": "if-tigers-are-so-dangerous-tiger-loaf",
+      "title": "'IF TIGERS ARE SO DANGEROUS, EXPLAIN THIS': A ZOO TIGER IN A PERFECT HOUSECAT LOAF, AND X NOW SLAPS THE LINE ON EVERY BIG CAT CAUGHT LOAFING",
+      "image": "images/if-tigers-are-so-dangerous-tiger-loaf.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://www.tiktok.com/@mattfletcher14/video/7706318596535799054",
-      "source_name": "TikTok / @mattfletcher14",
-      "credit": "posted by @mattfletcher14 on TikTok",
+      "source_url": "https://x.com/hardcatmemes/status/2124255447154889123",
+      "source_name": "X @hardcatmemes",
+      "credit": "posted by @hardcatmemes on X",
       "also": [
         {
-          "name": "TikTok / @mattfletcher14 (18.1M views)",
-          "url": "https://www.tiktok.com/@mattfletcher14/video/7706318596535799054"
+          "name": "X News: tiger loaf story",
+          "url": "https://x.com/i/trending/2124408684101128321"
         },
         {
-          "name": "X / @Edward_K_So (variation)",
-          "url": "https://x.com/Edward_K_So/status/2123816618803462422"
+          "name": "X / @AnbarBaddie ('i just found out that tigers loaf', 1.67M views)",
+          "url": "https://x.com/AnbarBaddie/status/2124284967966613581"
         },
         {
-          "name": "X / @thetr1e (variation)",
-          "url": "https://x.com/thetr1e/status/2123183698334068761"
+          "name": "X / @vancology (big cats loafing thread)",
+          "url": "https://x.com/vancology/status/2124367275797139675"
         }
       ],
-      "first_seen": "2026-11-09",
-      "score": 70.8,
+      "first_seen": "2026-11-21",
+      "score": 75.6,
       "sources": [
-        "X",
-        "TikTok"
+        "X"
       ],
-      "notes": "Nov 21 ~12:56 AM PT new-day rebuild (no repeats from Nov 20 daily): 6.5s skit posted by TikToker @mattfletcher14 Nov 9; 18.1M views / 4.3M likes per TikTok's public counts at ~12:56 AM PT Nov 21. Biggest example found, not proven first. The 'POV: you're the villain but...' format spread to new creator posts Nov 16-20 and X variations ('but you couldn't afford a swivel chair', 'but you're in a toxic relationship' Nov 20). Creator's own clip; no profanity, nothing mocking.",
-      "name": "POV: You're the Villain But..."
+      "notes": "Nov 22 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:58 AM PT): photo of a zoo tiger lying in a housecat 'loaf' posted by @hardcatmemes Nov 21 1:35 PM PT with 'If tigers are so dangerous, explain this'; 7.27M views / 408K likes / 3.0K quotes. Spread in the last 24h: @AnbarBaddie 'i just found out that tigers loaf' (1.67M views), @vancology quote thread of other big cats loafing (265K views), the caption reused on other animals' photos (@p1halo, @tinyprettykhj, @ggam_nyang_yi); X News stories 2124408684101128321 and 2124297145264296205. The original photographer is undocumented; credit is the poster. Animal only, no people. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
+      "name": "If Tigers Are So Dangerous, Explain This (Tiger Loaf)"
     },
     {
       "rank": 2,
-      "id": "we-regret-to-inform-you-bobcat",
-      "title": "'WE REGRET TO INFORM YOU' / 'YOU'LL REGRET YOU INFORMED ME': A BOB-HAIRCUT CAT FIRING A CARTOON GUN BECOMES X'S COMEBACK TO EVERY REJECTION LETTER",
-      "image": "images/we-regret-to-inform-you-bobcat.jpg",
+      "id": "chiikawa-dogoo-camera-beam",
+      "title": "'ドゴォッ' (DOGOOO!): HACHIWARE'S NEW CHIIKAWA CAMERA FIRES A DESTRUCTION BEAM, AND JAPANESE X TURNED THE SOUND EFFECT INTO A CATCHPHRASE",
+      "image": "images/chiikawa-dogoo-camera-beam.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://x.com/levyngrey/status/2124563930156818845",
-      "source_name": "X @levyngrey",
-      "credit": "posted by @levyngrey on X",
+      "source_url": "https://x.com/ngnchiikawa/status/2124156927181791413",
+      "source_name": "X @ngnchiikawa",
+      "credit": "posted by @ngnchiikawa on X",
       "also": [
         {
-          "name": "X News: 'We regret to inform you' cat story",
-          "url": "https://x.com/i/trending/2124779442203738574"
+          "name": "X / @ganma8446 ('11/22 is Dogoo Day' drawing)",
+          "url": "https://x.com/ganma8446/status/2124163207988490561"
         },
         {
-          "name": "X / @ylazy8 (remix)",
-          "url": "https://x.com/ylazy8/status/2124761468570669290"
+          "name": "X / @ibuki_0603 (lyric riff)",
+          "url": "https://x.com/ibuki_0603/status/2124170861767004518"
         },
         {
-          "name": "X / @itsjolaa (remix)",
-          "url": "https://x.com/itsjolaa/status/2124773776915136571"
+          "name": "X / @ohayoo2018 (catchphrase reuse)",
+          "url": "https://x.com/ohayoo2018/status/2124171139580883083"
         }
       ],
-      "first_seen": "2026-11-22",
-      "score": 69.7,
+      "first_seen": "2026-11-21",
+      "score": 73.8,
       "sources": [
         "X"
       ],
-      "notes": "Nov 23 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:52 AM PT): @levyngrey posted a short clip of a CGI cat with a bob haircut firing a cartoon gun (muzzle flash only, no target) Nov 22 10:01 AM PT with \"'We regret to inform you' / You'll regret you informed me\"; 2.98M views / 162K likes / 922 quotes. Copies swapping in other 'sorry' lines spread Nov 22-23 (@ylazy8, @onlyoneXstarr, @itsjolaa, @Ola4089, @Acupoftii___, @Patrickdgenius, @greatguyy_, @Visual_verse1); X News 2124779442203738574. The cat clip's original maker is undocumented (first X upload Nov 20); credit is the caption poster.",
-      "name": "We Regret to Inform You (Bob-Haircut Cat)"
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild (no repeats from Nov 21 daily): Chiikawa comic page by its creator Nagano (@ngnchiikawa), posted Nov 21 7:04 AM PT; Hachiware's new camera fires a beam with the sound effect 'ドゴォッ'. 17.19M views / 463.8K likes / 14.6K quotes per X's public counts at ~12:55 AM PT Nov 22. 'ドゴォッ' trended in Japan Nov 21; independent posts reuse it as a punchline (@ganma8446 declared 11/22 'Dogoo Day' with a drawing, @ibuki_0603 put it into the Chiikawa song lyrics, @ohayoo2018 and others). Cartoon characters only; no injury shown. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
+      "name": "Chiikawa 'Dogoo' Camera Beam (ドゴォッ)"
     },
     {
       "rank": 3,
-      "id": "poor-cat-innocent-me",
-      "title": "'INNOCENT ME': A CHUBBY TUXEDO CAT GETS ITS HEAD BATTED BY HANDS LABELLED 'EVIL SCHOOL', 'EVIL ASSIGNMENTS' AND 'EVIL TEACHERS', AND TIKTOK KEEPS SWAPPING IN NEW VILLAINS",
-      "image": "images/poor-cat-innocent-me.jpg",
+      "id": "weak-men-play-gta-vi-strong-men",
+      "title": "'WEAK MEN PLAY GTA VI. STRONG MEN: ...': A SELF-IMPROVEMENT LIST X KEEPS REWRITING WITH OWLS, MINECRAFT, GENSHIN AND 'POST ON TWITTER'",
+      "image": "images/post-cards/weak-men-play-gta-vi-strong-men.jpg",
       "image_url": null,
-      "card_text": null,
-      "source_url": "https://www.tiktok.com/@andre.g638/video/7710088316078607629",
-      "source_name": "TikTok / @andre.g638",
-      "credit": "posted by @andre.g638 on TikTok",
+      "image_kind": "post_card",
+      "card_text": "Weak men play GTA VI.\n\nStrong men:\n- Play chess\n- Read history\n- Lift weights\n- Run at dawn\n- Cook proper meals\n- Take responsibility for their families\n- Build businesses\n- Go to bed knowing they accomplished something in the real world",
+      "source_url": "https://x.com/d_foubert/status/2123715278693417055",
+      "source_name": "X @d_foubert",
+      "credit": "posted by @d_foubert on X",
       "also": [
         {
-          "name": "TikTok / @andre.g638 (14.4M views)",
-          "url": "https://www.tiktok.com/@andre.g638/video/7710088316078607629"
+          "name": "X News: GTA VI Launch Ignites Debates on Gaming and Masculinity",
+          "url": "https://x.com/i/trending/2123844393102917635"
         },
         {
-          "name": "TikTok / @notvld_00 (GTA 6 / high prices / PS5 remake)",
-          "url": "https://www.tiktok.com/@notvld_00/video/7710522206962404630"
+          "name": "X / @TwiceHooted (owl rewrite)",
+          "url": "https://x.com/TwiceHooted/status/2124101857739980927"
         },
         {
-          "name": "X / @Wintalt ('Poor Cat' template)",
-          "url": "https://x.com/Wintalt/status/2124416516636745833"
+          "name": "X / @actualllyandrew (Minecraft rewrite)",
+          "url": "https://x.com/actualllyandrew/status/2123924062090997916"
+        },
+        {
+          "name": "X / @lorrik96 (Genshin rewrite)",
+          "url": "https://x.com/lorrik96/status/2124089003875918096"
         }
       ],
-      "first_seen": "2026-11-19",
-      "score": 69.6,
+      "first_seen": "2026-11-20",
+      "score": 69.2,
       "sources": [
-        "X",
-        "TikTok"
+        "X"
       ],
-      "notes": "Nov 23 ~12:02 AM PT new-day rebuild (no repeats from Nov 22 daily): black-and-white edit posted by TikToker @andre.g638 Nov 19 7:20 PM PT; 14.4M views / 3.9M likes / 862K shares per TikTok's public counts at ~12:02 AM PT Nov 23. Hands labelled 'Evil school', 'Evil assignments' and 'Evil teachers' bat a chubby tuxedo cat's head over the caption 'Innocent me'. His caption says the cat clip is not his and came from 'MAYOREO QIHUO MEXICO' (display name only, no handle verified). Remakes swap in new villains: @notvld_00's 'GTA 6 / High prices / PS5 / Innocent me with a PS4' (Nov 20 11:24 PM PT; 603K views / 113K likes) and X posts calling it the 'Poor Cat' template. No injury shown; Roger approved featuring it Nov 22.",
-      "name": "Poor Cat (Innocent Me)"
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: text post by Daniel Foubert (@d_foubert), Nov 20 1:49 AM PT; 2.45M views / 2.9K likes / 922 quotes per X's public counts at ~12:55 AM PT Nov 22. People rewrite the list as a copypasta (@TwiceHooted owl version, @AdrianFPascal, @ramzan_a95, @KySquirrel_90, @sarefilia, @actualllyandrew Minecraft, @lorrik96 Genshin) Nov 20-21; X News 2123844393102917635. The joke is the rewrites, not a pile-on on the poster. Shown as a self-rendered attributed post card of his post text. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
+      "name": "Weak Men Play GTA VI, Strong Men..."
     },
     {
       "rank": 4,
-      "id": "lucia-will-appreciate-this",
-      "title": "'PRISCILLA WILL APPRECIATE THIS': MARK ZUCKERBERG POSTS HIS OWN TAKE ON THE GTA VI 'LUCIA WILL APPRECIATE THIS' MISSION POP-UP EDITS",
-      "image": "images/lucia-will-appreciate-this.jpg",
+      "id": "portal-dog-shiba-meets-caterpillar",
+      "title": "'PORTAL DOG': THE SHIBA WHO FROZE MID-WALK STARING AT A CATERPILLAR, NOW JAPANESE X'S FAVORITE EDIT TEMPLATE",
+      "image": "images/portal-dog-shiba-meets-caterpillar.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://x.com/finkd/status/2123829559711650060",
-      "source_name": "X @finkd",
-      "credit": "posted by @finkd on X",
+      "source_url": "https://x.com/rantaro0802/status/2123411379659178038",
+      "source_name": "X @rantaro0802",
+      "credit": "posted by @rantaro0802 on X",
       "also": [
         {
-          "name": "Know Your Meme: Lucia Will Appreciate This",
-          "url": "https://knowyourmeme.com/memes/lucia-will-appreciate-this"
+          "name": "X / @koyadeko ('Portal Dog' animated edit)",
+          "url": "https://x.com/koyadeko/status/2124050252319916151"
         },
         {
-          "name": "X / @wormcancer (early edit)",
-          "url": "https://x.com/wormcancer/status/2123055977993761053"
+          "name": "X / @wasabiken0429 (parody)",
+          "url": "https://x.com/wasabiken0429/status/2123996092484272467"
+        },
+        {
+          "name": "X / @omzm_shark (parody)",
+          "url": "https://x.com/omzm_shark/status/2123942489363189854"
         }
       ],
-      "first_seen": "2026-11-18",
-      "score": 69.0,
+      "first_seen": "2026-11-19",
+      "score": 68.7,
       "sources": [
-        "X",
-        "Know Your Meme"
+        "X"
       ],
-      "notes": "Nov 21 ~12:58 AM PT new-day rebuild (no repeats from Nov 20 daily): Mark Zuckerberg (@finkd) posted a photo of his TV showing an edited GTA VI mission pop-up ('PICK UP GROCERIES / Priscilla will appreciate this') on Nov 20 9:23 AM PT ('Wait which version did I get?'); 2.94M views / 65.4K likes per X's public counts at ~12:58 AM PT Nov 21. The 'Lucia will appreciate this' pop-up edit format took off Nov 18 (@wormcancer and many more) and is documented by Know Your Meme. Credited as the most-viewed post found, not the start of the format; whoever made his edit is not documented.",
-      "name": "Lucia Will Appreciate This"
+      "notes": "Nov 21 7 AM-slot main discovery: photo posted by shiba owner @rantaro0802 (柴犬★蘭) Nov 19 5:41 AM PT, caption '毛虫に出会った柴犬' (a shiba who met a caterpillar); 6.59M views / 76.8K likes / 650 quotes per X's public counts at ~7:00 AM PT Nov 21. Japanese X named the pose 'ポータル犬' (Portal Dog): @koyadeko's animated portal edit Nov 21 (97K views / 6.2K likes), parody drawings/photos by @wasabiken0429 and @omzm_shark Nov 20-21, plus quote-tweet remixes. Owner's own photo of their dog; nothing sexual or mocking. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
+      "name": "Portal Dog (Shiba Meets a Caterpillar)"
     },
     {
       "rank": 5,
-      "id": "oh-my-carne-asada-singing-dog",
-      "title": "'OH MY CARNE ASADA': THE SINGING-CHIHUAHUA CLIP PEOPLE DROP BEHIND THEIR OWN CAPTIONS ('ME PERFORMING AT CHRISTMAS BECAUSE IT'S THE ONLY GIFT I CAN AFFORD')",
-      "image": "images/oh-my-carne-asada-singing-dog.jpg",
+      "id": "gta-5-goodbye-ai-farewell",
+      "title": "'GTA 5 GOODBYE': AI FAREWELL FILMS WHERE MICHAEL, FRANKLIN AND TREVOR SAY GOODBYE TO THE FAN WHO GREW UP WITH GTA V, REMADE FOR GTA VI LAUNCH WEEK",
+      "image": "images/gta-5-goodbye-ai-farewell.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://www.tiktok.com/@dai.zee/video/7706747949786729759",
-      "source_name": "TikTok / @dai.zee",
-      "credit": "posted by @dai.zee on TikTok",
+      "source_url": "https://www.tiktok.com/@uekan2b/video/7707121495671147797",
+      "source_name": "TikTok / @uekan2b",
+      "credit": "posted by @uekan2b on TikTok",
       "also": [
         {
-          "name": "TikTok / @dai.zee (11.6M views)",
-          "url": "https://www.tiktok.com/@dai.zee/video/7706747949786729759"
+          "name": "TikTok / @uekan2b (6.2M views)",
+          "url": "https://www.tiktok.com/@uekan2b/video/7707121495671147797"
         },
         {
-          "name": "TikTok / @editscc446 (green-screen template)",
-          "url": "https://www.tiktok.com/@editscc446/video/7706204430080740639"
+          "name": "TikTok / @lucidvicegta67 (remake)",
+          "url": "https://www.tiktok.com/@lucidvicegta67/video/7708064374967094550"
+        },
+        {
+          "name": "X / @Mila_zeem (version)",
+          "url": "https://x.com/Mila_zeem/status/2123765436269445536"
         }
       ],
-      "first_seen": "2026-11-11",
-      "score": 68.8,
+      "first_seen": "2026-11-12",
+      "score": 66.1,
       "sources": [
         "X",
         "TikTok"
       ],
-      "notes": "Nov 21 ~12:56 AM PT new-day rebuild (no repeats from Nov 20 daily): AI lip-synced chihuahua clip captioned 'me preforming at christmas for my family this year cause it's the only gift i can afford', posted by TikToker @dai.zee Nov 11; 11.6M views / 1.9M likes per TikTok's public counts at ~12:56 AM PT Nov 21, the biggest post of the trend found. Green-screen template by @editscc446 (Nov 9) over a song cover English listeners hear as 'oh my carne asada'; new pet-owner and work versions kept appearing through Nov 20, plus X mentions Nov 17-20. AI-generated dog animation; no people.",
-      "name": "Oh My Carne Asada (Singing Dog)"
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: AI-generated short film by TikTok creator @uekan2b (UEKAN), posted Nov 12, caption '13年間、ありがとう。' (thank you for 13 years); 6.2M views / 837.7K likes per TikTok's public counts at ~12:55 AM PT Nov 22. A boy meets GTA V's Michael, Franklin and Trevor in 2013 and says goodbye as an adult in 2026. Around GTA VI's Nov 19 launch the format surged: CapCut template remakes with people's own faces (@lucidvicegta67, @gta6gamplay, @b3cause1, @hickey4014 on TikTok) and versions on X Nov 20-21 (@Mila_zeem). AI-made; no violence. Minor check (Nov 22): the young character is AI-generated and shown growing up into an adult; no real child is the subject, nothing sensitive. Thumbnail is a still frame from the creator's own TikTok video. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
+      "name": "GTA 5 Goodbye (AI Farewell)"
     },
     {
       "rank": 6,
-      "id": "im-so-hungry-i-could-eat-an-oomf",
-      "title": "'IM SO HUNGRY I COULD EAT AN OOMF': A SUPERMARKET SHELF OF OOMF! PORRIDGE POTS TURNS 'ONE OF MY FOLLOWERS' SLANG INTO X'S NEW SNACK JOKE",
-      "image": "images/im-so-hungry-i-could-eat-an-oomf.jpg",
+      "id": "my-devoted-but-dangerously-unstable-knight",
+      "title": "'MY DEVOTED BUT DANGEROUSLY UNSTABLE KNIGHT WILL BE HEARING ABOUT THIS': THE TUMBLR LINE X IS PASTING ONTO EVERY BROODING FICTIONAL CHARACTER",
+      "image": "images/my-devoted-but-dangerously-unstable-knight.jpg",
       "image_url": null,
-      "card_text": null,
-      "source_url": "https://x.com/turbochis/status/2124377976653681044",
-      "source_name": "X @turbochis",
-      "credit": "posted by @turbochis on X",
+      "card_text": "my devoted but dangerously unstable knight will be hearing about this",
+      "source_url": "https://www.tumblr.com/trigona-necrophaga/809460150915203072/my-devoted-but-dangerously-unstable-knight-will-be",
+      "source_name": "Tumblr / trigona-necrophaga",
+      "credit": "trigona-necrophaga on Tumblr",
       "also": [
         {
-          "name": "X News: oomf porridge story",
-          "url": "https://x.com/i/trending/2124776598800937000"
+          "name": "X / @motolkio (screenshot that took off on X)",
+          "url": "https://x.com/motolkio/status/2124174408491393025"
         },
         {
-          "name": "X / @bairdswatching (remix)",
-          "url": "https://x.com/bairdswatching/status/2124604950961426870"
+          "name": "X News: Unstable Knight Captions Take Over Character Shares",
+          "url": "https://x.com/i/trending/2124266173327880607"
         },
         {
-          "name": "X / @varavroom (remix)",
-          "url": "https://x.com/varavroom/status/2124704704542450063"
+          "name": "X / @NawtsoGolden (edited version)",
+          "url": "https://x.com/NawtsoGolden/status/2124220304784556072"
         }
       ],
-      "first_seen": "2026-11-22",
-      "score": 66.3,
+      "first_seen": "2026-11-21",
+      "score": 66.1,
       "sources": [
         "X"
       ],
-      "notes": "Nov 23 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:52 AM PT): Chis (@turbochis) posted a photo of Oomf! protein porridge pots on a UK supermarket shelf Nov 21 9:42 PM PT with 'im so hungry i could eat an oomf'; 1.15M views / 134K likes / 924 quotes. 'Oomf' is X slang for 'one of my followers'. Riffs spread Nov 22-23 ('Which oomf should I eat?', 'Found few oomfs': @bairdswatching, @jaderockins, @varavroom, @erubio14580, @LowprofileElite, @Certifiedlvl7, @madfearnit); X News 2124776598800937000. No people shown.",
-      "name": "I'm So Hungry I Could Eat an Oomf"
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: text post by Tumblr user trigona-necrophaga (Feb 24 2026, 52K notes per the Tumblr page on Nov 21). It took off on X Nov 21 when @motolkio posted a screenshot (8:13 AM PT): 837.4K views / 60.5K likes / 2.1K quotes per X's public counts at ~12:55 AM PT Nov 22. People pair the line with characters (Naruto/Sasuke, Draco, Leon/Claire), edit new avatars behind the text (@NawtsoGolden) and make 'unstable best friend' variants; X News 2124266173327880607. Credited to the Tumblr author; image is the shared screenshot. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
+      "name": "My Devoted but Dangerously Unstable Knight"
     },
     {
       "rank": 7,
-      "id": "riding-a-giant-cat-ai",
-      "title": "RIDING A GIANT CAT: THE AI CLIP OF A SALARYMAN HAILING A CAR-SIZED CALICO, PATTING IT AND RIDING IT HOME, NOW A TIKTOK TEMPLATE PEOPLE REMAKE WITH THEIR OWN PETS",
-      "image": "images/riding-a-giant-cat-ai.jpg",
+      "id": "gta-6-profound-intellectual-games-sudoku",
+      "title": "'DON'T CARE ABOUT GTA 6 BECAUSE I'M BUSY WITH MORE PROFOUND AND INTELLECTUAL GAMES SUCH AS SUDOKU': THE LAUNCH-WEEK BRAG X KEEPS REFILLING WITH CHESS, COOKING MAMA AND GOOGLE SNAKE",
+      "image": "images/post-cards/gta-6-profound-intellectual-games-sudoku.jpg",
       "image_url": null,
-      "card_text": null,
-      "source_url": "https://www.tiktok.com/@catvloge365/video/7706415152656076054",
-      "source_name": "TikTok / @catvloge365",
-      "credit": "posted by @catvloge365 on TikTok",
+      "image_kind": "post_card",
+      "card_text": "don’t care about gta 6 because i’m busy with more profound and intellectual games such as sudoku",
+      "source_url": "https://x.com/soupsizedocean/status/2123925246411428041",
+      "source_name": "X @soupsizedocean",
+      "credit": "posted by @soupsizedocean on X",
       "also": [
         {
-          "name": "TikTok / @catvloge365 (7.1M views)",
-          "url": "https://www.tiktok.com/@catvloge365/video/7706415152656076054"
+          "name": "X News: GTA 6 'intellectual games' story",
+          "url": "https://x.com/i/trending/2124310005319115038"
         },
         {
-          "name": "ViralRemix: Riding a Giant Cat",
-          "url": "https://viralremix.org/riding-a-giant-cat"
+          "name": "X / @EveryTaye (Cooking Mama version)",
+          "url": "https://x.com/EveryTaye/status/2124236230380679232"
         },
         {
-          "name": "TikTok / @iammon.vietnam (remake)",
-          "url": "https://www.tiktok.com/@iammon.vietnam/video/7709398430157737234"
+          "name": "X / @momoicore (Google Snake version)",
+          "url": "https://x.com/momoicore/status/2124287224858771817"
+        },
+        {
+          "name": "X / @doctorherssen (chess version)",
+          "url": "https://x.com/doctorherssen/status/2124438096657932656"
         }
       ],
-      "first_seen": "2026-11-09",
-      "score": 63.5,
+      "first_seen": "2026-11-20",
+      "score": 65.5,
       "sources": [
-        "TikTok"
+        "X"
       ],
-      "notes": "Nov 23 ~12:02 AM PT new-day rebuild (no repeats from Nov 22 daily): AI-generated 12-second clip posted by TikTok account @catvloge365 Nov 9 9:46 PM PT; 7.1M views / 650K likes / 319K shares per TikTok's public counts at ~12:02 AM PT Nov 23. A man in a suit waves down a giant calico cat on a night street, pats it and rides off on its back. ViralRemix's 'Riding a Giant Cat' trend page (on its home chart Nov 22) lists remakes, including @iammon.vietnam and @miona866. AI-made; nothing violent; no real identifiable person.",
-      "name": "Riding a Giant Cat (AI)"
+      "notes": "Nov 22 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:58 AM PT): text post by xenia (@soupsizedocean) Nov 20 3:43 PM PT; 946K views / 90.3K likes / 1.1K quotes. Verbatim copies swapping the game spread Nov 21-22 (@EveryTaye Cooking Mama, @momoicore Google Snake, @doctorherssen chess, others with Hay Day and Valorant); X News 2124310005319115038. Some replies swap in crude sexual lines; those are not shown or quoted. Shown as a self-rendered attributed post card of her post text. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
+      "name": "Don't Care About GTA 6, Busy With Profound and Intellectual Games"
     },
     {
       "rank": 8,
-      "id": "megachile-kii",
-      "title": "'MEGACHILE KII': A LAUGHING LEAFCUTTER BEE IN A SEARCH-STYLE 'INSECT' CARD BECOMES X'S NEWEST SLANG PUNCHLINE",
-      "image": "images/megachile-kii.jpg",
+      "id": "amo-meu-curso-i-love-my-course",
+      "title": "'AMO MEU CURSO' ('I LOVE MY COURSE'): STUDENTS PAIR THE WIG-AND-TAPE-MEASURE FACEPALM CLIP WITH THE PART OF THEIR MAJOR THEY CAN'T STAND",
+      "image": "images/amo-meu-curso-i-love-my-course.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://x.com/xxxtacyLux/status/2124471853284794828",
-      "source_name": "X @xxxtacyLux",
-      "credit": "posted by @xxxtacyLux on X",
+      "source_url": "https://x.com/mikdunno/status/2123554422693282201",
+      "source_name": "X @mikdunno",
+      "credit": "posted by @mikdunno on X",
       "also": [
         {
-          "name": "X News: Megachile story",
-          "url": "https://x.com/i/trending/2124643879530246636"
+          "name": "X / @moondustlynx (design version, 637K views)",
+          "url": "https://x.com/moondustlynx/status/2123966253588992349"
         },
         {
-          "name": "X / @jnksruby_ (remix)",
-          "url": "https://x.com/jnksruby_/status/2124506688862708083"
+          "name": "X / @lauusl (international-analysis version)",
+          "url": "https://x.com/lauusl/status/2124220992675521001"
         },
         {
-          "name": "X / @tuna_petal (remix)",
-          "url": "https://x.com/tuna_petal/status/2124525284187685280"
+          "name": "X / @julpiterverso (50-page reading version)",
+          "url": "https://x.com/julpiterverso/status/2124234627325755822"
+        },
+        {
+          "name": "X News: Students Share 'I Love My Major' Meme Struggles Across Fields",
+          "url": "https://x.com/i/trending/2124380369747083364"
         }
       ],
-      "first_seen": "2026-11-22",
-      "score": 62.8,
+      "first_seen": "2026-11-19",
+      "score": 65.3,
       "sources": [
         "X"
       ],
-      "notes": "Nov 23 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:52 AM PT): @xxxtacyLux posted an 8-second AI-made clip of a laughing leafcutter bee in a 'Megachile / Insect' card next to an iced coffee Nov 22 3:55 AM PT with 'Megachile kii asf'; 609K views / 8.3K likes. 'Kii' is slang for laughing. The wordplay started in an earlier joke post by @archangelcdj (a made-up celebrity quote, not shown or repeated here). Riffs spread Nov 22-23 ('chile this megachile finna kii', 'ONE KII PLEASE': @jnksruby_, @tuna_petal, @Illitry_, @teddysafterglow, @incoglilbro, @yoonogy); X News 2124643879530246636. No people shown.",
-      "name": "Megachile Kii"
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: same-day remix chain on Brazilian X. Earliest found is @mikdunno (Nov 19 3:10 PM PT, '\"amo meu curso\" / eu quando chega email de atualização no sigaa'; 128.8K views / 8.1K likes); quote-chain versions Nov 20-22 by @carameloando (260.7K), @moondustlynx (design, 637.2K views / 16.1K likes / 1.2K quotes), @lauusl (344.9K), @julpiterverso (174.2K), @baekarte (98.1K), and English 'i love my major' versions, all per X's public counts at ~12:55 AM PT Nov 22; X News 2124380369747083364. The 6s clip shows a performer in a wig and tape measure facepalming at a phone in a sewing room (a staged skit); who made the clip is not documented. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
+      "name": "Amo Meu Curso (I Love My Course)"
     },
     {
       "rank": 9,
-      "id": "me-and-you-we-eat-sweater",
-      "title": "'ME AND YOU. WE EAT SWEATER': TWO MOTHS NEXT TO A HOLE IN A KNIT SWEATER BECOME X'S NEW WAY TO DESCRIBE A COUPLE OR A SHIP",
-      "image": "images/me-and-you-we-eat-sweater.jpg",
+      "id": "we-felt-the-mog-across-the-gym",
+      "title": "'WE FELT THE MOG ALL THE WAY ACROSS THE GYM': A BARISTA'S LIP-SYNC TO THE LINE BECOMES TIKTOK'S SOUND FOR GETTING OUT-DRESSED, AND 'I FELT THE MOG' TURNS INTO X SLANG",
+      "image": "images/we-felt-the-mog-across-the-gym.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://x.com/motheinsect/status/2124555599203770779",
-      "source_name": "X @motheinsect",
-      "credit": "posted by @motheinsect on X",
+      "source_url": "https://www.tiktok.com/@o.livi444/video/7710240077061917966",
+      "source_name": "TikTok / @o.livi444",
+      "credit": "posted by @o.livi444 on TikTok",
       "also": [
         {
-          "name": "X News: 'we eat sweater' story",
-          "url": "https://x.com/i/trending/2124659843084767524"
+          "name": "TikTok / @o.livi444 (1.3M views)",
+          "url": "https://www.tiktok.com/@o.livi444/video/7710240077061917966"
         },
         {
-          "name": "X / @bewildered_bi (remix)",
-          "url": "https://x.com/bewildered_bi/status/2124666303105655050"
+          "name": "X / @gpt_alex ('I felt the mog')",
+          "url": "https://x.com/gpt_alex/status/2123466790894280710"
         },
         {
-          "name": "X / @canonically47 (remix)",
-          "url": "https://x.com/canonically47/status/2124611669318107221"
+          "name": "X / @zinfian ('I felt the mog')",
+          "url": "https://x.com/zinfian/status/2123509808833962030"
         }
       ],
-      "first_seen": "2026-11-22",
-      "score": 62.5,
+      "first_seen": "2026-11-20",
+      "score": 59.1,
       "sources": [
-        "X"
+        "X",
+        "TikTok"
       ],
-      "notes": "Nov 23 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:52 AM PT): moth (@motheinsect) posted a close-up of two moths on a teal knit sweater beside a moth hole Nov 22 9:28 AM PT with 'me and you. we eat sweater'; 505K views / 56.6K likes / 317 quotes. Quoted Nov 22-23 for fictional pairs, couples and friends (@bewildered_bi, @canonically47, @tenka0o4, @missparasight, @Ju2therescue); X News 2124659843084767524. Insects only, no people.",
-      "name": "Me and You. We Eat Sweater"
+      "notes": "Nov 24 ~1 AM PT new-day rebuild (from the Nov 23 safety-prescreened daily pool): TikToker liv (@o.livi444) lip-syncs the audio line 'we felt the mog like all the way across the gym, to the point where I just left' in her work fleece, captioned 'when a girl walks into my job wearing the perfect slouchy sweater ... while i'm in my chud work uniform' (posted Nov 20; 1.3M views / 206.6K likes per TikTok's public counts read ~12:59 AM PT Nov 24). Other creators reuse the sound for being out-dressed or outclassed; the largest version read has 3.0M views. On X, 'I felt the mog' became a stock reply (@evanbolzo and @landoful Nov 17, @gpt_alex and @zinfian Nov 19, read via X API Nov 24). The audio is a TikTok original sound; who first said the line is not documented, so MemeStand credits the video poster. Self-deprecating, nobody mocked.",
+      "name": "We Felt the Mog Across the Gym"
     },
     {
       "rank": 10,
-      "id": "are-you-hungry-i-can-cook",
-      "title": "'ARE YOU HUNGRY? I CAN COOK!': THE CAPCUT EDIT THAT PUTS A DEADPAN CAT BEHIND A STOVE WITH A THUMBS-UP FRYING PAN, NOW USED BY 600K+ TEMPLATE REMAKES",
-      "image": "images/are-you-hungry-i-can-cook.jpg",
+      "id": "i-was-your-age-once-mom",
+      "title": "'I WAS YOUR AGE ONCE' / 'MOM, YOU NEVER HAD TO DEAL WITH ___': FANDOM X PAIRS A WIG-WEARING COMEDIAN'S MOM SKIT WITH THE FAN HEARTBREAKS MOM NEVER FACED, FROM LOONA'S DISBANDMENT TO THE BTS MILITARY ERA",
+      "image": "images/i-was-your-age-once-mom.jpg",
       "image_url": null,
       "card_text": null,
-      "source_url": "https://www.tiktok.com/@nupi5701/video/7704742732589272351",
-      "source_name": "TikTok / @nupi5701",
-      "credit": "posted by @nupi5701 on TikTok",
+      "source_url": "https://x.com/fawnklore/status/2123619211255980306",
+      "source_name": "X @fawnklore",
+      "credit": "posted by @fawnklore on X",
       "also": [
         {
-          "name": "TikTok / @nupi5701 (1.2M views)",
-          "url": "https://www.tiktok.com/@nupi5701/video/7704742732589272351"
+          "name": "X / @haobinz03 (ZB1 version, 91K views)",
+          "url": "https://x.com/haobinz03/status/2124610568665628689"
         },
         {
-          "name": "ViralRemix: Are You Hungry? I Can Cook",
-          "url": "https://viralremix.org/are-you-hungry-i-can-cook"
+          "name": "X / @parqueer (BTS military-era version)",
+          "url": "https://x.com/parqueer/status/2124794108552311167"
         },
         {
-          "name": "TikTok / @itsnalte (sound)",
-          "url": "https://www.tiktok.com/@itsnalte/video/7703433068304026888"
+          "name": "X / @Heesaurus1009 (ENHYPEN version)",
+          "url": "https://x.com/Heesaurus1009/status/2124803644931633592"
+        },
+        {
+          "name": "X News: 'I was your age once' mom meme story",
+          "url": "https://x.com/i/trending/2124806792870047924"
         }
       ],
-      "first_seen": "2026-11-05",
-      "score": 55.8,
+      "first_seen": "2026-11-20",
+      "score": 57.8,
       "sources": [
-        "TikTok"
+        "X"
       ],
-      "notes": "Nov 23 ~12:02 AM PT new-day rebuild (no repeats from Nov 22 daily): CapCut edit posted by TikToker @nupi5701 Nov 5 9:37 AM PT; 1.2M views / 95.9K likes / 27.3K shares per TikTok's public counts at ~12:02 AM PT Nov 23. A cut-out tabby cat asks 'Are you hungry?' with an emoji fist holding a frying pan, then bobs behind a cartoon stove. Sound is @itsnalte's original audio; ViralRemix reported the 'are you hungry?' CapCut template (posted Nov 1) at about 617K uses on Nov 21, with remakes by @book1210 and @ar.te23. No people; nothing sensitive.",
-      "name": "Are You Hungry? I Can Cook!"
+      "notes": "Nov 24 ~1 AM PT new-day rebuild (from the Nov 23 safety-prescreened daily pool): @fawnklore posted the clip Nov 19 7:27 PM PT with the Portuguese caption '\"eu ja tive sua idade\" mãe vc nunca teve que lidar com o disband do loona' (191K views / 5.4K likes per X's public counts read ~12:59 AM PT Nov 24). An adult comedian in a long black wig and coral top plays a mom talking to camera on a balcony. English fandom X copied the format Nov 22-23: @haobinz03 (ZB1, 91K views), @juanidntt, @Heesaurus1009 (ENHYPEN), @parqueer (BTS military era), all read via X API Nov 24; X News covered it (2124806792870047924, per the Nov 23 pool read). The skit circulates as the 'Sandra Belissima' character; the Nov 23 pool notes tie the performer to the comedy duo Dois por Todos (dois_portodos on Instagram) per a 2025 Folha F5 article, but the exact original reel was not located, so MemeStand credits the caption post that started the copies.",
+      "name": "I Was Your Age Once (Mom, You Never Had to Deal With...)"
     }
   ],
   "weekly": [

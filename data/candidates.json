@@ -1,6 +1,102 @@
 {
-  "as_of": "2026-11-23",
+  "as_of": "2026-11-24",
   "candidates": [
+    {
+      "id": "we-felt-the-mog-across-the-gym",
+      "name": "We Felt the Mog Across the Gym",
+      "title": "'WE FELT THE MOG ALL THE WAY ACROSS THE GYM': A BARISTA'S LIP-SYNC TO THE LINE BECOMES TIKTOK'S SOUND FOR GETTING OUT-DRESSED, AND 'I FELT THE MOG' TURNS INTO X SLANG",
+      "source_url": "https://www.tiktok.com/@o.livi444/video/7710240077061917966",
+      "source_name": "TikTok / @o.livi444",
+      "image_url": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/o4frjeRAE0DA2AtEzRFaMEAoDJAqIgCjE0AS9A~tplv-tiktokx-origin.image?dr=9636&x-expires=1795683600&x-signature=Ekp%2B5D5yOvkY9cut2%2BttQ1wymao%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+      "first_seen": "2026-11-20",
+      "also": [
+        {
+          "name": "TikTok / @o.livi444 (1.3M views)",
+          "url": "https://www.tiktok.com/@o.livi444/video/7710240077061917966"
+        },
+        {
+          "name": "X / @gpt_alex ('I felt the mog')",
+          "url": "https://x.com/gpt_alex/status/2123466790894280710"
+        },
+        {
+          "name": "X / @zinfian ('I felt the mog')",
+          "url": "https://x.com/zinfian/status/2123509808833962030"
+        }
+      ],
+      "ev": {
+        "tiktok": {
+          "url": "https://www.tiktok.com/@o.livi444/video/7710240077061917966",
+          "views": 1300000,
+          "likes": 206600,
+          "author": "@o.livi444",
+          "posted": "2026-11-20",
+          "checked": "2026-11-24",
+          "via": "TikTok post page (tools/fetch_social.py, read ~12:59 AM PT Nov 24)"
+        },
+        "platforms": [
+          "TikTok",
+          "X"
+        ]
+      },
+      "notes": "Nov 24 ~1 AM PT new-day rebuild (from the Nov 23 safety-prescreened daily pool): TikToker liv (@o.livi444) lip-syncs the audio line 'we felt the mog like all the way across the gym, to the point where I just left' in her work fleece, captioned 'when a girl walks into my job wearing the perfect slouchy sweater ... while i'm in my chud work uniform' (posted Nov 20; 1.3M views / 206.6K likes per TikTok's public counts read ~12:59 AM PT Nov 24). Other creators reuse the sound for being out-dressed or outclassed; the largest version read has 3.0M views. On X, 'I felt the mog' became a stock reply (@evanbolzo and @landoful Nov 17, @gpt_alex and @zinfian Nov 19, read via X API Nov 24). The audio is a TikTok original sound; who first said the line is not documented, so MemeStand credits the video poster. Self-deprecating, nobody mocked.",
+      "first_seen_basis": "TikTok post by @o.livi444, 2026-11-20 (TikTok page)",
+      "credit": "posted by @o.livi444 on TikTok",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "i-was-your-age-once-mom",
+      "name": "I Was Your Age Once (Mom, You Never Had to Deal With...)",
+      "title": "'I WAS YOUR AGE ONCE' / 'MOM, YOU NEVER HAD TO DEAL WITH ___': FANDOM X PAIRS A WIG-WEARING COMEDIAN'S MOM SKIT WITH THE FAN HEARTBREAKS MOM NEVER FACED, FROM LOONA'S DISBANDMENT TO THE BTS MILITARY ERA",
+      "source_url": "https://x.com/fawnklore/status/2123619211255980306",
+      "source_name": "X @fawnklore",
+      "image_url": "https://pbs.twimg.com/amplify_video_thumb/2113621792745000960/img/IZv7W2otCoIIJrMG.jpg",
+      "first_seen": "2026-11-20",
+      "also": [
+        {
+          "name": "X / @haobinz03 (ZB1 version, 91K views)",
+          "url": "https://x.com/haobinz03/status/2124610568665628689"
+        },
+        {
+          "name": "X / @parqueer (BTS military-era version)",
+          "url": "https://x.com/parqueer/status/2124794108552311167"
+        },
+        {
+          "name": "X / @Heesaurus1009 (ENHYPEN version)",
+          "url": "https://x.com/Heesaurus1009/status/2124803644931633592"
+        },
+        {
+          "name": "X News: 'I was your age once' mom meme story",
+          "url": "https://x.com/i/trending/2124806792870047924"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/fawnklore/status/2123619211255980306",
+          "views": 191079,
+          "likes": 5377,
+          "checked": "2026-11-24",
+          "via": "X API (read ~12:59 AM PT Nov 24)"
+        },
+        "x_news": true,
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 24 ~1 AM PT new-day rebuild (from the Nov 23 safety-prescreened daily pool): @fawnklore posted the clip Nov 19 7:27 PM PT with the Portuguese caption '\"eu ja tive sua idade\" mãe vc nunca teve que lidar com o disband do loona' (191K views / 5.4K likes per X's public counts read ~12:59 AM PT Nov 24). An adult comedian in a long black wig and coral top plays a mom talking to camera on a balcony. English fandom X copied the format Nov 22-23: @haobinz03 (ZB1, 91K views), @juanidntt, @Heesaurus1009 (ENHYPEN), @parqueer (BTS military era), all read via X API Nov 24; X News covered it (2124806792870047924, per the Nov 23 pool read). The skit circulates as the 'Sandra Belissima' character; the Nov 23 pool notes tie the performer to the comedy duo Dois por Todos (dois_portodos on Instagram) per a 2025 Folha F5 article, but the exact original reel was not located, so MemeStand credits the caption post that started the copies.",
+      "first_seen_basis": "X post by @fawnklore, 2026-11-20T03:27Z",
+      "credit": "posted by @fawnklore on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
     {
       "id": "we-regret-to-inform-you-bobcat",
       "name": "We Regret to Inform You (Bob-Haircut Cat)",
@@ -40,7 +136,6 @@
       "first_seen_basis": "X post by @levyngrey, 2026-11-22T18:01Z",
       "credit": "posted by @levyngrey on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -85,7 +180,6 @@
       "first_seen_basis": "X post by @turbochis, 2026-11-22T05:42Z",
       "credit": "posted by @turbochis on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -130,7 +224,6 @@
       "first_seen_basis": "X post by @xxxtacyLux, 2026-11-22T11:55Z",
       "credit": "posted by @xxxtacyLux on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -175,7 +268,6 @@
       "first_seen_basis": "X post by @motheinsect, 2026-11-22T17:28Z",
       "credit": "posted by @motheinsect on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -222,7 +314,6 @@
       "first_seen_basis": "TikTok post by @andre.g638, 2026-11-20T03:20Z (TikTok page)",
       "credit": "posted by @andre.g638 on TikTok",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -268,7 +359,6 @@
       "first_seen_basis": "TikTok post by @catvloge365, 2026-11-10T05:46Z (TikTok page)",
       "credit": "posted by @catvloge365 on TikTok",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -314,7 +404,6 @@
       "first_seen_basis": "TikTok post by @nupi5701, 2026-11-05T17:37Z (TikTok page)",
       "credit": "posted by @nupi5701 on TikTok",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -345,19 +434,20 @@
       "ev": {
         "x": {
           "url": "https://x.com/ngnchiikawa/status/2124156927181791413",
-          "views": 21736124,
-          "likes": 490073,
-          "checked": "2026-11-22",
-          "via": "X API (read ~6:58 AM PT Nov 22)"
+          "views": 24241303,
+          "likes": 514728,
+          "checked": "2026-11-24",
+          "via": "X API (read ~12:59 AM PT Nov 24)"
         },
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 22 ~12:55 AM PT new-day rebuild (no repeats from Nov 21 daily): Chiikawa comic page by its creator Nagano (@ngnchiikawa), posted Nov 21 7:04 AM PT; Hachiware's new camera fires a beam with the sound effect 'ドゴォッ'. 17.19M views / 463.8K likes / 14.6K quotes per X's public counts at ~12:55 AM PT Nov 22. 'ドゴォッ' trended in Japan Nov 21; independent posts reuse it as a punchline (@ganma8446 declared 11/22 'Dogoo Day' with a drawing, @ibuki_0603 put it into the Chiikawa song lyrics, @ohayoo2018 and others). Cartoon characters only; no injury shown.",
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild (no repeats from Nov 21 daily): Chiikawa comic page by its creator Nagano (@ngnchiikawa), posted Nov 21 7:04 AM PT; Hachiware's new camera fires a beam with the sound effect 'ドゴォッ'. 17.19M views / 463.8K likes / 14.6K quotes per X's public counts at ~12:55 AM PT Nov 22. 'ドゴォッ' trended in Japan Nov 21; independent posts reuse it as a punchline (@ganma8446 declared 11/22 'Dogoo Day' with a drawing, @ibuki_0603 put it into the Chiikawa song lyrics, @ohayoo2018 and others). Cartoon characters only; no injury shown. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
       "first_seen_basis": "X post by @ngnchiikawa, 2026-11-21T15:04Z",
       "credit": "posted by @ngnchiikawa on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -394,20 +484,21 @@
       "ev": {
         "x": {
           "url": "https://x.com/d_foubert/status/2123715278693417055",
-          "views": 2500458,
-          "likes": 2957,
-          "checked": "2026-11-22",
-          "via": "X API (read ~6:58 AM PT Nov 22)"
+          "views": 2602925,
+          "likes": 3014,
+          "checked": "2026-11-24",
+          "via": "X API (read ~12:59 AM PT Nov 24)"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: text post by Daniel Foubert (@d_foubert), Nov 20 1:49 AM PT; 2.45M views / 2.9K likes / 922 quotes per X's public counts at ~12:55 AM PT Nov 22. People rewrite the list as a copypasta (@TwiceHooted owl version, @AdrianFPascal, @ramzan_a95, @KySquirrel_90, @sarefilia, @actualllyandrew Minecraft, @lorrik96 Genshin) Nov 20-21; X News 2123844393102917635. The joke is the rewrites, not a pile-on on the poster. Shown as a self-rendered attributed post card of his post text.",
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: text post by Daniel Foubert (@d_foubert), Nov 20 1:49 AM PT; 2.45M views / 2.9K likes / 922 quotes per X's public counts at ~12:55 AM PT Nov 22. People rewrite the list as a copypasta (@TwiceHooted owl version, @AdrianFPascal, @ramzan_a95, @KySquirrel_90, @sarefilia, @actualllyandrew Minecraft, @lorrik96 Genshin) Nov 20-21; X News 2123844393102917635. The joke is the rewrites, not a pile-on on the poster. Shown as a self-rendered attributed post card of his post text. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
       "first_seen_basis": "X post by @d_foubert, 2026-11-20T09:49Z",
       "credit": "posted by @d_foubert on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -438,22 +529,23 @@
       "ev": {
         "tiktok": {
           "url": "https://www.tiktok.com/@uekan2b/video/7707121495671147797",
-          "views": 6200000,
-          "likes": 837700,
+          "views": 6400000,
+          "likes": 853000,
           "author": "@uekan2b",
           "posted": "2026-11-12",
-          "checked": "2026-11-22",
-          "via": "TikTok post page (tools/fetch_social.py, read ~12:55 AM PT Nov 22)"
+          "checked": "2026-11-24",
+          "via": "TikTok post page (tools/fetch_social.py, read ~12:59 AM PT Nov 24)"
         },
         "platforms": [
           "TikTok",
           "X"
         ]
       },
-      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: AI-generated short film by TikTok creator @uekan2b (UEKAN), posted Nov 12, caption '13年間、ありがとう。' (thank you for 13 years); 6.2M views / 837.7K likes per TikTok's public counts at ~12:55 AM PT Nov 22. A boy meets GTA V's Michael, Franklin and Trevor in 2013 and says goodbye as an adult in 2026. Around GTA VI's Nov 19 launch the format surged: CapCut template remakes with people's own faces (@lucidvicegta67, @gta6gamplay, @b3cause1, @hickey4014 on TikTok) and versions on X Nov 20-21 (@Mila_zeem). AI-made; no violence. Minor check (Nov 22): the young character is AI-generated and shown growing up into an adult; no real child is the subject, nothing sensitive. Thumbnail is a still frame from the creator's own TikTok video.",
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: AI-generated short film by TikTok creator @uekan2b (UEKAN), posted Nov 12, caption '13年間、ありがとう。' (thank you for 13 years); 6.2M views / 837.7K likes per TikTok's public counts at ~12:55 AM PT Nov 22. A boy meets GTA V's Michael, Franklin and Trevor in 2013 and says goodbye as an adult in 2026. Around GTA VI's Nov 19 launch the format surged: CapCut template remakes with people's own faces (@lucidvicegta67, @gta6gamplay, @b3cause1, @hickey4014 on TikTok) and versions on X Nov 20-21 (@Mila_zeem). AI-made; no violence. Minor check (Nov 22): the young character is AI-generated and shown growing up into an adult; no real child is the subject, nothing sensitive. Thumbnail is a still frame from the creator's own TikTok video. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
       "first_seen_basis": "TikTok post by @uekan2b, 2026-11-12 (TikTok page)",
       "credit": "posted by @uekan2b on TikTok",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -486,20 +578,21 @@
       "ev": {
         "x": {
           "url": "https://x.com/motolkio/status/2124174408491393025",
-          "views": 975098,
-          "likes": 65878,
-          "checked": "2026-11-22",
-          "via": "X API (read ~6:58 AM PT Nov 22); screenshot of the Tumblr post shared by @motolkio"
+          "views": 1275072,
+          "likes": 73035,
+          "checked": "2026-11-24",
+          "via": "X API (read ~12:59 AM PT Nov 24); screenshot of the Tumblr post shared by @motolkio"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: text post by Tumblr user trigona-necrophaga (Feb 24 2026, 52K notes per the Tumblr page on Nov 21). It took off on X Nov 21 when @motolkio posted a screenshot (8:13 AM PT): 837.4K views / 60.5K likes / 2.1K quotes per X's public counts at ~12:55 AM PT Nov 22. People pair the line with characters (Naruto/Sasuke, Draco, Leon/Claire), edit new avatars behind the text (@NawtsoGolden) and make 'unstable best friend' variants; X News 2124266173327880607. Credited to the Tumblr author; image is the shared screenshot.",
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: text post by Tumblr user trigona-necrophaga (Feb 24 2026, 52K notes per the Tumblr page on Nov 21). It took off on X Nov 21 when @motolkio posted a screenshot (8:13 AM PT): 837.4K views / 60.5K likes / 2.1K quotes per X's public counts at ~12:55 AM PT Nov 22. People pair the line with characters (Naruto/Sasuke, Draco, Leon/Claire), edit new avatars behind the text (@NawtsoGolden) and make 'unstable best friend' variants; X News 2124266173327880607. Credited to the Tumblr author; image is the shared screenshot. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
       "first_seen_basis": "Tumblr post by trigona-necrophaga 2026-02-24; X spread from @motolkio 2026-11-21T16:13Z",
       "credit": "trigona-necrophaga on Tumblr",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -579,20 +672,21 @@
       "ev": {
         "x": {
           "url": "https://x.com/moondustlynx/status/2123966253588992349",
-          "views": 796983,
-          "likes": 16829,
-          "checked": "2026-11-22",
-          "via": "X API (read ~6:58 AM PT Nov 22); most-viewed version found (credited earliest found @mikdunno: 128.8K views / 8.1K likes)"
+          "views": 1077345,
+          "likes": 17781,
+          "checked": "2026-11-24",
+          "via": "X API (read ~12:59 AM PT Nov 24); most-viewed version found (credited earliest found @mikdunno: 139.2K views / 8.3K likes)"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: same-day remix chain on Brazilian X. Earliest found is @mikdunno (Nov 19 3:10 PM PT, '\"amo meu curso\" / eu quando chega email de atualização no sigaa'; 128.8K views / 8.1K likes); quote-chain versions Nov 20-22 by @carameloando (260.7K), @moondustlynx (design, 637.2K views / 16.1K likes / 1.2K quotes), @lauusl (344.9K), @julpiterverso (174.2K), @baekarte (98.1K), and English 'i love my major' versions, all per X's public counts at ~12:55 AM PT Nov 22; X News 2124380369747083364. The 6s clip shows a performer in a wig and tape measure facepalming at a phone in a sewing room (a staged skit); who made the clip is not documented.",
+      "notes": "Nov 22 ~12:55 AM PT new-day rebuild: same-day remix chain on Brazilian X. Earliest found is @mikdunno (Nov 19 3:10 PM PT, '\"amo meu curso\" / eu quando chega email de atualização no sigaa'; 128.8K views / 8.1K likes); quote-chain versions Nov 20-22 by @carameloando (260.7K), @moondustlynx (design, 637.2K views / 16.1K likes / 1.2K quotes), @lauusl (344.9K), @julpiterverso (174.2K), @baekarte (98.1K), and English 'i love my major' versions, all per X's public counts at ~12:55 AM PT Nov 22; X News 2124380369747083364. The 6s clip shows a performer in a wig and tape measure facepalming at a phone in a sewing room (a staged skit); who made the clip is not documented. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
       "first_seen_basis": "X post by @mikdunno, 2026-11-19T23:10Z (earliest found)",
       "credit": "posted by @mikdunno on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -705,19 +799,20 @@
       "ev": {
         "x": {
           "url": "https://x.com/rantaro0802/status/2123411379659178038",
-          "views": 7298093,
-          "likes": 80823,
-          "checked": "2026-11-23",
-          "via": "X API (read ~12:02 AM PT Nov 23)"
+          "views": 7334869,
+          "likes": 80944,
+          "checked": "2026-11-24",
+          "via": "X API (read ~12:59 AM PT Nov 24)"
         },
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 21 7 AM-slot main discovery: photo posted by shiba owner @rantaro0802 (柴犬★蘭) Nov 19 5:41 AM PT, caption '毛虫に出会った柴犬' (a shiba who met a caterpillar); 6.59M views / 76.8K likes / 650 quotes per X's public counts at ~7:00 AM PT Nov 21. Japanese X named the pose 'ポータル犬' (Portal Dog): @koyadeko's animated portal edit Nov 21 (97K views / 6.2K likes), parody drawings/photos by @wasabiken0429 and @omzm_shark Nov 20-21, plus quote-tweet remixes. Owner's own photo of their dog; nothing sexual or mocking.",
+      "notes": "Nov 21 7 AM-slot main discovery: photo posted by shiba owner @rantaro0802 (柴犬★蘭) Nov 19 5:41 AM PT, caption '毛虫に出会った柴犬' (a shiba who met a caterpillar); 6.59M views / 76.8K likes / 650 quotes per X's public counts at ~7:00 AM PT Nov 21. Japanese X named the pose 'ポータル犬' (Portal Dog): @koyadeko's animated portal edit Nov 21 (97K views / 6.2K likes), parody drawings/photos by @wasabiken0429 and @omzm_shark Nov 20-21, plus quote-tweet remixes. Owner's own photo of their dog; nothing sexual or mocking. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
       "first_seen_basis": "X post by @rantaro0802, 2026-11-19T13:41:38Z",
       "credit": "posted by @rantaro0802 on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -764,7 +859,6 @@
       "first_seen_basis": "TikTok post by @mattfletcher14, 2026-11-09 (TikTok page)",
       "credit": "posted by @mattfletcher14 on TikTok",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -807,7 +901,6 @@
       "first_seen_basis": "TikTok post by @dai.zee, 2026-11-11 (TikTok page); template @editscc446 2026-11-09",
       "credit": "posted by @dai.zee on TikTok",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -849,7 +942,6 @@
       "first_seen_basis": "Edit format from 2026-11-18 X posts (per KYM); @finkd post 2026-11-20T17:23Z",
       "credit": "posted by @finkd on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -6750,20 +6842,21 @@
       "ev": {
         "x": {
           "url": "https://x.com/hardcatmemes/status/2124255447154889123",
-          "views": 7266214,
-          "likes": 408365,
-          "checked": "2026-11-22",
-          "via": "X API (read ~6:58 AM PT Nov 22)"
+          "views": 11376238,
+          "likes": 477807,
+          "checked": "2026-11-24",
+          "via": "X API (read ~12:59 AM PT Nov 24)"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 22 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:58 AM PT): photo of a zoo tiger lying in a housecat 'loaf' posted by @hardcatmemes Nov 21 1:35 PM PT with 'If tigers are so dangerous, explain this'; 7.27M views / 408K likes / 3.0K quotes. Spread in the last 24h: @AnbarBaddie 'i just found out that tigers loaf' (1.67M views), @vancology quote thread of other big cats loafing (265K views), the caption reused on other animals' photos (@p1halo, @tinyprettykhj, @ggam_nyang_yi); X News stories 2124408684101128321 and 2124297145264296205. The original photographer is undocumented; credit is the poster. Animal only, no people.",
+      "notes": "Nov 22 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:58 AM PT): photo of a zoo tiger lying in a housecat 'loaf' posted by @hardcatmemes Nov 21 1:35 PM PT with 'If tigers are so dangerous, explain this'; 7.27M views / 408K likes / 3.0K quotes. Spread in the last 24h: @AnbarBaddie 'i just found out that tigers loaf' (1.67M views), @vancology quote thread of other big cats loafing (265K views), the caption reused on other animals' photos (@p1halo, @tinyprettykhj, @ggam_nyang_yi); X News stories 2124408684101128321 and 2124297145264296205. The original photographer is undocumented; credit is the poster. Animal only, no people. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
       "first_seen_basis": "X post by @hardcatmemes, 2026-11-21T21:35Z",
       "credit": "posted by @hardcatmemes on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -6800,20 +6893,21 @@
       "ev": {
         "x": {
           "url": "https://x.com/soupsizedocean/status/2123925246411428041",
-          "views": 945967,
-          "likes": 90258,
-          "checked": "2026-11-22",
-          "via": "X API (read ~6:58 AM PT Nov 22)"
+          "views": 1118710,
+          "likes": 101802,
+          "checked": "2026-11-24",
+          "via": "X API (read ~12:59 AM PT Nov 24)"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 22 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:58 AM PT): text post by xenia (@soupsizedocean) Nov 20 3:43 PM PT; 946K views / 90.3K likes / 1.1K quotes. Verbatim copies swapping the game spread Nov 21-22 (@EveryTaye Cooking Mama, @momoicore Google Snake, @doctorherssen chess, others with Hay Day and Valorant); X News 2124310005319115038. Some replies swap in crude sexual lines; those are not shown or quoted. Shown as a self-rendered attributed post card of her post text.",
+      "notes": "Nov 22 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:58 AM PT): text post by xenia (@soupsizedocean) Nov 20 3:43 PM PT; 946K views / 90.3K likes / 1.1K quotes. Verbatim copies swapping the game spread Nov 21-22 (@EveryTaye Cooking Mama, @momoicore Google Snake, @doctorherssen chess, others with Hay Day and Valorant); X News 2124310005319115038. Some replies swap in crude sexual lines; those are not shown or quoted. Shown as a self-rendered attributed post card of her post text. Nov 24 ~1 AM PT new-day rebuild (no repeats from Nov 23 daily): counts re-read ~12:59 AM PT Nov 24.",
       "first_seen_basis": "X post by @soupsizedocean, 2026-11-20T23:43Z",
       "credit": "posted by @soupsizedocean on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
