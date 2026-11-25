@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://memestand.com/</loc><lastmod>2026-11-25T08:10:00-08:00</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-<url><loc>https://memestand.com/top-memes-today/</loc><lastmod>2026-11-25T08:10:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-<url><loc>https://memestand.com/trending-memes-this-week/</loc><lastmod>2026-11-25T08:10:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-<url><loc>https://memestand.com/best-memes-this-month/</loc><lastmod>2026-11-25T08:10:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-<url><loc>https://memestand.com/archive/</loc><lastmod>2026-11-25T08:10:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.6</priority></url>
+<url><loc>https://memestand.com/</loc><lastmod>2026-11-25T08:32:00-08:00</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://memestand.com/top-memes-today/</loc><lastmod>2026-11-25T08:32:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://memestand.com/trending-memes-this-week/</loc><lastmod>2026-11-25T08:32:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://memestand.com/best-memes-this-month/</loc><lastmod>2026-11-25T08:32:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://memestand.com/archive/</loc><lastmod>2026-11-25T08:32:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/about.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
 <url><loc>https://memestand.com/terms.html</loc><changefreq>yearly</changefreq><priority>0.1</priority></url>
 <url><loc>https://memestand.com/privacy.html</loc><changefreq>yearly</changefreq><priority>0.1</priority></url>
 <url><loc>https://memestand.com/dmca.html</loc><changefreq>yearly</changefreq><priority>0.1</priority></url>
-<url><loc>https://memestand.com/archive/2026-11-25.html</loc><lastmod>2026-11-25T08:10:00-08:00</lastmod><changefreq>never</changefreq><priority>0.5</priority></url>
+<url><loc>https://memestand.com/archive/2026-11-25.html</loc><lastmod>2026-11-25T08:32:00-08:00</lastmod><changefreq>never</changefreq><priority>0.5</priority></url>
 <url><loc>https://memestand.com/archive/2026-11-24.html</loc><lastmod>2026-11-24T23:50:00-08:00</lastmod><changefreq>never</changefreq><priority>0.5</priority></url>
 <url><loc>https://memestand.com/archive/2026-11-23.html</loc><lastmod>2026-11-23T23:57:00-08:00</lastmod><changefreq>never</changefreq><priority>0.5</priority></url>
 <url><loc>https://memestand.com/archive/2026-11-22.html</loc><lastmod>2026-11-22T22:52:00-08:00</lastmod><changefreq>never</changefreq><priority>0.5</priority></url>
@@ -34,10 +34,10 @@
 <url><loc>https://memestand.com/archive/2026-11-03.html</loc><lastmod>2026-11-03T06:21:00-08:00</lastmod><changefreq>never</changefreq><priority>0.5</priority></url>
 <url><loc>https://memestand.com/archive/2026-11-02.html</loc><lastmod>2026-11-02T06:09:00-08:00</lastmod><changefreq>never</changefreq><priority>0.5</priority></url>
 <url><loc>https://memestand.com/archive/2026-11-01.html</loc><lastmod>2026-11-01T15:56:00-08:00</lastmod><changefreq>never</changefreq><priority>0.5</priority></url>
-<url><loc>https://memestand.com/memes/</loc><lastmod>2026-11-25T08:10:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://memestand.com/meme-index/</loc><lastmod>2026-11-25T08:10:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://memestand.com/embed/</loc><lastmod>2026-11-25T08:10:00-08:00</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-<url><loc>https://memestand.com/embed/top5.html</loc><lastmod>2026-11-25T08:10:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.3</priority></url>
+<url><loc>https://memestand.com/memes/</loc><lastmod>2026-11-25T08:32:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://memestand.com/meme-index/</loc><lastmod>2026-11-25T08:32:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://memestand.com/embed/</loc><lastmod>2026-11-25T08:32:00-08:00</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+<url><loc>https://memestand.com/embed/top5.html</loc><lastmod>2026-11-25T08:32:00-08:00</lastmod><changefreq>daily</changefreq><priority>0.3</priority></url>
 <url><loc>https://memestand.com/meme/german-guy-names-50-states-map/</loc><lastmod>2026-11-19T00:15:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/volturi-peaceful-life-no-news/</loc><lastmod>2026-11-18T01:04:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/after-work-time-to-relax/</loc><lastmod>2026-11-21T17:13:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -113,6 +113,7 @@
 <url><loc>https://memestand.com/meme/huss-huss-huss-in-this-town/</loc><lastmod>2026-11-20T01:05:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/i-got-so-mad/</loc><lastmod>2026-11-23T09:20:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/i-was-your-age-once-mom/</loc><lastmod>2026-11-24T01:00:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+<url><loc>https://memestand.com/meme/i-wish-for-straight-teeth/</loc><lastmod>2026-11-25T08:50:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/im-so-hungry-i-could-eat-an-oomf/</loc><lastmod>2026-11-23T07:00:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/im-so-sorry-trend/</loc><lastmod>2026-11-07T22:51:54-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/if-tigers-are-so-dangerous-tiger-loaf/</loc><lastmod>2026-11-22T07:05:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -122,6 +123,7 @@
 <url><loc>https://memestand.com/meme/crack-a-monster/</loc><lastmod>2026-11-09T14:17:26-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/jensen-huang-spy/</loc><lastmod>2026-11-10T13:20:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/jiren-dancing/</loc><lastmod>2026-11-07T22:51:54-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+<url><loc>https://memestand.com/meme/jump-rope-toy-soldiers/</loc><lastmod>2026-11-25T08:50:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/just-mention-india/</loc><lastmod>2026-11-07T22:51:54-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/kangaroo-dad-jacked/</loc><lastmod>2026-11-19T07:05:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/ken-paxton-salsa-made-in-new-york-city/</loc><lastmod>2026-11-07T22:51:54-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -141,6 +143,7 @@
 <url><loc>https://memestand.com/meme/megachile-kii/</loc><lastmod>2026-11-23T07:00:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/microsoft-364/</loc><lastmod>2026-11-23T09:20:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/mini-producer/</loc><lastmod>2026-11-07T22:51:54-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+<url><loc>https://memestand.com/meme/mom-im-gay-ok-mom-i-hate/</loc><lastmod>2026-11-25T08:50:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/monkey-doomscrolling/</loc><lastmod>2026-11-07T22:51:54-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/my-devoted-but-dangerously-unstable-knight/</loc><lastmod>2026-11-22T01:00:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://memestand.com/meme/needed-a-kiss-today/</loc><lastmod>2026-11-14T06:25:00-08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>

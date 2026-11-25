@@ -211,6 +211,18 @@
       "source_url": "https://x.com/soupsizedocean/status/2123925246411428041",
       "source_asset": "memestand-video/pool-media/2026-11-22/gta-6-profound-intellectual-games-sudoku/post-card.jpg",
       "prepared": "Self-rendered attributed post card made Nov 22 2026 (~5:20 AM PT fresh-pool build) in the make_postcard layout from the public post read via the X API: full text, display name (xenia), handle, and the author's own X avatar; text re-checked against the X API at ~6:58 AM PT Nov 22 (unchanged). No MemeStand header. Not a screenshot of X."
+    },
+    "mom-im-gay-ok-mom-i-hate": {
+      "ids": [
+        "mom-im-gay-ok-mom-i-hate"
+      ],
+      "file": "images/post-cards/mom-im-gay-ok-mom-i-hate.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "“Mom im gay” ok\n“Mom im lesbian” ok\n“Mom im straight” ok\n\n“Mom I hate Kasane Teto\"",
+      "source_url": "https://x.com/G0VannyG0/status/2121835096378409182",
+      "source_asset": "memestand-video/cache/2026-11-25/mom-im-gay-ok-mom-i-hate-card.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 25 2026 (~8:45 AM PT main rebuild) with memestand-video/make_postcard.py from the public post read via the X API: full post text (the attached video is not reproduced), handle, display name and the author's own X avatar; the leading math-symbol character and emoji in the display name are left out because the card font cannot draw them. No MemeStand header. Not a screenshot of X; text unaltered."
     }
   }
 }
