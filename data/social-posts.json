@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T06:59:46-08:00",
+  "updated": "2026-11-26T07:58:20-08:00",
   "profiles": {
     "x": "https://x.com/MemeStandHQ",
     "tiktok": "https://www.tiktok.com/@memestandhq"
@@ -102,6 +102,18 @@
         "url": "https://x.com/MemeStandHQ/status/2124166265015087265",
         "buffer_post_id": "6b01bb9ad864a011055708f9",
         "sent_at": "2026-11-21T07:41:17-08:00"
+      }
+    },
+    "cat-squad-wizard-cat-gif": {
+      "x": {
+        "url": "https://x.com/MemeStandHQ/status/2125966972043100242",
+        "buffer_post_id": "6b0848a41e13bd67eef3e1f9",
+        "sent_at": "2026-11-26T06:56:39-08:00"
+      },
+      "tiktok": {
+        "url": "https://www.tiktok.com/@memestandhq/video/7712494216265420046",
+        "buffer_post_id": "6b0848a41e13bd67eef3e24f",
+        "sent_at": "2026-11-26T06:57:17-08:00"
       }
     },
     "chiikawa-dogoo-camera-beam": {
@@ -702,6 +714,13 @@
     "seatbelt-dog": {
       "x": {
         "url": "https://x.com/MemeStandHQ/status/2119451928585208010"
+      }
+    },
+    "singing-birthday-cat": {
+      "x": {
+        "url": "https://x.com/MemeStandHQ/status/2125981564668366922",
+        "buffer_post_id": "6b0856399f3ae7d1657bb207",
+        "sent_at": "2026-11-26T07:54:38-08:00"
       }
     },
     "sleepy-office-monkey": {
