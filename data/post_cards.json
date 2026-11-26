@@ -223,6 +223,18 @@
       "source_url": "https://x.com/G0VannyG0/status/2121835096378409182",
       "source_asset": "memestand-video/cache/2026-11-25/mom-im-gay-ok-mom-i-hate-card.jpg",
       "prepared": "Self-rendered attributed post card made Nov 25 2026 (~8:45 AM PT main rebuild) with memestand-video/make_postcard.py from the public post read via the X API: full post text (the attached video is not reproduced), handle, display name and the author's own X avatar; the leading math-symbol character and emoji in the display name are left out because the card font cannot draw them. No MemeStand header. Not a screenshot of X; text unaltered."
+    },
+    "ai-labs-solved-updog": {
+      "ids": [
+        "ai-labs-solved-updog"
+      ],
+      "file": "images/post-cards/ai-labs-solved-updog.jpg",
+      "kind": "self-rendered attributed post card",
+      "native_screenshot": false,
+      "quote": "This is unconfirmed, but some people inside the AI labs are suggesting they might have solved updog.",
+      "source_url": "https://x.com/ZackKorman/status/2125644125483553045",
+      "source_asset": "memestand-video/cache/2026-11-26/ai-labs-solved-updog-card.jpg",
+      "prepared": "Self-rendered attributed post card made Nov 26 2026 (~1:15 AM PT new-day rebuild) with memestand-video/make_postcard.py from the public post read via the X API: full post text, handle, display name and the author's own X avatar. No MemeStand header. Not a screenshot of X; text unaltered."
     }
   }
 }
