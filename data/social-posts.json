@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T08:50:48-08:00",
+  "updated": "2026-11-26T09:50:37-08:00",
   "profiles": {
     "x": "https://x.com/MemeStandHQ",
     "tiktok": "https://www.tiktok.com/@memestandhq"
@@ -721,6 +721,11 @@
         "url": "https://x.com/MemeStandHQ/status/2125981564668366922",
         "buffer_post_id": "6b0856399f3ae7d1657bb207",
         "sent_at": "2026-11-26T07:54:38-08:00"
+      },
+      "tiktok": {
+        "url": "https://www.tiktok.com/@memestandhq/video/7712527690510683423",
+        "buffer_post_id": "6b0867093accdac92ce40ec3",
+        "sent_at": "2026-11-26T09:07:45-08:00"
       }
     },
     "sleepy-office-monkey": {
