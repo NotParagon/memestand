@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T06:53:51-08:00",
+  "updated": "2026-11-27T07:52:10-08:00",
   "profiles": {
     "x": "https://x.com/MemeStandHQ",
     "tiktok": "https://www.tiktok.com/@memestandhq"
@@ -335,6 +335,18 @@
       "tiktok": {
         "url": "https://www.tiktok.com/@memestandhq/video/7706555740630043917",
         "sent_at": "2026-11-10T14:53:17.258Z"
+      }
+    },
+    "glove-knock-dunpig-effect": {
+      "x": {
+        "url": "https://x.com/MemeStandHQ/status/2126328941476524376",
+        "buffer_post_id": "6b0999be34d224b14a907b6a",
+        "sent_at": "2026-11-27T06:54:59-08:00"
+      },
+      "tiktok": {
+        "url": "https://www.tiktok.com/@memestandhq/video/7712864730393758989",
+        "buffer_post_id": "6b0999c918c8c6749bf2e1ae",
+        "sent_at": "2026-11-27T06:55:46-08:00"
       }
     },
     "goat-tower-single-people": {
