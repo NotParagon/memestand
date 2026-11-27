@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T17:56:47-08:00",
+  "updated": "2026-11-26T18:58:18-08:00",
   "profiles": {
     "x": "https://x.com/MemeStandHQ",
     "tiktok": "https://www.tiktok.com/@memestandhq"
@@ -38,6 +38,18 @@
         "url": "https://x.com/MemeStandHQ/status/2123576958462066919",
         "buffer_post_id": "6aff96c4d5f8acdd0d5b9b11",
         "sent_at": "2026-11-19T16:39:36-08:00"
+      }
+    },
+    "asking-claude-if-your-idea-is-good": {
+      "x": {
+        "url": "https://x.com/MemeStandHQ/status/2126132762050445416",
+        "buffer_post_id": "6b08e30d9131f7416c653b1d",
+        "sent_at": "2026-11-26T17:55:27-08:00"
+      },
+      "tiktok": {
+        "url": "https://www.tiktok.com/@memestandhq/video/7712663927729048845",
+        "buffer_post_id": "6b08e30e9131f7416c653b6a",
+        "sent_at": "2026-11-26T17:56:08-08:00"
       }
     },
     "babe-see-i-even-made-a-tweet-about-it": {
@@ -653,6 +665,13 @@
         "url": "https://www.tiktok.com/@memestandhq/video/7711143595037707534",
         "buffer_post_id": "6b037c4ed5eabfb8cceb19c9",
         "sent_at": "2026-11-22T15:36:23-08:00"
+      }
+    },
+    "pord-third-temperature": {
+      "x": {
+        "url": "https://x.com/MemeStandHQ/status/2126145210400833900",
+        "buffer_post_id": "6b08eea51fd46e62e7077f82",
+        "sent_at": "2026-11-26T18:44:54-08:00"
       }
     },
     "portal-dog-shiba-meets-caterpillar": {
