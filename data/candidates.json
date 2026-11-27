@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-26",
+  "as_of": "2026-11-27",
   "candidates": [
     {
       "id": "mom-im-gay-ok-mom-i-hate",
@@ -152,21 +152,22 @@
       "ev": {
         "tiktok": {
           "url": "https://www.tiktok.com/@themichaelbarrymore/video/7711028132249128214",
-          "views": 10700000,
-          "likes": 1800000,
+          "views": 21100000,
+          "likes": 3400000,
           "author": "@themichaelbarrymore",
           "posted": "2026-11-22",
-          "checked": "2026-11-25",
-          "via": "TikTok post page (tools/fetch_social.py, read ~8:36 AM PT Nov 25)"
+          "checked": "2026-11-27",
+          "via": "TikTok post page (tools/fetch_social.py, read ~1:00 AM PT Nov 27)"
         },
         "platforms": [
           "TikTok"
         ]
       },
-      "notes": "Nov 25 main rebuild (~8:36 AM PT; from the safety-prescreened Nov 25 daily pool): TikToker @themichaelbarrymore posted the 14-second skit Nov 22 - he says 'I wish for straight teeth', snaps a yellow toy wand, then 'Wait! I already have straight teeth' and the clip cuts to a black-and-white scream. 10.7M views / 1.8M likes per TikTok's public counts read ~8:36 AM PT Nov 25. Biggest version found, not proven first: Virlo first saw the audio Oct 4 and counts 180 creators posting the format in the 7 days to Nov 25 (0 the week before), e.g. @brryken 5.7M (Nov 21). An adult creator's own skit; nothing unsafe. Thumbnail: a frame from the creator's original video (downloaded for the Nov 24/25 safety-prescreened pool), not an edit.",
+      "notes": "Nov 25 main rebuild (~8:36 AM PT; from the safety-prescreened Nov 25 daily pool): TikToker @themichaelbarrymore posted the 14-second skit Nov 22 - he says 'I wish for straight teeth', snaps a yellow toy wand, then 'Wait! I already have straight teeth' and the clip cuts to a black-and-white scream. 10.7M views / 1.8M likes per TikTok's public counts read ~8:36 AM PT Nov 25. Biggest version found, not proven first: Virlo first saw the audio Oct 4 and counts 180 creators posting the format in the 7 days to Nov 25 (0 the week before), e.g. @brryken 5.7M (Nov 21). An adult creator's own skit; nothing unsafe. Thumbnail: a frame from the creator's original video (downloaded for the Nov 24/25 safety-prescreened pool), not an edit. | Nov 27 ~1:00 AM PT new-day rebuild (no repeats from Nov 26 daily): TikTok counts re-read ~1:00 AM PT Nov 27: 21.1M views / 3.4M likes, up from 10.7M / 1.8M at ~8:36 AM PT Nov 25 (about 10M new views in about 40 hours). Still the fastest-growing format in the list. Recycled from Nov 25's daily list (not on Nov 26's).",
       "first_seen_basis": "TikTok post by @themichaelbarrymore, 2026-11-22 (TikTok page); Virlo first seen Oct 4 2026",
       "credit": "posted by @themichaelbarrymore on TikTok",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -215,7 +216,6 @@
       "first_seen_basis": "X post by @iAl3eez, 2026-11-23T15:35:00Z",
       "credit": "posted by @iAl3eez on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -262,7 +262,6 @@
       "first_seen_basis": "TikTok post by @o.livi444, 2026-11-20 (TikTok page)",
       "credit": "posted by @o.livi444 on TikTok",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -315,7 +314,6 @@
       "first_seen_basis": "X post by @fawnklore, 2026-11-20T03:27Z",
       "credit": "posted by @fawnklore on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -353,25 +351,42 @@
         {
           "name": "X News: armed bob-haired cat comebacks story (Nov 25)",
           "url": "https://x.com/i/trending/2125620512164565198"
+        },
+        {
+          "name": "X / @numanuk (two-cat 'duo' version, Nov 25)",
+          "url": "https://x.com/numanuk/status/2125659173090402443"
+        },
+        {
+          "name": "X / @arusheehee (independent two-cat remake, Nov 26)",
+          "url": "https://x.com/arusheehee/status/2125962195645411604"
+        },
+        {
+          "name": "X News: AI-generated bobcat meme captures chaotic friendships (Nov 26)",
+          "url": "https://x.com/i/trending/2126003738481508468"
+        },
+        {
+          "name": "X News: bob-haired cat with gun sparks absurd meme trend (Nov 26)",
+          "url": "https://x.com/i/trending/2126045301655933056"
         }
       ],
       "ev": {
         "x": {
           "url": "https://x.com/levyngrey/status/2124563930156818845",
-          "views": 5445694,
-          "likes": 253161,
-          "checked": "2026-11-25",
-          "via": "X API (read ~8:28 AM PT Nov 25)"
+          "views": 5899661,
+          "likes": 254453,
+          "checked": "2026-11-27",
+          "via": "X API (read ~12:56 AM PT Nov 27)"
         },
-        "x_news": "https://x.com/i/trending/2125620512164565198",
+        "x_news": "https://x.com/i/trending/2126045301655933056",
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 23 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:52 AM PT): @levyngrey posted a short clip of a CGI cat with a bob haircut firing a cartoon gun (muzzle flash only, no target) Nov 22 10:01 AM PT with \"'We regret to inform you' / You'll regret you informed me\"; 2.98M views / 162K likes / 922 quotes. Copies swapping in other 'sorry' lines spread Nov 22-23 (@ylazy8, @onlyoneXstarr, @itsjolaa, @Ola4089, @Acupoftii___, @Patrickdgenius, @greatguyy_, @Visual_verse1); X News 2124779442203738574. The cat clip's original maker is undocumented (first X upload Nov 20); credit is the caption poster. Nov 25 main rebuild (~8:30 AM PT, no repeats from Nov 24 daily): new wave of remixes on Nov 25 - @levyngrey posted the full clip with sound (316,642 views / 14,338 likes), @ThatPHCBoy's 'you have added o' Pidgin remix (57,933 views), @ogebuleN and others; two fresh X News stories (2125620512164565198, 2125505774529192259). Original post now 5,445,694 views / 253,161 likes per X's public counts read ~8:28 AM PT Nov 25. X News summaries name an animator as the clip's maker; not independently verified, so the credit stays on the caption post.",
+      "notes": "Nov 23 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:52 AM PT): @levyngrey posted a short clip of a CGI cat with a bob haircut firing a cartoon gun (muzzle flash only, no target) Nov 22 10:01 AM PT with \"'We regret to inform you' / You'll regret you informed me\"; 2.98M views / 162K likes / 922 quotes. Copies swapping in other 'sorry' lines spread Nov 22-23 (@ylazy8, @onlyoneXstarr, @itsjolaa, @Ola4089, @Acupoftii___, @Patrickdgenius, @greatguyy_, @Visual_verse1); X News 2124779442203738574. The cat clip's original maker is undocumented (first X upload Nov 20); credit is the caption poster. Nov 25 main rebuild (~8:30 AM PT, no repeats from Nov 24 daily): new wave of remixes on Nov 25 - @levyngrey posted the full clip with sound (316,642 views / 14,338 likes), @ThatPHCBoy's 'you have added o' Pidgin remix (57,933 views), @ogebuleN and others; two fresh X News stories (2125620512164565198, 2125505774529192259). Original post now 5,445,694 views / 253,161 likes per X's public counts read ~8:28 AM PT Nov 25. X News summaries name an animator as the clip's maker; not independently verified, so the credit stays on the caption post. | Nov 27 ~1:00 AM PT new-day rebuild (no repeats from Nov 26 daily): counts re-read ~12:56 AM PT Nov 27: 5,899,661 views / 254,453 likes (5,445,694 / 253,161 on Nov 25). Two more X News stories ran Nov 26 about the same bob-haired cat: 2126003738481508468 (12:49 PM PT, with the 'Me and my bestie' / 'Me and my nonchalant friend after making the worst possible decisions' captions on a two-cat version), and 2126045301655933056 (12:15 PM PT). The two-cat clip was posted by @numanuk Nov 25 10:33 AM PT (1,703,706 views / 43,312 likes, X API ~12:56 AM PT Nov 27); @arusheehee posted an independent remake of it Nov 26. X News calls @numanuk the cat's creator; MemeStand has not confirmed he made the original @levyngrey clip, so the credit stays on the caption post. Cartoon guns, no people. Recycled from Nov 25's daily list.",
       "first_seen_basis": "X post by @levyngrey, 2026-11-22T18:01Z",
       "credit": "posted by @levyngrey on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -446,20 +461,21 @@
       "ev": {
         "x": {
           "url": "https://x.com/xxxtacyLux/status/2124471853284794828",
-          "views": 1101063,
-          "likes": 9416,
-          "checked": "2026-11-25",
-          "via": "X API (read ~8:40 AM PT Nov 25)"
+          "views": 1200537,
+          "likes": 9767,
+          "checked": "2026-11-27",
+          "via": "X API (read ~12:56 AM PT Nov 27)"
         },
         "x_news": true,
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 23 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:52 AM PT): @xxxtacyLux posted an 8-second AI-made clip of a laughing leafcutter bee in a 'Megachile / Insect' card next to an iced coffee Nov 22 3:55 AM PT with 'Megachile kii asf'; 609K views / 8.3K likes. 'Kii' is slang for laughing. The wordplay started in an earlier joke post by @archangelcdj (a made-up celebrity quote, not shown or repeated here). Riffs spread Nov 22-23 ('chile this megachile finna kii', 'ONE KII PLEASE': @jnksruby_, @tuna_petal, @Illitry_, @teddysafterglow, @incoglilbro, @yoonogy); X News 2124643879530246636. No people shown. Nov 25 main rebuild (widened to the past few days; no repeats from Nov 24 daily): 1,101,063 views / 9,416 likes per X's public counts read ~8:40 AM PT Nov 25.",
+      "notes": "Nov 23 7 AM-slot discovery (from the 5 AM safety-prescreened daily pool, re-read via X API ~6:52 AM PT): @xxxtacyLux posted an 8-second AI-made clip of a laughing leafcutter bee in a 'Megachile / Insect' card next to an iced coffee Nov 22 3:55 AM PT with 'Megachile kii asf'; 609K views / 8.3K likes. 'Kii' is slang for laughing. The wordplay started in an earlier joke post by @archangelcdj (a made-up celebrity quote, not shown or repeated here). Riffs spread Nov 22-23 ('chile this megachile finna kii', 'ONE KII PLEASE': @jnksruby_, @tuna_petal, @Illitry_, @teddysafterglow, @incoglilbro, @yoonogy); X News 2124643879530246636. No people shown. Nov 25 main rebuild (widened to the past few days; no repeats from Nov 24 daily): 1,101,063 views / 9,416 likes per X's public counts read ~8:40 AM PT Nov 25. | Nov 27 ~1:00 AM PT new-day rebuild (no repeats from Nov 26 daily): counts re-read ~12:56 AM PT Nov 27: 1,200,537 views / 9,767 likes. X's recent post counts for 'megachile kii' (UTC days): 101 posts Nov 24, 106 Nov 25, 60 Nov 26, 14 so far Nov 27 (to ~12:53 AM PT) - fading, so this is a lower-evidence daily entry. Recycled from Nov 25's daily list.",
       "first_seen_basis": "X post by @xxxtacyLux, 2026-11-22T11:55Z",
       "credit": "posted by @xxxtacyLux on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -504,7 +520,6 @@
       "first_seen_basis": "X post by @motheinsect, 2026-11-22T17:28Z",
       "credit": "posted by @motheinsect on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -535,22 +550,23 @@
       "ev": {
         "tiktok": {
           "url": "https://www.tiktok.com/@andre.g638/video/7710088316078607629",
-          "views": 17200000,
-          "likes": 4400000,
+          "views": 18300000,
+          "likes": 4500000,
           "author": "@andre.g638",
           "posted": "2026-11-19",
-          "checked": "2026-11-25",
-          "via": "TikTok post page (tools/fetch_social.py, read ~8:36 AM PT Nov 25)"
+          "checked": "2026-11-27",
+          "via": "TikTok post page (tools/fetch_social.py, read ~1:00 AM PT Nov 27)"
         },
         "platforms": [
           "TikTok",
           "X"
         ]
       },
-      "notes": "Nov 23 ~12:02 AM PT new-day rebuild (no repeats from Nov 22 daily): black-and-white edit posted by TikToker @andre.g638 Nov 19 7:20 PM PT; 14.4M views / 3.9M likes / 862K shares per TikTok's public counts at ~12:02 AM PT Nov 23. Hands labelled 'Evil school', 'Evil assignments' and 'Evil teachers' bat a chubby tuxedo cat's head over the caption 'Innocent me'. His caption says the cat clip is not his and came from 'MAYOREO QIHUO MEXICO' (display name only, no handle verified). Remakes swap in new villains: @notvld_00's 'GTA 6 / High prices / PS5 / Innocent me with a PS4' (Nov 20 11:24 PM PT; 603K views / 113K likes) and X posts calling it the 'Poor Cat' template. No injury shown; Roger approved featuring it Nov 22. Nov 25 main rebuild (widened to the past few days; no repeats from Nov 24 daily): 17.2M views / 4.4M likes / 949.9K shares per TikTok's public counts read ~8:36 AM PT Nov 25.",
+      "notes": "Nov 23 ~12:02 AM PT new-day rebuild (no repeats from Nov 22 daily): black-and-white edit posted by TikToker @andre.g638 Nov 19 7:20 PM PT; 14.4M views / 3.9M likes / 862K shares per TikTok's public counts at ~12:02 AM PT Nov 23. Hands labelled 'Evil school', 'Evil assignments' and 'Evil teachers' bat a chubby tuxedo cat's head over the caption 'Innocent me'. His caption says the cat clip is not his and came from 'MAYOREO QIHUO MEXICO' (display name only, no handle verified). Remakes swap in new villains: @notvld_00's 'GTA 6 / High prices / PS5 / Innocent me with a PS4' (Nov 20 11:24 PM PT; 603K views / 113K likes) and X posts calling it the 'Poor Cat' template. No injury shown; Roger approved featuring it Nov 22. Nov 25 main rebuild (widened to the past few days; no repeats from Nov 24 daily): 17.2M views / 4.4M likes / 949.9K shares per TikTok's public counts read ~8:36 AM PT Nov 25. | Nov 27 ~1:00 AM PT new-day rebuild (no repeats from Nov 26 daily): TikTok counts re-read ~1:00 AM PT Nov 27: 18.3M views / 4.5M likes, up from 17.2M / 4.4M at ~8:36 AM PT Nov 25 (about 1.1M new views in about 40 hours) - slowing, so this is a lower-evidence daily entry; no new remix counts were checked tonight. Recycled from Nov 25's daily list.",
       "first_seen_basis": "TikTok post by @andre.g638, 2026-11-20T03:20Z (TikTok page)",
       "credit": "posted by @andre.g638 on TikTok",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -684,7 +700,6 @@
       "first_seen_basis": "X post by @ngnchiikawa, 2026-11-21T15:04Z",
       "credit": "posted by @ngnchiikawa on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -920,7 +935,6 @@
       "first_seen_basis": "X post by @mikdunno, 2026-11-19T23:10Z (earliest found)",
       "credit": "posted by @mikdunno on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -1437,12 +1451,12 @@
       "ev": {
         "tiktok": {
           "url": "https://www.tiktok.com/@larpniverse/video/7707635922652630285",
-          "views": 73800000,
-          "likes": 12500000,
+          "views": 80600000,
+          "likes": 13700000,
           "author": "@larpniverse",
           "posted": "2026-11-13",
-          "checked": "2026-11-25",
-          "via": "TikTok post page (tools/fetch_social.py, read ~8:36 AM PT Nov 25)"
+          "checked": "2026-11-27",
+          "via": "TikTok post page (tools/fetch_social.py, read ~1:00 AM PT Nov 27)"
         },
         "kym": true,
         "kym_views": 2119,
@@ -1452,10 +1466,11 @@
         ],
         "x_news": "https://x.com/i/trending/2125362695138590966"
       },
-      "notes": "Nov 20 ~12:55 AM PT daily rebuild (no repeats from Nov 19 daily): Roblox animation posted by its creator, TikToker @larpniverse, Nov 13 ('While they are out partying'); 41.1M views / 6.9M likes per TikTok's public counts at ~12:55 AM PT Nov 20 (37.4M at ~11:16 AM PT Nov 19). The KYM entry (published Nov 19 8:46 AM PT, 2,119 views) documents the lip dubs and remixes Nov 15-16 (@djfunkyehh funk remix 3.6M, @urbaewinnie lip dub 5.6M, @the_devonmaid 3.1M). Thumbnail is KYM's cover still of the Roblox character. Clean audio (pool transcript check). Distinct from the older out-partying entry. Nov 25 main rebuild (~8:36 AM PT): still being copied - Virlo counts 470 creators posting the 'In this town everybody goes out partying except me' format in the 7 days to Nov 25 (1 the week before), e.g. @balleronibolonga 7.0M views (Nov 20); X adaptations ('everybody has a babe except me, huss huss huss') and an X News story Nov 24 (2125362695138590966). Original now 73.8M views / 12.5M likes per TikTok's public counts read ~8:36 AM PT Nov 25.",
+      "notes": "Nov 20 ~12:55 AM PT daily rebuild (no repeats from Nov 19 daily): Roblox animation posted by its creator, TikToker @larpniverse, Nov 13 ('While they are out partying'); 41.1M views / 6.9M likes per TikTok's public counts at ~12:55 AM PT Nov 20 (37.4M at ~11:16 AM PT Nov 19). The KYM entry (published Nov 19 8:46 AM PT, 2,119 views) documents the lip dubs and remixes Nov 15-16 (@djfunkyehh funk remix 3.6M, @urbaewinnie lip dub 5.6M, @the_devonmaid 3.1M). Thumbnail is KYM's cover still of the Roblox character. Clean audio (pool transcript check). Distinct from the older out-partying entry. Nov 25 main rebuild (~8:36 AM PT): still being copied - Virlo counts 470 creators posting the 'In this town everybody goes out partying except me' format in the 7 days to Nov 25 (1 the week before), e.g. @balleronibolonga 7.0M views (Nov 20); X adaptations ('everybody has a babe except me, huss huss huss') and an X News story Nov 24 (2125362695138590966). Original now 73.8M views / 12.5M likes per TikTok's public counts read ~8:36 AM PT Nov 25. | Nov 27 ~1:00 AM PT new-day rebuild (no repeats from Nov 26 daily): TikTok counts re-read ~1:00 AM PT Nov 27: 80.6M views / 13.7M likes, up from 73.8M / 12.5M at ~8:36 AM PT Nov 25 (about 6.8M new views in about 40 hours). Virlo's Nov 25 count of 470 creators remaking the format was not refreshed tonight. Recycled from Nov 25's daily list (not on Nov 26's).",
       "first_seen_basis": "TikTok post by @larpniverse, 2026-11-13 (per TikTok and KYM)",
       "credit": "posted by @larpniverse on TikTok",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ],
@@ -6846,26 +6861,43 @@
         {
           "name": "X News: dapper cat student-majors story (Nov 24)",
           "url": "https://x.com/i/trending/2125040297176432740"
+        },
+        {
+          "name": "X / @oyaoisumi (psychology student version, Nov 26)",
+          "url": "https://x.com/oyaoisumi/status/2125867255355597263"
+        },
+        {
+          "name": "X / @Demphio (language student version, Nov 26)",
+          "url": "https://x.com/Demphio/status/2125985519582499255"
+        },
+        {
+          "name": "X / @MyTaeU (medical student version, Nov 25)",
+          "url": "https://x.com/MyTaeU/status/2125816971958878475"
+        },
+        {
+          "name": "X News: Cat in tie sparks student major puns (Nov 26)",
+          "url": "https://x.com/i/trending/2125861998944538949"
         }
       ],
       "ev": {
         "x": {
           "url": "https://x.com/atvsmu/status/2124279826005811495",
-          "views": 709823,
-          "likes": 3526,
-          "checked": "2026-11-25",
-          "via": "X API (read ~8:31 AM PT Nov 25); most-viewed post of the Nov 21-23 student-major wave read (credited earliest post @starssvy, Nov 16)"
+          "views": 714479,
+          "likes": 3553,
+          "checked": "2026-11-27",
+          "via": "X API (read ~12:56 AM PT Nov 27)"
         },
-        "x_news": "https://x.com/i/trending/2125040297176432740",
+        "x_news": "https://x.com/i/trending/2125861998944538949",
         "platforms": [
           "X"
         ]
       },
-      "notes": "Nov 18 ~7 AM PT main discovery: same-day remix cluster. Earliest version found is @starssvy (Nov 16 12:31 PM PT, 1.42M views / 21.5K likes); independent job variations Nov 17 by @u2acid (2.32M / 69.3K, 4.4K quotes), @luvlkoo (526K), @viadobicha (317K), all over the same cat-in-a-tie clip; X News 2122858467555951101. Who filmed the cat clip is not documented. Pet video, no people. Nov 22 ~12:55 AM PT new wave: a 'student major' version started on Spanish-language X with @eatsomevoid (Nov 20 2:53 PM PT, '- soy estudiante de psicología / - veo a alguien mal / - le digo que es culpa de su papá / - me voy'; 360.9K views / 26.1K likes) and spread through quote chains in Spanish, Portuguese and English Nov 21-22: @mayanderex economics (348.6K / 26.1K), @xoooieie sociology (229.3K / 17.5K), @atvsmu architecture, @gugawrkn psychology, @mxrciil accountancy, @cypherrrpartV, all per X's public counts at ~12:55 AM PT Nov 22; X News 2124370458900611302. Daily score uses this wave only. Nov 25 main rebuild (~8:30 AM PT): the 'I'm a [major] student / they ask... / I leave' wave kept growing Nov 22-23 (@atvsmu architecture 709,823 views; @sunshinec0urt biodiversity 478,553 views / 23,521 likes; @joyific4tion graphic design; @valeriesoutput CS) and X News ran a fresh story Nov 24 (2125040297176432740). Counts per X's public counts read ~8:31 AM PT Nov 25.",
+      "notes": "Nov 18 ~7 AM PT main discovery: same-day remix cluster. Earliest version found is @starssvy (Nov 16 12:31 PM PT, 1.42M views / 21.5K likes); independent job variations Nov 17 by @u2acid (2.32M / 69.3K, 4.4K quotes), @luvlkoo (526K), @viadobicha (317K), all over the same cat-in-a-tie clip; X News 2122858467555951101. Who filmed the cat clip is not documented. Pet video, no people. Nov 22 ~12:55 AM PT new wave: a 'student major' version started on Spanish-language X with @eatsomevoid (Nov 20 2:53 PM PT, '- soy estudiante de psicología / - veo a alguien mal / - le digo que es culpa de su papá / - me voy'; 360.9K views / 26.1K likes) and spread through quote chains in Spanish, Portuguese and English Nov 21-22: @mayanderex economics (348.6K / 26.1K), @xoooieie sociology (229.3K / 17.5K), @atvsmu architecture, @gugawrkn psychology, @mxrciil accountancy, @cypherrrpartV, all per X's public counts at ~12:55 AM PT Nov 22; X News 2124370458900611302. Daily score uses this wave only. Nov 25 main rebuild (~8:30 AM PT): the 'I'm a [major] student / they ask... / I leave' wave kept growing Nov 22-23 (@atvsmu architecture 709,823 views; @sunshinec0urt biodiversity 478,553 views / 23,521 likes; @joyific4tion graphic design; @valeriesoutput CS) and X News ran a fresh story Nov 24 (2125040297176432740). Counts per X's public counts read ~8:31 AM PT Nov 25. | Nov 27 ~1:00 AM PT new-day rebuild (no repeats from Nov 26 daily): a new X News story, 2125861998944538949 ('Cat in Tie Sparks Student Major Puns', updated 11:51 PM PT Nov 26), covers the same cat-in-a-tie clip with fresh major versions. X API reads ~1:00 AM PT Nov 27 of posts in that story: @oyaoisumi 'im a psychology student / i think' (Nov 26 12:20 AM PT; 301,261 views / 42,936 likes), @Demphio language (23,801 views / 4,515 likes), @MyTaeU medical (26,061 / 3,041), @_Robert_Paul2_ humanities (43,639 / 484), @girlssoinlove communications (7,226 / 423), @colligocritters and @MsQ5U4EX7YY2E9N philosophy ('i think - i am'; about 2K views each). The @atvsmu architecture post is at 714,479 views. The clip's filmer is still not documented; credit stays on the earliest post found. Pet video, no people. Recycled from Nov 25's daily list.",
       "headline_reviewed": true,
       "first_seen_basis": "X post by @starssvy, 2026-11-16T20:31Z",
       "credit": "posted by @starssvy on X",
       "periods": [
+        "daily",
         "weekly",
         "monthly"
       ]
@@ -7115,7 +7147,6 @@
       "first_seen_basis": "X post by @hardcatmemes, 2026-11-21T21:35Z",
       "credit": "posted by @hardcatmemes on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -7215,7 +7246,6 @@
       "first_seen_basis": "X post by @ZackKorman, 2026-11-25T17:33Z",
       "credit": "posted by @ZackKorman on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -7256,7 +7286,6 @@
       "first_seen_basis": "X post by @creativematt, 2026-11-23T09:20Z",
       "credit": "posted by @creativematt on X",
       "periods": [
-        "daily",
         "weekly",
         "monthly"
       ],
@@ -7309,6 +7338,203 @@
       "notes": "Nov 26 ~1:15 AM PT new-day rebuild (no repeats from Nov 25 daily): the sound and template trace to @editscc446's green-screen 'MemeCut' post of Nov 21 (8:12 AM PT; the video ID dates it 28 minutes before @templates197's, which has 11.5M views / 373.6K likes). Independent TikTok versions read ~1:15 AM PT Nov 26: @olgaoropeza701 5.8M views (Nov 21 5:56 PM PT), @momruoy7 2.1M (Nov 23, chihuahua with three candles), @kitty12kt 1.8M (Nov 22), @mimimi_club 541K (Nov 23). ViralRemix (page dated Nov 24) says the sound was in about 2,600 videos and the CapCut template had 32,000 uses within three days. Who made the kitten clip is not documented (it looks AI-made; not verified), so the credit stays on the earliest post found. A kitten and a cake, no people; nothing unsafe (viewed).",
       "first_seen_basis": "TikTok post by @editscc446, 2026-11-21T16:12Z (video ID timestamp)",
       "credit": "posted by @editscc446 on TikTok",
+      "periods": [
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "are-were-once-they-are-did",
+      "name": "Are Were Once They Are Did",
+      "title": "'X CONFIRMS THAT Y ARE WERE ONCE THEY ARE DID': THE GIBBERISH FAN-ANNOUNCEMENT COPYPASTA BLEW UP AGAIN AFTER MEDAL'S GTA VI VERSION, AND PEOPLE ARE SWAPPING IN THEIR OWN PAIRS",
+      "card_text": "🚨 Rockstar Games confirm that Jason and Lucia are were once they are did.\n\nThey became the first ever to have the first as in the era of that when of a physical games and the media began.\n\nCongratulations ❤️",
+      "source_url": "https://x.com/Medal_TV/status/2125735250903110059",
+      "source_name": "X @Medal_TV",
+      "image_policy": "none",
+      "first_seen": "2026-11-25",
+      "also": [
+        {
+          "name": "X / @DrunkAubie (college-football version)",
+          "url": "https://x.com/DrunkAubie/status/2125957749078978595"
+        },
+        {
+          "name": "X / @whaitowo (version)",
+          "url": "https://x.com/whaitowo/status/2125929798601990331"
+        },
+        {
+          "name": "X / @g0vernmentAlpha (version)",
+          "url": "https://x.com/g0vernmentAlpha/status/2125851189652983948"
+        },
+        {
+          "name": "X / @theamazingphil (Dan and Phil version, Nov 20)",
+          "url": "https://x.com/theamazingphil/status/2123627267347902952"
+        },
+        {
+          "name": "Know Your Meme: Are Were Once They Are Did",
+          "url": "https://knowyourmeme.com/memes/are-were-once-they-are-did"
+        },
+        {
+          "name": "X News: Are Were Once They Are Did story",
+          "url": "https://x.com/i/trending/2126077894812397971"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/Medal_TV/status/2125735250903110059",
+          "views": 3960579,
+          "likes": 45012,
+          "checked": "2026-11-27",
+          "via": "X API (read ~12:56 AM PT Nov 27)"
+        },
+        "kym": "https://knowyourmeme.com/memes/are-were-once-they-are-did",
+        "kym_views": 26173,
+        "x_news": "https://x.com/i/trending/2126077894812397971",
+        "platforms": [
+          "X",
+          "Know Your Meme"
+        ]
+      },
+      "notes": "Nov 27 ~1:00 AM PT new-day rebuild (no repeats from Nov 26 daily): fresh from the Nov 26 3 PM PT daily pool (published on X Nov 26 3:51 PM PT). @Medal_TV (the clip app's business account) posted a GTA VI version Nov 25 3:35 PM PT with the nonsense fan-announcement template: 3,960,579 views / 45,012 likes / 760 quotes per X's public counts at ~12:56 AM PT Nov 27. People then swapped in their own subjects (@DrunkAubie college football, @whaitowo, @g0vernmentAlpha, 'Wonderland devs confirm...', Dan and Phil on Nov 20); the 3 PM pool read counted 30 X posts with the phrase on Nov 25 UTC vs 4,068 on Nov 26 UTC (by ~3:17 PM PT; not recounted tonight); X News story 2126077894812397971. Know Your Meme (26,173 views) dates the template to Sept 17 2025 and an @opiumoon post (Ethel Cain version), so MemeStand credits Medal only for this version, not the format. Medal's attached GTA VI artwork is not reproduced: the card shows the post text only. Nonsense text, nothing unsafe.",
+      "first_seen_basis": "X post by @Medal_TV, 2026-11-25T23:35Z (this wave; the template itself dates to Sept 2025 per Know Your Meme)",
+      "credit": "posted by @Medal_TV on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "pord-third-temperature",
+      "name": "Pord (The Third Temperature)",
+      "title": "'PORD': A HAND-DRAWN DIAGRAM ADDS A THIRD TEMPERATURE NEXT TO HOT AND COLD, AND NOW PEOPLE ARE 'TOO PORD', ASKING FOR 'THE PORDEST OBJECT IN THE UNIVERSE' AND SINGING 'YOU'RE HOT THEN YOU'RE COLD AND THEN PORD'",
+      "source_url": "https://x.com/slinkybox/status/2125971517137932585",
+      "source_name": "X @slinkybox",
+      "image_url": "https://pbs.twimg.com/media/HYD30tOakAAQot8.jpg",
+      "first_seen": "2026-11-26",
+      "also": [
+        {
+          "name": "X / @ousiaTorin (quote riff)",
+          "url": "https://x.com/ousiaTorin/status/2126012277929259103"
+        },
+        {
+          "name": "X / @zzzilca (riff)",
+          "url": "https://x.com/zzzilca/status/2126003292237095017"
+        },
+        {
+          "name": "X News: Pord third temperature story",
+          "url": "https://x.com/i/trending/2126056659415879777"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/slinkybox/status/2125971517137932585",
+          "views": 2124073,
+          "likes": 79795,
+          "checked": "2026-11-27",
+          "via": "X API (read ~12:58 AM PT Nov 27)"
+        },
+        "x_news": "https://x.com/i/trending/2126056659415879777",
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 27 ~1:00 AM PT new-day rebuild (no repeats from Nov 26 daily): fresh from the Nov 26 3 PM PT daily pool (published on X Nov 26 6:44 PM PT). @slinkybox posted a gray hand-drawn diagram of Hot (red), Cold (blue) and a new green axis, Pord, captioned 'my brand new idea for a third temperature' on Nov 26 7:14 AM PT: 2,124,073 views / 79,795 likes / 296 quotes per X's public counts at ~12:58 AM PT Nov 27. Riffs: 'too pord', 'the pordest object in the universe', song parodies and quote posts (@ousiaTorin, @zzzilca, others); the 3 PM pool read counted 56 X posts containing 'pord' on Nov 25 UTC vs 462 on Nov 26 UTC (by ~3:21 PM PT; the word has some unrelated background use; not recounted tonight); X News story 2126056659415879777. The image is the creator's own drawing. Less than a day old, so lower-evidence. Nothing unsafe.",
+      "first_seen_basis": "X post by @slinkybox, 2026-11-26T15:14Z",
+      "credit": "posted by @slinkybox on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "asking-claude-if-your-idea-is-good",
+      "name": "Asking Claude If Your Idea Is Good",
+      "title": "'ASKING CLAUDE IF YOUR IDEA IS GOOD IS LIKE ASKING YOUR MOM IF YOU'RE HANDSOME': THE AI-FLATTERY LINE EVERYONE IS COPYING, AND REMIXING INTO CHATGPT AND GRANDMA VERSIONS",
+      "card_text": "Asking Claude if your idea is good is like asking your mom if you’re handsome",
+      "source_url": "https://x.com/sohmehta/status/2125784108844683275",
+      "source_name": "X @sohmehta",
+      "image_policy": "none",
+      "first_seen": "2026-11-25",
+      "also": [
+        {
+          "name": "X / @akramcodez (copy)",
+          "url": "https://x.com/akramcodez/status/2125852299281228032"
+        },
+        {
+          "name": "X / @cadenmarkets (remix)",
+          "url": "https://x.com/cadenmarkets/status/2125948175319986269"
+        },
+        {
+          "name": "X News: Claude idea-validation joke story",
+          "url": "https://x.com/i/trending/2125958139300196381"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/sohmehta/status/2125784108844683275",
+          "views": 511659,
+          "likes": 14163,
+          "checked": "2026-11-27",
+          "via": "X API (read ~12:56 AM PT Nov 27)"
+        },
+        "x_news": "https://x.com/i/trending/2125958139300196381",
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 27 ~1:00 AM PT new-day rebuild (no repeats from Nov 26 daily): fresh from the Nov 26 3 PM PT daily pool (published on X and TikTok Nov 26 5:55 PM PT). Soham Mehta (@sohmehta) posted the line Nov 25 6:50 PM PT: 511,659 views / 14,163 likes / 117 quotes per X's public counts at ~12:56 AM PT Nov 27. The 3 PM pool read counted 667 X posts on Nov 26 UTC containing the exact phrase 'if your idea is good is like asking' (0 before; not recounted tonight), with verbatim copies and remixes ('Asking ChatGPT ... your grandmother', 'Asking AI ... if you're smart', '... grandma if you're her favorite'); X News story 2125958139300196381. Text only; shown as a self-rendered attributed post card. A mild product-name joke, nothing unsafe.",
+      "first_seen_basis": "X post by @sohmehta, 2026-11-26T02:50Z",
+      "credit": "posted by @sohmehta on X",
+      "periods": [
+        "daily",
+        "weekly",
+        "monthly"
+      ],
+      "headline_reviewed": true
+    },
+    {
+      "id": "backrooms-spanish",
+      "name": "Backrooms Spanish",
+      "title": "'AS A SPANISH SPEAKER PORTUGUESE FEELS LIKE BACKROOMS SPANISH. I CAN ALMOST UNDERSTAND YOU': THE LINE THAT STARTED A CROSS-LANGUAGE PILE-ON",
+      "card_text": "As a Spanish speaker Portuguese feels like backrooms Spanish. I can almost understand you",
+      "source_url": "https://x.com/cinnotomon/status/2125995861109023006",
+      "source_name": "X @cinnotomon",
+      "image_policy": "none",
+      "first_seen": "2026-11-26",
+      "also": [
+        {
+          "name": "X / @remithelone (language remix)",
+          "url": "https://x.com/remithelone/status/2126039367085113618"
+        },
+        {
+          "name": "X / @emmyy_is_d3ad (language remix)",
+          "url": "https://x.com/emmyy_is_d3ad/status/2126047267228361199"
+        },
+        {
+          "name": "X News: Backrooms Spanish story",
+          "url": "https://x.com/i/trending/2126082894825480399"
+        }
+      ],
+      "ev": {
+        "x": {
+          "url": "https://x.com/cinnotomon/status/2125995861109023006",
+          "views": 624763,
+          "likes": 66727,
+          "checked": "2026-11-27",
+          "via": "X API (read ~12:56 AM PT Nov 27)"
+        },
+        "x_news": "https://x.com/i/trending/2126082894825480399",
+        "platforms": [
+          "X"
+        ]
+      },
+      "notes": "Nov 27 ~1:00 AM PT new-day rebuild (no repeats from Nov 26 daily): fresh from the Nov 26 3 PM PT daily pool (published on X Nov 26 7:48 PM PT). @cinnotomon posted the line Nov 26 8:51 AM PT: 624,763 views / 66,727 likes / 328 quotes per X's public counts at ~12:56 AM PT Nov 27. Other languages got the same treatment ('Spanish is backrooms Portuguese', Italian, a Romanian 'dinner in the Backrooms'); the 3 PM pool read counted 418 X posts pairing 'backrooms' with a language name on Nov 25 UTC and 3,118 on Nov 26 UTC (by ~3:21 PM PT; at most 5 a day before; not recounted tonight); X News story 2126082894825480399. Text only; shown as a self-rendered attributed post card. Friendly language teasing, no slurs, nothing unsafe.",
+      "first_seen_basis": "X post by @cinnotomon, 2026-11-26T16:51Z",
+      "credit": "posted by @cinnotomon on X",
       "periods": [
         "daily",
         "weekly",
