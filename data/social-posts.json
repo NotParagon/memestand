@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T18:54:03-08:00",
+  "updated": "2026-11-27T19:57:16-08:00",
   "profiles": {
     "x": "https://x.com/MemeStandHQ",
     "tiktok": "https://www.tiktok.com/@memestandhq"
@@ -444,6 +444,10 @@
         "url": "https://x.com/MemeStandHQ/status/2123979893843116224",
         "buffer_post_id": "6b010e09dd205ed779b5f794",
         "sent_at": "2026-11-21T03:20:43.294Z"
+      },
+      "tiktok": {
+        "url": "https://www.tiktok.com/@memestandhq/video/7713055300361653517",
+        "buffer_post_id": "6b0a46f741454797eae752c6"
       }
     },
     "i-got-so-mad": {
