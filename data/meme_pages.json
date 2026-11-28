@@ -1895,6 +1895,36 @@
       "written": "2026-11-10",
       "checked": "2026-11-10T06:14:46-08:00"
     },
+    "glove-knock-dunpig-effect": {
+      "name": "Glove Knock (DunPig Effect)",
+      "ids": [
+        "glove-knock-dunpig-effect"
+      ],
+      "status": "short",
+      "explainer": "A short TikTok video effect: two big cartoon boxing gloves, one red and one blue, swing in from both sides and squash the face in the middle, timed to a punchy original sound. People film themselves with it, and this week many started using it on their cats and dogs, so the pet looks like it just got bonked by a cartoon.",
+      "origin": "The earliest post MemeStand found is by @dun.pig on TikTok on November 19, 2026, tagged #DunpigEffect and set to the original \"DunPig\" sound (about 27.0 million views and 508,500 likes per TikTok's public counts at about 12:20 AM PT on November 28). Other creators copied it on the same sound, including @mangucuppppp on November 20 (about 34.9 million views) and @trashygas with two barking dogs on November 24 (about 22.7 million views).\n\nTikTok does not say who built the effect, so the original creator hasn't been confirmed; MemeStand credits the earliest post it found.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://www.tiktok.com/@dun.pig/video/7709724055389113608",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@dun.pig on TikTok (earliest found)",
+          "url": "https://www.tiktok.com/@dun.pig/video/7709724055389113608"
+        },
+        {
+          "name": "@mangucuppppp on TikTok (largest version read)",
+          "url": "https://www.tiktok.com/@mangucuppppp/video/7710106378613853458"
+        },
+        {
+          "name": "@trashygas on TikTok (dog version)",
+          "url": "https://www.tiktok.com/@trashygas/video/7711580887732735262"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-28",
+      "checked": "2026-11-28T00:30:00-08:00"
+    },
     "goat-tower-single-people": {
       "name": "Goat Tower (Single People Anger Issues)",
       "ids": [
@@ -3589,6 +3619,36 @@
       "related": [],
       "written": "2026-11-21",
       "checked": "2026-11-21T01:05:00-08:00"
+    },
+    "orange-cat-with-a-flip-flop-gif": {
+      "name": "Orange Cat With a Flip-Flop GIF",
+      "ids": [
+        "orange-kitchen-cat-flip-flop"
+      ],
+      "status": "short",
+      "explainer": "A short looping GIF of an orange cat in a kitchen standing on its back legs and swinging a blue flip-flop at the camera, like it is about to give someone a smack. People send it as a reply to anyone who annoys them, and many asked how to save it as a WhatsApp sticker.",
+      "origin": "The largest post MemeStand found is by @JudithTheHR on X on November 26, 2026, at about 8:45 AM PT, captioned \"I found a perfect GIF to send to anyone who pisses me off\" (about 18.1 million views and 141,000 likes per X's public counts at about 12:20 AM PT on November 28). On November 27 other accounts reposted it, including @luca_varan (about 6.4 million views), and X News covered it.\n\nShe says she found the GIF, and who filmed the cat is not documented, so the original creator hasn't been confirmed. MemeStand credits her post.",
+      "origin_confirmed": false,
+      "how_to_use": [],
+      "source_url": "https://x.com/JudithTheHR/status/2125994363826389125",
+      "kym_url": null,
+      "sources": [
+        {
+          "name": "@JudithTheHR on X",
+          "url": "https://x.com/JudithTheHR/status/2125994363826389125"
+        },
+        {
+          "name": "@luca_varan on X (repost)",
+          "url": "https://x.com/luca_varan/status/2126421258988605784"
+        },
+        {
+          "name": "X News: feisty kitten with flip-flop anger GIF",
+          "url": "https://x.com/i/trending/2125917248040612262"
+        }
+      ],
+      "related": [],
+      "written": "2026-11-28",
+      "checked": "2026-11-28T00:30:00-08:00"
     },
     "pattinson-takes-every-job": {
       "name": "Robert Pattinson Takes Every Job",
